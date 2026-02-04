@@ -2,7 +2,7 @@
 import { Button } from 'components/elements/Button';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
-//import { X } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useContext } from 'react';
 
 /**

@@ -24,6 +24,7 @@ import { HtmlText } from '../elements/HtmlText';
 import { Button } from '../elements/zitac/Button';
 import { InputText } from '../elements/zitac/Input';
 import { InputPassword } from '../elements/zitac/InputPassword';
+import ForgotPassword from '../ForgotPassword';
 import ErrorText, { ErrorField } from '../form/ErrorText';
 import CreateUser from './../icons/zitac/create-user';
 
@@ -37,6 +38,7 @@ export default function Login({ myPagesPageUrl }: { myPagesPageUrl: string }) {
   const pathname = usePathname();
   const [content, setContent] = useState('');
   const [changePasswordStep, setChangePasswordStep] = useState(false);
+  const [forgotPasswordStep, setForgotPasswordStep] = useState(false);
   const t = useTranslations();
   const getReferrerUrl = () => {
     if (!history || history.length < 2) {
@@ -88,46 +90,62 @@ export default function Login({ myPagesPageUrl }: { myPagesPageUrl: string }) {
 
   return (
     <Fragment>
-      <Heading1 className="mt-10 text-center">
-        {!changePasswordStep ? t('login.title') : t('login.changepassword')}
-      </Heading1>
-      <form
-        className={'mb-2 mt-12 flex w-full flex-col gap-5'}
-        name="login"
-        action={formAction}
-      >
-        <div
-          className={clsx(
-            'flex flex-col gap-5',
-            changePasswordStep && 'hidden'
+      {!forgotPasswordStep && (
+        <>
+          <Heading1 className="mt-10 text-center">
+            {!changePasswordStep ? t('login.title') : t('login.changepassword')}
+          </Heading1>
+          <form
+            className={'mb-2 mt-12 flex w-full flex-col gap-5'}
+            name="login"
+            action={formAction}
+          >
+            <div
+              className={clsx(
+                'flex flex-col gap-5',
+                changePasswordStep && 'hidden'
+              )}
+            >
+              <LoginForm />
+            </div>
+            <div
+              className={clsx(
+                'flex flex-col gap-5',
+                !changePasswordStep && 'hidden'
+              )}
+            >
+              <ChangePasswordForm
+                html={content}
+                required={changePasswordStep}
+              />
+            </div>
+            <Button
+              type="submit"
+              rounded={true}
+              className="p-4 text-sm"
+              data-testid="login-form__submit"
+            >
+              {!changePasswordStep
+                ? t('login.loginbuttontext')
+                : t('login.changepassword')}
+            </Button>
+          </form>
+          {!!state.errors && (
+            <ErrorText
+              errors={getGeneralError(state.errors)}
+              className="py-2 text-base"
+            ></ErrorText>
           )}
-        >
-          <LoginForm />
-        </div>
-        <div
-          className={clsx(
-            'flex flex-col gap-5',
-            !changePasswordStep && 'hidden'
-          )}
-        >
-          <ChangePasswordForm html={content} required={changePasswordStep} />
-        </div>
-        <Button
-          type="submit"
-          rounded={true}
-          className="p-4 text-sm"
-          data-testid="login-form__submit"
-        >
-          {!changePasswordStep
-            ? t('login.loginbuttontext')
-            : t('login.changepassword')}
-        </Button>
-      </form>
-      {!!state.errors && (
-        <ErrorText
-          errors={getGeneralError(state.errors)}
-          className="py-2 text-base"
-        ></ErrorText>
+          <p
+            className="cursor-pointer"
+            onClick={() => setForgotPasswordStep(true)}
+          >
+            {t('forgotpassword.title')}
+          </p>
+        </>
+      )}
+      {forgotPasswordStep && !changePasswordStep && (
+        <ForgotPassword onClose={() => setForgotPasswordStep(false)} />
       )}
       {/* <Link href="/auth0-authentication/login">
         <Button

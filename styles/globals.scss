@@ -175,7 +175,8 @@ h6 {
       a[href],
       button,
       [tabindex] {
-        @apply hidden-focus;
+        @apply pointer-events-none invisible;
+        //@apply hidden-focus;
       }
     }
   }
@@ -185,7 +186,8 @@ h6 {
       a[href],
       button,
       [tabindex] {
-        @apply hidden-focus;
+        @apply pointer-events-none invisible;
+        //@apply hidden-focus;
       }
     }
   }

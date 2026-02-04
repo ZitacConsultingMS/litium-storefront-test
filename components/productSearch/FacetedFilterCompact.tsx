@@ -7,7 +7,7 @@ import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
-//import { X } from 'lucide-react';
+import { X } from 'lucide-react';
 import {
   DistinctFacetItem,
   FacetGroupItem,

@@ -46,6 +46,7 @@
     "@react-email/render": "^1.2.0",
     "@types/nodemailer": "6.4.17",
     "@vercel/otel": "^1.13.0",
+    "@vis.gl/react-google-maps": "^1.7.1",
     "cld3-asm": "^4.0.0",
     "clsx": "2.1.1",
     "globalize": "^0.1.1",

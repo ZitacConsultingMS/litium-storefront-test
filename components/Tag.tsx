@@ -1,7 +1,7 @@
 import { Text } from 'components/elements/Text';
+import { X } from 'lucide-react';
 import { Fragment } from 'react';
 import { Button } from './elements/Button';
-
 /**
  * Renders a tag.
  * @param text a tag's name.

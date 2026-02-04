@@ -78,7 +78,11 @@ function ProductCard(props: ProductCardProps) {
         )}
       </Link>
       <div className="my-2 text-sm lg:my-1">
-        <Link href={url || '#'} onClick={onClick}>
+        <Link
+          href={url || '#'}
+          onClick={onClick}
+          data-testid="product-card__information"
+        >
           <Text
             className="mt-2 overflow-hidden text-ellipsis whitespace-nowrap"
             data-testid="product-card__name"

@@ -1,5 +1,5 @@
 'use client';
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import { Heading1 } from 'components/elements/Heading';
 import { CartContext } from 'contexts/cartContext';
 import { useTranslations } from 'hooks/useTranslations';
@@ -26,7 +26,7 @@ function CheckoutHeader() {
               ? `${t('checkoutheader.products')}${' '}`
               : `${t('checkoutheader.product')}${' '}`
           }`}
-          <Currency className="inline-block" price={grandTotal} />
+          <FormattedPrice className="inline-block" price={grandTotal} />
         </div>
       )}
     </div>

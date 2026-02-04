@@ -1,12 +1,13 @@
 'use client';
-import Currency from 'components/Currency';
+
+import FormattedPrice from 'components/FormattedPrice';
 import Link from 'components/Link';
 import CheckoutDiscountCodes from 'components/checkout/CheckoutDiscountCodes';
 import { Text } from 'components/elements/Text';
 import { CartContext } from 'contexts/cartContext';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
-import { DiscountInfo } from 'models/cart';
+import { Currency, DiscountInfo } from 'models/cart';
 import { OrderRow } from 'models/order';
 import { Fragment, useContext } from 'react';
 import {
@@ -27,6 +28,7 @@ import CartLineItem from './CartLineItem';
  * @param rows a list of order row
  * @param updatable a flag to indicate that the item count can be updated
  * @param onClose an event occurs when clicking the keep shopping button
+ * @param currency optional currency object. If not provided, the currency from the cart will be used.
  */
 function CartContent({
   showDiscountCode = false,
@@ -36,6 +38,7 @@ function CartContent({
   discountInfos = [],
   totalVat = 0,
   onClose = () => {},
+  currency,
 }: {
   showDiscountCode?: boolean;
   showCostDetails?: boolean;
@@ -44,6 +47,7 @@ function CartContent({
   discountInfos?: DiscountInfo[];
   totalVat?: number;
   onClose?: () => void;
+  currency?: Currency;
 }) {
   const { showPricesIncludingVat: includingVat } = useContext(CartContext).cart;
   const vatSelector = getVatSelector(includingVat);
@@ -97,6 +101,7 @@ function CartContent({
             item.discountInfos[0]?.discountType !== DiscountType.FreeGift
           }
           includingVat={includingVat}
+          currency={currency}
         />
       ))}
       {showDiscountCode && <CheckoutDiscountCodes></CheckoutDiscountCodes>}
@@ -113,10 +118,11 @@ function CartContent({
                 {item.resultOrderRow.description ||
                   t('cartcontent.discounts.title')}
               </Text>
-              <Currency
+              <FormattedPrice
                 data-testid={`cart-content__discount-price-${item.resultOrderRow.rowId}`}
                 className="whitespace-nowrap text-red-600"
                 price={item.resultOrderRow[`total${vatSelector}`]}
+                currency={currency}
               />
             </div>
           ))}
@@ -127,9 +133,10 @@ function CartContent({
               <Text className="font-bold">
                 {t('cartcontent.productsSubtotal.title')}
               </Text>
-              <Currency
+              <FormattedPrice
                 data-testid="cart-content__subtotal"
                 price={productsSubtotal}
+                currency={currency}
               />
             </div>
           )}
@@ -149,13 +156,13 @@ function CartContent({
                   {item.description || t('cartcontent.shippingfee.title')}
                 </Text>
                 <div className="text-end">
-                  <Currency
+                  <FormattedPrice
                     data-testid={`cart-content__shipping-price-${item.rowId}`}
                     className="whitespace-nowrap"
                     price={Math.max(0, shippingPrice - shippingDiscount)}
                   />
                   {shippingDiscount > 0 && (
-                    <Currency
+                    <FormattedPrice
                       data-testid={`cart-content__shipping-discount-${item.rowId}`}
                       className="whitespace-nowrap text-[10px] text-tertiary"
                       strikethrough
@@ -164,6 +171,7 @@ function CartContent({
                           ? shippingPrice
                           : shippingDiscount
                       }
+                      currency={currency}
                     />
                   )}
                 </div>
@@ -175,10 +183,11 @@ function CartContent({
               <Text data-testid={`cart-content__fee-name-${item.rowId}`}>
                 {item.description || t('cartcontent.handlingfee.title')}
               </Text>
-              <Currency
+              <FormattedPrice
                 className="whitespace-nowrap"
                 price={item[`total${vatSelector}`]}
                 data-testid={`cart-content__fee-price-${item.rowId}`}
+                currency={currency}
               />
             </div>
           ))}
@@ -187,17 +196,22 @@ function CartContent({
               <Text data-testid={`cart-content__tax-name-${item.rowId}`}>
                 {item.description || t('cartcontent.handlingtax.title')}
               </Text>
-              <Currency
+              <FormattedPrice
                 className="whitespace-nowrap"
                 price={item[`total${vatSelector}`]}
                 data-testid={`cart-content__tax-price-${item.rowId}`}
+                currency={currency}
               />
             </div>
           ))}
           {!includingVat && (
             <div className="my-2 flex flex-wrap justify-between text-sm">
               <Text>{t('cartcontent.vat.title')}</Text>
-              <Currency data-testid="cart-content__vat" price={totalVat} />
+              <FormattedPrice
+                data-testid="cart-content__vat"
+                price={totalVat}
+                currency={currency}
+              />
             </div>
           )}
         </div>

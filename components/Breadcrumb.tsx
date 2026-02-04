@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import Link from 'components/Link';
 import { Text } from 'components/elements/Text';
+import { ChevronDown } from 'lucide-react';
 import { NavigationLink } from 'models/navigation';
-import CaretDown from './icons/caret-down';
 
 /**
  * Renders a page hierarchy.
@@ -49,7 +49,7 @@ const Breadcrumb = ({
       </ul>
       <ul className="text-xs md:hidden">
         <li className="flex items-center">
-          <CaretDown className="mr-1 h-2 w-3 flex-shrink-0 rotate-90 stroke-secondary-2 stroke-[20px]" />
+          <ChevronDown className="mr-1 h-5 w-5 flex-shrink-0 rotate-90 text-secondary-2" />
           <Link
             href={breadcrumbs[Math.max(breadcrumbs.length - 2, 0)].url}
             className="cursor-pointer"

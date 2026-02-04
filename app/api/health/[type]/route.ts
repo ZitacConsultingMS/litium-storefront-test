@@ -13,9 +13,12 @@ export async function GET(
   // To ensure request is from Litium Cloud infrastructure the token that
   // is included in the request header can be validated with the environment
   // variable.
-  const expectedCloudToken = process.env.LITIUM_CLOUD_TOKEN;
+  const expectedCloudToken =
+    process.env.LITIUMCLOUD_HEALTH_TOKEN || process.env.LITIUM_CLOUD_TOKEN;
   if (expectedCloudToken) {
-    const cloudToken = request.headers.get('x-litium-cloud-token');
+    const cloudToken =
+      request.headers.get('x-api-key') ||
+      request.headers.get('x-litium-cloud-token');
     if (cloudToken !== expectedCloudToken) {
       return notFound();
     }

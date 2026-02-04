@@ -1,7 +1,7 @@
 const { PHASE_PRODUCTION_BUILD } = require('next/constants');
 
 module.exports = (phase, { defaultConfig }) => {
-  /** @type {import('next').NextConfig.images.remotePatterns} */
+  /** @type {import('next/dist/shared/lib/image-config').RemotePattern[]} */
   var remotePatterns;
 
   // nextjs is converting the environment variables to static strings during build,
@@ -74,7 +74,7 @@ module.exports = (phase, { defaultConfig }) => {
     }
   }
 
-  /** @type {import('next').NextConfig.images} */
+  /** @type {import('next/dist/shared/lib/image-config').ImageConfig} */
   const images = {
     remotePatterns,
     ...(useCloudImageOptimization

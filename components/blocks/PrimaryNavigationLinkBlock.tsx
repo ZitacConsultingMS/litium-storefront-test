@@ -30,6 +30,7 @@ function PrimaryNavigationLinkBlock(props: PrimaryNavigationLinkBlockProps) {
     <HoverableMenu
       navigationLink={props.fields.navigationLink || {}}
       hasChildren={(props.children?.length || 0) > 0}
+      menuId={props.systemId}
     >
       {props.children && (
         <BlockContainer
@@ -42,6 +43,7 @@ function PrimaryNavigationLinkBlock(props: PrimaryNavigationLinkBlockProps) {
     <SlideMenu
       navigationLink={props.fields.navigationLink || {}}
       hasChildren={(props.children?.length || 0) > 0}
+      menuId={props.systemId}
     >
       {props.children && (
         <BlockContainer blocks={props.children}></BlockContainer>

@@ -1,7 +1,7 @@
 ﻿import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
-import List from 'components/icons/list';
 import { useTranslations } from 'hooks/useTranslations';
+import { ListFilter } from 'lucide-react';
 
 /**
  * Renders a filter summary.
@@ -20,7 +20,10 @@ function FilterSummary({
 
   return (
     <div className="flex items-center rounded bg-secondary-3 px-2 py-1 lg:bg-primary lg:px-0 lg:py-2">
-      <List data-testid="filter-summary__icon" />
+      <ListFilter
+        className="h-4 w-4 text-tertiary"
+        data-testid="filter-summary__icon"
+      />
       <Text
         inline={true}
         className="pl-2 text-sm text-primary lg:text-tertiary"

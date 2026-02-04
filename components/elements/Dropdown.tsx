@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import Sidebar from 'components/Sidebar';
 import { Button } from 'components/elements/Button';
-import ArrowDown from 'components/icons/arrow-down';
-import Close from 'components/icons/close';
 import { useTranslations } from 'hooks/useTranslations';
+import { MoveDown, X } from 'lucide-react';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { useClickOutside } from '../../hooks/useClickOutside';
 
@@ -32,6 +31,8 @@ interface DropdownProps {
   textSelector: (option?: any) => string | null;
   selectedOptionSelector: (options: any[]) => any;
   heading?: string;
+  id?: string;
+  prefix?: string;
 }
 export default function Dropdown({
   className,
@@ -40,6 +41,8 @@ export default function Dropdown({
   textSelector,
   heading = '',
   selectedOptionSelector,
+  id,
+  prefix,
 }: DropdownProps) {
   const [visible, setVisible] = useState(false);
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -113,8 +116,13 @@ export default function Dropdown({
         className="flex items-center gap-1 border-none bg-secondary-3 px-2 py-1 text-sm text-primary hover:bg-tertiary"
         data-testid="dropdown__button"
         ref={btnRef}
+        aria-haspopup="dialog"
+        aria-expanded={visible}
+        aria-controls={
+          visible ? `${prefix ? `${prefix}-` : ''}${id}` : undefined
+        }
       >
-        <ArrowDown />
+        <MoveDown className="h-4 w-4 text-tertiary" />
         <div className="first-letter:capitalize">
           {t(textSelector(selectedOptionSelector(options)) || heading)}
         </div>
@@ -126,6 +134,9 @@ export default function Dropdown({
             visible && 'top-10 scale-y-100 opacity-100',
             position
           )}
+          id={`desktop-${id}`}
+          role="dialog"
+          aria-label={`${t('commons.dropdown')} ${id}`}
           data-testid="dropdown__option--desktop-container"
         >
           <ListOptions
@@ -142,6 +153,8 @@ export default function Dropdown({
         </div>
         <div className="max-lg:visible lg:hidden">
           <Sidebar
+            id={`mobile-${id}`}
+            ariaLabel={`${t('commons.dropdown')} ${id}`}
             className="left-0 duration-200"
             visible={visible}
             fullscreen={true}
@@ -159,7 +172,7 @@ export default function Dropdown({
                 onClick={() => setVisible(false)}
                 data-testid="dropdown__close-btn"
               >
-                <Close className="h-4 w-4" />
+                <X className="h-8 w-8" />
               </Button>
             </div>
             <ListOptions

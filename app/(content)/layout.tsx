@@ -1,3 +1,4 @@
+import CartRefreshHandler from 'components/CartRefreshHandler';
 import NavigationHistoryContextProvider from 'contexts/NavigationHistoryContext';
 import CartContextProvider from 'contexts/cartContext';
 import WebsiteContextProvider from 'contexts/websiteContext';
@@ -18,6 +19,7 @@ export default async function RootLayout({
     <CartContextProvider value={cart}>
       <WebsiteContextProvider value={website}>
         <NavigationHistoryContextProvider>
+          <CartRefreshHandler />
           {children}
         </NavigationHistoryContextProvider>
       </WebsiteContextProvider>

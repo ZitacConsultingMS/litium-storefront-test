@@ -8,6 +8,10 @@ websiteTexts:
   minicart.total:
     en-US: Total
     sv-SE: Totalt
-  minicart.closecart:
-    en-US: Close cart
+  minicart.openminicart:
+    en-US: Open mini cart
+    sv-SE: Öppna minivagn
+  minicart.closeminicart:
+    en-US: Close mini cart
     sv-SE: Stäng minivagn
+ 

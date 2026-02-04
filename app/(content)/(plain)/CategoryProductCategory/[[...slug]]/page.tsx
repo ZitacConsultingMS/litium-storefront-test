@@ -105,6 +105,7 @@ export default async function Page(props: {
           <SubCategory subCategories={content.children.nodes} />
         )}
         <ProductSearchResult
+          id="category-search-result"
           products={productSearch}
           totalCount={productSearch.totalCount}
           showLoadMore={true}

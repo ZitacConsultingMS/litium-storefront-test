@@ -2,8 +2,8 @@
 import { Button } from 'components/elements/Button';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
+import { Menu } from 'lucide-react';
 import { useContext } from 'react';
-import HamburgerMenu from '../icons/menu';
 
 /**
  * Represents a client component for rendering a button to open primary navigation.
@@ -11,8 +11,12 @@ import HamburgerMenu from '../icons/menu';
  * @returns
  */
 export default function NavigationMenuButton() {
-  const setVisible = useContext(PrimaryNavigationContext).setVisible;
-  const open = () => setVisible(true);
+  const { setVisible, setActiveMenuId } = useContext(PrimaryNavigationContext);
+  const open = () => {
+    setVisible(true);
+    // Reset activeMenuId when opening the main menu
+    setActiveMenuId(null);
+  };
   const t = useTranslations();
 
   return (
@@ -23,7 +27,7 @@ export default function NavigationMenuButton() {
       data-testid="slide-navigation__hamburger-menu"
       className="!border-0 !bg-transparent p-0 text-primary"
     >
-      <HamburgerMenu />
+      <Menu />
     </Button>
   );
 }

@@ -29,3 +29,21 @@ websiteTexts:
   addressform.zip:
     en-US: Zip
     sv-SE: Postnummer
+  addressform.selectaddress:
+    en-US: Select address
+    sv-SE:
+  addressform.shippingaddress:
+    en-US: Shipping address
+    sv-SE:
+  addressform.billingaddress:
+    en-US: Billing address
+    sv-SE:
+  addressform.contactperson:
+    en-US: Contact person
+    sv-SE:
+  addressform.error.initializing.organization.data:
+    en-US: Unable to load addresses
+    sv-SE:
+  addressform.other.address:
+    en-US: Other address
+    sv-SE:

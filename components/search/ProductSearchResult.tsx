@@ -7,6 +7,7 @@ import FacetedFilterCompact from 'components/productSearch/FacetedFilterCompact'
 import FacetedSearchGroup from 'components/productSearch/FacetedSearchGroup';
 import FilterSummary from 'components/productSearch/FilterSummary';
 import ProductList from 'components/products/ProductList';
+import { useIsMobile } from 'hooks/useIsMobile';
 import { useTranslations } from 'hooks/useTranslations';
 import {
   DistinctFacetItem,
@@ -49,6 +50,7 @@ function ProductSearchResult(props: {
   categoryId?: string;
   sorts?: SearchSortItemInput[];
   productListId?: string;
+  id?: string;
 }) {
   const {
     showFilter = true,
@@ -57,11 +59,13 @@ function ProductSearchResult(props: {
     categoryId,
     sorts,
     productListId,
+    id,
   } = props;
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const t = useTranslations();
+  const isMobile = useIsMobile();
   const onFacetedChange = useDebouncedCallback(
     (value: string, groupId: string) => {
       router.push(
@@ -149,7 +153,7 @@ function ProductSearchResult(props: {
             selectedFilterCount={selectedFilterCount}
             clearFilter={clearFilter}
           />
-          <Accordion>
+          <Accordion id={`${id || 'product-search-result'}-accordion`}>
             {props.products.facets.map((group, groupIndex) => (
               <AccordionPanel
                 header={
@@ -197,6 +201,8 @@ function ProductSearchResult(props: {
           </Text>
           {sortCriteria && sortCriteria.length > 0 && (
             <Dropdown
+              id={`${id || 'product-search-result'}-sort-dropdown`}
+              prefix={isMobile ? 'mobile' : 'desktop'}
               heading={'productsearchresult.sort.title'}
               options={sortCriteria}
               onChange={onSortCriteriaChange}

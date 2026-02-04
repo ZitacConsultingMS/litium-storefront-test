@@ -71,7 +71,7 @@ describe('signInUser', () => {
     await signInUser('/', '', undefined, formData);
     expect(mockRedirect).toHaveBeenCalled();
     expect(mockRedirect).toHaveBeenCalledWith(
-      'https://localhost/?redirectUrl='
+      'https://localhost/?redirectUrl=&refreshCart=true'
     );
   });
 
@@ -93,7 +93,7 @@ describe('signInUser', () => {
     await signInUser('/', 'my-pages', undefined, formData);
     expect(mockRedirect).toHaveBeenCalled();
     expect(mockRedirect).toHaveBeenCalledWith(
-      'https://localhost/?redirectUrl=my-pages'
+      'https://localhost/?redirectUrl=my-pages&refreshCart=true'
     );
   });
 
@@ -188,7 +188,7 @@ describe('signInUser', () => {
     );
     expect(mockRedirect).toHaveBeenCalled();
     expect(mockRedirect).toHaveBeenCalledWith(
-      'https://localhost/?redirectUrl=my-pages'
+      'https://localhost/?redirectUrl=my-pages&refreshCart=true'
     );
   });
 });

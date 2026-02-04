@@ -13,9 +13,10 @@ export default async function Page(props: { searchParams?: Promise<any> }) {
   const searchParams = await props.searchParams;
   const token = (await cookies()).get(Token.Name)?.value;
   const myPagesPageUrl = (await getWebsite()).myPagesPageUrl;
+  const homePageUrl = (await getWebsite()).homePageUrl;
 
   if (!token) {
-    return <Login myPagesPageUrl={myPagesPageUrl} />;
+    return <Login myPagesPageUrl={myPagesPageUrl} homePageUrl={homePageUrl} />;
   }
   let currentUser;
   try {
@@ -25,7 +26,9 @@ export default async function Page(props: { searchParams?: Promise<any> }) {
       error[0].extensions?.code ===
       AuthenticationFailureType.AUTH_NOT_AUTHORIZED
     ) {
-      return <Login myPagesPageUrl={myPagesPageUrl} />;
+      return (
+        <Login myPagesPageUrl={myPagesPageUrl} homePageUrl={homePageUrl} />
+      );
     } else {
       throw error;
     }
@@ -34,7 +37,7 @@ export default async function Page(props: { searchParams?: Promise<any> }) {
     !currentUser?.person ||
     currentUser.person.organizations?.totalCount < 2
   ) {
-    redirect(searchParams?.redirectUrl ?? myPagesPageUrl);
+    redirect(searchParams?.redirectUrl ?? (myPagesPageUrl || homePageUrl));
   }
 
   return (

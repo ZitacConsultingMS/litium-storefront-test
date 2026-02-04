@@ -27,7 +27,6 @@ export default async function Page(props: {
   const data = await withAuthorizedCheck(
     async () => await getContent({ params })
   );
-  const totalCount = data.me?.person?.organizations.totalCount;
   const { name, parents, blocks } = data.content as UserAddressPage;
   const {
     name: topPageName,
@@ -36,7 +35,7 @@ export default async function Page(props: {
   } = await getChildren(
     parents?.nodes.length > 1 ? parents?.nodes[1]?.url : currentUrl
   );
-  const isB2cPerson = totalCount === 0;
+  const isB2cPerson = data.me?.selectedOrganization === null;
   const breadcrumbs = (() => {
     const currentPage: NavigationLink = {
       name: name,
@@ -117,8 +116,10 @@ const GET_CONTENT = gql`
     me {
       person {
         id
-        organizations {
-          totalCount
+      }
+      selectedOrganization {
+        organization {
+          id
         }
       }
     }

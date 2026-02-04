@@ -1,6 +1,7 @@
 'use client';
 import clsx from 'clsx';
 import { useTranslations } from 'hooks/useTranslations';
+import { ChevronDown, X } from 'lucide-react';
 import {
   Fragment,
   useCallback,
@@ -10,8 +11,6 @@ import {
 } from 'react';
 import { useClickOutside } from '../hooks/useClickOutside';
 import { Checkbox } from './elements/Checkbox';
-import CaretDown from './icons/caret-down';
-import Close from './icons/close';
 
 /**
  * Renders a dropdown field.
@@ -140,10 +139,10 @@ function Select({
         !disabled && 'cursor-pointer'
       )}
       role="combobox"
-      aria-label={t('commons.select')}
+      aria-label={placeholder}
       aria-haspopup="listbox"
       aria-expanded={visible}
-      aria-controls="select-dropdown-list"
+      aria-controls={visible ? 'select-dropdown-list' : undefined}
       onKeyDown={(event) => onKeyDown(event, onChange)}
       onClick={toggleDropdown}
       tabIndex={disabled ? -1 : 0}
@@ -197,7 +196,7 @@ function Select({
                       }
                     }}
                   >
-                    <Close className="h-3 w-3" />
+                    <X className="h-4 w-4" />
                   </div>
                 )}
               </div>
@@ -215,8 +214,8 @@ function Select({
           </div>
         )}
         <div className="pl-2.5 pr-10">
-          <CaretDown
-            className={clsx('h-5 w-5 font-bold', disabled && 'opacity-30')}
+          <ChevronDown
+            className={clsx('h-7 w-7 text-[#333]', disabled && 'opacity-30')}
           />
         </div>
       </div>

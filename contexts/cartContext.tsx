@@ -1,6 +1,7 @@
 'use client';
 import { Cart } from 'models/cart';
 import { createContext, useState } from 'react';
+import { get as getCart } from 'services/cartService.client';
 
 export const EmptyCart: Cart = {
   discountInfos: [],
@@ -21,6 +22,7 @@ export const EmptyCart: Cart = {
 type CartType = {
   cart: Cart;
   setCart: (cart: Cart) => void;
+  refreshCart: () => Promise<Cart>;
   hasCartChanged: boolean;
   setHasCartChanged: (value: boolean) => void;
 };
@@ -28,6 +30,7 @@ type CartType = {
 export const CartContext = createContext<CartType>({
   cart: EmptyCart,
   setCart: (_) => {},
+  refreshCart: async () => EmptyCart,
   hasCartChanged: false,
   setHasCartChanged: (_) => {},
 });
@@ -42,9 +45,20 @@ export default function CartContextProvider({
   const [cart, setCart] = useState<Cart>(value);
   const [hasCartChanged, setHasCartChanged] = useState(false);
 
+  const refreshCart = async (): Promise<Cart> => {
+    try {
+      const updatedCart = await getCart();
+      setCart(updatedCart);
+      return updatedCart;
+    } catch (error) {
+      console.error('Failed to refresh cart:', error);
+      throw error;
+    }
+  };
+
   return (
     <CartContext.Provider
-      value={{ cart, setCart, hasCartChanged, setHasCartChanged }}
+      value={{ cart, setCart, refreshCart, hasCartChanged, setHasCartChanged }}
     >
       {children}
     </CartContext.Provider>

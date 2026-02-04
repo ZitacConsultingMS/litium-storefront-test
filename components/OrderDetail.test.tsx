@@ -146,15 +146,13 @@ describe('OrderDetail Component', () => {
       </WebsiteContext.Provider>
     );
 
-    expect(
-      screen.getByTestId(`${mockOrder.orderNumber}__repeat-btn`)
-    ).toHaveTextContent('orderdetail.btn.repeat');
-    expect(
-      screen.getByTestId(`${mockOrder.orderNumber}__approve-btn`)
-    ).toHaveTextContent('orderdetail.btn.approve');
-    expect(
-      screen.getByTestId(`${mockOrder.orderNumber}__print-btn`)
-    ).toHaveTextContent('orderdetail.btn.print');
+    expect(screen.getByTestId(`order-details__repeat-btn`)).toHaveTextContent(
+      'orderdetail.btn.repeat'
+    );
+    expect(screen.getByTestId(`order-details__approve-btn`)).toHaveTextContent(
+      'orderdetail.btn.approve'
+    );
+    expect(screen.getByTestId(`order-details__print-btn`)).toBeVisible();
 
     expect(
       screen.getByText(`orderdetail.order ${mockOrder.orderNumber}`)
@@ -231,9 +229,7 @@ describe('OrderDetail Component', () => {
       />
     );
 
-    await userEvent.click(
-      screen.getByTestId(`${mockOrder.orderNumber}__repeat-btn`)
-    );
+    await userEvent.click(screen.getByTestId(`order-details__repeat-btn`));
     expect(mockRepeat).toHaveBeenCalledWith(productLines);
   });
 
@@ -254,9 +250,7 @@ describe('OrderDetail Component', () => {
       />
     );
 
-    await userEvent.click(
-      screen.getByTestId(`${mockOrder.orderNumber}__approve-btn`)
-    );
+    await userEvent.click(screen.getByTestId(`order-details__approve-btn`));
     expect(mockApprove).toHaveBeenCalledWith(mockOrder.id);
   });
 
@@ -271,9 +265,7 @@ describe('OrderDetail Component', () => {
       />
     );
 
-    await userEvent.click(
-      screen.getByTestId(`${mockOrder.orderNumber}__print-btn`)
-    );
+    await userEvent.click(screen.getByTestId(`order-details__print-btn`));
     expect(windowPrint).toHaveBeenCalledWith();
   });
 });

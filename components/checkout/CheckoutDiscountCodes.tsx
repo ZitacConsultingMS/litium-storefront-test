@@ -1,11 +1,11 @@
 'use client';
 import { yupResolver } from '@hookform/resolvers/yup';
+import Tag from 'components/Tag';
 import { Button } from 'components/elements/Button';
 import InputField from 'components/form/InputField';
-import CircleCheckMark from 'components/icons/circle-check-mark';
-import Tag from 'components/Tag';
 import { CartContext } from 'contexts/cartContext';
 import { useTranslations } from 'hooks/useTranslations';
+import { CircleCheckBig } from 'lucide-react';
 import { Fragment, useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import {
@@ -84,6 +84,7 @@ function CheckoutDiscountCodes() {
               name="code"
               placeholder={t('checkoutdiscountcodes.entercode')}
               data-testid="checkout__discount-code--input"
+              autocomplete="one-time-code"
             ></InputField>
           </div>
           <Button
@@ -105,7 +106,10 @@ function CheckoutDiscountCodes() {
                 text={item}
                 onRemove={handleRemoveCode}
                 icon={
-                  <CircleCheckMark className="mr-2 h-4 w-4"></CircleCheckMark>
+                  <CircleCheckBig
+                    className="mr-2 h-5 w-5"
+                    color="green"
+                  ></CircleCheckBig>
                 }
               ></Tag>
             );

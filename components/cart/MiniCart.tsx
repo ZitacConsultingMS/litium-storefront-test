@@ -1,13 +1,12 @@
 'use client';
 import clsx from 'clsx';
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import Link from 'components/Link';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
-import Cart from 'components/icons/cart';
-import Close from 'components/icons/close';
 import { CartContext } from 'contexts/cartContext';
 import { useTranslations } from 'hooks/useTranslations';
+import { ShoppingCart, X } from 'lucide-react';
 import { Fragment, useCallback, useContext, useState } from 'react';
 import { calculateTotalProducts } from 'services/discountService';
 import Sidebar from '../Sidebar';
@@ -34,12 +33,17 @@ function MiniCart({ checkoutPageUrl }: { checkoutPageUrl: string }) {
       <Button
         className="relative !border-0 !bg-transparent p-0 text-primary"
         onClick={() => setShowCartInfo(true)}
-        aria-label={t('minicart.title')}
+        aria-haspopup="dialog"
+        aria-expanded={showCartInfo}
+        aria-controls={showCartInfo ? 'sidebar-mini-cart' : undefined}
       >
-        <Cart data-testid="mini-cart__bag" />
+        <span className="sr-only">{t('minicart.openminicart')}</span>
+        <ShoppingCart data-testid="mini-cart__bag" />
         {productCount ? <Badge count={productCount} /> : ''}
       </Button>
       <Sidebar
+        id="sidebar-mini-cart"
+        ariaLabel={t('minicart.title')}
         visible={showCartInfo}
         onClose={onClose}
         className="flex flex-col overflow-auto sm:w-[400px]"
@@ -49,15 +53,20 @@ function MiniCart({ checkoutPageUrl }: { checkoutPageUrl: string }) {
       >
         {/* header sidebar */}
         <div className="flex items-center justify-between">
-          <Text inline={true} className="text-lg sm:text-2xl">
+          <Text
+            inline={true}
+            className="text-lg sm:text-2xl"
+            role="heading"
+            aria-level={2}
+          >
             {t('minicart.title')}
           </Text>
           <Button
             className="!border-0 !bg-transparent p-0 text-primary"
             onClick={onClose}
-            aria-label={t('minicart.closecart')}
+            aria-label={t('minicart.closeminicart')}
           >
-            <Close />
+            <X className="h-8 w-8" />
           </Button>
         </div>
         {/* body sidebar */}
@@ -73,7 +82,7 @@ function MiniCart({ checkoutPageUrl }: { checkoutPageUrl: string }) {
         <div className="sticky -bottom-5 -my-5 bg-primary pb-5">
           <div className="mb-3 flex justify-between">
             <Text inline={true}>{t('minicart.total')}</Text>
-            <Currency price={totalInMiniCart} />
+            <FormattedPrice price={totalInMiniCart} />
           </div>
           <Link
             href={checkoutPageUrl || ''}

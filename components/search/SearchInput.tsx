@@ -2,8 +2,8 @@
 import clsx from 'clsx';
 import { Button } from 'components/elements/Button';
 import { Input } from 'components/elements/Input';
-import CircleXMark from 'components/icons/circle-xmark';
-import Magnifier from 'components/icons/magnifier';
+import { CircleX, Search } from 'lucide-react';
+
 import { useTranslations } from 'hooks/useTranslations';
 import React from 'react';
 
@@ -26,8 +26,14 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
       }
     };
     return (
-      <div className="relative flex h-11 w-full items-center sm:w-96">
-        <Magnifier className="absolute h-6 w-6 text-tertiary" />
+      <div
+        className="relative flex h-11 w-full items-center sm:w-96"
+        role="search"
+      >
+        <Search className="absolute h-6 w-6 text-tertiary" />
+        <label htmlFor={id || 'searchInput'} className="sr-only">
+          {t('searchinput.placeholder')}
+        </label>
         <Input
           id={id || 'searchInput'}
           className="w-full text-ellipsis px-8 text-2xl focus:border-0 focus:shadow-none focus:outline-none"
@@ -51,7 +57,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
           data-testid="search__clear"
           aria-label={t('searchinput.clear')}
         >
-          <CircleXMark />
+          <CircleX />
         </Button>
       </div>
     );

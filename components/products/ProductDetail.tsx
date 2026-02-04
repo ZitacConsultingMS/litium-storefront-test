@@ -201,9 +201,10 @@ export default async function ProductDetail(props: ProductDetailProps) {
         </div>
       )}
       <Accordion
+        id="product-detail-accordion"
         classCssHeader="[&>p]:text-h2 [&>p]:pl-5 [&>svg]:mr-5 -mx-5 lg:-mr-10 xl:ml-0 xl:-mr-5"
         classCssContent="-mx-5 px-5 lg:-mr-10 xl:ml-0 xl:-mr-5"
-        classCssIcon="text-h2 h-5 w-5"
+        classCssIcon="text-h2 !h-8 !w-8"
         className="container mx-auto"
       >
         {fieldGroups &&

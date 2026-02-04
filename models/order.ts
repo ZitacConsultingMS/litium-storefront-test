@@ -1,5 +1,5 @@
 import { OrderAddress } from './address';
-import { DiscountInfo } from './cart';
+import { Currency, DiscountInfo } from './cart';
 import { ProductItem } from './products';
 
 export interface Order {
@@ -18,6 +18,7 @@ export interface Order {
   totalFeesExcludingVat?: number;
   shippingCostIncludingVat?: number;
   shippingCostExcludingVat?: number;
+  currency: Currency;
 }
 
 export interface OrderRow {

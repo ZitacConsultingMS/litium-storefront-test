@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 import Link from 'components/Link';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
+import { useTranslations } from 'hooks/useTranslations';
 import { LinkFieldDefinition } from 'models/navigation';
 import React, { useContext } from 'react';
 
@@ -14,27 +15,48 @@ export default function HoverableMenu(props: {
   navigationLink: LinkFieldDefinition;
   hasChildren: boolean;
   children: React.JSX.Element | React.JSX.Element[] | undefined;
+  menuId?: string;
 }) {
-  const { visible, setVisible, isFocused, setIsFocused } = useContext(
-    PrimaryNavigationContext
-  );
+  const {
+    visible,
+    setVisible,
+    isFocused,
+    setIsFocused,
+    activeMenuId,
+    setActiveMenuId,
+  } = useContext(PrimaryNavigationContext);
+  const t = useTranslations();
   const { text, url } = props.navigationLink;
-
+  const menuId = props.menuId || text;
   const onMouseEnter = () => {
     setTimeout(() => {
-      setVisible(props.hasChildren ? true : false);
+      if (props.hasChildren) {
+        setVisible(true);
+        setActiveMenuId(menuId);
+      } else {
+        setVisible(false);
+        setActiveMenuId(null);
+      }
       setIsFocused(false);
     }, 300);
   };
 
   const onFocus = () => {
-    setVisible(props.hasChildren ? true : false);
-    setIsFocused(props.hasChildren ? true : false);
+    if (props.hasChildren) {
+      setVisible(true);
+      setActiveMenuId(menuId);
+      setIsFocused(true);
+    } else {
+      setVisible(false);
+      setActiveMenuId(null);
+      setIsFocused(false);
+    }
   };
 
   const close = () => {
     setVisible(false);
     setIsFocused(false);
+    setActiveMenuId(null);
   };
 
   const onBlur = (e: React.FocusEvent | React.MouseEvent) => {
@@ -68,16 +90,21 @@ export default function HoverableMenu(props: {
       onBlur={onBlur}
       onKeyDown={onKeyDown}
       role="menuitem"
-      aria-haspopup={props.hasChildren}
-      aria-expanded={visible}
-      aria-controls={props.hasChildren ? 'dropdown-menu' : undefined}
-      aria-label={text}
     >
       {url && (
         <Link
           href={url}
           onClick={close}
           data-testid="primary-navigation-link__link"
+          aria-haspopup={props.hasChildren ? 'dialog' : undefined}
+          aria-expanded={
+            activeMenuId === menuId && props.hasChildren && visible
+          }
+          aria-controls={
+            activeMenuId === menuId && props.hasChildren && visible
+              ? `dropdown-menu-${menuId}`
+              : undefined
+          }
         >
           {text}
         </Link>
@@ -85,6 +112,7 @@ export default function HoverableMenu(props: {
       {!url && text}
       {props.hasChildren && visible && (
         <div
+          id={`dropdown-menu-${menuId}`}
           className={clsx(
             'fixed left-0 top-20 w-screen origin-top scale-y-0 bg-primary opacity-0 transition delay-300 duration-200',
             isFocused

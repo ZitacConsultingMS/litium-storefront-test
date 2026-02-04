@@ -115,11 +115,7 @@ function Banner({
 
   if (url) {
     return (
-      <Link
-        href={url}
-        data-testid="block-banner__link-href"
-        aria-label={banner.actionText || banner.linkText || ''}
-      >
+      <Link href={url} data-testid="block-banner__link-href">
         <BannerImage
           banner={banner}
           priority={priority}
@@ -159,13 +155,13 @@ function BannerImage({
           height={banner.blockImagePointer.item.dimension.height}
           width={banner.blockImagePointer.item.dimension.width}
           sizes={sizes}
-          alt={banner.actionText || banner.linkText || ''}
           style={{
             width: '100%',
             objectFit: 'cover',
             maxHeight: banner.blockImagePointer.item.dimension.height,
           }}
           data-testid="block-banner__image"
+          alt=""
         />
       )}
       <div className="absolute left-[50%] top-[50%] w-10/12 translate-x-[-50%] translate-y-[-50%] text-center">

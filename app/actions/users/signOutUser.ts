@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import { mutateServer } from 'services/dataService.server';
 import { get } from 'services/websiteService.server';
 import { setCookieFromResponse } from 'utils/cookies';
+import { getHost } from 'utils/headers';
 
 export const signOutUser = async () => {
   const result = await mutateServer({
@@ -14,7 +15,9 @@ export const signOutUser = async () => {
   });
   setCookieFromResponse(result);
   const websites = await get();
-  redirect(websites.homePageUrl);
+  const homeUrl = new URL(websites.homePageUrl, await getHost());
+  homeUrl.searchParams.append('refreshCart', 'true');
+  redirect(homeUrl.href);
 };
 const SIGN_OUT_USER = gql`
   mutation signOutUser($input: SignOutUserInput!) {

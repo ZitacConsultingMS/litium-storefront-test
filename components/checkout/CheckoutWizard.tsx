@@ -1,4 +1,5 @@
 'use client';
+import { gql } from '@apollo/client';
 import { Button } from 'components/elements/Button';
 import { Checkbox } from 'components/elements/Checkbox';
 import { Heading2 } from 'components/elements/Heading';
@@ -25,6 +26,7 @@ import {
   updateShippingWidget,
   validateCart,
 } from 'services/checkoutService.client';
+import { queryClient } from 'services/dataService.client';
 import { calculateTotalFees } from 'services/discountService';
 import {
   PaymentIntegrationType,
@@ -33,6 +35,7 @@ import {
 import { withErrorCatch } from 'utils/withErrorCatch';
 import AddressForm from './AddressForm';
 import AddressSummary from './AddressSummary';
+import B2BAddressForm from './B2BAddressForm';
 import DeliveryOptions from './DeliveryOptions';
 import DeliverySummary from './DeliverySummary';
 import PaymentOptions from './PaymentOptions';
@@ -80,6 +83,9 @@ function CheckoutWizard(props: { state?: Checkout }) {
   );
   const [paymentOptions, setPaymentOptions] = useState<CheckoutOption[]>(
     filterPayment(checkout.paymentOptions)
+  );
+  const [isB2BPerson, setIsB2BPerson] = useState<boolean | undefined>(
+    undefined
   );
 
   // Helper function to select default shipping option based on integration type
@@ -329,6 +335,15 @@ function CheckoutWizard(props: { state?: Checkout }) {
     setIsWidgetReady(true);
   }, []);
 
+  useEffect(() => {
+    const checkIfB2BPerson = async () => {
+      const result = await getIsB2BPerson();
+      setIsB2BPerson(result);
+    };
+
+    checkIfB2BPerson();
+  }, []);
+
   switch (step) {
     case STEP_DELIVERY_ADDRESS:
       return (
@@ -336,24 +351,57 @@ function CheckoutWizard(props: { state?: Checkout }) {
           <Heading2 className="mb-5">
             {t('checkoutwizard.deliveryaddress.title')}
           </Heading2>
-          <AddressForm
-            value={shippingAddress}
-            onSubmit={async (address: OrderAddress) => {
-              const customerDetails: OrderCustomerDetails = {
-                firstName: address.firstName,
-                lastName: address.lastName,
-                email: address.email,
-                phone: address.phoneNumber,
-                customerType: 'PERSON',
-              };
-              await saveAddresses({
-                shippingAddress: address,
-                billingAddress: address,
-                customerDetails,
-              });
-              setStep(STEP_DELIVERY_OPTION);
-            }}
-          />
+          {!isB2BPerson && (
+            <AddressForm
+              value={shippingAddress}
+              onSubmit={async (address: OrderAddress) => {
+                const customerDetails: OrderCustomerDetails = {
+                  firstName: address.firstName,
+                  lastName: address.lastName,
+                  email: address.email,
+                  phone: address.phoneNumber,
+                  customerType: 'PERSON',
+                };
+                const { __typename, ...billingAddressWithoutTypename } =
+                  billingAddress as any;
+                await saveAddresses({
+                  shippingAddress: address,
+                  billingAddress:
+                    !useSameAddress && isBillingAddressComplete(billingAddress)
+                      ? billingAddressWithoutTypename
+                      : address,
+                  customerDetails,
+                });
+                setStep(STEP_DELIVERY_OPTION);
+              }}
+            />
+          )}
+          {isB2BPerson && (
+            <B2BAddressForm
+              value={shippingAddress}
+              onSubmit={async (address: OrderAddress) => {
+                const customerDetails: OrderCustomerDetails = {
+                  firstName: address.firstName,
+                  lastName: address.lastName,
+                  email: address.email,
+                  phone: address.phoneNumber,
+                  customerType: 'ORGANIZATION',
+                };
+                delete address.idAddress;
+                const { __typename, ...billingAddressWithoutTypename } =
+                  billingAddress as any;
+                await saveAddresses({
+                  shippingAddress: address,
+                  billingAddress:
+                    !useSameAddress && isBillingAddressComplete(billingAddress)
+                      ? billingAddressWithoutTypename
+                      : address,
+                  customerDetails,
+                });
+                setStep(STEP_DELIVERY_OPTION);
+              }}
+            />
+          )}
         </div>
       );
     case STEP_DELIVERY_OPTION:
@@ -457,7 +505,15 @@ function CheckoutWizard(props: { state?: Checkout }) {
                 <Checkbox
                   id="checkoutWizardCheckbox"
                   checked={useSameAddress}
-                  onChange={() => setUseSameAddress(!useSameAddress)}
+                  onChange={() => {
+                    setUseSameAddress(!useSameAddress);
+                    if (!useSameAddress) {
+                      const { __typename, ...addressWithoutTypename } =
+                        shippingAddress as any;
+                      saveBillingAddress(addressWithoutTypename);
+                      setHasAltAddress(false);
+                    }
+                  }}
                   data-testid="checkout-wizard__checkbox"
                 >
                   <Text inline={true} className="text-sm">
@@ -469,14 +525,28 @@ function CheckoutWizard(props: { state?: Checkout }) {
           )}
           {!useSameAddress && !hasAltAddress && (
             <div data-testid="checkout-wizard__billing-address-form">
-              <AddressForm
-                value={billingAddress}
-                onSubmit={(address: OrderAddress) =>
-                  saveBillingAddress(address).finally(() => {
-                    setHasAltAddress(true);
-                  })
-                }
-              />
+              {!isB2BPerson && (
+                <AddressForm
+                  value={billingAddress}
+                  onSubmit={(address: OrderAddress) =>
+                    saveBillingAddress(address).finally(() => {
+                      setHasAltAddress(true);
+                    })
+                  }
+                />
+              )}
+              {isB2BPerson && (
+                <B2BAddressForm
+                  value={billingAddress}
+                  onSubmit={(address: OrderAddress) => {
+                    delete address.idAddress;
+                    saveBillingAddress(address).finally(() => {
+                      setHasAltAddress(true);
+                    });
+                  }}
+                  isBillingAddress={true}
+                />
+              )}
             </div>
           )}
           {!useSameAddress && hasAltAddress && (
@@ -647,5 +717,52 @@ const DefaultCheckoutState = {
     termUrl: '',
   },
 };
+
+const getIsB2BPerson = async function () {
+  try {
+    const result = await queryClient({
+      query: GET_IS_B2B_PERSON,
+      url: '/',
+      fetchPolicy: 'network-only',
+    });
+    return result?.me?.selectedOrganization !== null;
+  } catch (error: any) {
+    return false;
+  }
+};
+
+const GET_IS_B2B_PERSON = gql`
+  query GetIsB2BPerson {
+    me {
+      person {
+        id
+      }
+      selectedOrganization {
+        organization {
+          id
+        }
+      }
+    }
+  }
+`;
+
+function isBillingAddressComplete(billingAddress: OrderAddress): boolean {
+  if (!billingAddress) return false;
+  const requiredFields: (keyof OrderAddress)[] = [
+    'firstName',
+    'lastName',
+    'address1',
+    'zipCode',
+    'city',
+    'country',
+    'email',
+    'phoneNumber',
+  ];
+
+  return requiredFields.every((field) => {
+    const value = billingAddress[field];
+    return typeof value === 'string' && value.trim().length > 0;
+  });
+}
 
 export default CheckoutWizard;

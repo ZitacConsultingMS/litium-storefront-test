@@ -20,12 +20,14 @@ export function InputNumber({
   value,
   onChange,
   positiveNumber = false,
+  autocomplete = 'off',
   ...props
 }: {
   id: string;
   value: number;
   onChange: (value: any) => void;
   positiveNumber?: boolean;
+  autocomplete?: string;
 }) {
   const formatPositiveNumber = (value: any) => {
     return !!value && Math.abs(value) >= 0 ? Math.abs(value) : null;
@@ -34,7 +36,7 @@ export function InputNumber({
     <Input
       id={id}
       className="w-16 border border-secondary-2 p-1 text-sm focus:shadow-none focus:outline-none"
-      autoComplete="off"
+      autoComplete={autocomplete}
       value={value}
       type="number"
       onChange={(event) => onChange(event.target.value)}
@@ -59,6 +61,7 @@ export interface InputTextProps
   id: string;
   className?: string;
   disabled?: boolean;
+  autocomplete?: string;
 }
 /**
  * Render a text input with placeholder.
@@ -68,6 +71,7 @@ export interface InputTextProps
  * @param id an unique id of the input
  * @param onChange event occurs when value of the input text is changed
  * @param className a customize class name
+ * @param autocomplete a value for the autocomplete attribute
  */
 export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
   (
@@ -79,6 +83,7 @@ export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
       id,
       className = '',
       disabled = false,
+      autocomplete = 'off',
       ...props
     },
     ref
@@ -99,7 +104,7 @@ export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
         name={id}
         id={id}
         ref={ref}
-        autoComplete="off"
+        autoComplete={autocomplete}
         disabled={disabled}
         {...props}
       />

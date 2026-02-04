@@ -20,6 +20,9 @@ jest.mock('react', () => ({
 jest.mock('services/dataService.client', () => ({
   queryClient: jest.fn(),
 }));
+jest.mock('services/dataService.server', () => ({
+  queryServer: jest.fn(),
+}));
 jest.mock('app/actions/users/signInUser', () => ({
   signInUser: jest.fn(),
 }));
@@ -27,14 +30,14 @@ jest.mock('app/actions/users/signInUser', () => ({
 describe('Login component', () => {
   describe('Login form', () => {
     test('should render login form as default', async () => {
-      render(<Login myPagesPageUrl="/my-pages" />);
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
       expect(screen.getByTestId('login-form__username')).toBeInTheDocument();
       expect(screen.getByTestId('login-form__password')).toBeInTheDocument();
       expect(screen.getByTestId('login-form__submit')).toBeInTheDocument();
     });
 
     test('should show required error for username and password after clicking submitting empty form', async () => {
-      render(<Login myPagesPageUrl="/my-pages" />);
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
       await userEvent.click(screen.getByTestId('login-form__submit'));
       expect(screen.queryAllByTestId('error-text')).toHaveLength(2);
       expect(screen.queryAllByTestId('error-text')[0].textContent).toContain(
@@ -56,7 +59,7 @@ describe('Login component', () => {
         jest.fn(),
         false,
       ]);
-      render(<Login myPagesPageUrl="/my-pages" />);
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
       const form = screen.getByRole('form');
       form.onsubmit = jest.fn().mockImplementation((e) => e.preventDefault());
 
@@ -80,7 +83,7 @@ describe('Login component', () => {
         jest.fn(),
         false,
       ]);
-      render(<Login myPagesPageUrl="/my-pages" />);
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
       const form = screen.getByRole('form');
       form.onsubmit = jest.fn().mockImplementation((e) => e.preventDefault());
 
@@ -91,6 +94,20 @@ describe('Login component', () => {
       expect(screen.queryAllByTestId('error-text')[0].textContent).toContain(
         'login.lockedouterror'
       );
+    });
+
+    test('should render forgot password link', () => {
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
+      const forgotPasswordLink = screen.getByText('forgotpassword.title');
+      expect(forgotPasswordLink).toBeInTheDocument();
+      expect(forgotPasswordLink).toHaveClass('cursor-pointer');
+    });
+
+    test('should render forgot password form when forgot password link is clicked', async () => {
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
+      const forgotPasswordLink = screen.getByText('forgotpassword.title');
+      await userEvent.click(forgotPasswordLink);
+      expect(screen.getByTestId('forgot-password')).toBeInTheDocument();
     });
   });
 
@@ -113,7 +130,7 @@ describe('Login component', () => {
           },
         },
       });
-      render(<Login myPagesPageUrl="/my-pages" />);
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
 
       await userEvent.type(screen.getByTestId('login-form__username'), 'foo');
       await userEvent.type(screen.getByTestId('login-form__password'), 'foo');
@@ -153,7 +170,7 @@ describe('Login component', () => {
           },
         },
       });
-      render(<Login myPagesPageUrl="/my-pages" />);
+      render(<Login myPagesPageUrl="/my-pages" homePageUrl="/" />);
 
       await userEvent.type(screen.getByTestId('login-form__username'), 'foo');
       await userEvent.type(screen.getByTestId('login-form__password'), 'foo');

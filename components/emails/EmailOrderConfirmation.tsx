@@ -12,7 +12,7 @@ import {
   Text,
 } from '@react-email/components';
 import { OrderAddress } from 'models/address';
-import { DiscountInfo } from 'models/cart';
+import { Currency, DiscountInfo } from 'models/cart';
 import { OrderRow } from 'models/order';
 import { get as getCart } from 'services/cartService.server';
 import {
@@ -27,10 +27,11 @@ import {
 } from 'services/discountService';
 import { getAbsoluteImageUrl } from 'services/imageService';
 import { get as getWebsite } from 'services/websiteService.server';
-import Currency from '../Currency.server';
+import FormattedPrice from '../FormattedPrice.server';
 
 async function EmailOrderConfirmation(
   receipt: {
+    currency: Currency;
     rows: OrderRow[];
     discountInfos: DiscountInfo[];
     shippingAddress: OrderAddress;
@@ -53,6 +54,7 @@ async function EmailOrderConfirmation(
     totalVat,
     orderNumber,
     customerDetails,
+    currency,
   } = receipt;
   const cart = await getCart();
   const { showPricesIncludingVat: includingVat } = cart;
@@ -125,7 +127,7 @@ async function EmailOrderConfirmation(
                 <ProductLineItem
                   key={item.articleNumber}
                   culture={website.culture.code}
-                  currency={cart.currency}
+                  currency={currency}
                   imageServerUrl={website.imageServerUrl}
                   includingVat={includingVat}
                   {...props}
@@ -141,11 +143,11 @@ async function EmailOrderConfirmation(
                   </Text>
                 </Column>
                 <Column align="right">
-                  <Currency
+                  <FormattedPrice
                     className="m-0 mt-2 text-red-600"
                     price={item.resultOrderRow[`total${vatSelector}`]}
                     culture={website.culture.code}
-                    currency={cart.currency}
+                    currency={currency}
                   />
                 </Column>
               </Row>
@@ -160,11 +162,11 @@ async function EmailOrderConfirmation(
                   </Text>
                 </Column>
                 <Column align="right">
-                  <Currency
+                  <FormattedPrice
                     className="m-0 mt-2"
                     price={productsSubtotal}
                     culture={website.culture.code}
-                    currency={cart.currency}
+                    currency={currency}
                   />
                 </Column>
               </Row>
@@ -185,14 +187,14 @@ async function EmailOrderConfirmation(
                     </Text>
                   </Column>
                   <Column align="right">
-                    <Currency
+                    <FormattedPrice
                       className="m-0 mt-2"
                       price={Math.max(0, shippingPrice - shippingDiscount)}
                       culture={website.culture.code}
-                      currency={cart.currency}
+                      currency={currency}
                     />
                     {shippingDiscount > 0 && (
-                      <Currency
+                      <FormattedPrice
                         className="m-0 mt-2 text-[10px] text-tertiary"
                         strikethrough
                         price={
@@ -201,7 +203,7 @@ async function EmailOrderConfirmation(
                             : shippingDiscount
                         }
                         culture={website.culture.code}
-                        currency={cart.currency}
+                        currency={currency}
                       />
                     )}
                   </Column>
@@ -217,11 +219,11 @@ async function EmailOrderConfirmation(
                   </Text>
                 </Column>
                 <Column align="right">
-                  <Currency
+                  <FormattedPrice
                     className="m-0 mt-2"
                     price={item[`total${vatSelector}`]}
                     culture={website.culture.code}
-                    currency={cart.currency}
+                    currency={currency}
                   />
                 </Column>
               </Row>
@@ -235,11 +237,11 @@ async function EmailOrderConfirmation(
                   </Text>
                 </Column>
                 <Column align="right">
-                  <Currency
+                  <FormattedPrice
                     className="m-0 mt-2"
                     price={item[`total${vatSelector}`]}
                     culture={website.culture.code}
-                    currency={cart.currency}
+                    currency={currency}
                   />
                 </Column>
               </Row>
@@ -252,11 +254,11 @@ async function EmailOrderConfirmation(
                   </Text>
                 </Column>
                 <Column align="right">
-                  <Currency
+                  <FormattedPrice
                     className="m-0 mt-2"
                     price={totalVat}
                     culture={website.culture.code}
-                    currency={cart.currency}
+                    currency={currency}
                   />
                 </Column>
               </Row>
@@ -268,11 +270,11 @@ async function EmailOrderConfirmation(
                 </Text>
               </Column>
               <Column align="right">
-                <Currency
+                <FormattedPrice
                   className="m-0 mt-2"
                   price={grandTotal}
                   culture={website.culture.code}
-                  currency={cart.currency}
+                  currency={currency}
                 />
               </Column>
             </Row>
@@ -338,7 +340,7 @@ function ProductLineItem(props: any) {
             </Text>
           </Column>
           <Column className="text-end align-top" align="right">
-            <Currency
+            <FormattedPrice
               className="inline text-xs"
               price={discountedPrice}
               culture={culture}
@@ -346,7 +348,7 @@ function ProductLineItem(props: any) {
             />
             {asterisk && <span className="text-xs">&nbsp;*</span>}
             {shouldShowOriginalPrice(discountInfos) && (
-              <Currency
+              <FormattedPrice
                 className="text-[10px]"
                 price={itemTotalPrice}
                 strikethrough

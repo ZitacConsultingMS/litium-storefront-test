@@ -1,0 +1,10 @@
+websiteTexts:
+  emailverificationcode.emailsubject:
+    en-US: Verify your email
+    sv-SE: Bekräfta din e-post
+  emailverificationcode.emailcontent:
+    en-US: Your verification code is {code}.
+    sv-SE: Din verifieringskod är {code}.
+  emailverificationcode.emailnote:
+    en-US: This code will expire in 15 minutes. If you did not make this request, please disregard this email.
+    sv-SE: Koden upphör att gälla efter 15 minuter. Om du inte gjorde denna begäran, vänligen bortse från det här e-postmeddelandet.

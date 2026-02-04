@@ -2,11 +2,10 @@
 import { gql } from '@apollo/client';
 import Sidebar from 'components/Sidebar';
 import { Button } from 'components/elements/Button';
-import Close from 'components/icons/close';
-import Magnifier from 'components/icons/magnifier';
 import SearchInput from 'components/search/SearchInput';
 import SearchResult from 'components/search/SearchResult';
 import { useTranslations } from 'hooks/useTranslations';
+import { Search, X } from 'lucide-react';
 import { CategorySearchQueryInput } from 'models/categorySearchQueryInput';
 import { PageSearchQueryInput } from 'models/pageSearchQueryInput';
 import { ProductSearchQueryInput } from 'models/productSearchQueryInput';
@@ -90,10 +89,15 @@ function QuickSearch({ searchResultPageUrl }: { searchResultPageUrl: string }) {
         onClick={handleShowForm}
         data-testid="header__magnifier"
         aria-label={t('commons.opensearch')}
+        aria-haspopup="dialog"
+        aria-expanded={searchBoxVisibility}
+        aria-controls={searchBoxVisibility ? 'sidebar-quicksearch' : undefined}
       >
-        <Magnifier />
+        <Search />
       </Button>
       <Sidebar
+        id="sidebar-quicksearch"
+        ariaLabel={t('commons.quicksearch')}
         visible={searchBoxVisibility}
         fullscreen={true}
         position="top"
@@ -111,7 +115,7 @@ function QuickSearch({ searchResultPageUrl }: { searchResultPageUrl: string }) {
                 onClick={handleCloseForm}
                 data-testid="quicksearch__close"
               >
-                <Close />
+                <X className="h-8 w-8" />
               </Button>
             </div>
             <SearchInput

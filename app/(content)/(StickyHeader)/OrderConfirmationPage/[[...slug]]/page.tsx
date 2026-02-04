@@ -100,6 +100,12 @@ const GET_RECEIPT = gql`
     }
     receipt {
       order {
+        currency {
+          code
+          symbol
+          symbolPosition
+          minorUnits
+        }
         customerDetails {
           email
           phone

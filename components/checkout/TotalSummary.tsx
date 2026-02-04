@@ -1,5 +1,5 @@
 'use client';
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
 import ErrorText, { ErrorField } from 'components/form/ErrorText';
@@ -20,7 +20,7 @@ const TotalSummary = (props: {
   return (
     <div className="text-center">
       <Text className="mb-3 text-sm">{t('totalsummary.totalVAT')}</Text>
-      <Currency
+      <FormattedPrice
         price={grandTotal}
         className="mb-5 text-xl font-bold"
         data-testid="total-summary__grand-total"

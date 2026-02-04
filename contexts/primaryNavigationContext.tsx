@@ -6,6 +6,8 @@ type PrimaryNavigationStateType = {
   setVisible: (visible: boolean) => void;
   isFocused: boolean;
   setIsFocused: (isFocused: boolean) => void;
+  activeMenuId: string | null;
+  setActiveMenuId: (menuId: string | null) => void;
 };
 
 export const PrimaryNavigationContext =
@@ -14,6 +16,8 @@ export const PrimaryNavigationContext =
     setVisible: (_) => {},
     isFocused: false,
     setIsFocused: (_) => {},
+    activeMenuId: null,
+    setActiveMenuId: (_) => {},
   });
 
 export default function PrimaryNavigationProvider({
@@ -25,10 +29,18 @@ export default function PrimaryNavigationProvider({
 }) {
   const [visible, setVisible] = useState<boolean>(value ?? false);
   const [isFocused, setIsFocused] = useState<boolean>(false);
+  const [activeMenuId, setActiveMenuId] = useState<string | null>(null);
 
   return (
     <PrimaryNavigationContext.Provider
-      value={{ visible, setVisible, isFocused, setIsFocused }}
+      value={{
+        visible,
+        setVisible,
+        isFocused,
+        setIsFocused,
+        activeMenuId,
+        setActiveMenuId,
+      }}
     >
       {children}
     </PrimaryNavigationContext.Provider>

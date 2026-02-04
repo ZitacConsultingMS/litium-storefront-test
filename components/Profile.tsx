@@ -1,5 +1,5 @@
 import Link from 'components/Link';
-import User from './icons/user';
+import { User } from 'lucide-react';
 
 function Profile({ myPagesPageUrl }: { myPagesPageUrl: string }) {
   return (

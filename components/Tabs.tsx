@@ -79,7 +79,7 @@ const Tabs = ({
       role="tab"
       id={`tab-${index}`}
       aria-selected={activeTab === index}
-      aria-controls={`panel-${index}`}
+      aria-controls={activeTab === index ? `panel-${index}` : undefined}
       tabIndex={activeTab === index ? 0 : -1}
       onClick={() => onTabChange && onTabChange(index)}
       onKeyDown={(event: React.KeyboardEvent) => handleKeyDown(event, index)}
@@ -97,7 +97,6 @@ const Tabs = ({
     <Fragment>
       <div
         role="tablist"
-        aria-label={t('commons.contenttabs')}
         className={clsx(
           'flex gap-8 bg-primary',
           'after:content=[""] after:absolute after:bottom-0 after:right-0 after:z-0 after:h-[1px] after:w-full after:bg-secondary-4',

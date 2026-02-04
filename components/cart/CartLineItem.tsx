@@ -1,11 +1,12 @@
 'use client';
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import Link from 'components/Link';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
 import { CartContext } from 'contexts/cartContext';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
+import { Currency } from 'models/cart';
 import { OrderRow } from 'models/order';
 import Image from 'next/image';
 import { Fragment, useContext, useEffect, useState } from 'react';
@@ -21,17 +22,20 @@ import QuantityInput from './QuantityInput';
 /**
  * Renders a line item in cart.
  * @param item a cart line item object.
+ * @param currency optional currency object. If not provided, the currency from the cart will be used.
  */
 function CartLineItem({
   item,
   asterisk = false,
   updatable = true,
   includingVat = true,
+  currency,
 }: {
   item: OrderRow;
   asterisk?: boolean;
   updatable?: boolean;
   includingVat?: boolean;
+  currency?: Currency;
 }) {
   const vatSelector = getVatSelector(includingVat);
   const cartContext = useContext(CartContext);
@@ -79,6 +83,7 @@ function CartLineItem({
           <Link
             href={item.product.url ?? ''}
             aria-label={item.product.name ?? ''}
+            data-testid="cart-line-item__image"
           >
             <Image
               src={getAbsoluteImageUrl(
@@ -97,7 +102,7 @@ function CartLineItem({
               item.product.smallImages[0],
               website.imageServerUrl
             )}
-            alt={`img-${item.articleNumber}`}
+            alt={item.product.name ?? ''}
             width={item.product.smallImages[0]?.dimension?.width}
             height={item.product.smallImages[0]?.dimension?.height}
             className="mx-auto"
@@ -106,9 +111,13 @@ function CartLineItem({
       </div>
       <div className="ml-3 flex-1">
         <div className="mb-2 flex justify-between">
-          <div className="w-44">
+          <div className="w-36 sm:w-44">
             {item.product.url ? (
-              <Link href={item.product.url ?? ''} className="text-hyperlink">
+              <Link
+                href={item.product.url ?? ''}
+                className="text-hyperlink"
+                data-testid="cart-line-item__name"
+              >
                 <Text
                   className="truncate text-sm"
                   title={item.product.name ?? ''}
@@ -135,10 +144,11 @@ function CartLineItem({
             </Text>
           </div>
           <div>
-            <Currency
+            <FormattedPrice
               className="inline text-xs"
               price={discountedPrice}
               data-testid={`${item.articleNumber}__discount-price`}
+              currency={currency}
             />
             {asterisk && (
               <Text
@@ -150,11 +160,12 @@ function CartLineItem({
               </Text>
             )}
             {shouldShowOriginalPrice(item.discountInfos) && (
-              <Currency
+              <FormattedPrice
                 className="text-[10px] text-tertiary"
                 price={item[`total${vatSelector}`]}
                 data-testid={`${item.articleNumber}__original-price`}
                 strikethrough
+                currency={currency}
               />
             )}
           </div>

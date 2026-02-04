@@ -10,10 +10,16 @@ export default async function Page(props: {
   const searchParams = await props.searchParams;
   const params = await props.params;
   const { location, permanent } = await getLocation(params, searchParams);
+  const url = new URL(location);
+
+  for (const [key, value] of Object.entries(searchParams)) {
+    url.searchParams.set(key, value);
+  }
+
   if (permanent) {
-    permanentRedirect(location);
+    permanentRedirect(url.href);
   } else {
-    redirect(location);
+    redirect(url.href);
   }
 }
 

@@ -101,6 +101,7 @@ export default async function Page(props: {
         {content.name && <Heading1 className="mb-5">{content.name}</Heading1>}
         {productListId && products?.totalCount > 0 && (
           <ProductSearchResult
+            id="product-list-search-result"
             products={products}
             totalCount={products?.totalCount}
             showLoadMore={true}

@@ -3,10 +3,9 @@ import Link from 'components/Link';
 import Sidebar from 'components/Sidebar';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
-import CaretDown from 'components/icons/caret-down';
-import Close from 'components/icons/close';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
+import { ChevronDown, X } from 'lucide-react';
 import { LinkFieldDefinition } from 'models/navigation';
 import React, { useContext, useState } from 'react';
 
@@ -19,25 +18,29 @@ export default function SlideMenu(props: {
   navigationLink: LinkFieldDefinition;
   hasChildren: boolean;
   children: React.JSX.Element | React.JSX.Element[] | undefined;
+  menuId: string;
 }) {
   const { text, url } = props.navigationLink;
   const [subMenuVisible, setSubMenuVisible] = useState(false);
-  const { visible, setVisible } = useContext(PrimaryNavigationContext);
-  const close = () => setVisible(false);
-  const openSubMenu = () => setSubMenuVisible(true);
-  const closeSubMenu = () => setSubMenuVisible(false);
+  const { visible, setVisible, activeMenuId, setActiveMenuId } = useContext(
+    PrimaryNavigationContext
+  );
+  const close = () => {
+    setVisible(false);
+    setActiveMenuId(null);
+  };
+  const openSubMenu = () => {
+    setSubMenuVisible(true);
+    setActiveMenuId(props.menuId);
+  };
+  const closeSubMenu = () => {
+    setSubMenuVisible(false);
+    setActiveMenuId(null);
+  };
   const t = useTranslations();
 
   return (
-    <li
-      className="my-5"
-      data-testid="primary-navigation-link"
-      role="menuitem"
-      aria-haspopup={props.hasChildren}
-      aria-expanded={subMenuVisible && visible}
-      aria-controls={props.hasChildren ? 'dropdown-menu' : undefined}
-      aria-label={text}
-    >
+    <li className="my-5" data-testid="primary-navigation-link" role="menuitem">
       {!props.hasChildren && url && (
         <Link href={url} className="text-2xl font-semibold" onClick={close}>
           {text}
@@ -48,19 +51,28 @@ export default function SlideMenu(props: {
           className="flex w-full justify-between !border-0 !bg-transparent p-0 text-primary"
           onClick={openSubMenu}
           aria-haspopup="menu"
-          aria-expanded={subMenuVisible && visible}
+          aria-expanded={
+            activeMenuId === props.menuId && subMenuVisible && visible
+          }
+          aria-controls={
+            activeMenuId === props.menuId && subMenuVisible && visible
+              ? `slide-dropdown-menu-${props.menuId}`
+              : undefined
+          }
           aria-label={`${t('commons.open')} ${text}`}
         >
           <Text className="text-2xl font-semibold">{text}</Text>
-          <CaretDown
-            className="inline-block h-6 w-6 -rotate-90"
+          <ChevronDown
+            className="inline-block h-8 w-8 -rotate-90 text-[#333]"
             data-testid="primary-navigation-link__caret-next"
-          ></CaretDown>
+          ></ChevronDown>
         </Button>
       )}
       {props.hasChildren && (
         <Sidebar
-          visible={subMenuVisible && visible}
+          id={`slide-dropdown-menu-${props.menuId}`}
+          ariaLabel={`${t('commons.submenu')} ${text || props.menuId}`}
+          visible={activeMenuId === props.menuId && subMenuVisible && visible}
           onClose={closeSubMenu}
           data-testid="primary-navigation-link__sub-menu"
           position="top"
@@ -73,7 +85,7 @@ export default function SlideMenu(props: {
               aria-label={t('commons.back')}
               data-testid="primary-navigation-link__caret-back"
             >
-              <CaretDown className="inline-block h-6 w-6 rotate-90" />
+              <ChevronDown className="inline-block h-8 w-8 rotate-90 text-[#333]" />
             </Button>
             {url && (
               <Link
@@ -97,7 +109,7 @@ export default function SlideMenu(props: {
               }}
               aria-label={t('commons.close')}
             >
-              <Close />
+              <X className="h-8 w-8" />
             </Button>
           </div>
           <div

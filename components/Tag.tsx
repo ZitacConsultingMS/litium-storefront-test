@@ -1,5 +1,5 @@
 import { Text } from 'components/elements/Text';
-import Close from 'components/icons/close';
+import { X } from 'lucide-react';
 import { Fragment } from 'react';
 import { Button } from './elements/Button';
 
@@ -36,7 +36,7 @@ function Tag({
           data-testid="tag__remove"
           className="ml-1 inline-flex items-center justify-center !border-0 !bg-transparent p-0 text-primary"
         >
-          <Close className="h-4 w-4 cursor-pointer stroke-current stroke-[3px]" />
+          <X className="h-6 w-6 cursor-pointer" />
         </Button>
       </div>
     </Fragment>

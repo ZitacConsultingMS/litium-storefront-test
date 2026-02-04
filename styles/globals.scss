@@ -133,4 +133,29 @@ h6 {
     }
 }
 
+.hidden-focus {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .navigation-side-menu:has(input[name=toggleMobile]:checked) {
+        a[href],
+        button,
+        [tabindex] {
+            @apply hidden-focus;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation-side-menu:has(input[name="toggleTablet"]:checked) {
+        a[href],
+        button,
+        [tabindex] {
+            @apply hidden-focus;
+        }
+    }
+}
+
 @tailwind utilities;

@@ -11,7 +11,9 @@ async function EmailAccountChanged(texts: WebsiteText[]) {
       <Head />
       <Tailwind>
         <Body className="bg-white font-sans">
-          <Text>{translate('logindetails.contentAccountChanged', texts)}</Text>
+          <Text>
+            {translate('emailaccountchanged.contentAccountChanged', texts)}
+          </Text>
         </Body>
       </Tailwind>
     </Html>

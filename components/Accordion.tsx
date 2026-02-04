@@ -1,8 +1,9 @@
 'use client';
 import clsx from 'clsx';
+import { useTranslations } from 'hooks/useTranslations';
+import { ChevronDown } from 'lucide-react';
 import React, { Fragment, ReactElement, useMemo, useState } from 'react';
 import { Text } from './elements/Text';
-import CaretDown from './icons/caret-down';
 
 /**
  * An Accordion Panel.
@@ -40,12 +41,14 @@ export const Accordion = ({
   classCssIcon,
   classCssContent,
   className,
+  id,
 }: {
   classCssHeader?: string;
   classCssIcon?: string;
   classCssContent?: string;
   className?: string;
   children: React.ReactElement | React.ReactElement[];
+  id?: string;
 }) => {
   const accordions = useMemo(() => {
     const tmp: React.ReactElement[] = [];
@@ -57,6 +60,7 @@ export const Accordion = ({
 
   const content = accordions.map((accordion: any, indexItem: number) => (
     <Panel
+      id={id}
       key={`${accordion?.props.header} - ${indexItem}`}
       header={accordion?.props.header}
       expanded={indexItem === 0}
@@ -84,10 +88,12 @@ const Panel = (props: {
   classCssIcon?: string;
   classCssContent?: string;
   index?: number;
+  id?: string;
 }) => {
+  const t = useTranslations();
   const [expanded, setExpanded] = useState(props.expanded);
-  const panelId = `accordion-panel-${props.index}`;
-  const headerId = `accordion-header-${props.index}`;
+  const panelId = `${props.id || 'accordion'}-panel-${props.index}`;
+  const headerId = `${props.id || 'accordion'}-header-${props.index}`;
 
   const onKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -111,18 +117,25 @@ const Panel = (props: {
         onKeyDown={onKeyDown}
         role="button"
         tabIndex={0}
-        aria-controls={panelId}
+        aria-controls={expanded ? panelId : undefined}
         aria-expanded={expanded}
+        aria-label={`${t('commons.open')} ${props.header}`}
+        data-testid="accordion__header-button"
       >
         <Text data-testid="accordion__header" className="text-h4 font-bold">
           {props.header || ''}
         </Text>
         {!expanded && (
-          <CaretDown className={clsx('mr-4 h-4 w-4', props.classCssIcon)} />
+          <ChevronDown
+            className={clsx('mr-4 h-7 w-7 text-[#333]', props.classCssIcon)}
+          />
         )}
         {expanded && (
-          <CaretDown
-            className={clsx('mr-4 h-4 w-4 rotate-180', props.classCssIcon)}
+          <ChevronDown
+            className={clsx(
+              'mr-4 h-7 w-7 rotate-180 text-[#333]',
+              props.classCssIcon
+            )}
           />
         )}
       </div>

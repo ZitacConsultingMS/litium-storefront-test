@@ -1,0 +1,22 @@
+productFields:
+- id: model
+  type: Text
+  name:
+    da-DK: Modell
+    en-US: Modell
+    nb-NO: Modell
+    sv-SE: Modell
+  description:
+    da-DK: Modell
+    en-US: Modell
+    nb-NO: Modell
+    sv-SE: Modell
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

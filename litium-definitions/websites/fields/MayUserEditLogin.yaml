@@ -1,0 +1,15 @@
+websiteFields:
+- id: MayUserEditLogin
+  type: Boolean
+  name:
+    en-US: User can edit login username and password
+    sv-SE: Användaren kan ändra användarnamn och lösenord
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

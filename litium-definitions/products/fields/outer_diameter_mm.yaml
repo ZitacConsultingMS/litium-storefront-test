@@ -1,0 +1,22 @@
+productFields:
+- id: outer_diameter_mm
+  type: Text
+  name:
+    da-DK: Ytter Ø (mm)
+    en-US: Ytter Ø (mm)
+    nb-NO: Ytter Ø (mm)
+    sv-SE: Ytter Ø (mm)
+  description:
+    da-DK: Ytter Ø (mm)
+    en-US: Ytter Ø (mm)
+    nb-NO: Ytter Ø (mm)
+    sv-SE: Ytter Ø (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

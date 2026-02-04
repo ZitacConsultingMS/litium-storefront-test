@@ -1,0 +1,22 @@
+productFields:
+- id: track
+  type: Text
+  name:
+    da-DK: Spår
+    en-US: Spår
+    nb-NO: Spår
+    sv-SE: Spår
+  description:
+    da-DK: Spår
+    en-US: Spår
+    nb-NO: Spår
+    sv-SE: Spår
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

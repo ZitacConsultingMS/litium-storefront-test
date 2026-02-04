@@ -1,0 +1,16 @@
+mediaFields:
+- id: brand_url
+  type: Text
+  name:
+    sv-SE: Varumärke - url
+  description:
+    sv-SE: url för varumärkes sida, korresponderar till url för kategorin för varumärket
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

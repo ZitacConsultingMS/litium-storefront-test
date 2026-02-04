@@ -1,0 +1,15 @@
+websiteFields:
+- id: Image
+  type: MediaPointerImage
+  name:
+    en-US: Image
+    sv-SE: Bild
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

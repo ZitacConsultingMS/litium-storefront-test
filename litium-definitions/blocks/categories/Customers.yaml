@@ -1,0 +1,5 @@
+blockCategories:
+- id: Customers
+  name:
+    en-US: Customers
+    sv-SE: Kunder

@@ -19,5 +19,3 @@ productFields:
         en-US: Adjustable suspension fittings with wall
         sv-SE: Justerbara upphängningsbeslag med väggskena
       value: AdjustableSuspensionFittings
-    multiSelect: false
-    manualSort: false

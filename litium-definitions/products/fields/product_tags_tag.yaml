@@ -1,0 +1,25 @@
+productFields:
+- id: product_tags_tag
+  type: TextOption
+  name:
+    sv-SE: Artikelmedalj
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: Nyhet
+      value: new
+    - name:
+        sv-SE: Bäst i test
+      value: best
+    - name:
+        sv-SE: End Of Season
+      value: End Of Season

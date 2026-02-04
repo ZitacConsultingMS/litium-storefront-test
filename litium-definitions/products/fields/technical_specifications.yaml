@@ -1,0 +1,16 @@
+productFields:
+- id: technical_specifications
+  type: Editor
+  name:
+    sv-SE: Teknisk Specifikation
+  description:
+    sv-SE: Teknisk Specifikation
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

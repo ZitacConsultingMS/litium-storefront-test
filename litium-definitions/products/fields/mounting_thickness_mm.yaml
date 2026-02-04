@@ -1,0 +1,22 @@
+productFields:
+- id: mounting_thickness_mm
+  type: Text
+  name:
+    da-DK: Montering tjocklek (mm)
+    en-US: Montering tjocklek (mm)
+    nb-NO: Montering tjocklek (mm)
+    sv-SE: Montering tjocklek (mm)
+  description:
+    da-DK: Montering tjocklek (mm)
+    en-US: Montering tjocklek (mm)
+    nb-NO: Montering tjocklek (mm)
+    sv-SE: Montering tjocklek (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

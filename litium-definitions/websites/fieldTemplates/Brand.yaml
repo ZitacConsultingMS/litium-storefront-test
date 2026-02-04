@@ -1,0 +1,30 @@
+websiteTemplates:
+- blockContainers:
+  - id: Header
+    name:
+      sv-SE: Huvud
+      en-US: Header
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Märken
+    fields:
+    - id: _name
+    - id: _url
+    - id: Title
+    - id: Image
+    - id: Text
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Brand
+  name:
+    en-US: Brand page
+    sv-SE: Varumärkessida

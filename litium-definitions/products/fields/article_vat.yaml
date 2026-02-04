@@ -1,0 +1,22 @@
+productFields:
+- id: article_vat
+  type: Decimal
+  name:
+    da-DK: Vat
+    en-US: Vat
+    nb-NO: Vat
+    sv-SE: Vat
+  description:
+    da-DK: Vat
+    en-US: Vat
+    nb-NO: Vat
+    sv-SE: Vat
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

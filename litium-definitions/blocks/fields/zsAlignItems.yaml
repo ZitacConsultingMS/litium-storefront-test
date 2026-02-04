@@ -1,0 +1,33 @@
+blockFields:
+- id: zsAlignItems
+  type: TextOption
+  name:
+    en-US: 'Align Items '
+    sv-SE: Aligna Objekt
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Stretched
+        sv-SE: Stretched
+      value: items-stretch
+    - name:
+        en-US: Top
+        sv-SE: Top
+      value: items-start
+    - name:
+        en-US: Center
+        sv-SE: Center
+      value: items-center
+    - name:
+        en-US: Bottom
+        sv-SE: Bottom
+      value: items-baseline

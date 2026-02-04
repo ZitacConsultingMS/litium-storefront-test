@@ -6,9 +6,9 @@ blockTemplates:
   childBlocks:
     combination: IncludeSelected
     selections:
-    - id: PrimaryNavigationBanner
-    - id: PrimaryNavigationCategories
     - id: NavigationLinks
+    - id: PrimaryNavigationCategories
+    - id: PrimaryNavigationBanner
   type: Block
   fieldGroups:
   - id: General

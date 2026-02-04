@@ -1,0 +1,76 @@
+kind: app
+resource:
+  id: litium-nextjs-web
+spec:
+  type: litium-nextjs-web
+  version: 1.0.0
+  configurations:
+    - name: CUSTOBAR_COMPANY_TOKEN
+      valueFrom:
+        secretRef:
+          name: custobar
+
+    - name: PINMETO_ACCOUNT_ID
+      valueFrom:
+        secretRef:
+          name: pinmetoaccountid
+
+    - name: PINMETO_APP_ID
+      valueFrom:
+        secretRef:
+          name: pinmetoappid
+
+    - name: PINMETO_APP_SECRET
+      valueFrom:
+        secretRef:
+          name: pinmetoappsecret
+
+    - name: RUNTIME_API_BASE_URL
+      valueFrom:
+        secretRef:
+          name: nextpublicapibaseurl
+
+    - name: RUNTIME_SMTP_HOST
+      valueFrom:
+        appRef:
+          name: smtp
+          key: smtp_host
+
+    - name: RUNTIME_SMTP_PORT
+      valueFrom:
+        appRef:
+          name: smtp
+          key: smtp_port
+
+    - name: RUNTIME_SMTP_SECURE
+      value: 'false'
+
+    - name: RUNTIME_SMTP_AUTH_USER
+      valueFrom:
+        appRef:
+          name: smtp
+          key: smtp_auth_username
+
+    - name: RUNTIME_SMTP_AUTH_PASS
+      valueFrom:
+        appRef:
+          name: smtp
+          key: smtp_auth_password
+
+    - name: HELLORETAIL_WEBSITE_UUID
+      valueFrom:
+        secretRef:
+          name: helloretailwebsiteuuid
+
+    - name: GOOGLEMAPS_API_KEY
+      valueFrom:
+        secretRef:
+          name: googlemapsapikey
+
+    - name: SERVICE_ACCOUNT
+      valueFrom:
+        secretRef:
+          name: serviceaccount
+#properties:
+#  name: artifact
+#  value: artifacts/7f19f752a32b43c3be095867a66eec6f

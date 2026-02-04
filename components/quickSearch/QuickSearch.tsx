@@ -2,8 +2,8 @@
 import { gql } from '@apollo/client';
 import Sidebar from 'components/Sidebar';
 import { Button } from 'components/elements/Button';
-import Close from 'components/icons/close';
 import Magnifier from 'components/icons/magnifier';
+import Close from 'components/icons/zitac/close';
 import SearchInput from 'components/search/SearchInput';
 import SearchResult from 'components/search/SearchResult';
 import { useTranslations } from 'hooks/useTranslations';

@@ -1,0 +1,55 @@
+productTemplates:
+- type: Category
+  categoryFieldGroups:
+  - id: zsBrand
+    name:
+      en-US: Brand Category
+    fields:
+    - id: _name
+    - id: _description
+    - id: _url
+    - id: _seoDescription
+    - id: _seoTitle
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  blockContainers:
+  - id: betweenContainer
+    name:
+      sv-SE: Emellan
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Products
+      - id: zsLayoutFourColumns
+      - id: zsTextEditor
+      - id: zsImage
+      - id: zsLayoutFullWidth
+      - id: zsHelloRetailRecommendations
+      - id: zsBanner
+      - id: zsFAQ
+      - id: zsHTML
+      - id: zsLayoutThreeColumns
+      - id: zsLayoutTwoColumns
+  - id: bottomContainer
+    name:
+      sv-SE: Under
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Products
+      - id: zsLayoutFourColumns
+      - id: zsTextEditor
+      - id: zsImage
+      - id: zsLayoutFullWidth
+      - id: zsHelloRetailRecommendations
+      - id: zsBanner
+      - id: zsFAQ
+      - id: zsHTML
+      - id: zsLayoutThreeColumns
+      - id: zsLayoutTwoColumns
+  id: zsBrand
+  name:
+    en-US: Brand
+    sv-SE: Varumärke

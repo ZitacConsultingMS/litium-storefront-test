@@ -1,0 +1,22 @@
+productFields:
+- id: is_not_deliverable
+  type: Boolean
+  name:
+    da-DK: isNotDeliverable
+    en-US: isNotDeliverable
+    nb-NO: isNotDeliverable
+    sv-SE: isNotDeliverable
+  description:
+    da-DK: isNotDeliverable
+    en-US: isNotDeliverable
+    nb-NO: isNotDeliverable
+    sv-SE: isNotDeliverable
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

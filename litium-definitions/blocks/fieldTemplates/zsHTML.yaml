@@ -1,0 +1,23 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-code
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: zsHTML
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsHTML
+  name:
+    en-US: HTML
+    sv-SE: HTML

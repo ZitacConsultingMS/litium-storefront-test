@@ -1,0 +1,22 @@
+productFields:
+- id: thread
+  type: Text
+  name:
+    da-DK: Gänga
+    en-US: Gänga
+    nb-NO: Gänga
+    sv-SE: Gänga
+  description:
+    da-DK: Gänga
+    en-US: Gänga
+    nb-NO: Gänga
+    sv-SE: Gänga
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

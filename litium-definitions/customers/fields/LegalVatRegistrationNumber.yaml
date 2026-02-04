@@ -1,0 +1,14 @@
+customerFields:
+- id: LegalVatRegistrationNumber
+  type: Text
+  name:
+    sv-SE: Legal Vat Registration Number
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

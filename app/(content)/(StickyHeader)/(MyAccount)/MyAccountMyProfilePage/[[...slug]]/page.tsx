@@ -5,7 +5,7 @@ import {
   MainContent,
   SideNavigation,
   SideNavigationLayout,
-} from 'components/layouts/SideNavigationLayout';
+} from 'components/layouts/zitac/MyAccountSideNavigationLayout';
 import { MyProfilePage } from 'models/myProfile';
 import { NavigationLink } from 'models/navigation';
 import { Metadata } from 'next';
@@ -58,7 +58,7 @@ export default async function Page(props: { params: Promise<any> }) {
           childrenPages={children}
         />
         <MainContent breadcrumbs={breadcrumbs}>
-          <Heading2 className="mt-10">{name}</Heading2>
+          <Heading2 className="mb-6 mt-10 mobile:text-xl">{name}</Heading2>
           <ProfileForm value={filterSupportedField(me.person.fieldGroups)} />
         </MainContent>
       </SideNavigationLayout>

@@ -1,0 +1,61 @@
+productFields:
+- id: shipping_mark_nshift
+  type: TextOption
+  name:
+    sv-SE: Nshift Shipping mark
+  description:
+    sv-SE: Nshift Shipping mark
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: nshift_isNotDeliverable
+      value: nshift_isNotDeliverable
+    - name:
+        sv-SE: nshift_isPickupAtStore
+      value: nshift_isPickupAtStore
+    - name:
+        sv-SE: nshift_isSpecialFreight
+      value: nshift_isSpecialFreight
+    - name:
+        sv-SE: nshift_isSpecialGoods
+      value: nshift_isSpecialGoods
+    - name:
+        sv-SE: nshift_isDangerousGoods
+      value: nshift_isDangerousGoods
+    - name:
+        sv-SE: nshift_isBulkyGoods
+      value: nshift_isBulkyGoods
+    - name:
+        sv-SE: nshift_isRefrigerator
+      value: nshift_isRefrigerator
+    - name:
+        sv-SE: nshift_isFreight_399kr
+      value: nshift_isFreight_399kr
+    - name:
+        sv-SE: nshift_isFreight_199kr
+      value: nshift_isFreight_199kr
+    - name:
+        sv-SE: nshift_isFreight_249kr
+      value: nshift_isFreight_249kr
+    - name:
+        sv-SE: nshift_isFreightNoCost
+      value: nshift_isFreightNoCost
+    - name:
+        sv-SE: nshift_isFreight_499kr
+      value: nshift_isFreight_499kr
+    - name:
+        sv-SE: nshift_isWebProduct
+      value: nshift_isWebProduct
+    - name:
+        sv-SE: nshift_isHomeDelivery
+      value: nshift_isHomeDelivery
+    multiSelect: true

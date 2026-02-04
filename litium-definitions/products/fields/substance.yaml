@@ -1,0 +1,2040 @@
+productFields:
+- id: substance
+  type: TextOption
+  name:
+    da-DK: SubstanceID
+    en-US: SubstanceID
+    nb-NO: SubstanceID
+    sv-SE: Innehåll
+  description:
+    da-DK: SubstanceID
+    en-US: SubstanceID
+    nb-NO: SubstanceID
+    sv-SE: Innehåll/kemikalier
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        nb-NO: N/A
+        sv-SE: N/A
+        en-US: N/A
+        da-DK: N/A
+        de-DE: N/A
+        fi-FI: N/A
+      value: N/A
+    - name:
+        sv-SE: 4,5-dichloro-2-n-octyl -4-isothiazolin-3-one
+      value: '53'
+    - name:
+        sv-SE: pyrithione zinc
+      value: '61'
+    - name:
+        sv-SE: aceton solventnafta (petroleum)
+      value: '348'
+    - name:
+        sv-SE: lätt aromatisk 1
+      value: '349'
+    - name:
+        sv-SE: '2'
+      value: '350'
+    - name:
+        sv-SE: 4-trimetylbenzen mesitylen
+      value: '351'
+    - name:
+        sv-SE: Siloxanes and Silicones
+      value: '121'
+    - name:
+        sv-SE: di-Me, 3-(oxiranylmethoxy)propyl group-terminated
+      value: '122'
+    - name:
+        sv-SE: Propylenglykol
+      value: '180'
+    - name:
+        sv-SE: Natriumsilikat pentahydrat
+      value: '108'
+    - name:
+        sv-SE: Alkoholer, C9-11, etoxilerade
+      value: '109'
+    - name:
+        sv-SE: Kvartärt C12-14 alkylmetylaminetoxylat metylklorid
+      value: '110'
+    - name:
+        sv-SE: Solvent naphtha (petroleum), light arom.
+      value: '26'
+    - name:
+        sv-SE: Epoxi Novolac
+      value: '102'
+    - name:
+        sv-SE: Poly(oxypropylen)diamin
+      value: '103'
+    - name:
+        sv-SE: 1,3-Benzendimetanamin
+      value: '104'
+    - name:
+        sv-SE: väteklorid, vattenfri
+      value: '56'
+    - name:
+        sv-SE: 1,2,2,6,6,pentametylpiperidinderivat
+      value: '11'
+    - name:
+        sv-SE: dihydrate ethanedioic acid
+      value: substance-ll52yn9g
+    - name:
+        sv-SE: bisfenol A och epiklorhydrin reaktionsprodukt med medelmolekylvikt <= 700
+      value: '17'
+    - name:
+        sv-SE: Cyclohexan
+      value: substance-kwxbosps
+    - name:
+        sv-SE: n-Hexan
+      value: substance-kwxbogfb
+    - name:
+        sv-SE: xylylendiamin (m-)
+      value: '31'
+    - name:
+        sv-SE: Toluene
+      value: substance-kwxbpr0i
+    - name:
+        sv-SE: 2,2,4- och 2,4,4-trimetyl hexametylen diamin
+      value: '35'
+    - name:
+        sv-SE: etyl hexyl glycidyl eter
+      value: '37'
+    - name:
+        sv-SE: kalcium långkedjig
+      value: '234'
+    - name:
+        sv-SE: Amides, from Me epoxyhydroxyoctadecanoate, tetraethylenepentamine and vegetable-oil fatty acids
+      value: '39'
+    - name:
+        sv-SE: <5% nonjoniska tensider
+      value: '123'
+    - name:
+        sv-SE: 2-BROMO-2NITROPROPANE-1,3-DIOL
+      value: '145'
+    - name:
+        sv-SE: destillat (petroleum), vätebehandlade tunga paraffiniska
+      value: '236'
+    - name:
+        sv-SE: Olefinsulfid
+      value: '237'
+    - name:
+        sv-SE: 4-metylpentan-2-on (1-3%)
+      value: '5'
+    - name:
+        sv-SE: oleic acid, compound with (Z)- N-octadec-9-enylpropane-1,3-diamine (2:1)
+      value: substance-ldlepltp
+    - name:
+        sv-SE: 2,5-di-tert-butylhydroquinon
+      value: substance-ldlet1m7
+    - name:
+        sv-SE: (Z)-N-9-octadecenylpropane-1,3-diamine
+      value: substance-ldletxi7
+    - name:
+        sv-SE: xylen
+      value: '23'
+    - name:
+        sv-SE: Titanium dioxide
+      value: '218'
+    - name:
+        sv-SE: trimetylopropan
+      value: substance-kylb7gu2
+    - name:
+        sv-SE: solventnafta (petroleum)
+      value: '286'
+    - name:
+        sv-SE: medeltung alifatisk
+      value: '305'
+    - name:
+        sv-SE: 2-butanonoxin
+      value: '369'
+    - name:
+        sv-SE: Zinkoxid
+      value: '270'
+    - name:
+        sv-SE: koppar(I)oxid
+      value: '226'
+    - name:
+        sv-SE: copper oxide
+      value: substance-lgq5geyx
+    - name:
+        sv-SE: titandioxid
+      value: substance-lgq5duow
+    - name:
+        sv-SE: etylbenzen
+      value: '24'
+    - name:
+        sv-SE: aromatic hydrocarbons, C9
+      value: substance-le5tbmha
+    - name:
+        sv-SE: koppartiocyanat
+      value: '288'
+    - name:
+        sv-SE: kolofonium
+      value: '60'
+    - name:
+        sv-SE: xylen etylbenzen
+      value: '289'
+    - name:
+        sv-SE: Fettsyror, tallolja, föreningar med oleylamin
+      value: substance-lqghtvyw
+    - name:
+        sv-SE: Oxalsyra dihydrat
+      value: '107'
+    - name:
+        sv-SE: 1,2-etandiol
+      value: '229'
+    - name:
+        sv-SE: Natrium-2-etylhexanoat
+      value: substance-lmanain9
+    - name:
+        sv-SE: Bittermedel
+      value: substance-lmanbg4k
+    - name:
+        sv-SE: n-butylacetat
+      value: '13'
+    - name:
+        sv-SE: 2-Pentanone, O,O',O'- (ethenylsilylidyne)trioxime
+      value: substance-le5tcflf
+    - name:
+        sv-SE: oktametylcyklotetrasiloxan
+      value: substance-kylbb2dx
+    - name:
+        sv-SE: KOLVÄTEN, C10-C13, N-ALKANER, ISOALKANER, CYKLISKA, AROMATISKA (<2%)
+      value: substance-k5m71vnh
+    - name:
+        sv-SE: koppar(I)oxid kolofonium
+      value: '293'
+    - name:
+        sv-SE: Nafta (petroleum), väteavsvavlad tung
+      value: substance-klv8otlh
+    - name:
+        sv-SE: etylbensen
+      value: substance-ldkaz3qu
+    - name:
+        sv-SE: naphtha (petroleum), hydrotreated light <0,1% benzene
+      value: substance-lwhitexk
+    - name:
+        sv-SE: Naphtha (petroleum), hydrotreated heavy
+      value: '8'
+    - name:
+        sv-SE: Ureahydrokolrid
+      value: substance-m209co3q
+    - name:
+        sv-SE: OXIRAN, 2-METHYL-, POLYMER MED OXIRAN, MONO (2-PROPYLHEPTYL) ETER
+      value: '111'
+    - name:
+        sv-SE: 'Dimetyleter: 25 - 50%, Aceton: 25 - 50%, Etylacetat: 25 - 50%'
+      value: '169'
+    - name:
+        sv-SE: 5-klor-2-metyl-2H-isotiazol-3-one [EG-nr 247-500-7] and 2-metyl-2H-isotiazol-3-one
+      value: '324'
+    - name:
+        sv-SE: 2-methyl-2H-isothiazol-3- one
+      value: substance-l62g1oj3
+    - name:
+        sv-SE: Innehåller 5-klor-2-metyl-2H-isotiazol-3-one [EG-nr 247-500-7] and 2-metyl-2H-isotiazol-3-one
+      value: '337'
+    - name:
+        sv-SE: <5% Katjoniska tensider
+      value: '69'
+    - name:
+        sv-SE: lätt aromatisk solventnafta (petroleum)
+      value: '304'
+    - name:
+        sv-SE: Butanon CAS 78-93-3
+      value: '64'
+    - name:
+        sv-SE: Aceton CAS 64-64-1
+      value: '65'
+    - name:
+        sv-SE: Etylacetat CAS 141-78-6
+      value: '66'
+    - name:
+        sv-SE: MEK, Acetone, Methyl acetate, Ethyl acetate
+      value: '261'
+    - name:
+        sv-SE: Polymetylenpolyfenylisocyanat.
+      value: '262'
+    - name:
+        sv-SE: Zinkalkylditiofosfat
+      value: '230'
+    - name:
+        sv-SE: Solventraffinerad Mineralolja
+      value: '232'
+    - name:
+        sv-SE: Aluminiumoxid (icke fibrös)
+      value: substance-l125o2w7
+    - name:
+        sv-SE: Vatten
+      value: '1'
+    - name:
+        sv-SE: Kolväten, C11-C14, n-alkaner, isoalkaner, cykliska, < 2% aromater
+      value: '219'
+    - name:
+        sv-SE: Kolväten C9-12 N-alkaner, isoalkaner, cykliska, aromatiska (2-25 %)
+      value: substance-l125opg2
+    - name:
+        sv-SE: vit mineralolja (petroleum)
+      value: substance-l7hfrc9c
+    - name:
+        sv-SE: Glycerin
+      value: substance-ley0yevr
+    - name:
+        sv-SE: 1,2-benzisotiazol-3(2H)-on
+      value: '127'
+    - name:
+        sv-SE: Polyetylenglykolsorbitanmonooleat
+      value: substance-li09ny48
+    - name:
+        sv-SE: Ricinoljebaserad produkt
+      value: substance-lq26dky9
+    - name:
+        sv-SE: Amorf kiseldioxid (syntetisk, kristallinfri)
+      value: substance-lq26el6z
+    - name:
+        sv-SE: Kolväten, C14-C19, isoalkaner, cykliska, < 2 % aromater
+      value: substance-lq26fg1n
+    - name:
+        sv-SE: Kolväten, C10-aromater, <1% naftalen
+      value: substance-lq26gcrj
+    - name:
+        sv-SE: Alkoholer, C16-18 OCH C18-omättade
+      value: substance-lq26h0td
+    - name:
+        sv-SE: 1,2-bensisotiazol-3(2H)-on
+      value: substance-ley0xyjd
+    - name:
+        sv-SE: Aluminiumoxid
+      value: substance-limsl2zi
+    - name:
+        sv-SE: Kolväten, C12-C15, n-alkaner, isoalkaner, cykliska, < 2 % aromater
+      value: substance-limsncea
+    - name:
+        sv-SE: Poly(oxi-1,2-etandiyl), .alfa.- undecyl-.omega.-hydroxi-
+      value: substance-limso1p3
+    - name:
+        sv-SE: destillat (petroleum), lösningsmedelsavvaxade tunga paraffiniska
+      value: '235'
+    - name:
+        sv-SE: Dodekametylcyklohexasiloxan
+      value: substance-ley0ylds
+    - name:
+        sv-SE: Dekametylpentasiloxan
+      value: substance-ley0y903
+    - name:
+        sv-SE: methylchloroisothiazolinone
+      value: '142'
+    - name:
+        sv-SE: methylisothiazolinone
+      value: '143'
+    - name:
+        sv-SE: Bly Svavelsyra Kalcium Tenn
+      value: '168'
+    - name:
+        sv-SE: epoxiharts medelmolekylär
+      value: '18'
+    - name:
+        sv-SE: 3,6-diazaoktan-1,8-diamin
+      value: '21'
+    - name:
+        sv-SE: butan-1-ol
+      value: '25'
+    - name:
+        sv-SE: polymer av C18-omättade fettsyra dimerer med talloljefettsyror och trietylentetramin
+      value: '38'
+    - name:
+        sv-SE: lacknafta (<20 vikt-% aromathalt)
+      value: substance-lgq5eaa0
+    - name:
+        sv-SE: o-xylen
+      value: '58'
+    - name:
+        sv-SE: 4-metylpentan-2-on
+      value: substance-licwbsd9
+    - name:
+        sv-SE: Parfym d-Limone
+      value: '188'
+    - name:
+        sv-SE: Etylendiamintetraättiksyra, tetranatriumsalt, Alkoholer, C9-11 etoxylerade
+      value: '189'
+    - name:
+        sv-SE: Natriumhydroxid Citrus, extrakt Polyalkyl ammonium salt N,N-dimethyltetradecylamine N-oxide Alcohols, C7-21, ethoxylated Sodium xylenesulphonate Kaliumkarbonat
+      value: substance-kkxoyyph
+    - name:
+        sv-SE: Pine ext.
+      value: '191'
+    - name:
+        sv-SE: Natriumhypoklorit
+      value: '192'
+    - name:
+        sv-SE: anjoniska tensider
+      value: '144'
+    - name:
+        sv-SE: Natriumhydroxid
+      value: '212'
+    - name:
+        sv-SE: Propan-2-ol
+      value: substance-kkfgoist
+    - name:
+        sv-SE: Trietanolamin
+      value: substance-kzxxm1dg
+    - name:
+        sv-SE: Dipropylenglykolmonometyleter
+      value: substance-kzxxmpml
+    - name:
+        sv-SE: Destillat (petroleum), vätebehandlade lätta
+      value: '125'
+    - name:
+        sv-SE: Svavelsyra 2 %
+      value: '193'
+    - name:
+        sv-SE: Alcohols, C7-21, ethoxylated
+      value: substance-kjofl9gr
+    - name:
+        sv-SE: Svavelsyra
+      value: substance-kzxxsaks
+    - name:
+        sv-SE: Urea
+      value: substance-kzxxu3qy
+    - name:
+        sv-SE: Oxalsyra 8%
+      value: '194'
+    - name:
+        sv-SE: tallolja
+      value: '296'
+    - name:
+        sv-SE: Morpholine
+      value: substance-l12afm6z
+    - name:
+        sv-SE: Nepheline syenite
+      value: substance-l12ahi62
+    - name:
+        sv-SE: Väteklorid 8%, Oxalsyra
+      value: '195'
+    - name:
+        sv-SE: kolväten, C10-C12, isoalkaner, <2% aromater
+      value: '119'
+    - name:
+        sv-SE: Sodium C14-17 sec Alkyl Sulfonate 1-10 %
+      value: '198'
+    - name:
+        sv-SE: Alcohols, C12-14, ethoxylated, sulfates, sodium salts
+      value: '49'
+    - name:
+        sv-SE: Sulfonic acids, C14-16-alkane hydroxy andC14-16-alkene, sodium salts 1-10%
+      value: '199'
+    - name:
+        sv-SE: 1,3-bis(12-hydroxyocta-decanamide-N-mathyle)benzene
+      value: '28'
+    - name:
+        sv-SE: DIMETYLETER
+      value: substance-k5mimurr
+    - name:
+        sv-SE: trizinkbis(ortofosfat)
+      value: substance-kotvau6k
+    - name:
+        sv-SE: quaternary coco alkyl methyl amine ethoxylate methyl chloride
+      value: '7'
+    - name:
+        sv-SE: C9-C11 alcoholethoxylate (8 EO)
+      value: '51'
+    - name:
+        sv-SE: Isotridecanol, ethoxylated
+      value: '55'
+    - name:
+        sv-SE: polyeteramin
+      value: '147'
+    - name:
+        sv-SE: alifatnafta
+      value: '200'
+    - name:
+        sv-SE: alifatnafta, medeltung (Note-P)
+      value: '201'
+    - name:
+        sv-SE: < 5 % klorbaserade blekmedel
+      value: '207'
+    - name:
+        sv-SE: < 5 % anjontensider
+      value: '208'
+    - name:
+        sv-SE: Natriumsilikat
+      value: '71'
+    - name:
+        sv-SE: Poly(oxy-1,2-ethanediyl), applha-(4-nonylphenyl)-.omega-hydroxy-,branched
+      value: '209'
+    - name:
+        sv-SE: Tea Tree olja
+      value: '210'
+    - name:
+        sv-SE: Citrongräsolja
+      value: '211'
+    - name:
+        sv-SE: Saltsyra 3,9%
+      value: '213'
+    - name:
+        sv-SE: Formaldehyd
+      value: '214'
+    - name:
+        sv-SE: Järnoxid
+      value: '215'
+    - name:
+        sv-SE: Polyeten
+      value: '216'
+    - name:
+        sv-SE: Titiandioxid
+      value: '217'
+    - name:
+        sv-SE: hydrocarbons, C9, aromatics, (<0,1% bensen)
+      value: '225'
+    - name:
+        sv-SE: 2-metoxi-1-metyletylacetat
+      value: '227'
+    - name:
+        sv-SE: 1-decen, homopolymer, hydrogenerad
+      value: '238'
+    - name:
+        sv-SE: Reaktionsprodukter av bis (4-metylpentan-2-yl) ditiofosforsyra med fosforoxid, propylenoxid och aminer, C12-14-alkyl (grenad)
+      value: '239'
+    - name:
+        sv-SE: lätt aromatisk 1-metoxi-2-propanol
+      value: '294'
+    - name:
+        sv-SE: Fettsyror
+      value: '295'
+    - name:
+        sv-SE: föreningar med oleylamin Amines
+      value: '297'
+    - name:
+        sv-SE: polyethylenepoly-
+      value: '298'
+    - name:
+        sv-SE: triethylenetetramine fraction
+      value: '299'
+    - name:
+        sv-SE: Alkylerad difenylamin
+      value: '240'
+    - name:
+        sv-SE: phosphoric acid, diphenyl tolyl ester
+      value: '241'
+    - name:
+        sv-SE: Trifenylfosfat
+      value: '242'
+    - name:
+        sv-SE: Tritolylfosfat
+      value: '243'
+    - name:
+        sv-SE: hydrocarbons, C9-C11, nalkanes, isoalkanes, cyclics, <2% aromatics
+      value: substance-ln8ua1q9
+    - name:
+        sv-SE: Karnaubavax
+      value: substance-lwhk0049
+    - name:
+        sv-SE: aromatnafta, medeltung
+      value: '244'
+    - name:
+        sv-SE: 1-metoxi-2-propanol
+      value: '245'
+    - name:
+        sv-SE: destillat (petroleum), vätebehandlade medeltunga
+      value: '246'
+    - name:
+        sv-SE: Pentamethylpiperidinolsubstituted polyester
+      value: '247'
+    - name:
+        sv-SE: 2-oktyl-2H-isotiazol-3-on (OIT)
+      value: '248'
+    - name:
+        sv-SE: Trimetoxivinylsilan
+      value: substance-kmyvgn25
+    - name:
+        sv-SE: epoxiharts
+      value: '258'
+    - name:
+        sv-SE: TEA TREE OIL, LEPTOSPERMUM PETERSONII, EXT.
+      value: '264'
+    - name:
+        sv-SE: alkylsalicylat
+      value: '233'
+    - name:
+        sv-SE: Saltsyra
+      value: '155'
+    - name:
+        sv-SE: Fatty Alcohol ethoxylated
+      value: '263'
+    - name:
+        sv-SE: lätt aromatisk kolofonium
+      value: '287'
+    - name:
+        sv-SE: aceton xylen kolofonium
+      value: '291'
+    - name:
+        sv-SE: solventnafta (petroleum
+      value: '358'
+    - name:
+        sv-SE: etylbenzen
+      value: '223'
+    - name:
+        sv-SE: Etylbenzen
+      value: '273'
+    - name:
+        sv-SE: m-xylen-a
+      value: '274'
+    - name:
+        sv-SE: a´-ylendiamin
+      value: '275'
+    - name:
+        sv-SE: tris- 2,4,6- dimetylaminometylfenol
+      value: '276'
+    - name:
+        sv-SE: Phenol
+      value: '280'
+    - name:
+        sv-SE: polymer with formaldehyde
+      value: '281'
+    - name:
+        sv-SE: glycidyl
+      value: '282'
+    - name:
+        sv-SE: ether
+      value: '283'
+    - name:
+        sv-SE: reaktionsprodukt av bisfenol A och epiklorhydrin Oxirane
+      value: '284'
+    - name:
+        sv-SE: mono[(C10-16-alkyloxy)methyl] derivs
+      value: '285'
+    - name:
+        sv-SE: tris-2,4,6-dimetylaminometylfenol
+      value: '20'
+    - name:
+        sv-SE: epoxyharts
+      value: '301'
+    - name:
+        sv-SE: 'methylstyrenated 1-etoxi-2-propanol Reaktionsprodukt: bisfenol-A-(epiklorhydrin)'
+      value: '306'
+    - name:
+        sv-SE: 700 < molvikt < 1000 kvarts reaktionsprodukt av bisfenol A och epiklorhydrin
+      value: '307'
+    - name:
+        sv-SE: bisfenol-A-(epiklorhydrin)
+      value: '300'
+    - name:
+        sv-SE: 700 < molvikt < 1000 solventnafta (petroleum)
+      value: '343'
+    - name:
+        sv-SE: lätt aromatisk butan-1-ol xylen
+      value: '344'
+    - name:
+        sv-SE: butan-1-ol xylen 3
+      value: '345'
+    - name:
+        sv-SE: 6-diazaoktan-1
+      value: '346'
+    - name:
+        sv-SE: 8-diamin
+      value: '347'
+    - name:
+        sv-SE: Epoxiharts (medelmolekylvikt <=700)
+      value: '97'
+    - name:
+        sv-SE: Poly(oxy-1,2-ethanediyl)
+      value: '313'
+    - name:
+        sv-SE: a-[3-[3-(2H-benzotriazol-2-yl)-5-(1,1-dimethylethyl)-4hydroxyphenyl]-1-oxopropyl]-?-hydroxy
+      value: '314'
+    - name:
+        sv-SE: 2-butanonoxim
+      value: '315'
+    - name:
+        sv-SE: kvarts
+      value: '316'
+    - name:
+        sv-SE: kolväten och biprodukter från terpentin
+      value: '317'
+    - name:
+        sv-SE: butanon
+      value: '319'
+    - name:
+        sv-SE: (R)-p-menta-1,8-dien
+      value: '320'
+    - name:
+        sv-SE: sodium bis[methyl [7-hydroxy-8-[[2-hydroxy-5-mesylphenyl]azo] -1-naphthyl]carbamato(2-)]chromate(1-) och sodium bis[2-(3-chlorop
+      value: '277'
+    - name:
+        sv-SE: Hexandiisocyanat
+      value: '308'
+    - name:
+        sv-SE: 6-diisocyanat
+      value: '310'
+    - name:
+        sv-SE: polymer xylen
+      value: '311'
+    - name:
+        sv-SE: hexametylen-1
+      value: '312'
+    - name:
+        sv-SE: Poly(oxy-1
+      value: '365'
+    - name:
+        sv-SE: 2-ethanediyl)
+      value: '366'
+    - name:
+        sv-SE: a-[3-[3-(2H-benzotriazol-2-yl)-5-(1
+      value: '367'
+    - name:
+        sv-SE: 1-dimethylethyl)-4hydroxyphenyl]-1-oxopropyl]-?-hydrox
+      value: '368'
+    - name:
+        sv-SE: nafta (petroleum)
+      value: '278'
+    - name:
+        sv-SE: väteavsvavlad tung
+      value: '279'
+    - name:
+        sv-SE: Hydrocarbons
+      value: '327'
+    - name:
+        sv-SE: terpene processing by-products 2-butanonoxim
+      value: '360'
+    - name:
+        sv-SE: isoalkanes
+      value: '330'
+    - name:
+        sv-SE: cyclics
+      value: '333'
+    - name:
+        sv-SE: C9-C11
+      value: '361'
+    - name:
+        sv-SE: <2% aromatics
+      value: '362'
+    - name:
+        sv-SE: 2-butanonoxim och kolväten
+      value: '363'
+    - name:
+        sv-SE: biprodukter från terpentin
+      value: '364'
+    - name:
+        sv-SE: Alcohols
+      value: '321'
+    - name:
+        sv-SE: C9-11
+      value: '322'
+    - name:
+        sv-SE: ethoxylated hexyl D-glucoside
+      value: '323'
+    - name:
+        sv-SE: 5-klor-2-metyl-2H-isotiazol-3-one [EG-nr 247-500-7] and 2-metyl-2H-isotiazol-3-one [EG-nr 220-239-6] (3:1).
+      value: '325'
+    - name:
+        sv-SE: Mineralterpentin
+      value: '85'
+    - name:
+        sv-SE: 5-klor-2-metyl-2H-isotiazol-3-one [EG-nr 247-500-7] and 2-metyl-2H-isotiazol-3-one [EG-nr 220-239-6] (3:1
+      value: '326'
+    - name:
+        sv-SE: oxalsyradihydrat
+      value: '336'
+    - name:
+        sv-SE: n-alkanes
+      value: '329'
+    - name:
+        sv-SE: C10-C13
+      value: '332'
+    - name:
+        sv-SE: < 2% Hydrocarbons
+      value: '334'
+    - name:
+        sv-SE: C9-C12
+      value: '338'
+    - name:
+        sv-SE: 3-iodo-2-propynyl butylcarbamate
+      value: '339'
+    - name:
+        sv-SE: 1-metoxi-2-propanol
+      value: '228'
+    - name:
+        sv-SE: lätt aromatisk
+      value: '303'
+    - name:
+        sv-SE: vätebehandlad tung
+      value: '359'
+    - name:
+        sv-SE: xylen solventnafta (petroleum)
+      value: '356'
+    - name:
+        sv-SE: lätt aromatisk butan-1-ol etylbenzen
+      value: '357'
+    - name:
+        sv-SE: 2-metoxi1-metyletylacetat
+      value: '353'
+    - name:
+        sv-SE: dimetylsuccinat
+      value: '354'
+    - name:
+        sv-SE: 2-butoxietylacetat
+      value: '355'
+    - name:
+        sv-SE: Petroleumnafta, vätebehandlad tung
+      value: '124'
+    - name:
+        sv-SE: Balsamterpentin
+      value: '178'
+    - name:
+        sv-SE: Hydrocarbons, C9-C12, n-alkanes, isoalkanes, cyclics, aromatics (2-25%)
+      value: '183'
+    - name:
+        sv-SE: Sulfonic acids, petroleum, calcium salts
+      value: substance-l7hfr4ah
+    - name:
+        sv-SE: Glasfibrer
+      value: substance-lwkr83w1
+    - name:
+        sv-SE: naturharts
+      value: substance-lwj9bw6o
+    - name:
+        sv-SE: fettsyror C18 omättade, reaktionsprodukter med trietylentetramin
+      value: '19'
+    - name:
+        sv-SE: bis[(dimethylamino)methyl]phenol
+      value: '22'
+    - name:
+        sv-SE: 3-aminometyl-3,5,5- trimetylcyklohexylamino
+      value: '30'
+    - name:
+        sv-SE: cyclo aliphatic amine
+      value: '34'
+    - name:
+        sv-SE: Octadecanoic acid, 12-hydroxy-, reaction products with ethylenediamine
+      value: '36'
+    - name:
+        sv-SE: BENSYLALKOHOL
+      value: substance-k5nx1s9y
+    - name:
+        sv-SE: fatty acids, tall-oil, reaction products with tetraethylenepentamine
+      value: substance-ll4zj89w
+    - name:
+        sv-SE: 3,6,9-triazaundekametylendiamin
+      value: substance-ll4zjucm
+    - name:
+        sv-SE: 2,4,6-tris(dimetylaminometyl) fenol
+      value: substance-ll4zk78f
+    - name:
+        sv-SE: polyoxypropylenediamine
+      value: substance-ll4zkg4x
+    - name:
+        sv-SE: 3-cyklohexylaminopropylamin
+      value: substance-ll4zkmwq
+    - name:
+        sv-SE: Bis(4-(2,3- epoxipropoxi)fenyl)propan
+      value: substance-lgop8qb3
+    - name:
+        sv-SE: formaldehyde, polymer with (chloromethyl)oxirane and phenol
+      value: '40'
+    - name:
+        sv-SE: Oxiran, mono[(C12-C14-alkyloxi)metyl]derivat
+      value: '98'
+    - name:
+        sv-SE: N,N'-Ethane-1,2-diylbis(12-hydroxyoctadecan-1-amide)
+      value: substance-kfgisrpj
+    - name:
+        sv-SE: 4,4'-isopropylidendifenol
+      value: substance-ll4znr5y
+    - name:
+        sv-SE: talk
+      value: substance-ll4zocbp
+    - name:
+        sv-SE: Methylstyrenated phenol
+      value: '33'
+    - name:
+        sv-SE: hydrocarbons, C9-C11, nalkanes, isoalkanes, cyclics, <2% aromatics
+      value: substance-licuok5v
+    - name:
+        sv-SE: Toluen
+      value: substance-kmyvrlo7
+    - name:
+        sv-SE: bis(isopropyl)naphthalene
+      value: substance-lslz9uo2
+    - name:
+        sv-SE: amide wax
+      value: substance-lwj8r53n
+    - name:
+        sv-SE: salicylsyra
+      value: substance-lwj9sfzl
+    - name:
+        sv-SE: bisoxirane
+      value: substance-lwj9te7z
+    - name:
+        sv-SE: reaction products of Isophorone diamine and, BADGE and, 2,2’-[ (1-methylethylidene)bis(4,, phenyleneoxymethylene)]
+      value: substance-lwj9u0lg
+    - name:
+        sv-SE: 'reaktionsprodukt: bisfenol-A- (epiklorhydrin), epoxiharts (molekylvikt som antalsmedelvärde ≤ 700)'
+      value: substance-lslzbn2m
+    - name:
+        sv-SE: 1,6-hexandioldiglycidyleter
+      value: substance-lslzahri
+    - name:
+        sv-SE: C12-14 alcohols
+      value: substance-lslz983w
+    - name:
+        sv-SE: oxiran, mono[(C12-14-alkyloxi) metyl]derivat
+      value: substance-lwj8q9gi
+    - name:
+        sv-SE: 2-Propenenitrile, reaction products with 3-amino-1,5,5-trimethylcyclohexanemethanamine
+      value: '29'
+    - name:
+        sv-SE: (benzotiazol-2-yltio)bärnstensyra
+      value: '32'
+    - name:
+        sv-SE: Fatty acids, C18-unsatd., dimers, reaction products with N,N-dimethyl-1,3-propanediamine and 1,3-propanediamine
+      value: '46'
+    - name:
+        sv-SE: 2-pentanonoxime
+      value: substance-lie7z2fo
+    - name:
+        sv-SE: 2-Butoxietanol
+      value: substance-lmemdflj
+    - name:
+        sv-SE: gamma butyrolactone
+      value: substance-lp1bt4f7
+    - name:
+        sv-SE: Hydrocarbons, C9-C11, n-alkanes, isoalkanes, cyclics
+      value: substance-kumr6kce
+    - name:
+        sv-SE: C10-C13 hydrocarbons (n-alkanes, isoalkanes, cyclics) <2% aromatics
+      value: '52'
+    - name:
+        sv-SE: ftalsyraanhydrid
+      value: substance-leybt78l
+    - name:
+        sv-SE: Reaction mass of bis (1,2,2,6,6-pentamethyl- 4-piperidyl) sebacate and methyl 1,2,2,6,6-pentamethyl- 4-piperidyl sebacate
+      value: substance-lwj8fzzl
+    - name:
+        sv-SE: 2-(5-chloro-2H-benzotriazole- 2-yl)-6-(1,1-dimethylethyl) -4-methyl-phenol
+      value: substance-lwkq1fhd
+    - name:
+        sv-SE: derivative of benzotriazol
+      value: '10'
+    - name:
+        sv-SE: 2-metylpentan-2,4-diol
+      value: substance-lwhim9os
+    - name:
+        sv-SE: hydrocarbons, C10-C13, nalkanes, isoalkanes, cyclics, < 2% aromatics
+      value: substance-lwj8gu6a
+    - name:
+        sv-SE: cyklohexanon
+      value: '14'
+    - name:
+        sv-SE: hexamethylene-1,6-diisocyanate homopolymer
+      value: '15'
+    - name:
+        sv-SE: hexametylen-1,6-diisocyanat
+      value: '16'
+    - name:
+        sv-SE: solventnafta (petroleum), medeltung alifatisk
+      value: '9'
+    - name:
+        sv-SE: hydrocarbons, C10-C13, n-alkanes, isoalkanes, cyclics, aromatics (2-25%)
+      value: substance-licuia7b
+    - name:
+        sv-SE: 3-jod-2-propynylbutylkarbamat
+      value: substance-lwhimvoq
+    - name:
+        sv-SE: 1-Propanaminium, 3-amino-N-(carboxymethyl)-N,N-dimethyl-, N-coco acyl derivs., hydroxides, inner salts
+      value: '63'
+    - name:
+        sv-SE: 2-(2-butoxietoxi)etanol
+      value: substance-ll5365dq
+    - name:
+        sv-SE: 2-propylheptanol ethoxylate
+      value: substance-lwj91gpx
+    - name:
+        sv-SE: C12-14-alkyl(hydroxyethyl) dimethyl, ethoxylated chlorides
+      value: substance-lwj926zz
+    - name:
+        sv-SE: White mineral oil (petroleum)
+      value: '48'
+    - name:
+        sv-SE: Amides, coco alkyl, N-(hydroxyethyl), ethoxylated
+      value: '50'
+    - name:
+        sv-SE: Styren
+      value: '73'
+    - name:
+        sv-SE: Metymetakrylat
+      value: '90'
+    - name:
+        sv-SE: etylacetat
+      value: substance-l0frffxq
+    - name:
+        sv-SE: Bariumsulfat
+      value: substance-lmemedm7
+    - name:
+        sv-SE: Dibensoylperoxid
+      value: substance-lmemezx1
+    - name:
+        sv-SE: Dimetylftalat
+      value: substance-lmemgd1n
+    - name:
+        sv-SE: Etandiol
+      value: substance-lmemh26z
+    - name:
+        sv-SE: Bicyklo[2.2.1]heptanebis(metylamin)
+      value: substance-lmgbr4a8
+    - name:
+        sv-SE: Fenol, styrenbehandlad
+      value: substance-lmgbrzl9
+    - name:
+        sv-SE: triacetoxyethylsilane
+      value: substance-lxn5fljj
+    - name:
+        sv-SE: Titan(4+)-2-methylpropan-2-olat
+      value: substance-lgp9xy60
+    - name:
+        sv-SE: Vinyltrimetoxisilan
+      value: substance-kx4glzpl
+    - name:
+        sv-SE: N-(3-(Trimetoxisilyl)propyl)etendiamin
+      value: substance-kx4gltb2
+    - name:
+        sv-SE: Siloxanes and Silicones, methoxy vinyl
+      value: substance-kx4glj4b
+    - name:
+        sv-SE: reaktionsprodukt av bisfenol A och epiklorhydrin med medelmolekylvikt ≤ 700
+      value: substance-ley8vmbi
+    - name:
+        sv-SE: Etylcyanoakrylat
+      value: '89'
+    - name:
+        sv-SE: 2,2'-Metylenbis(4-metyl-6-tertbutylfenol)
+      value: substance-lhj3t7qi
+    - name:
+        sv-SE: Hydrokinon
+      value: substance-lhj3sv9y
+    - name:
+        sv-SE: Kumenväteperoxid
+      value: '91'
+    - name:
+        sv-SE: Maleinsyra
+      value: substance-kfgirhve
+    - name:
+        sv-SE: 1-acetyl-2-fenylhydrazin
+      value: substance-kfgipe9s
+    - name:
+        sv-SE: 1,4-Naftokinon
+      value: substance-lf18ubeh
+    - name:
+        sv-SE: 2,2'-etylendioxi dimetanol dimetakrylat
+      value: substance-lhj32r59
+    - name:
+        sv-SE: 3,3,5 Trimethylcyclohexyl methacrylate
+      value: substance-lhj324m4
+    - name:
+        sv-SE: titanium tetrabutanolate
+      value: substance-lwkp62ge
+    - name:
+        sv-SE: Metanol
+      value: substance-k4bf4j5r
+    - name:
+        sv-SE: dibutyltenndilaurat
+      value: substance-kotw6orf
+    - name:
+        sv-SE: Blandning av etylbenzen och xylen
+      value: substance-lwkptgqb
+    - name:
+        sv-SE: VOC-EU 61,02
+      value: '166'
+    - name:
+        sv-SE: 3-aminopropyltrietoxisilan
+      value: substance-kgweb8wt
+    - name:
+        sv-SE: Kolväten, C13-23, .-alkaner, isoalkaner, cykliska, <0,03% aromater
+      value: substance-ln8phabn
+    - name:
+        sv-SE: Silsesquioxanes, 3-aminoproyl Me, etoxy-terminerad
+      value: substance-ln8pgueo
+    - name:
+        sv-SE: 2-etyl-2-[[(1-oxoallyl)oxi]metyl]-1,3-propandiyldiakrylat
+      value: substance-lwko3hdr
+    - name:
+        sv-SE: 4,4'-metylendifenyldiisocyanat
+      value: substance-lwkpm6a3
+    - name:
+        sv-SE: Pentamethyl piperidylsebacate
+      value: substance-lwko2o10
+    - name:
+        sv-SE: aromatic polyisocyanate
+      value: substance-lwkrkruw
+    - name:
+        sv-SE: Urea,N,N'-(metylendi-4,1-fenylen)bis[N'-butyl-
+      value: substance-lwko60j1
+    - name:
+        sv-SE: 3-isocyanatometyl-3,5,5-trimetylcyklohexylisocyanat
+      value: substance-lwko45cr
+    - name:
+        sv-SE: Hardener LI (Isophoronedialdi-mine)
+      value: substance-lwkpc04c
+    - name:
+        sv-SE: Reaction product of Hexamethy-lene diisocyanate, oligomers with Mercaptopropyltrimethoxysilane
+      value: substance-lwkpcs2p
+    - name:
+        sv-SE: Toluendiisocyanat m-tolylidendiisocyanat
+      value: substance-lcqd1jgo
+    - name:
+        sv-SE: Hardener LH (1,6-Hexanedialdimine)
+      value: substance-lwkplkrq
+    - name:
+        sv-SE: VOC-EU 1,01
+      value: '167'
+    - name:
+        sv-SE: Bis[2-[2-(1-methylethyl)-3-oxazolidinyl]ethyl]hexane- 1,2-diylbiscarbamate
+      value: substance-lwko54yi
+    - name:
+        sv-SE: aliphatic prepolymer (d-polyether based)
+      value: substance-lwko6l78
+    - name:
+        sv-SE: aliphatic prepolymer (t-polyether based)
+      value: substance-lwkocu96
+    - name:
+        sv-SE: VOC-EU4,28
+      value: '164'
+    - name:
+        sv-SE: VOC-EU 13,85
+      value: '158'
+    - name:
+        sv-SE: dietylenglykolmonobutyleteracetat
+      value: substance-kxaezk5p
+    - name:
+        sv-SE: 5-klor-2-metyl-2H-isotiazol-3-on och 2-metyl2H-isotiazol-3-on
+      value: substance-kxaf0kd4
+    - name:
+        sv-SE: aromatic isocyanate-prepolymer
+      value: substance-kxaegotp
+    - name:
+        sv-SE: 4,4`-Methylenediphenyl diisocyanate, oligomers
+      value: substance-kxaeh6eb
+    - name:
+        sv-SE: 1,2-Ethanediamine, polymer with 1,1'-methylenebis[4- isocyanatobenzene], methyloxirane and oxirane
+      value: substance-kxaei8mc
+    - name:
+        sv-SE: Aceton
+      value: '88'
+    - name:
+        sv-SE: Kolväten, C7, n-alkaner, isoalkaner, cykloalkaner
+      value: '256'
+    - name:
+        sv-SE: 2-metyl-2H-isotiazol- 3-one [EG-nr 220-239-6] (3:1)
+      value: substance-kgwehw3c
+    - name:
+        sv-SE: Butylacetat
+      value: substance-lcqbgxab
+    - name:
+        sv-SE: Bumetrizole
+      value: substance-lwhm1qbh
+    - name:
+        sv-SE: 'Styren: 24 - 46%, Koboltbis(2-ethylhexanoat): < 0,25 %'
+      value: '170'
+    - name:
+        sv-SE: 'Styren: 25 - 48%, Koboltbis(2-ethylhexanoat): < 0,25 %, Mineralterpentin: 0,1 - 0,2%'
+      value: '172'
+    - name:
+        sv-SE: Koboltbis (2-ethylhexanoat)
+      value: '78'
+    - name:
+        sv-SE: (2-methoxymethylethoxy)propanol
+      value: substance-kkwpfz12
+    - name:
+        sv-SE: Syntetisk amorf, pyrogen kiseloxid
+      value: substance-leny75gv
+    - name:
+        sv-SE: kolväten, C4-, 1,3-butadienfria, polymeriserade, triisobutylenfraktion, hydrogenerade
+      value: '120'
+    - name:
+        sv-SE: Styren 40-50%
+      value: substance-lg1z71nn
+    - name:
+        sv-SE: Maleinsyraanhydrid
+      value: '83'
+    - name:
+        sv-SE: maleinsyraanhydrid och cobalt bis(2-ethylhexanoate).
+      value: '259'
+    - name:
+        sv-SE: 2-Butanon, peroxid
+      value: '75'
+    - name:
+        sv-SE: Väteperoxidlösning
+      value: '76'
+    - name:
+        sv-SE: 2-metyl-2,4-pentandiol
+      value: '77'
+    - name:
+        sv-SE: Aluminium hydroxide
+      value: substance-leny68k9
+    - name:
+        sv-SE: Butanon (1-3%)
+      value: '4'
+    - name:
+        sv-SE: Paraffin waxes and Hydrocarbon waxes
+      value: substance-leny5g8b
+    - name:
+        sv-SE: Metyletylketonperoxid
+      value: substance-leo4575u
+    - name:
+        sv-SE: 'Styren: 78 - 81%, Xylen: 13 - 17%'
+      value: '175'
+    - name:
+        sv-SE: 'EC no. 202-851-5 Styren: 100 %'
+      value: '176'
+    - name:
+        sv-SE: 'Styren: = 25 %, Ftalsyraanhydrid: = 0,3 , Cobalt bis(2-ethylhexanoate): = 0,3'
+      value: '173'
+    - name:
+        sv-SE: aceton, propan-2-on, propanon
+      value: substance-liom2nye
+    - name:
+        sv-SE: 'Propan-2-ol: 40 - 45%, Butan-2-ol: 5 - 10%, Metanol: < 1 %'
+      value: '177'
+    - name:
+        sv-SE: kolvätelösning
+      value: '126'
+    - name:
+        sv-SE: Hydrocarbons, C3-4-rich, petroleum distillate
+      value: substance-lgdrx3q9
+    - name:
+        sv-SE: Salpetersyrans strontiumsalt
+      value: '202'
+    - name:
+        sv-SE: Magnesium
+      value: '204'
+    - name:
+        sv-SE: Kaliumnitrat
+      value: '205'
+    - name:
+        sv-SE: Kaliumhyperklorid
+      value: '206'
+    - name:
+        sv-SE: Metanol (5-10%)
+      value: '2'
+    - name:
+        sv-SE: Etanol (80-90%)
+      value: '3'
+    - name:
+        sv-SE: Kolväten, C10- C13, n-alkaner, isoalkaner, cykliska, < 2% aromater
+      value: substance-kjoay5ia
+    - name:
+        sv-SE: KalciumKlorid
+      value: '106'
+    - name:
+        sv-SE: ORANGE, SWEET, EXT.
+      value: substance-k5nx3eum
+    - name:
+        sv-SE: Methyl salicylate
+      value: substance-loy7sjin
+    - name:
+        sv-SE: C16-18 Alcohol, C18 unsaturated, ethoxylated, propoxylated
+      value: substance-lm902vhx
+    - name:
+        sv-SE: calcium nitrate
+      value: substance-l7kjc5oo
+    - name:
+        sv-SE: calcium, nitrat
+      value: '151'
+    - name:
+        sv-SE: Natriumperkarbonat
+      value: '187'
+    - name:
+        sv-SE: Väteperioxid 3%
+      value: '186'
+    - name:
+        sv-SE: 1,2 Etandiol, Potassium 2-ethylhexanoate
+      value: '182'
+    - name:
+        sv-SE: Fluorerade växthusgaser
+      value: '129'
+    - name:
+        sv-SE: dietyleter, eter
+      value: '133'
+    - name:
+        sv-SE: Kolväten, C6-C7, isoalkaner, cykliska, <5% n-heksan
+      value: '132'
+    - name:
+        sv-SE: 2-butanonoxim, etylmetyletoxim
+      value: '128'
+    - name:
+        sv-SE: hydrocarbons, C10, aromatics, <1% naphthalene
+      value: '221'
+    - name:
+        sv-SE: dikopparoxid
+      value: '57'
+    - name:
+        sv-SE: ACIDE DECANEDIOIQUE,BIS(2,2,6,6-TÉTRA MÉTHYL-4-PIPÉRIDINYL)ESTER
+      value: substance-k5m73xrj
+    - name:
+        sv-SE: C7-C9-ALKYL-3-[3-(2H-BENZOTRIAZ OL-2-YL)-5-(1,1-DIMETYLETYL)-4- HYDROXIFENYL]PROPIONATER
+      value: substance-k5m72hts
+    - name:
+        sv-SE: petroleumdestillat vätebehandlad lätta
+      value: '138'
+    - name:
+        sv-SE: 4-TERT-BUTYLFENOL
+      value: substance-k5masjfx
+    - name:
+        sv-SE: DIPROPYLENE GLYCOL MONOMETHYLIQUE ETHER
+      value: substance-k5nx2e1r
+    - name:
+        sv-SE: ALCOHOL, C10-C12, ETHOXYLATED, PROPOXYLATED
+      value: substance-k5nx2s5f
+    - name:
+        sv-SE: Oxalsyra
+      value: substance-k5nxfjob
+    - name:
+        sv-SE: Phosphate Trisodique
+      value: substance-k5nxfukn
+    - name:
+        sv-SE: Formaldehyde, oligomeric reaction products with phenol
+      value: substance-k5paviin
+    - name:
+        sv-SE: Amorpohous Alimina Silicate
+      value: substance-k5pax36l
+    - name:
+        sv-SE: epiklorhydrin med medelmolekylvikt ≤ 700
+      value: substance-k5pekcd3
+    - name:
+        sv-SE: benzylalkohol
+      value: substance-k5pel6xh
+    - name:
+        sv-SE: tetraetylenpentamin
+      value: substance-k5pemrb9
+    - name:
+        sv-SE: trietylentetramin
+      value: substance-k5peo6w0
+    - name:
+        sv-SE: Fenol
+      value: substance-k5pepf8x
+    - name:
+        sv-SE: BISPHENOL F EPOXY RESIN
+      value: substance-k5qhfc2g
+    - name:
+        sv-SE: isobutanol
+      value: substance-k5qhfzv7
+    - name:
+        sv-SE: Reaction products of di-, tri- and tetra-propoxylated propane- 1,2-diol with ammonia
+      value: substance-k5qj68fh
+    - name:
+        sv-SE: Triethylenetetramine, propoxylated
+      value: substance-k5qj60a5
+    - name:
+        sv-SE: dietylentriamin
+      value: substance-k5qj7heo
+    - name:
+        sv-SE: oxirane, mono[(C12-14-alkyloxy)methyl] derivs.
+      value: substance-k5rujrxo
+    - name:
+        sv-SE: natriummetasilikat
+      value: substance-k5rveru5
+    - name:
+        sv-SE: Alcohols, C9-11 ethoxylated
+      value: substance-k5rvffxj
+    - name:
+        sv-SE: Butadiene-acrylonitrile co-polymer
+      value: substance-k5s1f6ts
+    - name:
+        sv-SE: Cashew, nutshell liq., reaction products with 1,3- benzenedimethanamine, formaldehyde, 1,3-pentanediamine and tetraethylenepentamine
+      value: substance-k5s1fzkh
+    - name:
+        sv-SE: 2-Hydroxyethyl ethers
+      value: substance-k5s1gpd4
+    - name:
+        sv-SE: Phenol, 2,4,6-Tris[(dimethylamino)methyl] reaction products with TETA
+      value: substance-k5s1he06
+    - name:
+        sv-SE: 2-piperazin-1-yletylamin
+      value: substance-k5s1j8np
+    - name:
+        sv-SE: m-phenylenebis(methylamine)
+      value: substance-k5s1k0tz
+    - name:
+        sv-SE: Formaldehyd polymer med fenol & TETA
+      value: substance-k5s6bhsl
+    - name:
+        sv-SE: 4,4'-Isopropylidenediphenol, oligomeric reaction products with 1-chloro-2,3-epoxypropane, reaction products with diethylenetriamine
+      value: substance-k5s6good
+    - name:
+        sv-SE: 1,4-butandioldiglycidyleter
+      value: substance-k5s6iuoq
+    - name:
+        sv-SE: Bisfenol A - diglycidyleter polymer med Bisfenol A
+      value: substance-leybnw0i
+    - name:
+        sv-SE: etanol
+      value: substance-leybp799
+    - name:
+        sv-SE: Reaktionsmassa av etylbensen och xylen
+      value: substance-leybpxkg
+    - name:
+        sv-SE: '[3-(2,3- epoxypropoxy) propyl] trimethoxysilane'
+      value: substance-leybrncx
+    - name:
+        sv-SE: 2-metoxipropanol
+      value: substance-leybsmbn
+    - name:
+        sv-SE: Fatty acids, talloil, maleated, compds. with triethanolamine
+      value: substance-leybu7mt
+    - name:
+        sv-SE: n-butanol
+      value: substance-leybvy1p
+    - name:
+        sv-SE: 1,2-etandiol, etylenglykol
+      value: substance-ley8wok9
+    - name:
+        sv-SE: 2,4,7,9- tetramethyldec5-yne-4,7-diol
+      value: substance-ley8xey8
+    - name:
+        sv-SE: Formaldehyde, polymers with 1,3- benzenedimetha namine, bisphenol A, diethylenetriamin e-glycidyl Ph ether reaction products, epichlorohydrin, propylene oxide and triethylenetetrami ne, reaction products with glycidyl o-tolyl ether, sulfamates (salts)
+      value: substance-ley90r2e
+    - name:
+        sv-SE: Etanol 50-70%
+      value: substance-kkfgmggs
+    - name:
+        sv-SE: N,N-dietyl-m-toluamid
+      value: substance-kkfgmyl0
+    - name:
+        sv-SE: 2,2'-Ethylenedioxydiethyl dimethacrylate
+      value: substance-kfgim3ed
+    - name:
+        sv-SE: Tetramethylene dimethacrylate
+      value: substance-kfgio4ew
+    - name:
+        sv-SE: Menadione
+      value: substance-lf17u43j
+    - name:
+        sv-SE: Reaction mass of N,N’-ethane1,2-diylbis(12- hydroxyoctadecan-1-amide), Octadecanamide, 12-hydroxy-N- [2-[(1-oxooctadecyl)amino]ethyl]
+      value: substance-ll51wmjp
+    - name:
+        sv-SE: 2-(3-metoxipropoxi) propan-1-ol
+      value: substance-kgweaell
+    - name:
+        sv-SE: benzotiazol-2-tiol
+      value: substance-kgwebwsu
+    - name:
+        sv-SE: ammoniaklösning
+      value: substance-kgweda2o
+    - name:
+        sv-SE: 1,2-benzisotiazol-3(2H) -on
+      value: substance-kgwef3aw
+    - name:
+        sv-SE: natriumnitrit
+      value: substance-kgwefln2
+    - name:
+        sv-SE: 5-klor-2-metyl-2Hisotiazol- 3-one [EG-nr 247-500-7]
+      value: substance-kgweh0x3
+    - name:
+        sv-SE: Linolja
+      value: '179'
+    - name:
+        sv-SE: Kaliumhydroxid
+      value: substance-kjoagfv6
+    - name:
+        sv-SE: Zirkoniumbutanol at
+      value: substance-kjobfyy3
+    - name:
+        sv-SE: Polymer på basis 2-propylheptanol
+      value: substance-kjocaq0t
+    - name:
+        sv-SE: Hydrocarbons, C11-C14, n-alkanes, isoalkanes, cyclics, < 2% aromatics
+      value: substance-kjocdh5z
+    - name:
+        sv-SE: Alkyl(C12-16) dimetylbenzylammoniumklorid
+      value: substance-kjocyomt
+    - name:
+        sv-SE: Kaliumkarbonat
+      value: substance-kjofkocf
+    - name:
+        sv-SE: N,N-dimethyltetradecylamine N-oxide
+      value: substance-kjofmb4a
+    - name:
+        sv-SE: Metacrylat copolymer
+      value: substance-kko00c3i
+    - name:
+        sv-SE: kaliumcarbonat
+      value: substance-kkwpew8f
+    - name:
+        sv-SE: 1-Heptanol, 2-propyl-
+      value: substance-kkwpfgh6
+    - name:
+        sv-SE: 2,4,6-Triallyloxy-1,3,5-triazine
+      value: substance-klqlxz9f
+    - name:
+        sv-SE: 2-[[2,2-bis[[(1- oxoallyl)oxy]methyl]butoxy]methyl]-2-ethyl-1,3-propanediyl diacrylate
+      value: substance-lf19iugq
+    - name:
+        sv-SE: Solventnafta (petroleum), tung aromatisk
+      value: substance-klv8p380
+    - name:
+        sv-SE: gamma-aminopropyl-trimetoxisilan
+      value: substance-kmyt35t8
+    - name:
+        sv-SE: Cyclohexane
+      value: substance-kmysngfh
+    - name:
+        sv-SE: Isoforondiisocyanat
+      value: substance-kmysolpz
+    - name:
+        sv-SE: 2,2,4-Trimetylpentan
+      value: substance-kmysrlos
+    - name:
+        sv-SE: Hexahydro-4-metylftalsraanhydrid
+      value: substance-kmyssi10
+    - name:
+        sv-SE: 1,6-hexandiyl-bi(2-(2-(1-etylpentyl)-3-oxazolidinyl)karbamat
+      value: substance-kmysurev
+    - name:
+        sv-SE: Tetraetylsilikat
+      value: substance-kmyvqrjz
+    - name:
+        sv-SE: Butyl titanate
+      value: substance-kmyvsl3k
+    - name:
+        sv-SE: 2-metyl-m-fenylendiiscocyanat
+      value: substance-kmyw3cg4
+    - name:
+        sv-SE: Benzene,1,3-diisocyanatomethyl-plymer with 1,6-diisocyanatohexane
+      value: substance-kmyw4d8x
+    - name:
+        sv-SE: Vitolja
+      value: substance-koiybsub
+    - name:
+        sv-SE: Smörjoljor, vätebehandlad tunga
+      value: substance-kocoe5rf
+    - name:
+        sv-SE: Smörjoljor (petroleum), C15- 30, vätebehandlade neutrala oljebaserade
+      value: substance-kocodt5u
+    - name:
+        sv-SE: Högraffinerade oljor, komplex blandning av högraffinerade oljor
+      value: substance-kocode9j
+    - name:
+        sv-SE: Ditiofosforsyra,O,O-di-C1-14-alkylestrar, zinksalter
+      value: substance-koiyc7il
+    - name:
+        sv-SE: Phenol, isopropylated, phosphate (3:1)
+      value: substance-koizsmfo
+    - name:
+        sv-SE: Polysulfider, di-ter-Bu
+      value: substance-koizsuv8
+    - name:
+        sv-SE: Benzenamin, N-fenyl-, reaksjonsprodukter med 2,4,4- trimetylpenten
+      value: substance-koizt8a3
+    - name:
+        sv-SE: heptan-2-on
+      value: substance-kosq4kxk
+    - name:
+        sv-SE: 1,2,4-Trimetylbenzen
+      value: '267'
+    - name:
+        sv-SE: Hexandiisocyanat, polymer
+      value: substance-kosrqsrc
+    - name:
+        sv-SE: 1,1-dimetylhydrazin
+      value: substance-kotuvuo3
+    - name:
+        sv-SE: bis(1,2,2,6,6-pentamethyl4-piperidyl) sebacate
+      value: substance-kotuwuts
+    - name:
+        sv-SE: Polyethyleneglycol mono-(3- (3-(2H-benzotriazol-2-yl) -5-tert-butyl-4-hydroxyphenyl) propionate)
+      value: substance-kotuwzft
+    - name:
+        sv-SE: Polyethylene glycol di[3-[3- (2H-benzotriazol-2-yl)-5-tertbutyl-4-hydroxyphenyl] -1-oxopropyl] ether
+      value: substance-kotuxkc4
+    - name:
+        sv-SE: methyl 1,2,2,6, 6-pentamethyl-4-piperidyl sebacate
+      value: substance-kotuzdwn
+    - name:
+        sv-SE: 5-metyl-2-hexanon
+      value: substance-kotvj7uv
+    - name:
+        sv-SE: 2-metylbutylacetat
+      value: substance-kotvvl7w
+    - name:
+        sv-SE: isopentylacetat
+      value: substance-kotvv348
+    - name:
+        sv-SE: Hexamethylene diisocyanate, oligomers
+      value: substance-kotvje4n
+    - name:
+        sv-SE: bensoesyra
+      value: substance-kotw6baj
+    - name:
+        sv-SE: 2-ethylhexanoic acid, zirconium salt
+      value: substance-kumr6ww8
+    - name:
+        sv-SE: 2-METYLISOTIAZOL-3(2H)-ON
+      value: substance-l43u1e50
+    - name:
+        sv-SE: Trimetylhexametendiamin
+      value: substance-kx07gkad
+    - name:
+        sv-SE: 2-Hydroxibensoesyra
+      value: substance-kx07h8m1
+    - name:
+        sv-SE: Bisphenol-A-epiklorhydrinharts, Mw ≤ 700
+      value: substance-kx07idco
+    - name:
+        sv-SE: Hexandioldiglycidyleter
+      value: substance-kx07khqc
+    - name:
+        sv-SE: Alkylglycidyleter (C10-C16)
+      value: substance-kx07lf6k
+    - name:
+        sv-SE: Citronsyra
+      value: substance-kx63lt9k
+    - name:
+        sv-SE: Aluminiumpulver (stabiliserat)
+      value: substance-kxzwf00h
+    - name:
+        sv-SE: Kvartärt fettaminetoxylat
+      value: substance-ky04wrwy
+    - name:
+        sv-SE: Nonjontensid
+      value: substance-ky04xrxn
+    - name:
+        sv-SE: EDTA 40%
+      value: substance-ky04ytua
+    - name:
+        sv-SE: dipropylene glycol dibenzoate
+      value: substance-kylb5925
+    - name:
+        sv-SE: 1,3-bis(12-hydroxyoctadecanamide- N-mathyle) benzene
+      value: substance-kylb67gu
+    - name:
+        sv-SE: n-butylmetakrylat
+      value: substance-kylb857n
+    - name:
+        sv-SE: metylmetakrylat
+      value: substance-kylb995b
+    - name:
+        sv-SE: nafta (petroleum), vätebehandlad lätt
+      value: '131'
+    - name:
+        sv-SE: 2,6-dimetylheptan-4-on⁽
+      value: substance-kyojxceb
+    - name:
+        sv-SE: Glutaraldehyd
+      value: substance-l1d99q7n
+    - name:
+        sv-SE: Bronopol (INN)
+      value: substance-l1d9ad1l
+    - name:
+        sv-SE: calcium dodecylbenzenesulphonate
+      value: substance-l7hfrrqc
+    - name:
+        sv-SE: diboron calcium tetraoxide
+      value: substance-l7hfrlah
+    - name:
+        sv-SE: 1,2,4-trimetylbensen
+      value: substance-ldkbk708
+    - name:
+        sv-SE: Kondensationsprodukter av trietanolamin med tillsatsprodukter av fettsyror, C18 (omättad) alkyl med maleinsyraanhydrid
+      value: substance-lp6otr1v
+    - name:
+        sv-SE: xylene
+      value: '220'
+    - name:
+        sv-SE: metyletylketon
+      value: '27'
+    - name:
+        sv-SE: methyl-1,2,2,6,6-pentamethyl-4-piperidylsebacate
+      value: '47'
+    - name:
+        sv-SE: 2-hydroxietylmetakrylat
+      value: substance-lcqbpv3c
+    - name:
+        sv-SE: isobutylmetakrylat
+      value: substance-lcqbpfqm
+    - name:
+        sv-SE: 2-metoxipropylacetat
+      value: substance-lcqbejpy
+    - name:
+        sv-SE: metylisobutylketon
+      value: '59'
+    - name:
+        sv-SE: aromatische polyisocyanaat
+      value: substance-lcqd136i
+    - name:
+        sv-SE: <5% Fosfater
+      value: '67'
+    - name:
+        sv-SE: <5% Fosfonater
+      value: '68'
+    - name:
+        sv-SE: 5-<15% Nonjoniska tensider
+      value: '70'
+    - name:
+        sv-SE: 2-butoxietanol, etylenglykolmonobutyleter, butylcellosolv
+      value: substance-ldkb7p03
+    - name:
+        sv-SE: Substituted Phenol
+      value: substance-ldkbl5jh
+    - name:
+        sv-SE: mesitylen, 1,3,5-trimetylbensen
+      value: substance-ldkbmdxq
+    - name:
+        sv-SE: kumen
+      value: substance-ldkb2sc8
+    - name:
+        sv-SE: 1,2,3-trimethylbenzene
+      value: substance-ldkb1wpa
+    - name:
+        sv-SE: Naftalen
+      value: substance-kk422u60
+    - name:
+        sv-SE: Furan
+      value: substance-ldkbnwg6
+    - name:
+        sv-SE: Polyolefin alkyl phenol alkyl amine
+      value: substance-ldkbkpia
+    - name:
+        sv-SE: propylenoxid, 1,2-epoxipropan, metyloxiran
+      value: substance-ldkc5522
+    - name:
+        sv-SE: Fotogen (petroleum)
+      value: substance-ldkb3qj4
+    - name:
+        sv-SE: 1,3,5-trimetylbenzen
+      value: '268'
+    - name:
+        sv-SE: mesitylen
+      value: substance-ldkb9hgy
+    - name:
+        sv-SE: Borated reaction product of polybutenyl succinic anhydride with ethylenediamine-piperazine polymer
+      value: substance-ldkd5fwn
+    - name:
+        sv-SE: Ethanol, 2,2'-iminobis-, N-tallow alkyl, derivs
+      value: substance-ldkd5wex
+    - name:
+        sv-SE: 2,6-di-tert-butylfenol
+      value: substance-ldkas4pv
+    - name:
+        sv-SE: Reaction mass of ethylbenzene and xylene
+      value: substance-le5yv2gs
+    - name:
+        sv-SE: maleinsyraanhydrid
+      value: substance-le5z3sab
+    - name:
+        sv-SE: trietylamin
+      value: substance-le5z3n6d
+    - name:
+        sv-SE: Fatty acids, tall-oil, esters with polyethylene glycol mono (hydrogen maleate), compds. with amides from diethylenetriamine and tall-oil fatty acids
+      value: substance-le5z2bno
+    - name:
+        sv-SE: 'Reaktionsprodukt: bisfenol-A- (epiklorhydrin), epoxyharts, 700 < molvikt < 1000'
+      value: substance-le5yw3c7
+    - name:
+        sv-SE: decamethylcyclopentasiloxane
+      value: substance-le5yvz4j
+    - name:
+        sv-SE: N-(3-(trimethoxysilyl)propyl) ethylenediamine
+      value: substance-le5yv7yn
+    - name:
+        sv-SE: 1,2-Ethanediamine, N-(2-aminoethyl)-, polymer with oxirane
+      value: substance-lg23elnp
+    - name:
+        sv-SE: Trietylendiamin
+      value: substance-lg23i2ql
+    - name:
+        sv-SE: 4,4´-metylenbiscyklohexylamin
+      value: '99'
+    - name:
+        sv-SE: Trimetyl-1,6-hexandiamin
+      value: '100'
+    - name:
+        sv-SE: Isoforondiamin
+      value: '101'
+    - name:
+        sv-SE: BENZENAMINE, AR- NONYL-N- (NONYLPHENYL)-
+      value: substance-lmaoa25a
+    - name:
+        sv-SE: zinc bis[O- (6-methylheptyl)] bis[O- (sec-butyl)] bis (dithiophosphate)
+      value: substance-lmaoazim
+    - name:
+        sv-SE: Antioxidant (fenolisk)
+      value: substance-lmaobw05
+    - name:
+        sv-SE: Alkylfenol
+      value: substance-lmaofbo9
+    - name:
+        sv-SE: cobalt lithium manganese nickel oxide
+      value: substance-lnyaatkk
+    - name:
+        sv-SE: Graphite
+      value: substance-lnyabxmt
+    - name:
+        sv-SE: Ethylene carbonate
+      value: substance-lnyactq2
+    - name:
+        sv-SE: Lithium hexafluorophosphate(1-)
+      value: substance-lnyaddx7
+    - name:
+        sv-SE: Etyllaktat
+      value: substance-lu9xn6ux
+    - name:
+        sv-SE: 2-Propylheptanoletoxilat
+      value: substance-lu9xnrkh
+    - name:
+        sv-SE: Glycerol
+      value: substance-lk2nx8dn
+    - name:
+        sv-SE: etandiol, etylenglykol
+      value: substance-lk195yv6
+    - name:
+        sv-SE: 2,2'-oxibisetanol, dietylenglykol
+      value: substance-lk196uwg
+    - name:
+        sv-SE: 2-etylhexansyra
+      value: substance-lk197h7l
+    - name:
+        sv-SE: Kalium-2-etylheksanat
+      value: substance-lk19d9f9
+    - name:
+        sv-SE: propane
+      value: substance-lkcbkvr6
+    - name:
+        sv-SE: Distillates (pertolium), hydrotreated light
+      value: substance-lkcbgqe0
+    - name:
+        sv-SE: Väteklorid, lösning
+      value: '118'
+    - name:
+        sv-SE: Polyetylenglykol
+      value: substance-luuyyuzg
+    - name:
+        sv-SE: Sodium chloride
+      value: substance-luuz84bs
+    - name:
+        sv-SE: 2-(2-HEPTADEC-8-ENYL-2-IMIDAZOLIN-1-YL)ETHANOL
+      value: substance-luvc2uki
+    - name:
+        sv-SE: TALC (MG3H2(SIO3)4)
+      value: substance-luvc3o7e
+    - name:
+        sv-SE: CALCIUM SULFONATE
+      value: substance-luvc4adw
+    - name:
+        sv-SE: 2,2-bis[4-(2, 3-epoxipropoxi)fenyl] propan
+      value: substance-m14zx1fm
+    - name:
+        sv-SE: aromatic hydrocarbons, C9
+      value: substance-m14zy0sa
+    - name:
+        sv-SE: etylendiamin
+      value: substance-m1509888
+    - name:
+        sv-SE: Dodecamethylcyclohexa siloxane [D6] 0.1 - <0.3 %
+      value: substance-m3x5675x
+    - name:
+        sv-SE: 2-Pentandione, O,O',O'-(methylsilylidyne )trioxime 1 - <3 %
+      value: substance-m3x576su
+    - name:
+        sv-SE: Silika, amorf 5 - <10 %
+      value: substance-m3x58ic5
+    - name:
+        sv-SE: Hydroxifenyl-benzotriazol-derivat
+      value: substance-m3zpqax9
+    - name:
+        sv-SE: 'Reaktionsblandning av: 5-klor-2-metyl4-isotiazolin-3-on och 2-metyl-2H-isotiazol-3-on (3:1)'
+      value: substance-m3zpqxah
+    - name:
+        sv-SE: Alkoholer, C14-16
+      value: substance-m3zpypcr
+    - name:
+        sv-SE: Etanaminium, 2-hydroxi-N-(2-hydroxietyl)-N,N-dimetyl-, diestrar med C16-18 och C18-omättad. fettsyror, Me-sulfater
+      value: substance-m3zpsb17
+    - name:
+        sv-SE: Dimetylsiloxan, (aminoalkyl)metoximetylsiloxi- och dimetylalkoxi-avslutat
+      value: substance-m3zpzh1n
+    - name:
+        sv-SE: Alkoholer, C14-15, etoxylerade
+      value: substance-m3zq0543
+    - name:
+        sv-SE: Ättiksyra
+      value: '196'
+    - name:
+        sv-SE: Reaktionsprodukten av bis (1,2,2,6 ,6-pentametyl-4-piperidyl) sebacat och metyl 1,2,2,6,6-pentametyl-4piperidylsebacat
+      value: substance-m3zqk91m
+    - name:
+        sv-SE: Dekametylcyklopentasiloxan
+      value: substance-m3zqojod
+    - name:
+        sv-SE: Undekan-1-ol, etoxylerad
+      value: substance-m3zqooqt
+    - name:
+        sv-SE: Kolväten, C10-13, aromatiska, <1 % naftalen
+      value: substance-m412rxqw
+    - name:
+        sv-SE: DIPROPYLEN GLYKOL MONOMETYLETER
+      value: substance-m69ddii7
+    - name:
+        sv-SE: ETANOLAMIN
+      value: substance-m69de44f
+    - name:
+        sv-SE: Alcoli, C12-14, etossilati
+      value: substance-m69dctwh
+    - name:
+        sv-SE: ISOTRIDECANOLO ETOSSILATO
+      value: substance-m69e5cb0
+    - name:
+        sv-SE: DIETYLENGLYKOLMONOETYLETER
+      value: substance-m69g1dhc
+    - name:
+        sv-SE: Dihidrazide dell'acido esanedioico
+      value: substance-m69g24i9
+    - name:
+        sv-SE: AMMONIAK
+      value: substance-m69g3eia
+    - name:
+        sv-SE: 1,2-BENSISOTIAZOLIN-3-ON
+      value: substance-m69fo0vs
+    - name:
+        sv-SE: ETYLENGLYKOL
+      value: substance-m69fcucg
+    - name:
+        sv-SE: Dimethylbis[(1-oxoneodecyl)oxy]stannane
+      value: substance-m3x6ueho
+    - name:
+        sv-SE: Alkoholer, C9-11, etoxylerade
+      value: substance-m5nz2vbp
+    - name:
+        sv-SE: Tetranatriumetylendiamintetraacetat
+      value: substance-m5nyzdsx
+    - name:
+        sv-SE: Nafta (petroleum), vätebehandlad tung
+      value: substance-m5nyu0gs
+    - name:
+        sv-SE: Fettsyror, tallolja, föreningar med morfolin
+      value: substance-m5nys5pq
+    - name:
+        sv-SE: morfolin
+      value: substance-m5nysms6
+    - name:
+        sv-SE: Nefelinsyenit
+      value: substance-m5nys18v
+    - name:
+        sv-SE: Nafta (petroleum), sweetened
+      value: substance-m5nyp29m
+    - name:
+        sv-SE: Propylidynetrimethanol
+      value: substance-m6hnoqeb
+    - name:
+        sv-SE: Zirkonium 2-etylhexanoat
+      value: substance-m6hnpe8q
+    - name:
+        sv-SE: KOLVÄTEN, C9-C11, n-alkaner, isoalkaner, cykliska, < 2% aromater
+      value: substance-m6hnq4mh
+    - name:
+        sv-SE: klorbensen
+      value: substance-m6s56dde
+    - name:
+        sv-SE: Beta-(3,4-epoxicyclohexyl)etyltrimetoxi silan
+      value: substance-m6s55pf9
+    - name:
+        sv-SE: Akrylatpolymer
+      value: substance-m6s555bh
+    - name:
+        sv-SE: 2,5-Furandion, reaktionsprodukt med polypropen, klorerad
+      value: substance-m6s54oyl
+    - name:
+        sv-SE: KOLVÄTEN, C9-C11, n-alkaner, isoalkaner, cykliska, < 2% aromater.
+      value: substance-m6sco9me
+    - name:
+        sv-SE: Kobolt bis (2-etylhexanoat)
+      value: substance-m6sczj1z
+    - name:
+        sv-SE: KOLVÄTEN, C9, aromater
+      value: substance-m6tf8glm
+    - name:
+        sv-SE: Phosphorodithioic acid, mixed O,O-bis(sec-Bu and isooctyl) esters, zinc salts
+      value: substance-m6uk2n7r
+    - name:
+        sv-SE: Lubricating oils (petroleum), C20-50, hydrotreated neutral oil-based (DMSO < 3%)
+      value: substance-m6uk390t
+    - name:
+        sv-SE: Cuomarin limone
+      value: '149'
+    - name:
+        sv-SE: citronellol, limonen &linalol
+      value: '136'
+    - name:
+        sv-SE: 1-Methoxy-2-propanol
+      value: substance-kwxbp1yk
+    - name:
+        sv-SE: organo moly-sulfur complex
+      value: '231'
+    - name:
+        sv-SE: lätt aromatisk kolofonium koppar(I)oxid
+      value: '292'
+    - name:
+        sv-SE: KALIUMPYROFOSFAT
+      value: substance-mav534em
+    - name:
+        sv-SE: FETTALKOHOLETOXILAT
+      value: substance-mav52t02
+    - name:
+        sv-SE: Quaternary ammonium compounds, coco alkylbis(hydroxyethyl)methyl, ethoxylated, Me sulfates (salts)
+      value: substance-meuaay7y
+    - name:
+        sv-SE: sodium hydroxide caustic soda
+      value: substance-meuaankz
+    - name:
+        sv-SE: 2-butoxyethanol; ethylene glycol monobutyl etherbutyl cellosolve
+      value: substance-meuaa8ab
+    - name:
+        sv-SE: Tetrapotassium pyrophosphate
+      value: substance-meuaaghh
+    - name:
+        sv-SE: butanone ethyl methyl ketone
+      value: substance-mesbi26h
+    - name:
+        sv-SE: acetone propan-2-one propanone
+      value: substance-mesbhprd
+    - name:
+        sv-SE: tetrahydrofuran
+      value: substance-mesbl3kc
+    - name:
+        sv-SE: butanoneethyl methyl ketone
+      value: substance-mesbkx1d
+    - name:
+        sv-SE: Reaction mass of 4,4'-methylenediphenyl diisocyanate and 2,2'-methylenediphenyl diisocyanate and o-(p-isocyanatobenzyl)phenyl isocyanate
+      value: substance-mesbn6sq
+    - name:
+        sv-SE: 4,4'-methylenediphenyl diisocyanatediphenylmethane-4,4'-diisocyanate
+      value: substance-mesbmxsc
+    - name:
+        sv-SE: Hydrocarbons, C6, isoalkanes, <5% n-hexane
+      value: substance-mesbners
+    - name:
+        sv-SE: Hydrocarbons, C7, n-alkanes, isoalkanes, cyclics
+      value: substance-mesbz8w4
+    - name:
+        sv-SE: borates, tetra, sodium salts - anhydrous
+      value: substance-mb53yce9
+    - name:
+        sv-SE: 1,3-bis[3-(dimethylamino)propyl]urea
+      value: substance-lg22yasl
+    - name:
+        sv-SE: Pentaerytritol-PO-mercaptoglycero
+      value: substance-lg22x2ka
+    - name:
+        sv-SE: tris(p-isocyanatophenyl) thiop-hosphate
+      value: substance-md30q8xa
+    - name:
+        sv-SE: Didecyldimetylammoniumklorid
+      value: substance-kfgjvlj7
+    multiSelect: true

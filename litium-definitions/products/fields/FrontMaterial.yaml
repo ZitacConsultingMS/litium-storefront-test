@@ -19,5 +19,3 @@ productFields:
         en-US: Moist resistant MDF
         sv-SE: Fukttrög MDF
       value: MoistResistantMDF
-    multiSelect: false
-    manualSort: false

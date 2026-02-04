@@ -1,0 +1,16 @@
+productFields:
+- id: article_name
+  type: Text
+  name:
+    sv-SE: ArtName
+  description:
+    sv-SE: ArtName
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

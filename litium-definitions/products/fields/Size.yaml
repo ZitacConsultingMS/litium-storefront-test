@@ -3,7 +3,7 @@ productFields:
   type: TextOption
   name:
     en-US: Size
-    sv-SE: Storlek
+    sv-SE: Litium_Storlek
   settings:
     multiCulture: false
     administration:
@@ -35,5 +35,3 @@ productFields:
         sv-SE: One size
         en-US: One size
       value: One size
-    multiSelect: false
-    manualSort: false

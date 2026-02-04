@@ -1,0 +1,14 @@
+blockFields:
+- id: zsPhone
+  type: Text
+  name:
+    en-US: Phone
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

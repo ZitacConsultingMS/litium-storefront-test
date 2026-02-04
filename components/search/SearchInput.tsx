@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { Button } from 'components/elements/Button';
 import { Input } from 'components/elements/Input';
 import CircleXMark from 'components/icons/circle-xmark';
-import Magnifier from 'components/icons/magnifier';
+import Magnifier from 'components/icons/zitac/magnifier';
 import { useTranslations } from 'hooks/useTranslations';
 import React from 'react';
 

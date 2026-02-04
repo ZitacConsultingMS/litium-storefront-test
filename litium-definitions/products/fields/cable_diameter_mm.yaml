@@ -1,0 +1,22 @@
+productFields:
+- id: cable_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Kabel (mm)
+    en-US: Ø Kabel (mm)
+    nb-NO: Ø Kabel (mm)
+    sv-SE: Ø Kabel (mm)
+  description:
+    da-DK: Ø Kabel (mm)
+    en-US: Ø Kabel (mm)
+    nb-NO: Ø Kabel (mm)
+    sv-SE: Ø Kabel (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

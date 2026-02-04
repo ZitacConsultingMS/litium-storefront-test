@@ -1,0 +1,53 @@
+websiteTemplates:
+- settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Contents
+    name:
+      en-US: Main Contents
+      sv-SE: Huvudinnehåll
+    fields:
+    - id: Title
+    - id: Introduction
+    - id: Text
+    - id: NumberOfNewsPerPage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LinkList
+    name:
+      en-US: List
+      sv-SE: Länklista
+    fields:
+    - id: Links
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: FileList
+    name:
+      en-US: File list
+      sv-SE: Fillista
+    fields:
+    - id: Files
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: NewsList
+  name:
+    en-US: News list
+    sv-SE: Nyhetslista

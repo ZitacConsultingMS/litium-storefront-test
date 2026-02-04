@@ -1,0 +1,22 @@
+productFields:
+- id: volume
+  type: Text
+  name:
+    da-DK: Volym
+    en-US: Volym
+    nb-NO: Volym
+    sv-SE: Volym
+  description:
+    da-DK: Volym
+    en-US: Volym
+    nb-NO: Volym
+    sv-SE: Volym
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

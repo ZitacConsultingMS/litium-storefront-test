@@ -1,0 +1,22 @@
+productFields:
+- id: max_a
+  type: Text
+  name:
+    da-DK: Max A
+    en-US: Max A
+    nb-NO: Max A
+    sv-SE: Max A
+  description:
+    da-DK: Max A
+    en-US: Max A
+    nb-NO: Max A
+    sv-SE: Max A
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

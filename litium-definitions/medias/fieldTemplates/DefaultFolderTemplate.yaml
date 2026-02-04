@@ -1,0 +1,19 @@
+mediaTemplates:
+- type: Folder
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _nameInvariantCulture
+    - id: _description
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: DefaultFolderTemplate
+  name:
+    en-US: Folder
+    sv-SE: Standardmapp

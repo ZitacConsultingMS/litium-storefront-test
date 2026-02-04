@@ -1,0 +1,22 @@
+productFields:
+- id: max_height_mm
+  type: Decimal
+  name:
+    da-DK: Maxhöjd (mm)
+    en-US: Maxhöjd (mm)
+    nb-NO: Maxhöjd (mm)
+    sv-SE: Maxhöjd (mm)
+  description:
+    da-DK: Maxhöjd (mm)
+    en-US: Maxhöjd (mm)
+    nb-NO: Maxhöjd (mm)
+    sv-SE: Maxhöjd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

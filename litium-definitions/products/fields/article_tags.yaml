@@ -1,0 +1,33 @@
+productFields:
+- id: article_tags
+  type: TextOption
+  name:
+    da-DK: Tags
+    en-US: Tags
+    nb-NO: Tags
+    sv-SE: Tags
+  description:
+    da-DK: Tags
+    en-US: Tags
+    nb-NO: Tags
+    sv-SE: Tags
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        nb-NO: N/A
+        sv-SE: N/A
+        en-US: N/A
+        da-DK: N/A
+        de-DE: N/A
+        fi-FI: N/A
+      value: N/A
+    multiSelect: true

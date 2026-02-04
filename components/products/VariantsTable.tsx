@@ -6,6 +6,7 @@ import DataView from 'components/DataView';
 import Table, { IColumnType } from 'components/Table';
 import QuantityInput from 'components/cart/QuantityInput';
 import { Text } from 'components/elements/Text';
+import StockBalanceView from 'components/zitac/StockBalanceCustom';
 import { CartContext } from 'contexts/cartContext';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
@@ -37,14 +38,41 @@ export default function VariantsTable({
       {} as Record<string, number>
     )
   );
+
+  //HANTERING AV FÄLTMALLAR => FÄLT:
+  // type VariantNode = {
+  //   toolsGroup?: Array<{ fieldGroupId: string; fields: any[] }>;
+  //   coloritemsGroup?: Array<{ fieldGroupId: string; fields: any[] }>;
+  // };
+
+  // const getAllDisplayGroups = (v: VariantNode) => {
+  //   const keys = ['toolsGroup', 'coloritemsGroup'] as const;
+  //   return keys.flatMap((k) => v[k] ?? []);
+  // };
+
+  // const allGroupsForFirstVariant = getAllDisplayGroups(
+  //   variants[0] as VariantNode
+  // );
+  // console.log(
+  //   'All display groups for first variant:',
+  //   allGroupsForFirstVariant
+  // );
+  // console.log('VariantsTable variants:', variants);
+
   const t = useTranslations();
   const handleQuantityChange = (articleNumber: string, value: number) => {
     setQuantities({ ...quantities, [articleNumber]: value });
   };
+
+  //TODO. hantera någon typ av switch för de olika visningsmallarna
   const fields =
     variants.length && variants[0].displayFieldGroups.length
       ? variants[0].displayFieldGroups[0].fields
       : [];
+
+  //console.log('Fields for variants table:', fields);
+  //console.log('displaygroups:', variants[0].displayFieldGroups);
+
   const websiteContext = useContext(WebsiteContext);
   const columns: IColumnType<ProductWithVariantsListProduct>[] = [
     {
@@ -71,7 +99,10 @@ export default function VariantsTable({
     {
       key: 'stockStatus',
       title: t('productdetail.column.stock'),
-      render: ({ stockStatus }) => <Text>{stockStatus.inStockQuantity}</Text>,
+      render: ({ articleNumber }) => (
+        <StockBalanceView articleId={articleNumber} onlyInStock={false} />
+      ),
+      // render: ({ stockStatus }) => <Text>{stockStatus.inStockQuantity}</Text>,
     },
     {
       key: 'price',

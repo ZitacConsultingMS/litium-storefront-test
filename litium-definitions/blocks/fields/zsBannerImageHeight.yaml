@@ -1,0 +1,16 @@
+blockFields:
+- id: zsBannerImageHeight
+  type: Boolean
+  name:
+    sv-SE: BannerImageHeight
+  description:
+    sv-SE: 'if true: uses the image height, if false: default banner image behaviour.'
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

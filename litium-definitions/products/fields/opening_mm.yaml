@@ -1,0 +1,22 @@
+productFields:
+- id: opening_mm
+  type: Text
+  name:
+    da-DK: Öppning (mm)
+    en-US: Öppning (mm)
+    nb-NO: Öppning (mm)
+    sv-SE: Öppning (mm)
+  description:
+    da-DK: Öppning (mm)
+    en-US: Öppning (mm)
+    nb-NO: Öppning (mm)
+    sv-SE: Öppning (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: article_product_reference
+  type: Text
+  name:
+    da-DK: Product Reference
+    en-US: Product Reference
+    nb-NO: Product Reference
+    sv-SE: Product Reference
+  description:
+    da-DK: Product Reference
+    en-US: Product Reference
+    nb-NO: Product Reference
+    sv-SE: Product Reference
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

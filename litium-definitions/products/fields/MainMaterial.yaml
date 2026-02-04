@@ -23,5 +23,3 @@ productFields:
         en-US: Brass
         sv-SE: Mässing
       value: Brass
-    multiSelect: false
-    manualSort: false

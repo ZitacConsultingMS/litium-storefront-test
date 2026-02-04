@@ -1,0 +1,22 @@
+productFields:
+- id: min_width_mm
+  type: Decimal
+  name:
+    da-DK: Minimum bredd (mm)
+    en-US: Minimum bredd (mm)
+    nb-NO: Minimum bredd (mm)
+    sv-SE: Minimum bredd (mm)
+  description:
+    da-DK: Minimum bredd (mm)
+    en-US: Minimum bredd (mm)
+    nb-NO: Minimum bredd (mm)
+    sv-SE: Minimum bredd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: width_m
+  type: Text
+  name:
+    da-DK: Bredd (m)
+    en-US: Bredd (m)
+    nb-NO: Bredd (m)
+    sv-SE: Bredd (m)
+  description:
+    da-DK: Bredd (m)
+    en-US: Bredd (m)
+    nb-NO: Bredd (m)
+    sv-SE: Bredd (m)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

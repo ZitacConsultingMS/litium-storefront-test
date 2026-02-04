@@ -1,0 +1,17 @@
+productFields:
+- id: erp_status_info
+  type: Text
+  name:
+    en-US: ERP Status Info
+    sv-SE: Erp Status info
+  description:
+    sv-SE: Erp status info
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

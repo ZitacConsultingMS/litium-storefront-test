@@ -1,0 +1,19 @@
+mediaFields:
+- id: display_image
+  type: Boolean
+  name:
+    da-DK: Display image
+    de-DE: Display image
+    en-US: Display image
+    fi-FI: Display image
+    nb-NO: Display image
+    sv-SE: Display image
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

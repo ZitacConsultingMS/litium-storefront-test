@@ -26,5 +26,3 @@ blockFields:
         en-US: Popular
         sv-SE: Populära
       value: popular
-    multiSelect: false
-    manualSort: false

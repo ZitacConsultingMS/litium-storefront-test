@@ -1,0 +1,48 @@
+productFields:
+- id: product_brand
+  type: TextOption
+  name:
+    da-DK: Brand
+    en-US: Brand
+    nb-NO: Brand
+    sv-SE: Brand
+  description:
+    da-DK: Brand
+    en-US: Brand
+    nb-NO: Brand
+    sv-SE: Brand
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        nb-NO: N/A
+        sv-SE: N/A
+        en-US: N/A
+        da-DK: N/A
+        de-DE: N/A
+        fi-FI: N/A
+      value: N/A
+    - name:
+        nb-NO: Baltic
+        sv-SE: Baltic
+        en-US: Baltic
+        da-DK: Baltic
+        de-DE: Baltic
+        fi-FI: Baltic
+      value: baltic
+    - name:
+        nb-NO: Seven Oceans
+        sv-SE: Seven Oceans
+        en-US: Seven Oceans
+        da-DK: Seven Oceans
+        de-DE: Seven Oceans
+        fi-FI: Seven Oceans
+      value: seven-oceans

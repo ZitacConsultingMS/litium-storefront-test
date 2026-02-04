@@ -1,0 +1,22 @@
+productFields:
+- id: straight_support_amount
+  type: Decimal
+  name:
+    da-DK: Antalrakstötta
+    en-US: Antalrakstötta
+    nb-NO: Antalrakstötta
+    sv-SE: Antalrakstötta
+  description:
+    da-DK: Antalrakstötta
+    en-US: Antalrakstötta
+    nb-NO: Antalrakstötta
+    sv-SE: Antalrakstötta
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

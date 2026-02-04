@@ -1,0 +1,30 @@
+blockFields:
+- id: zsBanner
+  type: MultiField
+  name:
+    en-US: Banner
+    sv-SE: Banner
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - BlockImagePointer
+    - LinkText
+    - zsTextEditor
+    - ActionText
+    - BannerLinkToCategory
+    - BannerLinkToPage
+    - BannerLinkToProduct
+    - zsBackgroundPosition
+    - zsBackgroundBlur
+    - zsBannerImageHeight
+    - zsBannerTextShadow
+    - zsBannerTextColor
+    isArray: true

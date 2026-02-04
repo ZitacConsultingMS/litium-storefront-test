@@ -1,0 +1,22 @@
+productFields:
+- id: function
+  type: Text
+  name:
+    da-DK: Funktion
+    en-US: Funktion
+    nb-NO: Funktion
+    sv-SE: Funktion
+  description:
+    da-DK: Funktion
+    en-US: Funktion
+    nb-NO: Funktion
+    sv-SE: Funktion
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

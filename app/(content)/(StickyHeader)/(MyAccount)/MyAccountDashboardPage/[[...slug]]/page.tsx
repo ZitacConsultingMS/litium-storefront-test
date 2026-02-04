@@ -4,7 +4,7 @@ import {
   MainContent,
   SideNavigation,
   SideNavigationLayout,
-} from 'components/layouts/SideNavigationLayout';
+} from 'components/layouts/zitac/MyAccountSideNavigationLayout';
 import { Block } from 'models/block';
 import { ContentItem } from 'models/content';
 import { NavigationLink } from 'models/navigation';

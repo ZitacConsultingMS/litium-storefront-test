@@ -1,0 +1,15 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: status
+    fields:
+    - id: erp_status
+    - id: erp_status_info
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  useVariantUrl: false
+  id: export_status
+  name:
+    sv-SE: test export status

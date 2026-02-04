@@ -1,0 +1,22 @@
+productFields:
+- id: length_x_width
+  type: Text
+  name:
+    da-DK: L x B
+    en-US: L x B
+    nb-NO: L x B
+    sv-SE: L x B
+  description:
+    da-DK: L x B
+    en-US: L x B
+    nb-NO: L x B
+    sv-SE: L x B
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

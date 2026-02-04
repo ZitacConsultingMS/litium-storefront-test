@@ -7,11 +7,14 @@ customerTemplates:
       sv-SE: Allmänt
     fields:
     - id: _nameInvariantCulture
+    - id: _phone
+    - id: LegalRegistrationNumber
+    - id: LegalVatRegistrationNumber
     administration:
       collapsed: false
     storefront:
       visible: false
   id: OrganizationTemplate
   name:
-    en-US: Organization
-    sv-SE: Organisation
+    en-US: OrganizationTemplate
+    sv-SE: OrganizationTemplate

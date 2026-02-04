@@ -1,0 +1,22 @@
+productFields:
+- id: consumption
+  type: Text
+  name:
+    da-DK: Förbrukning
+    en-US: Förbrukning
+    nb-NO: Förbrukning
+    sv-SE: Förbrukning
+  description:
+    da-DK: Förbrukning
+    en-US: Förbrukning
+    nb-NO: Förbrukning
+    sv-SE: Förbrukning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

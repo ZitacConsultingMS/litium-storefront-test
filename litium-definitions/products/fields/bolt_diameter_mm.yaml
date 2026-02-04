@@ -1,0 +1,22 @@
+productFields:
+- id: bolt_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Bult (mm)
+    en-US: Ø Bult (mm)
+    nb-NO: Ø Bult (mm)
+    sv-SE: Ø Bult (mm)
+  description:
+    da-DK: Ø Bult (mm)
+    en-US: Ø Bult (mm)
+    nb-NO: Ø Bult (mm)
+    sv-SE: Ø Bult (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

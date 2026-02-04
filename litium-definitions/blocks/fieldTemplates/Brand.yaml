@@ -1,0 +1,36 @@
+blockTemplates:
+- category: Products
+  icon:
+    style: fas
+    id: fa-registered
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Brands
+    name:
+      en-US: Brands
+      sv-SE: Märken
+    fields:
+    - id: BlockTitle
+    - id: BrandsLinkList
+    - id: LinkText
+    - id: Link
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Brand
+  name:
+    en-US: Brands
+    sv-SE: Märken

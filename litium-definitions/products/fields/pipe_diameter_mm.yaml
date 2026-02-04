@@ -1,0 +1,19 @@
+productFields:
+- id: pipe_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Rör (mm)
+    de-DE: Ø Rör (mm)
+    en-US: Ø Rör (mm)
+    fi-FI: Ø Rör (mm)
+    nb-NO: Ø Rör (mm)
+    sv-SE: Ø Rör (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

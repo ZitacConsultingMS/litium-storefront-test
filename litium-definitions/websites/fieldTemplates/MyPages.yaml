@@ -1,0 +1,30 @@
+websiteTemplates:
+- settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Contents
+    name:
+      en-US: Main contents
+      sv-SE: Huvudinnehåll
+    fields:
+    - id: MayUserEditLogin
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: MyPages
+  name:
+    en-US: My pages
+    sv-SE: Mina sidor

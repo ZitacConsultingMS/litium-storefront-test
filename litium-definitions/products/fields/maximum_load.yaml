@@ -1,0 +1,22 @@
+productFields:
+- id: maximum_load
+  type: Text
+  name:
+    da-DK: Maxbelastning
+    en-US: Maxbelastning
+    nb-NO: Maxbelastning
+    sv-SE: Maxbelastning
+  description:
+    da-DK: Maxbelastning
+    en-US: Maxbelastning
+    nb-NO: Maxbelastning
+    sv-SE: Maxbelastning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

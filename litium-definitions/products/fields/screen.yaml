@@ -1,0 +1,22 @@
+productFields:
+- id: screen
+  type: Text
+  name:
+    da-DK: Skärm
+    en-US: Skärm
+    nb-NO: Skärm
+    sv-SE: Skärm
+  description:
+    da-DK: Skärm
+    en-US: Skärm
+    nb-NO: Skärm
+    sv-SE: Skärm
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

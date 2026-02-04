@@ -1,0 +1,22 @@
+productFields:
+- id: diameter_x_increase
+  type: Text
+  name:
+    da-DK: Ø x Stigning
+    en-US: Ø x Stigning
+    nb-NO: Ø x Stigning
+    sv-SE: Ø x Stigning
+  description:
+    da-DK: Ø x Stigning
+    en-US: Ø x Stigning
+    nb-NO: Ø x Stigning
+    sv-SE: Ø x Stigning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

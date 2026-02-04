@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Data_Precision
+  type: Text
+  name:
+    en-US: Data Precision
+    sv-SE: Data Precision
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

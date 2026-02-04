@@ -1,0 +1,18 @@
+websiteFields:
+- id: MegaMenuShowContent
+  type: Boolean
+  name:
+    en-US: Show mega menu content
+    sv-SE: Visa innehållet på huvudmenyn
+  description:
+    en-US: When checked, the mega menu opens when the user clicks the link in the menu. If not checked, the user is redirected to the the link's target page or category when clicking the link in the menu.
+    sv-SE: Om den här kryssrutan är markerad öppnas huvudmenyn när du klickar på länken i menyn. Om kryssrutan inte är markerad öppnas den sida eller kategori som länken leder till.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

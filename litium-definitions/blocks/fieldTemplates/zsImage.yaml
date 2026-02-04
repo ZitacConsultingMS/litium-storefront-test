@@ -1,0 +1,23 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-image
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: BlockImagePointer
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsImage
+  name:
+    en-US: Image
+    sv-SE: Bild

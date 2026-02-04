@@ -1,0 +1,69 @@
+productTemplates:
+- type: Category
+  categoryFieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: _description
+    - id: _url
+    - id: _seoTitle
+    - id: _seoDescription
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  blockContainers:
+  - id: topContainer
+    name:
+      sv-SE: Över
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Products
+      - id: zsLayoutFourColumns
+      - id: zsTextEditor
+      - id: zsImage
+      - id: zsLayoutFullWidth
+      - id: zsHelloRetailRecommendations
+      - id: zsBanner
+      - id: zsFAQ
+      - id: zsHTML
+      - id: zsLayoutThreeColumns
+      - id: zsLayoutTwoColumns
+  - id: bottomContainer
+    name:
+      sv-SE: Under
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Products
+      - id: zsLayoutFourColumns
+      - id: zsTextEditor
+      - id: zsImage
+      - id: zsLayoutFullWidth
+      - id: zsHelloRetailRecommendations
+      - id: zsBanner
+      - id: zsFAQ
+      - id: zsHTML
+      - id: zsLayoutThreeColumns
+      - id: zsLayoutTwoColumns
+  - id: betweenContainer
+    name:
+      sv-SE: Emellan
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Products
+      - id: zsLayoutFourColumns
+      - id: zsTextEditor
+      - id: zsImage
+      - id: zsLayoutFullWidth
+      - id: zsHelloRetailRecommendations
+      - id: zsBanner
+      - id: zsFAQ
+      - id: zsHTML
+      - id: zsLayoutThreeColumns
+      - id: zsLayoutTwoColumns
+  id: sweden-webb-category
+  name:
+    sv-SE: Sweden Webb Category

@@ -1,0 +1,6 @@
+productRelationshipTypes:
+- id: spareparts
+  name:
+    en-US: Reservdelar
+    sv-SE: Reservdelar
+  bidirectional: false

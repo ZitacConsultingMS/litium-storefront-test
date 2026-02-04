@@ -13,7 +13,15 @@ export interface CurrentUser {
 export interface PersonItem {
   organizations: OrganizationConnection;
   id: string;
+  customerNumber?: string;
+  fields: PersonFields;
 }
+
+interface PersonFields {
+  _firstName: string;
+  _lastName: string;
+}
+
 export interface PersonOrganizationLink {
   organization: OrganizationItem;
   roleOperations: RoleOperation[];

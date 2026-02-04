@@ -1,0 +1,15 @@
+blockFields:
+- id: zsHTML
+  type: MultirowText
+  name:
+    en-US: HTML
+    sv-SE: HTML
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

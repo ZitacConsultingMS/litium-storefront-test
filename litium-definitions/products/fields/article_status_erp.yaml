@@ -1,0 +1,22 @@
+productFields:
+- id: article_status_erp
+  type: Decimal
+  name:
+    da-DK: Status (ERP)
+    en-US: Status (ERP)
+    nb-NO: Status (ERP)
+    sv-SE: Status (ERP)
+  description:
+    da-DK: Status (ERP)
+    en-US: Status (ERP)
+    nb-NO: Status (ERP)
+    sv-SE: Status (ERP)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

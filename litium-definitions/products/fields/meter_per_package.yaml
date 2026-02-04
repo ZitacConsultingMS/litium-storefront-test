@@ -1,0 +1,22 @@
+productFields:
+- id: meter_per_package
+  type: Text
+  name:
+    da-DK: Meter/Fp
+    en-US: Meter/Fp
+    nb-NO: Meter/Fp
+    sv-SE: Meter/Fp
+  description:
+    da-DK: Meter/Fp
+    en-US: Meter/Fp
+    nb-NO: Meter/Fp
+    sv-SE: Meter/Fp
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

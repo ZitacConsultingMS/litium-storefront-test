@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_White_Balance_Mode
+  type: Text
+  name:
+    en-US: White Balance Mode
+    sv-SE: Vitbalansläge
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

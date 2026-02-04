@@ -1,0 +1,22 @@
+productFields:
+- id: inner_diameter_mm
+  type: Text
+  name:
+    da-DK: Inner Ø (mm)
+    en-US: Inner Ø (mm)
+    nb-NO: Inner Ø (mm)
+    sv-SE: Inner Ø (mm)
+  description:
+    da-DK: Inner Ø (mm)
+    en-US: Inner Ø (mm)
+    nb-NO: Inner Ø (mm)
+    sv-SE: Inner Ø (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,4 +1,4 @@
-import NavigationLink from 'components/NavigationLink';
+import NavigationLink from 'components/zitac/NavigationLink';
 import { CategoryItem } from 'models/category';
 import { LinkFieldDefinition } from 'models/navigation';
 

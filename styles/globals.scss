@@ -1,22 +1,32 @@
 @use 'sass:meta';
+@use './zitac/abstracts' as *;
+@use 'base';
+@use './zitac/global';
+@use './zitac/category';
 @tailwind base;
-@include meta.load-css('base.scss');
 @tailwind components;
+@tailwind utilities;
+@include meta.load-css('base.scss');
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  @apply my-4;
+@layer base {
+  body {
+    font-family: $font-karla;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-inter;
+  }
 }
+
 h1 {
-  @apply text-h1 font-bold;
+  @apply text-h1;
 }
 h2 {
-  @apply text-h2 font-bold;
+  @apply text-h2;
 }
 h3 {
   @apply text-h3;
@@ -31,30 +41,24 @@ h6 {
   @apply text-h6;
 }
 
+/*
 .button {
   @apply cursor-pointer bg-secondary p-4 text-secondary hover:bg-hover-1 disabled:border-disabled-border disabled:bg-transparent disabled:text-tertiary hover:touchable:bg-secondary;
 }
+*/
 
 .secondary-btn {
   @apply border-secondary-3 bg-secondary-3 text-primary hover:bg-tertiary disabled:border-disabled-border disabled:bg-transparent disabled:text-tertiary hover:touchable:bg-tertiary;
 }
 
-.reactive-button {
+.buy-button {
   &--loading,
   &--success {
     > button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       position: relative;
       pointer-events: none;
       cursor: text;
-      gap: 0.5rem;
-    }
-  }
 
-  &--loading {
-    > button {
       &::before {
         content: '';
         position: absolute;
@@ -63,64 +67,92 @@ h6 {
         left: 0;
         width: 100%;
         height: 100%;
-        @apply bg-secondary;
       }
+    }
+  }
 
-      &::after {
-        content: '';
-        width: 1.25rem;
-        height: 1.25rem;
-        border-radius: 50%;
-        border-right: 0.125rem solid theme('textColor.white');
-        border-top: 0.125rem solid theme('textColor.white');
-        border-bottom: 0.125rem solid transparent;
-        border-left: 0.125rem solid transparent;
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        left: 50%;
-        margin: -0.625rem 0 0 -0.625rem;
-        @apply animate-spin;
+  .reactive-button {
+    &--loading,
+    &--success {
+      > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        pointer-events: none;
+        cursor: text;
+        gap: 0.5rem;
       }
+    }
 
-      &.secondary-btn {
+    &--loading {
+      > button {
         &::before {
-          @apply bg-secondary-3;
+          content: '';
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          @apply bg-secondary;
         }
 
         &::after {
-          border-right: 0.125rem solid theme('textColor.primary');
-          border-top: 0.125rem solid theme('textColor.primary');
+          content: '';
+          width: 1.25rem;
+          height: 1.25rem;
+          border-radius: 50%;
+          border-right: 0.125rem solid theme('textColor.white');
+          border-top: 0.125rem solid theme('textColor.white');
+          border-bottom: 0.125rem solid transparent;
+          border-left: 0.125rem solid transparent;
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          margin: -0.625rem 0 0 -0.625rem;
+          @apply animate-spin;
+        }
+
+        &.secondary-btn {
+          &::before {
+            @apply bg-secondary-3;
+          }
+
+          &::after {
+            border-right: 0.125rem solid theme('textColor.primary');
+            border-top: 0.125rem solid theme('textColor.primary');
+          }
         }
       }
     }
-  }
 
-  &--success {
-    > button {
-      @apply bg-secondary;
-
-      &::before {
-        content: '';
-        width: 1.25rem;
-        height: 1rem;
-        background-image: url('/images/check-white.svg');
-        background-repeat: no-repeat;
-        margin-top: 2px;
-      }
-
-      &.secondary-btn {
-        @apply bg-secondary-3;
+    &--success {
+      > button {
+        @apply bg-secondary;
 
         &::before {
-          background-image: url('/images/check-black.svg');
+          content: '';
+          width: 1.25rem;
+          height: 1rem;
+          background-image: url('/images/check-white.svg');
+          background-repeat: no-repeat;
+          margin-top: 2px;
+        }
+
+        &.secondary-btn {
+          @apply bg-secondary-3;
+
+          &::before {
+            background-image: url('/images/check-black.svg');
+          }
         }
       }
     }
   }
-}
 
-.focus-locked {
+  .focus-locked {
     input,
     textarea,
     select,
@@ -129,8 +161,46 @@ h6 {
     iframe,
     object,
     [tabindex] {
-        display: none;
+      display: none;
     }
-}
+  }
 
-@tailwind utilities;
+  .product-card {
+    ul {
+      list-style: disc;
+      padding-inline: 0.5rem;
+    }
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  /* Smooth floating animation for FilterButton */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) scale(1);
+    }
+    50% {
+      transform: translateY(-3.5px) scale(1.015);
+    }
+  }
+
+  /* Smooth shadow animation that stays in place while button floats */
+  @keyframes float-shadow {
+    0%,
+    100% {
+      box-shadow: 0 1.5px 6px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

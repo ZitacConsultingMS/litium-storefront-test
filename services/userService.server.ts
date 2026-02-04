@@ -5,6 +5,59 @@ import 'server-only';
 import { getAddressType } from './addressService.server';
 import { mutateServer, queryServer } from './dataService.server';
 
+const GET_B2B_BLOCKED_STATUS = gql`
+  query GetB2BBlockedStatus {
+    me {
+      selectedOrganization {
+        organization {
+          ... on OrganizationTemplateOrganization {
+            fields {
+              blockedForOrderB2b
+            }
+          }
+        }
+      }
+      person {
+        organizations {
+          nodes {
+            organization {
+              ... on OrganizationTemplateOrganization {
+                fields {
+                  blockedForOrderB2b
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+/**
+ * Returns whether the current user's org is blocked from B2B orders.
+ * @param storefrontPath URL path for the storefront (used for channel/context).
+ * @returns { blocked, nodesCount } for the API route.
+ */
+export async function getB2BBlockedStatus(storefrontPath: string): Promise<{
+  blocked: boolean;
+  nodesCount: number;
+}> {
+  const result = await queryServer({
+    query: GET_B2B_BLOCKED_STATUS,
+    url: storefrontPath,
+  });
+  const me = result?.me;
+  const isBlocked = (v: unknown) => v === true || v === 'true';
+  const nodes = me?.person?.organizations?.nodes ?? [];
+  const blocked =
+    isBlocked(me?.selectedOrganization?.organization?.fields?.blockedForOrderB2b) ||
+    nodes.some((n: { organization?: { fields?: { blockedForOrderB2b?: unknown } } }) =>
+      isBlocked(n?.organization?.fields?.blockedForOrderB2b)
+    );
+  return { blocked, nodesCount: nodes.length };
+}
+
 /**
  * Gets current user object.
  * @returns user object.
@@ -27,6 +80,7 @@ const GET_CURRENT_USER = gql`
       }
       person {
         id
+        customerNumber
         organizations {
           nodes {
             organization {
@@ -39,6 +93,12 @@ const GET_CURRENT_USER = gql`
             }
           }
           totalCount
+        }
+        ... on B2BPersonTemplatePerson {
+          fields {
+            _firstName
+            _lastName
+          }
         }
       }
     }

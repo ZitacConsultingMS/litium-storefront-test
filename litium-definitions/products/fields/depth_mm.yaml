@@ -1,0 +1,22 @@
+productFields:
+- id: depth_mm
+  type: Decimal
+  name:
+    da-DK: Djup (mm)
+    en-US: Djup (mm)
+    nb-NO: Djup (mm)
+    sv-SE: Djup (mm)
+  description:
+    da-DK: Djup (mm)
+    en-US: Djup (mm)
+    nb-NO: Djup (mm)
+    sv-SE: Djup (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

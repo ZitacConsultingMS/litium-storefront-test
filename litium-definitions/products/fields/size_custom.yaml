@@ -1,0 +1,352 @@
+productFields:
+- id: size_custom
+  type: TextOption
+  name:
+    sv-SE: Storlek
+  description:
+    sv-SE: storlek
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: 333x387x387 (BxHxD)
+      value: 333x387x387 (BxHxD)
+    - name:
+        sv-SE: Regular
+      value: Regular
+    - name:
+        sv-SE: '40'
+      value: '40'
+    - name:
+        sv-SE: '2'
+      value: '2'
+    - name:
+        sv-SE: '1'
+      value: '1'
+    - name:
+        sv-SE: '3'
+      value: '3'
+    - name:
+        sv-SE: Team Boot 39-47
+      value: Team Boot 39-47
+    - name:
+        sv-SE: 50x60
+      value: 50x60
+    - name:
+        sv-SE: XXL
+      value: XXL
+    - name:
+        sv-SE: S
+      value: S
+    - name:
+        sv-SE: XL
+      value: XL
+    - name:
+        sv-SE: M
+      value: M
+    - name:
+        sv-SE: L
+      value: L
+    - name:
+        sv-SE: XS
+      value: XS
+    - name:
+        sv-SE: PBB 70
+      value: PBB 70
+    - name:
+        sv-SE: PBB 50
+      value: PBB 50
+    - name:
+        sv-SE: PBB 60
+      value: PBB 60
+    - name:
+        sv-SE: BBB 40
+      value: BBB 40
+    - name:
+        sv-SE: BBB 30
+      value: BBB 30
+    - name:
+        sv-SE: '60'
+      value: '60'
+    - name:
+        sv-SE: Large
+      value: Large
+    - name:
+        sv-SE: Skarm O 50mm
+      value: Skarm O 50mm
+    - name:
+        sv-SE: 250g
+      value: 250g
+    - name:
+        sv-SE: Medium
+      value: Medium
+    - name:
+        sv-SE: XLarge
+      value: XLarge
+    - name:
+        sv-SE: X-Large
+      value: X-Large
+    - name:
+        sv-SE: XX-Large
+      value: XX-Large
+    - name:
+        sv-SE: PBB70
+      value: PBB70
+    - name:
+        sv-SE: 20x20 cm
+      value: 20x20 cm
+    - name:
+        sv-SE: 15x15 cm
+      value: 15x15 cm
+    - name:
+        sv-SE: '"4"""'
+      value: '"4"""'
+    - name:
+        sv-SE: '"1"""'
+      value: '"1"""'
+    - name:
+        sv-SE: '"3/4"""'
+      value: '"3/4"""'
+    - name:
+        sv-SE: '"1 1/4"""'
+      value: '"1 1/4"""'
+    - name:
+        sv-SE: '"2"""'
+      value: '"2"""'
+    - name:
+        sv-SE: '"1 1/2"""'
+      value: '"1 1/2"""'
+    - name:
+        sv-SE: L/XL
+      value: L/XL
+    - name:
+        sv-SE: S/M
+      value: S/M
+    - name:
+        sv-SE: PBB 40
+      value: PBB 40
+    - name:
+        sv-SE: '0'
+      value: '0'
+    - name:
+        sv-SE: A3
+      value: A3
+    - name:
+        sv-SE: A2
+      value: A2
+    - name:
+        sv-SE: '6'
+      value: '6'
+    - name:
+        sv-SE: '5'
+      value: '5'
+    - name:
+        sv-SE: '"3"""'
+      value: '"3"""'
+    - name:
+        sv-SE: '"6,5"""'
+      value: '"6,5"""'
+    - name:
+        sv-SE: '"22"""'
+      value: '"22"""'
+    - name:
+        sv-SE: Skarm O 68mm
+      value: Skarm O 68mm
+    - name:
+        sv-SE: PBB 16
+      value: PBB 16
+    - name:
+        sv-SE: '"5"""'
+      value: '"5"""'
+    - name:
+        sv-SE: 28 cl
+      value: 28 cl
+    - name:
+        sv-SE: 450g
+      value: 450g
+    - name:
+        sv-SE: Team Boot 35-41
+      value: Team Boot 35-41
+    - name:
+        sv-SE: 140/146
+      value: 140/146
+    - name:
+        sv-SE: 110/122
+      value: 110/122
+    - name:
+        sv-SE: 128/134
+      value: 128/134
+    - name:
+        sv-SE: X-Small
+      value: X-Small
+    - name:
+        sv-SE: Small
+      value: Small
+    - name:
+        sv-SE: '"50"""'
+      value: '"50"""'
+    - name:
+        sv-SE: '"30"""'
+      value: '"30"""'
+    - name:
+        sv-SE: '"40"""'
+      value: '"40"""'
+    - name:
+        sv-SE: MRB 60
+      value: MRB 60
+    - name:
+        sv-SE: ARB 45
+      value: ARB 45
+    - name:
+        sv-SE: XXXL
+      value: XXXL
+    - name:
+        sv-SE: 36 cl
+      value: 36 cl
+    - name:
+        sv-SE: M (8)
+      value: M (8)
+    - name:
+        sv-SE: L (9)
+      value: L (9)
+    - name:
+        sv-SE: XL (10)
+      value: XL (10)
+    - name:
+        sv-SE: 29 cl
+      value: 29 cl
+    - name:
+        sv-SE: '"1 1/4"" - 1 1/2"""'
+      value: '"1 1/4"" - 1 1/2"""'
+    - name:
+        sv-SE: '"1/2"" - 3/4"" - 1"""'
+      value: '"1/2"" - 3/4"" - 1"""'
+    - name:
+        sv-SE: Skarm O 76mm
+      value: Skarm O 76mm
+    - name:
+        sv-SE: 6 cl
+      value: 6 cl
+    - name:
+        sv-SE: MAGNETFASTE SIDA SKYLT NER
+      value: MAGNETFASTE SIDA SKYLT NER
+    - name:
+        sv-SE: AFFISCHRAM A4 BLA
+      value: AFFISCHRAM A4 BLA
+    - name:
+        sv-SE: PLASTFOT TILL STATIV
+      value: PLASTFOT TILL STATIV
+    - name:
+        sv-SE: TELESKOPSTATIV 330-510MM
+      value: TELESKOPSTATIV 330-510MM
+    - name:
+        sv-SE: MAGNETFASTE UNDER SKYLTHALLARE
+      value: MAGNETFASTE UNDER SKYLTHALLARE
+    - name:
+        sv-SE: PLASTFICKA A3
+      value: PLASTFICKA A3
+    - name:
+        sv-SE: PLASTFICKA A4
+      value: PLASTFICKA A4
+    - name:
+        sv-SE: AFFISCHRAM A3 BLA
+      value: AFFISCHRAM A3 BLA
+    - name:
+        sv-SE: 22-23mm
+      value: 22-23mm
+    - name:
+        sv-SE: 1. 2-6hk
+      value: 1. 2-6hk
+    - name:
+        sv-SE: 2. 4-15hk
+      value: 2. 4-15hk
+    - name:
+        sv-SE: Large /3
+      value: Large /3
+    - name:
+        sv-SE: Medium /2
+      value: Medium /2
+    - name:
+        sv-SE: '4'
+      value: '4'
+    - name:
+        sv-SE: For 3-vagsventiler
+      value: For 3-vagsventiler
+    - name:
+        sv-SE: '"1/2"""'
+      value: '"1/2"""'
+    - name:
+        sv-SE: '"1 1/4""-1 1/2"""'
+      value: '"1 1/4""-1 1/2"""'
+    - name:
+        sv-SE: 3/4''-1''
+      value: 3/4''-1''
+    - name:
+        sv-SE: 4 L
+      value: 4 L
+    - name:
+        sv-SE: 3 M
+      value: 3 M
+    - name:
+        sv-SE: 2 S
+      value: 2 S
+    - name:
+        sv-SE: 1 XS
+      value: 1 XS
+    - name:
+        sv-SE: 47 cl
+      value: 47 cl
+    - name:
+        sv-SE: PBB 45
+      value: PBB 45
+    - name:
+        sv-SE: 24 cl
+      value: 24 cl
+    - name:
+        sv-SE: 35mm
+      value: 35mm
+    - name:
+        sv-SE: 145 (10)
+      value: 145 (10)
+    - name:
+        sv-SE: 135 (8)
+      value: 135 (8)
+    - name:
+        sv-SE: 155 (12)
+      value: 155 (12)
+    - name:
+        sv-SE: 35 cl
+      value: 35 cl
+    - name:
+        sv-SE: '36'
+      value: '36'
+    - name:
+        sv-SE: '42'
+      value: '42'
+    - name:
+        sv-SE: '38'
+      value: '38'
+    - name:
+        sv-SE: '44'
+      value: '44'
+    - name:
+        sv-SE: 250ml
+      value: 250ml
+    - name:
+        sv-SE: 500ml
+      value: 500ml
+    - name:
+        sv-SE: 53 cl
+      value: 53 cl
+    - name:
+        sv-SE: Ride Boot 35-47
+      value: Ride Boot 35-47
+    multiSelect: true

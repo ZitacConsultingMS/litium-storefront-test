@@ -1,0 +1,22 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fas
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsNewsletter
+  name:
+    en-US: Newsletter

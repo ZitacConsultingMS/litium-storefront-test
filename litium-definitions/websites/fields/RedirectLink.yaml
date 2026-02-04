@@ -1,0 +1,17 @@
+websiteFields:
+- id: RedirectLink
+  type: Pointer
+  name:
+    en-US: After login, go to this page
+    sv-SE: Efter inloggning, gå till denna sida
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage

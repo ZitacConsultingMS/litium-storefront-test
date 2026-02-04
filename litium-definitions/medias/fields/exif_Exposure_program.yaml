@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Exposure_program
+  type: Text
+  name:
+    en-US: Exposure program
+    sv-SE: Exponeringsprogram
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

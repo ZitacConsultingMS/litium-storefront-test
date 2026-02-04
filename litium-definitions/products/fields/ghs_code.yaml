@@ -1,0 +1,60 @@
+productFields:
+- id: ghs_code
+  type: TextOption
+  name:
+    da-DK: GHSCode
+    en-US: GHSCode
+    nb-NO: GHSCode
+    sv-SE: 'GHS '
+  description:
+    da-DK: GHSCode
+    en-US: GHSCode
+    nb-NO: GHSCode
+    sv-SE: GHS Code
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        nb-NO: N/A
+        sv-SE: N/A
+        en-US: N/A
+        da-DK: N/A
+        de-DE: N/A
+        fi-FI: N/A
+      value: N/A
+    - name:
+        sv-SE: Brandfarligt
+      value: GHS02
+    - name:
+        sv-SE: Frätande
+      value: GHS05
+    - name:
+        sv-SE: Skadligt
+      value: GHS07
+    - name:
+        sv-SE: Miljöfarlig
+      value: GHS09
+    - name:
+        sv-SE: Hälsofarlig
+      value: GHS08
+    - name:
+        sv-SE: Giftigt
+      value: GHS06
+    - name:
+        sv-SE: Oxiderande
+      value: GHS03
+    - name:
+        sv-SE: Gasbehållare
+      value: GHS04
+    - name:
+        sv-SE: Explosivt
+      value: GHS01
+    multiSelect: true

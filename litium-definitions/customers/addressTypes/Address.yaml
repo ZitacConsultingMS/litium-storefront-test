@@ -1,0 +1,5 @@
+customerAddressTypes:
+- id: Address
+  name:
+    en-US: Address
+    sv-SE: Address

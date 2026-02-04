@@ -1,0 +1,25 @@
+blockFields:
+- id: zsBannerTextColor
+  type: TextOption
+  name:
+    sv-SE: BannerTextColor
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: Vit
+      value: text-white
+    - name:
+        sv-SE: Svart
+      value: text-black
+    - name:
+        sv-SE: Blå
+      value: text-seasea-blue

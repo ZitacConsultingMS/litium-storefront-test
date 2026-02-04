@@ -1,0 +1,18 @@
+websiteFields:
+- id: ProductsPerPage
+  type: Int
+  name:
+    en-US: Products per page
+    sv-SE: Antal produkter per sida
+  description:
+    en-US: The number of products shown per page.
+    sv-SE: Antal produkter som visas per sida.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

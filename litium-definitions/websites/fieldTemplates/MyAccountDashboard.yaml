@@ -5,17 +5,13 @@ websiteTemplates:
       sv-SE: Topp
       en-US: Top
     childBlocks:
-      combination: IncludeSelected
-      selections:
-      - id: Banner
+      combination: All
   - id: Content
     name:
       en-US: Content
       sv-SE: Innehåll
     childBlocks:
-      combination: IncludeSelected
-      selections:
-      - id: Banner
+      combination: All
   settings:
     indexThePage: false
   type: Page

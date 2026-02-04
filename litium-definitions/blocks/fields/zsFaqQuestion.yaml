@@ -1,0 +1,15 @@
+blockFields:
+- id: zsFaqQuestion
+  type: Text
+  name:
+    en-US: FAQ Question
+    sv-SE: FAQ Question
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

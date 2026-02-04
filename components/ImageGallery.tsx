@@ -14,7 +14,7 @@ import './ImageGallery.scss';
 import Sidebar from './Sidebar';
 import { Button } from './elements/Button';
 import { Text } from './elements/Text';
-import Close from './icons/close';
+import Close from './icons/zitac/close';
 
 interface ImageGalleryProps {
   /**

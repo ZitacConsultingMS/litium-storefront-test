@@ -1,0 +1,22 @@
+productFields:
+- id: connection_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Anslutning (mm)
+    en-US: Ø Anslutning (mm)
+    nb-NO: Ø Anslutning (mm)
+    sv-SE: Ø Anslutning (mm)
+  description:
+    da-DK: Ø Anslutning (mm)
+    en-US: Ø Anslutning (mm)
+    nb-NO: Ø Anslutning (mm)
+    sv-SE: Ø Anslutning (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,31 +1,28 @@
 websiteTemplates:
-  - blockContainers:
-      - id: Main
-        name:
-          sv-SE:
-          en-US:
-        childBlocks:
-          combination: IncludeSelected
-          selections:
-            - id: Banner
-            - id: Products
-    settings:
-      indexThePage: true
-    type: Page
-    fieldGroups:
-      - id: Settings
-        name:
-          en-US: Settings
-          sv-SE: Inställningar
-        fields:
-          - id: _name
-          - id: _url
-          - id: ProductList
-        administration:
-          collapsed: false
-        storefront:
-          visible: false
-    id: ProductList
+- blockContainers:
+  - id: Main
     name:
-      en-US: Product list
-      sv-SE: Produktlista
+      sv-SE: 
+      en-US: 
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: Settings
+    name:
+      en-US: Settings
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: _url
+    - id: ProductList
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: ProductList
+  name:
+    en-US: Product list
+    sv-SE: Produktlista

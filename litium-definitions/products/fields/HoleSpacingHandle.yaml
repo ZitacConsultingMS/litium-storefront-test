@@ -43,5 +43,3 @@ productFields:
         en-US: '177'
         sv-SE: '177'
       value: 177
-    multiSelect: false
-    manualSort: false

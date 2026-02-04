@@ -1,0 +1,22 @@
+productFields:
+- id: installation_depth_mm
+  type: Decimal
+  name:
+    da-DK: Inbyggnadsdjup (mm)
+    en-US: Inbyggnadsdjup (mm)
+    nb-NO: Inbyggnadsdjup (mm)
+    sv-SE: Inbyggnadsdjup (mm)
+  description:
+    da-DK: Inbyggnadsdjup (mm)
+    en-US: Inbyggnadsdjup (mm)
+    nb-NO: Inbyggnadsdjup (mm)
+    sv-SE: Inbyggnadsdjup (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

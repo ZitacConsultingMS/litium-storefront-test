@@ -1,0 +1,15 @@
+websiteFields:
+- id: TitleFilterSelector
+  type: Text
+  name:
+    en-US: Title
+    sv-SE: Rubrik
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

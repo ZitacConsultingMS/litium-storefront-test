@@ -1,0 +1,18 @@
+websiteFields:
+- id: FiltersIndexedBySearchEngines
+  type: FilterFields
+  name:
+    en-US: Filters indexed by search engines
+    sv-SE: Indexera i sökmotorer
+  description:
+    en-US: The product filters that should be indexed by search enginges.
+    sv-SE: Ange de produktfilter som ska indexeras av sökmotorerna.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,22 @@
+productFields:
+- id: area
+  type: Text
+  name:
+    da-DK: Område
+    en-US: Område
+    nb-NO: Område
+    sv-SE: Område
+  description:
+    da-DK: Område
+    en-US: Område
+    nb-NO: Område
+    sv-SE: Område
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

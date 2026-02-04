@@ -1,0 +1,22 @@
+productFields:
+- id: tank_volume
+  type: Text
+  name:
+    da-DK: Tankvolym
+    en-US: Tankvolym
+    nb-NO: Tankvolym
+    sv-SE: Tankvolym
+  description:
+    da-DK: Tankvolym
+    en-US: Tankvolym
+    nb-NO: Tankvolym
+    sv-SE: Tankvolym
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: symbol
+  type: Text
+  name:
+    da-DK: Symbol
+    en-US: Symbol
+    nb-NO: Symbol
+    sv-SE: Symbol
+  description:
+    da-DK: Symbol
+    en-US: Symbol
+    nb-NO: Symbol
+    sv-SE: Symbol
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

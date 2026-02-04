@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Compressed_bits_per_pixel
+  type: Text
+  name:
+    en-US: Compressed bits per pixel
+    sv-SE: Komprimerade bitar per pixel
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: thickness_mm
+  type: Text
+  name:
+    da-DK: Tjocklek (mm)
+    en-US: Tjocklek (mm)
+    nb-NO: Tjocklek (mm)
+    sv-SE: Tjocklek (mm)
+  description:
+    da-DK: Tjocklek (mm)
+    en-US: Tjocklek (mm)
+    nb-NO: Tjocklek (mm)
+    sv-SE: Tjocklek (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

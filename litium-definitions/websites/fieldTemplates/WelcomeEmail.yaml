@@ -1,0 +1,22 @@
+websiteTemplates:
+- settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    - id: WelcomeEmailSubject
+    - id: WelcomeEmailText
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: WelcomeEmail
+  name:
+    en-US: Welcome mail
+    sv-SE: Välkomstmeddelande

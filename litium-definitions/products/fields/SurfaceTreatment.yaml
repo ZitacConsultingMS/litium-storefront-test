@@ -27,5 +27,3 @@ productFields:
         en-US: Polished
         sv-SE: Polerad
       value: Polished
-    multiSelect: false
-    manualSort: false

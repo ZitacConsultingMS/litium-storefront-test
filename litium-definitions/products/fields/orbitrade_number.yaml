@@ -1,0 +1,22 @@
+productFields:
+- id: orbitrade_number
+  type: Text
+  name:
+    da-DK: Orbitrade nr
+    en-US: Orbitrade nr
+    nb-NO: Orbitrade nr
+    sv-SE: Orbitrade nr
+  description:
+    da-DK: Orbitrade nr
+    en-US: Orbitrade nr
+    nb-NO: Orbitrade nr
+    sv-SE: Orbitrade nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

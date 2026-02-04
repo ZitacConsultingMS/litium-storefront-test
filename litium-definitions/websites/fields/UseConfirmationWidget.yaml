@@ -1,0 +1,18 @@
+websiteFields:
+- id: UseConfirmationWidget
+  type: Boolean
+  name:
+    en-US: Use confirmation widget
+    sv-SE: Använd betalleverantör's bekräftelse
+  description:
+    en-US: Use the confirmation widget from the payment provider, if supported.
+    sv-SE: Använd bekräftelse från betalleverantör om möjligt.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

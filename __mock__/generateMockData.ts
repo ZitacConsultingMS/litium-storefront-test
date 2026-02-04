@@ -108,7 +108,7 @@ const generateDiscount = (
         : discountType || DiscountType.MixAndMatch,
       resultOrderRow: {
         totalIncludingVat: -398,
-        totalExcludingVat: -320,
+        totalExcludingVat: -318.4,
         rowType: 'DISCOUNT',
         articleNumber: `abc-xyz-${i}`,
         quantity: i + 1,
@@ -134,13 +134,13 @@ export function generateCartLineItemData(
     grandTotal: maxItem * 1000,
     productCount: maxItem,
     discountCodes: [],
-    totalVat: 0,
+    totalVat: maxItem * 200,
     showPricesIncludingVat: true,
     currency: {
       code: 'SEK',
-      symbol: 'SEK',
-      symbolPosition: 'RIGHT_WITH_SPACE',
-      minorUnits: 0,
+      symbol: 'kr',
+      symbolPosition: 'after',
+      minorUnits: 2,
     },
   };
 
@@ -154,7 +154,7 @@ export function generateCartLineItemData(
       articleNumber: `abc-xyz-${i}`,
       quantity: maxQuantity,
       totalIncludingVat: maxQuantity * 698,
-      totalExcludingVat: maxQuantity * 560,
+      totalExcludingVat: maxQuantity * 558.4,
       product: generateProductItems(1, 1)[0],
       rowType: 'PRODUCT',
     };

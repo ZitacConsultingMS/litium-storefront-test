@@ -1,0 +1,89 @@
+blockFields:
+- id: zsBackgroundPosition
+  type: TextOption
+  name:
+    sv-SE: Background Position
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        da-DK: ''
+        en-US: Top
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-top
+    - name:
+        da-DK: ''
+        en-US: Center
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-center
+    - name:
+        da-DK: ''
+        en-US: Bottom
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-bottom
+    - name:
+        da-DK: ''
+        en-US: Left
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-left
+    - name:
+        da-DK: ''
+        en-US: Right
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-right
+    - name:
+        da-DK: ''
+        en-US: Left Top
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-left-top
+    - name:
+        da-DK: ''
+        en-US: Left Bottom
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-left-bottom
+    - name:
+        da-DK: ''
+        en-US: Right Top
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-right-top
+    - name:
+        da-DK: ''
+        en-US: Right Bottom
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: bg-right-bottom
+    manualSort: true

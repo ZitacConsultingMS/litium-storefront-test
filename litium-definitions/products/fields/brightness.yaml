@@ -1,0 +1,22 @@
+productFields:
+- id: brightness
+  type: Text
+  name:
+    da-DK: Ljusstyrka
+    en-US: Ljusstyrka
+    nb-NO: Ljusstyrka
+    sv-SE: Ljusstyrka
+  description:
+    da-DK: Ljusstyrka
+    en-US: Ljusstyrka
+    nb-NO: Ljusstyrka
+    sv-SE: Ljusstyrka
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

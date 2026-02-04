@@ -1,0 +1,5 @@
+customerRoles:
+- id: OrderPlacer
+  name:
+    en-US: Order placer
+    sv-SE: Orderläggare

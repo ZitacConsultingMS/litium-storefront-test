@@ -1,0 +1,22 @@
+productFields:
+- id: article_diameter
+  type: Text
+  name:
+    da-DK: Diameter
+    en-US: Diameter
+    nb-NO: Diameter
+    sv-SE: Diameter
+  description:
+    da-DK: Diameter
+    en-US: Diameter
+    nb-NO: Diameter
+    sv-SE: Diameter
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

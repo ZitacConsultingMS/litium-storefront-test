@@ -1,0 +1,22 @@
+productFields:
+- id: min_length_mm
+  type: Decimal
+  name:
+    da-DK: Minimum längd (mm)
+    en-US: Minimum längd (mm)
+    nb-NO: Minimum längd (mm)
+    sv-SE: Minimum längd (mm)
+  description:
+    da-DK: Minimum längd (mm)
+    en-US: Minimum längd (mm)
+    nb-NO: Minimum längd (mm)
+    sv-SE: Minimum längd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

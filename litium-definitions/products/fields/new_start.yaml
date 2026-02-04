@@ -1,0 +1,22 @@
+productFields:
+- id: new_start
+  type: DateTime
+  name:
+    da-DK: NewStart
+    en-US: NewStart
+    nb-NO: NewStart
+    sv-SE: NewStart
+  description:
+    da-DK: NewStart
+    en-US: NewStart
+    nb-NO: NewStart
+    sv-SE: NewStart
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

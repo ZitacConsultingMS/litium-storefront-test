@@ -1,0 +1,22 @@
+productFields:
+- id: is_pickup_at_store
+  type: Boolean
+  name:
+    da-DK: isPickupAtStore
+    en-US: isPickupAtStore
+    nb-NO: isPickupAtStore
+    sv-SE: isPickupAtStore
+  description:
+    da-DK: isPickupAtStore
+    en-US: isPickupAtStore
+    nb-NO: isPickupAtStore
+    sv-SE: isPickupAtStore
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

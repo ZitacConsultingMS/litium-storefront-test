@@ -1,0 +1,22 @@
+productFields:
+- id: watt_hours
+  type: Decimal
+  name:
+    da-DK: Wattimmar
+    en-US: Wattimmar
+    nb-NO: Wattimmar
+    sv-SE: Wattimmar
+  description:
+    da-DK: Wattimmar
+    en-US: Wattimmar
+    nb-NO: Wattimmar
+    sv-SE: Wattimmar
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

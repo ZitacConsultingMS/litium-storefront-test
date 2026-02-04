@@ -1,0 +1,17 @@
+productFields:
+- id: erp_unit
+  type: Text
+  name:
+    en-US: ERP Unit
+    sv-SE: Erp Enhet
+  description:
+    sv-SE: Erp Enhet
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

@@ -1,0 +1,43 @@
+websiteTemplates:
+- settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Contents
+    name:
+      en-US: Main contents
+      sv-SE: Huvudinnehåll
+    fields:
+    - id: Title
+    - id: Introduction
+    - id: Text
+    - id: NumberOfOrdersPerPage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LinkList
+    name:
+      en-US: List
+      sv-SE: Länklista
+    fields:
+    - id: OrderLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: OrderHistory
+  name:
+    en-US: Order history
+    sv-SE: Orderhistorik

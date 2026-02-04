@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Interoperability_version
+  type: Text
+  name:
+    en-US: Interoperability version
+    sv-SE: Version interoperabilitet
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

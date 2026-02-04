@@ -1,0 +1,300 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Generellt
+    fields:
+    - id: _name
+    - id: _description
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  variantFieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Generellt
+    fields:
+    - id: _name
+    - id: _description
+    - id: _seoDescription
+    - id: _seoTitle
+    - id: _url
+    administration:
+      collapsed: true
+    storefront:
+      visible: false
+  - id: ERP Data
+    name:
+      en-US: ERP Data
+      sv-SE: ERP Data
+    fields:
+    - id: ean
+    - id: erp_country_id
+    - id: erp_gross_weight
+    - id: erp_hazardous
+    - id: erp_status
+    - id: erp_supplier_article_number
+    - id: erp_status_info
+    - id: erp_unit
+    - id: erp_vat_id
+    - id: erp_article_number
+    - id: erp_purchase_price
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Other
+    name:
+      en-US: Other
+      sv-SE: Övrigt
+    fields:
+    - id: a_leg
+    - id: ais
+    - id: ampere
+    - id: ampere_hour
+    - id: amount
+    - id: connection
+    - id: work_pressure
+    - id: band
+    - id: bar
+    - id: switch
+    - id: bullets
+    - id: clp_code
+    - id: created
+    - id: description
+    - id: detail
+    - id: diameter
+    - id: effect
+    - id: unit
+    - id: files_sds
+    - id: fender_protection
+    - id: function
+    - id: for
+    - id: ghs_code
+    - id: sensor
+    - id: h1
+    - id: info
+    - id: inside
+    - id: is_not_deliverable
+    - id: is_pickup_at_store
+    - id: is_special_freight
+    - id: is_special_goods
+    - id: jotun
+    - id: capacity
+    - id: keywords
+    - id: class
+    - id: grit
+    - id: country
+    - id: led
+    - id: liter
+    - id: brightness
+    - id: material
+    - id: max_a
+    - id: maximum_load
+    - id: model
+    - id: engine
+    - id: neste
+    - id: new_end
+    - id: new_start
+    - id: number
+    - id: poles
+    - id: scissors_stick
+    - id: show_supplier_art_number
+    - id: scale
+    - id: screw
+    - id: steps
+    - id: size
+    - id: substance
+    - id: symbol
+    - id: tank_volume
+    - id: pin
+    - id: fits_to
+    - id: pressure
+    - id: type
+    - id: variant
+    - id: angle
+    - id: volt
+    - id: watt
+    - id: volume
+    - id: watt_hours
+    - id: base_mm
+    - id: leg_pairs_amount
+    - id: designation
+    - id: block_diameter_x_width
+    - id: width_m
+    - id: width_mm
+    - id: width_inside_mm
+    - id: breaking_point_kg
+    - id: stirrup_height_mm
+    - id: boat_size_m
+    - id: load_capacity_kg
+    - id: bending_radius
+    - id: cc_dimensions_mm
+    - id: cca_en
+    - id: depth_x_width
+    - id: depth_mm
+    - id: ean
+    - id: spring_force
+    - id: flow
+    - id: fram_number
+    - id: from
+    - id: color
+    - id: color_code
+    - id: attachment
+    - id: for_boat_size_foot
+    - id: for_boat_size_m
+    - id: for_boat_size_ton
+    - id: to_turnbuckle
+    - id: for_diameter_mm
+    - id: consumption
+    - id: packaging
+    - id: gap_mm
+    - id: material_diameter_mm
+    - id: thread
+    - id: length_of_neck_mm
+    - id: piercing_mm
+    - id: height
+    - id: height_mm
+    - id: height_total_mm
+    - id: installation_diameter_mm
+    - id: installation_depth_mm
+    - id: installation_dimensions_mm
+    - id: entrance
+    - id: inner_diameter_mm
+    - id: jp_number
+    - id: cable_area_per_sq_mm
+    - id: housing
+    - id: length_x_width
+    - id: length_x_width_x_height
+    - id: suitable_boat_width_m
+    - id: length
+    - id: liters_per_minute
+    - id: length_foot
+    - id: length_m
+    - id: length_mm
+    - id: bolt_length_mm
+    - id: thread_length_mm
+    - id: internal_length_mm
+    - id: total_length_mm
+    - id: meter_per_roll
+    - id: max_diameter_mm
+    - id: max_width_mm
+    - id: max_height_mm
+    - id: max_length_mm
+    - id: meter_per_package
+    - id: min_width_mm
+    - id: min_height_mm
+    - id: min_length_mm
+    - id: mounting_thickness_mm
+    - id: measure
+    - id: ngk_designation
+    - id: noa_number
+    - id: oe_number
+    - id: area
+    - id: orbitrade_number
+    - id: publish_start
+    - id: quicksilver_oe_number
+    - id: pipe_thread
+    - id: screen
+    - id: track
+    - id: clamping_range_diameter_mm
+    - id: fuse
+    - id: tenon_length_mm
+    - id: thickness_mm
+    - id: implementation
+    - id: exit
+    - id: outside
+    - id: exchange
+    - id: weight_g
+    - id: weight_g_per_sq_m
+    - id: weight_kg
+    - id: volvo_oe_number
+    - id: yamaha_oe_number
+    - id: yanmar_oe_number
+    - id: outer_diameter_mm
+    - id: diameter_mm
+    - id: connection_diameter_mm
+    - id: base_diameter_mm
+    - id: bolt_diameter_mm
+    - id: stirrup_diameter_mm
+    - id: neck_diameter_mm
+    - id: hole_diameter_mm
+    - id: cable_diameter_mm
+    - id: chain_diameter_mm
+    - id: line_diameter_mm
+    - id: ring_diameter_mm
+    - id: pipe_diameter_mm
+    - id: screw_diameter_mm
+    - id: hose_diameter_mm
+    - id: total_diameter_mm
+    - id: wire_diameter_mm
+    - id: diameter_x_length
+    - id: diameter_x_increase
+    - id: loop_diameter_mm
+    - id: opening
+    - id: opening_mm
+    - id: straight_support_amount
+    - id: working_load_kg
+    - id: shaft_diameter_mm
+    - id: description_short
+    - id: brandImage
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Brand
+    name:
+      sv-SE: Varumärke
+    fields:
+    - id: brandName
+    - id: brandImage
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Media
+    name:
+      sv-SE: Media
+    fields:
+    - id: mediaurl_link
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Accordions
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: LagerLeverans
+    name:
+      sv-SE: Lager & Leverans
+    fields:
+    - id: eta_qty_primarystock
+    - id: eta_primary_stock
+    - id: shipping_mark_nshift
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Artikelmedaljer
+    fields:
+    - id: product_tags
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  displayFieldGroups:
+  - id: coloritems
+    fields:
+    - id: color
+    - id: volume
+  useVariantUrl: true
+  id: CustomTemplate5
+  name:
+    en-US: Custom Product Template
+    sv-SE: Produkttemplate 5

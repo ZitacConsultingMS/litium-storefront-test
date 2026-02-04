@@ -1,0 +1,18 @@
+websiteFields:
+- id: FooterText
+  type: Editor
+  name:
+    en-US: Text
+    sv-SE: Text
+  description:
+    en-US: HTML content that is added into the footer column.
+    sv-SE: HTML-innehåll som visas i sidfotskolumnen.
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

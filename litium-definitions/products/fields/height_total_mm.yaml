@@ -1,0 +1,22 @@
+productFields:
+- id: height_total_mm
+  type: Decimal
+  name:
+    da-DK: Höjd totalt (mm)
+    en-US: Höjd totalt (mm)
+    nb-NO: Höjd totalt (mm)
+    sv-SE: Höjd totalt (mm)
+  description:
+    da-DK: Höjd totalt (mm)
+    en-US: Höjd totalt (mm)
+    nb-NO: Höjd totalt (mm)
+    sv-SE: Höjd totalt (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

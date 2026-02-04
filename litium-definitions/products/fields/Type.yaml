@@ -3,7 +3,7 @@ productFields:
   type: TextOption
   name:
     en-US: Type
-    sv-SE: Typ
+    sv-SE: Litium_Typ
   settings:
     multiCulture: false
     administration:
@@ -39,5 +39,3 @@ productFields:
         en-US: Gym
         sv-SE: Gym
       value: Gym
-    multiSelect: false
-    manualSort: false

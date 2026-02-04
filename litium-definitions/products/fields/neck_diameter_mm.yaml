@@ -1,0 +1,22 @@
+productFields:
+- id: neck_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Hals (mm)
+    en-US: Ø Hals (mm)
+    nb-NO: Ø Hals (mm)
+    sv-SE: Ø Hals (mm)
+  description:
+    da-DK: Ø Hals (mm)
+    en-US: Ø Hals (mm)
+    nb-NO: Ø Hals (mm)
+    sv-SE: Ø Hals (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

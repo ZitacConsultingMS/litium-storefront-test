@@ -80,6 +80,7 @@ export const signInUser = async function (
 
   const to = new URL(url, await getHost());
   to.searchParams.append('redirectUrl', redirectUrl);
+  to.searchParams.append('refreshCart', 'true');
   redirect(to.href);
 };
 

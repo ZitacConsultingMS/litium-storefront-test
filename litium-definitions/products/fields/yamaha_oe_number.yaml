@@ -1,0 +1,22 @@
+productFields:
+- id: yamaha_oe_number
+  type: Text
+  name:
+    da-DK: Yamaha OE nr
+    en-US: Yamaha OE nr
+    nb-NO: Yamaha OE nr
+    sv-SE: Yamaha OE nr
+  description:
+    da-DK: Yamaha OE nr
+    en-US: Yamaha OE nr
+    nb-NO: Yamaha OE nr
+    sv-SE: Yamaha OE nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,21 @@
+websiteFields:
+- id: AdditionalHeaderLinks
+  type: Pointer
+  name:
+    en-US: Additional header links
+    sv-SE: Extra länkar i sidhuvudet
+  description:
+    en-US: Additional links that will appear in the top right of the web site framework, next to the search and login links.
+    sv-SE: Extra länkar som visas längst upp till höger på webbplatsen, bredvid länkarna till sökfunktionen och inloggningssidan.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage
+    multiSelect: true

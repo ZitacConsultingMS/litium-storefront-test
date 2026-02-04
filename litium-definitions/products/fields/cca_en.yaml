@@ -1,0 +1,22 @@
+productFields:
+- id: cca_en
+  type: Decimal
+  name:
+    da-DK: CCA(EN)
+    en-US: CCA(EN)
+    nb-NO: CCA(EN)
+    sv-SE: CCA(EN)
+  description:
+    da-DK: CCA(EN)
+    en-US: CCA(EN)
+    nb-NO: CCA(EN)
+    sv-SE: CCA(EN)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

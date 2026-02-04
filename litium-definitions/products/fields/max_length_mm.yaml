@@ -1,0 +1,22 @@
+productFields:
+- id: max_length_mm
+  type: Decimal
+  name:
+    da-DK: Maxlängd (mm)
+    en-US: Maxlängd (mm)
+    nb-NO: Maxlängd (mm)
+    sv-SE: Maxlängd (mm)
+  description:
+    da-DK: Maxlängd (mm)
+    en-US: Maxlängd (mm)
+    nb-NO: Maxlängd (mm)
+    sv-SE: Maxlängd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

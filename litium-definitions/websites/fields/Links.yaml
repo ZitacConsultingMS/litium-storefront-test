@@ -1,0 +1,18 @@
+websiteFields:
+- id: Links
+  type: Pointer
+  name:
+    en-US: Links
+    sv-SE: Länkar
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage
+    multiSelect: true

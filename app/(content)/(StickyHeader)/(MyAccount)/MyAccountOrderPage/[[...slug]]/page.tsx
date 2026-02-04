@@ -1,10 +1,10 @@
 import { gql } from '@apollo/client';
-import OrderDetail from 'components/OrderDetail';
 import {
   MainContent,
   SideNavigation,
   SideNavigationLayout,
-} from 'components/layouts/SideNavigationLayout';
+} from 'components/layouts/zitac/MyAccountSideNavigationLayout';
+import OrderDetail from 'components/zitac/OrderDetail';
 import { ContentItem } from 'models/content';
 import { NavigationLink } from 'models/navigation';
 import { RoleOption } from 'models/option';

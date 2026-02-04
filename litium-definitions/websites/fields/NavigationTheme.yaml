@@ -1,0 +1,28 @@
+websiteFields:
+- id: NavigationTheme
+  type: TextOption
+  name:
+    en-US: Navigation theme
+    sv-SE: Navigering
+  description:
+    en-US: Select between a category based or filter based navigation framework.
+    sv-SE: Välj navigering baserat på antingen kategori eller filter.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Category based
+        sv-SE: Baserat på kategori
+      value: CategoryBased
+    - name:
+        en-US: Filter based
+        sv-SE: Baserat på filter
+      value: FilterBased

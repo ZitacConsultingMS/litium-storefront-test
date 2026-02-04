@@ -1,0 +1,22 @@
+productFields:
+- id: inside
+  type: Text
+  name:
+    da-DK: Inv
+    en-US: Inv
+    nb-NO: Inv
+    sv-SE: Inv
+  description:
+    da-DK: Inv
+    en-US: Inv
+    nb-NO: Inv
+    sv-SE: Inv
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

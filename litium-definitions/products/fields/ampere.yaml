@@ -1,0 +1,22 @@
+productFields:
+- id: ampere
+  type: Text
+  name:
+    da-DK: Ampere
+    en-US: Ampere
+    nb-NO: Ampere
+    sv-SE: Ampere
+  description:
+    da-DK: Ampere
+    en-US: Ampere
+    nb-NO: Ampere
+    sv-SE: Ampere
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

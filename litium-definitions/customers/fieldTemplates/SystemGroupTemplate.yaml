@@ -1,0 +1,15 @@
+customerTemplates:
+- type: Group
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _nameInvariantCulture
+    - id: _description
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: SystemGroupTemplate
+  name:
+    en-US: System group
+    sv-SE: System group

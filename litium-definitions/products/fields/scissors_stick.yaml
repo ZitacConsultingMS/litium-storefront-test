@@ -1,0 +1,22 @@
+productFields:
+- id: scissors_stick
+  type: Text
+  name:
+    da-DK: Saxpinne
+    en-US: Saxpinne
+    nb-NO: Saxpinne
+    sv-SE: Saxpinne
+  description:
+    da-DK: Saxpinne
+    en-US: Saxpinne
+    nb-NO: Saxpinne
+    sv-SE: Saxpinne
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

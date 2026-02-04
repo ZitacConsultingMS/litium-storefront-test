@@ -1,0 +1,22 @@
+productFields:
+- id: breaking_point_kg
+  type: Text
+  name:
+    da-DK: Brottgräns (Kg)
+    en-US: Brottgräns (Kg)
+    nb-NO: Brottgräns (Kg)
+    sv-SE: Brottgräns (Kg)
+  description:
+    da-DK: Brottgräns (Kg)
+    en-US: Brottgräns (Kg)
+    nb-NO: Brottgräns (Kg)
+    sv-SE: Brottgräns (Kg)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -30,11 +30,29 @@ export const CART_FRAGMENT = gql`
       totalIncludingVat
       totalExcludingVat
       description
+      additionalInfo {
+        key
+        value
+      }
       product {
-        id
-        name
-        smallImages: images(max: { height: 80, width: 80 }) {
-          ...Image
+        ... on IContentItem {
+          id
+          url
+        }
+        ... on IProductItem {
+          name
+          smallImages: images(max: { height: 80, width: 80 }) {
+            ...Image
+          }
+          ... on AllAttributesInListProduct {
+            allFieldGroups: fieldGroups {
+              fieldGroupId
+              name
+              fields {
+                ...FieldValues
+              }
+            }
+          }
         }
       }
       discountInfos {

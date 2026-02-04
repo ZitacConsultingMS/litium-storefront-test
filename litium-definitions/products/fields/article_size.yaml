@@ -1,0 +1,73 @@
+productFields:
+- id: article_size
+  type: TextOption
+  name:
+    da-DK: Storlek
+    en-US: Storlek
+    nb-NO: Storlek
+    sv-SE: Artikel Storlek
+  description:
+    da-DK: Storlek
+    en-US: Storlek
+    nb-NO: Storlek
+    sv-SE: Storlek
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        da-DK: ''
+        en-US: N/A
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: N/A
+    - name:
+        nb-NO: S
+        sv-SE: S
+        en-US: S
+        da-DK: S
+        de-DE: S
+        fi-FI: S
+      value: s
+    - name:
+        nb-NO: M
+        sv-SE: M
+        en-US: M
+        da-DK: M
+        de-DE: M
+        fi-FI: M
+      value: m
+    - name:
+        nb-NO: L
+        sv-SE: L
+        en-US: L
+        da-DK: L
+        de-DE: L
+        fi-FI: L
+      value: l
+    - name:
+        nb-NO: XL
+        sv-SE: XL
+        en-US: XL
+        da-DK: XL
+        de-DE: XL
+        fi-FI: XL
+      value: xl
+    - name:
+        nb-NO: XXL
+        sv-SE: XXL
+        en-US: XXL
+        da-DK: XXL
+        de-DE: XXL
+        fi-FI: XXL
+      value: xxl
+    multiSelect: true

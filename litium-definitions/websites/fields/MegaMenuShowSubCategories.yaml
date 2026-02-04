@@ -1,0 +1,18 @@
+websiteFields:
+- id: MegaMenuShowSubCategories
+  type: Boolean
+  name:
+    en-US: Show sub categories
+    sv-SE: Visa underkategorier
+  description:
+    en-US: If a category is selected as the link's target, when checked, the mega menu lists the sub categories of that category.
+    sv-SE: Om den här kryssrutan är markerad, och om länkens mål är en kategori, visas underkategorierna för den kategorin på huvudmenyn.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

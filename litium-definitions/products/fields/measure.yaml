@@ -1,0 +1,22 @@
+productFields:
+- id: measure
+  type: Text
+  name:
+    da-DK: Mått
+    en-US: Mått
+    nb-NO: Mått
+    sv-SE: Mått
+  description:
+    da-DK: Mått
+    en-US: Mått
+    nb-NO: Mått
+    sv-SE: Mått
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

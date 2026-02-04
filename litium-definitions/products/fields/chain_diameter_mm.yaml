@@ -1,0 +1,22 @@
+productFields:
+- id: chain_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Kätting (mm)
+    en-US: Ø Kätting (mm)
+    nb-NO: Ø Kätting (mm)
+    sv-SE: Ø Kätting (mm)
+  description:
+    da-DK: Ø Kätting (mm)
+    en-US: Ø Kätting (mm)
+    nb-NO: Ø Kätting (mm)
+    sv-SE: Ø Kätting (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

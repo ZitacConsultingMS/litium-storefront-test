@@ -1,0 +1,15 @@
+websiteFields:
+- id: ErrorMessage
+  type: Editor
+  name:
+    en-US: Error message
+    sv-SE: Felmeddelande
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

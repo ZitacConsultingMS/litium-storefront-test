@@ -7,5 +7,6 @@ export const IMAGE_FRAGMENT = gql`
       width
     }
     url
+    filename
   }
 `;

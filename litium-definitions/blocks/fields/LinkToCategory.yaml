@@ -1,0 +1,17 @@
+blockFields:
+- id: LinkToCategory
+  type: Pointer
+  name:
+    en-US: Link to category
+    sv-SE: Länk till kategori
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: ProductsCategory

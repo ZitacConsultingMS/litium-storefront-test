@@ -1,0 +1,26 @@
+websiteTemplates:
+- blockContainers:
+  - id: Main
+    name:
+      sv-SE: Main
+      en-US: Main
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Home
+  name:
+    en-US: Home page
+    sv-SE: Startsida

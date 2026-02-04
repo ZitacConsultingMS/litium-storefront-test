@@ -1,7 +1,7 @@
 'use client';
-import { Tab, Tabs } from 'components/Tabs';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
+import { Tab, Tabs } from 'components/zitac/Tabs';
 import { useTranslations } from 'hooks/useTranslations';
 import { SearchContentType } from 'models/search';
 import SearchSortItemInput from 'models/searchSortInputItem';

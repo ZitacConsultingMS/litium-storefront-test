@@ -1,0 +1,18 @@
+websiteFields:
+- id: Files
+  type: Pointer
+  name:
+    en-US: Files
+    sv-SE: Filer
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: MediaFile
+    multiSelect: true

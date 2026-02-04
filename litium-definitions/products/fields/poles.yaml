@@ -1,0 +1,22 @@
+productFields:
+- id: poles
+  type: Text
+  name:
+    da-DK: Poler
+    en-US: Poler
+    nb-NO: Poler
+    sv-SE: Poler
+  description:
+    da-DK: Poler
+    en-US: Poler
+    nb-NO: Poler
+    sv-SE: Poler
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

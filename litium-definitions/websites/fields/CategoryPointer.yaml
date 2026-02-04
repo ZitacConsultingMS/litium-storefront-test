@@ -1,0 +1,20 @@
+websiteFields:
+- id: CategoryPointer
+  type: Pointer
+  name:
+    en-US: Product category pointer
+    sv-SE: Produktkategori pekare
+  description:
+    en-US: For connecting landing page and product category
+    sv-SE: Produktkategori pekare
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: ProductsCategory

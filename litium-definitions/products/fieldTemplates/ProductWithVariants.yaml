@@ -4,31 +4,59 @@ productTemplates:
   - id: General
     fields:
     - id: _name
-    - id: _description
+    - id: product_tags
+    - id: product_status
+    - id: product_reference
+    - id: product_family
+    - id: product_category_reference
+    - id: product_bullets
+    - id: product_brand
     - id: Brand
     - id: Type
+    - id: Color
+    - id: Size
     administration:
       collapsed: false
     storefront:
       visible: false
-  - id: Product information
+  - id: Description
     name:
-      en-US: Product information
-      sv-SE: Produktinformation
+      sv-SE: Beskrivning
     fields:
-    - id: ProductSheet
+    - id: _description
     administration:
       collapsed: false
     storefront:
       visible: true
-  - id: Product specification
+  - id: Product information
     name:
-      en-US: Product specification
-      sv-SE: Produktspecifikation
-    fields:
-    - id: Specification
+      en-US: Product information
+      sv-SE: Teknisk specifikation
     administration:
       collapsed: false
+    storefront:
+      visible: true
+  - id: Documents
+    name:
+      sv-SE: Dokument
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Reviews
+    name:
+      sv-SE: 'Recensioner '
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Brand
+    name:
+      sv-SE: Om varumärket
+    fields:
+    - id: product_brand
+    administration:
+      collapsed: true
     storefront:
       visible: true
   variantFieldGroups:
@@ -39,7 +67,17 @@ productTemplates:
     - id: _url
     - id: _seoTitle
     - id: _seoDescription
-    - id: Brand
+    - id: article_vat
+    - id: article_tags
+    - id: article_show_supplier_art_nr
+    - id: article_supplier_art_nr
+    - id: article_status_erp
+    - id: article_status
+    - id: article_reference
+    - id: article_product_reference
+    - id: article_name
+    - id: article_ean
+    - id: article_approved
     administration:
       collapsed: false
     storefront:
@@ -47,17 +85,24 @@ productTemplates:
   - id: Product information
     name:
       en-US: Product information
-      sv-SE: Produktinformation
+      sv-SE: Teknisk specifikation
     fields:
-    - id: Color
-    - id: Size
+    - id: article_weight_kg
+    - id: article_size
+    - id: article_model
+    - id: article_length
+    - id: article_height
+    - id: article_diameter
+    - id: article_detail
+    - id: article_color
     administration:
       collapsed: false
     storefront:
       visible: true
   useVariantUrl: true
-  settings: {}
+  settings:
+    grouping: article_weight_kg
   id: ProductWithVariants
   name:
-    en-US: Product with variants
+    en-US: Product with variants (weight kg)
     sv-SE: Produkt med varianter

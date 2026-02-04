@@ -1,0 +1,22 @@
+productFields:
+- id: for_boat_size_foot
+  type: Text
+  name:
+    da-DK: För båtstorlek (fot)
+    en-US: För båtstorlek (fot)
+    nb-NO: För båtstorlek (fot)
+    sv-SE: För båtstorlek (fot)
+  description:
+    da-DK: För båtstorlek (fot)
+    en-US: För båtstorlek (fot)
+    nb-NO: För båtstorlek (fot)
+    sv-SE: För båtstorlek (fot)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

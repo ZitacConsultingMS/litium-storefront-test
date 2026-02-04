@@ -1,0 +1,22 @@
+productFields:
+- id: article_approved
+  type: Boolean
+  name:
+    da-DK: Approved
+    en-US: Approved
+    nb-NO: Approved
+    sv-SE: Approved
+  description:
+    da-DK: Approved
+    en-US: Approved
+    nb-NO: Approved
+    sv-SE: Approved
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

@@ -59,20 +59,25 @@ const REMOVE = gql`
 `;
 
 /**
- *Update a `quantity` number of item to cart.
+ * Update a cart line item (quantity and optional additionalInfo, e.g. line comment).
  * @param rowId rowId to update an item in cart.
  * @param quantity quantity number.
+ * @param additionalInfo optional key-value pairs (e.g. [{ key: "RowComment", value: "..." }] for B2B).
  * @returns an updated cart object.
  */
-export async function update(rowId: string, quantity: number): Promise<Cart> {
+export async function update(
+  rowId: string,
+  quantity: number,
+  additionalInfo?: { key: string; value: string }[]
+): Promise<Cart> {
+  const input = {
+    rowId,
+    quantity: +quantity,
+    ...(additionalInfo?.length ? { additionalInfo } : {}),
+  };
   const data = await mutateClient({
     mutation: UPDATE,
-    variables: {
-      input: {
-        rowId: rowId,
-        quantity: +quantity,
-      },
-    },
+    variables: { input },
   });
   return data.updateVariantInCart.cart;
 }

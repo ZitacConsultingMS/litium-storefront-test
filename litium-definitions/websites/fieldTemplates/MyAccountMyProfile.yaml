@@ -1,24 +1,24 @@
 websiteTemplates:
-  - id: MyAccountMyProfile
+- blockContainers:
+  - id: Main
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: Settings
     name:
-      en-US: My account - my profile
-      sv-SE: Mitt konto - min profil
-    type: Page
-    blockContainers:
-      - id: Main
-        childBlocks:
-          combination: IncludeSelected
-          selections:
-            - id: Banner
-    settings:
-      indexThePage: false
-    fieldGroups:
-      - id: Settings
-        name:
-          en-US: Settings
-          sv-SE: Inställningar
-        fields:
-          - id: _name
-          - id: _url
-        storefront:
-          visible: false
+      en-US: Settings
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: MyAccountMyProfile
+  name:
+    en-US: My account - my profile
+    sv-SE: Mitt konto - min profil

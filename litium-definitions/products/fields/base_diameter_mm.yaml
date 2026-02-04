@@ -1,0 +1,22 @@
+productFields:
+- id: base_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Bas (mm)
+    en-US: Ø Bas (mm)
+    nb-NO: Ø Bas (mm)
+    sv-SE: Ø Bas (mm)
+  description:
+    da-DK: Ø Bas (mm)
+    en-US: Ø Bas (mm)
+    nb-NO: Ø Bas (mm)
+    sv-SE: Ø Bas (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

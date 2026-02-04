@@ -1,0 +1,22 @@
+productFields:
+- id: is_special_goods
+  type: Boolean
+  name:
+    da-DK: isSpecialGoods
+    en-US: isSpecialGoods
+    nb-NO: isSpecialGoods
+    sv-SE: isSpecialGoods
+  description:
+    da-DK: isSpecialGoods
+    en-US: isSpecialGoods
+    nb-NO: isSpecialGoods
+    sv-SE: isSpecialGoods
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

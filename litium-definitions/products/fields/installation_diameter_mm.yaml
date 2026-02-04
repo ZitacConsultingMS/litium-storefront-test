@@ -1,0 +1,22 @@
+productFields:
+- id: installation_diameter_mm
+  type: Decimal
+  name:
+    da-DK: Inbyggnads Ø (mm)
+    en-US: Inbyggnads Ø (mm)
+    nb-NO: Inbyggnads Ø (mm)
+    sv-SE: Inbyggnads Ø (mm)
+  description:
+    da-DK: Inbyggnads Ø (mm)
+    en-US: Inbyggnads Ø (mm)
+    nb-NO: Inbyggnads Ø (mm)
+    sv-SE: Inbyggnads Ø (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

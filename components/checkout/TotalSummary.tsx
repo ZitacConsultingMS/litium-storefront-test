@@ -27,7 +27,7 @@ const TotalSummary = (props: {
       />
       <Button
         rounded={true}
-        className="mb-3 w-full p-2 text-sm"
+        className="w-full rounded-md bg-secondary text-white hover:bg-secondary/80"
         onClick={props.onClick}
         data-testid="total-summary__place-order"
       >

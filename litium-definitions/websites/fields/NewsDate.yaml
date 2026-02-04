@@ -1,0 +1,15 @@
+websiteFields:
+- id: NewsDate
+  type: DateTime
+  name:
+    en-US: News date
+    sv-SE: Nyhetsdatum
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

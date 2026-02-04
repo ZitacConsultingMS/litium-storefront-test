@@ -18,4 +18,3 @@ websiteFields:
       searchable: true
   option:
     entityType: WebsitesPage
-    multiSelect: false

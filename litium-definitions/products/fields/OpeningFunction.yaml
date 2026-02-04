@@ -23,5 +23,3 @@ productFields:
         en-US: Soft close
         sv-SE: Mjukstängande
       value: SoftClose
-    multiSelect: false
-    manualSort: false

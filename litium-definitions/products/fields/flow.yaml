@@ -1,0 +1,22 @@
+productFields:
+- id: flow
+  type: Text
+  name:
+    da-DK: Flöde
+    en-US: Flöde
+    nb-NO: Flöde
+    sv-SE: Flöde
+  description:
+    da-DK: Flöde
+    en-US: Flöde
+    nb-NO: Flöde
+    sv-SE: Flöde
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

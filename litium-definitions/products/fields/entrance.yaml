@@ -1,0 +1,22 @@
+productFields:
+- id: entrance
+  type: Text
+  name:
+    da-DK: Ingång
+    en-US: Ingång
+    nb-NO: Ingång
+    sv-SE: Ingång
+  description:
+    da-DK: Ingång
+    en-US: Ingång
+    nb-NO: Ingång
+    sv-SE: Ingång
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

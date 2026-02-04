@@ -1,0 +1,22 @@
+productFields:
+- id: keywords
+  type: Editor
+  name:
+    da-DK: Keywords
+    en-US: Keywords
+    nb-NO: Keywords
+    sv-SE: Keywords
+  description:
+    da-DK: Keywords
+    en-US: Keywords
+    nb-NO: Keywords
+    sv-SE: Keywords
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

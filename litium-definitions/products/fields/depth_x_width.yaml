@@ -1,0 +1,22 @@
+productFields:
+- id: depth_x_width
+  type: Text
+  name:
+    da-DK: Dj X B
+    en-US: Dj X B
+    nb-NO: Dj X B
+    sv-SE: Dj X B
+  description:
+    da-DK: Dj X B
+    en-US: Dj X B
+    nb-NO: Dj X B
+    sv-SE: Dj X B
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

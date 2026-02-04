@@ -1,0 +1,5 @@
+productRelationshipTypes:
+- id: ProductCategory
+  name:
+    en-US: Product to Categories
+  bidirectional: true

@@ -5,6 +5,9 @@ websiteTexts:
   logindetails.currentPassword:
     en-US: Current password
     sv-SE: Nuvarande lösenord
+  logindetails.submitbuttontext:
+    en-US: Save
+    sv-SE: Spara
   logindetails.subjectAccountChanged:
     en-US: Account changed
     sv-SE: Konto ändrat
@@ -47,6 +50,9 @@ websiteTexts:
   logindetails.passworddetails.wrongpasswordcomplexity:
     en-US: The password need to be at least 2 characters.
     sv-SE: Lösenordet behöver vara minst 2 tecken.
+  logindetails.passworddetails.success:
+    en-US: Your password has been updated.
+    sv-SE: Ditt lösenord har uppdaterats.
   logindetails.emaildetails.accountexists:
     en-US: The provided email address is already in use by another user.
     sv-SE: Den angivna epostadressen används redan av en annan användare.

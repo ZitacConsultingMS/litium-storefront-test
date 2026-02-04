@@ -1,0 +1,22 @@
+productFields:
+- id: pressure
+  type: Text
+  name:
+    da-DK: Tryck
+    en-US: Tryck
+    nb-NO: Tryck
+    sv-SE: Tryck
+  description:
+    da-DK: Tryck
+    en-US: Tryck
+    nb-NO: Tryck
+    sv-SE: Tryck
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,15 @@
+blockFields:
+- id: zsBackgroundImage
+  type: MediaPointerImage
+  name:
+    en-US: Background Image
+    sv-SE: Bakgrundsbild
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

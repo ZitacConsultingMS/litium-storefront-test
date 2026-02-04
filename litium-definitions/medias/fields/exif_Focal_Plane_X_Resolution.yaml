@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Focal_Plane_X_Resolution
+  type: Text
+  name:
+    en-US: Focal Plane X Resolution
+    sv-SE: Focal Plane X Upplösning
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

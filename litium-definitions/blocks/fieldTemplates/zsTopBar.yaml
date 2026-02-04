@@ -1,0 +1,42 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-flag
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: USP
+    name:
+      en-US: USP
+      sv-SE: USP
+    fields:
+    - id: zsUSP
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Texteditor
+    name:
+      en-US: Editor
+      sv-SE: Editor
+    fields:
+    - id: zsTextEditor
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  id: zsTopBar
+  name:
+    en-US: Top Bar
+    sv-SE: Top Bar

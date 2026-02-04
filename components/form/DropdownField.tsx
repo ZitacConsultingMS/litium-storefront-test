@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import CaretDown from 'components/icons/caret-down';
+import ArrowDown from 'components/icons/zitac/arrow-down';
 import { useClickOutside } from 'hooks/useClickOutside';
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { Controller } from 'react-hook-form';
@@ -165,7 +165,7 @@ export default function DropdownField({
               >
                 {placeholder}
               </div>
-              <CaretDown className="absolute right-8 top-[50%] h-5 w-5 -translate-y-2/4 font-bold" />
+              <ArrowDown className="absolute right-3 top-[50%] h-5 w-5 -translate-y-2/4 font-bold" />
             </div>
             {/* Render options */}
             <div

@@ -1,0 +1,21 @@
+websiteFields:
+- id: FooterLinkList
+  type: Pointer
+  name:
+    en-US: Link list
+    sv-SE: Länkar
+  description:
+    en-US: A list of links that are added to the footer column.
+    sv-SE: En lista med länkar som visas i sidfotskolumnen.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage
+    multiSelect: true

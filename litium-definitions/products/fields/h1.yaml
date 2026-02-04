@@ -1,0 +1,16 @@
+productFields:
+- id: h1
+  type: Text
+  name:
+    sv-SE: H1
+  description:
+    sv-SE: H1
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

@@ -5,7 +5,7 @@ import { Accordion, AccordionPanel } from 'components/Accordion';
 import Sidebar from 'components/Sidebar';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
-import Close from 'components/icons/close';
+import Close from 'components/icons/zitac/close';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
 import {

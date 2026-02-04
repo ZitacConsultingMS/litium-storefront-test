@@ -1,0 +1,14 @@
+trigger: none
+pr: none
+  # branches:
+  #   include:
+  #     - dev
+
+variables:
+  # Variables are defined in variable group LitiumStage in devops.
+  - group: LitiumStage
+  - name: StorefrontName
+    value: byggplast-storefront
+  
+steps:
+  - template: azure-pipelines-shared.yml

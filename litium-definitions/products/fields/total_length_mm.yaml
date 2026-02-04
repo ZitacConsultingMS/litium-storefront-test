@@ -1,0 +1,22 @@
+productFields:
+- id: total_length_mm
+  type: Text
+  name:
+    da-DK: Längd totalt (mm)
+    en-US: Längd totalt (mm)
+    nb-NO: Längd totalt (mm)
+    sv-SE: Längd totalt (mm)
+  description:
+    da-DK: Längd totalt (mm)
+    en-US: Längd totalt (mm)
+    nb-NO: Längd totalt (mm)
+    sv-SE: Längd totalt (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

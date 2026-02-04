@@ -23,5 +23,3 @@ productFields:
         en-US: Glossy
         sv-SE: Blank
       value: Glossy
-    multiSelect: false
-    manualSort: false

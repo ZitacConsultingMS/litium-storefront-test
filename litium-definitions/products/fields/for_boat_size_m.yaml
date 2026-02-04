@@ -1,0 +1,22 @@
+productFields:
+- id: for_boat_size_m
+  type: Text
+  name:
+    da-DK: För båtstorlek (m)
+    en-US: För båtstorlek (m)
+    nb-NO: För båtstorlek (m)
+    sv-SE: För båtstorlek (m)
+  description:
+    da-DK: För båtstorlek (m)
+    en-US: För båtstorlek (m)
+    nb-NO: För båtstorlek (m)
+    sv-SE: För båtstorlek (m)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

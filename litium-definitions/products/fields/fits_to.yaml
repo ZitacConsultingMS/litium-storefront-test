@@ -1,0 +1,22 @@
+productFields:
+- id: fits_to
+  type: Text
+  name:
+    da-DK: Till
+    en-US: Till
+    nb-NO: Till
+    sv-SE: Till
+  description:
+    da-DK: Till
+    en-US: Till
+    nb-NO: Till
+    sv-SE: Till
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

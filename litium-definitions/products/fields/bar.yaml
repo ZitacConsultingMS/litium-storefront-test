@@ -1,0 +1,22 @@
+productFields:
+- id: bar
+  type: Text
+  name:
+    da-DK: Bar
+    en-US: Bar
+    nb-NO: Bar
+    sv-SE: Bar
+  description:
+    da-DK: Bar
+    en-US: Bar
+    nb-NO: Bar
+    sv-SE: Bar
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

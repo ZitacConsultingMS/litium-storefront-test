@@ -1,71 +1,655 @@
 productFields:
-- id: Color
+- id: color
   type: TextOption
   name:
-    en-US: Color
-    sv-SE: Färg
+    da-DK: Färg
+    de-DE: Färg
+    en-US: Färg
+    fi-FI: Färg
+    nb-NO: Färg
+    sv-SE: Litium Färg
   settings:
-    multiCulture: false
+    multiCulture: true
     administration:
-      columns: true
-      filter: true
+      columns: false
+      filter: false
       readonly: false
     storefront:
       visible: true
-      searchable: true
+      searchable: false
   option:
     items:
     - name:
-        en-US: White
-        sv-SE: Vit
-      value: White
+        sv-SE: N/A
+        en-US: N/A
+      value: N/A
     - name:
-        en-US: Beige
+        sv-SE: Vit
+      value: Vit
+    - name:
+        sv-SE: Grå
+      value: Gra
+    - name:
+        sv-SE: Naturvit 08
+      value: Naturvit 08
+    - name:
+        sv-SE: Svavelgul 51
+      value: Svavelgul 51
+    - name:
+        sv-SE: Himmelsblå 72
+      value: Himmelsbla 72
+    - name:
+        sv-SE: Polargrön 62
+      value: Polargron 62
+    - name:
+        sv-SE: Marin
+      value: Marin
+    - name:
+        sv-SE: Gul
+      value: Gul
+    - name:
+        sv-SE: Vit/rostfri
+      value: Vit/rostfri
+    - name:
+        sv-SE: Vit/Rostfri
+      value: Vit/Rostfri
+    - name:
+        sv-SE: Svart
+      value: Svart
+    - name:
+        sv-SE: Röd
+      value: Rod
+    - name:
+        sv-SE: Mörkgrå
+      value: Morkgra
+    - name:
+        sv-SE: 9011BK Svart
+      value: 9011BK Svart
+    - name:
+        sv-SE: Transparent
+      value: Transparent
+    - name:
+        sv-SE: Röd/Svart
+      value: Rod/Svart
+    - name:
+        sv-SE: röd
+      value: rod
+    - name:
+        sv-SE: Rostfri
+      value: Rostfri
+    - name:
+        sv-SE: Krom
+      value: Krom
+    - name:
+        sv-SE: Marinblå
+      value: Marinbla
+    - name:
+        sv-SE: Vitt ljus
+      value: Vitt ljus
+    - name:
+        sv-SE: Blått ljus
+      value: Blatt ljus
+    - name:
+        sv-SE: Varmvitt
+      value: Varmvitt
+    - name:
+        sv-SE: Varmvitt,3000K
+      value: Varmvitt,3000K
+    - name:
+        sv-SE: Orange
+      value: Orange
+    - name:
+        sv-SE: Pure White
+      value: Pure White
+    - name:
+        sv-SE: Off White
+      value: Off White
+    - name:
+        sv-SE: Cobalt Blue
+      value: Cobalt Blue
+    - name:
+        sv-SE: Navy
+      value: Navy
+    - name:
+        sv-SE: Blå
+      value: Bla
+    - name:
+        sv-SE: Mörkblå
+      value: Morkbla
+    - name:
+        sv-SE: Offwhite
+      value: Offwhite
+    - name:
+        sv-SE: Ljusblå
+      value: Ljusbla
+    - name:
+        sv-SE: M. Blå
+      value: M. Bla
+    - name:
+        sv-SE: Off white
+      value: Off white
+    - name:
+        sv-SE: Vit/Grön
+      value: Vit/Gron
+    - name:
+        sv-SE: Vit/Blå
+      value: Vit/Bla
+    - name:
+        sv-SE: Vit/Röd
+      value: Vit/Rod
+    - name:
+        sv-SE: Vision Blue
+      value: Vision Blue
+    - name:
+        sv-SE: Silver/Blå
+      value: Silver/Bla
+    - name:
+        sv-SE: Grön
+      value: Gron
+    - name:
+        sv-SE: Svart/Vit
+      value: Svart/Vit
+    - name:
+        sv-SE: Svart/UV-gul
+      value: Svart/UV-gul
+    - name:
+        sv-SE: Grundfärg för drevfärger
+      value: Grundfarg for drevfarger
+    - name:
         sv-SE: Beige
       value: Beige
     - name:
-        en-US: Black
-        sv-SE: Svart
-      value: Black
+        sv-SE: GRå
+      value: GRa
     - name:
-        en-US: Grey
-        sv-SE: Grå
+        sv-SE: Aluminium
+      value: Aluminium
+    - name:
+        sv-SE: Cream
+      value: Cream
+    - name:
+        sv-SE: True Blue
+      value: True Blue
+    - name:
+        sv-SE: Silver
+      value: Silver
+    - name:
+        sv-SE: M-Blå
+      value: M-Bla
+    - name:
+        sv-SE: Marinblå/Vit
+      value: Marinbla/Vit
+    - name:
+        sv-SE: Aluminiumgrå
+      value: Aluminiumgra
+    - name:
+        sv-SE: Platinum
+      value: Platinum
+    - name:
+        sv-SE: Med. White
+      value: Med. White
+    - name:
+        sv-SE: Mauritius Blue
+      value: Mauritius Blue
+    - name:
+        sv-SE: Rochell Red
+      value: Rochell Red
+    - name:
+        sv-SE: White
+      value: White
+    - name:
+        sv-SE: Grey
       value: Grey
     - name:
-        en-US: Rose
-        sv-SE: Rosa
-      value: Rose
-    - name:
-        en-US: Brown
-        sv-SE: Brun
-      value: Brown
-    - name:
-        en-US: Red
-        sv-SE: Röd
+        sv-SE: Red
       value: Red
     - name:
-        en-US: Blue
-        sv-SE: Blå
-      value: Blue
+        sv-SE: Black
+      value: Black
     - name:
-        en-US: Green
-        sv-SE: Grön
-      value: Green
+        sv-SE: Volvo Penta Grå
+      value: Volvo Penta Gra
     - name:
-        en-US: Pink
+        sv-SE: Thinner 845
+      value: Thinner 845
+    - name:
+        sv-SE: Creme
+      value: Creme
+    - name:
+        sv-SE: Pure white
+      value: Pure white
+    - name:
+        sv-SE: Mid Grey
+      value: Mid Grey
+    - name:
+        sv-SE: Orange röd
+      value: Orange rod
+    - name:
+        sv-SE: Benvit
+      value: Benvit
+    - name:
+        sv-SE: Segelvit
+      value: Segelvit
+    - name:
+        sv-SE: Äggskal
+      value: Aggskal
+    - name:
+        sv-SE: Mellangrå
+      value: Mellangra
+    - name:
+        sv-SE: Lagergrå
+      value: Lagergra
+    - name:
+        sv-SE: Skumvit
+      value: Skumvit
+    - name:
+        sv-SE: Granit grå
+      value: Granit gra
+    - name:
+        sv-SE: Dovervit
+      value: Dovervit
+    - name:
+        sv-SE: Gräddvit
+      value: Graddvit
+    - name:
+        sv-SE: Vit Uttern
+      value: Vit Uttern
+    - name:
+        sv-SE: J2000 Vit
+      value: J2000 Vit
+    - name:
+        sv-SE: J8003 Grå
+      value: J8003 Gra
+    - name:
+        sv-SE: J8004 Skumvit
+      value: J8004 Skumvit
+    - name:
+        sv-SE: J8008 Offwhite
+      value: J8008 Offwhite
+    - name:
+        sv-SE: J8012 Dovervit
+      value: J8012 Dovervit
+    - name:
+        sv-SE: Gråvit
+      value: Gravit
+    - name:
+        sv-SE: Oran.gul
+      value: Oran.gul
+    - name:
+        sv-SE: Mörkgul
+      value: Morkgul
+    - name:
+        sv-SE: Blåsvart
+      value: Blasvart
+    - name:
+        sv-SE: Sign.blå
+      value: Sign.bla
+    - name:
+        sv-SE: Krämvit
+      value: Kramvit
+    - name:
+        sv-SE: Blå/vit
+      value: Bla/vit
+    - name:
+        sv-SE: Natur
+      value: Natur
+    - name:
+        sv-SE: Vit/Marin
+      value: Vit/Marin
+    - name:
+        sv-SE: UV-Gul
+      value: UV-Gul
+    - name:
+        sv-SE: UV-Gul/Marin
+      value: UV-Gul/Marin
+    - name:
+        sv-SE: Gult
+      value: Gult
+    - name:
+        sv-SE: Vitt
+      value: Vitt
+    - name:
+        sv-SE: Rött
+      value: Rott
+    - name:
+        sv-SE: Ljusgrå 873
+      value: Ljusgra 873
+    - name:
+        sv-SE: Mörkblå 461
+      value: Morkbla 461
+    - name:
+        sv-SE: Pol.Mässing
+      value: Pol.Massing
+    - name:
+        sv-SE: Varmvit
+      value: Varmvit
+    - name:
+        sv-SE: Yamaha/Selva Dark Grey
+      value: Yamaha/Selva Dark Grey
+    - name:
+        sv-SE: Suzuki Grey
+      value: Suzuki Grey
+    - name:
+        sv-SE: Volvo Penta AQ
+      value: Volvo Penta AQ
+    - name:
+        sv-SE: Svart matt
+      value: Svart matt
+    - name:
+        sv-SE: Selva Pure White
+      value: Selva Pure White
+    - name:
+        sv-SE: Evinrude/Johnson Dark Blue
+      value: Evinrude/Johnson Dark Blue
+    - name:
+        sv-SE: Suzuki Metallic Black
+      value: Suzuki Metallic Black
+    - name:
+        sv-SE: Mercury Black
+      value: Mercury Black
+    - name:
+        sv-SE: Evinrude White
+      value: Evinrude White
+    - name:
+        sv-SE: Volvo Green
+      value: Volvo Green
+    - name:
+        sv-SE: Volvo Silver Metallic
+      value: Volvo Silver Metallic
+    - name:
+        sv-SE: Honda guld-silver metallic
+      value: Honda guld-silver metallic
+    - name:
+        sv-SE: Honda silver metallic 2012-
+      value: Honda silver metallic 2012-
+    - name:
+        sv-SE: Yanmar Motorblock Grå metallic
+      value: Yanmar Motorblock Gra metallic
+    - name:
+        sv-SE: Yanmar Drev Grå metallic
+      value: Yanmar Drev Gra metallic
+    - name:
+        sv-SE: Souve.Blue
+      value: Souve.Blue
+    - name:
+        sv-SE: vit/röd
+      value: vit/rod
+    - name:
+        sv-SE: vit/blå
+      value: vit/bla
+    - name:
+        sv-SE: vit/grön
+      value: vit/gron
+    - name:
+        sv-SE: Blå/Vit
+      value: Bla/Vit
+    - name:
+        sv-SE: Vit/Rosa
+      value: Vit/Rosa
+    - name:
+        sv-SE: blå
+      value: bla
+    - name:
+        sv-SE: svart
+      value: svart
+    - name:
+        sv-SE: silver/blå
+      value: silver/bla
+    - name:
+        sv-SE: silver/röd
+      value: silver/rod
+    - name:
+        sv-SE: vit
+      value: vit
+    - name:
+        sv-SE: Ljusgrå
+      value: Ljusgra
+    - name:
+        sv-SE: Windy Grå 8003
+      value: Windy Gra 8003
+    - name:
+        sv-SE: White 011
+      value: White 011
+    - name:
+        sv-SE: White 012
+      value: White 012
+    - name:
+        sv-SE: White 013
+      value: White 013
+    - name:
+        sv-SE: White 014
+      value: White 014
+    - name:
+        sv-SE: White 015
+      value: White 015
+    - name:
+        sv-SE: Black 111
+      value: Black 111
+    - name:
+        sv-SE: Blue 211
+      value: Blue 211
+    - name:
+        sv-SE: Blue 212
+      value: Blue 212
+    - name:
+        sv-SE: Blue 213
+      value: Blue 213
+    - name:
+        sv-SE: Blue 214
+      value: Blue 214
+    - name:
+        sv-SE: Green 311
+      value: Green 311
+    - name:
+        sv-SE: Red 411
+      value: Red 411
+    - name:
+        sv-SE: Silvergrå
+      value: Silvergra
+    - name:
+        sv-SE: Vit & Marin
+      value: Vit & Marin
+    - name:
+        sv-SE: Kamouflage
+      value: Kamouflage
+    - name:
+        sv-SE: RF
+      value: RF
+    - name:
+        sv-SE: Röd/Mörkblå
+      value: Rod/Morkbla
+    - name:
+        sv-SE: Brun
+      value: Brun
+    - name:
+        sv-SE: BL-GR
+      value: BL-GR
+    - name:
+        sv-SE: BR-GU
+      value: BR-GU
+    - name:
+        sv-SE: RÖ-GR
+      value: RO-GR
+    - name:
+        sv-SE: Reflex
+      value: Reflex
+    - name:
+        sv-SE: Snow White
+      value: Snow White
+    - name:
+        sv-SE: Mediterranean White
+      value: Mediterranean White
+    - name:
+        sv-SE: Ivory
+      value: Ivory
+    - name:
+        sv-SE: Oxford Blue
+      value: Oxford Blue
+    - name:
+        sv-SE: Atlantic Grey
+      value: Atlantic Grey
+    - name:
+        sv-SE: Rochelle Red
+      value: Rochelle Red
+    - name:
+        sv-SE: Jet Black
+      value: Jet Black
+    - name:
+        sv-SE: Yellow
+      value: Yellow
+    - name:
+        sv-SE: Lauderdale Blue
+      value: Lauderdale Blue
+    - name:
+        sv-SE: Bondi Blue
+      value: Bondi Blue
+    - name:
+        sv-SE: Rustic Red
+      value: Rustic Red
+    - name:
+        sv-SE: Gul / Marin
+      value: Gul / Marin
+    - name:
+        sv-SE: Blå / Röd
+      value: Bla / Rod
+    - name:
+        sv-SE: Blå / Svart
+      value: Bla / Svart
+    - name:
+        sv-SE: Vit / Grön
+      value: Vit / Gron
+    - name:
         sv-SE: Rosa
-      value: Pink
+      value: Rosa
     - name:
-        en-US: Chrome
-        sv-SE: Krom
-      value: Chrome
+        sv-SE: Röd/UV-gul
+      value: Rod/UV-gul
     - name:
-        en-US: Brass
-        sv-SE: Mässing
-      value: Brass
+        sv-SE: Röd/Marin
+      value: Rod/Marin
     - name:
-        en-US: Copper
+        sv-SE: Gul/Marin
+      value: Gul/Marin
+    - name:
+        sv-SE: Grå/Svart
+      value: Gra/Svart
+    - name:
+        sv-SE: UV Gul
+      value: UV Gul
+    - name:
+        sv-SE: Grå & Svart
+      value: Gra & Svart
+    - name:
+        sv-SE: Marin & Röd
+      value: Marin & Rod
+    - name:
+        sv-SE: Vit & Rosa
+      value: Vit & Rosa
+    - name:
+        sv-SE: Svart & Blå
+      value: Svart & Bla
+    - name:
+        sv-SE: Svart/Grå
+      value: Svart/Gra
+    - name:
+        sv-SE: Orange/Svart
+      value: Orange/Svart
+    - name:
+        sv-SE: Svart/svart
+      value: Svart/svart
+    - name:
+        sv-SE: Vit/Rostfi
+      value: Vit/Rostfi
+    - name:
+        sv-SE: Vit/alu
+      value: Vit/alu
+    - name:
+        sv-SE: Olika
+      value: Olika
+    - name:
+        sv-SE: Alpinvit
+      value: Alpinvit
+    - name:
+        sv-SE: Stockholmsvit
+      value: Stockholmsvit
+    - name:
+        sv-SE: Gelcoatvit
+      value: Gelcoatvit
+    - name:
+        sv-SE: Klarblå
+      value: Klarbla
+    - name:
+        sv-SE: Nattblå
+      value: Nattbla
+    - name:
+        sv-SE: Vinröd
+      value: Vinrod
+    - name:
+        sv-SE: 9002LG Ljusgrå
+      value: 9002LG Ljusgra
+    - name:
+        sv-SE: Vit/Orange
+      value: Vit/Orange
+    - name:
+        sv-SE: Mörkblå 5013
+      value: Morkbla 5013
+    - name:
+        sv-SE: Stålgrå 7015
+      value: Stalgra 7015
+    - name:
+        sv-SE: Ljusgrå 9002
+      value: Ljusgra 9002
+    - name:
+        sv-SE: Svart 9011
+      value: Svart 9011
+    - name:
+        sv-SE: Svart 9017
+      value: Svart 9017
+    - name:
+        sv-SE: Mörkgrå 7043
+      value: Morkgra 7043
+    - name:
+        sv-SE: offwhite
+      value: offwhite
+    - name:
+        sv-SE: beige
+      value: beige
+    - name:
+        sv-SE: ljusgrå
+      value: ljusgra
+    - name:
+        sv-SE: off-white
+      value: off-white
+    - name:
+        sv-SE: Mörkröd
+      value: Morkrod
+    - name:
+        sv-SE: Vit/Transparent
+      value: Vit/Transparent
+    - name:
+        sv-SE: Röd/Vit
+      value: Rod/Vit
+    - name:
+        sv-SE: Svart/Blå
+      value: Svart/Bla
+    - name:
+        sv-SE: Svart/Rosa
+      value: Svart/Rosa
+    - name:
+        sv-SE: Gul/Blå
+      value: Gul/Bla
+    - name:
+        sv-SE: Rostfritt
+      value: Rostfritt
+    - name:
+        sv-SE: Marin/Svart
+      value: Marin/Svart
+    - name:
+        sv-SE: Brons
+      value: Brons
+    - name:
+        sv-SE: Cognac
+      value: Cognac
+    - name:
         sv-SE: Koppar
-      value: Copper
-    multiSelect: false
-    manualSort: false
+      value: Koppar

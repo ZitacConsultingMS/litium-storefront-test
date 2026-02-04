@@ -1,9 +1,10 @@
 'use client';
-import { Button } from 'components/elements/Button';
+
 import { Checkbox } from 'components/elements/Checkbox';
 import { Heading2 } from 'components/elements/Heading';
 import { Text } from 'components/elements/Text';
-import ErrorText, { ErrorField } from 'components/form/ErrorText';
+import { Button } from 'components/elements/zitac/Button';
+import { ErrorField } from 'components/form/ErrorText';
 import { CartContext } from 'contexts/cartContext';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
@@ -14,7 +15,15 @@ import {
   OrderCustomerDetails,
 } from 'models/checkout';
 import { usePathname, useRouter } from 'next/navigation';
-import { Fragment, useCallback, useContext, useEffect, useState } from 'react';
+import {
+  Fragment,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
+
 import { get } from 'services/cartService.client';
 import {
   createCheckoutSession,
@@ -78,6 +87,16 @@ function CheckoutWizard(props: { state?: Checkout }) {
     shippingFeeLine,
     showPricesIncludingVat
   );
+
+  //orginal payment options from checkout
+  // const [paymentOptions, setPaymentOptions] = useState<CheckoutOption[]>(
+  //   filterPayment(checkout.paymentOptions)
+  // );
+  // useEffect(() => {
+  //   setPaymentOptions(filterPayment(checkout.paymentOptions));
+  // }, [checkout.paymentOptions]);
+
+  //new for nshift/payment filtering
   const [paymentOptions, setPaymentOptions] = useState<CheckoutOption[]>(
     filterPayment(checkout.paymentOptions)
   );
@@ -125,7 +144,6 @@ function CheckoutWizard(props: { state?: Checkout }) {
     const result = await updateBillingAddress(billingAddress);
     setCheckout(result);
   };
-
   const savePaymentOptions = async (id: string) => {
     const checkoutOption = {
       paymentOptionId: id,
@@ -133,7 +151,6 @@ function CheckoutWizard(props: { state?: Checkout }) {
     const result = await updateCheckoutOptions(checkoutOption);
     setCheckout(result);
   };
-
   const saveShippingOptions = async (id: string) => {
     const checkoutOption = {
       shippingOptionId: id,
@@ -141,12 +158,10 @@ function CheckoutWizard(props: { state?: Checkout }) {
     const result = await updateCheckoutOptions(checkoutOption);
     setCheckout(result);
   };
-
   const saveShippingWidget = async (id: string) => {
     const result = await updateShippingWidget(id);
     setCheckout(result);
   };
-
   const confirmOrder = async () => {
     const result = await placeOrder();
     if (result.placeOrder?.errors) {
@@ -154,7 +169,6 @@ function CheckoutWizard(props: { state?: Checkout }) {
     }
     return result;
   };
-
   const saveAddresses = async ({
     shippingAddress,
     billingAddress,
@@ -171,7 +185,6 @@ function CheckoutWizard(props: { state?: Checkout }) {
     });
     setCheckout(result);
   };
-
   const {
     initialStep,
     showAddress,
@@ -186,6 +199,8 @@ function CheckoutWizard(props: { state?: Checkout }) {
   const [placeOrderErrors, setPlaceOrderErrors] = useState<ErrorField[]>([]);
   const [isWidgetReady, setIsWidgetReady] = useState(false);
   const [selectedShipmentWidget, setSelectedShipmentWidget] = useState('');
+  const [selectedShipmentName, setSelectedShipmentName] = useState('');
+
   const selectedDeliveryOption = getSelectedOption(shippingOptions);
   const selectedPaymentOption = getSelectedOption(paymentOptions);
   const selectedDeliveryName =
@@ -198,7 +213,6 @@ function CheckoutWizard(props: { state?: Checkout }) {
       : selectedDeliveryOption?.name;
   const router = useRouter();
   const pathname = usePathname();
-
   const createSession = useCallback(async () => {
     const host = window.location.origin;
     const checkoutState = await createCheckoutSession(
@@ -261,13 +275,13 @@ function CheckoutWizard(props: { state?: Checkout }) {
   }, [initialStep]);
 
   useEffect(() => {
-    if (
-      paymentOptions.length &&
-      paymentOptions.every((item) => item.selected === false) &&
-      step === STEP_PAYMENT
-    ) {
-      savePaymentOptions(paymentOptions[0].id).finally(getCart);
-    }
+    // if (
+    //   paymentOptions.length &&
+    //   paymentOptions.every((item) => item.selected === false) &&
+    //   step === STEP_PAYMENT
+    // ) {
+    //   savePaymentOptions(paymentOptions[0].id).finally(getCart);
+    // }
 
     if (
       shippingOptions.length &&
@@ -311,14 +325,77 @@ function CheckoutWizard(props: { state?: Checkout }) {
     selectDefaultShippingOption,
   ]);
 
-  const listenMessageHandler = useCallback((event: any) => {
-    if (
-      event.data.type == 'litium-connect-shipping' &&
-      event.data.event == 'optionChanging'
-    ) {
-      setSelectedShipmentWidget(event.data.data.value);
-    }
-  }, []);
+  /* NSHIFT Listen message from shipment widget */
+
+  const PAYMENT_ID_IN_STORE =
+    'UGF5bWVudE9wdGlvbgpkT3B0aW9uSWQ9ZGlyZWN0cGF5bWVudCUzQURpcmVjdFBheQ=='; // "Betala i butik" (DIRECT_PAYMENT)
+  const PAYMENT_ID_SVEA =
+    'UGF5bWVudE9wdGlvbgpkT3B0aW9uSWQ9c3ZlYXBheW1lbnQlM0FTRSUyMENoZWNrb3V0'; // "Svea payment" (IFRAME_CHECKOUT)
+
+  const isPickupInStore = (s?: string) => {
+    const lower = (s ?? '').toLocaleLowerCase('sv-SE').trim();
+    return lower.includes('hämta i butik') || lower.includes('hamta i butik');
+  };
+
+  const isPickup = isPickupInStore(selectedShipmentName);
+  const desiredPaymentId = isPickup ? PAYMENT_ID_IN_STORE : PAYMENT_ID_SVEA;
+
+  const filteredPaymentOptionsForUI = useMemo(() => {
+    const all = paymentOptions ?? [];
+    return all.filter((o) => o.id === desiredPaymentId);
+  }, [paymentOptions, desiredPaymentId]);
+
+  const selectedPaymentOptionForUI = filteredPaymentOptionsForUI[0] ?? null;
+
+  //debug output of payment options
+  useEffect(() => {
+    window.__dumpPayments = () => {
+      console.table(
+        (checkout.paymentOptions ?? []).map((o) => ({
+          id: o.id,
+          name: o.name,
+          integrationType: o.integrationType,
+          selected: o.selected,
+        }))
+      );
+    };
+    return () => {
+      try {
+        delete (window as any).__dumpPayments;
+      } catch {}
+    };
+  }, [checkout.paymentOptions]);
+  // end debug output
+
+  type ShippingMsg = {
+    type: 'litium-connect-shipping';
+    event: 'optionChanging';
+    data?: { value?: string; name?: string };
+  };
+
+  const listenMessageHandler = useCallback(
+    (event: MessageEvent<ShippingMsg>) => {
+      if (
+        event.data?.type !== 'litium-connect-shipping' ||
+        event.data?.event !== 'optionChanging'
+      )
+        return;
+
+      const value = event.data.data?.value ?? '';
+      const name = (event.data.data?.name ?? '').trim();
+
+      setSelectedShipmentWidget(value);
+      setSelectedShipmentName(name);
+
+      //console.log(`[Shipping] message received, target name="${name}"`);
+    },
+    []
+  );
+  const decidePaymentIdForCurrentShipping = useCallback(() => {
+    return isPickupInStore(selectedShipmentName)
+      ? PAYMENT_ID_IN_STORE
+      : PAYMENT_ID_SVEA;
+  }, [selectedShipmentName]);
 
   useEffect(() => {
     window.addEventListener('message', listenMessageHandler);
@@ -401,6 +478,36 @@ function CheckoutWizard(props: { state?: Checkout }) {
             </div>
           )}
           <Button
+            rounded
+            className="w-full p-2"
+            onClick={async () => {
+              if (
+                selectedDeliveryOption.integrationType ===
+                ShippingIntegrationType.DeliveryCheckout
+              ) {
+                if (!selectedShipmentWidget) return;
+                await saveShippingWidget(selectedShipmentWidget);
+              }
+
+              // set payment to match the shipping mode
+              const all = checkout.paymentOptions ?? [];
+              const currentPaymentId = all.find((p) => p.selected)?.id;
+              if (desiredPaymentId && currentPaymentId !== desiredPaymentId) {
+                await savePaymentOptions(desiredPaymentId);
+              }
+
+              setStep(STEP_PAYMENT);
+            }}
+            data-testid="checkout-wizard__delivery-option-continue"
+            disabled={
+              selectedDeliveryOption.integrationType ===
+                ShippingIntegrationType.DeliveryCheckout &&
+              !selectedShipmentWidget
+            }
+          >
+            {t('checkoutwizard.deliveryoption.button.continue')}
+          </Button>
+          {/* <Button
             rounded={true}
             className="w-full p-2"
             onClick={() => {
@@ -420,7 +527,7 @@ function CheckoutWizard(props: { state?: Checkout }) {
             }
           >
             {t('checkoutwizard.deliveryoption.button.continue')}
-          </Button>
+          </Button> */}
         </div>
       );
     case STEP_PAYMENT:
@@ -490,7 +597,7 @@ function CheckoutWizard(props: { state?: Checkout }) {
           )}
           {(useSameAddress || hasAltAddress) && (
             <Fragment>
-              {showPaymentOptions && (
+              {/* {showPaymentOptions && (
                 <div data-testid="checkout-wizard__payment-option">
                   <PaymentOptions
                     value={paymentOptions}
@@ -504,13 +611,44 @@ function CheckoutWizard(props: { state?: Checkout }) {
                     errors={!showSummary ? errors : []}
                   />
                 </div>
+              )} */}
+              {showPaymentOptions && filteredPaymentOptionsForUI.length > 0 && (
+                <div data-testid="checkout-wizard__payment-option">
+                  <PaymentOptions
+                    // Only the single allowed option is passed to the component
+                    value={filteredPaymentOptionsForUI}
+                    selectedOption={
+                      selectedPaymentOptionForUI ??
+                      filteredPaymentOptionsForUI[0]
+                    }
+                    onChange={async (id: string) => {
+                      await savePaymentOptions(id);
+                    }}
+                    errors={errors}
+                  />
+                </div>
               )}
-              {paymentHtmlSnippet && (
+
+              {/* render Svea widget only if NOT pickup and selected is Svea (iframe) */}
+              {!isPickup &&
+                selectedPaymentOptionForUI?.id === PAYMENT_ID_SVEA &&
+                selectedPaymentOptionForUI?.integrationType ===
+                  PaymentIntegrationType.IframeCheckout &&
+                !!paymentHtmlSnippet && (
+                  <div data-testid="checkout-wizard__widget">
+                    <PaymentWidget
+                      key={`pay-${selectedPaymentOptionForUI.id}`}
+                      responseString={paymentHtmlSnippet}
+                      rows={rows}
+                    />
+                  </div>
+                )}
+              {/* {paymentHtmlSnippet && (
                 <div data-testid="checkout-wizard__widget">
                   <PaymentWidget
                     responseString={paymentHtmlSnippet}
                     rows={rows}
-                    onLoad={handlePaymentWidgetLoaded}
+                   onLoad={handlePaymentWidgetLoaded}
                   />
                   {isWidgetReady &&
                     placeOrderErrors &&
@@ -520,8 +658,9 @@ function CheckoutWizard(props: { state?: Checkout }) {
                         className="mt-3 text-left"
                       />
                     )}
-                </div>
-              )}
+                      </div>
+              )} */}
+
               {!paymentHtmlSnippet && showSummary && (
                 <div data-testid="checkout-wizard__total-summary">
                   <TotalSummary
@@ -603,7 +742,8 @@ const getSelectedOption = (options: CheckoutOption[]): CheckoutOption => {
 };
 
 const filterPayment = (paymentOptions: CheckoutOption[]) => {
-  if (
+  /*
+    if (
     hasIntegrationType(paymentOptions, PaymentIntegrationType.IframeCheckout)
   ) {
     return [
@@ -613,6 +753,13 @@ const filterPayment = (paymentOptions: CheckoutOption[]) => {
     ];
   }
   return paymentOptions;
+  */
+  // Allow both DirectPayment (betala i butik) and IframeCheckout (Svea) options
+  return paymentOptions.filter(
+    (item) => 
+      item.integrationType === PaymentIntegrationType.IframeCheckout ||
+      item.integrationType === PaymentIntegrationType.DirectPayment
+  );
 };
 
 const DefaultCheckoutState = {

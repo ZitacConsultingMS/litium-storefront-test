@@ -1,0 +1,14 @@
+productFields:
+- id: keyword
+  type: Text
+  name:
+    sv-SE: Sökord
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: true

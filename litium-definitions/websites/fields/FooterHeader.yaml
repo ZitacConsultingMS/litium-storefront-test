@@ -1,0 +1,18 @@
+websiteFields:
+- id: FooterHeader
+  type: LimitedText
+  name:
+    en-US: Header
+    sv-SE: Huvud
+  description:
+    en-US: The header of the footer column.
+    sv-SE: Sidfotskolumnens huvud.
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

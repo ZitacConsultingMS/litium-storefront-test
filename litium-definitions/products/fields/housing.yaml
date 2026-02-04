@@ -1,0 +1,22 @@
+productFields:
+- id: housing
+  type: Text
+  name:
+    da-DK: Kåpa
+    en-US: Kåpa
+    nb-NO: Kåpa
+    sv-SE: Kåpa
+  description:
+    da-DK: Kåpa
+    en-US: Kåpa
+    nb-NO: Kåpa
+    sv-SE: Kåpa
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

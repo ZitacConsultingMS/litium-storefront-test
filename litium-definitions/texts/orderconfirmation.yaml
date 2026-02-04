@@ -26,6 +26,9 @@ websiteTexts:
   orderconfirmation.total.title:
     en-US: Total
     sv-SE: Total
+  orderconfirmation.VAT.title:
+    en-US: VAT
+    sv-SE: Moms
   orderconfirmation.orderhistory:
     en-US: Order history
     sv-SE: Orderhistorik

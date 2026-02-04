@@ -1,0 +1,30 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-columns
+  childBlocks:
+    combination: IncludeSelected
+    selections:
+    - id: zsTextEditor
+    - id: zsImage
+    - id: zsBanner
+    - id: zsFAQ
+    - id: zsHTML
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: zsBackgroundColor
+    - id: zsBackgroundImage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsLayoutFullWidth
+  name:
+    en-US: 'Layout: Full Width '
+    sv-SE: 'Layout: Fullbredd'

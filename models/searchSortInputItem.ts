@@ -48,7 +48,8 @@ export default class SearchSortItemInput {
   }
 
   static defaultProductSorting = [
-    { field: '#articleNumber', order: 'ASCENDING' },
+    { field: '#manual', order: 'ASCENDING' },
+    // { field: '#articleNumber', order: 'ASCENDING' },
   ];
 }
 

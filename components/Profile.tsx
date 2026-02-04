@@ -1,5 +1,5 @@
 import Link from 'components/Link';
-import User from './icons/user';
+import User from './icons/zitac/user';
 
 function Profile({ myPagesPageUrl }: { myPagesPageUrl: string }) {
   return (

@@ -1,25 +1,41 @@
 import { gql } from '@apollo/client';
-import OrderConfirmation from 'components/OrderConfirmation';
+import { trackHelloRetailConversion } from 'app/actions/trackHelloRetailConversion';
 import OrderTracker from 'components/OrderTracker';
 import PaymentWidget from 'components/checkout/payments/PaymentWidget';
 import { Heading1 } from 'components/elements/Heading';
 import { Metadata } from 'next';
+import { cookies } from 'next/headers';
+import { ORDER_ADDRESS_FRAGMENT } from 'operations/fragments/checkout';
+import { IMAGE_FRAGMENT } from 'operations/fragments/image';
 import { Fragment } from 'react';
 import { mutateServer, queryServer } from 'services/dataService.server';
 import { createMetadataFromUrl } from 'services/metadataService.server';
 import { get as getCurrentUser } from 'services/userService.server';
+import { Token } from 'utils/constants';
+import { getHost } from 'utils/headers';
+import { buildHelloRetailConversionPayload } from 'utils/helloRetailConversionTracking';
+import { getIsB2B } from 'utils/isB2B';
 import ClearCart from './ClearCart';
 
 export default async function Page() {
   const result = await getReceipt();
   let isLogged = false;
-  try {
-    const currentUser = await getCurrentUser();
-    if (currentUser?.person) {
-      isLogged = true;
+  let customerId: string | undefined;
+
+  // Only try to get user if there's a token
+  const cookieStore = await cookies();
+  const token = cookieStore.get(Token.Name)?.value;
+
+  if (token) {
+    try {
+      const currentUser = await getCurrentUser();
+      if (currentUser?.person) {
+        isLogged = true;
+        customerId = currentUser.person.customerNumber;
+      }
+    } catch {
+      isLogged = false;
     }
-  } catch (error: any) {
-    isLogged = false;
   }
 
   if (!result?.receipt) {
@@ -29,6 +45,39 @@ export default async function Page() {
         translationKey="orderconfirmationpage.order.notexisted"
       />
     );
+  }
+
+  const zsThemeID = result?.channel?.website?.fields?.zsThemeID ?? '';
+  const isB2B = getIsB2B(zsThemeID);
+
+  if (!isB2B && result?.receipt?.order) {
+    try {
+      let baseUrl: string | undefined;
+      try {
+        baseUrl = await getHost();
+      } catch {
+        baseUrl =
+          process.env.NEXT_PUBLIC_WEBSITE_URL ||
+          process.env.WEBSITE_URL ||
+          undefined;
+      }
+
+      const conversionPayload = buildHelloRetailConversionPayload(
+        result.receipt.order,
+        { customerId, baseUrl }
+      );
+
+      if (conversionPayload.products.length > 0) {
+        trackHelloRetailConversion(conversionPayload).catch((error) => {
+          console.error(
+            '[HelloRetail Conversion] Failed to track conversion:',
+            error
+          );
+        });
+      }
+    } catch (error) {
+      console.error('[HelloRetail Conversion] Error building payload:', error);
+    }
   }
 
   await clearCart();
@@ -42,8 +91,13 @@ export default async function Page() {
     );
   }
 
+  // Conditionally import the appropriate component
+  const OrderConfirmation = isB2B
+    ? (await import('components/zitac/OrderConfirmation.b2b')).default
+    : (await import('components/zitac/OrderConfirmation.b2c')).default;
+
   return (
-    <div className="mx-auto w-full px-5 md:w-[30rem]">
+    <div className="mx-auto w-full px-5 md:w-[50rem]">
       <ClearCart />
       <OrderTracker orderDetails={result?.receipt?.order} />
       <OrderConfirmation
@@ -74,14 +128,18 @@ async function getReceipt() {
 }
 
 const GET_RECEIPT = gql`
+  ${ORDER_ADDRESS_FRAGMENT}
+  ${IMAGE_FRAGMENT}
   query GetReceipt {
     channel {
       ... on DefaultChannelFieldTemplateChannel {
         id
+        url
         website {
           ... on AcceleratorWebsiteWebsite {
             id
             fields {
+              zsThemeID
               myPagesPage {
                 item {
                   url
@@ -128,10 +186,28 @@ const GET_RECEIPT = gql`
           totalExcludingVat
           description
           product {
-            id
-            name
-            smallImages: images(max: { height: 80, width: 80 }) {
-              ...Image
+            ... on IContentItem {
+              id
+              url
+            }
+            ... on IProductItem {
+              name
+              smallImages: images(max: { height: 80, width: 80 }) {
+                ...Image
+              }
+            }
+            ... on AllAttributesInListProduct {
+              fieldGroups(
+                filter: { id: { value: "LagerLeverans", operator: "eq" } }
+              ) {
+                fieldGroupId
+                fields {
+                  field
+                  ... on DateTimeValue {
+                    dateTimeValue
+                  }
+                }
+              }
             }
           }
           discountInfos {

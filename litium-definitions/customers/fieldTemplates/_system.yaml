@@ -1,0 +1,6 @@
+customerTemplates:
+- type: Group
+  id: _system
+  name:
+    en-US: System users
+    sv-SE: System users

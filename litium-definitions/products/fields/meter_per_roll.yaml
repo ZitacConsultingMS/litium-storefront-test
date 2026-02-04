@@ -1,0 +1,22 @@
+productFields:
+- id: meter_per_roll
+  type: Text
+  name:
+    da-DK: M/rulle
+    en-US: M/rulle
+    nb-NO: M/rulle
+    sv-SE: M/rulle
+  description:
+    da-DK: M/rulle
+    en-US: M/rulle
+    nb-NO: M/rulle
+    sv-SE: M/rulle
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: fender_protection
+  type: Text
+  name:
+    da-DK: Fenderskydd
+    en-US: Fenderskydd
+    nb-NO: Fenderskydd
+    sv-SE: Fenderskydd
+  description:
+    da-DK: Fenderskydd
+    en-US: Fenderskydd
+    nb-NO: Fenderskydd
+    sv-SE: Fenderskydd
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

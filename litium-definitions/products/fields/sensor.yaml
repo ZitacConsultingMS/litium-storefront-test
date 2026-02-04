@@ -1,0 +1,22 @@
+productFields:
+- id: sensor
+  type: Text
+  name:
+    da-DK: Givare
+    en-US: Givare
+    nb-NO: Givare
+    sv-SE: Givare
+  description:
+    da-DK: Givare
+    en-US: Givare
+    nb-NO: Givare
+    sv-SE: Givare
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

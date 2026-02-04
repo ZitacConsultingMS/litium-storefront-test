@@ -1,0 +1,19 @@
+mediaFields:
+- id: meta_description
+  type: Text
+  name:
+    da-DK: Meta Description
+    de-DE: Meta Description
+    en-US: Meta Description
+    fi-FI: Meta Description
+    nb-NO: Meta Description
+    sv-SE: Meta Description
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

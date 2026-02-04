@@ -1,0 +1,22 @@
+productFields:
+- id: liter
+  type: Text
+  name:
+    da-DK: Liter
+    en-US: Liter
+    nb-NO: Liter
+    sv-SE: Liter
+  description:
+    da-DK: Liter
+    en-US: Liter
+    nb-NO: Liter
+    sv-SE: Liter
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

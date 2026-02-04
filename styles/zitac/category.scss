@@ -1,0 +1,19 @@
+@use './abstracts/' as *;
+
+.filter {
+  nav {
+    padding: 0;
+    border-color: $border;
+    > div:first-of-type {
+      padding-top: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+    }
+    ul {
+      list-style: none;
+      margin-block-start: 0;
+      padding-inline-start: 0;
+    }
+  }
+}

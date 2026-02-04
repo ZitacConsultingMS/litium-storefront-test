@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import ProductDetail from 'components/products/ProductDetail';
+import ProductDetail from 'components/products/zitac/ProductDetail';
 import { Metadata } from 'next';
 import { queryServer } from 'services/dataService.server';
 import { createMetadata } from 'services/metadataService.server';

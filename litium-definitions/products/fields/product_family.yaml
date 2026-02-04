@@ -1,0 +1,22 @@
+productFields:
+- id: product_family
+  type: Text
+  name:
+    da-DK: Family
+    en-US: Family
+    nb-NO: Family
+    sv-SE: Family
+  description:
+    da-DK: Family
+    en-US: Family
+    nb-NO: Family
+    sv-SE: Family
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

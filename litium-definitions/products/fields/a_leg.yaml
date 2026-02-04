@@ -1,0 +1,22 @@
+productFields:
+- id: a_leg
+  type: Decimal
+  name:
+    da-DK: A-ben
+    en-US: A-ben
+    nb-NO: A-ben
+    sv-SE: A-ben
+  description:
+    da-DK: A-ben
+    en-US: A-ben
+    nb-NO: A-ben
+    sv-SE: A-ben
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

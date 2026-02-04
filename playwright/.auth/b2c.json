@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "channel-id",
+      "value": "RGVmYXVsdENoYW5uZWxGaWVsZFRlbXBsYXRlQ2hhbm5lbApkSXRlbVN5c3RlbUlkPWY5MTUwMWU2OThiNDRkOTE4ZjY1NjY0MjAyNmExOGIwJkNoYW5uZWxTeXN0ZW1JZD1mOTE1MDFlNjk4YjQ0ZDkxOGY2NTY2NDIwMjZhMThiMA%3D%3D",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "idsrv.session",
+      "value": "86DD4EA29F553BCADD07F94DE3B88E13",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": ".AspNetCore.Identity.Application",
+      "value": "CfDJ8NNZiy82KuNPjNeQE9kRv4S4mimjyocJ0Yd7MAyhIugXFWZ-zoLjJMpLXiuJ1lwhStoKwdiQRdgB-LbAP4urcV9GdzkVGndibLChjyUc5mScNxstRa7hrV6-NKXaN03xs1ZhAyZhOujSZsHhpuMeE_Zs7-FFH_cg_ZqcDFcPvUkBxf4IGz5Obzi_QaWklk1dlzg-Bd9UzJ1dA6EKRyhyluQRtk6pJadbatY2FmkdhLxFK0lQpL7-EUZ-6whptNKjxndscTKIPI3c0Od5l1IAPwMEwHSBMV6tiShaYrFOZjPAGZS12K9pI0IWecgiWt_Vtx5ZcxPCqbMoehjF5g8wzOLUd5zA0NZoX4sJWTj_KlYRbNnSqTDQHoIseP1h0BHRPINNoaluL6n9zlc3MGZIwuh1xkojFr7qiKwhn59KEE8LnN-NOoUlIynDCedRfg7so-SOUT4e7y3LFoeZPMDrfVtciZ0hIqPosdk3emTsDeaJkdhNT7HBVLns_5KSNImDKxUjgolsNfEKD_Awwjt3tspn9O5LkoDL-a9aT1PPOGB2p7vxDFvMUzEbutbaYhRc5_3JIfowz9vCYQGGXNoWiy5yktTKtmglpNlpovtPHoqDXBAvYkk0OuojwHLjgxeBAJctFCoSK_hm4yAY8uyphtkCwAUWTVLwdwwakMnwu848InpKeZlOXtmkF0nn-kZBmdHC4HPcycNFC_23a8ZaMFFS4gt67EyZSjM_TUN27FZX2juYZDqieluldGJttB5z2qGyOcFCJELFN6nuHZZzUHjMoxRyQghtz69f0puHLvSfIJUoyyCUxg5PjBH457pGjz8imZgI-UOHADAU571qJD4jfoPWAgezs42CQolcR_XQEDm3-UYlWrSNLi_bGmkVbEycM6tuqSg7TLRRme3tVoqIoRiB90WfpRlhaUaYxolstumaeBs3dn9lVKoggOK926B8MKXmJ1pPYmllPIlHsJUwFNP61ew0MSC9boikRApL1pGdoK0bWcO6kx7-x0g9HDDifmwIESCZTwaU4f2UOv0Uu2Wgsux_9BPCH8UYGBJ6GPf9VeJfqenJcVi2zVMgiZphdWYKsghVE3quAqUp0Rlf2zd72PPJeeWUSpINI4r-49HDImB2IyNqip0wGzro-hajgzJ2euDf8usGSS314XYDc2R-m3advB6zArFxU00MNpIRMQC8BpOy99LJFFz_JQPvL3rYEM3xSJLIGAcc0cM",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

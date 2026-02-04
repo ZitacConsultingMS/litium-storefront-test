@@ -1,0 +1,22 @@
+productFields:
+- id: base_mm
+  type: Text
+  name:
+    da-DK: Bas (mm)
+    en-US: Bas (mm)
+    nb-NO: Bas (mm)
+    sv-SE: Bas (mm)
+  description:
+    da-DK: Bas (mm)
+    en-US: Bas (mm)
+    nb-NO: Bas (mm)
+    sv-SE: Bas (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

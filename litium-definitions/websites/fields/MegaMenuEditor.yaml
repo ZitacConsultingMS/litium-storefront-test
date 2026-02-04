@@ -1,0 +1,18 @@
+websiteFields:
+- id: MegaMenuEditor
+  type: Editor
+  name:
+    en-US: Editor
+    sv-SE: Editor
+  description:
+    en-US: 'Content for the column will be, in prioritized order and if any content is selected: categories, pages, filters or the content of the editor.'
+    sv-SE: 'Innehållet i kolumnen visas i prioriterad ordning om något innehåll har valts: kategorier, sidor, filter eller innehållet i editorn.'
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

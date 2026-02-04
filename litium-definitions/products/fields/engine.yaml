@@ -1,0 +1,22 @@
+productFields:
+- id: engine
+  type: Text
+  name:
+    da-DK: Motor
+    en-US: Motor
+    nb-NO: Motor
+    sv-SE: Motor
+  description:
+    da-DK: Motor
+    en-US: Motor
+    nb-NO: Motor
+    sv-SE: Motor
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

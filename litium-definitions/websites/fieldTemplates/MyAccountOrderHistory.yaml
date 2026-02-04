@@ -1,24 +1,23 @@
 websiteTemplates:
-  - id: MyAccountOrderHistory
+- blockContainers:
+  - id: Main
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
     name:
-      en-US: My account - order history
-      sv-SE: Mitt konto - orderhistorik
-    type: Page
-    blockContainers:
-      - id: Main
-        childBlocks:
-          combination: IncludeSelected
-          selections:
-            - id: Banner
-    settings:
-      indexThePage: false
-    fieldGroups:
-      - id: Settings
-        name:
-          en-US: Settings
-          sv-SE: Inställningar
-        fields:
-          - id: _name
-          - id: _url
-        storefront:
-          visible: false
+      en-US: General
+      sv-SE: Orderhistorik
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: myAccountOrderHistory
+  name:
+    sv-SE: Mitt konto - orderhistorik

@@ -1,0 +1,22 @@
+productFields:
+- id: product_category_reference
+  type: Text
+  name:
+    da-DK: Category reference
+    en-US: Category reference
+    nb-NO: Category reference
+    sv-SE: Category reference
+  description:
+    da-DK: Category reference
+    en-US: Category reference
+    nb-NO: Category reference
+    sv-SE: Category reference
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

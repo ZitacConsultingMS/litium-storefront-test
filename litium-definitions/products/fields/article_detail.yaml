@@ -1,0 +1,22 @@
+productFields:
+- id: article_detail
+  type: Text
+  name:
+    da-DK: Detalj
+    en-US: Detalj
+    nb-NO: Detalj
+    sv-SE: Artikel Detalj
+  description:
+    da-DK: Detalj
+    en-US: Detalj
+    nb-NO: Detalj
+    sv-SE: Detalj
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: true
+      searchable: false

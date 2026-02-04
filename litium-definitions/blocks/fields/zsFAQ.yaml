@@ -1,0 +1,20 @@
+blockFields:
+- id: zsFAQ
+  type: MultiField
+  name:
+    en-US: FAQ
+    sv-SE: FAQ
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - zsFaqQuestion
+    - zsFaqAnswer
+    isArray: true

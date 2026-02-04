@@ -1,0 +1,22 @@
+productFields:
+- id: product_status
+  type: Text
+  name:
+    da-DK: Status
+    en-US: Status
+    nb-NO: Status
+    sv-SE: Status
+  description:
+    da-DK: Status
+    en-US: Status
+    nb-NO: Status
+    sv-SE: Status
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

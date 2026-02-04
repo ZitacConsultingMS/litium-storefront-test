@@ -1,0 +1,22 @@
+productFields:
+- id: min_height_mm
+  type: Decimal
+  name:
+    da-DK: Minimum höjd (mm)
+    en-US: Minimum höjd (mm)
+    nb-NO: Minimum höjd (mm)
+    sv-SE: Minimum höjd (mm)
+  description:
+    da-DK: Minimum höjd (mm)
+    en-US: Minimum höjd (mm)
+    nb-NO: Minimum höjd (mm)
+    sv-SE: Minimum höjd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

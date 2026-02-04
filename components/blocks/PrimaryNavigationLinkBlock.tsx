@@ -2,8 +2,8 @@ import { Block } from 'models/block';
 import { ContentFieldType } from 'models/content';
 import { LinkFieldDefinition } from 'models/navigation';
 import dynamic from 'next/dynamic';
-import HoverableMenu from '../navigation/HoverableMenu';
-import SlideMenu from '../navigation/SlideMenu';
+import HoverableMenu from '../navigation/zitac/HoverableMenu';
+import SlideMenu from '../navigation/zitac/SlideMenu';
 
 interface PrimaryNavigationLinkBlockFieldContainer extends ContentFieldType {
   navigationLink: LinkFieldDefinition;

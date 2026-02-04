@@ -1,0 +1,22 @@
+productFields:
+- id: attachment
+  type: Text
+  name:
+    da-DK: Fäste
+    en-US: Fäste
+    nb-NO: Fäste
+    sv-SE: Fäste
+  description:
+    da-DK: Fäste
+    en-US: Fäste
+    nb-NO: Fäste
+    sv-SE: Fäste
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

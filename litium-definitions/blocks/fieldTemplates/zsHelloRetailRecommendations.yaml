@@ -1,0 +1,27 @@
+blockTemplates:
+- icon: {}
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: Title
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: HelloRetail
+    fields:
+    - id: zsHelloRetail_Recom_Box_Id
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: zsHelloRetailRecommendations
+  name:
+    sv-SE: HelloRetail Recommendations

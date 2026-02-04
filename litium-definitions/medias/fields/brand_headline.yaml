@@ -1,0 +1,16 @@
+mediaFields:
+- id: brand_headline
+  type: Text
+  name:
+    sv-SE: Varumärke - rubrik
+  description:
+    sv-SE: Varumärkesrubrik
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

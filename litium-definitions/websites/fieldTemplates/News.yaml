@@ -1,0 +1,70 @@
+websiteTemplates:
+- blockContainers:
+  - id: Header
+    name:
+      sv-SE: Huvud
+      en-US: Header
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Contents
+    name:
+      en-US: Main Contents
+      sv-SE: Huvudinnehåll
+    fields:
+    - id: Title
+    - id: NewsDate
+    - id: Introduction
+    - id: Text
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LinkList
+    name:
+      en-US: List
+      sv-SE: Länklista
+    fields:
+    - id: Links
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: FileList
+    name:
+      en-US: File list
+      sv-SE: Fillista
+    fields:
+    - id: Files
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Image
+    name:
+      en-US: Image
+      sv-SE: Bild
+    fields:
+    - id: Image
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: News
+  name:
+    en-US: News page
+    sv-SE: Nyhet

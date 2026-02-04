@@ -1,15 +1,13 @@
 import { useRef } from 'react';
 
 /**
- * Represents a hook to block or release the block of scrolling on the document body.
- * For example, when a modal dialog is shown, scrolling on document body should be blocked.
+ * Hook to block or allow scrolling on the document body.
  * Usage:
- * `const [blockBodyScroll, allowBodyScroll] = useBodyScroll();`
- * Then invoke `blockBodyScroll()` to block scrolling on document body.
- * To release the block, invoke `allowBodyScroll()`.
+ * const [blockBodyScroll, allowBodyScroll] = useBodyScroll();
  */
 export const useBodyScroll = (): [() => void, () => void] => {
   const scrollBlocked = useRef(false);
+  const scrollPosition = useRef(0);
 
   let blockBodyScroll = (): void => {};
   let allowBodyScroll = (): void => {};
@@ -20,9 +18,11 @@ export const useBodyScroll = (): [() => void, () => void] => {
 
   const html = document.documentElement;
   const { body } = document;
+
   blockBodyScroll = (): void => {
     if (!body || !body.style || scrollBlocked.current) return;
-    if (document == undefined) return;
+
+    scrollPosition.current = window.scrollY;
 
     const scrollBarWidth = window.innerWidth - html.clientWidth;
     const bodyPaddingRight =
@@ -30,10 +30,10 @@ export const useBodyScroll = (): [() => void, () => void] => {
         window.getComputedStyle(body).getPropertyValue('padding-right')
       ) || 0;
 
-    html.style.position = 'relative';
-    html.style.overflow = 'hidden';
-    body.style.position = 'relative';
     body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollPosition.current}px`;
+    body.style.width = '100%';
     body.style.paddingRight = `${bodyPaddingRight + scrollBarWidth}px`;
 
     scrollBlocked.current = true;
@@ -42,11 +42,15 @@ export const useBodyScroll = (): [() => void, () => void] => {
   allowBodyScroll = (): void => {
     if (!body || !body.style || !scrollBlocked.current) return;
 
-    html.style.position = '';
-    html.style.overflow = '';
-    body.style.position = '';
+    const { scrollY } = window;
+
     body.style.overflow = '';
+    body.style.position = '';
+    body.style.top = '';
+    body.style.width = '';
     body.style.paddingRight = '';
+
+    window.scrollTo(0, scrollPosition.current || scrollY);
 
     scrollBlocked.current = false;
   };

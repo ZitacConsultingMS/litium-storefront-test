@@ -1,0 +1,17 @@
+blockFields:
+- id: Link
+  type: Pointer
+  name:
+    en-US: Link
+    sv-SE: Länk
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage

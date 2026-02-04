@@ -1,0 +1,52 @@
+websiteTemplates:
+- settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Link
+    name:
+      en-US: Link
+      sv-SE: Länk
+    fields:
+    - id: MegaMenuCategory
+    - id: MegaMenuPage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: MegaMenu
+    name:
+      en-US: Mega menu
+      sv-SE: Huvudmeny
+    fields:
+    - id: MegaMenuShowContent
+    - id: MegaMenuShowSubCategories
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: MegaMenuColumn
+    name:
+      en-US: Mega menu column
+      sv-SE: Huvudmenykolumn
+    fields:
+    - id: MegaMenuColumn
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: MegaMenu
+  name:
+    en-US: Main menu link
+    sv-SE: Huvudmenylänk

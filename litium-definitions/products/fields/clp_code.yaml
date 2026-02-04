@@ -1,0 +1,496 @@
+productFields:
+- id: clp_code
+  type: TextOption
+  name:
+    da-DK: CLPCode
+    en-US: CLPCode
+    nb-NO: CLPCode
+    sv-SE: CLP
+  description:
+    da-DK: CLPCode
+    en-US: CLPCode
+    nb-NO: CLPCode
+    sv-SE: CLP Code
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        nb-NO: N/A
+        sv-SE: N/A
+        en-US: N/A
+        da-DK: N/A
+        de-DE: N/A
+        fi-FI: N/A
+      value: N/A
+    - name:
+        nb-NO: Innehåller <namnet på det sensibiliserande ämnet>. Kan orsaka en allergisk reaktion.
+        sv-SE: Innehåller <namnet på det sensibiliserande ämnet>. Kan orsaka en allergisk reaktion.
+        en-US: Innehåller <namnet på det sensibiliserande ämnet>. Kan orsaka en allergisk reaktion.
+        da-DK: Innehåller <namnet på det sensibiliserande ämnet>. Kan orsaka en allergisk reaktion.
+        de-DE: Innehåller <namnet på det sensibiliserande ämnet>. Kan orsaka en allergisk reaktion.
+        fi-FI: Innehåller <namnet på det sensibiliserande ämnet>. Kan orsaka en allergisk reaktion.
+      value: EUH208
+    - name:
+        da-DK: Förvaras oåtkomligt för barn.
+        de-DE: Förvaras oåtkomligt för barn.
+        en-US: Förvaras oåtkomligt för barn.
+        sv-SE: Förvaras oåtkomligt för barn.
+        fi-FI: Förvaras oåtkomligt för barn.
+        nb-NO: Förvaras oåtkomligt för barn.
+      value: P102
+    - name:
+        da-DK: Orsakar allvarlig ögonirritation.
+        de-DE: Orsakar allvarlig ögonirritation.
+        en-US: Orsakar allvarlig ögonirritation.
+        sv-SE: Orsakar allvarlig ögonirritation.
+        fi-FI: Orsakar allvarlig ögonirritation.
+        nb-NO: Orsakar allvarlig ögonirritation.
+      value: H319
+    - name:
+        da-DK: Skadliga långtidseffekter för vattenlevande organismer.
+        de-DE: Skadliga långtidseffekter för vattenlevande organismer.
+        en-US: Skadliga långtidseffekter för vattenlevande organismer.
+        sv-SE: Skadliga långtidseffekter för vattenlevande organismer.
+        fi-FI: Skadliga långtidseffekter för vattenlevande organismer.
+        nb-NO: Skadliga långtidseffekter för vattenlevande organismer.
+      value: H412
+    - name:
+        da-DK: Orsakar organskador genom lång eller upprepad exponering.
+        de-DE: Orsakar organskador genom lång eller upprepad exponering.
+        en-US: Orsakar organskador genom lång eller upprepad exponering.
+        sv-SE: Orsakar organskador genom lång eller upprepad exponering.
+        fi-FI: Orsakar organskador genom lång eller upprepad exponering.
+        nb-NO: Orsakar organskador genom lång eller upprepad exponering.
+      value: H372
+    - name:
+        da-DK: Orsakar allvarliga ögonskador.
+        de-DE: Orsakar allvarliga ögonskador.
+        en-US: Orsakar allvarliga ögonskador.
+        sv-SE: Orsakar allvarliga ögonskador.
+        fi-FI: Orsakar allvarliga ögonskador.
+        nb-NO: Orsakar allvarliga ögonskador.
+      value: H318
+    - name:
+        da-DK: Säkerhetsdatablad finns att rekvirera.
+        de-DE: Säkerhetsdatablad finns att rekvirera.
+        en-US: Säkerhetsdatablad finns att rekvirera.
+        sv-SE: Säkerhetsdatablad finns att rekvirera.
+        fi-FI: Säkerhetsdatablad finns att rekvirera.
+        nb-NO: Säkerhetsdatablad finns att rekvirera.
+      value: EUH210
+    - name:
+        da-DK: Kan orsaka organskador genom lång eller upprepad exponering.
+        de-DE: Kan orsaka organskador genom lång eller upprepad exponering.
+        en-US: Kan orsaka organskador genom lång eller upprepad exponering.
+        sv-SE: Kan orsaka organskador genom lång eller upprepad exponering.
+        fi-FI: Kan orsaka organskador genom lång eller upprepad exponering.
+        nb-NO: Kan orsaka organskador genom lång eller upprepad exponering.
+      value: H373
+    - name:
+        sv-SE: Brandfarlig vätska och ånga.
+      value: H226
+    - name:
+        sv-SE: Irriterar huden.
+      value: H315
+    - name:
+        sv-SE: Kan orsaka allergisk hudreaktion.
+      value: H317
+    - name:
+        sv-SE: Mycket giftigt för vattenlevande organismer med långtidseffekter.
+      value: H410
+    - name:
+        sv-SE: Får inte utsättas för värme, heta ytor, gnistor, öppna lågor och andra antänd-ningskällor. Rökning förbjuden.
+      value: P210
+    - name:
+        sv-SE: Förvaras svalt.
+      value: P235
+    - name:
+        sv-SE: Undvik att andas in damm/ rök/gaser/dimma/ångor/sprej.
+      value: P261
+    - name:
+        sv-SE: Använd skyddshandskar/skyddskläder/ögonskydd/ansiktsskydd.
+      value: P280
+    - name:
+        sv-SE: 'VID KONTAKT MED ÖGONEN: Skölj försiktigt med vatten i flera minuter. Ta ur eventuella kontaktlinser om det går lätt. Fortsätt att skölja.'
+      value: P305_P351_P338
+    - name:
+        sv-SE: Kontakta genast GIFTINFORMATIONSCENTRALEN/läkare/…
+      value: P310
+    - name:
+        sv-SE: Brandfarlig aerosol.
+      value: H223
+    - name:
+        sv-SE: 'Tryckbehållare: Kan sprängas vid uppvärmning.'
+      value: H229
+    - name:
+        sv-SE: Kan orsaka irritation i luftvägarna.
+      value: H335
+    - name:
+        sv-SE: Kan göra att man blir dåsig eller omtöcknad.
+      value: H336
+    - name:
+        sv-SE: Ha förpackningen eller etiketten till hands om du måste söka läkarvård.
+      value: P101
+    - name:
+        sv-SE: Läs etiketten före användning.
+      value: P103
+    - name:
+        sv-SE: Spreja inte över öppen låga eller andra antändningskällor.
+      value: P211
+    - name:
+        sv-SE: Får inte punkteras eller brännas, gäller även tömd behållare.
+      value: P251
+    - name:
+        sv-SE: Används endast utomhus eller i väl ventilerade utrymmen.
+      value: P271
+    - name:
+        sv-SE: Undvik utsläpp till miljön.
+      value: P273
+    - name:
+        sv-SE: Skyddas från solljus.
+      value: P410
+    - name:
+        sv-SE: Får inte utsättas för temperaturer över 50 °C/122 °F.
+      value: P412
+    - name:
+        sv-SE: Innehållet/behållaren lämnas till…
+      value: P501
+    - name:
+        sv-SE: '331 VID FÖRTÄRING: Skölj munnen. Framkalla INTE kräkning.'
+      value: P301_P330_
+    - name:
+        sv-SE: Ta av nedstänkta kläder och tvätta dem innan de används igen.
+      value: P362_P364
+    - name:
+        sv-SE: Orsakar allvarliga frätskador på hud och ögon.
+      value: H314
+    - name:
+        sv-SE: Inandas inte damm/rök/gaser/dimma/ångor/sprej.
+      value: P260
+    - name:
+        sv-SE: Kan vara dödligt vid förtäring om det kommer ner i luftvägarna.
+      value: H304
+    - name:
+        sv-SE: Skadligt vid hudkontakt.
+      value: H312
+    - name:
+        sv-SE: Skadligt vid inandning.
+      value: H332
+    - name:
+        sv-SE: Kan skada fertiliteten eller det ofödda barnet <ange specifik effekt om denna är känd> <ange exponeringsväg om det är definitivt bevisat att faran inte kan orsakas av några andra exponeringsvägar>
+      value: H360
+    - name:
+        sv-SE: Giftigt för vattenlevande organismer med långtidseffekter.
+      value: H411
+    - name:
+        sv-SE: 'VID FÖRTÄRING: Kontakta genast GIFTINFORMATIONSCENTRALEN/'
+      value: P301_P310
+    - name:
+        sv-SE: Förvaras inlåst.
+      value: P405
+    - name:
+        sv-SE: Släck med ...
+      value: P378
+    - name:
+        sv-SE: 'VID HUDKONTAKT: Tvätta med mycket vatten/…'
+      value: P302_P352
+    - name:
+        sv-SE: 'Vid hudirritation: Sök läkarhjälp.'
+      value: P332_P313
+    - name:
+        sv-SE: Mycket brandfarlig vätska och ånga.
+      value: H225
+    - name:
+        sv-SE: 'VID FÖRTÄRING:'
+      value: P301
+    - name:
+        sv-SE: Vid obehag, kontakta GIFTINFORMATIONSCENTRALEN/läkare/…
+      value: P312
+    - name:
+        sv-SE: Behållaren ska vara väl tillsluten.
+      value: P233
+    - name:
+        sv-SE: Jorda/potentialförbind behållare och mottagarutrustning.
+      value: P240
+    - name:
+        sv-SE: Använd explosionssäker elektrisk/ventilations-/belysnings-/.../utrustning.
+      value: P241
+    - name:
+        sv-SE: Använd endast verktyg som inte ger upphov till gnistor.
+      value: P242
+    - name:
+        sv-SE: Vidta åtgärder mot statisk elektricitet.
+      value: P243
+    - name:
+        sv-SE: Tvätta … grundligt efter användning.
+      value: P264
+    - name:
+        sv-SE: 'VID HUDKONTAKT (även håret): Ta omedelbart av alla nedstänkta kläder. Skölj huden med vatten/duscha.'
+      value: P303_P361_P353
+    - name:
+        sv-SE: 'VID INANDNING: Flytta personen till frisk luft och se till att andningen underlättas.'
+      value: P304_P340
+    - name:
+        sv-SE: Framkalla INTE kräkning.
+      value: P331
+    - name:
+        sv-SE: 'Vid brand: Släck med torr sand, pulver eller alkoholresistent skum.'
+      value: P370_P378
+    - name:
+        sv-SE: Förvaras på väl ventilerad plats. Förpackningen ska förvaras väl tillsluten.
+      value: P403_P233
+    - name:
+        sv-SE: Förvaras på väl ventilerad plats. Förvaras svalt.
+      value: P403_P235
+    - name:
+        sv-SE: Mycket giftigt för vattenlevande organismer.
+      value: H400
+    - name:
+        sv-SE: Kan ge skadliga långtidseffekter på vattenlevande organismer.
+      value: H413
+    - name:
+        sv-SE: 'VID KONTAKT MED ÖGONEN:'
+      value: P305
+    - name:
+        sv-SE: Skölj munnen.
+      value: P330
+    - name:
+        sv-SE: Skölj försiktigt med vatten i flera minuter.
+      value: P351
+    - name:
+        sv-SE: Upprepad kontakt kan ge torr hud eller hudsprickor.
+      value: EUH066
+    - name:
+        sv-SE: Skadligt vid förtäring.
+      value: H302
+    - name:
+        sv-SE: Samla upp spill.
+      value: P391
+    - name:
+        sv-SE: Sug upp spill för att undvika materiella skador.
+      value: P390
+    - name:
+        sv-SE: Kan vara korrosivt för metaller.
+      value: H290
+    - name:
+        sv-SE: Särskild behandling (se … på etiketten).
+      value: P321
+    - name:
+        sv-SE: 'Vid bestående ögonirritation: Sök läkarhjälp.'
+      value: P337_P313
+    - name:
+        sv-SE: Ta av nedstänkta kläder.
+      value: P362
+    - name:
+        sv-SE: Extremt brandfarlig aerosol.
+      value: H222
+    - name:
+        sv-SE: Skyddas från solljus. Får inte utsättas för temperaturer över 50 °C/122 °F.
+      value: P410_P412
+    - name:
+        sv-SE: 'VID FÖRTÄRING: Vid obehag, kontakta GIFTINFORMATIONSCENTRALEN/'
+      value: P301_P312
+    - name:
+        sv-SE: Inhämta särskilda instruktioner före användning.
+      value: P201
+    - name:
+        sv-SE: Använd inte produkten innan du har läst och förstått säkerhetsanvisningarna.
+      value: P202
+    - name:
+        sv-SE: Misstänks kunna orsaka cancer
+      value: H351
+    - name:
+        sv-SE: 'Vid exponering eller misstanke om exponering: Sök läkarhjälp.'
+      value: P308_P313
+    - name:
+        sv-SE: 'Vid hudirritation:'
+      value: P332
+    - name:
+        sv-SE: Sök läkarhjälp.
+      value: P313
+    - name:
+        sv-SE: 'Vid bestående ögonirritation:'
+      value: P337
+    - name:
+        sv-SE: Varning! Får ej användas tillsammans med andra produkter. Kan avge farliga gaser (klor).
+      value: EUH206
+    - name:
+        sv-SE: 'VID FÖRTÄRING: Skölj munnen. Framkalla INTE kräkning.'
+      value: P301_P330_P331
+    - name:
+        sv-SE: Nedstänkta kläder ska tvättas innan de används igen.
+      value: P363
+    - name:
+        sv-SE: 'Vid exponering eller misstanke om exponering: Kontakta GIFTINFORMATIONSCENTRALEN/läkare/…'
+      value: P308_P311
+    - name:
+        sv-SE: 'Vid hudirritation eller utslag: Sök läkarhjälp'
+      value: P333_P313
+    - name:
+        sv-SE: Förvaras endast i originalbehållaren.
+      value: P234
+    - name:
+        sv-SE: Ät inte, drick inte och rök inte när du använder produkten.
+      value: P270
+    - name:
+        sv-SE: Nedstänkta arbetskläder får inte avlägsnas från arbetsplatsen.
+      value: P272
+    - name:
+        sv-SE: Utvecklar giftig gas vid kontakt med syra.
+      value: EUH031
+    - name:
+        sv-SE: Får inte komma i kontakt med ögonen, huden eller kläderna.
+      value: P262
+    - name:
+        sv-SE: Förvaras på väl ventilerad plats.
+      value: P403
+    - name:
+        sv-SE: Giftigt vid förtäring.
+      value: H301
+    - name:
+        sv-SE: Försök INTE bekämpa branden när den når explosiva varor.
+      value: P373
+    - name:
+        sv-SE: Varning! Farliga respirabla droppar kan bildas vid sprejning. Inandas inte sprej eller dimma.
+      value: EUH211
+    - name:
+        sv-SE: 'Vid hudirritation eller utslag:'
+      value: P333
+    - name:
+        sv-SE: Skadligt vid hudkontakt eller inandning.
+      value: H312_H332
+    - name:
+        sv-SE: Sök läkarhjälp vid obehag.
+      value: P314
+    - name:
+        sv-SE: Skadligt vid förtäring eller inandning
+      value: H302_H332
+    - name:
+        sv-SE: Misstänks kunna skada det ofödda barnet
+      value: H361d
+    - name:
+        sv-SE: Brandfarligt vid uppvärmning.
+      value: H242
+    - name:
+        sv-SE: Förvaras vid högst 50°C
+      value: P411
+    - name:
+        sv-SE: Cyanoakrylat. Fara. Fäster snabbt på hud och ögon. Förvaras oåtkomligt för barn.
+      value: EUH202
+    - name:
+        sv-SE: Kan orsaka allergi- eller astmasymtom eller andningssvårigheter vid inandning.
+      value: H334
+    - name:
+        sv-SE: 'Vid besvär i luftvägarna: Kontakta GIFTINFORMATIONSCENTRALEN/läkare/…'
+      value: P342_P311
+    - name:
+        sv-SE: Innehåller isocyanater. Kan orsaka en allergisk reaktion.
+      value: EUH204
+    - name:
+        sv-SE: 'VID INANDNING: Flytta personen till frisk luft och se till att andningen underlättas. Vid obehag, kontakta GIFTINFORMATIONSCENTRALEN/ läkare.'
+      value: P304_P340_P312
+    - name:
+        sv-SE: 'Vid exponering eller obehag: Kontakta GIFTINFORMATIONSCENTRAL eller läkare.'
+      value: P309_P311
+    - name:
+        sv-SE: Kan skada fertiliteten, kan skada det ofödda barnet
+      value: H360FD
+    - name:
+        sv-SE: Giftigt vid hudkontakt.
+      value: H311
+    - name:
+        sv-SE: Giftigt vid inandning.
+      value: H331
+    - name:
+        sv-SE: Extremt brandfarlig gas.
+      value: H220
+    - name:
+        sv-SE: Innehåller gas under tryck. Kan explodera vid uppvärmning.
+      value: H280
+    - name:
+        sv-SE: 'Läckande gas som brinner: Försök inte släcka branden om inte läckan kan stoppas'
+      value: P377
+    - name:
+        sv-SE: Skyddas från solljus. Förvaras på väl ventilerad plats.
+      value: P410_P403
+    - name:
+        sv-SE: Fara för brand eller splitter och kaststycken.
+      value: H204
+    - name:
+        sv-SE: Ska hållas fuktigt med …
+      value: P230
+    - name:
+        sv-SE: Får inte utsättas för gnidning/stötar/…/friktion.
+      value: P250
+    - name:
+        sv-SE: 'Vid brand: Utrym området.'
+      value: P370_P380
+    - name:
+        sv-SE: Explosionsrisk vid brand.
+      value: P372
+    - name:
+        sv-SE: Kan orsaka organskador <eller ange vilka organ som påverkas, om detta är känt> <ange exponeringsväg om det är definitivt bevisat att faran inte kan orsakas av några andra exponeringsvägar>
+      value: H371
+    - name:
+        sv-SE: Ta ur eventuella kontaktlinser om det går lätt. Fortsätt att skölja.
+      value: P338
+    - name:
+        sv-SE: Kan skada fertiliteten, misstänks kunna skada det ofödda barnet
+      value: H361fd
+    - name:
+        sv-SE: Kan intensifiera brand. Oxiderande.
+      value: H272
+    - name:
+        sv-SE: Kontakta GIFTINFORMATIONSCENTRALEN/läkare/…
+      value: P311
+    - name:
+        sv-SE: Orsakar organskador <eller ange vilka organ som påverkas, om detta är känt> <ange exponeringsväg om det är definitivt bevisat att faran inte kan orsakas av några andra exponeringsvägar>
+      value: H370
+    - name:
+        sv-SE: ''
+      value: H361f
+    - name:
+        sv-SE: ''
+      value: H302_H312
+    - name:
+        sv-SE: Misstänks kunna orsaka genetiska defekter <ange exponeringsväg om det är definitivt bevisat att faran inte kan orsakas av några andra exponeringsvägar>
+      value: H341
+    - name:
+        sv-SE: Kan orsaka cancer <ange exponeringsväg om det är definitivt bevisat att faran inte kan orsakas av några andra exponeringsvägar>
+      value: H350
+    - name:
+        sv-SE: Misstänks kunna skada fertiliteten eller det ofödda barnet <ange specifik effekt om denna är känd> <ange exponeringsväg om det är definitivt bevisat att faran inte kan orsakas av några andra exponeringsvägar>
+      value: H361
+    - name:
+        sv-SE: Innehåller epoxiförening. Kan orsaka en allergisk reaktion.
+      value: EUH205
+    - name:
+        sv-SE: Brandfarligt fast ämne.
+      value: H228
+    - name:
+        sv-SE: Vid kontakt med vatten utvecklas brandfarliga gaser.
+      value: H261
+    - name:
+        sv-SE: Skölj huden med vatten/duscha.
+      value: P353
+    - name:
+        sv-SE: Skadligt vid förtäring eller hudkontakt
+      value: P302_P312
+    - name:
+        sv-SE: Frätande på luftvägarna.
+      value: EUH071
+    - name:
+        sv-SE: Kan skada fertiliteten.
+      value: H360F
+    - name:
+        sv-SE: '[Vid otillräcklig ventilation] använd andningsskydd.'
+      value: P284
+    multiSelect: true

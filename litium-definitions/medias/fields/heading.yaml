@@ -1,0 +1,19 @@
+mediaFields:
+- id: heading
+  type: Text
+  name:
+    da-DK: Heading
+    de-DE: Heading
+    en-US: Heading
+    fi-FI: Heading
+    nb-NO: Heading
+    sv-SE: Heading
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

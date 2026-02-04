@@ -1,0 +1,22 @@
+productFields:
+- id: implementation
+  type: Text
+  name:
+    da-DK: Utförande
+    en-US: Utförande
+    nb-NO: Utförande
+    sv-SE: Utförande
+  description:
+    da-DK: Utförande
+    en-US: Utförande
+    nb-NO: Utförande
+    sv-SE: Utförande
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

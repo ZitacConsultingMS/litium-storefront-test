@@ -1,0 +1,4663 @@
+productFields:
+- id: product_family_v2
+  type: TextOption
+  name:
+    sv-SE: Produktfamilj
+  description:
+    sv-SE: Produktfamilj
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: <80W
+      value: <80W
+    - name:
+        sv-SE: '>120W'
+      value: '>120W'
+    - name:
+        sv-SE: 1,5mm² fasta längder
+      value: 1,5mm² fasta längder
+    - name:
+        sv-SE: 10m med ögla
+      value: 10m med ögla
+    - name:
+        sv-SE: 12m bojlina med krok
+      value: 12m bojlina med krok
+    - name:
+        sv-SE: 2 meter
+      value: 2 meter
+    - name:
+        sv-SE: 2,5mm² fasta längder
+      value: 2,5mm² fasta längder
+    - name:
+        sv-SE: 25 meter
+      value: 25 meter
+    - name:
+        sv-SE: 25mm² färdigpressad
+      value: 25mm² färdigpressad
+    - name:
+        sv-SE: 300 gram
+      value: 300 gram
+    - name:
+        sv-SE: 30-40 liter
+      value: 30-40 liter
+    - name:
+        sv-SE: 35mm² färdigpressad
+      value: 35mm² färdigpressad
+    - name:
+        sv-SE: 3-ekrad
+      value: 3-ekrad
+    - name:
+        sv-SE: 3m med ögla & slitskydd
+      value: 3m med ögla & slitskydd
+    - name:
+        sv-SE: 3-slagen
+      value: 3-slagen
+    - name:
+        sv-SE: 4 meter
+      value: 4 meter
+    - name:
+        sv-SE: 41-50 liter
+      value: 41-50 liter
+    - name:
+        sv-SE: 450 gram
+      value: 450 gram
+    - name:
+        sv-SE: 4G-router
+      value: 4G-router
+    - name:
+        sv-SE: 4m med kaus
+      value: 4m med kaus
+    - name:
+        sv-SE: 4mm² fasta längder
+      value: 4mm² fasta längder
+    - name:
+        sv-SE: 50mm² färdigpressad
+      value: 50mm² färdigpressad
+    - name:
+        sv-SE: 51-65 liter
+      value: 51-65 liter
+    - name:
+        sv-SE: 5-ekrad
+      value: 5-ekrad
+    - name:
+        sv-SE: 5G-router
+      value: 5G-router
+    - name:
+        sv-SE: 6 meter
+      value: 6 meter
+    - name:
+        sv-SE: 66-85 liter
+      value: 66-85 liter
+    - name:
+        sv-SE: 6-ekrad
+      value: 6-ekrad
+    - name:
+        sv-SE: 6-ekrad med värme
+      value: 6-ekrad med värme
+    - name:
+        sv-SE: 6m bojlina med krok
+      value: 6m bojlina med krok
+    - name:
+        sv-SE: 6m med ögla
+      value: 6m med ögla
+    - name:
+        sv-SE: 6m med ögla & slitskydd
+      value: 6m med ögla & slitskydd
+    - name:
+        sv-SE: 6mm² fasta längder
+      value: 6mm² fasta längder
+    - name:
+        sv-SE: 7 Ocean
+      value: 7 Ocean
+    - name:
+        sv-SE: 8 meter
+      value: 8 meter
+    - name:
+        sv-SE: 80-120W
+      value: 80-120W
+    - name:
+        sv-SE: 86-130 liter
+      value: 86-130 liter
+    - name:
+        sv-SE: A+D hybridställning
+      value: A+D hybridställning
+    - name:
+        sv-SE: Aceton
+      value: Aceton
+    - name:
+        sv-SE: Acke
+      value: Acke
+    - name:
+        sv-SE: Ackumulatortank
+      value: Ackumulatortank
+    - name:
+        sv-SE: Adapter
+      value: Adapter
+    - name:
+        sv-SE: Adapterplatta
+      value: Adapterplatta
+    - name:
+        sv-SE: Aerosil
+      value: Aerosil
+    - name:
+        sv-SE: AGM-batteri
+      value: AGM-batteri
+    - name:
+        sv-SE: AIS sändare/mottagare
+      value: AIS sändare/mottagare
+    - name:
+        sv-SE: AIS-antenn
+      value: AIS-antenn
+    - name:
+        sv-SE: Akter
+      value: Akter
+    - name:
+        sv-SE: Akterspegelsdämpare
+      value: Akterspegelsdämpare
+    - name:
+        sv-SE: Akterspegelsfäste styrkabel
+      value: Akterspegelsfäste styrkabel
+    - name:
+        sv-SE: Akterstagslatta
+      value: Akterstagslatta
+    - name:
+        sv-SE: Allrengöring
+      value: Allrengöring
+    - name:
+        sv-SE: Aluminiumbehandling
+      value: Aluminiumbehandling
+    - name:
+        sv-SE: Aluminiumdurk
+      value: Aluminiumdurk
+    - name:
+        sv-SE: Aluminiumrör
+      value: Aluminiumrör
+    - name:
+        sv-SE: Amarok
+      value: Amarok
+    - name:
+        sv-SE: Andningsmask
+      value: Andningsmask
+    - name:
+        sv-SE: Ankar
+      value: Ankar
+    - name:
+        sv-SE: Ankarband i plastkassett
+      value: Ankarband i plastkassett
+    - name:
+        sv-SE: Ankarband i rostfri kassett
+      value: Ankarband i rostfri kassett
+    - name:
+        sv-SE: Ankardävert
+      value: Ankardävert
+    - name:
+        sv-SE: Ankarhållare
+      value: Ankarhållare
+    - name:
+        sv-SE: Ankarkätting
+      value: Ankarkätting
+    - name:
+        sv-SE: Ankarplätt
+      value: Ankarplätt
+    - name:
+        sv-SE: Ankarrulle
+      value: Ankarrulle
+    - name:
+        sv-SE: Ankarspelskätting
+      value: Ankarspelskätting
+    - name:
+        sv-SE: Ankarspelslina
+      value: Ankarspelslina
+    - name:
+        sv-SE: Ankarsvivel
+      value: Ankarsvivel
+    - name:
+        sv-SE: Ankarsäck
+      value: Ankarsäck
+    - name:
+        sv-SE: ANL-säkring
+      value: ANL-säkring
+    - name:
+        sv-SE: Anod Bavaria Zink
+      value: Anod Bavaria Zink
+    - name:
+        sv-SE: Anod Bennet Zink
+      value: Anod Bennet Zink
+    - name:
+        sv-SE: Anod Bosvik Zink
+      value: Anod Bosvik Zink
+    - name:
+        sv-SE: Anod Evinrude Alu
+      value: Anod Evinrude Alu
+    - name:
+        sv-SE: Anod Flexofold Zink
+      value: Anod Flexofold Zink
+    - name:
+        sv-SE: Anod Gori Zink
+      value: Anod Gori Zink
+    - name:
+        sv-SE: Anod Honda Alu
+      value: Anod Honda Alu
+    - name:
+        sv-SE: Anod Isothemp Zink
+      value: Anod Isothemp Zink
+    - name:
+        sv-SE: Anod Lewmar Zink
+      value: Anod Lewmar Zink
+    - name:
+        sv-SE: Anod Martec Zink
+      value: Anod Martec Zink
+    - name:
+        sv-SE: Anod Mercruiser Alu
+      value: Anod Mercruiser Alu
+    - name:
+        sv-SE: Anod Mercury Alu
+      value: Anod Mercury Alu
+    - name:
+        sv-SE: Anod Mercury Zink
+      value: Anod Mercury Zink
+    - name:
+        sv-SE: Anod Quick Zink
+      value: Anod Quick Zink
+    - name:
+        sv-SE: Anod Radice Zink
+      value: Anod Radice Zink
+    - name:
+        sv-SE: Anod Selva Zink
+      value: Anod Selva Zink
+    - name:
+        sv-SE: Anod Sleipner Alu
+      value: Anod Sleipner Alu
+    - name:
+        sv-SE: Anod Sleipner Zink
+      value: Anod Sleipner Zink
+    - name:
+        sv-SE: Anod Suzuki Alu
+      value: Anod Suzuki Alu
+    - name:
+        sv-SE: Anod Suzuki Zink
+      value: Anod Suzuki Zink
+    - name:
+        sv-SE: Anod Vetus Zink
+      value: Anod Vetus Zink
+    - name:
+        sv-SE: Anod Volvo Penta Alu
+      value: Anod Volvo Penta Alu
+    - name:
+        sv-SE: Anod Volvo Penta Zink
+      value: Anod Volvo Penta Zink
+    - name:
+        sv-SE: Anod Volvo TX/QL Zink
+      value: Anod Volvo TX/QL Zink
+    - name:
+        sv-SE: Anod Yamaha Alu
+      value: Anod Yamaha Alu
+    - name:
+        sv-SE: Anod Yamaha Zink
+      value: Anod Yamaha Zink
+    - name:
+        sv-SE: Anod Yanmar Alu
+      value: Anod Yanmar Alu
+    - name:
+        sv-SE: Anod Yanmar Zink
+      value: Anod Yanmar Zink
+    - name:
+        sv-SE: Anodkit Evinrude Alu
+      value: Anodkit Evinrude Alu
+    - name:
+        sv-SE: Anodkit Honda Alu
+      value: Anodkit Honda Alu
+    - name:
+        sv-SE: Anodkit Mercruiser Alu
+      value: Anodkit Mercruiser Alu
+    - name:
+        sv-SE: Anodkit Mercury Alu
+      value: Anodkit Mercury Alu
+    - name:
+        sv-SE: Anodkit Suzuki Alu
+      value: Anodkit Suzuki Alu
+    - name:
+        sv-SE: Anodkit Volvo Penta Alu
+      value: Anodkit Volvo Penta Alu
+    - name:
+        sv-SE: Anodkit Volvo Penta Zink
+      value: Anodkit Volvo Penta Zink
+    - name:
+        sv-SE: Anodkit Yamaha Alu
+      value: Anodkit Yamaha Alu
+    - name:
+        sv-SE: Anodkit Yamaha Zink
+      value: Anodkit Yamaha Zink
+    - name:
+        sv-SE: Anodkit Yanmar Alu
+      value: Anodkit Yanmar Alu
+    - name:
+        sv-SE: Anodkit Yanmar Zink
+      value: Anodkit Yanmar Zink
+    - name:
+        sv-SE: Anodpackning Suzuki
+      value: Anodpackning Suzuki
+    - name:
+        sv-SE: Anodring Volvo Penta Alu
+      value: Anodring Volvo Penta Alu
+    - name:
+        sv-SE: Anodring Volvo Penta Zink
+      value: Anodring Volvo Penta Zink
+    - name:
+        sv-SE: Anodtacka
+      value: Anodtacka
+    - name:
+        sv-SE: Anodtacka Zink
+      value: Anodtacka Zink
+    - name:
+        sv-SE: Antennfäste
+      value: Antennfäste
+    - name:
+        sv-SE: Antifrostvätska miljövänlig
+      value: Antifrostvätska miljövänlig
+    - name:
+        sv-SE: Antihävert
+      value: Antihävert
+    - name:
+        sv-SE: Aqua
+      value: Aqua
+    - name:
+        sv-SE: Aqua Pro
+      value: Aqua Pro
+    - name:
+        sv-SE: Arbetsbelysning
+      value: Arbetsbelysning
+    - name:
+        sv-SE: Assiette
+      value: Assiette
+    - name:
+        sv-SE: A-ställning
+      value: A-ställning
+    - name:
+        sv-SE: Athena
+      value: Athena
+    - name:
+        sv-SE: ATW
+      value: ATW
+    - name:
+        sv-SE: Automatsäkring
+      value: Automatsäkring
+    - name:
+        sv-SE: Avfettning
+      value: Avfettning
+    - name:
+        sv-SE: Avfuktare
+      value: Avfuktare
+    - name:
+        sv-SE: Avfuktare elektrisk
+      value: Avfuktare elektrisk
+    - name:
+        sv-SE: Avgasbälg Volvo Penta
+      value: Avgasbälg Volvo Penta
+    - name:
+        sv-SE: Avgasdelar
+      value: Avgasdelar
+    - name:
+        sv-SE: Avgasslang
+      value: Avgasslang
+    - name:
+        sv-SE: Avlastare
+      value: Avlastare
+    - name:
+        sv-SE: Avon
+      value: Avon
+    - name:
+        sv-SE: Avstängningsventil
+      value: Avstängningsventil
+    - name:
+        sv-SE: Avtappningsplugg Mercruiser
+      value: Avtappningsplugg Mercruiser
+    - name:
+        sv-SE: Axelanod
+      value: Axelanod
+    - name:
+        sv-SE: Axelanod Volvo Penta Zink
+      value: Axelanod Volvo Penta Zink
+    - name:
+        sv-SE: Axelanod Zink
+      value: Axelanod Zink
+    - name:
+        sv-SE: Axeltätning
+      value: Axeltätning
+    - name:
+        sv-SE: Axeltätning Volvo Penta
+      value: Axeltätning Volvo Penta
+    - name:
+        sv-SE: Axent
+      value: Axent
+    - name:
+        sv-SE: Babord
+      value: Babord
+    - name:
+        sv-SE: Backventil
+      value: Backventil
+    - name:
+        sv-SE: Badlejdare
+      value: Badlejdare
+    - name:
+        sv-SE: Balanslager Mercruiser
+      value: Balanslager Mercruiser
+    - name:
+        sv-SE: Baltic 99
+      value: Baltic 99
+    - name:
+        sv-SE: Baltic ISUP
+      value: Baltic ISUP
+    - name:
+        sv-SE: Bambi
+      value: Bambi
+    - name:
+        sv-SE: Bamse
+      value: Bamse
+    - name:
+        sv-SE: Bandhållare
+      value: Bandhållare
+    - name:
+        sv-SE: Barometer
+      value: Barometer
+    - name:
+        sv-SE: Bas till epoxi
+      value: Bas till epoxi
+    - name:
+        sv-SE: Batterifäste
+      value: Batterifäste
+    - name:
+        sv-SE: Batterilåda
+      value: Batterilåda
+    - name:
+        sv-SE: Batterilåda till elmotor
+      value: Batterilåda till elmotor
+    - name:
+        sv-SE: Batteripol
+      value: Batteripol
+    - name:
+        sv-SE: Batteriväljare
+      value: Batteriväljare
+    - name:
+        sv-SE: Bensintillsats
+      value: Bensintillsats
+    - name:
+        sv-SE: Bergkil
+      value: Bergkil
+    - name:
+        sv-SE: Bergkilset
+      value: Bergkilset
+    - name:
+        sv-SE: Bergsögla
+      value: Bergsögla
+    - name:
+        sv-SE: Besticklåda
+      value: Besticklåda
+    - name:
+        sv-SE: Bestickset
+      value: Bestickset
+    - name:
+        sv-SE: Bindningar
+      value: Bindningar
+    - name:
+        sv-SE: Blackbox
+      value: Blackbox
+    - name:
+        sv-SE: Blandkärl
+      value: Blandkärl
+    - name:
+        sv-SE: Blockfjäder
+      value: Blockfjäder
+    - name:
+        sv-SE: Blocktrissa
+      value: Blocktrissa
+    - name:
+        sv-SE: Bly/syra-batteri
+      value: Bly/syra-batteri
+    - name:
+        sv-SE: Blåtandsmottagare
+      value: Blåtandsmottagare
+    - name:
+        sv-SE: Blått ljus
+      value: Blått ljus
+    - name:
+        sv-SE: Bländskydd
+      value: Bländskydd
+    - name:
+        sv-SE: Bogstrålkastare
+      value: Bogstrålkastare
+    - name:
+        sv-SE: Bojankare
+      value: Bojankare
+    - name:
+        sv-SE: Bojfångare
+      value: Bojfångare
+    - name:
+        sv-SE: Bojhake
+      value: Bojhake
+    - name:
+        sv-SE: Bojlina V-delad
+      value: Bojlina V-delad
+    - name:
+        sv-SE: Bombroms
+      value: Bombroms
+    - name:
+        sv-SE: Bomullsflagga
+      value: Bomullsflagga
+    - name:
+        sv-SE: Bonocell
+      value: Bonocell
+    - name:
+        sv-SE: Bordsgenomföring CR fasad
+      value: Bordsgenomföring CR fasad
+    - name:
+        sv-SE: Bordsgenomföring för slang
+      value: Bordsgenomföring för slang
+    - name:
+        sv-SE: Bordsgenomföring krom
+      value: Bordsgenomföring krom
+    - name:
+        sv-SE: Bordsgenomföring kullrig
+      value: Bordsgenomföring kullrig
+    - name:
+        sv-SE: Bordsgenomföring kullrig vit
+      value: Bordsgenomföring kullrig vit
+    - name:
+        sv-SE: Bordsgenomföring med sil
+      value: Bordsgenomföring med sil
+    - name:
+        sv-SE: Bordsgenomföring plan
+      value: Bordsgenomföring plan
+    - name:
+        sv-SE: Bordsgångjärn
+      value: Bordsgångjärn
+    - name:
+        sv-SE: Bordsstativ
+      value: Bordsstativ
+    - name:
+        sv-SE: Bottenfärg för drev
+      value: Bottenfärg för drev
+    - name:
+        sv-SE: Bottenfärg Silicon
+      value: Bottenfärg Silicon
+    - name:
+        sv-SE: Bottenfärgspensel
+      value: Bottenfärgspensel
+    - name:
+        sv-SE: Bottensil
+      value: Bottensil
+    - name:
+        sv-SE: Bottenskrapa
+      value: Bottenskrapa
+    - name:
+        sv-SE: Boxhögtalare
+      value: Boxhögtalare
+    - name:
+        sv-SE: Brandkårshake
+      value: Brandkårshake
+    - name:
+        sv-SE: Brandkårshake galvad
+      value: Brandkårshake galvad
+    - name:
+        sv-SE: Brandkårshake med ring
+      value: Brandkårshake med ring
+    - name:
+        sv-SE: Brandkårshake med skruvlås
+      value: Brandkårshake med skruvlås
+    - name:
+        sv-SE: Briketter
+      value: Briketter
+    - name:
+        sv-SE: Bruce-/stukankare
+      value: Bruce-/stukankare
+    - name:
+        sv-SE: Bruce-/stukankare rostfritt
+      value: Bruce-/stukankare rostfritt
+    - name:
+        sv-SE: Bryggbeslag
+      value: Bryggbeslag
+    - name:
+        sv-SE: Bryggförtöjning med gummifjäder
+      value: Bryggförtöjning med gummifjäder
+    - name:
+        sv-SE: Bryggförtöjning med stålfjäder
+      value: Bryggförtöjning med stålfjäder
+    - name:
+        sv-SE: Bryggpollare
+      value: Bryggpollare
+    - name:
+        sv-SE: Bryggstege fast
+      value: Bryggstege fast
+    - name:
+        sv-SE: Bryggstege fällbar
+      value: Bryggstege fällbar
+    - name:
+        sv-SE: Brytare & Relä
+      value: Brytare & Relä
+    - name:
+        sv-SE: Brytare fjärrstyrd
+      value: Brytare fjärrstyrd
+    - name:
+        sv-SE: Brytare PÅ/AV
+      value: Brytare PÅ/AV
+    - name:
+        sv-SE: Brytare PÅ/AV med nyckel
+      value: Brytare PÅ/AV med nyckel
+    - name:
+        sv-SE: Brytare PÅ/AV/Kombinerad
+      value: Brytare PÅ/AV/Kombinerad
+    - name:
+        sv-SE: Brytblock
+      value: Brytblock
+    - name:
+        sv-SE: Brytpinnar
+      value: Brytpinnar
+    - name:
+        sv-SE: Brytrulle
+      value: Brytrulle
+    - name:
+        sv-SE: Brännare
+      value: Brännare
+    - name:
+        sv-SE: Bränsle
+      value: Bränsle
+    - name:
+        sv-SE: Bränsledelar
+      value: Bränsledelar
+    - name:
+        sv-SE: Bränslefilter Honda
+      value: Bränslefilter Honda
+    - name:
+        sv-SE: Bränslefilter Hyundai
+      value: Bränslefilter Hyundai
+    - name:
+        sv-SE: Bränslefilter Johnson/Evinrude
+      value: Bränslefilter Johnson/Evinrude
+    - name:
+        sv-SE: Bränslefilter Suzuki
+      value: Bränslefilter Suzuki
+    - name:
+        sv-SE: Bränslefilter Vetus
+      value: Bränslefilter Vetus
+    - name:
+        sv-SE: Bränslefilter Volvo Penta
+      value: Bränslefilter Volvo Penta
+    - name:
+        sv-SE: Bränslefilter Yanmar
+      value: Bränslefilter Yanmar
+    - name:
+        sv-SE: Bränslekoppling Mercury
+      value: Bränslekoppling Mercury
+    - name:
+        sv-SE: Bränslekran
+      value: Bränslekran
+    - name:
+        sv-SE: Bränslepump Volvo Penta
+      value: Bränslepump Volvo Penta
+    - name:
+        sv-SE: Bränslepump/blåsa
+      value: Bränslepump/blåsa
+    - name:
+        sv-SE: Bränslesensor
+      value: Bränslesensor
+    - name:
+        sv-SE: Bränsleslang
+      value: Bränsleslang
+    - name:
+        sv-SE: Bränsleslang /meter
+      value: Bränsleslang /meter
+    - name:
+        sv-SE: Bränsleslang med blåsa
+      value: Bränsleslang med blåsa
+    - name:
+        sv-SE: Bränsleslangsats Johnson/Evinrude
+      value: Bränsleslangsats Johnson/Evinrude
+    - name:
+        sv-SE: Bränsleslangsats Mercury
+      value: Bränsleslangsats Mercury
+    - name:
+        sv-SE: Bränsleslangsats Yamaha
+      value: Bränsleslangsats Yamaha
+    - name:
+        sv-SE: Bränslestöldskydd
+      value: Bränslestöldskydd
+    - name:
+        sv-SE: Bränsletank rostfri
+      value: Bränsletank rostfri
+    - name:
+        sv-SE: Brödrost
+      value: Brödrost
+    - name:
+        sv-SE: Buntband
+      value: Buntband
+    - name:
+        sv-SE: Bussning Volvo Penta
+      value: Bussning Volvo Penta
+    - name:
+        sv-SE: Bygel
+      value: Bygel
+    - name:
+        sv-SE: Båghållare
+      value: Båghållare
+    - name:
+        sv-SE: Båtmansstol
+      value: Båtmansstol
+    - name:
+        sv-SE: Båtrampssystem
+      value: Båtrampssystem
+    - name:
+        sv-SE: Båtring
+      value: Båtring
+    - name:
+        sv-SE: Båtring trägänga
+      value: Båtring trägänga
+    - name:
+        sv-SE: Båtshake fast
+      value: Båtshake fast
+    - name:
+        sv-SE: Båtshake teleskopisk
+      value: Båtshake teleskopisk
+    - name:
+        sv-SE: Båtsportkort
+      value: Båtsportkort
+    - name:
+        sv-SE: Båtvax
+      value: Båtvax
+    - name:
+        sv-SE: Båtöverdrag
+      value: Båtöverdrag
+    - name:
+        sv-SE: Bäddset
+      value: Bäddset
+    - name:
+        sv-SE: Bälg Mercruiser
+      value: Bälg Mercruiser
+    - name:
+        sv-SE: Cam cleats
+      value: Cam cleats
+    - name:
+        sv-SE: Cam cleats bygel
+      value: Cam cleats bygel
+    - name:
+        sv-SE: Canoe
+      value: Canoe
+    - name:
+        sv-SE: Champagneglas
+      value: Champagneglas
+    - name:
+        sv-SE: Cigguttag + USB
+      value: Cigguttag + USB
+    - name:
+        sv-SE: Cirkulationspump
+      value: Cirkulationspump
+    - name:
+        sv-SE: Classic E.I
+      value: Classic E.I
+    - name:
+        sv-SE: Clips
+      value: Clips
+    - name:
+        sv-SE: Clips för slang
+      value: Clips för slang
+    - name:
+        sv-SE: C-map Discover
+      value: C-map Discover
+    - name:
+        sv-SE: C-map Discover X
+      value: C-map Discover X
+    - name:
+        sv-SE: C-map Reveal
+      value: C-map Reveal
+    - name:
+        sv-SE: Colloidal Silica
+      value: Colloidal Silica
+    - name:
+        sv-SE: Combo inverter/laddare
+      value: Combo inverter/laddare
+    - name:
+        sv-SE: Comfort
+      value: Comfort
+    - name:
+        sv-SE: Compact 100
+      value: Compact 100
+    - name:
+        sv-SE: Cover
+      value: Cover
+    - name:
+        sv-SE: Cruising
+      value: Cruising
+    - name:
+        sv-SE: Cutlesslager
+      value: Cutlesslager
+    - name:
+        sv-SE: Dagersignaler
+      value: Dagersignaler
+    - name:
+        sv-SE: Dam
+      value: Dam
+    - name:
+        sv-SE: Dammfilter
+      value: Dammfilter
+    - name:
+        sv-SE: DC/DC
+      value: DC/DC
+    - name:
+        sv-SE: Defroster
+      value: Defroster
+    - name:
+        sv-SE: Delta
+      value: Delta
+    - name:
+        sv-SE: Dieseltillsats
+      value: Dieseltillsats
+    - name:
+        sv-SE: Dimmer
+      value: Dimmer
+    - name:
+        sv-SE: Dinghy Pro
+      value: Dinghy Pro
+    - name:
+        sv-SE: Disk & tvätt
+      value: Disk & tvätt
+    - name:
+        sv-SE: Display
+      value: Display
+    - name:
+        sv-SE: Divinycell
+      value: Divinycell
+    - name:
+        sv-SE: Dometic ACX3
+      value: Dometic ACX3
+    - name:
+        sv-SE: Dometic CFF
+      value: Dometic CFF
+    - name:
+        sv-SE: Dometic CFX2
+      value: Dometic CFX2
+    - name:
+        sv-SE: Dometic CFX3
+      value: Dometic CFX3
+    - name:
+        sv-SE: Doseringsflaska
+      value: Doseringsflaska
+    - name:
+        sv-SE: Doseringsspruta
+      value: Doseringsspruta
+    - name:
+        sv-SE: D-pro
+      value: D-pro
+    - name:
+        sv-SE: Dragblock
+      value: Dragblock
+    - name:
+        sv-SE: Dragg
+      value: Dragg
+    - name:
+        sv-SE: Draggkorg
+      value: Draggkorg
+    - name:
+        sv-SE: Dragkedjedörr
+      value: Dragkedjedörr
+    - name:
+        sv-SE: Dragkyl
+      value: Dragkyl
+    - name:
+        sv-SE: Dragströmbrytare
+      value: Dragströmbrytare
+    - name:
+        sv-SE: Drevinfästning drev Mercruiser
+      value: Drevinfästning drev Mercruiser
+    - name:
+        sv-SE: Drevolja 75W-140
+      value: Drevolja 75W-140
+    - name:
+        sv-SE: Drevolja 75W-90
+      value: Drevolja 75W-90
+    - name:
+        sv-SE: Drevolja 80W-90
+      value: Drevolja 80W-90
+    - name:
+        sv-SE: Drevolja 85W-90
+      value: Drevolja 85W-90
+    - name:
+        sv-SE: Drevolja HPF
+      value: Drevolja HPF
+    - name:
+        sv-SE: Drevolja SAE90
+      value: Drevolja SAE90
+    - name:
+        sv-SE: Drevoljepump
+      value: Drevoljepump
+    - name:
+        sv-SE: Drevsäck
+      value: Drevsäck
+    - name:
+        sv-SE: Dricksglas
+      value: Dricksglas
+    - name:
+        sv-SE: Driv-/brytpinnar
+      value: Driv-/brytpinnar
+    - name:
+        sv-SE: Drivankare
+      value: Drivankare
+    - name:
+        sv-SE: Drivrem Volvo Penta
+      value: Drivrem Volvo Penta
+    - name:
+        sv-SE: Drivrem Yanmar
+      value: Drivrem Yanmar
+    - name:
+        sv-SE: Dränkbar
+      value: Dränkbar
+    - name:
+        sv-SE: Dubbel
+      value: Dubbel
+    - name:
+        sv-SE: Dubbel kabelgenomföring
+      value: Dubbel kabelgenomföring
+    - name:
+        sv-SE: Dubbelblock
+      value: Dubbelblock
+    - name:
+        sv-SE: Dubbelhäftande tejp
+      value: Dubbelhäftande tejp
+    - name:
+        sv-SE: Durkbeslag
+      value: Durkbeslag
+    - name:
+        sv-SE: Dusch infällt utan blandare
+      value: Dusch infällt utan blandare
+    - name:
+        sv-SE: Duschhandtag
+      value: Duschhandtag
+    - name:
+        sv-SE: Duschhandtag med slang
+      value: Duschhandtag med slang
+    - name:
+        sv-SE: Duschläns
+      value: Duschläns
+    - name:
+        sv-SE: Duschslang
+      value: Duschslang
+    - name:
+        sv-SE: Duschsystem infällt
+      value: Duschsystem infällt
+    - name:
+        sv-SE: Dynamic
+      value: Dynamic
+    - name:
+        sv-SE: Dynamic Color
+      value: Dynamic Color
+    - name:
+        sv-SE: Dynamic plus
+      value: Dynamic plus
+    - name:
+        sv-SE: Dyvika
+      value: Dyvika
+    - name:
+        sv-SE: Dyvika expanderbar
+      value: Dyvika expanderbar
+    - name:
+        sv-SE: Dyvika mässing/rostfri
+      value: Dyvika mässing/rostfri
+    - name:
+        sv-SE: Dyvika plast
+      value: Dyvika plast
+    - name:
+        sv-SE: Dyvika/självläns
+      value: Dyvika/självläns
+    - name:
+        sv-SE: Däcks- & skottmontage
+      value: Däcks- & skottmontage
+    - name:
+        sv-SE: Däcksblock
+      value: Däcksblock
+    - name:
+        sv-SE: Däcksblock stående
+      value: Däcksblock stående
+    - name:
+        sv-SE: Däcksförskruvning bensin
+      value: Däcksförskruvning bensin
+    - name:
+        sv-SE: Däcksförskruvning diesel
+      value: Däcksförskruvning diesel
+    - name:
+        sv-SE: Däcksförskruvning toatömning
+      value: Däcksförskruvning toatömning
+    - name:
+        sv-SE: Däcksförskruvning utan lock
+      value: Däcksförskruvning utan lock
+    - name:
+        sv-SE: Däcksförskruvning vatten
+      value: Däcksförskruvning vatten
+    - name:
+        sv-SE: Däckslucka
+      value: Däckslucka
+    - name:
+        sv-SE: Däcksmontage
+      value: Däcksmontage
+    - name:
+        sv-SE: Däckställning
+      value: Däckställning
+    - name:
+        sv-SE: Dödmansgrepp
+      value: Dödmansgrepp
+    - name:
+        sv-SE: Dörrhållare
+      value: Dörrhållare
+    - name:
+        sv-SE: Dörrlås
+      value: Dörrlås
+    - name:
+        sv-SE: Ecoflow Glacier
+      value: Ecoflow Glacier
+    - name:
+        sv-SE: EFB-batteri
+      value: EFB-batteri
+    - name:
+        sv-SE: Elcentral
+      value: Elcentral
+    - name:
+        sv-SE: Elektriskt autotrimplanskit
+      value: Elektriskt autotrimplanskit
+    - name:
+        sv-SE: Elektriskt interceptor kit
+      value: Elektriskt interceptor kit
+    - name:
+        sv-SE: Elektriskt trimplanskit
+      value: Elektriskt trimplanskit
+    - name:
+        sv-SE: Elektronikrengöringsspray
+      value: Elektronikrengöringsspray
+    - name:
+        sv-SE: Elektronisk kompass
+      value: Elektronisk kompass
+    - name:
+        sv-SE: Elementpensel
+      value: Elementpensel
+    - name:
+        sv-SE: Elintag
+      value: Elintag
+    - name:
+        sv-SE: Elite
+      value: Elite
+    - name:
+        sv-SE: Elkontakt
+      value: Elkontakt
+    - name:
+        sv-SE: Elmotor
+      value: Elmotor
+    - name:
+        sv-SE: Elmotorkontakt
+      value: Elmotorkontakt
+    - name:
+        sv-SE: Elpump
+      value: Elpump
+    - name:
+        sv-SE: Eltape
+      value: Eltape
+    - name:
+        sv-SE: Eltejp
+      value: Eltejp
+    - name:
+        sv-SE: Eltoalett
+      value: Eltoalett
+    - name:
+        sv-SE: Eltoalett tystspolande
+      value: Eltoalett tystspolande
+    - name:
+        sv-SE: Eltoalettskonvertering
+      value: Eltoalettskonvertering
+    - name:
+        sv-SE: Eluttag DIN
+      value: Eluttag DIN
+    - name:
+        sv-SE: Eluttag infällt
+      value: Eluttag infällt
+    - name:
+        sv-SE: Eluttag utanpåliggande
+      value: Eluttag utanpåliggande
+    - name:
+        sv-SE: Elvinsch
+      value: Elvinsch
+    - name:
+        sv-SE: Engreppsblandare
+      value: Engreppsblandare
+    - name:
+        sv-SE: Enkelblock
+      value: Enkelblock
+    - name:
+        sv-SE: Entrématta
+      value: Entrématta
+    - name:
+        sv-SE: Epiq 165
+      value: Epiq 165
+    - name:
+        sv-SE: Epoxikit
+      value: Epoxikit
+    - name:
+        sv-SE: Epoxikit småreparationer
+      value: Epoxikit småreparationer
+    - name:
+        sv-SE: Epoxilim
+      value: Epoxilim
+    - name:
+        sv-SE: Epoxispackel
+      value: Epoxispackel
+    - name:
+        sv-SE: Epoxylim
+      value: Epoxylim
+    - name:
+        sv-SE: Epoxyprimer
+      value: Epoxyprimer
+    - name:
+        sv-SE: Epoxyspackel
+      value: Epoxyspackel
+    - name:
+        sv-SE: Etylenglykol
+      value: Etylenglykol
+    - name:
+        sv-SE: Evinrude
+      value: Evinrude
+    - name:
+        sv-SE: Evinrude/Johnson
+      value: Evinrude/Johnson
+    - name:
+        sv-SE: Excenterlås
+      value: Excenterlås
+    - name:
+        sv-SE: Extreme
+      value: Extreme
+    - name:
+        sv-SE: Falledare
+      value: Falledare
+    - name:
+        sv-SE: Fanér
+      value: Fanér
+    - name:
+        sv-SE: Fast stol
+      value: Fast stol
+    - name:
+        sv-SE: Fast trimplan
+      value: Fast trimplan
+    - name:
+        sv-SE: Fasta stativ
+      value: Fasta stativ
+    - name:
+        sv-SE: Fenderfäste
+      value: Fenderfäste
+    - name:
+        sv-SE: Fenderhållare justerbar
+      value: Fenderhållare justerbar
+    - name:
+        sv-SE: Fenderkorg
+      value: Fenderkorg
+    - name:
+        sv-SE: Fenderlina
+      value: Fenderlina
+    - name:
+        sv-SE: Fenderlina kraftig
+      value: Fenderlina kraftig
+    - name:
+        sv-SE: Fenderpump
+      value: Fenderpump
+    - name:
+        sv-SE: Fernissa 2-komponent
+      value: Fernissa 2-komponent
+    - name:
+        sv-SE: Fernissa blank
+      value: Fernissa blank
+    - name:
+        sv-SE: Fernissa sidenmatt
+      value: Fernissa sidenmatt
+    - name:
+        sv-SE: Fettspruta
+      value: Fettspruta
+    - name:
+        sv-SE: Filter/sil
+      value: Filter/sil
+    - name:
+        sv-SE: Fiolblock
+      value: Fiolblock
+    - name:
+        sv-SE: Fjädersats Volvo Penta
+      value: Fjädersats Volvo Penta
+    - name:
+        sv-SE: Fjädrande premiumstativ
+      value: Fjädrande premiumstativ
+    - name:
+        sv-SE: Fjärrkontroll
+      value: Fjärrkontroll
+    - name:
+        sv-SE: Fjärrstyrning
+      value: Fjärrstyrning
+    - name:
+        sv-SE: Fjärrövervakning
+      value: Fjärrövervakning
+    - name:
+        sv-SE: Flaggstång rostfri
+      value: Flaggstång rostfri
+    - name:
+        sv-SE: Flaggstång teak
+      value: Flaggstång teak
+    - name:
+        sv-SE: Flaskadapter/anslutningsventil
+      value: Flaskadapter/anslutningsventil
+    - name:
+        sv-SE: Flatstiftssäkring
+      value: Flatstiftssäkring
+    - name:
+        sv-SE: Flipper
+      value: Flipper
+    - name:
+        sv-SE: Flip-up stol
+      value: Flip-up stol
+    - name:
+        sv-SE: Flottörbrytare
+      value: Flottörbrytare
+    - name:
+        sv-SE: Flytkudde optimist
+      value: Flytkudde optimist
+    - name:
+        sv-SE: Flytrem
+      value: Flytrem
+    - name:
+        sv-SE: Flätad
+      value: Flätad
+    - name:
+        sv-SE: Flöde +16L/min
+      value: Flöde +16L/min
+    - name:
+        sv-SE: Flöde +51L/min lågprofilspump
+      value: Flöde +51L/min lågprofilspump
+    - name:
+        sv-SE: Flöde +61L/min cartridge pump
+      value: Flöde +61L/min cartridge pump
+    - name:
+        sv-SE: Flöde 0-10L/min
+      value: Flöde 0-10L/min
+    - name:
+        sv-SE: Flöde 0-40L/min cartridge pump
+      value: Flöde 0-40L/min cartridge pump
+    - name:
+        sv-SE: Flöde 0-50L/min lågprofilspump
+      value: Flöde 0-50L/min lågprofilspump
+    - name:
+        sv-SE: Flöde 11-15L/min
+      value: Flöde 11-15L/min
+    - name:
+        sv-SE: Flöde 45-60L/min cartridge pump
+      value: Flöde 45-60L/min cartridge pump
+    - name:
+        sv-SE: Fockskena
+      value: Fockskena
+    - name:
+        sv-SE: Fogspruta
+      value: Fogspruta
+    - name:
+        sv-SE: Force
+      value: Force
+    - name:
+        sv-SE: Fotblock
+      value: Fotblock
+    - name:
+        sv-SE: Fotkontakt
+      value: Fotkontakt
+    - name:
+        sv-SE: Fotogenlampa
+      value: Fotogenlampa
+    - name:
+        sv-SE: Fotogenvärmare
+      value: Fotogenvärmare
+    - name:
+        sv-SE: Fotpump
+      value: Fotpump
+    - name:
+        sv-SE: Fotsteg
+      value: Fotsteg
+    - name:
+        sv-SE: Fotstöd
+      value: Fotstöd
+    - name:
+        sv-SE: Fransk träskruv
+      value: Fransk träskruv
+    - name:
+        sv-SE: Frontring
+      value: Frontring
+    - name:
+        sv-SE: Frostvakt
+      value: Frostvakt
+    - name:
+        sv-SE: Fuktspärrtillsats
+      value: Fuktspärrtillsats
+    - name:
+        sv-SE: Fyllnadsmedel
+      value: Fyllnadsmedel
+    - name:
+        sv-SE: Fågelskrämma
+      value: Fågelskrämma
+    - name:
+        sv-SE: Fällbar
+      value: Fällbar
+    - name:
+        sv-SE: Fällbara stativ
+      value: Fällbara stativ
+    - name:
+        sv-SE: Färgkarta gelcoat
+      value: Färgkarta gelcoat
+    - name:
+        sv-SE: Färgskrapa
+      value: Färgskrapa
+    - name:
+        sv-SE: Fäste
+      value: Fäste
+    - name:
+        sv-SE: Fäste focksystem
+      value: Fäste focksystem
+    - name:
+        sv-SE: Fäste för batterilåda
+      value: Fäste för batterilåda
+    - name:
+        sv-SE: Fäste för rör
+      value: Fäste för rör
+    - name:
+        sv-SE: Fäste infällt
+      value: Fäste infällt
+    - name:
+        sv-SE: Fäste utanpåliggande
+      value: Fäste utanpåliggande
+    - name:
+        sv-SE: Fästplatta
+      value: Fästplatta
+    - name:
+        sv-SE: För 12-15mm²
+      value: För 12-15mm²
+    - name:
+        sv-SE: För 2-11mm²
+      value: För 2-11mm²
+    - name:
+        sv-SE: För 2-6mm²
+      value: För 2-6mm²
+    - name:
+        sv-SE: För 2-8mm²
+      value: För 2-8mm²
+    - name:
+        sv-SE: För 4-9mm²
+      value: För 4-9mm²
+    - name:
+        sv-SE: För 4-personer
+      value: För 4-personer
+    - name:
+        sv-SE: För 6-10mm²
+      value: För 6-10mm²
+    - name:
+        sv-SE: För 6-personer
+      value: För 6-personer
+    - name:
+        sv-SE: För 8-personer
+      value: För 8-personer
+    - name:
+        sv-SE: För 9-14mm²
+      value: För 9-14mm²
+    - name:
+        sv-SE: För akterspegel
+      value: För akterspegel
+    - name:
+        sv-SE: För badplattform
+      value: För badplattform
+    - name:
+        sv-SE: För däcksmontage
+      value: För däcksmontage
+    - name:
+        sv-SE: För förtöjningskrok
+      value: För förtöjningskrok
+    - name:
+        sv-SE: För gummibåt
+      value: För gummibåt
+    - name:
+        sv-SE: För mellanstora batteribanker
+      value: För mellanstora batteribanker
+    - name:
+        sv-SE: För mellanstora båtar
+      value: För mellanstora båtar
+    - name:
+        sv-SE: För mindre batteribanker
+      value: För mindre batteribanker
+    - name:
+        sv-SE: För mindre båtar
+      value: För mindre båtar
+    - name:
+        sv-SE: För motorbåt
+      value: För motorbåt
+    - name:
+        sv-SE: För peke
+      value: För peke
+    - name:
+        sv-SE: För peke/badplattform 2steg
+      value: För peke/badplattform 2steg
+    - name:
+        sv-SE: För peke/badplattform 3steg
+      value: För peke/badplattform 3steg
+    - name:
+        sv-SE: För peke/badplattform 4steg
+      value: För peke/badplattform 4steg
+    - name:
+        sv-SE: För peke/pulpit
+      value: För peke/pulpit
+    - name:
+        sv-SE: För pulpit
+      value: För pulpit
+    - name:
+        sv-SE: För segelbåt
+      value: För segelbåt
+    - name:
+        sv-SE: För slang 12mm
+      value: För slang 12mm
+    - name:
+        sv-SE: För slang 16mm
+      value: För slang 16mm
+    - name:
+        sv-SE: För slang 19mm
+      value: För slang 19mm
+    - name:
+        sv-SE: För snipa
+      value: För snipa
+    - name:
+        sv-SE: För stora batteribanker
+      value: För stora batteribanker
+    - name:
+        sv-SE: För stora båtar
+      value: För stora båtar
+    - name:
+        sv-SE: För tankar
+      value: För tankar
+    - name:
+        sv-SE: Förankring till stöttor
+      value: Förankring till stöttor
+    - name:
+        sv-SE: Fördelarlock Mercruiser
+      value: Fördelarlock Mercruiser
+    - name:
+        sv-SE: Förlängning bryggstege
+      value: Förlängning bryggstege
+    - name:
+        sv-SE: Förlängningssladd
+      value: Förlängningssladd
+    - name:
+        sv-SE: Förminskningsnippel
+      value: Förminskningsnippel
+    - name:
+        sv-SE: Första hjälpen
+      value: Första hjälpen
+    - name:
+        sv-SE: Förstärkning till kulventil
+      value: Förstärkning till kulventil
+    - name:
+        sv-SE: Förtöjningshake
+      value: Förtöjningshake
+    - name:
+        sv-SE: Förvaringsväska täckställning
+      value: Förvaringsväska täckställning
+    - name:
+        sv-SE: Galvad
+      value: Galvad
+    - name:
+        sv-SE: Galvade
+      value: Galvade
+    - name:
+        sv-SE: Gardin
+      value: Gardin
+    - name:
+        sv-SE: Gardinskena
+      value: Gardinskena
+    - name:
+        sv-SE: Gardinstång
+      value: Gardinstång
+    - name:
+        sv-SE: Garmin G3
+      value: Garmin G3
+    - name:
+        sv-SE: Garmin G3 Vision
+      value: Garmin G3 Vision
+    - name:
+        sv-SE: Garmin Navionics+
+      value: Garmin Navionics+
+    - name:
+        sv-SE: Garmin Navionics+ Vision
+      value: Garmin Navionics+ Vision
+    - name:
+        sv-SE: Gas- & växelanslutning
+      value: Gas- & växelanslutning
+    - name:
+        sv-SE: Gasfjäder
+      value: Gasfjäder
+    - name:
+        sv-SE: Gasolanslutning
+      value: Gasolanslutning
+    - name:
+        sv-SE: Gasolflaskhållare
+      value: Gasolflaskhållare
+    - name:
+        sv-SE: Gasolhäll
+      value: Gasolhäll
+    - name:
+        sv-SE: Gasolkök fristående
+      value: Gasolkök fristående
+    - name:
+        sv-SE: Gasolslang
+      value: Gasolslang
+    - name:
+        sv-SE: Gasolspis med ugn
+      value: Gasolspis med ugn
+    - name:
+        sv-SE: Gasolsystem fast montage
+      value: Gasolsystem fast montage
+    - name:
+        sv-SE: Gaspatroner
+      value: Gaspatroner
+    - name:
+        sv-SE: Gastät flexibel
+      value: Gastät flexibel
+    - name:
+        sv-SE: Gastät med stålspiral
+      value: Gastät med stålspiral
+    - name:
+        sv-SE: Gastät med stålspiral löpmeter
+      value: Gastät med stålspiral löpmeter
+    - name:
+        sv-SE: Gecloat
+      value: Gecloat
+    - name:
+        sv-SE: Gelcoat
+      value: Gelcoat
+    - name:
+        sv-SE: Gelcoatspackel
+      value: Gelcoatspackel
+    - name:
+        sv-SE: Gelcoatspray
+      value: Gelcoatspray
+    - name:
+        sv-SE: Genomföring
+      value: Genomföring
+    - name:
+        sv-SE: Genomföring/slanganslutning
+      value: Genomföring/slanganslutning
+    - name:
+        sv-SE: Genua
+      value: Genua
+    - name:
+        sv-SE: Geofence-larm
+      value: Geofence-larm
+    - name:
+        sv-SE: Givarbussning
+      value: Givarbussning
+    - name:
+        sv-SE: Givare adaptrar
+      value: Givare adaptrar
+    - name:
+        sv-SE: Givare akterspegel
+      value: Givare akterspegel
+    - name:
+        sv-SE: Givare genomskrov
+      value: Givare genomskrov
+    - name:
+        sv-SE: Givare inombord
+      value: Givare inombord
+    - name:
+        sv-SE: Givarkonverter
+      value: Givarkonverter
+    - name:
+        sv-SE: Glansförhöjare
+      value: Glansförhöjare
+    - name:
+        sv-SE: Glasfiberremsa
+      value: Glasfiberremsa
+    - name:
+        sv-SE: Glasfiberspackel
+      value: Glasfiberspackel
+    - name:
+        sv-SE: Glasfiberväv
+      value: Glasfiberväv
+    - name:
+        sv-SE: Glasfiberväv Twill
+      value: Glasfiberväv Twill
+    - name:
+        sv-SE: Glashållare
+      value: Glashållare
+    - name:
+        sv-SE: Glassäkring
+      value: Glassäkring
+    - name:
+        sv-SE: Glidskenor
+      value: Glidskenor
+    - name:
+        sv-SE: Glidspray
+      value: Glidspray
+    - name:
+        sv-SE: Glykol Mercruiser
+      value: Glykol Mercruiser
+    - name:
+        sv-SE: Glykol Volvo Penta
+      value: Glykol Volvo Penta
+    - name:
+        sv-SE: Glykol Yanmar
+      value: Glykol Yanmar
+    - name:
+        sv-SE: Glödnät/glödstift
+      value: Glödnät/glödstift
+    - name:
+        sv-SE: Golv- & vägglim
+      value: Golv- & vägglim
+    - name:
+        sv-SE: GPS-antenn
+      value: GPS-antenn
+    - name:
+        sv-SE: Grabbräcke
+      value: Grabbräcke
+    - name:
+        sv-SE: Grit
+      value: Grit
+    - name:
+        sv-SE: Grundfärg
+      value: Grundfärg
+    - name:
+        sv-SE: Grundfärg 1-komponent
+      value: Grundfärg 1-komponent
+    - name:
+        sv-SE: Grundfärg 2-komponent
+      value: Grundfärg 2-komponent
+    - name:
+        sv-SE: Gruvlampa
+      value: Gruvlampa
+    - name:
+        sv-SE: Grå
+      value: Grå
+    - name:
+        sv-SE: Grå med svart topp
+      value: Grå med svart topp
+    - name:
+        sv-SE: Gummi
+      value: Gummi
+    - name:
+        sv-SE: Gummibåtsvax
+      value: Gummibåtsvax
+    - name:
+        sv-SE: Gummifjäder
+      value: Gummifjäder
+    - name:
+        sv-SE: Gummifjäder Forshedatyp
+      value: Gummifjäder Forshedatyp
+    - name:
+        sv-SE: Gummifjäder löstagbar
+      value: Gummifjäder löstagbar
+    - name:
+        sv-SE: Gummiklammer
+      value: Gummiklammer
+    - name:
+        sv-SE: Gummilina
+      value: Gummilina
+    - name:
+        sv-SE: Gummilist
+      value: Gummilist
+    - name:
+        sv-SE: Gummirengöring
+      value: Gummirengöring
+    - name:
+        sv-SE: Gångjärn Buster/Yamarin
+      value: Gångjärn Buster/Yamarin
+    - name:
+        sv-SE: Gångjärn toalettsits
+      value: Gångjärn toalettsits
+    - name:
+        sv-SE: Gängtätning
+      value: Gängtätning
+    - name:
+        sv-SE: Gästflagga
+      value: Gästflagga
+    - name:
+        sv-SE: Gösstake
+      value: Gösstake
+    - name:
+        sv-SE: Göta kanal/Vänern
+      value: Göta kanal/Vänern
+    - name:
+        sv-SE: Halkip
+      value: Halkip
+    - name:
+        sv-SE: Halkskyddspulver
+      value: Halkskyddspulver
+    - name:
+        sv-SE: Halkskyddstejp
+      value: Halkskyddstejp
+    - name:
+        sv-SE: Hamble
+      value: Hamble
+    - name:
+        sv-SE: Hampagarn
+      value: Hampagarn
+    - name:
+        sv-SE: Handfat rektangulär
+      value: Handfat rektangulär
+    - name:
+        sv-SE: Handfat rund
+      value: Handfat rund
+    - name:
+        sv-SE: Handpolering
+      value: Handpolering
+    - name:
+        sv-SE: Handpump
+      value: Handpump
+    - name:
+        sv-SE: Handpump med utkastare
+      value: Handpump med utkastare
+    - name:
+        sv-SE: Handsiren
+      value: Handsiren
+    - name:
+        sv-SE: Handstrålkastare
+      value: Handstrålkastare
+    - name:
+        sv-SE: Handtag
+      value: Handtag
+    - name:
+        sv-SE: Helrulle
+      value: Helrulle
+    - name:
+        sv-SE: Hera E.I
+      value: Hera E.I
+    - name:
+        sv-SE: Hercules
+      value: Hercules
+    - name:
+        sv-SE: Herr
+      value: Herr
+    - name:
+        sv-SE: Hink
+      value: Hink
+    - name:
+        sv-SE: Honda
+      value: Honda
+    - name:
+        sv-SE: Hopfällbar
+      value: Hopfällbar
+    - name:
+        sv-SE: HUB Evinrude
+      value: HUB Evinrude
+    - name:
+        sv-SE: HUB Honda
+      value: HUB Honda
+    - name:
+        sv-SE: HUB Mercury
+      value: HUB Mercury
+    - name:
+        sv-SE: HUB Suzuki
+      value: HUB Suzuki
+    - name:
+        sv-SE: HUB Tohatsu
+      value: HUB Tohatsu
+    - name:
+        sv-SE: HUB Yamaha
+      value: HUB Yamaha
+    - name:
+        sv-SE: Huvlås
+      value: Huvlås
+    - name:
+        sv-SE: Huvudströmbrytarsats med relä
+      value: Huvudströmbrytarsats med relä
+    - name:
+        sv-SE: Hydraulcylinder inombordare
+      value: Hydraulcylinder inombordare
+    - name:
+        sv-SE: Hydraulcylinder utombordare
+      value: Hydraulcylinder utombordare
+    - name:
+        sv-SE: Hydraulolja
+      value: Hydraulolja
+    - name:
+        sv-SE: Hydraulpump
+      value: Hydraulpump
+    - name:
+        sv-SE: Hydraulslang
+      value: Hydraulslang
+    - name:
+        sv-SE: Hydraulslang med nippel
+      value: Hydraulslang med nippel
+    - name:
+        sv-SE: Hydrographica specialkort
+      value: Hydrographica specialkort
+    - name:
+        sv-SE: Hållare
+      value: Hållare
+    - name:
+        sv-SE: Hållare till fästplatta
+      value: Hållare till fästplatta
+    - name:
+        sv-SE: Hård bottenfärg
+      value: Hård bottenfärg
+    - name:
+        sv-SE: Hård med kort ten
+      value: Hård med kort ten
+    - name:
+        sv-SE: Hård med kraftig ten
+      value: Hård med kraftig ten
+    - name:
+        sv-SE: Hård med lång ten
+      value: Hård med lång ten
+    - name:
+        sv-SE: Hänglås
+      value: Hänglås
+    - name:
+        sv-SE: Hängsäkring
+      value: Hängsäkring
+    - name:
+        sv-SE: Härdare
+      value: Härdare
+    - name:
+        sv-SE: Härdare till epoxi
+      value: Härdare till epoxi
+    - name:
+        sv-SE: Hävarmsgivare
+      value: Hävarmsgivare
+    - name:
+        sv-SE: Hävertpump
+      value: Hävertpump
+    - name:
+        sv-SE: Högtalare 5,0"
+      value: Högtalare 5,0"
+    - name:
+        sv-SE: Högtalare 6,5"
+      value: Högtalare 6,5"
+    - name:
+        sv-SE: Högtalare 7,7"
+      value: Högtalare 7,7"
+    - name:
+        sv-SE: Högtalare 8,8"
+      value: Högtalare 8,8"
+    - name:
+        sv-SE: Högtalare bluetooth
+      value: Högtalare bluetooth
+    - name:
+        sv-SE: Högtalarkabel
+      value: Högtalarkabel
+    - name:
+        sv-SE: Höj- och sänkbara stativ
+      value: Höj- och sänkbara stativ
+    - name:
+        sv-SE: Hörna
+      value: Hörna
+    - name:
+        sv-SE: Hörnhandfat
+      value: Hörnhandfat
+    - name:
+        sv-SE: Impeller
+      value: Impeller
+    - name:
+        sv-SE: Impeller Honda
+      value: Impeller Honda
+    - name:
+        sv-SE: Impeller Hyundai
+      value: Impeller Hyundai
+    - name:
+        sv-SE: Impeller Mercruiser
+      value: Impeller Mercruiser
+    - name:
+        sv-SE: Impeller Mercury
+      value: Impeller Mercury
+    - name:
+        sv-SE: Impeller Mercury/Mercruiser
+      value: Impeller Mercury/Mercruiser
+    - name:
+        sv-SE: Impeller Solè
+      value: Impeller Solè
+    - name:
+        sv-SE: Impeller Suzuki
+      value: Impeller Suzuki
+    - name:
+        sv-SE: Impeller Vetus
+      value: Impeller Vetus
+    - name:
+        sv-SE: Impeller Volvo Penta
+      value: Impeller Volvo Penta
+    - name:
+        sv-SE: Impeller Yamaha
+      value: Impeller Yamaha
+    - name:
+        sv-SE: Impeller Yanmar
+      value: Impeller Yanmar
+    - name:
+        sv-SE: Impellerfett
+      value: Impellerfett
+    - name:
+        sv-SE: Impregnering
+      value: Impregnering
+    - name:
+        sv-SE: Inblåsningsventil
+      value: Inblåsningsventil
+    - name:
+        sv-SE: Induktionshäll
+      value: Induktionshäll
+    - name:
+        sv-SE: Infälld
+      value: Infälld
+    - name:
+        sv-SE: Infälld med RGBW ljus
+      value: Infälld med RGBW ljus
+    - name:
+        sv-SE: Infälld med strömbrytare
+      value: Infälld med strömbrytare
+    - name:
+        sv-SE: Infälld sidomontering
+      value: Infälld sidomontering
+    - name:
+        sv-SE: In-line
+      value: In-line
+    - name:
+        sv-SE: Inline fläkt
+      value: Inline fläkt
+    - name:
+        sv-SE: Inombordarkit
+      value: Inombordarkit
+    - name:
+        sv-SE: Insexskruv
+      value: Insexskruv
+    - name:
+        sv-SE: Instickslist
+      value: Instickslist
+    - name:
+        sv-SE: Instrument
+      value: Instrument
+    - name:
+        sv-SE: Instrument/Bluetooth
+      value: Instrument/Bluetooth
+    - name:
+        sv-SE: Intagsfilter
+      value: Intagsfilter
+    - name:
+        sv-SE: Inverter
+      value: Inverter
+    - name:
+        sv-SE: Inverter 24V-12V
+      value: Inverter 24V-12V
+    - name:
+        sv-SE: Isolerstrumpa
+      value: Isolerstrumpa
+    - name:
+        sv-SE: Jacka
+      value: Jacka
+    - name:
+        sv-SE: Johnson/Evinrude (OMC)
+      value: Johnson/Evinrude (OMC)
+    - name:
+        sv-SE: Junior
+      value: Junior
+    - name:
+        sv-SE: Justerbara stativ
+      value: Justerbara stativ
+    - name:
+        sv-SE: Kabelförbindning
+      value: Kabelförbindning
+    - name:
+        sv-SE: Kabelskor 1-anslutning
+      value: Kabelskor 1-anslutning
+    - name:
+        sv-SE: Kabelskor 4-anslutningar
+      value: Kabelskor 4-anslutningar
+    - name:
+        sv-SE: Kabelskor med vingmutter
+      value: Kabelskor med vingmutter
+    - name:
+        sv-SE: Kabelskor snabbkoppling
+      value: Kabelskor snabbkoppling
+    - name:
+        sv-SE: Kabinlampa
+      value: Kabinlampa
+    - name:
+        sv-SE: Kantband/öljett
+      value: Kantband/öljett
+    - name:
+        sv-SE: Kantgångjärn liksidig
+      value: Kantgångjärn liksidig
+    - name:
+        sv-SE: Kantlist
+      value: Kantlist
+    - name:
+        sv-SE: Kantlist med kudde
+      value: Kantlist med kudde
+    - name:
+        sv-SE: Kantlist/klämlist
+      value: Kantlist/klämlist
+    - name:
+        sv-SE: Kapell/presenningsstötta
+      value: Kapell/presenningsstötta
+    - name:
+        sv-SE: Kapell/skydd
+      value: Kapell/skydd
+    - name:
+        sv-SE: Kapellrengöring
+      value: Kapellrengöring
+    - name:
+        sv-SE: Kapellstötta
+      value: Kapellstötta
+    - name:
+        sv-SE: Kapelltråd
+      value: Kapelltråd
+    - name:
+        sv-SE: Kapellvred/knapp
+      value: Kapellvred/knapp
+    - name:
+        sv-SE: Kapellväv
+      value: Kapellväv
+    - name:
+        sv-SE: Kapokkudde dubbel
+      value: Kapokkudde dubbel
+    - name:
+        sv-SE: Kapokkudde enkel
+      value: Kapokkudde enkel
+    - name:
+        sv-SE: Kapokkudde rund
+      value: Kapokkudde rund
+    - name:
+        sv-SE: Kapokkudde trippel
+      value: Kapokkudde trippel
+    - name:
+        sv-SE: Kapsylöppnare
+      value: Kapsylöppnare
+    - name:
+        sv-SE: Karbinhake
+      value: Karbinhake
+    - name:
+        sv-SE: Kardborre
+      value: Kardborre
+    - name:
+        sv-SE: Kardborretejp
+      value: Kardborretejp
+    - name:
+        sv-SE: Kartlampa
+      value: Kartlampa
+    - name:
+        sv-SE: Kasthake
+      value: Kasthake
+    - name:
+        sv-SE: Kastlina
+      value: Kastlina
+    - name:
+        sv-SE: Kayak uppblåsbar
+      value: Kayak uppblåsbar
+    - name:
+        sv-SE: Kayak-paddel
+      value: Kayak-paddel
+    - name:
+        sv-SE: Kemisk metall
+      value: Kemisk metall
+    - name:
+        sv-SE: Kemtoalett
+      value: Kemtoalett
+    - name:
+        sv-SE: Kidz
+      value: Kidz
+    - name:
+        sv-SE: Kit 1-motor
+      value: Kit 1-motor
+    - name:
+        sv-SE: Kit 2-motorer
+      value: Kit 2-motorer
+    - name:
+        sv-SE: Kit eluttag & stickpropp
+      value: Kit eluttag & stickpropp
+    - name:
+        sv-SE: Kit för mobiltelefon
+      value: Kit för mobiltelefon
+    - name:
+        sv-SE: Kit för surfplatta
+      value: Kit för surfplatta
+    - name:
+        sv-SE: Klarlack
+      value: Klarlack
+    - name:
+        sv-SE: Klass 2
+      value: Klass 2
+    - name:
+        sv-SE: Klass 3
+      value: Klass 3
+    - name:
+        sv-SE: Klass 4
+      value: Klass 4
+    - name:
+        sv-SE: Klibbduk
+      value: Klibbduk
+    - name:
+        sv-SE: Klädkrok
+      value: Klädkrok
+    - name:
+        sv-SE: Klädnypor
+      value: Klädnypor
+    - name:
+        sv-SE: Klämring
+      value: Klämring
+    - name:
+        sv-SE: Knap nylon
+      value: Knap nylon
+    - name:
+        sv-SE: Knappstyrd + ekolodsgivare
+      value: Knappstyrd + ekolodsgivare
+    - name:
+        sv-SE: Knappstyrd + ekolodsstöd
+      value: Knappstyrd + ekolodsstöd
+    - name:
+        sv-SE: Kneeboard
+      value: Kneeboard
+    - name:
+        sv-SE: Kniv
+      value: Kniv
+    - name:
+        sv-SE: Knutbälg Volvo Penta
+      value: Knutbälg Volvo Penta
+    - name:
+        sv-SE: Knäskydd
+      value: Knäskydd
+    - name:
+        sv-SE: Kokkärl
+      value: Kokkärl
+    - name:
+        sv-SE: Kolfilter
+      value: Kolfilter
+    - name:
+        sv-SE: Kompressorolja
+      value: Kompressorolja
+    - name:
+        sv-SE: Konservering
+      value: Konservering
+    - name:
+        sv-SE: Konstruktionslim
+      value: Konstruktionslim
+    - name:
+        sv-SE: Kontakter
+      value: Kontakter
+    - name:
+        sv-SE: Kontaktlim
+      value: Kontaktlim
+    - name:
+        sv-SE: Kontrollbox
+      value: Kontrollbox
+    - name:
+        sv-SE: Kontrollpanel
+      value: Kontrollpanel
+    - name:
+        sv-SE: Kontrollpanel autotrim
+      value: Kontrollpanel autotrim
+    - name:
+        sv-SE: Kontrollpanel joystick
+      value: Kontrollpanel joystick
+    - name:
+        sv-SE: Kontrollpanel kabelkit
+      value: Kontrollpanel kabelkit
+    - name:
+        sv-SE: Kopplingar
+      value: Kopplingar
+    - name:
+        sv-SE: Kopplingsplint med terminaler
+      value: Kopplingsplint med terminaler
+    - name:
+        sv-SE: Kopplingsplint rörkabelsko
+      value: Kopplingsplint rörkabelsko
+    - name:
+        sv-SE: Korg hopvikbar
+      value: Korg hopvikbar
+    - name:
+        sv-SE: Kort 1
+      value: Kort 1
+    - name:
+        sv-SE: Kort rigg
+      value: Kort rigg
+    - name:
+        sv-SE: Kran med brytare
+      value: Kran med brytare
+    - name:
+        sv-SE: Krympplast helrulle
+      value: Krympplast helrulle
+    - name:
+        sv-SE: Krympslang
+      value: Krympslang
+    - name:
+        sv-SE: Krysskalle försänkt
+      value: Krysskalle försänkt
+    - name:
+        sv-SE: Krysskalle försänkt (FXS)
+      value: Krysskalle försänkt (FXS)
+    - name:
+        sv-SE: Krysskalle kullerförsänkt (KFXS)
+      value: Krysskalle kullerförsänkt (KFXS)
+    - name:
+        sv-SE: Krysskalle kullrig (RXS)
+      value: Krysskalle kullrig (RXS)
+    - name:
+        sv-SE: Krängningsmätare
+      value: Krängningsmätare
+    - name:
+        sv-SE: Krök 90grader
+      value: Krök 90grader
+    - name:
+        sv-SE: Kulfender
+      value: Kulfender
+    - name:
+        sv-SE: Kulventil
+      value: Kulventil
+    - name:
+        sv-SE: Kulventil med sensor
+      value: Kulventil med sensor
+    - name:
+        sv-SE: Kulventil trevägs
+      value: Kulventil trevägs
+    - name:
+        sv-SE: Kvartsstav
+      value: Kvartsstav
+    - name:
+        sv-SE: Kylmantelskydd
+      value: Kylmantelskydd
+    - name:
+        sv-SE: Kylpåse
+      value: Kylpåse
+    - name:
+        sv-SE: Kylvattenfilter
+      value: Kylvattenfilter
+    - name:
+        sv-SE: Kylvattenfilter Volvo Penta
+      value: Kylvattenfilter Volvo Penta
+    - name:
+        sv-SE: Kylvattenslang
+      value: Kylvattenslang
+    - name:
+        sv-SE: Kättingkrok
+      value: Kättingkrok
+    - name:
+        sv-SE: Kättingmarkör
+      value: Kättingmarkör
+    - name:
+        sv-SE: Köksfläkt
+      value: Köksfläkt
+    - name:
+        sv-SE: Kölrulle
+      value: Kölrulle
+    - name:
+        sv-SE: Kölsvinskorv
+      value: Kölsvinskorv
+    - name:
+        sv-SE: Lack 1-komponent
+      value: Lack 1-komponent
+    - name:
+        sv-SE: Lack 2-komponent
+      value: Lack 2-komponent
+    - name:
+        sv-SE: Lackpensel
+      value: Lackpensel
+    - name:
+        sv-SE: Lackstrykare
+      value: Lackstrykare
+    - name:
+        sv-SE: Lagningsduk
+      value: Lagningsduk
+    - name:
+        sv-SE: Lagningstejp
+      value: Lagningstejp
+    - name:
+        sv-SE: Landströmsadapter
+      value: Landströmsadapter
+    - name:
+        sv-SE: Landströmskabel
+      value: Landströmskabel
+    - name:
+        sv-SE: Landströmspaket
+      value: Landströmspaket
+    - name:
+        sv-SE: Lanternkit
+      value: Lanternkit
+    - name:
+        sv-SE: Lattdurk
+      value: Lattdurk
+    - name:
+        sv-SE: Lazy Jack
+      value: Lazy Jack
+    - name:
+        sv-SE: LED-list
+      value: LED-list
+    - name:
+        sv-SE: LED-lykta
+      value: LED-lykta
+    - name:
+        sv-SE: Ledningsfilter
+      value: Ledningsfilter
+    - name:
+        sv-SE: Legend 165
+      value: Legend 165
+    - name:
+        sv-SE: Legend 305
+      value: Legend 305
+    - name:
+        sv-SE: Levang
+      value: Levang
+    - name:
+        sv-SE: Lighthouse
+      value: Lighthouse
+    - name:
+        sv-SE: Lim- & tätningsmassa
+      value: Lim- & tätningsmassa
+    - name:
+        sv-SE: Lim hypalon
+      value: Lim hypalon
+    - name:
+        sv-SE: Lim PVC
+      value: Lim PVC
+    - name:
+        sv-SE: Limpulver
+      value: Limpulver
+    - name:
+        sv-SE: Limspridare
+      value: Limspridare
+    - name:
+        sv-SE: Linlöpare
+      value: Linlöpare
+    - name:
+        sv-SE: Liten skål
+      value: Liten skål
+    - name:
+        sv-SE: Litiumbatteri
+      value: Litiumbatteri
+    - name:
+        sv-SE: Livboj
+      value: Livboj
+    - name:
+        sv-SE: Livbojsfodral
+      value: Livbojsfodral
+    - name:
+        sv-SE: Livbojsljus
+      value: Livbojsljus
+    - name:
+        sv-SE: Ljuddämpare
+      value: Ljuddämpare
+    - name:
+        sv-SE: Lock till däcksförskruvning
+      value: Lock till däcksförskruvning
+    - name:
+        sv-SE: Logg
+      value: Logg
+    - name:
+        sv-SE: Luckgångjärn
+      value: Luckgångjärn
+    - name:
+        sv-SE: Luckgångjärn liksidig
+      value: Luckgångjärn liksidig
+    - name:
+        sv-SE: Luckgångjärn med täckplåt
+      value: Luckgångjärn med täckplåt
+    - name:
+        sv-SE: Luckregel/hänglåsöverfall
+      value: Luckregel/hänglåsöverfall
+    - name:
+        sv-SE: Lucköppnare el
+      value: Lucköppnare el
+    - name:
+        sv-SE: Luftfilter Mercruiser
+      value: Luftfilter Mercruiser
+    - name:
+        sv-SE: Luftfilter Volvo Penta
+      value: Luftfilter Volvo Penta
+    - name:
+        sv-SE: Luftfilter Yanmar
+      value: Luftfilter Yanmar
+    - name:
+        sv-SE: Luftpump
+      value: Luftpump
+    - name:
+        sv-SE: Luftpump elektrisk
+      value: Luftpump elektrisk
+    - name:
+        sv-SE: Luftslangsats
+      value: Luftslangsats
+    - name:
+        sv-SE: Lyftsele utombordare
+      value: Lyftsele utombordare
+    - name:
+        sv-SE: Lykta/reflex
+      value: Lykta/reflex
+    - name:
+        sv-SE: Lyrschackel galvad
+      value: Lyrschackel galvad
+    - name:
+        sv-SE: Lyrschackel smidd rostfri
+      value: Lyrschackel smidd rostfri
+    - name:
+        sv-SE: Lysrör
+      value: Lysrör
+    - name:
+        sv-SE: Lågfriktionsring
+      value: Lågfriktionsring
+    - name:
+        sv-SE: Lång rigg
+      value: Lång rigg
+    - name:
+        sv-SE: Lång rigg sail
+      value: Lång rigg sail
+    - name:
+        sv-SE: Långseglarankare
+      value: Långseglarankare
+    - name:
+        sv-SE: Långseglarankare rostfritt
+      value: Långseglarankare rostfritt
+    - name:
+        sv-SE: Läckagetestare
+      value: Läckagetestare
+    - name:
+        sv-SE: Läns/spolpump
+      value: Läns/spolpump
+    - name:
+        sv-SE: Läslampa
+      value: Läslampa
+    - name:
+        sv-SE: Läslampa med USB
+      value: Läslampa med USB
+    - name:
+        sv-SE: Lättviktsankare
+      value: Lättviktsankare
+    - name:
+        sv-SE: Löpmeter
+      value: Löpmeter
+    - name:
+        sv-SE: Löpmeter 10mm²
+      value: Löpmeter 10mm²
+    - name:
+        sv-SE: Löpmeter 16mm²
+      value: Löpmeter 16mm²
+    - name:
+        sv-SE: Lösningsmedel
+      value: Lösningsmedel
+    - name:
+        sv-SE: Macerator pump
+      value: Macerator pump
+    - name:
+        sv-SE: Madrassunderlägg
+      value: Madrassunderlägg
+    - name:
+        sv-SE: Magic Edge
+      value: Magic Edge
+    - name:
+        sv-SE: Magic-Pro
+      value: Magic-Pro
+    - name:
+        sv-SE: Magic-Sheet
+      value: Magic-Sheet
+    - name:
+        sv-SE: Magnetfiske
+      value: Magnetfiske
+    - name:
+        sv-SE: Mahogny kvartsskiva
+      value: Mahogny kvartsskiva
+    - name:
+        sv-SE: Mahognybets
+      value: Mahognybets
+    - name:
+        sv-SE: Mako
+      value: Mako
+    - name:
+        sv-SE: Mantågsblock
+      value: Mantågsblock
+    - name:
+        sv-SE: Mantågskudde
+      value: Mantågskudde
+    - name:
+        sv-SE: Mantågslina/wire
+      value: Mantågslina/wire
+    - name:
+        sv-SE: Mantågsnät
+      value: Mantågsnät
+    - name:
+        sv-SE: Mantågsskydd
+      value: Mantågsskydd
+    - name:
+        sv-SE: Mantågsstötta
+      value: Mantågsstötta
+    - name:
+        sv-SE: Manuell septikpump
+      value: Manuell septikpump
+    - name:
+        sv-SE: Marin
+      value: Marin
+    - name:
+        sv-SE: Marinblå
+      value: Marinblå
+    - name:
+        sv-SE: Marinfett
+      value: Marinfett
+    - name:
+        sv-SE: Marinur
+      value: Marinur
+    - name:
+        sv-SE: Mascot
+      value: Mascot
+    - name:
+        sv-SE: Maskeringstejp
+      value: Maskeringstejp
+    - name:
+        sv-SE: Maskinskruv försänkt (MFS)
+      value: Maskinskruv försänkt (MFS)
+    - name:
+        sv-SE: Maskinskruv försänkt insexsskalle
+      value: Maskinskruv försänkt insexsskalle
+    - name:
+        sv-SE: Maskinskruv kullerförsänkt (MKFS)
+      value: Maskinskruv kullerförsänkt (MKFS)
+    - name:
+        sv-SE: Maskinskruv kullrig (MCS)
+      value: Maskinskruv kullrig (MCS)
+    - name:
+        sv-SE: Mastlås
+      value: Mastlås
+    - name:
+        sv-SE: Mastskruv
+      value: Mastskruv
+    - name:
+        sv-SE: Maststeg
+      value: Maststeg
+    - name:
+        sv-SE: Masttoppsfäste till VHF-antenn
+      value: Masttoppsfäste till VHF-antenn
+    - name:
+        sv-SE: MC4
+      value: MC4
+    - name:
+        sv-SE: Med sugpropp
+      value: Med sugpropp
+    - name:
+        sv-SE: Med tyngd
+      value: Med tyngd
+    - name:
+        sv-SE: Medbringare Volvo Penta
+      value: Medbringare Volvo Penta
+    - name:
+        sv-SE: Membranpump
+      value: Membranpump
+    - name:
+        sv-SE: Mercury
+      value: Mercury
+    - name:
+        sv-SE: Metall
+      value: Metall
+    - name:
+        sv-SE: Metervara
+      value: Metervara
+    - name:
+        sv-SE: Midisäkring BlueSea
+      value: Midisäkring BlueSea
+    - name:
+        sv-SE: Mikroglasballonger
+      value: Mikroglasballonger
+    - name:
+        sv-SE: Minispole
+      value: Minispole
+    - name:
+        sv-SE: Miniventil
+      value: Miniventil
+    - name:
+        sv-SE: Mist
+      value: Mist
+    - name:
+        sv-SE: Mist E.I
+      value: Mist E.I
+    - name:
+        sv-SE: Mistlur/visselpipa
+      value: Mistlur/visselpipa
+    - name:
+        sv-SE: Mittbeslag
+      value: Mittbeslag
+    - name:
+        sv-SE: Mjuk bottenfärg
+      value: Mjuk bottenfärg
+    - name:
+        sv-SE: Mobilfodral
+      value: Mobilfodral
+    - name:
+        sv-SE: Moddlare
+      value: Moddlare
+    - name:
+        sv-SE: Montageband
+      value: Montageband
+    - name:
+        sv-SE: Montagehandske
+      value: Montagehandske
+    - name:
+        sv-SE: Montagetillbehör
+      value: Montagetillbehör
+    - name:
+        sv-SE: Monteringskit
+      value: Monteringskit
+    - name:
+        sv-SE: Monteringsram
+      value: Monteringsram
+    - name:
+        sv-SE: Monteringstillbehör
+      value: Monteringstillbehör
+    - name:
+        sv-SE: Monteringsverktyg
+      value: Monteringsverktyg
+    - name:
+        sv-SE: Moonstone
+      value: Moonstone
+    - name:
+        sv-SE: Mooringlina
+      value: Mooringlina
+    - name:
+        sv-SE: Motoranslutning styrkabel
+      value: Motoranslutning styrkabel
+    - name:
+        sv-SE: Motorbock
+      value: Motorbock
+    - name:
+        sv-SE: Motorolja 10W-30
+      value: Motorolja 10W-30
+    - name:
+        sv-SE: Motorolja 10W-40
+      value: Motorolja 10W-40
+    - name:
+        sv-SE: Motorolja 15W-40
+      value: Motorolja 15W-40
+    - name:
+        sv-SE: Motorolja 25W-40
+      value: Motorolja 25W-40
+    - name:
+        sv-SE: Motorolja 25W-50
+      value: Motorolja 25W-50
+    - name:
+        sv-SE: Motorolja 5W-30
+      value: Motorolja 5W-30
+    - name:
+        sv-SE: Motorolja 5W-40
+      value: Motorolja 5W-40
+    - name:
+        sv-SE: Motorolja DFI/Optimax (2-takt)
+      value: Motorolja DFI/Optimax (2-takt)
+    - name:
+        sv-SE: Motorolja SAE30
+      value: Motorolja SAE30
+    - name:
+        sv-SE: Motorolja TC-W3 (2-takt)
+      value: Motorolja TC-W3 (2-takt)
+    - name:
+        sv-SE: Motorolja XD100
+      value: Motorolja XD100
+    - name:
+        sv-SE: Motorolja XD50
+      value: Motorolja XD50
+    - name:
+        sv-SE: Motorrumsisolering
+      value: Motorrumsisolering
+    - name:
+        sv-SE: Motorspray
+      value: Motorspray
+    - name:
+        sv-SE: Motorvagn
+      value: Motorvagn
+    - name:
+        sv-SE: Motoröverdrag
+      value: Motoröverdrag
+    - name:
+        sv-SE: MPPT
+      value: MPPT
+    - name:
+        sv-SE: MPPT med bluetooth
+      value: MPPT med bluetooth
+    - name:
+        sv-SE: Multispray
+      value: Multispray
+    - name:
+        sv-SE: Mutter
+      value: Mutter
+    - name:
+        sv-SE: Myggnät
+      value: Myggnät
+    - name:
+        sv-SE: Målarhandske
+      value: Målarhandske
+    - name:
+        sv-SE: Målaroverall
+      value: Målaroverall
+    - name:
+        sv-SE: Mässingsskruv
+      value: Mässingsskruv
+    - name:
+        sv-SE: Mässingsskylt
+      value: Mässingsskylt
+    - name:
+        sv-SE: Mögelrengöring
+      value: Mögelrengöring
+    - name:
+        sv-SE: Nautic
+      value: Nautic
+    - name:
+        sv-SE: Navionics
+      value: Navionics
+    - name:
+        sv-SE: Navionics Plus
+      value: Navionics Plus
+    - name:
+        sv-SE: Neptune - Solas godkänd
+      value: Neptune - Solas godkänd
+    - name:
+        sv-SE: Neutrallägesbrytare
+      value: Neutrallägesbrytare
+    - name:
+        sv-SE: Nipplar för hydraulslang
+      value: Nipplar för hydraulslang
+    - name:
+        sv-SE: Nitrilgummi
+      value: Nitrilgummi
+    - name:
+        sv-SE: NMEA 2000
+      value: NMEA 2000
+    - name:
+        sv-SE: Nosstöd
+      value: Nosstöd
+    - name:
+        sv-SE: Nyckelflöte
+      value: Nyckelflöte
+    - name:
+        sv-SE: Nyckelschackel rostfri
+      value: Nyckelschackel rostfri
+    - name:
+        sv-SE: Nylon
+      value: Nylon
+    - name:
+        sv-SE: Nåtmassa
+      value: Nåtmassa
+    - name:
+        sv-SE: Nätvakare
+      value: Nätvakare
+    - name:
+        sv-SE: Nätverk
+      value: Nätverk
+    - name:
+        sv-SE: Nödbloss
+      value: Nödbloss
+    - name:
+        sv-SE: Nödbrytare
+      value: Nödbrytare
+    - name:
+        sv-SE: Nödljus
+      value: Nödljus
+    - name:
+        sv-SE: Nödsändare
+      value: Nödsändare
+    - name:
+        sv-SE: Nötningsskydd
+      value: Nötningsskydd
+    - name:
+        sv-SE: Ocean
+      value: Ocean
+    - name:
+        sv-SE: Ocean Comfort Classic
+      value: Ocean Comfort Classic
+    - name:
+        sv-SE: Ocean Comfort ECX
+      value: Ocean Comfort ECX
+    - name:
+        sv-SE: Offshore
+      value: Offshore
+    - name:
+        sv-SE: Oklassade
+      value: Oklassade
+    - name:
+        sv-SE: Oljebytarkit
+      value: Oljebytarkit
+    - name:
+        sv-SE: Oljeduk
+      value: Oljeduk
+    - name:
+        sv-SE: Oljefilter Honda
+      value: Oljefilter Honda
+    - name:
+        sv-SE: Oljefilter Hyundai
+      value: Oljefilter Hyundai
+    - name:
+        sv-SE: Oljefilter Mercruiser
+      value: Oljefilter Mercruiser
+    - name:
+        sv-SE: Oljefilter Mercury
+      value: Oljefilter Mercury
+    - name:
+        sv-SE: Oljefilter Solè
+      value: Oljefilter Solè
+    - name:
+        sv-SE: Oljefilter Suzuki
+      value: Oljefilter Suzuki
+    - name:
+        sv-SE: Oljefilter Vetus
+      value: Oljefilter Vetus
+    - name:
+        sv-SE: Oljefilter Volvo Penta
+      value: Oljefilter Volvo Penta
+    - name:
+        sv-SE: Oljefilter Yamaha
+      value: Oljefilter Yamaha
+    - name:
+        sv-SE: Oljefilter Yamaha/Mercury
+      value: Oljefilter Yamaha/Mercury
+    - name:
+        sv-SE: Oljefilter Yanmar
+      value: Oljefilter Yanmar
+    - name:
+        sv-SE: Oljeplugg Mercury/Mercruiser
+      value: Oljeplugg Mercury/Mercruiser
+    - name:
+        sv-SE: Oljepluggspackning Honda
+      value: Oljepluggspackning Honda
+    - name:
+        sv-SE: Oljepluggspackning Mariner
+      value: Oljepluggspackning Mariner
+    - name:
+        sv-SE: Oljepluggspackning Mercury
+      value: Oljepluggspackning Mercury
+    - name:
+        sv-SE: Oljepluggspackning OMC
+      value: Oljepluggspackning OMC
+    - name:
+        sv-SE: Oljepluggspackning Selva
+      value: Oljepluggspackning Selva
+    - name:
+        sv-SE: Oljepluggspackning Suzuki
+      value: Oljepluggspackning Suzuki
+    - name:
+        sv-SE: Oljepluggspackning Volvo Penta
+      value: Oljepluggspackning Volvo Penta
+    - name:
+        sv-SE: Oljepluggspackning Yamaha
+      value: Oljepluggspackning Yamaha
+    - name:
+        sv-SE: Oljepluggspackning Yanmar
+      value: Oljepluggspackning Yanmar
+    - name:
+        sv-SE: Oljerör Mercruiser
+      value: Oljerör Mercruiser
+    - name:
+        sv-SE: Oljetryck
+      value: Oljetryck
+    - name:
+        sv-SE: Oljetrycksgivare
+      value: Oljetrycksgivare
+    - name:
+        sv-SE: Omnia miniugn
+      value: Omnia miniugn
+    - name:
+        sv-SE: Omnia tillbehör
+      value: Omnia tillbehör
+    - name:
+        sv-SE: O-ring till däcksförskruvning
+      value: O-ring till däcksförskruvning
+    - name:
+        sv-SE: Ostkust
+      value: Ostkust
+    - name:
+        sv-SE: Pacific
+      value: Pacific
+    - name:
+        sv-SE: Packning-/servicesats
+      value: Packning-/servicesats
+    - name:
+        sv-SE: Packrem
+      value: Packrem
+    - name:
+        sv-SE: Paddel fast
+      value: Paddel fast
+    - name:
+        sv-SE: Paddel teleskopisk
+      value: Paddel teleskopisk
+    - name:
+        sv-SE: Paket
+      value: Paket
+    - name:
+        sv-SE: Panel för länspump
+      value: Panel för länspump
+    - name:
+        sv-SE: Panel med ATC/flatstift
+      value: Panel med ATC/flatstift
+    - name:
+        sv-SE: Panel med automatsäkringar
+      value: Panel med automatsäkringar
+    - name:
+        sv-SE: Panel utan säkringar
+      value: Panel utan säkringar
+    - name:
+        sv-SE: Parallellarm
+      value: Parallellarm
+    - name:
+        sv-SE: Parasoll
+      value: Parasoll
+    - name:
+        sv-SE: Peel Ply
+      value: Peel Ply
+    - name:
+        sv-SE: Pelikanhake rostfri
+      value: Pelikanhake rostfri
+    - name:
+        sv-SE: Pentrykran kallvatten
+      value: Pentrykran kallvatten
+    - name:
+        sv-SE: Pianogångjärn
+      value: Pianogångjärn
+    - name:
+        sv-SE: Pigment
+      value: Pigment
+    - name:
+        sv-SE: Pilotlina
+      value: Pilotlina
+    - name:
+        sv-SE: Plastbussning
+      value: Plastbussning
+    - name:
+        sv-SE: Plasttank
+      value: Plasttank
+    - name:
+        sv-SE: Plasttank & pumpkit
+      value: Plasttank & pumpkit
+    - name:
+        sv-SE: Plasttank bränsle/vatten/septik
+      value: Plasttank bränsle/vatten/septik
+    - name:
+        sv-SE: Plugin
+      value: Plugin
+    - name:
+        sv-SE: Plugin fäste
+      value: Plugin fäste
+    - name:
+        sv-SE: Pluto
+      value: Pluto
+    - name:
+        sv-SE: Polermaskin
+      value: Polermaskin
+    - name:
+        sv-SE: Polerrondell 100mm
+      value: Polerrondell 100mm
+    - name:
+        sv-SE: Polerrondell 125mm
+      value: Polerrondell 125mm
+    - name:
+        sv-SE: Polerrondell 150mm
+      value: Polerrondell 150mm
+    - name:
+        sv-SE: Polerrondell 180mm
+      value: Polerrondell 180mm
+    - name:
+        sv-SE: Polish
+      value: Polish
+    - name:
+        sv-SE: Pollare
+      value: Pollare
+    - name:
+        sv-SE: Pollare fällbar
+      value: Pollare fällbar
+    - name:
+        sv-SE: Polyester
+      value: Polyester
+    - name:
+        sv-SE: Polyester storpack
+      value: Polyester storpack
+    - name:
+        sv-SE: Polyesterflagga
+      value: Polyesterflagga
+    - name:
+        sv-SE: Polyesterkit småreparationer
+      value: Polyesterkit småreparationer
+    - name:
+        sv-SE: Polyesterspackel
+      value: Polyesterspackel
+    - name:
+        sv-SE: Polyetylen/PVC
+      value: Polyetylen/PVC
+    - name:
+        sv-SE: Porslinsäkring
+      value: Porslinsäkring
+    - name:
+        sv-SE: Portabel
+      value: Portabel
+    - name:
+        sv-SE: Portabel dusch
+      value: Portabel dusch
+    - name:
+        sv-SE: Portabel grill
+      value: Portabel grill
+    - name:
+        sv-SE: Portabelt kök
+      value: Portabelt kök
+    - name:
+        sv-SE: Portabelt kök/grill
+      value: Portabelt kök/grill
+    - name:
+        sv-SE: Portlight
+      value: Portlight
+    - name:
+        sv-SE: Poseidon
+      value: Poseidon
+    - name:
+        sv-SE: PowerTrim Mercruiser
+      value: PowerTrim Mercruiser
+    - name:
+        sv-SE: Premiumvax
+      value: Premiumvax
+    - name:
+        sv-SE: Presenning 180g
+      value: Presenning 180g
+    - name:
+        sv-SE: Presenning armerad & formsydd
+      value: Presenning armerad & formsydd
+    - name:
+        sv-SE: Presenning armerad 250g
+      value: Presenning armerad 250g
+    - name:
+        sv-SE: Presenningsrep/stroppar
+      value: Presenningsrep/stroppar
+    - name:
+        sv-SE: Presenningssystem Toptex
+      value: Presenningssystem Toptex
+    - name:
+        sv-SE: Presenningstejp
+      value: Presenningstejp
+    - name:
+        sv-SE: Primer
+      value: Primer
+    - name:
+        sv-SE: Pro Sailor
+      value: Pro Sailor
+    - name:
+        sv-SE: Propeller
+      value: Propeller
+    - name:
+        sv-SE: Propeller för HUB 3-blad
+      value: Propeller för HUB 3-blad
+    - name:
+        sv-SE: Propeller för HUB 4-blad
+      value: Propeller för HUB 4-blad
+    - name:
+        sv-SE: Propellerlåsning Volvo Penta
+      value: Propellerlåsning Volvo Penta
+    - name:
+        sv-SE: Propellerverktyg
+      value: Propellerverktyg
+    - name:
+        sv-SE: Propulse
+      value: Propulse
+    - name:
+        sv-SE: Propylenglykol
+      value: Propylenglykol
+    - name:
+        sv-SE: Prydnadskudde
+      value: Prydnadskudde
+    - name:
+        sv-SE: Pulpetöverdrag
+      value: Pulpetöverdrag
+    - name:
+        sv-SE: Pulpitbeslag aluminium
+      value: Pulpitbeslag aluminium
+    - name:
+        sv-SE: Pulpitbeslag nylon
+      value: Pulpitbeslag nylon
+    - name:
+        sv-SE: Pulpitbeslag rostfritt
+      value: Pulpitbeslag rostfritt
+    - name:
+        sv-SE: Pulpitfäste
+      value: Pulpitfäste
+    - name:
+        sv-SE: Pump & ackumulatortank
+      value: Pump & ackumulatortank
+    - name:
+        sv-SE: Pumphus komplett
+      value: Pumphus komplett
+    - name:
+        sv-SE: Pumpsats
+      value: Pumpsats
+    - name:
+        sv-SE: Punkteringssäker
+      value: Punkteringssäker
+    - name:
+        sv-SE: PVC-slang
+      value: PVC-slang
+    - name:
+        sv-SE: PVC-slang armerad
+      value: PVC-slang armerad
+    - name:
+        sv-SE: PWM
+      value: PWM
+    - name:
+        sv-SE: Påfyllnadskit hydraulolja
+      value: Påfyllnadskit hydraulolja
+    - name:
+        sv-SE: Racing
+      value: Racing
+    - name:
+        sv-SE: Radarfäste
+      value: Radarfäste
+    - name:
+        sv-SE: Radarreflektor
+      value: Radarreflektor
+    - name:
+        sv-SE: Radioantenn
+      value: Radioantenn
+    - name:
+        sv-SE: Radom 18"
+      value: Radom 18"
+    - name:
+        sv-SE: Radom 20"
+      value: Radom 20"
+    - name:
+        sv-SE: Radom 24"
+      value: Radom 24"
+    - name:
+        sv-SE: Rategyro
+      value: Rategyro
+    - name:
+        sv-SE: RCA-kabel
+      value: RCA-kabel
+    - name:
+        sv-SE: Reduceringsventil
+      value: Reduceringsventil
+    - name:
+        sv-SE: Reflex
+      value: Reflex
+    - name:
+        sv-SE: Reflextejp
+      value: Reflextejp
+    - name:
+        sv-SE: Reglagekabel C2/C33
+      value: Reglagekabel C2/C33
+    - name:
+        sv-SE: Reglagekabel lågfriktion
+      value: Reglagekabel lågfriktion
+    - name:
+        sv-SE: Reglagekabel Mercury
+      value: Reglagekabel Mercury
+    - name:
+        sv-SE: Reglagekabel OMC
+      value: Reglagekabel OMC
+    - name:
+        sv-SE: Regnkåpa
+      value: Regnkåpa
+    - name:
+        sv-SE: Rektangulär
+      value: Rektangulär
+    - name:
+        sv-SE: Rektangulär bluetoothstereo
+      value: Rektangulär bluetoothstereo
+    - name:
+        sv-SE: Rektangulära bord
+      value: Rektangulära bord
+    - name:
+        sv-SE: Relingslist
+      value: Relingslist
+    - name:
+        sv-SE: Relä
+      value: Relä
+    - name:
+        sv-SE: Relä för bogpropeller
+      value: Relä för bogpropeller
+    - name:
+        sv-SE: Relä Mercury/Mercruiser
+      value: Relä Mercury/Mercruiser
+    - name:
+        sv-SE: Relä till bogpropeller
+      value: Relä till bogpropeller
+    - name:
+        sv-SE: Rengöring kapellrutor
+      value: Rengöring kapellrutor
+    - name:
+        sv-SE: Rengöring kylsystem
+      value: Rengöring kylsystem
+    - name:
+        sv-SE: Rengöring metall
+      value: Rengöring metall
+    - name:
+        sv-SE: Renspropp/plugg
+      value: Renspropp/plugg
+    - name:
+        sv-SE: Renögring konstläder
+      value: Renögring konstläder
+    - name:
+        sv-SE: Reservband
+      value: Reservband
+    - name:
+        sv-SE: Reservdel
+      value: Reservdel
+    - name:
+        sv-SE: Reservdunk
+      value: Reservdunk
+    - name:
+        sv-SE: Reservglas
+      value: Reservglas
+    - name:
+        sv-SE: Reservkåpa
+      value: Reservkåpa
+    - name:
+        sv-SE: RGB ljus
+      value: RGB ljus
+    - name:
+        sv-SE: RGBW ljus
+      value: RGBW ljus
+    - name:
+        sv-SE: Riggbult
+      value: Riggbult
+    - name:
+        sv-SE: Riggbultslåsning
+      value: Riggbultslåsning
+    - name:
+        sv-SE: Riggtejp
+      value: Riggtejp
+    - name:
+        sv-SE: Ring rostfri
+      value: Ring rostfri
+    - name:
+        sv-SE: Roderanod Zink
+      value: Roderanod Zink
+    - name:
+        sv-SE: Roderbeslag
+      value: Roderbeslag
+    - name:
+        sv-SE: Roderindikator till ratt
+      value: Roderindikator till ratt
+    - name:
+        sv-SE: Rodkicker
+      value: Rodkicker
+    - name:
+        sv-SE: Roller maxi 180mm
+      value: Roller maxi 180mm
+    - name:
+        sv-SE: Roller midi 120mm
+      value: Roller midi 120mm
+    - name:
+        sv-SE: Roller mini 100mm
+      value: Roller mini 100mm
+    - name:
+        sv-SE: Roller mini 150mm
+      value: Roller mini 150mm
+    - name:
+        sv-SE: Rollerbygel
+      value: Rollerbygel
+    - name:
+        sv-SE: Rollerset
+      value: Rollerset
+    - name:
+        sv-SE: Rollertråg
+      value: Rollertråg
+    - name:
+        sv-SE: Rorkultsförlängare
+      value: Rorkultsförlängare
+    - name:
+        sv-SE: Rosettventil
+      value: Rosettventil
+    - name:
+        sv-SE: Rostfri
+      value: Rostfri
+    - name:
+        sv-SE: Rostfri bricka (RB)
+      value: Rostfri bricka (RB)
+    - name:
+        sv-SE: Rostfri bricka stor (RBS)
+      value: Rostfri bricka stor (RBS)
+    - name:
+        sv-SE: Rostfri fjäderbricka
+      value: Rostfri fjäderbricka
+    - name:
+        sv-SE: Rostfri grill
+      value: Rostfri grill
+    - name:
+        sv-SE: Rostfri hylsmutter (WS9340)
+      value: Rostfri hylsmutter (WS9340)
+    - name:
+        sv-SE: Rostfri inredningsbricka
+      value: Rostfri inredningsbricka
+    - name:
+        sv-SE: Rostfri kupolmutter (MHM)
+      value: Rostfri kupolmutter (MHM)
+    - name:
+        sv-SE: Rostfri låsmutter (NYLOC)
+      value: Rostfri låsmutter (NYLOC)
+    - name:
+        sv-SE: Rostfri mutter (M6M)
+      value: Rostfri mutter (M6M)
+    - name:
+        sv-SE: Rostfri tank
+      value: Rostfri tank
+    - name:
+        sv-SE: Rostfri vingmutter (MVMK)
+      value: Rostfri vingmutter (MVMK)
+    - name:
+        sv-SE: Rostfria
+      value: Rostfria
+    - name:
+        sv-SE: Rostskyddsfärg
+      value: Rostskyddsfärg
+    - name:
+        sv-SE: Rubbing
+      value: Rubbing
+    - name:
+        sv-SE: Ruffmatta
+      value: Ruffmatta
+    - name:
+        sv-SE: Rullgardin
+      value: Rullgardin
+    - name:
+        sv-SE: Rund
+      value: Rund
+    - name:
+        sv-SE: Rund bluetoothstereo
+      value: Rund bluetoothstereo
+    - name:
+        sv-SE: Runda- & ellipsformade
+      value: Runda- & ellipsformade
+    - name:
+        sv-SE: Räckhållare
+      value: Räckhållare
+    - name:
+        sv-SE: Räddningsstege
+      value: Räddningsstege
+    - name:
+        sv-SE: Röd
+      value: Röd
+    - name:
+        sv-SE: Rör-adapter
+      value: Rör-adapter
+    - name:
+        sv-SE: Rörkabelskor
+      value: Rörkabelskor
+    - name:
+        sv-SE: Rörklammer
+      value: Rörklammer
+    - name:
+        sv-SE: Rörmuff
+      value: Rörmuff
+    - name:
+        sv-SE: Rörpinne
+      value: Rörpinne
+    - name:
+        sv-SE: Rörskarvhylsa
+      value: Rörskarvhylsa
+    - name:
+        sv-SE: Rörvinkel
+      value: Rörvinkel
+    - name:
+        sv-SE: Rött ljus
+      value: Rött ljus
+    - name:
+        sv-SE: Salt & pepparkvarn
+      value: Salt & pepparkvarn
+    - name:
+        sv-SE: Sanitetsmedel
+      value: Sanitetsmedel
+    - name:
+        sv-SE: SAR Sjöräddningsväst
+      value: SAR Sjöräddningsväst
+    - name:
+        sv-SE: Schackel galvad
+      value: Schackel galvad
+    - name:
+        sv-SE: Schackel rostfri
+      value: Schackel rostfri
+    - name:
+        sv-SE: Schackel segeltravare
+      value: Schackel segeltravare
+    - name:
+        sv-SE: Schackel smidd rostfri
+      value: Schackel smidd rostfri
+    - name:
+        sv-SE: Schackel varmförzinkad
+      value: Schackel varmförzinkad
+    - name:
+        sv-SE: Schampo
+      value: Schampo
+    - name:
+        sv-SE: Seapilot
+      value: Seapilot
+    - name:
+        sv-SE: SeaSea
+      value: SeaSea
+    - name:
+        sv-SE: Seatalk
+      value: Seatalk
+    - name:
+        sv-SE: Segelhake
+      value: Segelhake
+    - name:
+        sv-SE: Segelintag
+      value: Segelintag
+    - name:
+        sv-SE: Segellatta
+      value: Segellatta
+    - name:
+        sv-SE: Segellatta ändskydd
+      value: Segellatta ändskydd
+    - name:
+        sv-SE: Segelreparationskit
+      value: Segelreparationskit
+    - name:
+        sv-SE: Segelreparationstejp
+      value: Segelreparationstejp
+    - name:
+        sv-SE: Selva
+      value: Selva
+    - name:
+        sv-SE: Sensorbrytare
+      value: Sensorbrytare
+    - name:
+        sv-SE: Septitank
+      value: Septitank
+    - name:
+        sv-SE: Septitanksgivare
+      value: Septitanksgivare
+    - name:
+        sv-SE: Servicekit
+      value: Servicekit
+    - name:
+        sv-SE: Servicesats
+      value: Servicesats
+    - name:
+        sv-SE: Servicesats Mercruiser
+      value: Servicesats Mercruiser
+    - name:
+        sv-SE: Servicesats Mercury
+      value: Servicesats Mercury
+    - name:
+        sv-SE: Servicesats Suzuki
+      value: Servicesats Suzuki
+    - name:
+        sv-SE: Servicesats Volvo Penta
+      value: Servicesats Volvo Penta
+    - name:
+        sv-SE: Servicesats Yamaha
+      value: Servicesats Yamaha
+    - name:
+        sv-SE: Servicesats Yanmar
+      value: Servicesats Yanmar
+    - name:
+        sv-SE: Servis
+      value: Servis
+    - name:
+        sv-SE: Sexkantsnippel
+      value: Sexkantsnippel
+    - name:
+        sv-SE: Sexkantsskruv (M65)
+      value: Sexkantsskruv (M65)
+    - name:
+        sv-SE: Sidomontering
+      value: Sidomontering
+    - name:
+        sv-SE: Sidorulle
+      value: Sidorulle
+    - name:
+        sv-SE: Siffror & bokstäver
+      value: Siffror & bokstäver
+    - name:
+        sv-SE: Signalhorn infällt
+      value: Signalhorn infällt
+    - name:
+        sv-SE: Signalhorn utanpåliggande
+      value: Signalhorn utanpåliggande
+    - name:
+        sv-SE: Sil
+      value: Sil
+    - name:
+        sv-SE: Silikon
+      value: Silikon
+    - name:
+        sv-SE: Silikontejp
+      value: Silikontejp
+    - name:
+        sv-SE: Självjusterande trimplan
+      value: Självjusterande trimplan
+    - name:
+        sv-SE: Självpolerande bottenfärg
+      value: Självpolerande bottenfärg
+    - name:
+        sv-SE: Sjöfartsfärg
+      value: Sjöfartsfärg
+    - name:
+        sv-SE: Sjövattenpump Volvo Penta
+      value: Sjövattenpump Volvo Penta
+    - name:
+        sv-SE: Skarvlås
+      value: Skarvlås
+    - name:
+        sv-SE: Skarvrör
+      value: Skarvrör
+    - name:
+        sv-SE: Skavkydd
+      value: Skavkydd
+    - name:
+        sv-SE: Skeppsklocka
+      value: Skeppsklocka
+    - name:
+        sv-SE: Skiljerelä
+      value: Skiljerelä
+    - name:
+        sv-SE: Skiljerelä med bluetooth
+      value: Skiljerelä med bluetooth
+    - name:
+        sv-SE: Skjorta
+      value: Skjorta
+    - name:
+        sv-SE: Skjutregel
+      value: Skjutregel
+    - name:
+        sv-SE: Skot avsmalnande
+      value: Skot avsmalnande
+    - name:
+        sv-SE: Skothake rostfri
+      value: Skothake rostfri
+    - name:
+        sv-SE: Skotskena
+      value: Skotskena
+    - name:
+        sv-SE: Skottmontage
+      value: Skottmontage
+    - name:
+        sv-SE: Skrovbeklädnad
+      value: Skrovbeklädnad
+    - name:
+        sv-SE: Skrovisolering
+      value: Skrovisolering
+    - name:
+        sv-SE: Skrovskydd
+      value: Skrovskydd
+    - name:
+        sv-SE: Skruvlåsning
+      value: Skruvlåsning
+    - name:
+        sv-SE: Skyddsglasögon
+      value: Skyddsglasögon
+    - name:
+        sv-SE: Skyddshandskar
+      value: Skyddshandskar
+    - name:
+        sv-SE: Skyddshandske plastning
+      value: Skyddshandske plastning
+    - name:
+        sv-SE: Skyddskåpa
+      value: Skyddskåpa
+    - name:
+        sv-SE: Skylighthållare
+      value: Skylighthållare
+    - name:
+        sv-SE: Skål
+      value: Skål
+    - name:
+        sv-SE: Slang
+      value: Slang
+    - name:
+        sv-SE: Slang-/kabelgenomföring
+      value: Slang-/kabelgenomföring
+    - name:
+        sv-SE: Slangadapter
+      value: Slangadapter
+    - name:
+        sv-SE: Slanganslutning
+      value: Slanganslutning
+    - name:
+        sv-SE: Slangfäste Volvo Penta
+      value: Slangfäste Volvo Penta
+    - name:
+        sv-SE: Slangkap
+      value: Slangkap
+    - name:
+        sv-SE: Slangklämma 1-pack
+      value: Slangklämma 1-pack
+    - name:
+        sv-SE: Slangklämma 2-pack
+      value: Slangklämma 2-pack
+    - name:
+        sv-SE: Slangklämma heavy duty
+      value: Slangklämma heavy duty
+    - name:
+        sv-SE: Slangklämma mini
+      value: Slangklämma mini
+    - name:
+        sv-SE: Slangklämmeskruvmejsel
+      value: Slangklämmeskruvmejsel
+    - name:
+        sv-SE: Slangnippel pentrypump
+      value: Slangnippel pentrypump
+    - name:
+        sv-SE: Slangsats
+      value: Slangsats
+    - name:
+        sv-SE: Slangsats Mercruiser
+      value: Slangsats Mercruiser
+    - name:
+        sv-SE: Slangsats Volvo Penta
+      value: Slangsats Volvo Penta
+    - name:
+        sv-SE: Slangskarv
+      value: Slangskarv
+    - name:
+        sv-SE: Slangskarv 90grader
+      value: Slangskarv 90grader
+    - name:
+        sv-SE: Slangsockel
+      value: Slangsockel
+    - name:
+        sv-SE: Slangsockel 120grader
+      value: Slangsockel 120grader
+    - name:
+        sv-SE: Slangsockel 45grader
+      value: Slangsockel 45grader
+    - name:
+        sv-SE: Slangsockel 90grader
+      value: Slangsockel 90grader
+    - name:
+        sv-SE: Slangsockel CR invändig gänga
+      value: Slangsockel CR invändig gänga
+    - name:
+        sv-SE: Slangsockel CR utvändig gänga
+      value: Slangsockel CR utvändig gänga
+    - name:
+        sv-SE: Slangsockel för bränsletank
+      value: Slangsockel för bränsletank
+    - name:
+        sv-SE: Slangsockel invändig gänga
+      value: Slangsockel invändig gänga
+    - name:
+        sv-SE: Slangsockel utvändig gänga
+      value: Slangsockel utvändig gänga
+    - name:
+        sv-SE: Slim
+      value: Slim
+    - name:
+        sv-SE: Slipkloss
+      value: Slipkloss
+    - name:
+        sv-SE: Sliprondell
+      value: Sliprondell
+    - name:
+        sv-SE: Slipsvamp
+      value: Slipsvamp
+    - name:
+        sv-SE: Slitageskydd segel
+      value: Slitageskydd segel
+    - name:
+        sv-SE: Slitskydd
+      value: Slitskydd
+    - name:
+        sv-SE: Släpvagnsadapter
+      value: Släpvagnsadapter
+    - name:
+        sv-SE: Släpvagnslås
+      value: Släpvagnslås
+    - name:
+        sv-SE: Smart Living Recharge
+      value: Smart Living Recharge
+    - name:
+        sv-SE: Smartgivare
+      value: Smartgivare
+    - name:
+        sv-SE: Smart-TV
+      value: Smart-TV
+    - name:
+        sv-SE: Snabbfäste
+      value: Snabbfäste
+    - name:
+        sv-SE: Snabbkoppling
+      value: Snabbkoppling
+    - name:
+        sv-SE: Snabblim
+      value: Snabblim
+    - name:
+        sv-SE: Snabblänk
+      value: Snabblänk
+    - name:
+        sv-SE: Snabbschackel rostfri
+      value: Snabbschackel rostfri
+    - name:
+        sv-SE: Snabbtorkande
+      value: Snabbtorkande
+    - name:
+        sv-SE: Snapsglas
+      value: Snapsglas
+    - name:
+        sv-SE: Snäckborttagare
+      value: Snäckborttagare
+    - name:
+        sv-SE: Snäckformad fläkt
+      value: Snäckformad fläkt
+    - name:
+        sv-SE: Sockel BA15D
+      value: Sockel BA15D
+    - name:
+        sv-SE: Sockel BA15S
+      value: Sockel BA15S
+    - name:
+        sv-SE: Sockel BA7S
+      value: Sockel BA7S
+    - name:
+        sv-SE: Sockel BAY15D
+      value: Sockel BAY15D
+    - name:
+        sv-SE: Sockel G4
+      value: Sockel G4
+    - name:
+        sv-SE: Soft schackel
+      value: Soft schackel
+    - name:
+        sv-SE: Solpanelshållare
+      value: Solpanelshållare
+    - name:
+        sv-SE: Spackel
+      value: Spackel
+    - name:
+        sv-SE: Spilloljedunk
+      value: Spilloljedunk
+    - name:
+        sv-SE: Spinera 50N
+      value: Spinera 50N
+    - name:
+        sv-SE: Spinnakertejp
+      value: Spinnakertejp
+    - name:
+        sv-SE: Spiralslang
+      value: Spiralslang
+    - name:
+        sv-SE: Spirbom
+      value: Spirbom
+    - name:
+        sv-SE: Splash Royal
+      value: Splash Royal
+    - name:
+        sv-SE: Split Front
+      value: Split Front
+    - name:
+        sv-SE: Split Front E.I
+      value: Split Front E.I
+    - name:
+        sv-SE: Spollampa
+      value: Spollampa
+    - name:
+        sv-SE: Spolmedel
+      value: Spolmedel
+    - name:
+        sv-SE: Spolmuff
+      value: Spolmuff
+    - name:
+        sv-SE: Spolpumpskit
+      value: Spolpumpskit
+    - name:
+        sv-SE: Spricktätare
+      value: Spricktätare
+    - name:
+        sv-SE: Spritkök
+      value: Spritkök
+    - name:
+        sv-SE: Spännband för trailermontage
+      value: Spännband för trailermontage
+    - name:
+        sv-SE: Spännband med krok
+      value: Spännband med krok
+    - name:
+        sv-SE: Spännband med ögla
+      value: Spännband med ögla
+    - name:
+        sv-SE: Spärrblock
+      value: Spärrblock
+    - name:
+        sv-SE: Spärrhake
+      value: Spärrhake
+    - name:
+        sv-SE: Stativ med fast höjd
+      value: Stativ med fast höjd
+    - name:
+        sv-SE: Stegfender
+      value: Stegfender
+    - name:
+        sv-SE: Stekpannor
+      value: Stekpannor
+    - name:
+        sv-SE: Stickkontakt
+      value: Stickkontakt
+    - name:
+        sv-SE: Stickkontakt DIN
+      value: Stickkontakt DIN
+    - name:
+        sv-SE: Stinger
+      value: Stinger
+    - name:
+        sv-SE: Stolsvivel
+      value: Stolsvivel
+    - name:
+        sv-SE: Stopp & ändstopp
+      value: Stopp & ändstopp
+    - name:
+        sv-SE: Stoppkulor
+      value: Stoppkulor
+    - name:
+        sv-SE: Stor skål
+      value: Stor skål
+    - name:
+        sv-SE: Strålkastare halogen
+      value: Strålkastare halogen
+    - name:
+        sv-SE: Strålkastare LED
+      value: Strålkastare LED
+    - name:
+        sv-SE: Strålkastare xenon
+      value: Strålkastare xenon
+    - name:
+        sv-SE: Strömbildare
+      value: Strömbildare
+    - name:
+        sv-SE: Strömbrytare typ Carling
+      value: Strömbrytare typ Carling
+    - name:
+        sv-SE: Strömkabel
+      value: Strömkabel
+    - name:
+        sv-SE: Stuvfack
+      value: Stuvfack
+    - name:
+        sv-SE: Stuvningsnät
+      value: Stuvningsnät
+    - name:
+        sv-SE: Styrbord
+      value: Styrbord
+    - name:
+        sv-SE: Styren
+      value: Styren
+    - name:
+        sv-SE: Styrkabel M58/C315
+      value: Styrkabel M58/C315
+    - name:
+        sv-SE: Styrkabel M66/D335
+      value: Styrkabel M66/D335
+    - name:
+        sv-SE: Styrkabel M90 lågfriktion
+      value: Styrkabel M90 lågfriktion
+    - name:
+        sv-SE: Styrkabelkit lågfriktion
+      value: Styrkabelkit lågfriktion
+    - name:
+        sv-SE: Styrreglage
+      value: Styrreglage
+    - name:
+        sv-SE: Stålborste
+      value: Stålborste
+    - name:
+        sv-SE: Stålfjäder
+      value: Stålfjäder
+    - name:
+        sv-SE: Stålspiralslang
+      value: Stålspiralslang
+    - name:
+        sv-SE: Ställbart ryggstöd
+      value: Ställbart ryggstöd
+    - name:
+        sv-SE: Stävögla
+      value: Stävögla
+    - name:
+        sv-SE: Stödhjul
+      value: Stödhjul
+    - name:
+        sv-SE: Subwoofer
+      value: Subwoofer
+    - name:
+        sv-SE: SUP Pro
+      value: SUP Pro
+    - name:
+        sv-SE: SUP-bräda uppblåsbar
+      value: SUP-bräda uppblåsbar
+    - name:
+        sv-SE: SUP-paddel
+      value: SUP-paddel
+    - name:
+        sv-SE: Surf&Turf
+      value: Surf&Turf
+    - name:
+        sv-SE: Surfplattefodral
+      value: Surfplattefodral
+    - name:
+        sv-SE: Surrningsbeslag
+      value: Surrningsbeslag
+    - name:
+        sv-SE: Suzuki
+      value: Suzuki
+    - name:
+        sv-SE: Svart
+      value: Svart
+    - name:
+        sv-SE: Svetsad aluminiumdurk
+      value: Svetsad aluminiumdurk
+    - name:
+        sv-SE: Sviveladapter
+      value: Sviveladapter
+    - name:
+        sv-SE: Svivelschackel
+      value: Svivelschackel
+    - name:
+        sv-SE: Syftkompass
+      value: Syftkompass
+    - name:
+        sv-SE: Systemövervakning
+      value: Systemövervakning
+    - name:
+        sv-SE: Säkerhetslina
+      value: Säkerhetslina
+    - name:
+        sv-SE: Säkerhetssele
+      value: Säkerhetssele
+    - name:
+        sv-SE: Säkringsbox
+      value: Säkringsbox
+    - name:
+        sv-SE: Säkringshållare ANL
+      value: Säkringshållare ANL
+    - name:
+        sv-SE: Säkringshållare MIDI Blue Sea
+      value: Säkringshållare MIDI Blue Sea
+    - name:
+        sv-SE: Talk
+      value: Talk
+    - name:
+        sv-SE: Tallrik
+      value: Tallrik
+    - name:
+        sv-SE: Tallrik djup
+      value: Tallrik djup
+    - name:
+        sv-SE: Tamp/fallficka
+      value: Tamp/fallficka
+    - name:
+        sv-SE: Tamphållare
+      value: Tamphållare
+    - name:
+        sv-SE: Tankhållare
+      value: Tankhållare
+    - name:
+        sv-SE: Tankrengöring
+      value: Tankrengöring
+    - name:
+        sv-SE: Teak helskiva
+      value: Teak helskiva
+    - name:
+        sv-SE: Teak kvartsskiva
+      value: Teak kvartsskiva
+    - name:
+        sv-SE: Teakdäcksskruv
+      value: Teakdäcksskruv
+    - name:
+        sv-SE: Teakinredning
+      value: Teakinredning
+    - name:
+        sv-SE: Teakplugg
+      value: Teakplugg
+    - name:
+        sv-SE: Teleskopben
+      value: Teleskopben
+    - name:
+        sv-SE: Teleskopisk rorkult
+      value: Teleskopisk rorkult
+    - name:
+        sv-SE: Teleskoplås
+      value: Teleskoplås
+    - name:
+        sv-SE: Tell tales
+      value: Tell tales
+    - name:
+        sv-SE: Tempgivare
+      value: Tempgivare
+    - name:
+        sv-SE: Tempsensor
+      value: Tempsensor
+    - name:
+        sv-SE: Termostat Suzuki
+      value: Termostat Suzuki
+    - name:
+        sv-SE: Termostat Volvo Penta
+      value: Termostat Volvo Penta
+    - name:
+        sv-SE: Termostatblandare
+      value: Termostatblandare
+    - name:
+        sv-SE: Termostatsats Mercruiser
+      value: Termostatsats Mercruiser
+    - name:
+        sv-SE: Tillbehör
+      value: Tillbehör
+    - name:
+        sv-SE: Tillbehör givare S3
+      value: Tillbehör givare S3
+    - name:
+        sv-SE: Tillbehör givare S5
+      value: Tillbehör givare S5
+    - name:
+        sv-SE: Tillbehör propeller
+      value: Tillbehör propeller
+    - name:
+        sv-SE: Timräknare
+      value: Timräknare
+    - name:
+        sv-SE: T-koppling
+      value: T-koppling
+    - name:
+        sv-SE: Toalettborste
+      value: Toalettborste
+    - name:
+        sv-SE: Toalettpapper lättupplöst
+      value: Toalettpapper lättupplöst
+    - name:
+        sv-SE: Toft
+      value: Toft
+    - name:
+        sv-SE: Topcoat
+      value: Topcoat
+    - name:
+        sv-SE: Topp
+      value: Topp
+    - name:
+        sv-SE: Toppmontering
+      value: Toppmontering
+    - name:
+        sv-SE: Torkararm
+      value: Torkararm
+    - name:
+        sv-SE: Torkarblad
+      value: Torkarblad
+    - name:
+        sv-SE: Torkarmotor W12
+      value: Torkarmotor W12
+    - name:
+        sv-SE: Torkarmotor W5
+      value: Torkarmotor W5
+    - name:
+        sv-SE: Torkarstyrning
+      value: Torkarstyrning
+    - name:
+        sv-SE: Torrslippapper
+      value: Torrslippapper
+    - name:
+        sv-SE: Touchstyrd
+      value: Touchstyrd
+    - name:
+        sv-SE: Touchstyrd + ekolodsgivare
+      value: Touchstyrd + ekolodsgivare
+    - name:
+        sv-SE: Touchstyrd + ekolodsstöd
+      value: Touchstyrd + ekolodsstöd
+    - name:
+        sv-SE: Trailerhjul
+      value: Trailerhjul
+    - name:
+        sv-SE: Trailervinch
+      value: Trailervinch
+    - name:
+        sv-SE: Transmissionsolja ATF
+      value: Transmissionsolja ATF
+    - name:
+        sv-SE: Transportkärra
+      value: Transportkärra
+    - name:
+        sv-SE: Trappräckslina
+      value: Trappräckslina
+    - name:
+        sv-SE: Travare/skotvagn
+      value: Travare/skotvagn
+    - name:
+        sv-SE: Trevägsventil
+      value: Trevägsventil
+    - name:
+        sv-SE: Trimblock
+      value: Trimblock
+    - name:
+        sv-SE: Trimfena
+      value: Trimfena
+    - name:
+        sv-SE: Trimplanscylinder
+      value: Trimplanscylinder
+    - name:
+        sv-SE: Trippel
+      value: Trippel
+    - name:
+        sv-SE: Trippelblandare
+      value: Trippelblandare
+    - name:
+        sv-SE: Trippelblock
+      value: Trippelblock
+    - name:
+        sv-SE: Trumpethorn
+      value: Trumpethorn
+    - name:
+        sv-SE: Trycklogg
+      value: Trycklogg
+    - name:
+        sv-SE: Trycklogg Mercruiser
+      value: Trycklogg Mercruiser
+    - name:
+        sv-SE: Trycklås
+      value: Trycklås
+    - name:
+        sv-SE: Tryckströmbrytare
+      value: Tryckströmbrytare
+    - name:
+        sv-SE: Trycktank
+      value: Trycktank
+    - name:
+        sv-SE: Trådlös laddning
+      value: Trådlös laddning
+    - name:
+        sv-SE: Trälim
+      value: Trälim
+    - name:
+        sv-SE: Träplugg
+      value: Träplugg
+    - name:
+        sv-SE: Trärengöring
+      value: Trärengöring
+    - name:
+        sv-SE: Träspackel
+      value: Träspackel
+    - name:
+        sv-SE: T-rör
+      value: T-rör
+    - name:
+        sv-SE: Tubelina
+      value: Tubelina
+    - name:
+        sv-SE: Tunnel för bogpropeller
+      value: Tunnel för bogpropeller
+    - name:
+        sv-SE: TV
+      value: TV
+    - name:
+        sv-SE: TV-antenn
+      value: TV-antenn
+    - name:
+        sv-SE: TV-fäste
+      value: TV-fäste
+    - name:
+        sv-SE: Tvågreppsblandare
+      value: Tvågreppsblandare
+    - name:
+        sv-SE: Tvål & schampo
+      value: Tvål & schampo
+    - name:
+        sv-SE: Tvärstag
+      value: Tvärstag
+    - name:
+        sv-SE: Tvättborste
+      value: Tvättborste
+    - name:
+        sv-SE: Tvättspruta
+      value: Tvättspruta
+    - name:
+        sv-SE: Tvättställsblandare med dusch
+      value: Tvättställsblandare med dusch
+    - name:
+        sv-SE: Tvättsvamp
+      value: Tvättsvamp
+    - name:
+        sv-SE: Typ Abiko blå
+      value: Typ Abiko blå
+    - name:
+        sv-SE: Typ Abiko gul
+      value: Typ Abiko gul
+    - name:
+        sv-SE: Typ Abiko röd
+      value: Typ Abiko röd
+    - name:
+        sv-SE: Tång för MC4-kontakter
+      value: Tång för MC4-kontakter
+    - name:
+        sv-SE: Täckbricka
+      value: Täckbricka
+    - name:
+        sv-SE: Täckplatta Volvo Penta
+      value: Täckplatta Volvo Penta
+    - name:
+        sv-SE: Täckplatta Yanmar
+      value: Täckplatta Yanmar
+    - name:
+        sv-SE: Tändstiftsverktyg
+      value: Tändstiftsverktyg
+    - name:
+        sv-SE: Tätningsmassa
+      value: Tätningsmassa
+    - name:
+        sv-SE: Tätningsmassa träbåt
+      value: Tätningsmassa träbåt
+    - name:
+        sv-SE: Tätningstejp
+      value: Tätningstejp
+    - name:
+        sv-SE: U-fäste
+      value: U-fäste
+    - name:
+        sv-SE: Underplatta
+      value: Underplatta
+    - name:
+        sv-SE: Unisex
+      value: Unisex
+    - name:
+        sv-SE: Universalinstrument
+      value: Universalinstrument
+    - name:
+        sv-SE: Uppblåsbar
+      value: Uppblåsbar
+    - name:
+        sv-SE: Uppblåsbar durk
+      value: Uppblåsbar durk
+    - name:
+        sv-SE: Uppblåsbar med kort ten
+      value: Uppblåsbar med kort ten
+    - name:
+        sv-SE: Uppblåsbar med lång ten
+      value: Uppblåsbar med lång ten
+    - name:
+        sv-SE: Uppvärmningskapacitet 2kW
+      value: Uppvärmningskapacitet 2kW
+    - name:
+        sv-SE: Uppvärmningskapacitet 4kW
+      value: Uppvärmningskapacitet 4kW
+    - name:
+        sv-SE: Uppvärmningskapacitet 5,5kW
+      value: Uppvärmningskapacitet 5,5kW
+    - name:
+        sv-SE: Uppvärmningskapacitet 8kW
+      value: Uppvärmningskapacitet 8kW
+    - name:
+        sv-SE: U-profil
+      value: U-profil
+    - name:
+        sv-SE: USB adapter
+      value: USB adapter
+    - name:
+        sv-SE: USB-A
+      value: USB-A
+    - name:
+        sv-SE: USB-A & C
+      value: USB-A & C
+    - name:
+        sv-SE: USB-C
+      value: USB-C
+    - name:
+        sv-SE: Utanpåliggande
+      value: Utanpåliggande
+    - name:
+        sv-SE: Utkastare
+      value: Utkastare
+    - name:
+        sv-SE: Utliggarställning
+      value: Utliggarställning
+    - name:
+        sv-SE: Utlösare
+      value: Utlösare
+    - name:
+        sv-SE: Utombordarkit -115hk
+      value: Utombordarkit -115hk
+    - name:
+        sv-SE: Utombordarkit -175hk
+      value: Utombordarkit -175hk
+    - name:
+        sv-SE: Utombordarkit -350hk
+      value: Utombordarkit -350hk
+    - name:
+        sv-SE: Vacumventil
+      value: Vacumventil
+    - name:
+        sv-SE: Vagn till motorbock
+      value: Vagn till motorbock
+    - name:
+        sv-SE: Vagnsbult (MVBF)
+      value: Vagnsbult (MVBF)
+    - name:
+        sv-SE: Vantskruv
+      value: Vantskruv
+    - name:
+        sv-SE: Vantskruvsskydd
+      value: Vantskruvsskydd
+    - name:
+        sv-SE: Vantskydd
+      value: Vantskydd
+    - name:
+        sv-SE: Varmluftslang
+      value: Varmluftslang
+    - name:
+        sv-SE: Varmvattenslang
+      value: Varmvattenslang
+    - name:
+        sv-SE: Varvräknare
+      value: Varvräknare
+    - name:
+        sv-SE: Vatten
+      value: Vatten
+    - name:
+        sv-SE: Vatten-/bränslegivare S3
+      value: Vatten-/bränslegivare S3
+    - name:
+        sv-SE: Vatten-/bränslegivare S3 -USA
+      value: Vatten-/bränslegivare S3 -USA
+    - name:
+        sv-SE: Vatten-/bränslegivare S5
+      value: Vatten-/bränslegivare S5
+    - name:
+        sv-SE: Vattenavskiljarfilter CAV
+      value: Vattenavskiljarfilter CAV
+    - name:
+        sv-SE: Vattenavskiljarfilter Mercury
+      value: Vattenavskiljarfilter Mercury
+    - name:
+        sv-SE: Vattenavskiljarfilter OMC
+      value: Vattenavskiljarfilter OMC
+    - name:
+        sv-SE: Vattenavskiljarfilter Yamaha
+      value: Vattenavskiljarfilter Yamaha
+    - name:
+        sv-SE: Vattendunk
+      value: Vattendunk
+    - name:
+        sv-SE: Vattendunk med kran
+      value: Vattendunk med kran
+    - name:
+        sv-SE: Vattenlinjerengöring
+      value: Vattenlinjerengöring
+    - name:
+        sv-SE: Vattenlås/ljuddämpare
+      value: Vattenlås/ljuddämpare
+    - name:
+        sv-SE: Vattenrening
+      value: Vattenrening
+    - name:
+        sv-SE: Vattenskidbag
+      value: Vattenskidbag
+    - name:
+        sv-SE: Vattenskidlina
+      value: Vattenskidlina
+    - name:
+        sv-SE: Vattensäck/tank
+      value: Vattensäck/tank
+    - name:
+        sv-SE: Vattentemp
+      value: Vattentemp
+    - name:
+        sv-SE: Vattentät väska
+      value: Vattentät väska
+    - name:
+        sv-SE: Vaxlösning
+      value: Vaxlösning
+    - name:
+        sv-SE: Ventil
+      value: Ventil
+    - name:
+        sv-SE: Ventil för motorrum
+      value: Ventil för motorrum
+    - name:
+        sv-SE: Ventilationsslang
+      value: Ventilationsslang
+    - name:
+        sv-SE: Ventilator
+      value: Ventilator
+    - name:
+        sv-SE: Ventilator med solcell
+      value: Ventilator med solcell
+    - name:
+        sv-SE: Ventilgaller
+      value: Ventilgaller
+    - name:
+        sv-SE: Ventilgaller med anslutning
+      value: Ventilgaller med anslutning
+    - name:
+        sv-SE: Ventilgaller rund
+      value: Ventilgaller rund
+    - name:
+        sv-SE: Ventilnyckel till Trudesign
+      value: Ventilnyckel till Trudesign
+    - name:
+        sv-SE: Ventilspegel
+      value: Ventilspegel
+    - name:
+        sv-SE: Verktyg
+      value: Verktyg
+    - name:
+        sv-SE: Verktygsväska
+      value: Verktygsväska
+    - name:
+        sv-SE: Vevhusfilter Volvo Penta
+      value: Vevhusfilter Volvo Penta
+    - name:
+        sv-SE: VHF
+      value: VHF
+    - name:
+        sv-SE: VHF med DSC
+      value: VHF med DSC
+    - name:
+        sv-SE: VHF med DSC + AIS-mottagare
+      value: VHF med DSC + AIS-mottagare
+    - name:
+        sv-SE: VHF-antenn motorbåt
+      value: VHF-antenn motorbåt
+    - name:
+        sv-SE: VHF-antenn segelbåt
+      value: VHF-antenn segelbåt
+    - name:
+        sv-SE: VHF-högtalare
+      value: VHF-högtalare
+    - name:
+        sv-SE: VHF-kabel
+      value: VHF-kabel
+    - name:
+        sv-SE: VHF-kontakter
+      value: VHF-kontakter
+    - name:
+        sv-SE: Vikbar stol
+      value: Vikbar stol
+    - name:
+        sv-SE: Vikbart bord
+      value: Vikbart bord
+    - name:
+        sv-SE: Vimpel
+      value: Vimpel
+    - name:
+        sv-SE: Vinchband
+      value: Vinchband
+    - name:
+        sv-SE: Vindgivare
+      value: Vindgivare
+    - name:
+        sv-SE: Vindpil komplett
+      value: Vindpil komplett
+    - name:
+        sv-SE: Vinglas
+      value: Vinglas
+    - name:
+        sv-SE: Vinkelbeslag
+      value: Vinkelbeslag
+    - name:
+        sv-SE: Vinsch
+      value: Vinsch
+    - name:
+        sv-SE: Vinschfett
+      value: Vinschfett
+    - name:
+        sv-SE: Vinschhandtag
+      value: Vinschhandtag
+    - name:
+        sv-SE: Vinschhandtagshållare
+      value: Vinschhandtagshållare
+    - name:
+        sv-SE: Vinylester storpack
+      value: Vinylester storpack
+    - name:
+        sv-SE: Vippströmbrytare
+      value: Vippströmbrytare
+    - name:
+        sv-SE: Vit med svart topp
+      value: Vit med svart topp
+    - name:
+        sv-SE: Vitt ljus
+      value: Vitt ljus
+    - name:
+        sv-SE: Volt
+      value: Volt
+    - name:
+        sv-SE: Volvo Penta
+      value: Volvo Penta
+    - name:
+        sv-SE: Volym +30 liter
+      value: Volym +30 liter
+    - name:
+        sv-SE: Volym 20-25 liter
+      value: Volym 20-25 liter
+    - name:
+        sv-SE: Vulktejp
+      value: Vulktejp
+    - name:
+        sv-SE: Våtslippapper
+      value: Våtslippapper
+    - name:
+        sv-SE: Väderstation
+      value: Väderstation
+    - name:
+        sv-SE: Väggströmbrytare
+      value: Väggströmbrytare
+    - name:
+        sv-SE: Vägguttag
+      value: Vägguttag
+    - name:
+        sv-SE: Värmaranslutning
+      value: Värmaranslutning
+    - name:
+        sv-SE: Värmepistol
+      value: Värmepistol
+    - name:
+        sv-SE: Värmerör
+      value: Värmerör
+    - name:
+        sv-SE: Västkust
+      value: Västkust
+    - name:
+        sv-SE: Vävtejp
+      value: Vävtejp
+    - name:
+        sv-SE: Växelhus
+      value: Växelhus
+    - name:
+        sv-SE: Växelvajer Mercruiser
+      value: Växelvajer Mercruiser
+    - name:
+        sv-SE: Wake
+      value: Wake
+    - name:
+        sv-SE: Wakeboard
+      value: Wakeboard
+    - name:
+        sv-SE: Windexplatta
+      value: Windexplatta
+    - name:
+        sv-SE: Winner
+      value: Winner
+    - name:
+        sv-SE: Wireblock
+      value: Wireblock
+    - name:
+        sv-SE: Wireknap
+      value: Wireknap
+    - name:
+        sv-SE: Wirespänningsmätare
+      value: Wirespänningsmätare
+    - name:
+        sv-SE: X4
+      value: X4
+    - name:
+        sv-SE: Yamaha
+      value: Yamaha
+    - name:
+        sv-SE: Yanmar
+      value: Yanmar
+    - name:
+        sv-SE: Y-bomslina
+      value: Y-bomslina
+    - name:
+        sv-SE: Y-koppling CR
+      value: Y-koppling CR
+    - name:
+        sv-SE: Y-rör
+      value: Y-rör
+    - name:
+        sv-SE: Y-ventil
+      value: Y-ventil
+    - name:
+        sv-SE: Zinkprimerspray
+      value: Zinkprimerspray
+    - name:
+        sv-SE: Zorro
+      value: Zorro
+    - name:
+        sv-SE: Åkare 1 person
+      value: Åkare 1 person
+    - name:
+        sv-SE: Åkare 1-2 personer
+      value: Åkare 1-2 personer
+    - name:
+        sv-SE: Åkare 1-3 personer
+      value: Åkare 1-3 personer
+    - name:
+        sv-SE: Årklyka ledad
+      value: Årklyka ledad
+    - name:
+        sv-SE: Årklyka med bult
+      value: Årklyka med bult
+    - name:
+        sv-SE: Årklyka öppen
+      value: Årklyka öppen
+    - name:
+        sv-SE: Åror
+      value: Åror
+    - name:
+        sv-SE: Årskyddare
+      value: Årskyddare
+    - name:
+        sv-SE: Ändbeslag
+      value: Ändbeslag
+    - name:
+        sv-SE: Ändbeslag/fäste
+      value: Ändbeslag/fäste
+    - name:
+        sv-SE: Ändplugg
+      value: Ändplugg
+    - name:
+        sv-SE: Öglebult
+      value: Öglebult
+    - name:
+        sv-SE: Öglefäste
+      value: Öglefäste
+    - name:
+        sv-SE: Öglemutter
+      value: Öglemutter
+    - name:
+        sv-SE: Övergång
+      value: Övergång
+    - name:
+        sv-SE: Övervakning Bluetooth
+      value: Övervakning Bluetooth
+    - name:
+        sv-SE: Övervakningskamera
+      value: Övervakningskamera
+    - name:
+        sv-SE: 0-30 liter
+      value: 0-30 liter
+    - name:
+        sv-SE: Digital kompressorstyrning
+      value: Digital kompressorstyrning
+    - name:
+        sv-SE: Analog kompressorstyrning
+      value: Analog kompressorstyrning
+    - name:
+        sv-SE: Åkare 1-4 personer
+      value: Åkare 1-4 personer
+    multiSelect: true

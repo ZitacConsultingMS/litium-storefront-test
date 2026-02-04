@@ -1,0 +1,19 @@
+productFields:
+- id: clamping_range_diameter_mm
+  type: Text
+  name:
+    da-DK: Spännomr
+    de-DE: Spännomr
+    en-US: Spännomr
+    fi-FI: Spännomr
+    nb-NO: Spännomr
+    sv-SE: Spännomr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

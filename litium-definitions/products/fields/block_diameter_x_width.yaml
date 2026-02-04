@@ -1,0 +1,22 @@
+productFields:
+- id: block_diameter_x_width
+  type: Text
+  name:
+    da-DK: Block ØxB
+    en-US: Block ØxB
+    nb-NO: Block ØxB
+    sv-SE: Block ØxB
+  description:
+    da-DK: Block ØxB
+    en-US: Block ØxB
+    nb-NO: Block ØxB
+    sv-SE: Block ØxB
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: opening
+  type: Text
+  name:
+    da-DK: Öppning
+    en-US: Öppning
+    nb-NO: Öppning
+    sv-SE: Öppning
+  description:
+    da-DK: Öppning
+    en-US: Öppning
+    nb-NO: Öppning
+    sv-SE: Öppning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

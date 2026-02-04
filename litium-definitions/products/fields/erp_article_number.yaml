@@ -1,0 +1,17 @@
+productFields:
+- id: erp_article_number
+  type: Text
+  name:
+    en-US: ERP Artikelnummer
+    sv-SE: Erp Artikelnummer
+  description:
+    sv-SE: Erp Artikelnummer
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: true
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: connection
+  type: Text
+  name:
+    da-DK: Anslutning
+    en-US: Anslutning
+    nb-NO: Anslutning
+    sv-SE: Anslutning
+  description:
+    da-DK: Anslutning
+    en-US: Anslutning
+    nb-NO: Anslutning
+    sv-SE: Anslutning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

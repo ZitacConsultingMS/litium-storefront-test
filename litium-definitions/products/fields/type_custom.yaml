@@ -1,0 +1,14 @@
+productFields:
+- id: type_custom
+  type: Text
+  name:
+    sv-SE: Typ
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

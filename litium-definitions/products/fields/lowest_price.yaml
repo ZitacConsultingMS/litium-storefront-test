@@ -1,0 +1,16 @@
+productFields:
+- id: lowest_price
+  type: Decimal
+  name:
+    sv-SE: Lägsta pris senaste 30dagarna
+  description:
+    sv-SE: Lägsta pris senaste 30dagarna
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,22 @@
+productFields:
+- id: is_special_freight
+  type: Boolean
+  name:
+    da-DK: isSpecialFreight
+    en-US: isSpecialFreight
+    nb-NO: isSpecialFreight
+    sv-SE: isSpecialFreight
+  description:
+    da-DK: isSpecialFreight
+    en-US: isSpecialFreight
+    nb-NO: isSpecialFreight
+    sv-SE: isSpecialFreight
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

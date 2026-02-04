@@ -1,0 +1,19 @@
+productTemplates:
+- type: Product
+  variantFieldGroups:
+  - id: fields
+    name:
+      sv-SE: Fält
+    fields:
+    - id: _name
+    - id: _description
+    - id: brand
+    - id: brandImage
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  useVariantUrl: false
+  id: brandexport
+  name:
+    sv-SE: Varumärkesexport

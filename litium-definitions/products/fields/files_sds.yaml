@@ -1,0 +1,22 @@
+productFields:
+- id: files_sds
+  type: Boolean
+  name:
+    da-DK: FilesSDS
+    en-US: FilesSDS
+    nb-NO: FilesSDS
+    sv-SE: FilesSDS
+  description:
+    da-DK: FilesSDS
+    en-US: FilesSDS
+    nb-NO: FilesSDS
+    sv-SE: FilesSDS
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

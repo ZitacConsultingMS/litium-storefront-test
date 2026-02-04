@@ -1,0 +1,22 @@
+productFields:
+- id: from
+  type: Text
+  name:
+    da-DK: Från
+    en-US: Från
+    nb-NO: Från
+    sv-SE: Från
+  description:
+    da-DK: Från
+    en-US: Från
+    nb-NO: Från
+    sv-SE: Från
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

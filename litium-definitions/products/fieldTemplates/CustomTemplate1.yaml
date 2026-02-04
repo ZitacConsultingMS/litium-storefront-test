@@ -1,0 +1,132 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Generellt
+    fields:
+    - id: _name
+    - id: _description
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  variantFieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Generellt
+    fields:
+    - id: _name
+    - id: _description
+    - id: _seoDescription
+    - id: _seoTitle
+    - id: _url
+    administration:
+      collapsed: true
+    storefront:
+      visible: false
+  - id: ERP Data
+    name:
+      en-US: ERP Data
+      sv-SE: ERP Data
+    fields:
+    - id: ean
+    - id: erp_country_id
+    - id: erp_gross_weight
+    - id: erp_hazardous
+    - id: erp_status
+    - id: erp_supplier_article_number
+    - id: erp_status_info
+    - id: erp_unit
+    - id: erp_vat_id
+    - id: erp_article_number
+    - id: erp_purchase_price
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Other
+    name:
+      en-US: Other
+      sv-SE: Övrigt
+    fields:
+    - id: bullets
+    - id: clp_code
+    - id: created
+    - id: description
+    - id: files_sds
+    - id: ghs_code
+    - id: h1
+    - id: info
+    - id: is_not_deliverable
+    - id: is_pickup_at_store
+    - id: is_special_freight
+    - id: is_special_goods
+    - id: keywords
+    - id: new_end
+    - id: new_start
+    - id: show_supplier_art_number
+    - id: ean
+    - id: color
+    - id: publish_start
+    - id: weight_kg
+    - id: description_short
+    - id: brandImage
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Brand
+    name:
+      sv-SE: Varumärke
+    fields:
+    - id: brandName
+    - id: brandImage
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Media
+    name:
+      sv-SE: Media
+    fields:
+    - id: mediaurl_link
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Accordions
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: LagerLeverans
+    name:
+      sv-SE: Lager & Leverans
+    fields:
+    - id: eta_qty_primarystock
+    - id: eta_primary_stock
+    - id: shipping_mark_nshift
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  - id: Artikelmedaljer
+    fields:
+    - id: product_tags
+    administration:
+      collapsed: true
+    storefront:
+      visible: true
+  displayFieldGroups:
+  - id: color_weight-kg
+    fields:
+    - id: color
+    - id: weight_kg
+  useVariantUrl: true
+  id: CustomTemplate1
+  name:
+    en-US: Custom Product Template
+    sv-SE: Färg / Vikt kg

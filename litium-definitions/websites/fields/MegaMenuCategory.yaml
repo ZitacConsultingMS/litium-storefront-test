@@ -1,0 +1,20 @@
+websiteFields:
+- id: MegaMenuCategory
+  type: Pointer
+  name:
+    en-US: Category
+    sv-SE: Kategori
+  description:
+    en-US: If a category is chosen, the link will redirect to the category in the first place. If no category is selected, the link will redirect to the page selected.
+    sv-SE: Om du anger en kategori leder länken till kategorin. Om du inte anger någon kategori leder länken till den sida du anger.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: ProductsCategory

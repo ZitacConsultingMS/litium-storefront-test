@@ -1,0 +1,31 @@
+productTemplates:
+- type: Category
+  categoryFieldGroups:
+  - id: General
+    name:
+      da: General
+      de: General
+      en-US: byggis-category-fieldtemplate
+      en: General
+      sv: General
+      fi: General
+      nb: General
+    fields:
+    - id: _name
+    - id: _description
+    - id: _url
+    - id: _seoTitle
+    - id: _seoDescription
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: byggis-category-fieldtemplate
+  name:
+    da: byggis-category-fieldtemplate
+    de: byggis-category-fieldtemplate
+    en: byggis-category-fieldtemplate
+    en-US: byggis-category-fieldtemplate
+    fi: byggis-category-fieldtemplate
+    nb: byggis-category-fieldtemplate
+    sv: byggis-category-fieldtemplate

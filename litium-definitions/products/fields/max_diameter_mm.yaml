@@ -1,0 +1,22 @@
+productFields:
+- id: max_diameter_mm
+  type: Text
+  name:
+    da-DK: Max Ø (mm)
+    en-US: Max Ø (mm)
+    nb-NO: Max Ø (mm)
+    sv-SE: Max Ø (mm)
+  description:
+    da-DK: Max Ø (mm)
+    en-US: Max Ø (mm)
+    nb-NO: Max Ø (mm)
+    sv-SE: Max Ø (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

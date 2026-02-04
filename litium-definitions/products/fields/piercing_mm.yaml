@@ -1,0 +1,22 @@
+productFields:
+- id: piercing_mm
+  type: Text
+  name:
+    da-DK: Håltag (mm)
+    en-US: Håltag (mm)
+    nb-NO: Håltag (mm)
+    sv-SE: Håltag (mm)
+  description:
+    da-DK: Håltag (mm)
+    en-US: Håltag (mm)
+    nb-NO: Håltag (mm)
+    sv-SE: Håltag (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: volt
+  type: Text
+  name:
+    da-DK: Volt
+    en-US: Volt
+    nb-NO: Volt
+    sv-SE: Volt
+  description:
+    da-DK: Volt
+    en-US: Volt
+    nb-NO: Volt
+    sv-SE: Volt
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

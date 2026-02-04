@@ -1,0 +1,21 @@
+productFields:
+- id: description_short
+  type: Text
+  name:
+    da-DK: Beskrivning
+    de-DE: Beskrivning
+    en-US: Beskrivning
+    fi-FI: Beskrivning
+    nb-NO: Beskrivning
+    sv-SE: Beskrivning
+  description:
+    sv-SE: Beskrivning kort
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,15 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: fields
+    fields:
+    - id: lowest_price
+    - id: member_price
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  useVariantUrl: false
+  id: testprisimport
+  name:
+    sv-SE: Test prisimport/export

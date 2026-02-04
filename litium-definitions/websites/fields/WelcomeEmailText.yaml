@@ -1,0 +1,18 @@
+websiteFields:
+- id: WelcomeEmailText
+  type: Editor
+  name:
+    en-US: Welcome email text
+    sv-SE: Text
+  description:
+    en-US: The content of the welcome email sent to new customers.
+    sv-SE: Meddelandetexten i det välkomstmeddelande som skickas till nya kunder.
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

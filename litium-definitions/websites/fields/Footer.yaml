@@ -1,0 +1,21 @@
+websiteFields:
+- id: Footer
+  type: MultiField
+  name:
+    en-US: Footer
+    sv-SE: Sidfot
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - FooterHeader
+    - FooterLinkList
+    - FooterText
+    isArray: true

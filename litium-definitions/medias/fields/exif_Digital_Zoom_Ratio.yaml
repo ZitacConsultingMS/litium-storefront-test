@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Digital_Zoom_Ratio
+  type: Text
+  name:
+    en-US: Digital Zoom Ratio
+    sv-SE: Digitalt zoomomfång
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

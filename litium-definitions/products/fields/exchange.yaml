@@ -1,0 +1,22 @@
+productFields:
+- id: exchange
+  type: Text
+  name:
+    da-DK: Utväxling
+    en-US: Utväxling
+    nb-NO: Utväxling
+    sv-SE: Utväxling
+  description:
+    da-DK: Utväxling
+    en-US: Utväxling
+    nb-NO: Utväxling
+    sv-SE: Utväxling
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

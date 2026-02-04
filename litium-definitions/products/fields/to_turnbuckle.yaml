@@ -1,0 +1,22 @@
+productFields:
+- id: to_turnbuckle
+  type: Text
+  name:
+    da-DK: För vantskruv
+    en-US: För vantskruv
+    nb-NO: För vantskruv
+    sv-SE: För vantskruv
+  description:
+    da-DK: För vantskruv
+    en-US: För vantskruv
+    nb-NO: För vantskruv
+    sv-SE: För vantskruv
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

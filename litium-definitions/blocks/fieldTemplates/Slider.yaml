@@ -1,0 +1,33 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-images
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Slides
+    name:
+      en-US: Slides
+      sv-SE: Slides
+    fields:
+    - id: Slider
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Slider
+  name:
+    en-US: Slider
+    sv-SE: Slider

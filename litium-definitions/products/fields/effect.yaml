@@ -1,0 +1,22 @@
+productFields:
+- id: effect
+  type: Text
+  name:
+    da-DK: Effekt
+    en-US: Effekt
+    nb-NO: Effekt
+    sv-SE: Effekt
+  description:
+    da-DK: Effekt
+    en-US: Effekt
+    nb-NO: Effekt
+    sv-SE: Effekt
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

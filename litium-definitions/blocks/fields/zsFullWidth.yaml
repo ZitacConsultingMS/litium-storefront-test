@@ -1,0 +1,14 @@
+blockFields:
+- id: zsFullWidth
+  type: Boolean
+  name:
+    sv-SE: Fullbredd på text i texteditor
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

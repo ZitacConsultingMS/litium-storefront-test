@@ -1,0 +1,5 @@
+customerRoles:
+- id: OrderApprover
+  name:
+    en-US: Order approver
+    sv-SE: Ordergodkännare

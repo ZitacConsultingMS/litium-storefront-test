@@ -1,0 +1,22 @@
+productFields:
+- id: ngk_designation
+  type: Text
+  name:
+    da-DK: NGK beteckning
+    en-US: NGK beteckning
+    nb-NO: NGK beteckning
+    sv-SE: NGK beteckning
+  description:
+    da-DK: NGK beteckning
+    en-US: NGK beteckning
+    nb-NO: NGK beteckning
+    sv-SE: NGK beteckning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: article_supplier_art_nr
+  type: Text
+  name:
+    da-DK: SupplierArtNr
+    en-US: SupplierArtNr
+    nb-NO: SupplierArtNr
+    sv-SE: SupplierArtNr
+  description:
+    da-DK: SupplierArtNr
+    en-US: SupplierArtNr
+    nb-NO: SupplierArtNr
+    sv-SE: SupplierArtNr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

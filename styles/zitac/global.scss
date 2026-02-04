@@ -1,0 +1,83 @@
+@use './abstracts/' as *;
+@use 'sass:color';
+
+body {
+  background-color: #f9f9f9 !important;
+  color: $text-color;
+  main {
+    ul {
+      list-style: disc;
+      padding-inline-start: 20px;
+    }
+    .texteditor-block {
+      a {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+  // button[type='button'],
+  .button {
+    // border-radius: 0.625rem;
+    font-weight: 500;
+    padding: 0.7rem 2rem;
+  }
+
+  .buy-button--loading {
+    > button {
+      &::before {
+        border-radius: 0.75rem;
+        background-color: color.adjust($light-green, $lightness: -10%);
+      }
+    }
+  }
+
+  .buy-button--success {
+    > button {
+      background-color: color.adjust($light-green, $lightness: -10%);
+    }
+  }
+
+  .product-card {
+    .buy-button--success {
+      > button {
+        width: 3.5rem;
+        height: 2.5rem;
+        &::before {
+          margin: auto;
+          right: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .paxa-button {
+    background-color: transparent !important;
+    color: $dark-green !important;
+    border: 1px solid $dark-green;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .ghost-button {
+    background-color: transparent !important;
+    color: $dark-gray !important;
+    border: 1px solid $border;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .load-more {
+    text-transform: uppercase;
+    background-color: transparent !important;
+    color: $text-color !important;
+    border-bottom: 1px solid;
+    padding: 0px !important;
+    width: auto;
+    border-radius: 0 !important;
+    font-weight: 400 !important;
+  }
+
+  .texteditor-block {
+    iframe {
+      @apply rounded-sm;
+    }
+  }
+}

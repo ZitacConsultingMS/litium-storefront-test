@@ -15,4 +15,3 @@ websiteFields:
       searchable: false
   option:
     entityType: ProductsProductList
-    multiSelect: false

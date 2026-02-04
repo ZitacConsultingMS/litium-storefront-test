@@ -1,0 +1,22 @@
+productFields:
+- id: oe_number
+  type: Text
+  name:
+    da-DK: OE nr
+    en-US: OE nr
+    nb-NO: OE nr
+    sv-SE: OE nr
+  description:
+    da-DK: OE nr
+    en-US: OE nr
+    nb-NO: OE nr
+    sv-SE: OE nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,51 @@
+@use './abstracts/' as *;
+
+section.faq-container {
+  & input[type='checkbox'] {
+    display: none;
+  }
+}
+
+details.faqWrapper {
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px solid $border-color;
+  padding: 10px;
+  width: 100%;
+  // max-width: 900px;
+  //margin: 0 auto 10px;
+}
+
+.question {
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+
+  &::after {
+    content: '';
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    border: 2px solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    vertical-align: top;
+    transition: transform 0.3s;
+  }
+}
+
+details .collapsible-content {
+  max-height: 0;
+}
+
+details[open] .collapsible-content {
+  padding-left: 0.5em;
+  max-height: 1000px;
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.3s ease-in-out;
+}

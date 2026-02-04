@@ -1,0 +1,28 @@
+websiteFields:
+- id: HeaderLayout
+  type: TextOption
+  name:
+    en-US: Header layout
+    sv-SE: Sidhuvudtyp
+  description:
+    en-US: Select between two headers. The one row option has one row with logotype, top menu, cart and more. The two option has one row with logotype, cart search etc, and a second row for caegory navigation links.
+    sv-SE: Välj mellan två typer av sidhuvuden. Med alternativet En rad visas en rad med bland annat logotyp, toppmeny och varukorg. Med alternativet Två rader visas en rad med bland annat logotyp, varukorg och sökfält samt en rad med navigeringslänkar till kategorier.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: One row
+        sv-SE: En rad
+      value: OneRow
+    - name:
+        en-US: Two rows
+        sv-SE: Två rader
+      value: TwoRows

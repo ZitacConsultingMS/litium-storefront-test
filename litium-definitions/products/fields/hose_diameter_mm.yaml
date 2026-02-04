@@ -1,0 +1,22 @@
+productFields:
+- id: hose_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Slang (mm)
+    en-US: Ø Slang (mm)
+    nb-NO: Ø Slang (mm)
+    sv-SE: Ø Slang (mm)
+  description:
+    da-DK: Ø Slang (mm)
+    en-US: Ø Slang (mm)
+    nb-NO: Ø Slang (mm)
+    sv-SE: Ø Slang (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

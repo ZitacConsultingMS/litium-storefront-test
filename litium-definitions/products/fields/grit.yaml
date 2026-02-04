@@ -1,0 +1,22 @@
+productFields:
+- id: grit
+  type: Text
+  name:
+    da-DK: Korn
+    en-US: Korn
+    nb-NO: Korn
+    sv-SE: Korn
+  description:
+    da-DK: Korn
+    en-US: Korn
+    nb-NO: Korn
+    sv-SE: Korn
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

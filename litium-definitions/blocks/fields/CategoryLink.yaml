@@ -15,4 +15,3 @@ blockFields:
       searchable: true
   option:
     entityType: ProductsCategory
-    multiSelect: false

@@ -1,0 +1,30 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-columns
+  childBlocks:
+    combination: IncludeSelected
+    selections:
+    - id: zsTextEditor
+    - id: zsImage
+    - id: zsFAQ
+    - id: zsHTML
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: zsBackgroundColor
+    - id: zsBackgroundImage
+    - id: zsAlignItems
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsLayoutThreeColumns
+  name:
+    en-US: 'Layout: Three Columns'
+    sv-SE: 'Layout: Tre Kolumner'

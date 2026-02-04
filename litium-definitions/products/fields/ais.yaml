@@ -1,0 +1,22 @@
+productFields:
+- id: ais
+  type: Text
+  name:
+    da-DK: AIS
+    en-US: AIS
+    nb-NO: AIS
+    sv-SE: AIS
+  description:
+    da-DK: AIS
+    en-US: AIS
+    nb-NO: AIS
+    sv-SE: AIS
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

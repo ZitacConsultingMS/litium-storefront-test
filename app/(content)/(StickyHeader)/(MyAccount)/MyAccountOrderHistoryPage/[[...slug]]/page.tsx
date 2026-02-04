@@ -7,7 +7,7 @@ import {
   MainContent,
   SideNavigation,
   SideNavigationLayout,
-} from 'components/layouts/SideNavigationLayout';
+} from 'components/layouts/zitac/MyAccountSideNavigationLayout';
 import { Block } from 'models/block';
 import { ContentItem } from 'models/content';
 import { NavigationLink } from 'models/navigation';
@@ -61,7 +61,7 @@ export default async function Page(props: { params: Promise<any> }) {
           childrenPages={children}
         />
         <MainContent breadcrumbs={breadcrumbs}>
-          <Heading2 className="mb-8 mt-10 lg:mb-4">{name}</Heading2>
+          <Heading2 className="mb-6 mt-10 mobile:text-xl">{name}</Heading2>
           {isB2B ? (
             <B2BOrderHistory params={params} />
           ) : (

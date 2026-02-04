@@ -1,0 +1,22 @@
+productFields:
+- id: article_ean
+  type: Text
+  name:
+    da-DK: EAN DA
+    en-US: EAN EN
+    nb-NO: EAN NO
+    sv-SE: EAN SV AMIR TEST
+  description:
+    da-DK: EAN DA
+    en-US: EAN EN
+    nb-NO: EAN NO
+    sv-SE: EAN SV AMIR TEST
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

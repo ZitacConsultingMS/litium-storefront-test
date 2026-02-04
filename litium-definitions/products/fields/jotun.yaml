@@ -1,0 +1,22 @@
+productFields:
+- id: jotun
+  type: Text
+  name:
+    da-DK: Jotun
+    en-US: Jotun
+    nb-NO: Jotun
+    sv-SE: Jotun
+  description:
+    da-DK: Jotun
+    en-US: Jotun
+    nb-NO: Jotun
+    sv-SE: Jotun
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

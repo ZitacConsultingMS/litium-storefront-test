@@ -1,0 +1,22 @@
+productFields:
+- id: article_reference
+  type: Text
+  name:
+    da-DK: Artikelnummer
+    en-US: Article number
+    nb-NO: Artikelnummer
+    sv-SE: Artikelnummer2
+  description:
+    da-DK: Artikelnummer
+    en-US: Article number
+    nb-NO: Artikelnummer
+    sv-SE: Artikelnummer2
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

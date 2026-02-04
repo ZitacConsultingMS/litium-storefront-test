@@ -1,0 +1,57 @@
+blockFields:
+- id: zsBackgroundBlur
+  type: TextOption
+  name:
+    en-US: Background Blur
+    sv-SE: Background Blur
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        da-DK: ''
+        en-US: ''
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: xs
+      value: backdrop-blur-xs
+    - name:
+        da-DK: ''
+        en-US: ''
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: sm
+      value: backdrop-blur-sm
+    - name:
+        da-DK: ''
+        en-US: ''
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: md
+      value: backdrop-blur-md
+    - name:
+        da-DK: ''
+        en-US: ''
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: lg
+      value: backdrop-blur-lg
+    - name:
+        da-DK: ''
+        en-US: ''
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: none
+      value: backdrop-blur-none

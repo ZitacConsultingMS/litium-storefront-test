@@ -1,0 +1,1320 @@
+productFields:
+- id: brandName
+  type: TextOption
+  name:
+    sv-SE: Varumärkesnamn
+  description:
+    sv-SE: Varumärkesnamn
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: Isotta
+      value: Isotta
+    - name:
+        sv-SE: aXent
+      value: aXent
+    - name:
+        sv-SE: Owatrol
+      value: Owatrol
+    - name:
+        sv-SE: Mercury Mercruiser
+      value: Mercury_Mercruiser
+    - name:
+        sv-SE: Quick
+      value: Quick
+    - name:
+        sv-SE: Lalizas
+      value: Lalizas
+    - name:
+        sv-SE: NGK
+      value: NGK
+    - name:
+        sv-SE: Whale
+      value: Whale
+    - name:
+        sv-SE: CTEK
+      value: CTEK
+    - name:
+        sv-SE: Pro Supply
+      value: Pro_Supply
+    - name:
+        sv-SE: Energizer
+      value: Energizer
+    - name:
+        sv-SE: Yanmar
+      value: Yanmar
+    - name:
+        sv-SE: Seaflo
+      value: Seaflo
+    - name:
+        sv-SE: Ultraflex
+      value: Ultraflex
+    - name:
+        sv-SE: ELKA Design
+      value: ELKA_Design
+    - name:
+        sv-SE: Motorguide
+      value: Motorguide
+    - name:
+        sv-SE: Springfield Marine
+      value: Springfield_Marine
+    - name:
+        sv-SE: JL Audio
+      value: JL_Audio
+    - name:
+        sv-SE: CRC
+      value: CRC
+    - name:
+        sv-SE: BEP
+      value: BEP
+    - name:
+        sv-SE: RORSMAN
+      value: RORSMAN
+    - name:
+        sv-SE: TREM
+      value: TREM
+    - name:
+        sv-SE: ATTWOOD
+      value: ATTWOOD
+    - name:
+        sv-SE: SAFEQUIP
+      value: SAFEQUIP
+    - name:
+        sv-SE: OSCULATI
+      value: OSCULATI
+    - name:
+        sv-SE: AROMA
+      value: AROMA
+    - name:
+        sv-SE: JUKOVA
+      value: JUKOVA
+    - name:
+        sv-SE: XMARINE
+      value: XMARINE
+    - name:
+        sv-SE: LIROS
+      value: LIROS
+    - name:
+        sv-SE: OCEAN COMFORT
+      value: OCEAN_COMFORT
+    - name:
+        sv-SE: SUNWIND
+      value: SUNWIND
+    - name:
+        sv-SE: SHORESTEP
+      value: SHORESTEP
+    - name:
+        sv-SE: AXENT
+      value: AXENT
+    - name:
+        sv-SE: SEAFLO
+      value: SEAFLO
+    - name:
+        sv-SE: EASTERNER
+      value: EASTERNER
+    - name:
+        sv-SE: VELCRON
+      value: VELCRON
+    - name:
+        sv-SE: POLYWOOD
+      value: POLYWOOD
+    - name:
+        sv-SE: NAWA
+      value: NAWA
+    - name:
+        sv-SE: ADELA
+      value: ADELA
+    - name:
+        sv-SE: MAJONI
+      value: MAJONI
+    - name:
+        sv-SE: FEND FIX
+      value: FEND_FIX
+    - name:
+        sv-SE: FENDEQUIP
+      value: FENDEQUIP
+    - name:
+        sv-SE: MR MOORING
+      value: MR_MOORING
+    - name:
+        sv-SE: POLYFORM
+      value: POLYFORM
+    - name:
+        sv-SE: SHIP-SHAPE
+      value: SHIP_SHAPE
+    - name:
+        sv-SE: M-PROTECT
+      value: M_PROTECT
+    - name:
+        sv-SE: EKKO
+      value: EKKO
+    - name:
+        sv-SE: SPINLOCK
+      value: SPINLOCK
+    - name:
+        sv-SE: BARTON MARINE
+      value: BARTON_MARINE
+    - name:
+        sv-SE: HELLA MARINE
+      value: HELLA_MARINE
+    - name:
+        sv-SE: NAUTILIGHT
+      value: NAUTILIGHT
+    - name:
+        sv-SE: MARINCO
+      value: MARINCO
+    - name:
+        sv-SE: WEBASTO
+      value: WEBASTO
+    - name:
+        sv-SE: DOMETIC
+      value: DOMETIC
+    - name:
+        sv-SE: CAN
+      value: CAN
+    - name:
+        sv-SE: VETUS
+      value: VETUS
+    - name:
+        sv-SE: AEROT
+      value: AEROT
+    - name:
+        sv-SE: LAHNAKOSKI
+      value: LAHNAKOSKI
+    - name:
+        sv-SE: BALTIC
+      value: BALTIC
+    - name:
+        sv-SE: ANKAROLINA
+      value: ANKAROLINA
+    - name:
+        sv-SE: HANGÖ
+      value: HANG
+    - name:
+        sv-SE: SCEPTER MARINE
+      value: SCEPTER_MARINE
+    - name:
+        sv-SE: NUOVA RADE
+      value: NUOVA_RADE
+    - name:
+        sv-SE: QUICKSILVER
+      value: QUICKSILVER
+    - name:
+        sv-SE: ARC MARINE
+      value: ARC_MARINE
+    - name:
+        sv-SE: BEMA
+      value: BEMA
+    - name:
+        sv-SE: SEAWORLD
+      value: SEAWORLD
+    - name:
+        sv-SE: COMFORT SEAT
+      value: COMFORT_SEAT
+    - name:
+        sv-SE: SMART LIVING
+      value: SMART_LIVING
+    - name:
+        sv-SE: SAILCROFT
+      value: SAILCROFT
+    - name:
+        sv-SE: SPRINGFIELD MARINE
+      value: SPRINGFIELD_MARINE
+    - name:
+        sv-SE: OPTIPARTS
+      value: OPTIPARTS
+    - name:
+        sv-SE: SELDEN
+      value: SELDEN
+    - name:
+        sv-SE: MULTIMARINE
+      value: MULTIMARINE
+    - name:
+        sv-SE: RUTGERSON
+      value: RUTGERSON
+    - name:
+        sv-SE: WINCHRITE
+      value: WINCHRITE
+    - name:
+        sv-SE: VAJERT
+      value: VAJERT
+    - name:
+        sv-SE: WICHARD
+      value: WICHARD
+    - name:
+        sv-SE: SILVA
+      value: SILVA
+    - name:
+        sv-SE: SJÖFARTSVERKET
+      value: SJ_FARTSVERKET
+    - name:
+        sv-SE: ULTRAFLEX
+      value: ULTRAFLEX
+    - name:
+        sv-SE: WINDEX
+      value: WINDEX
+    - name:
+        sv-SE: SIMARINE
+      value: SIMARINE
+    - name:
+        sv-SE: OCEAN SIGNAL
+      value: OCEAN_SIGNAL
+    - name:
+        sv-SE: JOTRON
+      value: JOTRON
+    - name:
+        sv-SE: VERATRON
+      value: VERATRON
+    - name:
+        sv-SE: ALDE
+      value: ALDE
+    - name:
+        sv-SE: IGT
+      value: IGT
+    - name:
+        sv-SE: NEXA
+      value: NEXA
+    - name:
+        sv-SE: WALLAS
+      value: WALLAS
+    - name:
+        sv-SE: KEMETYL
+      value: KEMETYL
+    - name:
+        sv-SE: JOHNSON PUMP
+      value: JOHNSON_PUMP
+    - name:
+        sv-SE: JABSCO
+      value: JABSCO
+    - name:
+        sv-SE: CIPAX
+      value: CIPAX
+    - name:
+        sv-SE: MATROMARINE
+      value: MATROMARINE
+    - name:
+        sv-SE: ISENS
+      value: ISENS
+    - name:
+        sv-SE: AUTOTERM
+      value: AUTOTERM
+    - name:
+        sv-SE: BIOCOOL
+      value: BIOCOOL
+    - name:
+        sv-SE: ELKA DESIGN
+      value: ELKA_DESIGN
+    - name:
+        sv-SE: WHALE
+      value: WHALE
+    - name:
+        sv-SE: OMNIA
+      value: OMNIA
+    - name:
+        sv-SE: SHARKBITE
+      value: SHARKBITE
+    - name:
+        sv-SE: ECO CELAN
+      value: ECO_CELAN
+    - name:
+        sv-SE: YACHTICON
+      value: YACHTICON
+    - name:
+        sv-SE: PLASTEX
+      value: PLASTEX
+    - name:
+        sv-SE: TRUDESIGN
+      value: TRUDESIGN
+    - name:
+        sv-SE: LOCTITE
+      value: LOCTITE
+    - name:
+        sv-SE: PRO SUPPLY
+      value: PRO_SUPPLY
+    - name:
+        sv-SE: HOSES TECHNOLOGY
+      value: HOSES_TECHNOLOGY
+    - name:
+        sv-SE: ORBITRADE
+      value: ORBITRADE
+    - name:
+        sv-SE: ORIONDO
+      value: ORIONDO
+    - name:
+        sv-SE: ROCA
+      value: ROCA
+    - name:
+        sv-SE: WEMA
+      value: WEMA
+    - name:
+        sv-SE: RAYMARINE
+      value: RAYMARINE
+    - name:
+        sv-SE: ALLREMOTE
+      value: ALLREMOTE
+    - name:
+        sv-SE: ENERGIZER
+      value: ENERGIZER
+    - name:
+        sv-SE: BLUE SEAS SYSTEMS
+      value: BLUE_SEAS_SYSTEMS
+    - name:
+        sv-SE: VARTA
+      value: VARTA
+    - name:
+        sv-SE: GLOMEX
+      value: GLOMEX
+    - name:
+        sv-SE: LTC
+      value: LTC
+    - name:
+        sv-SE: SUTARS SWEDEN
+      value: SUTARS_SWEDEN
+    - name:
+        sv-SE: PSP MARINE TAPES
+      value: PSP_MARINE_TAPES
+    - name:
+        sv-SE: GORILLA TAPE
+      value: GORILLA_TAPE
+    - name:
+        sv-SE: TESA
+      value: TESA
+    - name:
+        sv-SE: 3M
+      value: 3M
+    - name:
+        sv-SE: LÄNSMAN
+      value: L_NSMAN
+    - name:
+        sv-SE: ÖRNBOJEN
+      value: RNBOJEN
+    - name:
+        sv-SE: MERX
+      value: MERX
+    - name:
+        sv-SE: ANCHORIGHT
+      value: ANCHORIGHT
+    - name:
+        sv-SE: RED DUTY
+      value: RED_DUTY
+    - name:
+        sv-SE: MELUTON
+      value: MELUTON
+    - name:
+        sv-SE: NOA
+      value: NOA
+    - name:
+        sv-SE: TYRESÖSTÖTTAN
+      value: TYRES_ST_TTAN
+    - name:
+        sv-SE: TYRESÖBOCKEN
+      value: TYRES_BOCKEN
+    - name:
+        sv-SE: UNIMER
+      value: UNIMER
+    - name:
+        sv-SE: LALIZAS
+      value: LALIZAS
+    - name:
+        sv-SE: ANODE CONCEPT
+      value: ANODE_CONCEPT
+    - name:
+        sv-SE: SNUBBER
+      value: SNUBBER
+    - name:
+        sv-SE: WETNFUN
+      value: WETNFUN
+    - name:
+        sv-SE: RULE
+      value: RULE
+    - name:
+        sv-SE: VAKE
+      value: VAKE
+    - name:
+        sv-SE: MOBIL OIL
+      value: MOBIL_OIL
+    - name:
+        sv-SE: SCANSTRUT
+      value: SCANSTRUT
+    - name:
+        sv-SE: VOLVO PENTA
+      value: VOLVO_PENTA
+    - name:
+        sv-SE: EURODESIGN
+      value: EURODESIGN
+    - name:
+        sv-SE: LAGUN
+      value: LAGUN
+    - name:
+        sv-SE: SPINERA
+      value: SPINERA
+    - name:
+        sv-SE: MARTEC
+      value: MARTEC
+    - name:
+        sv-SE: OCEAN PRO PLUS
+      value: OCEAN_PRO_PLUS
+    - name:
+        sv-SE: CHAMPION
+      value: CHAMPION
+    - name:
+        sv-SE: ISOTEMP
+      value: ISOTEMP
+    - name:
+        sv-SE: SCOTT BADER
+      value: SCOTT_BADER
+    - name:
+        sv-SE: NM BÅTEPOXI
+      value: NM_B_TEPOXI
+    - name:
+        sv-SE: TURTLE
+      value: TURTLE
+    - name:
+        sv-SE: AUTOSOL
+      value: AUTOSOL
+    - name:
+        sv-SE: SCHULLER
+      value: SCHULLER
+    - name:
+        sv-SE: OX-ON
+      value: OX_ON
+    - name:
+        sv-SE: WAGNER
+      value: WAGNER
+    - name:
+        sv-SE: PRO SCRAPER
+      value: PRO_SCRAPER
+    - name:
+        sv-SE: STARBRITE
+      value: STARBRITE
+    - name:
+        sv-SE: SIKA
+      value: SIKA
+    - name:
+        sv-SE: TORRBOLLEN
+      value: TORRBOLLEN
+    - name:
+        sv-SE: THETFORD
+      value: THETFORD
+    - name:
+        sv-SE: MIRKA
+      value: MIRKA
+    - name:
+        sv-SE: WEST SYSTEM
+      value: WEST_SYSTEM
+    - name:
+        sv-SE: AC DELCO
+      value: AC_DELCO
+    - name:
+        sv-SE: INTERNATIONAL
+      value: INTERNATIONAL
+    - name:
+        sv-SE: SJÖ&HAV
+      value: SJ_HAV
+    - name:
+        sv-SE: GULLSWEEP
+      value: GULLSWEEP
+    - name:
+        sv-SE: STOPGULL
+      value: STOPGULL
+    - name:
+        sv-SE: AZURE
+      value: AZURE
+    - name:
+        sv-SE: AUTONAUTIC INSTRUMENTAL
+      value: AUTONAUTIC_INSTRUMENTAL
+    - name:
+        sv-SE: MERCURY
+      value: MERCURY
+    - name:
+        sv-SE: GARMIN
+      value: GARMIN
+    - name:
+        sv-SE: SIMRAD
+      value: SIMRAD
+    - name:
+        sv-SE: B&G
+      value: B_G
+    - name:
+        sv-SE: LOWRANCE
+      value: LOWRANCE
+    - name:
+        sv-SE: NAVIONICS
+      value: NAVIONICS
+    - name:
+        sv-SE: VDO
+      value: VDO
+    - name:
+        sv-SE: GOBIUS
+      value: GOBIUS
+    - name:
+        sv-SE: SAFIERY
+      value: SAFIERY
+    - name:
+        sv-SE: RUUVI
+      value: RUUVI
+    - name:
+        sv-SE: NORTHTRACKER
+      value: NORTHTRACKER
+    - name:
+        sv-SE: C-POD
+      value: C_POD
+    - name:
+        sv-SE: SENSAR MARINE
+      value: SENSAR_MARINE
+    - name:
+        sv-SE: REDKNOWS
+      value: REDKNOWS
+    - name:
+        sv-SE: PICZO
+      value: PICZO
+    - name:
+        sv-SE: JL AUDIO
+      value: JL_AUDIO
+    - name:
+        sv-SE: CLARION
+      value: CLARION
+    - name:
+        sv-SE: C-MAP
+      value: C_MAP
+    - name:
+        sv-SE: ICOM
+      value: ICOM
+    - name:
+        sv-SE: ROKK
+      value: ROKK
+    - name:
+        sv-SE: COBRA
+      value: COBRA
+    - name:
+        sv-SE: FOCUS
+      value: FOCUS
+    - name:
+        sv-SE: SIONYX
+      value: SIONYX
+    - name:
+        sv-SE: DANFENDER
+      value: DANFENDER
+    - name:
+        sv-SE: BÅTSYSTEM
+      value: B_TSYSTEM
+    - name:
+        sv-SE: SKEPPSHULT STEGEN
+      value: SKEPPSHULT_STEGEN
+    - name:
+        sv-SE: FIXCLIP
+      value: FIXCLIP
+    - name:
+        sv-SE: SCRUBBIS
+      value: SCRUBBIS
+    - name:
+        sv-SE: TRANSCLEAN
+      value: TRANSCLEAN
+    - name:
+        sv-SE: LEFANT
+      value: LEFANT
+    - name:
+        sv-SE: TCNANO
+      value: TCNANO
+    - name:
+        sv-SE: ULTRAGLOZZ
+      value: ULTRAGLOZZ
+    - name:
+        sv-SE: ABNET
+      value: ABNET
+    - name:
+        sv-SE: SNAPPY TEAK
+      value: SNAPPY_TEAK
+    - name:
+        sv-SE: GOLDEN TEAK
+      value: GOLDEN_TEAK
+    - name:
+        sv-SE: EPIFANES
+      value: EPIFANES
+    - name:
+        sv-SE: HEMPEL
+      value: HEMPEL
+    - name:
+        sv-SE: NOMO
+      value: NOMO
+    - name:
+        sv-SE: FARM
+      value: FARM
+    - name:
+        sv-SE: OWATROL
+      value: OWATROL
+    - name:
+        sv-SE: BRAVA
+      value: BRAVA
+    - name:
+        sv-SE: SIMSON
+      value: SIMSON
+    - name:
+        sv-SE: CASCO
+      value: CASCO
+    - name:
+        sv-SE: ILLBRUCK
+      value: ILLBRUCK
+    - name:
+        sv-SE: PLASTIC PADDING
+      value: PLASTIC_PADDING
+    - name:
+        sv-SE: LE TONKINOIS
+      value: LE_TONKINOIS
+    - name:
+        sv-SE: VIKAN
+      value: VIKAN
+    - name:
+        sv-SE: DECKMATE
+      value: DECKMATE
+    - name:
+        sv-SE: JOTUN
+      value: JOTUN
+    - name:
+        sv-SE: CLAMCLEAT
+      value: CLAMCLEAT
+    - name:
+        sv-SE: ROBLINE
+      value: ROBLINE
+    - name:
+        sv-SE: COLUMBUS
+      value: COLUMBUS
+    - name:
+        sv-SE: 7OC
+      value: 7OC
+    - name:
+        sv-SE: WATERLINE DESIGN
+      value: WATERLINE_DESIGN
+    - name:
+        sv-SE: SPIROLL
+      value: SPIROLL
+    - name:
+        sv-SE: POLY ROPES
+      value: POLY_ROPES
+    - name:
+        sv-SE: BROBERG MARINE
+      value: BROBERG_MARINE
+    - name:
+        sv-SE: BARTON
+      value: BARTON
+    - name:
+        sv-SE: ITALWINCH
+      value: ITALWINCH
+    - name:
+        sv-SE: MUTIMARINE
+      value: MUTIMARINE
+    - name:
+        sv-SE: QUICK
+      value: QUICK
+    - name:
+        sv-SE: MAXPOWER
+      value: MAXPOWER
+    - name:
+        sv-SE: SLEIPNER
+      value: SLEIPNER
+    - name:
+        sv-SE: FORTRESS MARINE ANCHORS
+      value: FORTRESS_MARINE_ANCHORS
+    - name:
+        sv-SE: ROCNA
+      value: ROCNA
+    - name:
+        sv-SE: VULCAN
+      value: VULCAN
+    - name:
+        sv-SE: COMBILOCK
+      value: COMBILOCK
+    - name:
+        sv-SE: HANDYDOCK
+      value: HANDYDOCK
+    - name:
+        sv-SE: HOOK & MOOR
+      value: HOOK_MOOR
+    - name:
+        sv-SE: ARIDA
+      value: ARIDA
+    - name:
+        sv-SE: MEACO
+      value: MEACO
+    - name:
+        sv-SE: KASCO
+      value: KASCO
+    - name:
+        sv-SE: EBERSPÄCHER
+      value: EBERSP_CHER
+    - name:
+        sv-SE: ENO
+      value: ENO
+    - name:
+        sv-SE: OCEAN COMFORT GALLEY
+      value: OCEAN_COMFORT_GALLEY
+    - name:
+        sv-SE: CADAC
+      value: CADAC
+    - name:
+        sv-SE: DIABLO
+      value: DIABLO
+    - name:
+        sv-SE: SAVOY
+      value: SAVOY
+    - name:
+        sv-SE: BEAVER BRAND
+      value: BEAVER_BRAND
+    - name:
+        sv-SE: STRAHL
+      value: STRAHL
+    - name:
+        sv-SE: MARINE BUSINESS
+      value: MARINE_BUSINESS
+    - name:
+        sv-SE: ISOTHERM
+      value: ISOTHERM
+    - name:
+        sv-SE: VITIFRIGO
+      value: VITIFRIGO
+    - name:
+        sv-SE: IGLOO
+      value: IGLOO
+    - name:
+        sv-SE: 4S
+      value: 4S
+    - name:
+        sv-SE: BÅTSYSTEM LIGHTNING
+      value: B_TSYSTEM_LIGHTNING
+    - name:
+        sv-SE: BERKER
+      value: BERKER
+    - name:
+        sv-SE: OPTIMA
+      value: OPTIMA
+    - name:
+        sv-SE: GLOBAL
+      value: GLOBAL
+    - name:
+        sv-SE: TUDOR
+      value: TUDOR
+    - name:
+        sv-SE: NOCO
+      value: NOCO
+    - name:
+        sv-SE: RITAR
+      value: RITAR
+    - name:
+        sv-SE: NORDMAX
+      value: NORDMAX
+    - name:
+        sv-SE: LILEAD
+      value: LILEAD
+    - name:
+        sv-SE: YUASA
+      value: YUASA
+    - name:
+        sv-SE: EXIDE
+      value: EXIDE
+    - name:
+        sv-SE: RELION
+      value: RELION
+    - name:
+        sv-SE: ECOFLOW
+      value: ECOFLOW
+    - name:
+        sv-SE: SUNBEAM
+      value: SUNBEAM
+    - name:
+        sv-SE: PRO SUPPLY SOLAR SYSTEM
+      value: PRO_SUPPLY_SOLAR_SYSTEM
+    - name:
+        sv-SE: SKANBATT
+      value: SKANBATT
+    - name:
+        sv-SE: VICTRON ENERGY
+      value: VICTRON_ENERGY
+    - name:
+        sv-SE: RATIO ELECTRIC
+      value: RATIO_ELECTRIC
+    - name:
+        sv-SE: EFOY
+      value: EFOY
+    - name:
+        sv-SE: MASTERVOLT
+      value: MASTERVOLT
+    - name:
+        sv-SE: BLUE SEA
+      value: BLUE_SEA
+    - name:
+        sv-SE: SKYLLERMARKS
+      value: SKYLLERMARKS
+    - name:
+        sv-SE: TOPTEX
+      value: TOPTEX
+    - name:
+        sv-SE: KRYMPPLAST
+      value: KRYMPPLAST
+    - name:
+        sv-SE: TUFCOAT
+      value: TUFCOAT
+    - name:
+        sv-SE: GUILBERT
+      value: GUILBERT
+    - name:
+        sv-SE: PRESS & SON
+      value: PRESS_SON
+    - name:
+        sv-SE: EASYTEC
+      value: EASYTEC
+    - name:
+        sv-SE: TRANSPARTS
+      value: TRANSPARTS
+    - name:
+        sv-SE: BRENDERUP
+      value: BRENDERUP
+    - name:
+        sv-SE: YANMAR
+      value: YANMAR
+    - name:
+        sv-SE: RACOR
+      value: RACOR
+    - name:
+        sv-SE: SOLÈ
+      value: SOL
+    - name:
+        sv-SE: HYUNDAI SEASALL
+      value: HYUNDAI_SEASALL
+    - name:
+        sv-SE: VIKING
+      value: VIKING
+    - name:
+        sv-SE: MOTORGUIDE
+      value: MOTORGUIDE
+    - name:
+        sv-SE: TALAMEX
+      value: TALAMEX
+    - name:
+        sv-SE: DINGHY RINGS
+      value: DINGHY_RINGS
+    - name:
+        sv-SE: E-BOOST
+      value: E_BOOST
+    - name:
+        sv-SE: HYDRA SKYPOINT
+      value: HYDRA_SKYPOINT
+    - name:
+        sv-SE: TEMO
+      value: TEMO
+    - name:
+        sv-SE: TORQEEDO
+      value: TORQEEDO
+    - name:
+        sv-SE: Torqeedo
+      value: Torqeedo
+    - name:
+        sv-SE: T-WAVE
+      value: T_WAVE
+    - name:
+        sv-SE: MERCURY MERCRUISER
+      value: MERCURY_MERCRUISER
+    - name:
+        sv-SE: HONDA
+      value: HONDA
+    - name:
+        sv-SE: SELVA
+      value: SELVA
+    - name:
+        sv-SE: SUZUKI
+      value: SUZUKI
+    - name:
+        sv-SE: HAMNGUIDEN
+      value: HAMNGUIDEN
+    - name:
+        sv-SE: SAFIRE
+      value: SAFIRE
+    - name:
+        sv-SE: MAGMA
+      value: MAGMA
+    - name:
+        sv-SE: KUUMA
+      value: KUUMA
+    - name:
+        sv-SE: CAMPINGAZ
+      value: CAMPINGAZ
+    - name:
+        sv-SE: LEECH
+      value: LEECH
+    - name:
+        sv-SE: EVINRUDE
+      value: EVINRUDE
+    - name:
+        sv-SE: SUPER LUBE
+      value: SUPER_LUBE
+    - name:
+        sv-SE: HYDROGRAPHICA
+      value: HYDROGRAPHICA
+    - name:
+        sv-SE: NV CHARTS
+      value: NV_CHARTS
+    - name:
+        sv-SE: HENRI LLOYD
+      value: HENRI_LLOYD
+    - name:
+        sv-SE: GLYDUS
+      value: GLYDUS
+    - name:
+        sv-SE: MULTISTEER
+      value: MULTISTEER
+    - name:
+        sv-SE: SEASTAR
+      value: SEASTAR
+    - name:
+        sv-SE: HYDRODRIVE
+      value: HYDRODRIVE
+    - name:
+        sv-SE: SAVORETTI
+      value: SAVORETTI
+    - name:
+        sv-SE: ISOTTA
+      value: ISOTTA
+    - name:
+        sv-SE: RED LINE
+      value: RED_LINE
+    - name:
+        sv-SE: BIO PROTECT
+      value: BIO_PROTECT
+    - name:
+        sv-SE: STA-BIL
+      value: STA_BIL
+    - name:
+        sv-SE: '303'
+      value: '303'
+    - name:
+        sv-SE: UFLEX
+      value: UFLEX
+    - name:
+        sv-SE: HYDROTAB
+      value: HYDROTAB
+    - name:
+        sv-SE: STINGRAY
+      value: STINGRAY
+    - name:
+        sv-SE: MENTE
+      value: MENTE
+    - name:
+        sv-SE: LENCO
+      value: LENCO
+    - name:
+        sv-SE: LENCO MARINE
+      value: LENCO_MARINE
+    - name:
+        sv-SE: NAUTICUS
+      value: NAUTICUS
+    - name:
+        sv-SE: POLASTORM
+      value: POLASTORM
+    - name:
+        sv-SE: GATOR GUARDS
+      value: GATOR_GUARDS
+    - name:
+        sv-SE: QUICKSILVER PROPELLER
+      value: QUICKSILVER_PROPELLER
+    - name:
+        sv-SE: MULTIFLEX
+      value: MULTIFLEX
+    - name:
+        sv-SE: DIDRIKSONS
+      value: DIDRIKSONS
+    - name:
+        sv-SE: POLYMARINE
+      value: Polymarine
+    - name:
+        sv-SE: SPECIFIKATION 5         .
+      value: SPECIFIKATION 5         .
+    - name:
+        sv-SE: OCEAN COMFORT
+      value: OCEAN COMFORT
+    - name:
+        sv-SE: SCOTT BADER
+      value: SCOTT BADER
+    - name:
+        sv-SE: SJÖ&HAV
+      value: SJO&HAV
+    - name:
+        sv-SE: AUTONAUTIC INSTRUMENTAL
+      value: AUTONAUTIC INSTRUMENTAL
+    - name:
+        sv-SE: BARTON MARINE
+      value: BARTON MARINE
+    - name:
+        sv-SE: B&G
+      value: B&G
+    - name:
+        sv-SE: C-POD
+      value: C-POD
+    - name:
+        sv-SE: SENSAR MARINE
+      value: SENSAR MARINE
+    - name:
+        sv-SE: JL AUDIO
+      value: JL AUDIO
+    - name:
+        sv-SE: C-MAP
+      value: C-MAP
+    - name:
+        sv-SE: FEND FIX
+      value: FEND FIX
+    - name:
+        sv-SE: NUOVA RADE
+      value: NUOVA RADE
+    - name:
+        sv-SE: BÅTSYSTEM
+      value: BATSYSTEM
+    - name:
+        sv-SE: ARC MARINE
+      value: ARC MARINE
+    - name:
+        sv-SE: SKEPPSHULT STEGEN
+      value: SKEPPSHULT STEGEN
+    - name:
+        sv-SE: MR MOORING
+      value: MR MOORING
+    - name:
+        sv-SE: SHIP-SHAPE
+      value: SHIP-SHAPE
+    - name:
+        sv-SE: M-PROTECT
+      value: M-PROTECT
+    - name:
+        sv-SE: 70C
+      value: 70C
+    - name:
+        sv-SE: SEABOOST
+      value: SEABOOST
+    - name:
+        sv-SE: VOLVO PENTA
+      value: VOLVO PENTA
+    - name:
+        sv-SE: HELLA MARINE
+      value: HELLA MARINE
+    - name:
+        sv-SE: SNAPPY TEAK
+      value: SNAPPY TEAK
+    - name:
+        sv-SE: GOLDEN TEAK
+      value: GOLDEN TEAK
+    - name:
+        sv-SE: PLASTIC PADDING
+      value: PLASTIC PADDING
+    - name:
+        sv-SE: WEST SYSTEM
+      value: WEST SYSTEM
+    - name:
+        sv-SE: NM BÅTEPOXI
+      value: NM BATEPOXI
+    - name:
+        sv-SE: LE TONKINOIS
+      value: LE TONKINOIS
+    - name:
+        sv-SE: SMART LIVING
+      value: SMART LIVING
+    - name:
+        sv-SE: KUNGS
+      value: KUNGS
+    - name:
+        sv-SE: HANGÖ
+      value: HANGO
+    - name:
+        sv-SE: SCEPTER MARINE
+      value: SCEPTER MARINE
+    - name:
+        sv-SE: COMFORT SEAT
+      value: COMFORT SEAT
+    - name:
+        sv-SE: SPRINGFIELD MARINE
+      value: SPRINGFIELD MARINE
+    - name:
+        sv-SE: WATERLINE DESIGN
+      value: WATERLINE DESIGN
+    - name:
+        sv-SE: SJÖFARTSVERKET
+      value: SJOFARTSVERKET
+    - name:
+        sv-SE: POLY ROPES
+      value: POLY ROPES
+    - name:
+        sv-SE: BROBERG MARINE
+      value: BROBERG MARINE
+    - name:
+        sv-SE: PRO SUPPLY
+      value: PRO SUPPLY
+    - name:
+        sv-SE: FORTRESS MARINE ANCHORS
+      value: FORTRESS MARINE ANCHORS
+    - name:
+        sv-SE: OCEAN SIGNAL
+      value: OCEAN SIGNAL
+    - name:
+        sv-SE: HOOK & MOOR
+      value: HOOK & MOOR
+    - name:
+        sv-SE: JOHNSON PUMP
+      value: JOHNSON PUMP
+    - name:
+        sv-SE: ELKA DESIGN
+      value: ELKA DESIGN
+    - name:
+        sv-SE: ECO CELAN
+      value: ECO CELAN
+    - name:
+        sv-SE: TYRESÖSTÖTTAN
+      value: TYRESOSTOTTAN
+    - name:
+        sv-SE: EBERSPÄCHER
+      value: EBERSPACHER
+    - name:
+        sv-SE: OCEAN COMFORT GALLEY
+      value: OCEAN COMFORT GALLEY
+    - name:
+        sv-SE: BEAVER BRAND
+      value: BEAVER BRAND
+    - name:
+        sv-SE: MARINE BUSINESS
+      value: MARINE BUSINESS
+    - name:
+        sv-SE: HOSES TECHNOLOGY
+      value: HOSES TECHNOLOGY
+    - name:
+        sv-SE: SANIMARIN
+      value: SANIMARIN
+    - name:
+        sv-SE: HEATPAL
+      value: HEATPAL
+    - name:
+        sv-SE: BLUE SEAS SYSTEMS
+      value: BLUE SEAS SYSTEMS
+    - name:
+        sv-SE: SUTARS SWEDEN
+      value: SUTARS SWEDEN
+    - name:
+        sv-SE: PSP MARINE TAPES
+      value: PSP MARINE TAPES
+    - name:
+        sv-SE: GORILLA TAPE
+      value: GORILLA TAPE
+    - name:
+        sv-SE: LÄNSMAN
+      value: LANSMAN
+    - name:
+        sv-SE: ÖRNBOJEN
+      value: ORNBOJEN
+    - name:
+        sv-SE: RED DUTY
+      value: RED DUTY
+    - name:
+        sv-SE: TYRESÖBOCKEN
+      value: TYRESOBOCKEN
+    - name:
+        sv-SE: ANODE CONCEPT
+      value: ANODE CONCEPT
+    - name:
+        sv-SE: BÅTSYSTEM LIGHTNING
+      value: BATSYSTEM LIGHTNING
+    - name:
+        sv-SE: PRO SUPPLY SOLAR SYSTEM
+      value: PRO SUPPLY SOLAR SYSTEM
+    - name:
+        sv-SE: VICTRON ENERGY
+      value: VICTRON ENERGY
+    - name:
+        sv-SE: RATIO ELECTRIC
+      value: RATIO ELECTRIC
+    - name:
+        sv-SE: BLUE SEA
+      value: BLUE SEA
+    - name:
+        sv-SE: MOBIL OIL
+      value: MOBIL OIL
+    - name:
+        sv-SE: PRESS & SON
+      value: PRESS & SON
+    - name:
+        sv-SE: SOLÈ
+      value: SOLE
+    - name:
+        sv-SE: HYUNDAI SEASALL
+      value: HYUNDAI SEASALL
+    - name:
+        sv-SE: SEPAR
+      value: SEPAR
+    - name:
+        sv-SE: OCEAN PRO PLUS
+      value: OCEAN PRO PLUS
+    - name:
+        sv-SE: POLYMARINE
+      value: POLYMARINE
+    - name:
+        sv-SE: DINGHY RINGS
+      value: DINGHY RINGS
+    - name:
+        sv-SE: E-BOOST
+      value: E-BOOST
+    - name:
+        sv-SE: HYDRA SKYPOINT
+      value: HYDRA SKYPOINT
+    - name:
+        sv-SE: T-WAVE
+      value: T-WAVE
+    - name:
+        sv-SE: MERCURY MERCRUISER
+      value: MERCURY MERCRUISER
+    - name:
+        sv-SE: SUPER LUBE
+      value: SUPER LUBE
+    - name:
+        sv-SE: NV CHARTS
+      value: NV CHARTS
+    - name:
+        sv-SE: HENRI LLOYD
+      value: HENRI LLOYD
+    - name:
+        sv-SE: OX-ON
+      value: OX-ON
+    - name:
+        sv-SE: RED LINE
+      value: RED LINE
+    - name:
+        sv-SE: BIO PROTECT
+      value: BIO PROTECT
+    - name:
+        sv-SE: STA-BIL
+      value: STA-BIL
+    - name:
+        sv-SE: LENCO MARINE
+      value: LENCO MARINE
+    - name:
+        sv-SE: PRO SCRAPER
+      value: PRO SCRAPER
+    - name:
+        sv-SE: GATOR GUARDS
+      value: GATOR GUARDS
+    - name:
+        sv-SE: QUICKSILVER PROPELLER
+      value: QUICKSILVER PROPELLER
+    - name:
+        sv-SE: AC DELCO
+      value: AC DELCO
+    - name:
+        sv-SE: UNIQOOL
+      value: UNIQOOL
+    - name:
+        sv-SE: FIBERFIX
+      value: FIBERFIX
+    - name:
+        sv-SE: SURE CLIP
+      value: SURE CLIP

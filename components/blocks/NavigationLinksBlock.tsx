@@ -1,4 +1,4 @@
-import NavigationLink from 'components/NavigationLink';
+import NavigationLink from 'components/zitac/NavigationLink';
 import { LinkFieldDefinition } from 'models/navigation';
 
 interface NavigationLinksBlockFieldDefinition {

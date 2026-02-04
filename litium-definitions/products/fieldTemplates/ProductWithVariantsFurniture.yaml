@@ -119,7 +119,6 @@ productTemplates:
     storefront:
       visible: true
   useVariantUrl: true
-  settings: {}
   id: ProductWithVariantsFurniture
   name:
     en-US: Product with variants furniture

@@ -1,0 +1,22 @@
+productFields:
+- id: max_width_mm
+  type: Decimal
+  name:
+    da-DK: Maxbredd (mm)
+    en-US: Maxbredd (mm)
+    nb-NO: Maxbredd (mm)
+    sv-SE: Maxbredd (mm)
+  description:
+    da-DK: Maxbredd (mm)
+    en-US: Maxbredd (mm)
+    nb-NO: Maxbredd (mm)
+    sv-SE: Maxbredd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

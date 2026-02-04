@@ -1,0 +1,16 @@
+productFields:
+- id: product_document
+  type: MediaPointerFile
+  name:
+    sv-SE: Dokument
+  description:
+    sv-SE: Övriga produkt dokument, informationsblad, sds-blad etc.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

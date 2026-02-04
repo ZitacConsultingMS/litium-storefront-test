@@ -6,6 +6,8 @@ blockTemplates:
   childBlocks:
     combination: IncludeSelected
     selections:
+    - id: zsTextEditor
+    - id: zsFooterNavigationLinks
     - id: NavigationLinks
   type: Block
   fieldGroups:

@@ -1,0 +1,22 @@
+productFields:
+- id: for
+  type: Text
+  name:
+    da-DK: För
+    en-US: För
+    nb-NO: För
+    sv-SE: För
+  description:
+    da-DK: För
+    en-US: För
+    nb-NO: För
+    sv-SE: För
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

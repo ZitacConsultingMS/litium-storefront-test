@@ -1,0 +1,22 @@
+productFields:
+- id: internal_length_mm
+  type: Text
+  name:
+    da-DK: Längd invändigt (mm)
+    en-US: Längd invändigt (mm)
+    nb-NO: Längd invändigt (mm)
+    sv-SE: Längd invändigt (mm)
+  description:
+    da-DK: Längd invändigt (mm)
+    en-US: Längd invändigt (mm)
+    nb-NO: Längd invändigt (mm)
+    sv-SE: Längd invändigt (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

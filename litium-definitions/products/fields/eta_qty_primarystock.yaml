@@ -1,0 +1,16 @@
+productFields:
+- id: eta_qty_primarystock
+  type: Decimal
+  name:
+    sv-SE: Beställt antal
+  description:
+    sv-SE: Beställt antal
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

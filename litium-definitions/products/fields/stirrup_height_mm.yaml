@@ -1,0 +1,22 @@
+productFields:
+- id: stirrup_height_mm
+  type: Text
+  name:
+    da-DK: Bygel höjd (mm)
+    en-US: Bygel höjd (mm)
+    nb-NO: Bygel höjd (mm)
+    sv-SE: Bygel höjd (mm)
+  description:
+    da-DK: Bygel höjd (mm)
+    en-US: Bygel höjd (mm)
+    nb-NO: Bygel höjd (mm)
+    sv-SE: Bygel höjd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

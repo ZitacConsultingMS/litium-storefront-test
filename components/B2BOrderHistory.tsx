@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import OrderHistory from 'components/OrderHistory';
+import OrderHistory from 'components/zitac/OrderHistory';
 import { RoleOption } from 'models/option';
 import { Fragment } from 'react';
 import { queryServer } from 'services/dataService.server';

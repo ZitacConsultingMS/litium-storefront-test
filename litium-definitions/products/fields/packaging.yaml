@@ -1,0 +1,22 @@
+productFields:
+- id: packaging
+  type: Text
+  name:
+    da-DK: Förpackning
+    en-US: Förpackning
+    nb-NO: Förpackning
+    sv-SE: Förpackning
+  description:
+    da-DK: Förpackning
+    en-US: Förpackning
+    nb-NO: Förpackning
+    sv-SE: Förpackning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -14,7 +14,7 @@ export function HtmlText({
 } & React.HTMLAttributes<HTMLParagraphElement>) {
   return (
     <div
-      className={clsx(className, 'prose max-w-none')}
+      className={clsx(className, 'max-w-none')}
       dangerouslySetInnerHTML={{ __html: innerHTML }}
       {...props}
     ></div>

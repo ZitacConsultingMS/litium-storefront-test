@@ -1,0 +1,18 @@
+@media (min-width: 640px) {
+  .zsBannerBlock {
+    &.one {
+      .banner-container {
+        padding: 6.5rem 0 6rem;
+      }
+      .banner-container.bannerImageHeight {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.html-editor-text-shadow {
+  * {
+    text-shadow: #000000a1 1px 0 2px;
+  }
+}

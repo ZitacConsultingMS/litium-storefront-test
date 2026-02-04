@@ -1,0 +1,22 @@
+blockFields:
+- id: zsAFInformation
+  type: MultiField
+  name:
+    en-US: Retailer Information
+    sv-SE: Återförsäljare, information
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - _name
+    - zsEmail
+    - zsPhone
+    - zsAddress
+    isArray: true

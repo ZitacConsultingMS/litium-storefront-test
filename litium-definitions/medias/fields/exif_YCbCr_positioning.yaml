@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_YCbCr_positioning
+  type: Text
+  name:
+    en-US: YCbCr positionering
+    sv-SE: YCbCr positioning
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

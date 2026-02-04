@@ -1,0 +1,22 @@
+productFields:
+- id: wire_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Vajer (mm)
+    en-US: Ø Vajer (mm)
+    nb-NO: Ø Vajer (mm)
+    sv-SE: Ø Vajer (mm)
+  description:
+    da-DK: Ø Vajer (mm)
+    en-US: Ø Vajer (mm)
+    nb-NO: Ø Vajer (mm)
+    sv-SE: Ø Vajer (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

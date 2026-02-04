@@ -1,0 +1,22 @@
+productFields:
+- id: line_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Lina (mm)
+    en-US: Ø Lina (mm)
+    nb-NO: Ø Lina (mm)
+    sv-SE: Ø Lina (mm)
+  description:
+    da-DK: Ø Lina (mm)
+    en-US: Ø Lina (mm)
+    nb-NO: Ø Lina (mm)
+    sv-SE: Ø Lina (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

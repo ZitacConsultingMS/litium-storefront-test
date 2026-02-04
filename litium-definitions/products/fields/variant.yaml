@@ -1,0 +1,22 @@
+productFields:
+- id: variant
+  type: Text
+  name:
+    da-DK: Variant
+    en-US: Variant
+    nb-NO: Variant
+    sv-SE: Variant
+  description:
+    da-DK: Variant
+    en-US: Variant
+    nb-NO: Variant
+    sv-SE: Variant
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

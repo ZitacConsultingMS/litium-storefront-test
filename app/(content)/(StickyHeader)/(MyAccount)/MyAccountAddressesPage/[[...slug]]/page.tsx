@@ -4,9 +4,9 @@ import {
   MainContent,
   SideNavigation,
   SideNavigationLayout,
-} from 'components/layouts/SideNavigationLayout';
-import B2BAddresses from 'components/users/B2BAddresses';
-import B2CAddresses from 'components/users/B2CAddresses';
+} from 'components/layouts/zitac/MyAccountSideNavigationLayout';
+import B2BAddresses from 'components/users/zitac/B2BAddresses';
+import B2CAddresses from 'components/users/zitac/B2CAddresses';
 import { Block } from 'models/block';
 import { ContentItem } from 'models/content';
 import { NavigationLink } from 'models/navigation';

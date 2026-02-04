@@ -1,0 +1,22 @@
+productFields:
+- id: bolt_length_mm
+  type: Decimal
+  name:
+    da-DK: Längd bult (mm)
+    en-US: Längd bult (mm)
+    nb-NO: Längd bult (mm)
+    sv-SE: Längd bult (mm)
+  description:
+    da-DK: Längd bult (mm)
+    en-US: Längd bult (mm)
+    nb-NO: Längd bult (mm)
+    sv-SE: Längd bult (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

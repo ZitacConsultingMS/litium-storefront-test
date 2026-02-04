@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Exif_version
+  type: Text
+  name:
+    en-US: Exif version
+    sv-SE: Exif-version
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

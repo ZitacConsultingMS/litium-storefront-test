@@ -4,17 +4,15 @@ websiteTemplates:
     name:
       en-US: footer
     childBlocks:
-      combination: IncludeSelected
-      selections:
-      - id: FooterColumn
+      combination: All
   - id: primaryNavigation
     name:
       en-US: primaryNavigation
     childBlocks:
-      combination: IncludeSelected
-      selections:
-      - id: PrimaryNavigationLink
-      - id: SecondaryNavigationLink
+      combination: All
+  - id: zsTopBar
+    childBlocks:
+      combination: All
   settings:
     indexThePage: false
   type: Website
@@ -25,10 +23,11 @@ websiteTemplates:
       sv-SE: Allmänt
     fields:
     - id: _name
+    - id: zsThemeID
     administration:
       collapsed: false
     storefront:
-      visible: false
+      visible: true
   - id: Logotype
     name:
       en-US: Logotype
@@ -75,7 +74,7 @@ websiteTemplates:
   - id: OrderConfirmationPage
     name:
       en-US: Orders
-      sv-SE: Ordrar
+      sv-SE: Orderbekräftelsesida
     fields:
     - id: OrderConfirmationPage
     - id: OrderPage

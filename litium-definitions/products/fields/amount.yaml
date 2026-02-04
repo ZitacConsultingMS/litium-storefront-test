@@ -1,0 +1,22 @@
+productFields:
+- id: amount
+  type: Text
+  name:
+    da-DK: Antal
+    en-US: Antal
+    nb-NO: Antal
+    sv-SE: Antal
+  description:
+    da-DK: Antal
+    en-US: Antal
+    nb-NO: Antal
+    sv-SE: Antal
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

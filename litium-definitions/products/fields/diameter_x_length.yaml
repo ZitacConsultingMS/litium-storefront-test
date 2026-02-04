@@ -1,0 +1,22 @@
+productFields:
+- id: diameter_x_length
+  type: Text
+  name:
+    da-DK: Ø x L
+    en-US: Ø x L
+    nb-NO: Ø x L
+    sv-SE: Ø x L
+  description:
+    da-DK: Ø x L
+    en-US: Ø x L
+    nb-NO: Ø x L
+    sv-SE: Ø x L
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

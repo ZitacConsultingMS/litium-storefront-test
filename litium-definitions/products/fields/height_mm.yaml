@@ -1,0 +1,22 @@
+productFields:
+- id: height_mm
+  type: Text
+  name:
+    da-DK: Höjd (mm)
+    en-US: Höjd (mm)
+    nb-NO: Höjd (mm)
+    sv-SE: Höjd (mm)
+  description:
+    da-DK: Höjd (mm)
+    en-US: Höjd (mm)
+    nb-NO: Höjd (mm)
+    sv-SE: Höjd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

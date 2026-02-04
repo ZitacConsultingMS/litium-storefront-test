@@ -1,0 +1,22 @@
+productFields:
+- id: neste
+  type: Decimal
+  name:
+    da-DK: Neste
+    en-US: Neste
+    nb-NO: Neste
+    sv-SE: Neste
+  description:
+    da-DK: Neste
+    en-US: Neste
+    nb-NO: Neste
+    sv-SE: Neste
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

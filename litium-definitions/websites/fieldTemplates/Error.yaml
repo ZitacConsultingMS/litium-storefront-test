@@ -2,9 +2,7 @@ websiteTemplates:
 - blockContainers:
   - id: BlockContainer
     childBlocks:
-      combination: IncludeSelected
-      selections:
-      - id: Banner
+      combination: All
   settings:
     indexThePage: false
   type: Page

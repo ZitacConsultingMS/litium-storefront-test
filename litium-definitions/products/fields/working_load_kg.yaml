@@ -1,0 +1,22 @@
+productFields:
+- id: working_load_kg
+  type: Decimal
+  name:
+    da-DK: Arbetslast (Kg)
+    en-US: Arbetslast (Kg)
+    nb-NO: Arbetslast (Kg)
+    sv-SE: Arbetslast (Kg)
+  description:
+    da-DK: Arbetslast (Kg)
+    en-US: Arbetslast (Kg)
+    nb-NO: Arbetslast (Kg)
+    sv-SE: Arbetslast (Kg)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

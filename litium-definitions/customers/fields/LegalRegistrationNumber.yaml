@@ -1,0 +1,15 @@
+customerFields:
+- id: LegalRegistrationNumber
+  type: Text
+  name:
+    en-US: LegalRegistrationNumber
+    sv-SE: Organisationsnummer
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

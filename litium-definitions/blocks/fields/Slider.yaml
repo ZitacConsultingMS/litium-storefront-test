@@ -1,0 +1,24 @@
+blockFields:
+- id: Slider
+  type: MultiField
+  name:
+    en-US: Slider
+    sv-SE: Slider
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - LinkText
+    - BlockImagePointer
+    - BannerLinkToCategory
+    - BannerLinkToPage
+    - BannerLinkToProduct
+    - ActionText
+    isArray: true

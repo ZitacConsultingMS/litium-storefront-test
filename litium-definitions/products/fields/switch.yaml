@@ -1,0 +1,22 @@
+productFields:
+- id: switch
+  type: Text
+  name:
+    da-DK: Brytare
+    en-US: Brytare
+    nb-NO: Brytare
+    sv-SE: Brytare
+  description:
+    da-DK: Brytare
+    en-US: Brytare
+    nb-NO: Brytare
+    sv-SE: Brytare
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

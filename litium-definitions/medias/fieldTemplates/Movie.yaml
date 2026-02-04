@@ -1,0 +1,79 @@
+mediaTemplates:
+- templateType: Movie
+  fileExtensions:
+  - id: mov
+  - id: mpeg4
+  - id: mp4
+  - id: avi
+  - id: wmv
+  - id: mpegps
+  - id: flv
+  - id: 3gpp
+  - id: webm
+  type: File
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _nameInvariantCulture
+    - id: _description
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: MovieProperties
+    name:
+      en-US: Movie Properties
+      sv-SE: Filmegenskaper
+    fields:
+    - id: exif_Make
+    - id: exif_Model
+    - id: exif_Orientation
+    - id: exif_Software
+    - id: exif_Date_and_Time
+    - id: exif_YCbCr_positioning
+    - id: exif_Compression
+    - id: exif_X_resolution
+    - id: exif_Y_resolution
+    - id: exif_Resolution_unit
+    - id: exif_Exposure_time
+    - id: exif_F-number
+    - id: exif_Exposure_program
+    - id: exif_Exif_version
+    - id: exif_DateTime_Original
+    - id: exif_DateTime_Digitized
+    - id: exif_Components_configuration
+    - id: exif_Compressed_bits_per_pixel
+    - id: exif_Shutter_Speed_Value
+    - id: exif_Exposure_Bias_Value
+    - id: exif_Aperture_Value
+    - id: exif_Max_Aperture_Value
+    - id: exif_Metering_mode
+    - id: exif_Flash
+    - id: exif_Focal_length
+    - id: exif_MakerNote
+    - id: exif_FlashPix_version
+    - id: exif_Color_space
+    - id: exif_Focal_Plane_X_Resolution
+    - id: exif_Focal_Plane_Y_Resolution
+    - id: exif_Pixel_X_dimension
+    - id: exif_Pixel_Y_dimension
+    - id: exif_File_source
+    - id: exif_Interoperability_index
+    - id: exif_Interoperability_version
+    - id: exif_Exposure_Mode
+    - id: exif_White_Balance_Mode
+    - id: exif_Digital_Zoom_Ratio
+    - id: exif_Compression_Type
+    - id: exif_Data_Precision
+    - id: exif_Number_of_Components
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Movie
+  name:
+    en-US: Movie
+    sv-SE: Film

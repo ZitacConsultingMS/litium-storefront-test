@@ -1,0 +1,22 @@
+productFields:
+- id: liters_per_minute
+  type: Text
+  name:
+    da-DK: Liter/minut
+    en-US: Liter/minut
+    nb-NO: Liter/minut
+    sv-SE: Liter/minut
+  description:
+    da-DK: Liter/minut
+    en-US: Liter/minut
+    nb-NO: Liter/minut
+    sv-SE: Liter/minut
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

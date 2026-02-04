@@ -1,0 +1,22 @@
+productFields:
+- id: fram_number
+  type: Text
+  name:
+    da-DK: Fram nr
+    en-US: Fram nr
+    nb-NO: Fram nr
+    sv-SE: Fram nr
+  description:
+    da-DK: Fram nr
+    en-US: Fram nr
+    nb-NO: Fram nr
+    sv-SE: Fram nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

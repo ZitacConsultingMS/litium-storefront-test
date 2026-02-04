@@ -30,4 +30,5 @@ export interface OrderRow {
   totalExcludingVat: number;
   discountInfos: DiscountInfo[];
   description?: string;
+  additionalInfo?: { key: string; value: string }[];
 }

@@ -1,0 +1,24 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-list
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: zsAFInformation
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsAFList
+  name:
+    en-US: Återförsäljare, listning
+    sv-SE: Återförsäljare, listning

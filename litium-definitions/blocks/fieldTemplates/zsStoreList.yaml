@@ -1,0 +1,23 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-map
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsStoreList
+  name:
+    en-US: Stores, List
+    sv-SE: Butiker, Lista

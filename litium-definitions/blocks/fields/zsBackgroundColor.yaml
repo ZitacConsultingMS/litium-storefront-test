@@ -1,0 +1,25 @@
+blockFields:
+- id: zsBackgroundColor
+  type: TextOption
+  name:
+    en-US: 'Background Color '
+    sv-SE: Bakgrundsfärg
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Primary Color
+        sv-SE: Huvudfärg
+      value: '#124a9f'
+    - name:
+        en-US: Secondary Color
+        sv-SE: Sekundärfärg
+      value: '#ff8a00'

@@ -1,0 +1,17 @@
+productFields:
+- id: erp_gross_weight
+  type: Decimal
+  name:
+    en-US: ERP Gross Weight
+    sv-SE: Erp Gross weight
+  description:
+    sv-SE: Erp Gross weight
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

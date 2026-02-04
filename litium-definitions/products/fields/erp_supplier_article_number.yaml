@@ -1,0 +1,17 @@
+productFields:
+- id: erp_supplier_article_number
+  type: Text
+  name:
+    en-US: ERP Supplier Article Number
+    sv-SE: Erp Leverantör artikelnr
+  description:
+    sv-SE: Erp Leverantör artikelnr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

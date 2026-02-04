@@ -34,11 +34,12 @@ export async function get(contextPath?: string): Promise<Website> {
       '',
     loginPageUrl: channel.website.fields.loginPage[0]?.item?.url ?? '',
     orderPageUrl: channel.website.fields.orderPage[0]?.item?.url ?? '',
-    termsAndConditionsUrl:
-      channel.website.fields.termsAndConditionsLinkPage[0]?.item?.url ?? '',
+    termsAndConditionsUrl: '',
     culture: channel.culture,
     texts: channel.website.texts,
     logoTypeMain: channel.website.fields.logotypeMain?.item,
+    emailHeaderImage: channel.website.fields.emailHeaderImage?.item,
+    zsThemeID: channel.website.fields.zsThemeID ?? '',
     analytics: channel.analytics,
     languageCode: channel.culture.code?.split('-')[0] || 'sv',
     preview: preview,
@@ -66,10 +67,16 @@ export const GET_WEBSITE = gql`
             }
             fields {
               logotypeMain {
-                item(max: { height: 60, width: 244 }) {
+                item(max: { height: 244, width: 244 }) {
                   ...Image
                 }
               }
+              emailHeaderImage {
+                item(max: { height: 200, width: 600 }) {
+                  ...Image
+                }
+              }
+              zsThemeID
               loginPage {
                 item {
                   id
@@ -113,12 +120,6 @@ export const GET_WEBSITE = gql`
                 }
               }
               orderPage {
-                item {
-                  id
-                  url
-                }
-              }
-              termsAndConditionsLinkPage {
                 item {
                   id
                   url

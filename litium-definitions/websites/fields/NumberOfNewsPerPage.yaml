@@ -1,0 +1,15 @@
+websiteFields:
+- id: NumberOfNewsPerPage
+  type: Int
+  name:
+    en-US: Number of news per page
+    sv-SE: Antal nyheter som visas per sida
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

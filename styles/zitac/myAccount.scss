@@ -1,0 +1,11 @@
+@use './abstracts/' as *;
+
+.MuiTreeItem-iconContainer {
+  display: none !important;
+}
+
+div[class^='MuiTreeItem'] {
+  a {
+    font-family: $font-karla !important;
+  }
+}

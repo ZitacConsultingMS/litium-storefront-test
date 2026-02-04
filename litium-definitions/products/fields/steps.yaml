@@ -1,0 +1,22 @@
+productFields:
+- id: steps
+  type: Text
+  name:
+    da-DK: Steg
+    en-US: Steg
+    nb-NO: Steg
+    sv-SE: Steg
+  description:
+    da-DK: Steg
+    en-US: Steg
+    nb-NO: Steg
+    sv-SE: Steg
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

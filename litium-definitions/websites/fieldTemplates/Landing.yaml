@@ -1,27 +1,37 @@
 websiteTemplates:
-  - blockContainers:
-      - id: Main
-        childBlocks:
-          combination: IncludeSelected
-          selections:
-            - id: Banner
-            - id: Products
-    settings:
-      indexThePage: true
-    type: Page
-    fieldGroups:
-      - id: Settings
-        name:
-          en-US: Settings
-          sv-SE: Inställningar
-        fields:
-          - id: _name
-          - id: _url
-        administration:
-          collapsed: false
-        storefront:
-          visible: false
-    id: Landing
+- blockContainers:
+  - id: Main
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Products
+      - id: zsLayoutFourColumns
+      - id: zsTextEditor
+      - id: zsImage
+      - id: zsLayoutFullWidth
+      - id: zsHelloRetailRecommendations
+      - id: zsFAQ
+      - id: ProductsAndBanner
+      - id: Banner
+      - id: zsHTML
+      - id: zsLayoutThreeColumns
+      - id: zsLayoutTwoColumns
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: Settings
     name:
-      en-US: Landing page
-      sv-SE: Landningssida
+      en-US: Settings
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Landing
+  name:
+    en-US: Landing page
+    sv-SE: Landningssida

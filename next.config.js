@@ -44,6 +44,10 @@ module.exports = (phase, { defaultConfig }) => {
       protocol: 'https',
       hostname: 'localhost',
     },
+    {
+      protocol: 'https',
+      hostname: 'www.seasea.se',
+    },
   ];
 
   if (process.env.RUNTIME_IMAGE_SERVER_URL) {
@@ -79,9 +83,9 @@ module.exports = (phase, { defaultConfig }) => {
     remotePatterns,
     ...(useCloudImageOptimization
       ? {
-          loader: 'custom',
-          loaderFile: './litium-cloud-image-loader.ts',
-        }
+        loader: 'custom',
+        loaderFile: './litium-cloud-image-loader.ts',
+      }
       : null),
   };
 
@@ -95,8 +99,6 @@ module.exports = (phase, { defaultConfig }) => {
         process.env.INCLUDE_CONSOLE_LOGGING !== 'true',
       reactRemoveProperties: process.env.NODE_ENV === 'production',
     },
-    // https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-    allowedDevOrigins: ['*.localtest.me', 'localhost'],
     output: 'standalone',
     poweredByHeader: false,
     experimental: {

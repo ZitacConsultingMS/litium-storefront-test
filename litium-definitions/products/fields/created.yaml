@@ -1,0 +1,22 @@
+productFields:
+- id: created
+  type: DateTime
+  name:
+    da-DK: Created
+    en-US: Created
+    nb-NO: Created
+    sv-SE: Created
+  description:
+    da-DK: Created
+    en-US: Created
+    nb-NO: Created
+    sv-SE: Created
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

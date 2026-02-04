@@ -1,0 +1,22 @@
+productFields:
+- id: publish_start
+  type: DateTime
+  name:
+    da-DK: PublishStart
+    en-US: PublishStart
+    nb-NO: PublishStart
+    sv-SE: PublishStart
+  description:
+    da-DK: PublishStart
+    en-US: PublishStart
+    nb-NO: PublishStart
+    sv-SE: PublishStart
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

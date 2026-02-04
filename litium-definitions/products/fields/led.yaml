@@ -1,0 +1,22 @@
+productFields:
+- id: led
+  type: Text
+  name:
+    da-DK: LED
+    en-US: LED
+    nb-NO: LED
+    sv-SE: LED
+  description:
+    da-DK: LED
+    en-US: LED
+    nb-NO: LED
+    sv-SE: LED
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

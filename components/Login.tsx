@@ -17,11 +17,11 @@ import {
   useState,
 } from 'react';
 import { queryClient } from 'services/dataService.client';
-import { Button } from './elements/Button';
 import { Heading1 } from './elements/Heading';
 import { HtmlText } from './elements/HtmlText';
 import { InputText } from './elements/Input';
 import { InputPassword } from './elements/InputPassword';
+import { Button } from './elements/zitac/Button';
 import ErrorText, { ErrorField } from './form/ErrorText';
 
 /**

@@ -1,0 +1,18 @@
+websiteFields:
+- id: InArticlePages
+  type: Boolean
+  name:
+    en-US: In article pages
+    sv-SE: På artikelsidor
+  description:
+    en-US: Hides or shows the left menu of ordinary content pages.
+    sv-SE: Visar eller döljer vänstermenyn på sidor med vanligt innehåll.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

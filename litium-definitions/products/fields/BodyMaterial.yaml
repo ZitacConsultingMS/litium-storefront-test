@@ -23,5 +23,3 @@ productFields:
         en-US: Moisture resistant chipboard
         sv-SE: Fukttrög spånskiva
       value: MoistureResistantChipboard
-      multiSelect: false
-      manualSort: false

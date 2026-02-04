@@ -1,0 +1,22 @@
+productFields:
+- id: cable_area_per_sq_mm
+  type: Text
+  name:
+    da-DK: Kabelarea (mm²)
+    en-US: Kabelarea (mm²)
+    nb-NO: Kabelarea (mm²)
+    sv-SE: Kabelarea (mm²)
+  description:
+    da-DK: Kabelarea (mm²)
+    en-US: Kabelarea (mm²)
+    nb-NO: Kabelarea (mm²)
+    sv-SE: Kabelarea (mm²)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

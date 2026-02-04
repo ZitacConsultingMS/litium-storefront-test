@@ -67,9 +67,8 @@ function SearchPage({ result }: { result?: SearchContentType }) {
   }, [searchParams]);
 
   return (
-    <div className="container mx-auto min-h-[550px] px-5">
+    <div className="min-h-[550px]">
       <SearchInput
-        id="searchPageInput"
         value={text}
         onChange={(value) => setText(value)}
         onEnterKeyDown={() =>

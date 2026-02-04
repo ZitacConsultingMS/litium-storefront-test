@@ -1,0 +1,16 @@
+productFields:
+- id: eta_primary_stock
+  type: DateTime
+  name:
+    sv-SE: Förväntat leveransdatum huvudlager
+  description:
+    sv-SE: Förväntat leveransdatum huvudlager
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,29 @@
+blockFields:
+- id: ProductSorting
+  type: TextOption
+  name:
+    en-US: Product sorting
+    sv-SE: Sortering
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Popular
+        sv-SE: Populära
+      value: popular
+    - name:
+        en-US: Recommended
+        sv-SE: Rekommenderade
+      value: recommended
+    - name:
+        en-US: News
+        sv-SE: Nyheter
+      value: news

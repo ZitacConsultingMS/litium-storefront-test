@@ -1,0 +1,145 @@
+productFields:
+- id: article_color
+  type: TextOption
+  name:
+    da-DK: Färg
+    en-US: Färg
+    nb-NO: Färg
+    sv-SE: Litium Artikel Färg
+  description:
+    da-DK: Färg
+    en-US: Färg
+    nb-NO: Färg
+    sv-SE: Färg
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        da-DK: ''
+        en-US: N/A
+        fi-FI: ''
+        de-DE: ''
+        nb-NO: ''
+        sv-SE: ''
+      value: N/A
+    - name:
+        nb-NO: Svart / Blå
+        sv-SE: Svart / Blå
+        en-US: Svart / Blå
+        da-DK: Svart / Blå
+        de-DE: Svart / Blå
+        fi-FI: Svart / Blå
+      value: svart-bla
+    - name:
+        nb-NO: Vit / Rosa
+        sv-SE: Vit / Rosa
+        en-US: Vit / Rosa
+        da-DK: Vit / Rosa
+        de-DE: Vit / Rosa
+        fi-FI: Vit / Rosa
+      value: vit-rosa
+    - name:
+        nb-NO: Marinblå / Röd
+        sv-SE: Marinblå / Röd
+        en-US: Marinblå / Röd
+        da-DK: Marinblå / Röd
+        de-DE: Marinblå / Röd
+        fi-FI: Marinblå / Röd
+      value: marinbla-rod
+    - name:
+        nb-NO: Röd
+        sv-SE: Röd
+        en-US: Röd
+        da-DK: Röd
+        de-DE: Röd
+        fi-FI: Röd
+      value: rod
+    - name:
+        nb-NO: Gul
+        sv-SE: Gul
+        en-US: Gul
+        da-DK: Gul
+        de-DE: Gul
+        fi-FI: Gul
+      value: gul
+    - name:
+        nb-NO: Rosa
+        sv-SE: Rosa
+        en-US: Rosa
+        da-DK: Rosa
+        de-DE: Rosa
+        fi-FI: Rosa
+      value: rosa
+    - name:
+        nb-NO: Blå
+        sv-SE: Blå
+        en-US: Blå
+        da-DK: Blå
+        de-DE: Blå
+        fi-FI: Blå
+      value: bla
+    - name:
+        nb-NO: Grå
+        sv-SE: Grå
+        en-US: Grå
+        da-DK: Grå
+        de-DE: Grå
+        fi-FI: Grå
+      value: gra
+    - name:
+        nb-NO: Marinblå
+        sv-SE: Marinblå
+        en-US: Marinblå
+        da-DK: Marinblå
+        de-DE: Marinblå
+        fi-FI: Marinblå
+      value: marinbla
+    - name:
+        nb-NO: Svart
+        sv-SE: Svart
+        en-US: Svart
+        da-DK: Svart
+        de-DE: Svart
+        fi-FI: Svart
+      value: svart
+    - name:
+        nb-NO: Vit
+        sv-SE: Vit
+        en-US: Vit
+        da-DK: Vit
+        de-DE: Vit
+        fi-FI: Vit
+      value: vit
+    - name:
+        nb-NO: Vit / Blå
+        sv-SE: Vit / Blå
+        en-US: Vit / Blå
+        da-DK: Vit / Blå
+        de-DE: Vit / Blå
+        fi-FI: Vit / Blå
+      value: vit-bla
+    - name:
+        nb-NO: Blå / Röd
+        sv-SE: Blå / Röd
+        en-US: Blå / Röd
+        da-DK: Blå / Röd
+        de-DE: Blå / Röd
+        fi-FI: Blå / Röd
+      value: bla-rod
+    - name:
+        nb-NO: Gul / Marinblå
+        sv-SE: Gul / Marinblå
+        en-US: Gul / Marinblå
+        da-DK: Gul / Marinblå
+        de-DE: Gul / Marinblå
+        fi-FI: Gul / Marinblå
+      value: gul-marinbla
+    multiSelect: true

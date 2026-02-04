@@ -20,6 +20,8 @@ export interface Website {
   };
   texts: WebsiteText[];
   logoTypeMain: Image;
+  emailHeaderImage?: Image;
+  zsThemeID: string;
   analytics: { googleTagManager: string };
   languageCode: string;
   preview?: Preview;

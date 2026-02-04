@@ -1,0 +1,18 @@
+websiteFields:
+- id: FiltersOrdering
+  type: FilterFields
+  name:
+    en-US: Filters ordering
+    sv-SE: Ordning på filtren
+  description:
+    en-US: Product filters will be shown in this order.
+    sv-SE: Ange den ordning som filtren ska visas i.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

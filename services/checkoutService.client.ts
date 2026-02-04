@@ -8,6 +8,12 @@ import {
 } from 'models/checkout';
 import { mutateClient } from './dataService.client';
 
+/** Strip __typename so objects can be used as GraphQL input (input types do not allow __typename). */
+function withoutTypename<T>(obj: T): Omit<T, '__typename'> {
+  const { __typename, ...rest } = obj as Record<string, unknown>;
+  return rest as Omit<T, '__typename'>;
+}
+
 /**
  *Create a checkout session.
  * @param checkoutFlowInfo an initial data to create.
@@ -48,7 +54,9 @@ export async function updateShippingAddress(
   const data = await mutateClient({
     mutation: UPDATE_CHECKOUT_DETAILS,
     variables: {
-      input: { shippingAddress },
+      input: {
+        shippingAddress: withoutTypename(shippingAddress),
+      },
     },
   });
   return data.updateCheckoutDetails.checkout;
@@ -65,7 +73,9 @@ export async function updateBillingAddress(
   const data = await mutateClient({
     mutation: UPDATE_CHECKOUT_DETAILS,
     variables: {
-      input: { billingAddress },
+      input: {
+        billingAddress: withoutTypename(billingAddress),
+      },
     },
   });
   return data.updateCheckoutDetails.checkout;
@@ -131,6 +141,21 @@ const PLACE_ORDER = gql`
 `;
 
 /**
+ * Updates order-level additional info (e.g. CustomerRef, CustomerOrderNo).
+ */
+export async function updateCheckoutAdditionalInfo(
+  additionalInfo: { key: string; value: string }[]
+): Promise<Checkout> {
+  const data = await mutateClient({
+    mutation: UPDATE_CHECKOUT_DETAILS,
+    variables: {
+      input: { additionalInfo },
+    },
+  });
+  return data.updateCheckoutDetails.checkout;
+}
+
+/**
  * Updates both delivery address and billing address.
  * @param addresses contains shippingAddress and billAddress to update in cart
  * @returns an updated checkout object.
@@ -144,7 +169,11 @@ export async function updateAddresses(addresses: {
   const data = await mutateClient({
     mutation: UPDATE_CHECKOUT_DETAILS,
     variables: {
-      input: { shippingAddress, billingAddress, customer: customerDetails },
+      input: {
+        shippingAddress: withoutTypename(shippingAddress),
+        billingAddress: withoutTypename(billingAddress),
+        customer: withoutTypename(customerDetails),
+      },
     },
   });
   return data.updateCheckoutDetails.checkout;

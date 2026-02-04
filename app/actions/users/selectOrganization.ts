@@ -32,6 +32,7 @@ export const selectUserOrganization = async function (
 
   if (redirectUrl) {
     const to = new URL(redirectUrl, await getHost());
+    to.searchParams.append('refreshCart', 'true');
     redirect(to.href);
   }
 };

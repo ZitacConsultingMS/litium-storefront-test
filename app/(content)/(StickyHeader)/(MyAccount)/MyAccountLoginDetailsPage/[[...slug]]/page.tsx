@@ -1,12 +1,12 @@
 import { gql } from '@apollo/client';
-import LoginDetails from 'components/LoginDetails';
 import BlockContainer from 'components/blocks/BlockContainer';
 import { Heading2 } from 'components/elements/Heading';
 import {
   MainContent,
   SideNavigation,
   SideNavigationLayout,
-} from 'components/layouts/SideNavigationLayout';
+} from 'components/layouts/zitac/MyAccountSideNavigationLayout';
+import LoginDetails from 'components/zitac/LoginDetails';
 import { LoginDetailsPage } from 'models/loginDetails';
 import { NavigationLink } from 'models/navigation';
 import { Metadata } from 'next';
@@ -55,7 +55,7 @@ export default async function Page(props: { params: Promise<any> }) {
           childrenPages={children}
         />
         <MainContent breadcrumbs={breadcrumbs}>
-          <Heading2 className="mt-14">{name}</Heading2>
+          <Heading2 className="mb-6 mt-10 mobile:text-xl">{name}</Heading2>
           <LoginDetails email={me.person.fields._email ?? ''}></LoginDetails>
         </MainContent>
       </SideNavigationLayout>

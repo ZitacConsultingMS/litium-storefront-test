@@ -1,0 +1,16 @@
+productFields:
+- id: bullets
+  type: Editor
+  name:
+    sv-SE: Bullets
+  description:
+    sv-SE: Bullets
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

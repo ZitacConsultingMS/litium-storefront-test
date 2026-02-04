@@ -1,0 +1,17 @@
+productFields:
+- id: erp_hazardous
+  type: Boolean
+  name:
+    en-US: ERP Hazardous
+    sv-SE: Erp Brandfarligt
+  description:
+    sv-SE: Erp Brandfarligt
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

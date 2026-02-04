@@ -1,0 +1,18 @@
+customerTemplates:
+- type: Group
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _nameInvariantCulture
+    - id: _description
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: GroupTemplate
+  name:
+    en-US: Group
+    sv-SE: Grupp

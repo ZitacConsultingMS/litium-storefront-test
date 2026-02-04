@@ -3,7 +3,7 @@ import { Button } from 'components/elements/Button';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
 import { useContext } from 'react';
-import HamburgerMenu from '../icons/menu';
+import HamburgerMenu from '../icons/zitac/menu';
 
 /**
  * Represents a client component for rendering a button to open primary navigation.

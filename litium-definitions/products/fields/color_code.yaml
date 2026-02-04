@@ -1,0 +1,22 @@
+productFields:
+- id: color_code
+  type: Text
+  name:
+    da-DK: Färgkod
+    en-US: Färgkod
+    nb-NO: Färgkod
+    sv-SE: Färgkod
+  description:
+    da-DK: Färgkod
+    en-US: Färgkod
+    nb-NO: Färgkod
+    sv-SE: Färgkod
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

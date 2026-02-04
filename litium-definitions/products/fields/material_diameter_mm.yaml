@@ -1,0 +1,22 @@
+productFields:
+- id: material_diameter_mm
+  type: Text
+  name:
+    da-DK: Gods Ø (mm)
+    en-US: Gods Ø (mm)
+    nb-NO: Gods Ø (mm)
+    sv-SE: Gods Ø (mm)
+  description:
+    da-DK: Gods Ø (mm)
+    en-US: Gods Ø (mm)
+    nb-NO: Gods Ø (mm)
+    sv-SE: Gods Ø (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

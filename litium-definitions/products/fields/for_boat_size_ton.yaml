@@ -1,0 +1,22 @@
+productFields:
+- id: for_boat_size_ton
+  type: Text
+  name:
+    da-DK: För båtstorlek (ton)
+    en-US: För båtstorlek (ton)
+    nb-NO: För båtstorlek (ton)
+    sv-SE: För båtstorlek (ton)
+  description:
+    da-DK: För båtstorlek (ton)
+    en-US: För båtstorlek (ton)
+    nb-NO: För båtstorlek (ton)
+    sv-SE: För båtstorlek (ton)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

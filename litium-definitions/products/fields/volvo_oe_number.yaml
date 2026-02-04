@@ -1,0 +1,22 @@
+productFields:
+- id: volvo_oe_number
+  type: Text
+  name:
+    da-DK: Volvo OE nr
+    en-US: Volvo OE nr
+    nb-NO: Volvo OE nr
+    sv-SE: Volvo OE nr
+  description:
+    da-DK: Volvo OE nr
+    en-US: Volvo OE nr
+    nb-NO: Volvo OE nr
+    sv-SE: Volvo OE nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,37 @@
+blockFields:
+- id: zsColumnDistribution
+  type: TextOption
+  name:
+    en-US: Column distribution
+    sv-SE: Kolumn fördelning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: 50% / 50%
+        sv-SE: 50% / 50%
+      value: flex-50
+    - name:
+        en-US: 66% / 33%
+        sv-SE: 66% / 33%
+      value: flex-66
+    - name:
+        en-US: 33% / 66%
+        sv-SE: 33% / 66%
+      value: flex-33
+    - name:
+        en-US: 25% / 75%
+        sv-SE: 25% / 75%
+      value: flex-25
+    - name:
+        en-US: 75% / 25%
+        sv-SE: 75% / 25%
+      value: flex-75

@@ -1,0 +1,23 @@
+websiteTemplates:
+- blockContainers:
+  - id: Main
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: Settings
+    name:
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Store
+  name:
+    en-US: Store Page
+    sv-SE: Butikssida

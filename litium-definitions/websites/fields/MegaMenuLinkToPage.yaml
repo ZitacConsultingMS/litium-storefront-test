@@ -1,0 +1,17 @@
+websiteFields:
+- id: MegaMenuLinkToPage
+  type: Pointer
+  name:
+    en-US: Link to page
+    sv-SE: Länk till sida
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage

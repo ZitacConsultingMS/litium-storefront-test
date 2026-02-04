@@ -1,0 +1,6 @@
+productRelationshipTypes:
+- id: accessories
+  name:
+    en-US: Tillbehör
+    sv-SE: Tillbehör
+  bidirectional: false

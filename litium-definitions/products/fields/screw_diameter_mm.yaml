@@ -1,0 +1,22 @@
+productFields:
+- id: screw_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Skruv (mm)
+    en-US: Ø Skruv (mm)
+    nb-NO: Ø Skruv (mm)
+    sv-SE: Ø Skruv (mm)
+  description:
+    da-DK: Ø Skruv (mm)
+    en-US: Ø Skruv (mm)
+    nb-NO: Ø Skruv (mm)
+    sv-SE: Ø Skruv (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

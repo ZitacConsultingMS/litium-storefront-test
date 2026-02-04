@@ -1,0 +1,15 @@
+websiteFields:
+- id: AlternativeImageDescription
+  type: Text
+  name:
+    en-US: Alternative Image Description
+    sv-SE: Alternativ bildbeskrivning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

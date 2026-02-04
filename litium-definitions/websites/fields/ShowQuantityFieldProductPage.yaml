@@ -1,0 +1,18 @@
+websiteFields:
+- id: ShowQuantityFieldProductPage
+  type: Boolean
+  name:
+    en-US: Show quantity field
+    sv-SE: Visa ett fält för antal
+  description:
+    en-US: Whether to show an input field for the number of products to buy.
+    sv-SE: Ange om ett fält för att ange kvantiteten av en produkt ska visas.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

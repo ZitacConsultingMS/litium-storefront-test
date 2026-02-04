@@ -1,0 +1,21 @@
+productFields:
+- id: article_model
+  type: Text
+  name:
+    da-DK: Modell
+    en-US: Modell
+    nb-NO: Modell
+    sv-SE: Litium_ArtikelMod
+  description:
+    da-DK: Modell
+    en-US: Modell
+    nb-NO: Modell
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: true
+      searchable: false

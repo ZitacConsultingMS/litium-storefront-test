@@ -1,0 +1,17 @@
+blockFields:
+- id: zsStoreID
+  type: Text
+  name:
+    en-US: Store ID
+    sv-SE: Store ID
+  description:
+    sv-SE: Pinmeto Store ID
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

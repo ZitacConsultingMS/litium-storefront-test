@@ -1,0 +1,22 @@
+productFields:
+- id: work_pressure
+  type: Text
+  name:
+    da-DK: Arbetstryck
+    en-US: Arbetstryck
+    nb-NO: Arbetstryck
+    sv-SE: Arbetstryck
+  description:
+    da-DK: Arbetstryck
+    en-US: Arbetstryck
+    nb-NO: Arbetstryck
+    sv-SE: Arbetstryck
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

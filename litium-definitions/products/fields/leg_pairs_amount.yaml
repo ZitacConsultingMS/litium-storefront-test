@@ -1,0 +1,22 @@
+productFields:
+- id: leg_pairs_amount
+  type: Decimal
+  name:
+    da-DK: Benpar Antal
+    en-US: Benpar Antal
+    nb-NO: Benpar Antal
+    sv-SE: Benpar Antal
+  description:
+    da-DK: Benpar Antal
+    en-US: Benpar Antal
+    nb-NO: Benpar Antal
+    sv-SE: Benpar Antal
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

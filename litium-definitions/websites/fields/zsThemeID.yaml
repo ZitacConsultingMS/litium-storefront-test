@@ -1,0 +1,14 @@
+websiteFields:
+- id: zsThemeID
+  type: Text
+  name:
+    sv-SE: Theme ID
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

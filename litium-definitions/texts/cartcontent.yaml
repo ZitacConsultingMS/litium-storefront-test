@@ -8,6 +8,9 @@ websiteTexts:
   cartcontent.discounts.title:
     en-US: Discounts
     sv-SE: Rabatter
+  cartcontent.payment.title:
+    en-US: Payment
+    sv-SE: Betalning
   cartcontent.empty:
     en-US: Your cart is empty
     sv-SE: Kundvagnen är tom

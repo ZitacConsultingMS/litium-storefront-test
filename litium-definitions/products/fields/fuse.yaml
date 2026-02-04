@@ -1,0 +1,22 @@
+productFields:
+- id: fuse
+  type: Text
+  name:
+    da-DK: Säkring
+    en-US: Säkring
+    nb-NO: Säkring
+    sv-SE: Säkring
+  description:
+    da-DK: Säkring
+    en-US: Säkring
+    nb-NO: Säkring
+    sv-SE: Säkring
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

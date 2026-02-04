@@ -1,0 +1,22 @@
+productFields:
+- id: designation
+  type: Text
+  name:
+    da-DK: Benämning
+    en-US: Benämning
+    nb-NO: Benämning
+    sv-SE: Benämning
+  description:
+    da-DK: Benämning
+    en-US: Benämning
+    nb-NO: Benämning
+    sv-SE: Benämning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

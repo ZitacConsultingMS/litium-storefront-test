@@ -1,0 +1,22 @@
+productFields:
+- id: band
+  type: Text
+  name:
+    da-DK: Band
+    en-US: Band
+    nb-NO: Band
+    sv-SE: Band
+  description:
+    da-DK: Band
+    en-US: Band
+    nb-NO: Band
+    sv-SE: Band
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

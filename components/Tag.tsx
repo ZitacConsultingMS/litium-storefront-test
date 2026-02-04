@@ -1,5 +1,5 @@
 import { Text } from 'components/elements/Text';
-import Close from 'components/icons/close';
+import Close from 'components/icons/zitac/close';
 import { Fragment } from 'react';
 import { Button } from './elements/Button';
 
@@ -22,7 +22,7 @@ function Tag({
   return (
     <Fragment>
       <div
-        className="mb-2.5 flex w-fit items-center rounded-3xl bg-secondary-3 px-3 py-1 font-medium text-tertiary-2 last:mb-0"
+        className="text-tertiary-2 mb-2.5 flex w-fit items-center rounded-3xl bg-secondary-3 px-3 py-1 font-medium last:mb-0"
         key={text}
       >
         <Text className="mr-3" data-testid="tag">

@@ -1,0 +1,22 @@
+productFields:
+- id: pin
+  type: Text
+  name:
+    da-DK: Tapp
+    en-US: Tapp
+    nb-NO: Tapp
+    sv-SE: Tapp
+  description:
+    da-DK: Tapp
+    en-US: Tapp
+    nb-NO: Tapp
+    sv-SE: Tapp
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

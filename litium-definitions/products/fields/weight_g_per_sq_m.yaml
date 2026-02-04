@@ -1,0 +1,22 @@
+productFields:
+- id: weight_g_per_sq_m
+  type: Decimal
+  name:
+    da-DK: Vikt (g/m²)
+    en-US: Vikt (g/m²)
+    nb-NO: Vikt (g/m²)
+    sv-SE: Vikt (g/m²)
+  description:
+    da-DK: Vikt (g/m²)
+    en-US: Vikt (g/m²)
+    nb-NO: Vikt (g/m²)
+    sv-SE: Vikt (g/m²)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

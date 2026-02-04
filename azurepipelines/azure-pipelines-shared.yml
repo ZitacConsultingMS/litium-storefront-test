@@ -1,0 +1,135 @@
+steps:
+  - task: DotNetCoreCLI@2
+    displayName: Add nuget source file
+    inputs:
+      command: 'custom'
+      custom: 'new'
+      arguments: 'nugetconfig'
+
+  - task: DotNetCoreCLI@2
+    displayName: Add Litium nuget source
+    inputs:
+      command: 'custom'
+      custom: 'nuget'
+      arguments: 'add source https://nuget.litium.com/nuget/ --name Litium'
+
+  - task: NuGetAuthenticate@1
+    displayName: 'Authenticate to NuGet feeds'
+    inputs:
+      nuGetServiceConnections: 'Litium'
+      forceReinstallCredentialProvider: true
+
+  - task: DotNetCoreCLI@2
+    displayName: Clear nuget http cache
+    inputs:
+      command: 'custom'
+      custom: 'nuget'
+      arguments: 'locals -c http-cache'
+
+  # 1. Install specific version of Node.js
+  - task: NodeTool@0
+    displayName: 'Install Nodejs 20'
+    inputs:
+      versionSource: 'spec'
+      versionSpec: '20'
+
+  - pwsh: |
+      mkdir -p "$(Pipeline.Workspace)/.npm"
+      npm config set cache "$(Pipeline.Workspace)/.npm" --global
+    displayName: 'Set npm cache dir'
+
+  # 2. Restore packages from cache
+  - task: Cache@2
+    displayName: 'Cache NPM packages'
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: '$(Pipeline.Workspace)/.npm'
+
+  # 3. Install packages
+  - script: 'npm ci'
+    displayName: 'Install npm packages'
+
+  # 4. Build project
+  - script: 'npm run build'
+    displayName: 'Build Nextjs React Storefront'
+
+  # 5. Copy files to /builds/publish folder, excluding folders/files that isn't needed.
+  - task: CopyFiles@2
+    inputs:
+      sourceFolder: '$(Build.SourcesDirectory)'
+      contents: |
+        **
+        !.git/**
+        !.next/**
+        !.azure/**
+        !.vscode/**
+        !node_modules/**
+      targetFolder: '$(Build.SourcesDirectory)/builds/publish'
+
+  # 6. Download env file (Secure File)
+  - task: DownloadSecureFile@1
+    name: envfile
+    displayName: 'Download .env secure file'
+    inputs:
+      secureFile: '$(EnvSecureFile)'
+
+  # 7. Copy env file into builds/publish so Litium Cloud build uses it
+  - pwsh: |
+      $src = "$(envfile.secureFilePath)"
+      $dst = "$(Build.SourcesDirectory)/builds/publish/.env"
+
+      Write-Host "Copying env secure file:"
+      Write-Host "  Source: $src"
+      Write-Host "  Target: $dst"
+
+      if (!(Test-Path $src)) { throw "Secure env file not found at: $src" }
+
+      Copy-Item -Path $src -Destination $dst -Force
+      Write-Host " Secure env copied to builds/publish/.env"
+    displayName: 'Apply env to publish folder'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Install litium.cloud.cli tool'
+    inputs:
+      command: custom
+      custom: tool
+      arguments: 'update -g litium.cloud.cli --no-cache'
+
+  - task: DownloadSecureFile@1
+    name: cert
+    displayName: 'Download secure file'
+    inputs:
+      # https://docs.litium.com/cloud/serverless/guides/service-principal
+      # Add the .pem-file in devops > pipelines > library > secure files
+      secureFile: $(LitiumServicePrincipal)
+
+  - task: DownloadSecureFile@1
+    displayName: 'Download Secure License File'
+    name: license
+    inputs:
+      secureFile: '$(LicenseFile)'
+      retryCount: 3
+
+      # Step 4: Copy secure file to target location
+  - task: CopyFiles@2
+    displayName: 'Deploy Secure File to Target Folder'
+    inputs:
+      SourceFolder: '$(Agent.TempDirectory)'
+      Contents: '$(license.secureFilePath)'
+      TargetFolder: '$(Build.SourcesDirectory)/builds/publish/$(solutionname)'
+      OverWrite: true
+      preserveTimestamp: true
+
+  - pwsh: ./azure-pipelines-shared.ps1
+    workingDirectory: ./azurepipelines
+    displayName: 'Authenticate, upload artifact and deploy'
+    env:
+      # Pass variables to powershell script
+      BuildSourcesDirectory: $(Build.SourcesDirectory)
+      CertSecureFilePath: $(cert.secureFilePath)
+      LitiumApp: $(LitiumStorefront)
+      LitiumCloudUser: $(LitiumCloudUser)
+      LitiumCloudEnvironment: $(LitiumCloudEnvironment)
+      LitiumCloudSubscription: $(LitiumCloudSubscription)

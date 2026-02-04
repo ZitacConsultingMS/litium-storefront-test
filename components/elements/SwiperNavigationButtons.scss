@@ -1,0 +1,36 @@
+.swiper-navigation-buttons {
+  // Custom navigation button styles - matching FavouriteButton style
+  .nav-button-prev,
+  .nav-button-next {
+    // Smooth transition for show/hide and hover effects
+    transition:
+      opacity 0.2s ease,
+      box-shadow 0.2s ease !important;
+
+    // Hide navigation buttons on mobile/tablet, show on desktop
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+
+    // Show on desktop
+    @media (min-width: 1024px) {
+      display: flex !important;
+    }
+
+    // Subtle hover effect
+    &:hover {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+    }
+  }
+
+  // Positioning variants
+  &.outside {
+    .nav-button-prev {
+      left: -18px !important;
+    }
+
+    .nav-button-next {
+      right: -18px !important;
+    }
+  }
+}

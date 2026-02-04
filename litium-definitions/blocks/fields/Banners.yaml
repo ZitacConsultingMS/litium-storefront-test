@@ -21,4 +21,9 @@ blockFields:
     - BannerLinkToPage
     - BannerLinkToProduct
     - ActionText
+    - zsBackgroundPosition
+    - zsBackgroundBlur
+    - zsBannerImageHeight
+    - zsBannerTextShadow
+    - zsBannerTextColor
     isArray: true

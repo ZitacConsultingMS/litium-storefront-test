@@ -1,0 +1,22 @@
+productFields:
+- id: length_m
+  type: Text
+  name:
+    da-DK: Längd (m)
+    en-US: Längd (m)
+    nb-NO: Längd (m)
+    sv-SE: Längd (m)
+  description:
+    da-DK: Längd (m)
+    en-US: Längd (m)
+    nb-NO: Längd (m)
+    sv-SE: Längd (m)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

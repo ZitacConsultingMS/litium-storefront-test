@@ -1,0 +1,19 @@
+productFields:
+- id: outside
+  type: Text
+  name:
+    da-DK: Utv
+    de-DE: Utv
+    en-US: Utv
+    fi-FI: Utv
+    nb-NO: Utv
+    sv-SE: Utv
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

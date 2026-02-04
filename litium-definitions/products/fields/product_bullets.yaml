@@ -1,0 +1,16 @@
+productFields:
+- id: product_bullets
+  type: Editor
+  name:
+    sv-SE: Litium Bullets
+  description:
+    sv-SE: Bullets
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

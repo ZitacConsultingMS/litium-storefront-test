@@ -1,0 +1,18 @@
+websiteFields:
+- id: InBrandPages
+  type: Boolean
+  name:
+    en-US: In brand pages
+    sv-SE: På märkessidor
+  description:
+    en-US: Hides or shows the left menu of the pages showing information and products for a brand.
+    sv-SE: Visar eller döljer vänstermenyn på sidor med information om och produkter från ett visst märke.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

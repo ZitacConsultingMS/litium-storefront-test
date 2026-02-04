@@ -1,0 +1,24 @@
+websiteTemplates:
+- blockContainers:
+  - id: Main
+    childBlocks:
+      combination: All
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsRetailerList
+  name:
+    en-US: Retailer List
+    sv-SE: Återförsäljare lista

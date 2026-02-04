@@ -266,6 +266,9 @@ function OrderHistory(props: OrderListProps) {
 const GET_ORDERS = gql`
   query GetOrders($first: Int, $after: String) {
     me {
+      person {
+        id
+      }
       orders(first: $first, after: $after) {
         ...Order
       }

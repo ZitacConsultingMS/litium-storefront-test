@@ -1,0 +1,33 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-file-video
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Video
+    name:
+      en-US: Video
+      sv-SE: Video
+    fields:
+    - id: BlockVideo
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Video
+  name:
+    en-US: Video
+    sv-SE: Video

@@ -1,0 +1,5 @@
+customerAddressTypes:
+- id: AlternativeAddress
+  name:
+    en-US: AlternativeAddress
+    sv-SE: AlternativeAddress

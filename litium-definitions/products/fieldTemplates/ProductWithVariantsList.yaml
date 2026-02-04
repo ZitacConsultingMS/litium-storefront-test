@@ -7,6 +7,8 @@ productTemplates:
     - id: _description
     - id: Brand
     - id: Type
+    - id: Color
+    - id: Size
     - id: _url
     - id: _seoTitle
     - id: _seoDescription
@@ -35,11 +37,10 @@ productTemplates:
       collapsed: false
     storefront:
       visible: false
+  displayFieldGroups:
+  - id: variantFieldColumns
   useVariantUrl: false
-  settings: {}
   id: ProductWithVariantsList
   name:
     en-US: Product with variants shown in a list
     sv-SE: Produkt med varianter som visas i en lista
-  displayFieldGroups:
-  - id: variantFieldColumns

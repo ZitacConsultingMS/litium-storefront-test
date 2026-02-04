@@ -1,8 +1,11 @@
 import { gql } from '@apollo/client';
 import { Fragment } from 'react';
 import { queryServer } from 'services/dataService.server';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from './zitac/Footer';
+import Header from './zitac/Header';
+import TopBar from './zitac/TopBar';
+// import Footer from './Footer';
+// import Header from './Header';
 
 async function PageLayout({
   stickyHeader = false,
@@ -16,16 +19,21 @@ async function PageLayout({
   children: React.ReactNode;
 }) {
   const content = await getContent();
-  const { primaryNavigation, footer } = content.channel.website.blocks;
+  const { primaryNavigation, footer, zsTopBar } =
+    content.channel.website.blocks;
   return (
     <Fragment>
+      <TopBar blocks={zsTopBar} />
       <Header
         blocks={primaryNavigation}
         sticky={stickyHeader}
         showLogo={showLogo}
         showNavigation={showNavigation}
       />
-      <main id="main-content" className="mx-auto min-h-[500px]">
+      <main
+        id="main-content"
+        className="mx-auto min-h-[500px] px-5 py-8 md:container md:py-14"
+      >
         {children}
       </main>
       <Footer blocks={footer} />
@@ -81,6 +89,30 @@ const GET_CONTENT = gql`
                   systemId
                   children {
                     ...NavigationLinksBlock
+                    ...ZsTextEditorBlock
+                    ...ZsFooterNavigationLinksBlock
+                  }
+                }
+              }
+              zsTopBar {
+                ... on ZsTopBarBlock {
+                  systemId
+                  fields {
+                    zsTextEditor
+                    zsUSP {
+                      blockText
+                    }
+                  }
+                }
+                ... on ZsTopMenuBlock {
+                  systemId
+                  fields {
+                    zsLinks {
+                      navigationLink {
+                        text
+                        url
+                      }
+                    }
                   }
                 }
               }
@@ -107,6 +139,25 @@ const GET_CONTENT = gql`
           ...Link
         }
       }
+    }
+  }
+  fragment ZsFooterNavigationLinksBlock on ZsFooterNavigationLinksBlock {
+    systemId
+    fields {
+      navigationLinksHeader {
+        ...Link
+      }
+      zsFooterNavigationLinks {
+        navigationLink {
+          ...Link
+        }
+      }
+    }
+  }
+  fragment ZsTextEditorBlock on ZsTextEditorBlock {
+    systemId
+    fields {
+      zsTextEditor
     }
   }
 

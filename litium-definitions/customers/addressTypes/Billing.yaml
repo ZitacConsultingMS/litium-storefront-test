@@ -1,0 +1,5 @@
+customerAddressTypes:
+- id: Billing
+  name:
+    en-US: Billing
+    sv-SE: Billing

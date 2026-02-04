@@ -1,0 +1,22 @@
+productFields:
+- id: article_length
+  type: Text
+  name:
+    da-DK: Längd
+    en-US: Längd
+    nb-NO: Längd
+    sv-SE: Längd
+  description:
+    da-DK: Längd
+    en-US: Längd
+    nb-NO: Längd
+    sv-SE: Längd
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

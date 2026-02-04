@@ -47,5 +47,3 @@ productFields:
         en-US: Shape
         sv-SE: Shape
       value: Shape
-    multiSelect: false
-    manualSort: false

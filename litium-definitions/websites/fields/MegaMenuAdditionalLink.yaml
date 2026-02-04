@@ -1,0 +1,15 @@
+websiteFields:
+- id: MegaMenuAdditionalLink
+  type: LimitedText
+  name:
+    en-US: Additional link
+    sv-SE: Extra länk
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

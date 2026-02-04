@@ -1,0 +1,22 @@
+productFields:
+- id: load_capacity_kg
+  type: Text
+  name:
+    da-DK: Bärighet (kg)
+    en-US: Bärighet (kg)
+    nb-NO: Bärighet (kg)
+    sv-SE: Bärighet (kg)
+  description:
+    da-DK: Bärighet (kg)
+    en-US: Bärighet (kg)
+    nb-NO: Bärighet (kg)
+    sv-SE: Bärighet (kg)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

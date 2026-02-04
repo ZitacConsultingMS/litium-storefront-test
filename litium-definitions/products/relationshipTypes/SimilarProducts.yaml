@@ -1,0 +1,6 @@
+productRelationshipTypes:
+- id: SimilarProducts
+  name:
+    en-US: Similar products
+    sv-SE: Relaterade produkter
+  bidirectional: true

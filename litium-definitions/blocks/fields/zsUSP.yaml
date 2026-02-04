@@ -1,0 +1,19 @@
+blockFields:
+- id: zsUSP
+  type: MultiField
+  name:
+    en-US: USP
+    sv-SE: USP
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    fields:
+    - BlockText
+    isArray: true

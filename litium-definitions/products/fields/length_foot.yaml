@@ -1,0 +1,22 @@
+productFields:
+- id: length_foot
+  type: Text
+  name:
+    da-DK: Längd (fot)
+    en-US: Längd (fot)
+    nb-NO: Längd (fot)
+    sv-SE: Längd (fot)
+  description:
+    da-DK: Längd (fot)
+    en-US: Längd (fot)
+    nb-NO: Längd (fot)
+    sv-SE: Längd (fot)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

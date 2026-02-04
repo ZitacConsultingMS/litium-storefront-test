@@ -20,6 +20,9 @@ websiteTexts:
   emailorderconfirmation.ordernumber:
     en-US: Order
     sv-SE: Order
+  emailorderconfirmation.payment.title:
+    en-US: Payment
+    sv-SE: Betalning
   emailorderconfirmation.fee.title:
     en-US: Fees
     sv-SE:

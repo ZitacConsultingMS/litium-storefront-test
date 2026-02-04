@@ -1,0 +1,15 @@
+websiteFields:
+- id: NumberOfOrdersPerPage
+  type: Int
+  name:
+    en-US: Number of orders per page
+    sv-SE: Antal beställningar per sida
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,18 @@
+websiteFields:
+- id: LogotypeIcon
+  type: MediaPointerImage
+  name:
+    en-US: Logotype (icon)
+    sv-SE: Logotyp (ikon)
+  description:
+    en-US: A logotype image that will be used for example in web browser tabs. Recommended size is 250 x 250px.
+    sv-SE: En logotyp som används på till exempel webbläsarflikar. Rekommenderad storlek är 250 × 250 pixel.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

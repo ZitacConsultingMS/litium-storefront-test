@@ -1,0 +1,12 @@
+productFields:
+- id: zsHelloRetail_Recom_Box_Id_Product
+  type: Text
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

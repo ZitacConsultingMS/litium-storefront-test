@@ -1,0 +1,22 @@
+productFields:
+- id: hole_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Hål (mm)
+    en-US: Ø Hål (mm)
+    nb-NO: Ø Hål (mm)
+    sv-SE: Ø Hål (mm)
+  description:
+    da-DK: Ø Hål (mm)
+    en-US: Ø Hål (mm)
+    nb-NO: Ø Hål (mm)
+    sv-SE: Ø Hål (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

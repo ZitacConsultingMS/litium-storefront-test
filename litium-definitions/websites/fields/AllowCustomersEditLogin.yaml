@@ -1,0 +1,18 @@
+websiteFields:
+- id: AllowCustomersEditLogin
+  type: Boolean
+  name:
+    en-US: Allow customers to edit login
+    sv-SE: Kunderna får ändra inloggningsuppgifter
+  description:
+    en-US: A setting that allows customers to edit their username and password.
+    sv-SE: Ange om kunderna ska kunna byta användarnamn och lösenord.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

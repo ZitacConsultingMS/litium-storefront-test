@@ -1,0 +1,22 @@
+productFields:
+- id: angle
+  type: Text
+  name:
+    da-DK: Vinkel
+    en-US: Vinkel
+    nb-NO: Vinkel
+    sv-SE: Vinkel
+  description:
+    da-DK: Vinkel
+    en-US: Vinkel
+    nb-NO: Vinkel
+    sv-SE: Vinkel
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

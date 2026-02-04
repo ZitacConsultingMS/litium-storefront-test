@@ -1,0 +1,22 @@
+productFields:
+- id: country
+  type: Text
+  name:
+    da-DK: Land
+    en-US: Land
+    nb-NO: Land
+    sv-SE: Land
+  description:
+    da-DK: Land
+    en-US: Land
+    nb-NO: Land
+    sv-SE: Land
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

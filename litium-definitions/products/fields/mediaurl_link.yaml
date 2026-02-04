@@ -1,0 +1,1264 @@
+productFields:
+- id: mediaurl_link
+  type: TextOption
+  name:
+    sv-SE: Media Url länkar
+  description:
+    sv-SE: Media Url länkar
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        sv-SE: Baltic Hund- & Kattflytvästar
+      value: https://youtu.be/7e2hnT0O1aI
+    - name:
+        sv-SE: EcoFlow GLACIER
+      value: https://youtu.be/Grjq4qrsre4
+    - name:
+        sv-SE: Snubber Twist Instructions
+      value: https://youtu.be/dfwDdHHV6ls
+    - name:
+        sv-SE: Snubber Twist Intro
+      value: https://youtu.be/TNCjsUtD7ig
+    - name:
+        sv-SE: Dometic Portabel kemtoalett 972/976
+      value: https://youtu.be/EPy0PU4Exm0
+    - name:
+        sv-SE: Allt om presenningar! Täck båten med rätt presenning och tillbehör
+      value: https://youtu.be/NPKBk7PdONU
+    - name:
+        sv-SE: Biocool - Make my toilet fresh
+      value: https://youtu.be/MBaedl16uOY
+    - name:
+        sv-SE: LED REMOTE CONTROL SEARCHLIGHT  DEMONSTRATION
+      value: https://youtu.be/YGHW5vaX-oI
+    - name:
+        sv-SE: SE - TORRBOLLEN HOME - 3D 16:9
+      value: https://youtu.be/Lkis1qLely4
+    - name:
+        sv-SE: TORRBOLLEN HOME - Fuktslukare 600g SE
+      value: https://youtu.be/IIKL3tv8F5M
+    - name:
+        sv-SE: Blue Smart IP65 Charger - Professional battery charger | Victron Energy
+      value: https://youtu.be/bbdLxsfMu74
+    - name:
+        sv-SE: Why Mastervolt ChargeMaster Plus is the next generation of battery chargers
+      value: https://youtu.be/5RtGIvi6yB0
+    - name:
+        sv-SE: Mastervolt ChargeMaster Plus - Nästa generations batteriladdare
+      value: https://youtu.be/qWb4lwlApZI
+    - name:
+        sv-SE: '303 Marine Aerospace Protectant: Explained'
+      value: https://youtu.be/WVqYq4A37f8
+    - name:
+        sv-SE: 303 - Båtvård
+      value: https://youtu.be/1cy6T2nWrgw
+    - name:
+        sv-SE: 303 - Kapellvård
+      value: https://youtu.be/90g8Xrr7GFw
+    - name:
+        sv-SE: How to program the BatteryProtect | Victron Energy
+      value: https://youtu.be/HmN8srNlg5g
+    - name:
+        sv-SE: Introduction to the Victron Energy BatteryProtect | Victron Energy
+      value: https://youtu.be/mg0kwJIo-5U
+    - name:
+        sv-SE: New Cruise lineup 2022
+      value: https://youtu.be/jUqHYuoMYgs
+    - name:
+        sv-SE: Installation of the Cruise 4, Power 48-5000 & Throttle
+      value: https://youtu.be/QDXlNAXeiKI
+    - name:
+        sv-SE: Unboxing the new Cerbo GX & GX Touch 50 screen
+      value: https://youtu.be/3wheKaU2_qw
+    - name:
+        sv-SE: Cerbo GX Introduction
+      value: https://youtu.be/ojIkmRMqIjI
+    - name:
+        sv-SE: Så rengör du din RIB-båt
+      value: https://youtu.be/IoVsyc_wqNw?si=_kw8apVjxXt_gRZL
+    - name:
+        sv-SE: Veratron VL Flex 52 - the universal gauge
+      value: https://youtu.be/4o4XqmAMdko
+    - name:
+        sv-SE: Baltic how to attach Crotch Strap
+      value: https://youtu.be/6oiKfyYNaHY
+    - name:
+        sv-SE: Sharkbite -  Mobile Sanitärvätska SE
+      value: https://youtu.be/z4i5xDkH7Qk
+    - name:
+        sv-SE: Dragblock Wetnfun
+      value: https://youtu.be/qwpDNGZFatk
+    - name:
+        sv-SE: Liros Bojlina Mooring Master - Kompletta bojförankringskit
+      value: https://youtu.be/j_dlO4oB4us?si=BE6ZElelF7oBHl7N
+    - name:
+        sv-SE: Did you know - Use a Blue Smart Charger as a Power Supply
+      value: https://youtu.be/qt2PVYT13mE
+    - name:
+        sv-SE: STA-BIL DIESEL - Marknadens bästa dieselstabilsator
+      value: https://youtu.be/uBrCPnOErTQ
+    - name:
+        sv-SE: STA-BIL DIESEL - Fördjupning
+      value: https://youtu.be/zjSvSQ7ooOI
+    - name:
+        sv-SE: 303 - Clear Vinyl Cleaner
+      value: https://youtu.be/Z3xCB3rrkus
+    - name:
+        sv-SE: Change MPPT settings using Bluetooth
+      value: https://youtu.be/XQea9aO2uVI
+    - name:
+        sv-SE: Victron SmartSolar MPPT - En smart solcellsregulator
+      value: https://youtu.be/-Je6AZFP154
+    - name:
+        sv-SE: Victron SmartShunt IP65 - Installation och kalibrering
+      value: https://youtu.be/6G55ELHGdl8
+    - name:
+        sv-SE: SIMARINE PICO Monitor Review and Install in RV
+      value: https://youtu.be/zEycLvO1-es
+    - name:
+        sv-SE: SIMARINE Pico Battery Monitor
+      value: https://youtu.be/2l8BtIvNlGk
+    - name:
+        sv-SE: Åkring bakom båten - Tubepaket Sun, Bermuda & Banyan från Wetnfun
+      value: https://youtu.be/ZaA0zeh_eWQ
+    - name:
+        sv-SE: Vetus Libero Däckslucka
+      value: https://youtu.be/BxyjC-o5fPo
+    - name:
+        sv-SE: Allt om Baltic barnflytvästar!
+      value: https://youtu.be/bwRPfhLm8Wc
+    - name:
+        sv-SE: EVA-material för båtar – så här monterar du steg för steg
+      value: https://youtu.be/wyuRla0Zyas?si=_wwqQUlq85E89FG3
+    - name:
+        sv-SE: Tyresöbocken 1500 & Typ 1 - Båtbockar från Maskinfabriken
+      value: https://youtu.be/BVfXsW1-EnI
+    - name:
+        sv-SE: 303 - Mold & Mildew Cleaner
+      value: https://youtu.be/jeTJXzOdyhg
+    - name:
+        sv-SE: Blåser upp flytväst - Visar och förklarar
+      value: https://youtu.be/vL__LIaX8nI
+    - name:
+        sv-SE: Legend
+      value: https://youtu.be/pnPZYUNQiWM
+    - name:
+        sv-SE: Tillbehör till miniugnen Omnia
+      value: https://youtu.be/NuN49Q2go5s
+    - name:
+        sv-SE: Omnia - Ugn på spisen
+      value: https://youtu.be/N93bmooTiaU
+    - name:
+        sv-SE: Biocool - Purify my drinking water
+      value: https://youtu.be/S4SFSNcvJBE
+    - name:
+        sv-SE: EVA-material för båtar – så här monterar du steg för steg
+      value: https://youtu.be/wyuRla0Zyas?si=REsIu16qOqiGgnss
+    - name:
+        sv-SE: Inflating a Polyform® fender
+      value: https://youtu.be/HGSfM8qwkLQ?si=paUsaTiVs9Mxj-jt
+    - name:
+        sv-SE: The all new Travel XP
+      value: https://youtu.be/FWWZCqUt18I?si=9GOvVipTwim1P6v2
+    - name:
+        sv-SE: Bergkilen Klippfast
+      value: https://youtu.be/ogMpNjrn6rI
+    - name:
+        sv-SE: Omnia2019 marin HD2
+      value: https://youtu.be/pfwfSUcPNjo
+    - name:
+        sv-SE: Biocool - Spray away mould + Wash my laundry
+      value: https://youtu.be/suNvzfOpDQw
+    - name:
+        sv-SE: The Barton Boomstrut
+      value: https://youtu.be/NxaK03ByMKA
+    - name:
+        sv-SE: BEMA Utombordarlås UBL-S
+      value: https://youtu.be/iGA7LwlV5ds
+    - name:
+        sv-SE: Ship Shape Jordslagfjerner/Rengöringsmedel
+      value: https://youtu.be/hqDb_H3PGFs
+    - name:
+        sv-SE: Ship Shape Kalesjerens
+      value: https://youtu.be/HnAGKgjJpGY
+    - name:
+        sv-SE: Victron Q&A Webinar 1 - Using an Alternator to charge Lithium
+      value: https://youtu.be/dzU_pQFa19s
+    - name:
+        sv-SE: STA-BIL Storage Fuel Stabilizer
+      value: https://youtu.be/ScDIodHmjTQ
+    - name:
+        sv-SE: STA-BIL 360 Marine & STA-BIL Storage
+      value: https://youtu.be/bqb7pashOXc
+    - name:
+        sv-SE: Introducing the Smart Battery Sense
+      value: https://youtu.be/v62wCfXaWXY
+    - name:
+        sv-SE: Victron Smart Battery Sense - Installation av en trådlös batterispännings- och temperatursensor
+      value: https://youtu.be/EgYOunzetVw
+    - name:
+        sv-SE: 303 Touchless Sealant -  Försegla gelcoaten
+      value: https://youtu.be/cihlodbho1A
+    - name:
+        sv-SE: The all new Travel XP
+      value: https://youtu.be/FWWZCqUt18I?si=bMdPlaRieSLf1tUH
+    - name:
+        sv-SE: Smart Snubber
+      value: https://youtu.be/TsaH8IAKM3g
+    - name:
+        sv-SE: EVA-material för båtar – så här monterar du steg för steg
+      value: https://youtu.be/wyuRla0Zyas?si=pM6pumlpVduLDb8G
+    - name:
+        sv-SE: BEMA Motorlås/Bultlås UBL-1
+      value: https://youtu.be/cPwZfH8iJ_g
+    - name:
+        sv-SE: History and settings for Blue Smart Chargers in VictronConnect
+      value: https://youtu.be/3ciIWOWRrcU
+    - name:
+        sv-SE: Sailcroft Air komfortsits
+      value: https://youtu.be/UsvQJ7DfVzI
+    - name:
+        sv-SE: Smart Snubber
+      value: https://youtu.be/TsaH8IAKM3g?si=sqeFX1JXCIkGx3iu
+    - name:
+        sv-SE: Den smarta förtöjningsfjädern BUNGY
+      value: https://youtu.be/y3jJq9Lbmzs
+    - name:
+        sv-SE: 'ECHOMAP Chartplotter and GT56 Transducer Bundles: Less Time Finding, More Time Fishing'
+      value: https://youtu.be/6zrLDkGrKlA?si=KGjoz5mCTzi_zfbt
+    - name:
+        sv-SE: Dometic Kylbox CFX3
+      value: https://youtu.be/Hnh5aqcUL3s
+    - name:
+        sv-SE: Vetus Bogpropeller BOW45
+      value: https://youtu.be/zN-vYoborhk
+    - name:
+        sv-SE: How to assemble a Windex 15
+      value: https://youtu.be/O8O-AJjpUTs?si=vBXqvJWVvfREwjDz
+    - name:
+        sv-SE: DOMETIC | GO HYD-WF Hydration Water Tap with Water Jug
+      value: https://youtu.be/KR5dfovNP-s?si=i3XfNH2KA_CmaUqz
+    - name:
+        sv-SE: DOMETIC | GO HYD-J11 Hydration Water Jug with Water Tap
+      value: https://youtu.be/IfU6i0osJWg
+    - name:
+        sv-SE: Omnia Kit 1 – Unboxing
+      value: https://youtu.be/cIk9VWA_IGU
+    - name:
+        sv-SE: Independence of manufacture
+      value: https://youtu.be/BrRTYvLKw1I?si=JDOAk9eVL48Or5tR
+    - name:
+        sv-SE: Vulcan Anchor Performance
+      value: https://youtu.be/_keKEy7ELKI
+    - name:
+        sv-SE: A Breakdown of Raymarine's Alpha Performance Displays
+      value: https://youtu.be/KT5rrdUMq0c?si=_fs18kMROG8WsjfX
+    - name:
+        sv-SE: DOMETIC | Camping Water Container – Portable Hydration Made Easy
+      value: https://youtu.be/gvTaCJakVRo
+    - name:
+        sv-SE: Polera båt - 3M polering och vax - Allt om polering och vax med 3M
+      value: https://youtu.be/SZ6cGMyM7LI
+    - name:
+        sv-SE: Stop Ice Damage with Kasco De-icers
+      value: https://youtu.be/ss-o_DoENn8
+    - name:
+        sv-SE: Concentrated Familj | Toalettvårdsprodukter | THETFORD
+      value: https://youtu.be/xWnLlsqmBDY
+    - name:
+        sv-SE: Rocna Anchors
+      value: https://youtu.be/Ej0R6jWyVjw
+    - name:
+        sv-SE: Garmin Fantom Series | Solid-state Radars
+      value: https://youtu.be/vAgFun2WckQ
+    - name:
+        sv-SE: Basics of how to install a Garmin Marine radar
+      value: https://youtu.be/g2nAAKelsFM
+    - name:
+        sv-SE: How to understand radar screens and user controls
+      value: https://youtu.be/qHO0WkkZe6g
+    - name:
+        sv-SE: Garmin Radar Fantom X
+      value: https://youtu.be/fURFCUmekIY
+    - name:
+        sv-SE: Dometic Kylskåp CRX
+      value: https://youtu.be/dL4SA7VrGnM
+    - name:
+        sv-SE: Raymarine instrumentpaket
+      value: https://youtu.be/xt1dqHVEBeM
+    - name:
+        sv-SE: Introducing the Icom IC-M510 Advanced Marine VHF/DSC Radio with Smartphone Control
+      value: https://youtu.be/K0-ztwPxaUM
+    - name:
+        sv-SE: Låspaket Klass 3 - Lås och kätting
+      value: https://youtu.be/5rz73rW7ohE
+    - name:
+        sv-SE: Campingaz® Party Grill® - portable grill ideal for camping - EN
+      value: https://youtu.be/KgfPhOBVzJk
+    - name:
+        sv-SE: How Whale Supersub Smart fits deep down in small spaces where other electric bilge pumps won't fit!
+      value: https://youtu.be/Hm66tpbRn-M
+    - name:
+        sv-SE: How Whale Supersub Smart fits deep down in small spaces where other electric bilge pumps won't fit!
+      value: https://youtu.be/Hm66tpbRn-M?list=PLGV64bt7_nn05-rxLWAu1HHUOeQhj34sD
+    - name:
+        sv-SE: Polera och vaxa båten med TCnano Marine Gelcoatförsegling - Allt-i-ett
+      value: https://youtu.be/SUMCRSm_h5o
+    - name:
+        sv-SE: How to use your Thetford Porta Potti
+      value: https://youtu.be/eTWDc3Otpxg
+    - name:
+        sv-SE: How to Set a Fluke Anchor - Fortress Marine Anchors
+      value: https://youtu.be/lz8ilopFe8Y
+    - name:
+        sv-SE: LTC PROMARINE BT65
+      value: https://youtu.be/L1XTcmsfoOg
+    - name:
+        sv-SE: 'ECHOMAP Chartplotter and GT56 Transducer Bundles: Less Time Finding, More Time Fishing'
+      value: https://youtu.be/6zrLDkGrKlA?si=_UaRjYGPZmt0uxRe
+    - name:
+        sv-SE: Axiom+ MULTIFUNKTIONSDISPLAYER FÖR NAVIGATION
+      value: https://youtu.be/Vc8EiE-lEWU
+    - name:
+        sv-SE: Raymarine Axiom +
+      value: https://youtu.be/2dP5xBOXmgs
+    - name:
+        sv-SE: KOM IGÅNG MED LIGHTHOUSE SJÖKORT
+      value: https://youtu.be/yUt3S5WQ2RE
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/Ab-bgdaOK-I
+    - name:
+        sv-SE: U-Cleat
+      value: https://youtu.be/iOch0hDnlII
+    - name:
+        sv-SE: Garmin | ECHOMAP UHD2 | 6”, 7” and 9” Touchscreen Chartplotters
+      value: https://youtu.be/oXojrQ8s4oI
+    - name:
+        sv-SE: Garmin | ECHOMAP™ ULTRA 2 | 10” and 12” Touchscreen Chartplotters
+      value: https://youtu.be/GllwDfcSl58?si=l8LcnGvKYR17ajAA
+    - name:
+        sv-SE: How to assemble a WINDEX 6 dinghy
+      value: https://youtu.be/PoPTQ45HPJE
+    - name:
+        sv-SE: EVA-material för båtar – så här monterar du steg för steg
+      value: https://youtu.be/wyuRla0Zyas?si=sM5BsqtqWOwYtTpw
+    - name:
+        sv-SE: Check It Out - JL M6 Marine
+      value: https://youtu.be/BjpiEuwlxfo
+    - name:
+        sv-SE: RuuviTag Quick Start - Get Started Within Minutes with Your Wireless Sensor
+      value: https://youtu.be/tJP_Z2Hq4Ys?si=RYxj5jnzuny2ZBG5
+    - name:
+        sv-SE: 'Garmin: Plot Your Paradise with the GPSMAP X3 Series Chartplotters'
+      value: https://youtu.be/_OxDdMVMXec
+    - name:
+        sv-SE: 413 m3/h of hot air flow with 8 kW capacity ? - AUTOTERM Air 9D diesel heater - complete powerhouse
+      value: https://youtu.be/K-iIkmKgT-I?si=SnKUrHkpAtvgNWP3
+    - name:
+        sv-SE: Comfort Control - The most popular AUTOTERM panel
+      value: https://youtu.be/J52VETMiFrI?si=9RIbz2YVmQbqHq-u
+    - name:
+        sv-SE: FIXCLIP STORM TEST, Clothes pin for yacht, boats, RVs and camping.
+      value: https://youtu.be/vWR_WXsVjvY
+    - name:
+        sv-SE: Fixclip - den stormsäkra klädnypan
+      value: https://youtu.be/Ju-WlSR9iE8
+    - name:
+        sv-SE: FixClip rycktest
+      value: https://youtu.be/KT_7yX2gfgc
+    - name:
+        sv-SE: Synchronized Main Furling
+      value: https://youtu.be/lrTBQ5RRU5Y
+    - name:
+        sv-SE: How to Easily Change the Propeller on Kasco Fountains, De-Icers & Circulators
+      value: https://youtu.be/mBTM0dfQ3dE
+    - name:
+        sv-SE: Garmin | GMR xHD3 | Magnetron Dome Radars
+      value: https://youtu.be/p8k6ThKOs_k?si=ddrvwm7tRKlldZUT
+    - name:
+        sv-SE: Garmin | ECHOMAP™ ULTRA 2 | 10” and 12” Touchscreen Chartplotters
+      value: https://youtu.be/GllwDfcSl58?si=JLu47KXPz31IX9Rv
+    - name:
+        sv-SE: Dometic Kylskåp CRE
+      value: https://youtu.be/hrmgIlIT9c4
+    - name:
+        sv-SE: Cobb everywhere
+      value: https://youtu.be/AHqPHodxepE
+    - name:
+        sv-SE: Cobb vid hamnen
+      value: https://youtu.be/g7UlnYoGvrs
+    - name:
+        sv-SE: Cobb fisketur
+      value: https://youtu.be/fJLmF0WWxx4
+    - name:
+        sv-SE: Nautilight undervattensbelysning - Aries 8 + Aries 11
+      value: https://youtu.be/q3lThh188fE
+    - name:
+        sv-SE: Nightwave Product Overview
+      value: https://youtu.be/e2cCPhLqWuc
+    - name:
+        sv-SE: 'SIONYX Nightwave How-To: Permanent Installation Guide'
+      value: https://youtu.be/2b96OvJjvNs?si=isqmipbCuK93uTSl
+    - name:
+        sv-SE: 'SIONYX Nightwave How-To: USB and Tablet Connection with Flexible Mounting Options'
+      value: https://youtu.be/b0AH5ouKShU?si=OnBBKx6jFeCt6Vzc
+    - name:
+        sv-SE: 'SIONYX Nightwave How-To:  Swap Analog Video Cable for Digital USB Video Cable | Tutorial'
+      value: https://youtu.be/qUPXT57Pn08?si=TFJ0o7LCsZca4Wu5
+    - name:
+        sv-SE: JL Audio M3 Marine Coaxial Loudspeaker | Play Better
+      value: https://youtu.be/WRY8TUroaCA
+    - name:
+        sv-SE: Skillnaden mellan Isotherm 42 och 49 liters skåp
+      value: https://youtu.be/BVrTZo02ME8
+    - name:
+        sv-SE: Garmin GPSMAP 923 - Lådans innehåll
+      value: https://youtu.be/L-8KVQ5nG3g
+    - name:
+        sv-SE: Garmin GPSMAP 923
+      value: https://youtu.be/MHr5tolAqws
+    - name:
+        sv-SE: Liros Handy Elastic - Förtöjningstampar
+      value: https://youtu.be/17eJxrStg2g
+    - name:
+        sv-SE: VAKE DE-ICER - Strömbildaren som använder bubbelteknik
+      value: https://youtu.be/lEjXEqyQAcE
+    - name:
+        sv-SE: VAKE DE-ICER STRÖMBILDARE
+      value: https://youtu.be/sEu_4BkhrBY
+    - name:
+        sv-SE: Ankarspel Quick Balder
+      value: https://youtu.be/IakToWl6_x0
+    - name:
+        sv-SE: Seacentric System
+      value: https://youtu.be/L8SENLtkwNM?si=P3Bw66lZd9g4eTi4
+    - name:
+        sv-SE: Allt om ekolodsgivare till Raymarine!
+      value: https://youtu.be/4Wm3fYp7_OI
+    - name:
+        sv-SE: Garmin | GMR xHD3 | Magnetron Dome Radars
+      value: https://youtu.be/p8k6ThKOs_k?si=jvHGoUYN_zyL6yi9
+    - name:
+        sv-SE: Garmin | GMR xHD3 | Magnetron Dome Radars
+      value: https://youtu.be/p8k6ThKOs_k?si=QIiASAfCa1GiQPK2
+    - name:
+        sv-SE: Garmin | ECHOMAP™ ULTRA 2 | 10” and 12” Touchscreen Chartplotters
+      value: https://youtu.be/GllwDfcSl58?si=ZGpFP3ujaAwmRtzo
+    - name:
+        sv-SE: Glomex weBBoat 4G
+      value: https://youtu.be/Gs2vk6JGBPU
+    - name:
+        sv-SE: Glomex Glomeasy Marine VHF, FM, DAB, AIS antennas, FME termin. easy installation on sail boat - p.1
+      value: https://youtu.be/-Dht35Hlrq8
+    - name:
+        sv-SE: FIXCLIP MINI The worlds strongest and versatile clothespin.
+      value: https://youtu.be/eBCMpTQYmEY
+    - name:
+        sv-SE: FIXCLIP MINI The worlds strongest and versatile clothespin.
+      value: https://youtu.be/zyT6r1jT_YU
+    - name:
+        sv-SE: Fixclip mini - den smarta klädnypan
+      value: https://youtu.be/B_-y9JxT0O8
+    - name:
+        sv-SE: Sätt krympplats på din båt med gasolvärmare
+      value: https://youtu.be/H_H9dyeb6DI?si=TyjiYWMjdSJ_kjcu
+    - name:
+        sv-SE: ABNET PROFESSIONAL rengöring
+      value: https://youtu.be/O7N_HRHwRgE
+    - name:
+        sv-SE: B&G Vulcan 12 Launch Video
+      value: https://youtu.be/ElB6_O51_6Q
+    - name:
+        sv-SE: B&G Vulcan Series - Key Features and benefits of compact chartplotters
+      value: https://youtu.be/6CDN48w7qvk
+    - name:
+        sv-SE: Triton 2 Display and Pilot - a complete Autopilot control system
+      value: https://youtu.be/qmU_tW7ASFE
+    - name:
+        sv-SE: B&G Triton² - discover Triton² cruising and racing display features
+      value: https://youtu.be/0lNqzdL6-f8
+    - name:
+        sv-SE: Webasto Marine air heater - Compact & powerful!
+      value: https://youtu.be/WT9CJXNrHbE
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/lUdaQ_jIJFQ
+    - name:
+        sv-SE: Glomex ZigBoat™ -  100% Wireless Remote Monitoring & Interactive System for your boat
+      value: https://youtu.be/uEuMZhyrpzM
+    - name:
+        sv-SE: Glomex ZigBoat™ Installation video - The Wireless Remote Monitoring & Interactive System for boat
+      value: https://youtu.be/EIwKmQVWPik
+    - name:
+        sv-SE: Echomap UHD 62CV
+      value: https://youtu.be/P-9xjfJ-q0Q
+    - name:
+        sv-SE: Garmin echoMAP UHD 62cv
+      value: https://youtu.be/NYP2UZK1T5I
+    - name:
+        sv-SE: Isotherm 49 liters skåp
+      value: https://youtu.be/BL1gVgcQ5Is
+    - name:
+        sv-SE: Dometic Kylbox CDF18
+      value: https://youtu.be/zhDsHdwUyGA
+    - name:
+        sv-SE: NOMO Den långsiktiga lösningen mot mögel med en biologisk barriär
+      value: https://youtu.be/ev6Ixnj5nMg
+    - name:
+        sv-SE: Press & Son Båtbockar för motorbåtar
+      value: https://youtu.be/V8ILfbwZ5iA
+    - name:
+        sv-SE: Leech Floatingstrap
+      value: https://youtu.be/q5zO-beXUNE
+    - name:
+        sv-SE: Ren båtbotten med Cleanboatprotector Skrovskyddsduk
+      value: https://youtu.be/vTc4ye2k0y4
+    - name:
+        sv-SE: Attwood | LightArmor NV1000 & NV2000 Series Installation
+      value: https://youtu.be/iHKNoJpy6EY
+    - name:
+        sv-SE: Marinbatteri Litium Dual Lilead
+      value: https://youtu.be/OJ-9v6Kl2kk
+    - name:
+        sv-SE: International Propeller Primer
+      value: https://youtu.be/IdEn2Aro_Rw
+    - name:
+        sv-SE: Liros Herkules - En perfekt fall- och skotlina!
+      value: https://youtu.be/t2G1KZDZ3fQ?si=bY1FZUKeGC1BE-VX
+    - name:
+        sv-SE: Safari Chef 30 Compact, Product Animation, CADAC | Dometic
+      value: https://youtu.be/BKDyrIE22YM?si=SR5kzisxlyBTMOXd
+    - name:
+        sv-SE: Safari Chef 30 Compact, Product Animation, CADAC | Dometic
+      value: https://youtu.be/BKDyrIE22YM?si=JNVBYkSBJ3PrNi9g
+    - name:
+        sv-SE: Simrad Cruise Launch Video Swedish
+      value: https://youtu.be/x1Pk0LBVHH0
+    - name:
+        sv-SE: Simrad Cruise Unboxing - GPS plotter och ekolod
+      value: https://youtu.be/a3a5FGS8Sm4
+    - name:
+        sv-SE: DipDeck Brush - EcoSmart boat deck cleaning -Demo
+      value: https://youtu.be/GgrAyCjwrhY
+    - name:
+        sv-SE: JL Audio M1000/5v2 Product Spotlight
+      value: https://youtu.be/OnkIVnOwtwc
+    - name:
+        sv-SE: 'GPSMAP® Plus Series: Advanced navigation. Ultimate integration.'
+      value: https://youtu.be/v0HKnxsv9sA
+    - name:
+        sv-SE: Isotherm 65 liters kylskåp
+      value: https://youtu.be/pxFs3uZVZWk
+    - name:
+        sv-SE: 'STRIKER Vivid by Garmin: Clear, Colorful Sonar'
+      value: https://youtu.be/GdzRqZXi2x8
+    - name:
+        sv-SE: Avfuktare för båt, husvagn, caravan. Sorption. Arida S3L
+      value: https://youtu.be/02wUsr2XXaE?si=9H8k-b0mASnczcA-
+    - name:
+        sv-SE: Anslut slang avfuktare Arida S3L sorptionsavfuktare, båt, husvagn, caravan
+      value: https://youtu.be/FOh1o01L_ss?si=MVceVWnrvMe9yx0U
+    - name:
+        sv-SE: Avfuktare för båt, husvagn, caravan. Sorption. Arida S3L
+      value: https://youtu.be/02wUsr2XXaE?si=u8JfyW-RBoZvooAa
+    - name:
+        sv-SE: Scanstrut ROKK Mini Lowrance HOOK2 Quick Release Adapter, Pro Mount Kit, Kayak Track Base
+      value: https://youtu.be/ffdgoENBbmo
+    - name:
+        sv-SE: Dometic ColdMachine Kit - Kompletta kylsystem
+      value: https://youtu.be/Ccgf_FRfNIk
+    - name:
+        sv-SE: How to install a Radar Mast Mount on a sailing boat - B&G Halo 20+ / Scanstrut SC20 Mast Mount
+      value: https://youtu.be/KEKyxFnPMzc
+    - name:
+        sv-SE: Cobra HH600
+      value: https://youtu.be/9c5ZixxJEaY
+    - name:
+        sv-SE: Baltic Athena
+      value: https://youtu.be/fw_DMeFioqY
+    - name:
+        sv-SE: Vetus Axeltätning ZWBH
+      value: https://youtu.be/Whg8d8RuQm4
+    - name:
+        sv-SE: Hook & Moor
+      value: https://youtu.be/7EAwDS9i9p0
+    - name:
+        sv-SE: Hur vinterförvarar man sina Lilead litiumbatterier?
+      value: https://youtu.be/qeyuoa6w17o
+    - name:
+        sv-SE: Vattenskoterbatteri Litium Lilead 12V 10Ah
+      value: https://youtu.be/3ZD2EbVCyEQ
+    - name:
+        sv-SE: Liros Herkules - En perfekt fall- och skotlina!
+      value: https://youtu.be/t2G1KZDZ3fQ
+    - name:
+        sv-SE: Liros ankarlinor med bly & för ankarspel
+      value: https://youtu.be/znR_Lnvo1s8
+    - name:
+        sv-SE: Dometic MasterFluch 7120 - För tryckvatten
+      value: https://youtu.be/mIUSbGl4XL0
+    - name:
+        sv-SE: CADAC - SAFARI CHEF 2/30
+      value: https://youtu.be/fFYHY_iw0gQ?si=wN94UluLUlfhoR98
+    - name:
+        sv-SE: 'ECHOMAP™ Plus : The combo with connections'
+      value: https://youtu.be/KRds4qXMIeE
+    - name:
+        sv-SE: Comparing LED Lights in a Boat Interior
+      value: https://youtu.be/N229ow5zCyA?si=Kxav5fJQA-YlR71W
+    - name:
+        sv-SE: Isotherm 85 liters kylskåp
+      value: https://youtu.be/wVI6g2Y3emE
+    - name:
+        sv-SE: Innovation - Detachable Mainsheet Track System from Barton Marine - New at London Boat Show 2016
+      value: https://youtu.be/Qu6HP9epDxc
+    - name:
+        sv-SE: How to Reeve The Mainsheet Traveller System Control Lines
+      value: https://youtu.be/8Ip7I9ErUD4
+    - name:
+        sv-SE: How to service a Barton Mainsheet Traveller System
+      value: https://youtu.be/F42zCkE_L1g
+    - name:
+        sv-SE: Montering av löstagbar storskotsskena, Barton
+      value: https://youtu.be/-DahYNTEBFY
+    - name:
+        sv-SE: Dometic Kylbox CDF2 36
+      value: https://youtu.be/2_spsI4SRzU
+    - name:
+        sv-SE: Scanstrut DS-H6 Cable Seal - Solar Panel Installation with Sailing Zatara
+      value: https://youtu.be/p6Z-JXOsErc
+    - name:
+        sv-SE: B-Free Explore - Steg-för-steg - biocidfri bottenfärg från International
+      value: https://youtu.be/8gIZqfgDhIw
+    - name:
+        sv-SE: VAKE Antifrost - miljövänligt frostskydd för båten!
+      value: https://youtu.be/M2SyZUeAwQc
+    - name:
+        sv-SE: EliteFS Launch Video_SV
+      value: https://youtu.be/qnFk_X1kBSc
+    - name:
+        sv-SE: Introducing Simrad® NSX® ULTRAWIDE | Built for those who Never Settle.
+      value: https://youtu.be/xL25zAWmLWo
+    - name:
+        sv-SE: B&G Zeus 3 - An easy to use, fast chartplotter for racing and cruising
+      value: https://youtu.be/2VwPzUwCX54
+    - name:
+        sv-SE: Safari Chef 30 Compact, Product Animation, CADAC | Dometic
+      value: https://youtu.be/BKDyrIE22YM?si=WmYbkN1Tf_eGNoV2
+    - name:
+        sv-SE: Clarion Marine Speakers
+      value: https://youtu.be/TWvfrW5ob0I
+    - name:
+        sv-SE: Comparing LED Lights in a Boat Interior
+      value: https://youtu.be/N229ow5zCyA?si=28NvsQq60D9y037O
+    - name:
+        sv-SE: Gobius Pro - All you need in the box
+      value: https://youtu.be/octtixIcxBM
+    - name:
+        sv-SE: Gobius Pro - Calibration and editing
+      value: https://youtu.be/ZDj_KlFNcfQ
+    - name:
+        sv-SE: Gobius Pro - From one sensor to multiple on one tank or on several tanks
+      value: https://youtu.be/5u5B31ZPCks
+    - name:
+        sv-SE: Gobius Pro - The winner of the waste tanks
+      value: https://youtu.be/aFVnDWKnlIc
+    - name:
+        sv-SE: Krypgrundsavfuktare Arida Pro S12
+      value: https://youtu.be/q2l13HdvGMI?si=MPft2zMizJ9AgPYW
+    - name:
+        sv-SE: VIKING RescYou™ Mounting instructions without HRU (Part 1)
+      value: https://youtu.be/ELyvxGNCaJs?si=QtHZUbhxGW6v-2Fu
+    - name:
+        sv-SE: VIKING RescYou™ - Mounting Instructions without HRU (Part 2)
+      value: https://youtu.be/cyYfQv0SJU4?si=xPHOFuWp7ImAtqzR
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on deck
+      value: https://youtu.be/ZlB7AoE5sQo?si=Y_LxXVbP0l1GOdAl
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on railing
+      value: https://youtu.be/qa1WRcWlFqc?si=wV2akYQ9TOmtVbyh
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions with HRU on deck
+      value: https://youtu.be/r9tmMkdLXS8?si=-HHZxxlrtLgzyjvM
+    - name:
+        sv-SE: iSUP Wetnfun - Kompletta SUP'ar
+      value: https://youtu.be/kr_gDuCRu0g
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/r4E8vul4lZU
+    - name:
+        sv-SE: Teinehaler fra Maritim Båtutstyr
+      value: https://youtu.be/fh06gLzCVzU?si=H2X7fqO9V5muMmiL
+    - name:
+        sv-SE: Måla drev JOTUN Yachting Aqualine VK
+      value: https://youtu.be/u2r00zWsAgg
+    - name:
+        sv-SE: Litiumbatteri Litium LILEAD
+      value: https://youtu.be/GJ2sk3KCpN4
+    - name:
+        sv-SE: Litiumbatterier från Lilead
+      value: https://youtu.be/ClDqgYz13iU
+    - name:
+        sv-SE: redKnows - Gps-Tracker
+      value: https://youtu.be/x9ixx9m_u5A
+    - name:
+        sv-SE: Lowrance HDS LIVE Launch SWEDISH
+      value: https://youtu.be/Msq7M3i5TVc
+    - name:
+        sv-SE: Lowrance LiveSight   Swedish
+      value: https://youtu.be/SkgLrZOKm6o
+    - name:
+        sv-SE: CADAC | Dometic 2 Cook Turbo FFD | Product Video
+      value: https://youtu.be/Aak0T-Ywi3o?si=yDnVsWH2q4QDF_V_
+    - name:
+        sv-SE: En närmare titt på Ocean Comfort fotogenkamin
+      value: https://youtu.be/rh6DS8VlJns?si=irIp65MlzI5Ci5m4
+    - name:
+        sv-SE: Piczo Butik
+      value: https://youtu.be/W5VGZ28aJKQ
+    - name:
+        sv-SE: Piczo - En smart mediaprojektor i litet format
+      value: https://youtu.be/hF-TclxGMlw
+    - name:
+        sv-SE: Dometic Septiktankar
+      value: https://youtu.be/OvJSsy7oOkQ
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on deck
+      value: https://youtu.be/ZlB7AoE5sQo?si=FKXFNCWBHQ48gVAC
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on railing
+      value: https://youtu.be/qa1WRcWlFqc?si=Bwj3eFeDGCAVO_if
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions with HRU on deck
+      value: https://youtu.be/r9tmMkdLXS8?si=X9IE_FO-KXwE4p9d
+    - name:
+        sv-SE: Teinehaler fra Maritim Båtutstyr
+      value: https://youtu.be/fh06gLzCVzU?si=ztO893J7HLHgwXPP
+    - name:
+        sv-SE: Teinehaler fra Maritim Båtutstyr
+      value: https://youtu.be/fh06gLzCVzU?si=rVpc79Mk5S59-Lt_
+    - name:
+        sv-SE: Tyresöstöttan för segelbåtar och motorbåtar - LCFg, LCMg & LCKg
+      value: https://youtu.be/v_ecBJdEM9s
+    - name:
+        sv-SE: Allt om Raymarine autopiloter
+      value: https://youtu.be/UH9geHCTNAc
+    - name:
+        sv-SE: Raymarine radar - Quantum
+      value: https://youtu.be/IQZgGF7pgjk
+    - name:
+        sv-SE: Soft Schackel
+      value: https://youtu.be/LORwVc1EUeU
+    - name:
+        sv-SE: Raymarine Element S/HV
+      value: https://youtu.be/YNQe5NfQC0I
+    - name:
+        sv-SE: Litiumbatteri D105 från Lilead
+      value: https://youtu.be/Q20sNXubxVw
+    - name:
+        sv-SE: Simrad NSX | The Next Generation of Boating Electronics
+      value: https://youtu.be/n8xlVzwBoUg
+    - name:
+        sv-SE: JL Audio MediaMaster® 50 - Great audio begins here.
+      value: https://youtu.be/LIKEAoJNhYk
+    - name:
+        sv-SE: Garmin ECHOMAP UHD2 - 5" & 7" sjökortsplotter
+      value: https://youtu.be/4D9x-y7LLK8
+    - name:
+        sv-SE: DOMETIC | CFX2 Electric Coolers - Coolers Powered for Adventure
+      value: https://youtu.be/AwJZjC98-HI?si=tFYZFshEEEuQ4jkA
+    - name:
+        sv-SE: GPSMAP X3 Series | Touchscreen Chartplotter
+      value: https://youtu.be/2o5UEWl1QTE?si=ZR_IMT8gZxn9r7Bu
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on deck
+      value: https://youtu.be/ZlB7AoE5sQo?si=r59adgQEvYR3a73J
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions with HRU on deck
+      value: https://youtu.be/r9tmMkdLXS8?si=H4G4KRlgJTmIugMg
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on railing
+      value: https://youtu.be/qa1WRcWlFqc?si=-LLSATZmu3cWVlFD
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/WEghbGj_GBc
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/iX8tIkyEtSc
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/QqZHnQbTCiM
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/PLhFg9CMykE
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/PLhFg9CMykE?autoplay=1&mute=1&loop=1
+    - name:
+        sv-SE: Easytec in 30 sec
+      value: https://youtu.be/QsEPDHZYXV0
+    - name:
+        sv-SE: Montering av täckställningen EasyTec
+      value: https://youtu.be/8jvtrg71Pwg
+    - name:
+        sv-SE: Hempaspeed hos SeaSea
+      value: https://youtu.be/0gF3lfW14fs
+    - name:
+        sv-SE: Jotun Yachting Bottenmålning
+      value: https://youtu.be/usvJibPoyiw
+    - name:
+        sv-SE: Batterilåda för elmotorer med uttag på locket
+      value: https://youtu.be/e-mIsisFFVY
+    - name:
+        sv-SE: 'Garmin: Introducing the quatix® 6 series'
+      value: https://youtu.be/sZ7EEOqnoTg
+    - name:
+        sv-SE: Dometic Toalettborste - Brush and Stow
+      value: https://youtu.be/i2S_n9QOQcc
+    - name:
+        sv-SE: Efoy Comfort Unboxing
+      value: https://youtu.be/w2AXW0Az1ak
+    - name:
+        sv-SE: Genomgång Efoy Bränslecell
+      value: https://youtu.be/59o0dltN3UE
+    - name:
+        sv-SE: Installation Efoy Comfort
+      value: https://youtu.be/N5rqAjRtI2M
+    - name:
+        sv-SE: Efoy bränsle
+      value: https://youtu.be/V2jdEHOa6a4
+    - name:
+        sv-SE: 'Garmin: Discover the ECHOMAP UHD Series'
+      value: https://youtu.be/-vdeP4YomnM?si=KDqfxU2PuIs2QPMu
+    - name:
+        sv-SE: 'Garmin: Discover the ECHOMAP UHD Series'
+      value: https://youtu.be/-vdeP4YomnM?si=3KAnMHmioDXpgAyy
+    - name:
+        sv-SE: 'STRIKER Cast and STRIKER™ Cast GPS, Castable Sonar Devices: Getting the Most Out of Your Device'
+      value: https://youtu.be/NEew_HQ90lY
+    - name:
+        sv-SE: 'STRIKER™ Cast by Garmin: Castable Sonar Device'
+      value: https://youtu.be/PEuDDxabnwA
+    - name:
+        sv-SE: Hydrotab 2021
+      value: https://youtu.be/qMN4v7bLMCk?si=fVyOtDG4qlBigoMH
+    - name:
+        sv-SE: RuuviTag Pro Quick Start - Get Started Within Minutes with Your Wireless Sensor
+      value: https://youtu.be/N9S939_hibk?si=T19u5z7ik_tJNURE
+    - name:
+        sv-SE: Measure Your Environment Like a Pro With RuuviTag Pro
+      value: https://youtu.be/sWtC5xl0l9E?si=oT4e7k44VVS0cQev
+    - name:
+        sv-SE: Blue Sea Systems Add-A-Battery
+      value: https://youtu.be/vPhD7fgYq3w
+    - name:
+        sv-SE: VIKING RescYou™ - Mounting Instructions without HRU (Part 2)
+      value: https://youtu.be/cyYfQv0SJU4?si=YwdgPM_E5UfPaTqU
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on railing
+      value: https://youtu.be/qa1WRcWlFqc?si=B4sdi-87eiujaSeW
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions with HRU on deck
+      value: https://youtu.be/r9tmMkdLXS8?si=KFv42Kq64DLqaRkS
+    - name:
+        sv-SE: ACS Attitude Control System from Mente Marine
+      value: https://youtu.be/DNiW3CbdGwo
+    - name:
+        sv-SE: Presenningshållare HoldOn
+      value: https://youtu.be/2wLPffe5hrw
+    - name:
+        sv-SE: Lowrance - How to Choose Your HOOK2
+      value: https://youtu.be/Da9tvxLkHMA
+    - name:
+        sv-SE: Panoptix PS51-TH Features & Benefits
+      value: https://youtu.be/HAWG5-e46DA
+    - name:
+        sv-SE: Clarion Marine's CMM-20 Marine Source Unit w/ LCD Display
+      value: https://youtu.be/sek7QnL_QdE?si=Bz2IAh5b2M15eAOI
+    - name:
+        sv-SE: CADAC Dual Power Pak
+      value: https://youtu.be/EM8eVRo1B2o?si=nAOr4jlB9vGiUZtk
+    - name:
+        sv-SE: Dinghy Rings Flex - En enkel gummibåtsdävert utan fast montering
+      value: https://youtu.be/bqtwFi6IaqY
+    - name:
+        sv-SE: DOMETIC | CFX2 Electric Coolers - Coolers Powered for Adventure
+      value: https://youtu.be/AwJZjC98-HI?si=hzfv4Lgr6GQcjtKh
+    - name:
+        sv-SE: Dometic växelriktare SinePower DSP 212/412
+      value: https://youtu.be/uwKmHbXeo4Q
+    - name:
+        sv-SE: 'STRIKER™ Cast by Garmin: Castable Sonar Device'
+      value: https://youtu.be/HxzsRfsZpZE
+    - name:
+        sv-SE: Hydrotab 2021
+      value: https://youtu.be/qMN4v7bLMCk?si=kuGZhxi97fpzsg8R
+    - name:
+        sv-SE: Compact & 7OC
+      value: https://youtu.be/ldsh8oTzQcc
+    - name:
+        sv-SE: Baltic SAR - Flytväst för tuffa förhållanden
+      value: https://youtu.be/m0-GO7gqoHg
+    - name:
+        sv-SE: Aqua Void Cartridge Bilge Pump - Johnson Pump
+      value: https://youtu.be/V0SDHf_5WmM?si=DMPWGiCoBw5-8Xry
+    - name:
+        sv-SE: Batterier från VARTA - SLI, EFB & AGM
+      value: https://youtu.be/S0e0loXeGGs
+    - name:
+        sv-SE: Epifanes Fernissa - Oljebaserad högglanslack med extra UV-skydd.
+      value: https://youtu.be/lp77k5SXrOA
+    - name:
+        sv-SE: Improved Capabilities Of The NEW Outlaw 1000w Lithium Power Station
+      value: https://youtu.be/72XOXMSG2gk
+    - name:
+        sv-SE: Multimarine Systemrens - för kylsystem
+      value: https://youtu.be/BtGpNmD3BZM
+    - name:
+        sv-SE: Clarion Marine CMM-30 Marine Source Unit w/ Full-Color LCD Display
+      value: https://youtu.be/EH6m06SzKJo?si=2vuMHnQXHSVyA3ym
+    - name:
+        sv-SE: 'ECHOMAP Chartplotter and GT56 Transducer Bundles: Less Time Finding, More Time Fishing'
+      value: https://youtu.be/6zrLDkGrKlA
+    - name:
+        sv-SE: DOMETIC | CFX2 Electric Coolers - Coolers Powered for Adventure
+      value: https://youtu.be/AwJZjC98-HI?si=1bSGGBWHaMcwbliS
+    - name:
+        sv-SE: Introducing EcoFlow DELTA 2 | Not Just a Battery
+      value: https://youtu.be/_YQbsiPE8to
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on deck
+      value: https://youtu.be/ZlB7AoE5sQo?si=ZEfxp33lFC_i8ZLs
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on railing
+      value: https://youtu.be/qa1WRcWlFqc?si=71kB1BC9S1xs9WC3
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions with HRU on deck
+      value: https://youtu.be/r9tmMkdLXS8?si=JokOOLS7V7Jx0oJw
+    - name:
+        sv-SE: Gulper Toilet Pump Handles It
+      value: https://youtu.be/8-71i6UUdAg
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/W54xyjyk_QM
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/v8Xwi_HB-ek
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/mRDrTOGeWG8
+    - name:
+        sv-SE: CATCHING boat hook & mooring - Thread mooring rope through a buoy ring.
+      value: https://youtu.be/4NkW7u2CG-c
+    - name:
+        sv-SE: Polera Båten med Abralon®
+      value: https://youtu.be/Osx6KjfTU7c
+    - name:
+        sv-SE: Evolution Autopilot Sea Trial
+      value: https://youtu.be/YgBJ4ltJ7C0
+    - name:
+        sv-SE: Installation Steps Of Hydraulic Steering System OH 175 | Multisteer
+      value: https://youtu.be/ckW2f2J7Nro?si=sDhGC6XNJaIpZG6M
+    - name:
+        sv-SE: Replacing Top Valve Gasket in Jabsco Manual Marine Toilet
+      value: https://youtu.be/b4MCImxPT9w?si=yoIPfyiC3ARv6RY_
+    - name:
+        sv-SE: Sharkbite® gör jobbet på en Bayliner 245 i Västervik
+      value: https://youtu.be/x8JTKMRuQfw
+    - name:
+        sv-SE: Comfort Control - The most popular AUTOTERM panel
+      value: https://youtu.be/J52VETMiFrI?si=1fkATjCLMLozRZG_
+    - name:
+        sv-SE: Introducing EcoFlow RIVER 2 | Power. Never Been This Easy.
+      value: https://youtu.be/sElW50fYKkM
+    - name:
+        sv-SE: Blue Sea Systems ML-ACR
+      value: https://youtu.be/s_oKQ_N8_EY
+    - name:
+        sv-SE: Installation Steps of OH-115U | Boat Steering System | Multisteer
+      value: https://youtu.be/ow4ATU6JR6I?si=xfpRk7PT9rWw_r-T
+    - name:
+        sv-SE: ROKK Wireless Hållare & trådlös Qi-laddare 12V/24V - SeaSea Båttillbehör
+      value: https://youtu.be/PYUA-G60esc
+    - name:
+        sv-SE: HookGrip & Merx Hook - Hook and Moor to a buoy, Easy & Safe
+      value: https://youtu.be/x28GsCjlPGE
+    - name:
+        sv-SE: Apelo - Brighter, Longer Lasting Underwater Lighting
+      value: https://youtu.be/zVLHBZBEYJQ?si=LUXO2DK7Ab7QCudX
+    - name:
+        sv-SE: APELO Underwater Lights - Lighting Your Lifestyle
+      value: https://youtu.be/UsrCO4palCs?si=wiVQxBsE0u6VJ_55
+    - name:
+        sv-SE: Multisteer   Installation Steps Of Hydraulic Steering System OH 350
+      value: https://youtu.be/Ojxpd2cyHE4?si=vVlMbFBVu_lLYVE6
+    - name:
+        sv-SE: Sharkbite® Barnacle Remover
+      value: https://youtu.be/y-KpBFvP0io
+    - name:
+        sv-SE: Vi testar snäckborttagare Sharkbite Barnacle Remover
+      value: https://youtu.be/Gg0Eyl4p7qU
+    - name:
+        sv-SE: Garmin MSC™ 10 Marine satellite compass
+      value: https://youtu.be/M76DD6ikfz4?si=IwLOc2qc9MkCrgY3
+    - name:
+        sv-SE: Tutorials - CTEK CT5 Powersport - How to connect
+      value: https://youtu.be/jaSI2t49RrY?si=Hgng7XI5yCF2679L
+    - name:
+        sv-SE: JL Audio M700/5 Product Spotlight
+      value: https://youtu.be/BuRBpGE52UQ
+    - name:
+        sv-SE: Styra din Motorguide från en Lowrance MFD
+      value: https://youtu.be/5IarNPrcqvo
+    - name:
+        sv-SE: Motorguide ankring och heading lock
+      value: https://youtu.be/Nhsnq0bvToE
+    - name:
+        sv-SE: Motorguide kompass & riktningskalibrering
+      value: https://youtu.be/hj4IlVAke_c
+    - name:
+        sv-SE: Scanstrut ROKK Wireless - Edge - Adjustable Waterproof Wireless Phone Charging Mount 12/24V
+      value: https://youtu.be/17qQNjo2Sfk
+    - name:
+        sv-SE: Dean Silvester talks Scanstrut ROKK Wireless Edge. The Best Wireless Phone Charging Mount For Boats.
+      value: https://youtu.be/ZjWQBKDkfDk
+    - name:
+        sv-SE: Vetus Planus Däckslucka
+      value: https://youtu.be/Dvirq_EFQU0
+    - name:
+        sv-SE: How to install a Scanstrut DS-MULTI Cable Seal - cable gland - deck seal
+      value: https://youtu.be/58V0t4ciiwI
+    - name:
+        sv-SE: Scrubbis Sling for easy mooring on a pillar or post
+      value: https://youtu.be/adTQ7nykVJc
+    - name:
+        sv-SE: Maston Carpet Stop Video ENG
+      value: https://youtu.be/HDWH6_6hLxM
+    - name:
+        sv-SE: How the he powerful Mastervolt CombiMaster drives even the heaviest loads with ease!
+      value: https://youtu.be/wkBc-TSmT_g
+    - name:
+        sv-SE: How Mastervolt CombiMaster is designed with the customer in mind and using the latest technology!
+      value: https://youtu.be/xwDOSwncX-I
+    - name:
+        sv-SE: How to connect the BMV-700 battery monitor | Victron Energy
+      value: https://youtu.be/MRljOaTdc3s
+    - name:
+        sv-SE: How to optimize the BMV-700 series sync parameters | Victron Energy
+      value: https://youtu.be/4ReljfO3k6M
+    - name:
+        sv-SE: Garmin quatix 7, Solar och Sapphire AMOLED
+      value: https://youtu.be/l3Dgh7RmR1A
+    - name:
+        sv-SE: Liros Herkules - En perfekt fall- och skotlina!
+      value: https://youtu.be/t2G1KZDZ3fQ?si=zpWch7SzeUg3L9XR
+    - name:
+        sv-SE: ROCA Rakego folding bracket
+      value: https://youtu.be/Ady94AZnzn0
+    - name:
+        sv-SE: Rakego folding bracket
+      value: https://youtu.be/L9SpP5_N9nQ
+    - name:
+        sv-SE: Installation av Dometc Masteflush
+      value: https://youtu.be/V60X9GSTT4c?list=PLaCfRyydCcbV5aA0Re6giB7gjrgc2HBai
+    - name:
+        sv-SE: Dometic MasterFluch 7160 - Hemmakomfort i båten
+      value: https://youtu.be/LoIqFkijmpg
+    - name:
+        sv-SE: IMG 9141
+      value: https://youtu.be/mHhx6jV1lrg?si=Ofc3jI7vnBf6NDsv
+    - name:
+        sv-SE: Broberg Marine® självbalanserande båtlyft för montering på badbrygga
+      value: https://youtu.be/7xKkp1xRfJM?si=VfJBcpGzIoqyqQoH
+    - name:
+        sv-SE: Scanstrut ROKK Wireless Nano 10W. Wireless phone charging mount.
+      value: https://youtu.be/ouI4DXEZJ70
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/-Nb_4aCy1VQ
+    - name:
+        sv-SE: Scanstrut DS-HD6-BLK Double Horizontal Cable Seal - Solar Panel Cable Seal
+      value: https://youtu.be/TTEjOYiW7d4
+    - name:
+        sv-SE: Scanstrut DS-HD6-BLK Double Horizontal Cable Seal  -  In 30 Seconds
+      value: https://youtu.be/_IT-kTZrfx4
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/uLJ6cg95XE0
+    - name:
+        sv-SE: Startbooster NOCO Boost PLUS GB40
+      value: https://youtu.be/LouuhlTj2s0
+    - name:
+        sv-SE: Installation av Victron GlobalLink 520 - Övervaka elsystemet
+      value: https://youtu.be/1fGgv7ursm4
+    - name:
+        sv-SE: Polermaskin Dual Action 750W från MultiMarine
+      value: https://youtu.be/wykLMHZs7Hs
+    - name:
+        sv-SE: Torqeedo Travel 603 & 1103 - Lightest electric outboards in their power class
+      value: https://youtu.be/ABv3UZIae0Y
+    - name:
+        sv-SE: VE Configure 3 basic | Victron Energy
+      value: https://youtu.be/V1Zceq02vMA
+    - name:
+        sv-SE: How to set up BMV Battery Monitor for lead and lithium batteries
+      value: https://youtu.be/mEN15Z_S4kE
+    - name:
+        sv-SE: Victron Multiplus Inverter/laddare
+      value: https://youtu.be/mrIrQzBLdhk
+    - name:
+        sv-SE: Attwood | Sahara Mk2 Automatic Bilge Pump
+      value: https://youtu.be/9gsgM385gQE
+    - name:
+        sv-SE: Attwood | Sahara Mk2 Installation Instructions
+      value: https://youtu.be/V0_9y994kJs
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on deck
+      value: https://youtu.be/ZlB7AoE5sQo?si=iua_-O4qoA0gemU7
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions without HRU on railing
+      value: https://youtu.be/qa1WRcWlFqc?si=g7v3tvho5ZUrahb3
+    - name:
+        sv-SE: VIKING RescYou liferaft container - Mounting Instructions with HRU on deck
+      value: https://youtu.be/r9tmMkdLXS8?si=U8b52KYq8E9FnFe2
+    - name:
+        sv-SE: Baltic Bambi - Barnflytväst från 3-12kg
+      value: https://youtu.be/l6uQOzdXIhA
+    - name:
+        sv-SE: 303 - Multi-Surface Cleaner
+      value: https://youtu.be/FMjd_SVCpNA
+    - name:
+        sv-SE: Panoptix LiveScope – The most amazing sonar technology ever
+      value: https://youtu.be/YjtLzwmwr0s
+    - name:
+        sv-SE: LiveScope
+      value: https://youtu.be/HUOJKR-FZHE
+    - name:
+        sv-SE: LiveScope
+      value: https://youtu.be/bl0vtDEYoBc
+    - name:
+        sv-SE: Panoptix LiveScope – The most amazing sonar technology ever.
+      value: https://youtu.be/q-TtJcEQmB0?list=PLZQteomUj15PUGSzm2tzkP0BIhDm2vJXe
+    - name:
+        sv-SE: Vetus Inspektionslucka ILT
+      value: https://youtu.be/JVW51ywGDL4
+    - name:
+        sv-SE: Introducing EcoFlow WAVE 2 Portable Air Conditioner | Right Temp. Right Now.
+      value: https://youtu.be/LDDG2Z_iT-c
+    - name:
+        sv-SE: Mini Add-A-Battery Plus
+      value: https://youtu.be/zGbBbAPJ2QQ
+    - name:
+        sv-SE: Vetus Portlight PZ623
+      value: https://youtu.be/cs2XMXnNrxc
+    - name:
+        sv-SE: Ecoflow.se - Solpanel 110W
+      value: https://youtu.be/2KeVncv8BMc
+    - name:
+        sv-SE: STA-BIL 360 Marine - Marknadens bästa bensinstabilsator
+      value: https://youtu.be/srH3A2Ft2z0
+    - name:
+        sv-SE: 'TEMO.450: The innovative electric powered engine'
+      value: https://youtu.be/tH9UCH8Ao5E
+    - name:
+        sv-SE: 303 - Fabric Guard
+      value: https://youtu.be/CLPqZcv2Fxk
+    - name:
+        sv-SE: How to get a readout from an MPPT with a VE.Direct Bluetooth Smart dongle | Victron Energy
+      value: https://youtu.be/vZJA4eTd6vw
+    - name:
+        sv-SE: 'BlueSolar MPPT - VictronConnect: How to change settings | Victron Energy'
+      value: https://youtu.be/ve59J9WTm1E
+    - name:
+        sv-SE: 'BlueSolar MPPT - VictronConnect: Live data | Victron Energy'
+      value: https://youtu.be/8yJyFZuDkuA
+    - name:
+        sv-SE: Introduction to the BMV-712 Smart
+      value: https://youtu.be/2vA-EjSSBVA
+    - name:
+        sv-SE: Using the Removable Base to Install a Rule Float Switch
+      value: https://youtu.be/O2UNwqz7K7w
+    - name:
+        sv-SE: Biocool - Clean my water tank
+      value: https://youtu.be/KfjLxwrePg4
+    - name:
+        sv-SE: SeaSea Båttillbehör - Baltic Legend 220N Hammar
+      value: https://youtu.be/hnXHoZxMX_Q
+    - name:
+        sv-SE: Meluton Reduce® Series Soundproofing Engine Compartment Installation Guide
+      value: https://youtu.be/OXX6UTq3bXk?si=l9ad5x58yfTf3wAJ
+    - name:
+        sv-SE: Y Infinity how to video 2024 FINAL
+      value: https://youtu.be/cWiYYNPRM9M?si=Yzd7rrYUD87d_Wla
+    - name:
+        sv-SE: Torqeedo Travel 903 - Unlimited Adventures
+      value: https://youtu.be/hzNZc7EBQWU
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/xumkiLuon9s
+    - name:
+        sv-SE: CS FREE - How to charge
+      value: https://youtu.be/lUwvO7G-OL0
+    - name:
+        sv-SE: 'nan'
+      value: https://youtu.be/-EEGoxM6VvA
+    - name:
+        sv-SE: Rule LP900 Series Bilge Pumps
+      value: https://youtu.be/yzTVJG0nrM8
+    - name:
+        sv-SE: Troubleshooting the Rule LoPro Bilge Pump
+      value: https://youtu.be/6saTH507WkI
+    - name:
+        sv-SE: Omnia Lifting handle with Maxi pan
+      value: https://youtu.be/pyNwy2FbR70?si=5L0pmybUUFB4EJMf
+    - name:
+        sv-SE: Så reparera du din RIB-båt
+      value: https://youtu.be/i-BPsmvrFhw?si=itv3kJ7HVo1P3Krm
+    - name:
+        sv-SE: MOB1
+      value: https://youtu.be/WH4S8yhDAuo?si=0PP_8leEF-x9rZ7x
+    - name:
+        sv-SE: 'OUR BRAND NEW CHARGER: THE CS ONE - CTEK'
+      value: https://youtu.be/KJwvLwNaQl4
+    - name:
+        sv-SE: Tutorials - CTEK CS ONE - Unboxing
+      value: https://youtu.be/jdxgccClWwE
+    - name:
+        sv-SE: Tutorials - CTEK CS ONE - Connecting
+      value: https://youtu.be/IY-3L455do4
+    - name:
+        sv-SE: Tutorials - CTEK CS ONE - Charging
+      value: https://youtu.be/RTIocEb2G0Q
+    - name:
+        sv-SE: Tutorials - CTEK CS ONE - App Control
+      value: https://youtu.be/jhvrMS-ZHtw
+    - name:
+        sv-SE: WinchRite Demo
+      value: https://youtu.be/Cf3_5o-Mkpc
+    - name:
+        sv-SE: WinchRite
+      value: https://youtu.be/d_F24JKeVLY
+    - name:
+        sv-SE: Rosa Oktober kampanj!
+      value: https://youtu.be/eihpuePcL34
+    - name:
+        sv-SE: Allremote Model 150 LED Remote Control Searchlight
+      value: https://youtu.be/ho52UgaUhCw
+    - name:
+        sv-SE: 303 - Aerospace Protectant
+      value: https://youtu.be/gdL19qmflRE
+    - name:
+        sv-SE: Victron Energy Cerbo GX
+      value: https://youtu.be/euvzu5N9LWE
+    multiSelect: true

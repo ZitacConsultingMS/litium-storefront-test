@@ -23,15 +23,24 @@ function PaymentOptions({
   onChange: (id: string) => void;
   errors: ErrorField | ErrorField[];
 }) {
+  //fix => hide listbox if svea is selected
+  const isSveaSelected = (() => {
+    const name = (selectedOption?.name ?? '').toLocaleLowerCase('sv-SE');
+    return name.includes('svea');
+  })();
+
   return (
     <Fragment>
-      <ListBox
-        value={value}
-        onChange={(option) => onChange(option.id)}
-        childrenSelector={getChildrenSelector}
-        selectedOption={selectedOption}
-        idSelector={idSelector}
-      ></ListBox>
+      {!isSveaSelected && (
+        <ListBox
+          key={selectedOption?.id ?? 'none'} // forces clean rerender on switch
+          value={value}
+          onChange={(option) => onChange(option.id)}
+          childrenSelector={getChildrenSelector}
+          selectedOption={selectedOption}
+          idSelector={idSelector}
+        />
+      )}
       <ErrorText errors={errors} className="mb-3 text-left" />
     </Fragment>
   );

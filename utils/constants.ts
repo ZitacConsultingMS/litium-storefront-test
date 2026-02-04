@@ -38,6 +38,8 @@ export const Token = {
 
 export const CookieKeys = {
   ChannelId: 'channel-id',
+  HelloRetailTrackingUserId: '_hello_retail_uid', // Deprecated/Fallback
+  HelloRetailId: 'hello_retail_id', // Set by HelloRetail's external script
 };
 
 export const HeaderKeys = {

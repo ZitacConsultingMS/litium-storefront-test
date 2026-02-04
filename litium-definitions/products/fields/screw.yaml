@@ -1,0 +1,22 @@
+productFields:
+- id: screw
+  type: Text
+  name:
+    da-DK: Skruv
+    en-US: Skruv
+    nb-NO: Skruv
+    sv-SE: Skruv
+  description:
+    da-DK: Skruv
+    en-US: Skruv
+    nb-NO: Skruv
+    sv-SE: Skruv
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

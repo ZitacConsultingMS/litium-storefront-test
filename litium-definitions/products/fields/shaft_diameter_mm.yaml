@@ -1,0 +1,22 @@
+productFields:
+- id: shaft_diameter_mm
+  type: Text
+  name:
+    da-DK: Axel Ø (mm)
+    en-US: Axel Ø (mm)
+    nb-NO: Axel Ø (mm)
+    sv-SE: Axel Ø (mm)
+  description:
+    da-DK: Axel Ø (mm)
+    en-US: Axel Ø (mm)
+    nb-NO: Axel Ø (mm)
+    sv-SE: Axel Ø (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

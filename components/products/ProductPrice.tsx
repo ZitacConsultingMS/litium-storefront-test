@@ -1,7 +1,7 @@
 'use client';
 import clsx from 'clsx';
 import Currency from 'components/Currency';
-import { CartContext } from 'contexts/cartContext';
+import { CartContext, EmptyCart } from 'contexts/cartContext';
 import { ProductPriceItem } from 'models/price';
 import { useContext } from 'react';
 import { getVatSelector } from 'services/discountService';
@@ -21,7 +21,7 @@ function ProductPrice({
   price: ProductPriceItem;
   className?: string;
 }) {
-  const { showPricesIncludingVat } = useContext(CartContext).cart;
+  const { showPricesIncludingVat } = useContext(CartContext).cart || EmptyCart;
   const vatSelector = getVatSelector(showPricesIncludingVat);
   const productUnitPrice = price[`unitPrice${vatSelector}`];
   const productDiscountPrice = price[`discountPrice${vatSelector}`];

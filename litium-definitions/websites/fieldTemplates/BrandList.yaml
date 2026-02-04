@@ -1,0 +1,21 @@
+websiteTemplates:
+- settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Märken
+    fields:
+    - id: _name
+    - id: _url
+    - id: TitleFilterSelector
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: BrandList
+  name:
+    en-US: Brand list
+    sv-SE: Varumärkeslista

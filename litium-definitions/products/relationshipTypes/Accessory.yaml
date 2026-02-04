@@ -1,0 +1,6 @@
+productRelationshipTypes:
+- id: Accessory
+  name:
+    en-US: Accessories
+    sv-SE: Tillbehör (litium standard)
+  bidirectional: false

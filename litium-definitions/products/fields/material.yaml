@@ -1,0 +1,22 @@
+productFields:
+- id: material
+  type: Text
+  name:
+    da-DK: Material
+    en-US: Material
+    nb-NO: Material
+    sv-SE: Material
+  description:
+    da-DK: Material
+    en-US: Material
+    nb-NO: Material
+    sv-SE: Material
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

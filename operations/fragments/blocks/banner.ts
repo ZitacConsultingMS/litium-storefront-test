@@ -27,6 +27,9 @@ export const BANNER_BLOCK_FRAGMENT = gql`
         bannerLinkToProduct {
           item {
             id
+            ... on AllAttributesInListProduct {
+              url
+            }
             ... on ProductWithVariantsProduct {
               url
             }

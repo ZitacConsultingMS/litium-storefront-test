@@ -1,0 +1,22 @@
+productFields:
+- id: ampere_hour
+  type: Decimal
+  name:
+    da-DK: Amperetimmar
+    en-US: Amperetimmar
+    nb-NO: Amperetimmar
+    sv-SE: Amperetimmar
+  description:
+    da-DK: Amperetimmar
+    en-US: Amperetimmar
+    nb-NO: Amperetimmar
+    sv-SE: Amperetimmar
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

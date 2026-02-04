@@ -1,0 +1,22 @@
+productFields:
+- id: tenon_length_mm
+  type: Decimal
+  name:
+    da-DK: Tenlängd (mm)
+    en-US: Tenlängd (mm)
+    nb-NO: Tenlängd (mm)
+    sv-SE: Tenlängd (mm)
+  description:
+    da-DK: Tenlängd (mm)
+    en-US: Tenlängd (mm)
+    nb-NO: Tenlängd (mm)
+    sv-SE: Tenlängd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,14 @@
+productFields:
+- id: internal_listing
+  type: MultirowText
+  name:
+    sv-SE: Intern notering
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

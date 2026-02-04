@@ -1,0 +1,18 @@
+blockFields:
+- id: zsFooterNavigationLinks
+  type: MultiField
+  name:
+    sv-SE: Footer Navigation Links
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - NavigationLink
+    isArray: true

@@ -1,0 +1,22 @@
+productFields:
+- id: weight_g
+  type: Text
+  name:
+    da-DK: Vikt (g)
+    en-US: Vikt (g)
+    nb-NO: Vikt (g)
+    sv-SE: Vikt (g)
+  description:
+    da-DK: Vikt (g)
+    en-US: Vikt (g)
+    nb-NO: Vikt (g)
+    sv-SE: Vikt (g)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

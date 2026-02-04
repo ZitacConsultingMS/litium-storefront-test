@@ -1,0 +1,22 @@
+productFields:
+- id: loop_diameter_mm
+  type: Text
+  name:
+    da-DK: Ø Ögla (mm)
+    en-US: Ø Ögla (mm)
+    nb-NO: Ø Ögla (mm)
+    sv-SE: Ø Ögla (mm)
+  description:
+    da-DK: Ø Ögla (mm)
+    en-US: Ø Ögla (mm)
+    nb-NO: Ø Ögla (mm)
+    sv-SE: Ø Ögla (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

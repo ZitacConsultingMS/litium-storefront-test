@@ -1,0 +1,22 @@
+productFields:
+- id: capacity
+  type: Text
+  name:
+    da-DK: Kapacitet
+    en-US: Kapacitet
+    nb-NO: Kapacitet
+    sv-SE: Kapacitet
+  description:
+    da-DK: Kapacitet
+    en-US: Kapacitet
+    nb-NO: Kapacitet
+    sv-SE: Kapacitet
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

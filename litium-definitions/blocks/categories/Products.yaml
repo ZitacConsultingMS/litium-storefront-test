@@ -1,0 +1,5 @@
+blockCategories:
+- id: Products
+  name:
+    en-US: Products
+    sv-SE: Produkter

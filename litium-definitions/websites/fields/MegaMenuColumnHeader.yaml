@@ -1,0 +1,15 @@
+websiteFields:
+- id: MegaMenuColumnHeader
+  type: LimitedText
+  name:
+    en-US: Column header
+    sv-SE: Kolumnhuvud
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

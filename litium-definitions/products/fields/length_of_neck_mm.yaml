@@ -1,0 +1,22 @@
+productFields:
+- id: length_of_neck_mm
+  type: Decimal
+  name:
+    da-DK: Halslängd (mm)
+    en-US: Halslängd (mm)
+    nb-NO: Halslängd (mm)
+    sv-SE: Halslängd (mm)
+  description:
+    da-DK: Halslängd (mm)
+    en-US: Halslängd (mm)
+    nb-NO: Halslängd (mm)
+    sv-SE: Halslängd (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

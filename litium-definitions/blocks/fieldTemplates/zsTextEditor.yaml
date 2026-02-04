@@ -1,0 +1,24 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-paragraph
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: zsTextEditor
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: zsTextEditor
+  name:
+    en-US: Texteditor
+    sv-SE: Texteditor

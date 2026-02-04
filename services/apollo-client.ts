@@ -22,8 +22,8 @@ import { METADATA_FRAGMENT } from 'operations/fragments/metadata';
 import { NODE_ID } from 'operations/fragments/nodeId';
 import { ORDER_FRAGMENT } from 'operations/fragments/order';
 import { ORDER_DETAIL_FRAGMENT } from 'operations/fragments/orderDetail';
-import { PRODUCT_FRAGMENT } from 'operations/fragments/products/product';
-import { PRODUCT_CARD_FRAGMENT } from 'operations/fragments/products/productCard';
+import { PRODUCT_FRAGMENT } from 'operations/fragments/products/(zitac)/product';
+import { PRODUCT_CARD_FRAGMENT } from 'operations/fragments/products/(zitac)/productCard';
 import {
   CATEGORY_SEARCH_RESULT_FRAGMENT,
   PAGE_SEARCH_RESULT_FRAGMENT,
@@ -35,7 +35,7 @@ function createIsomorphLink() {
   const url =
     typeof window === 'undefined'
       ? new URL('/storefront.graphql', process.env.RUNTIME_LITIUM_SERVER_URL)
-          .href
+        .href
       : new URL('/storefront.graphql', window.location.origin).href;
   const httpLink = createHttpLink({
     uri: url,

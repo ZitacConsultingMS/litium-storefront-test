@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Compression
+  type: Text
+  name:
+    en-US: Compression
+    sv-SE: Komprimering
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

@@ -2,6 +2,14 @@ websiteTexts:
   totalsummary.button.placeorder:
     en-US: Confirm order
     sv-SE: Slutför beställning
+  totalsummary.checkbox.confirm:
+    sv-SE: Jag godkänner Seaseas köpvillkor & Privacy Policy. Läs
+  totalsummary.checkbox.termsLink:
+    sv-SE: köpvillkoren
+  totalsummary.checkbox.and:
+    sv-SE: och
+  totalsummary.checkbox.privacyLink:
+    sv-SE: Privacy Policy
   totalsummary.totalVAT:
     en-US: Total incl VAT
     sv-SE: Totalt ink moms

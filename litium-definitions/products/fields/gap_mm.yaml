@@ -1,0 +1,22 @@
+productFields:
+- id: gap_mm
+  type: Text
+  name:
+    da-DK: Gap (mm)
+    en-US: Gap (mm)
+    nb-NO: Gap (mm)
+    sv-SE: Gap (mm)
+  description:
+    da-DK: Gap (mm)
+    en-US: Gap (mm)
+    nb-NO: Gap (mm)
+    sv-SE: Gap (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

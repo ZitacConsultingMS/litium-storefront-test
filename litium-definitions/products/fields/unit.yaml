@@ -1,0 +1,22 @@
+productFields:
+- id: unit
+  type: Text
+  name:
+    da-DK: Enhet
+    en-US: Enhet
+    nb-NO: Enhet
+    sv-SE: Enhet
+  description:
+    da-DK: Enhet
+    en-US: Enhet
+    nb-NO: Enhet
+    sv-SE: Enhet
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

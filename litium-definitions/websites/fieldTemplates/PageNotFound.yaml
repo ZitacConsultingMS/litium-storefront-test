@@ -1,0 +1,31 @@
+websiteTemplates:
+- settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Contents
+    name:
+      en-US: Main contents
+      sv-SE: Huvudinnehåll
+    fields:
+    - id: Title
+    - id: ErrorMessage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: PageNotFound
+  name:
+    en-US: Page not found (404)
+    sv-SE: Sidan kan inte hittas (404)

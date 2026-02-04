@@ -1,0 +1,16 @@
+mediaFields:
+- id: brand_description_html
+  type: Editor
+  name:
+    sv-SE: Varumärke - beskrivning
+  description:
+    sv-SE: Varumärkesbeskrivning
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

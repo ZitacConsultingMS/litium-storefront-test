@@ -3,7 +3,7 @@ import { Button } from 'components/elements/Button';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
 import { useContext } from 'react';
-import Close from '../icons/close';
+import Close from '../icons/zitac/close';
 
 /**
  * Represents a client component for rendering navigation close button, which is used in mobile.

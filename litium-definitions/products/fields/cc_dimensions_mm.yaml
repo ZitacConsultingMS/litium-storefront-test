@@ -1,0 +1,22 @@
+productFields:
+- id: cc_dimensions_mm
+  type: Text
+  name:
+    da-DK: CC mått (mm)
+    en-US: CC mått (mm)
+    nb-NO: CC mått (mm)
+    sv-SE: CC mått (mm)
+  description:
+    da-DK: CC mått (mm)
+    en-US: CC mått (mm)
+    nb-NO: CC mått (mm)
+    sv-SE: CC mått (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

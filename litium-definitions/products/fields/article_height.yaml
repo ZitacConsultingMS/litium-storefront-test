@@ -1,0 +1,22 @@
+productFields:
+- id: article_height
+  type: Text
+  name:
+    da-DK: Höjd
+    en-US: Höjd
+    nb-NO: Höjd
+    sv-SE: Höjd
+  description:
+    da-DK: Höjd
+    en-US: Höjd
+    nb-NO: Höjd
+    sv-SE: Höjd
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,0 +1,22 @@
+productFields:
+- id: suitable_boat_width_m
+  type: Text
+  name:
+    da-DK: Lämplig båtbredd (m)
+    en-US: Lämplig båtbredd (m)
+    nb-NO: Lämplig båtbredd (m)
+    sv-SE: Lämplig båtbredd (m)
+  description:
+    da-DK: Lämplig båtbredd (m)
+    en-US: Lämplig båtbredd (m)
+    nb-NO: Lämplig båtbredd (m)
+    sv-SE: Lämplig båtbredd (m)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

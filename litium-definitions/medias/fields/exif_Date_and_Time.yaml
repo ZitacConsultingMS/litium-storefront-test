@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_Date_and_Time
+  type: Text
+  name:
+    en-US: Date and time
+    sv-SE: Datum och tid
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

@@ -1,0 +1,33 @@
+websiteFields:
+- id: CheckoutMode
+  type: IntOption
+  name:
+    en-US: Allow private or company customers (B2C or B2B)
+    sv-SE: Tillåt privatpersoner (B2C) eller företag (B2B)
+  description:
+    en-US: Select whether you want to allow private or company customers, or both, to buy from your site.
+    sv-SE: Välj om privatpersoner eller företag, eller både och, ska kunna handla på webbplatsen.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Private customers / B2C only
+        sv-SE: Private customers / B2C only
+      value: 2
+    - name:
+        en-US: Company customers / B2B only
+        sv-SE: Företag/endast B2B
+      value: 4
+    - name:
+        en-US: Both
+        sv-SE: Båda
+      value: 1
+    itemType: System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib

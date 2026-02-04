@@ -1,0 +1,17 @@
+productFields:
+- id: erp_country_id
+  type: Text
+  name:
+    en-US: ERP Country Id
+    sv-SE: Erp Country Id
+  description:
+    sv-SE: Erp Country Id
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

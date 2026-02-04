@@ -1,0 +1,22 @@
+productFields:
+- id: watt
+  type: Text
+  name:
+    da-DK: Watt
+    en-US: Watt
+    nb-NO: Watt
+    sv-SE: Watt
+  description:
+    da-DK: Watt
+    en-US: Watt
+    nb-NO: Watt
+    sv-SE: Watt
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

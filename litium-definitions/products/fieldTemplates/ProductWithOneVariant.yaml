@@ -1,0 +1,37 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  variantFieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: _description
+    - id: _url
+    - id: _seoTitle
+    - id: _seoDescription
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Product information
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Product specification
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  useVariantUrl: true
+  id: ProductWithOneVariant
+  name:
+    en-US: Product with only one variant
+    sv-SE: Produkt med endast en variant

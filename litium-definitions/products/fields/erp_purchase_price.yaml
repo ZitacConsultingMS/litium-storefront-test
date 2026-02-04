@@ -1,0 +1,17 @@
+productFields:
+- id: erp_purchase_price
+  type: Decimal
+  name:
+    en-US: Inköpspris
+    sv-SE: Erp Inköpspris
+  description:
+    sv-SE: Erp Inköpspris
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: true
+    storefront:
+      visible: false
+      searchable: false

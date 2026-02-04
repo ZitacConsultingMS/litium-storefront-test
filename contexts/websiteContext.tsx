@@ -14,6 +14,7 @@ export const EmptyWebsite: Website = {
   notFoundPageUrl: '',
   generalErrorPageUrl: '',
   loginPageUrl: '',
+  zsThemeID: '',
   orderPageUrl: '',
   culture: {
     code: 'sv-SE',

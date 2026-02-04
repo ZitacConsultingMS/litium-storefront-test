@@ -1,0 +1,22 @@
+productFields:
+- id: exit
+  type: Text
+  name:
+    da-DK: Utgång
+    en-US: Utgång
+    nb-NO: Utgång
+    sv-SE: Utgång
+  description:
+    da-DK: Utgång
+    en-US: Utgång
+    nb-NO: Utgång
+    sv-SE: Utgång
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

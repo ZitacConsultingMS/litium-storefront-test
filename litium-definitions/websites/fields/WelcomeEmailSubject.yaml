@@ -1,0 +1,18 @@
+websiteFields:
+- id: WelcomeEmailSubject
+  type: Text
+  name:
+    en-US: Subject
+    sv-SE: Ämne
+  description:
+    en-US: Ämnesraden i det välkomstmeddelande som skickas till nya kunder.
+    sv-SE: The subject header of the email sent for welcome email to new customers.
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

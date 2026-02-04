@@ -1,0 +1,19 @@
+productFields:
+- id: length
+  type: Text
+  name:
+    da-DK: Längd
+    de-DE: Längd
+    en-US: Längd
+    fi-FI: Längd
+    nb-NO: Längd
+    sv-SE: Längd
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

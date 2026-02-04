@@ -1,0 +1,22 @@
+productFields:
+- id: new_end
+  type: DateTime
+  name:
+    da-DK: NewEnd
+    en-US: NewEnd
+    nb-NO: NewEnd
+    sv-SE: NewEnd
+  description:
+    da-DK: NewEnd
+    en-US: NewEnd
+    nb-NO: NewEnd
+    sv-SE: NewEnd
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

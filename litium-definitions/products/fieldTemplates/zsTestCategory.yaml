@@ -1,0 +1,25 @@
+productTemplates:
+- type: Category
+  categoryFieldGroups:
+  - id: zsTestCategory
+    name:
+      en-US: zsTestCategory
+    fields:
+    - id: _name
+    - id: _description
+    - id: _url
+    - id: _seoTitle
+    - id: _seoDescription
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  blockContainers:
+  - id: Test
+    name:
+      sv-SE: Testar import
+    childBlocks:
+      combination: All
+  id: zsTestCategory
+  name:
+    en-US: zsTestCategory

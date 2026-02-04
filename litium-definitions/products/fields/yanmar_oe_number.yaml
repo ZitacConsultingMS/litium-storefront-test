@@ -1,0 +1,22 @@
+productFields:
+- id: yanmar_oe_number
+  type: Text
+  name:
+    da-DK: Yanmar OE nr
+    en-US: Yanmar OE nr
+    nb-NO: Yanmar OE nr
+    sv-SE: Yanmar OE nr
+  description:
+    da-DK: Yanmar OE nr
+    en-US: Yanmar OE nr
+    nb-NO: Yanmar OE nr
+    sv-SE: Yanmar OE nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -2,3 +2,14 @@
 @include meta.load-css('swiper/scss');
 @include meta.load-css('swiper/scss/scrollbar');
 @include meta.load-css('swiper/scss/virtual');
+
+// Make all slides have equal height
+.swiper-slide {
+  height: auto !important;
+  display: flex;
+  
+  .product-card {
+    width: 100%;
+    height: 100%;
+  }
+}

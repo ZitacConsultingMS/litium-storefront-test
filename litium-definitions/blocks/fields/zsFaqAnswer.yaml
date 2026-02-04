@@ -1,0 +1,15 @@
+blockFields:
+- id: zsFaqAnswer
+  type: Editor
+  name:
+    en-US: FAQ Answer
+    sv-SE: FAQ Answer
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

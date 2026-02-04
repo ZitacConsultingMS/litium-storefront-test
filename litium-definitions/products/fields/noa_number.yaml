@@ -1,0 +1,22 @@
+productFields:
+- id: noa_number
+  type: Decimal
+  name:
+    da-DK: NOA nr
+    en-US: NOA nr
+    nb-NO: NOA nr
+    sv-SE: NOA nr
+  description:
+    da-DK: NOA nr
+    en-US: NOA nr
+    nb-NO: NOA nr
+    sv-SE: NOA nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

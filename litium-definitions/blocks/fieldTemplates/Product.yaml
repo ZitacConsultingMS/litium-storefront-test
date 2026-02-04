@@ -1,0 +1,42 @@
+blockTemplates:
+- category: Products
+  icon:
+    style: fas
+    id: fa-tag
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Products
+    name:
+      en-US: Products
+      sv-SE: Produkter
+    fields:
+    - id: BlockTitle
+    - id: CategoryLink
+    - id: ProductListLink
+    - id: ProductsLinkList
+    - id: NumberOfProducts
+    - id: ProductSorting
+    - id: LinkText
+    - id: LinkToCategory
+    - id: LinkToPage
+    - id: ShowProductToTheRight
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Product
+  name:
+    en-US: Products
+    sv-SE: Produkt

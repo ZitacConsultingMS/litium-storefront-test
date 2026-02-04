@@ -1,0 +1,32 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-circle-question
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: FAQ
+    name:
+      en-US: FAQ
+      sv-SE: FAQ
+    fields:
+    - id: zsFAQ
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: zsFAQ
+  name:
+    en-US: FAQ
+    sv-SE: FAQ

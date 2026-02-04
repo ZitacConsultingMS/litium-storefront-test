@@ -1,5 +1,6 @@
 html,
 body {
+  overflow: unset !important;
   touch-action: manipulation;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

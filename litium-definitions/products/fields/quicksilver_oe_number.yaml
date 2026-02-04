@@ -1,0 +1,22 @@
+productFields:
+- id: quicksilver_oe_number
+  type: Text
+  name:
+    da-DK: Quicksilver OE nr
+    en-US: Quicksilver OE nr
+    nb-NO: Quicksilver OE nr
+    sv-SE: Quicksilver OE nr
+  description:
+    da-DK: Quicksilver OE nr
+    en-US: Quicksilver OE nr
+    nb-NO: Quicksilver OE nr
+    sv-SE: Quicksilver OE nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

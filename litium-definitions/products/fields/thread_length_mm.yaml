@@ -1,0 +1,22 @@
+productFields:
+- id: thread_length_mm
+  type: Decimal
+  name:
+    da-DK: Längd gänga (mm)
+    en-US: Längd gänga (mm)
+    nb-NO: Längd gänga (mm)
+    sv-SE: Längd gänga (mm)
+  description:
+    da-DK: Längd gänga (mm)
+    en-US: Längd gänga (mm)
+    nb-NO: Längd gänga (mm)
+    sv-SE: Längd gänga (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

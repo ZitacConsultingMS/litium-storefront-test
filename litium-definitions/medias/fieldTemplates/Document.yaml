@@ -1,0 +1,29 @@
+mediaTemplates:
+- templateType: Other
+  fileExtensions:
+  - id: pdf
+  - id: doc
+  - id: docx
+  - id: xls
+  - id: xlsx
+  - id: ppt
+  - id: pptx
+  - id: txt
+  - id: md
+  type: File
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _nameInvariantCulture
+    - id: _description
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Document
+  name:
+    en-US: Document
+    sv-SE: Dokument

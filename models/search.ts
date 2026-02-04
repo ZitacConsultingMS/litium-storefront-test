@@ -1,6 +1,6 @@
+import { ProductSearchConnection } from './(zitac)/products';
 import { CategoryItemsConnection } from './category';
 import { PageItemsConnection } from './page';
-import { ProductSearchConnection } from './products';
 
 export interface SearchContentType {
   categorySearch: CategoryItemsConnection;

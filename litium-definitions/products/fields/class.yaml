@@ -1,0 +1,22 @@
+productFields:
+- id: class
+  type: Text
+  name:
+    da-DK: Klass
+    en-US: Klass
+    nb-NO: Klass
+    sv-SE: Klass
+  description:
+    da-DK: Klass
+    en-US: Klass
+    nb-NO: Klass
+    sv-SE: Klass
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

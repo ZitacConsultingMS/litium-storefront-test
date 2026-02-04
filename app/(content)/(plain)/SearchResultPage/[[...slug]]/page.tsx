@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import SearchPage from 'components/search/SearchPage';
+import SearchPage from 'components/search/zitac/SearchPage';
 import { CategorySearchQueryInput } from 'models/categorySearchQueryInput';
 import { PageSearchQueryInput } from 'models/pageSearchQueryInput';
 import { ProductSearchQueryInput } from 'models/productSearchQueryInput';
@@ -27,10 +27,7 @@ export default async function Page(props: {
     searchParams,
     website.filters
   );
-  const sorts = [
-    ...SearchSortItemInput.fromSearchParams(searchParams),
-    ...SearchSortItemInput.defaultProductSorting,
-  ];
+  const sorts = SearchSortItemInput.fromSearchParams(searchParams);
   const result =
     'q' in searchParams && !!searchParams['q']
       ? await search(productParams, categoryParams, pageParams, facets, sorts)

@@ -1,0 +1,17 @@
+blockFields:
+- id: ProductListLink
+  type: Pointer
+  name:
+    en-US: Product list
+    sv-SE: Produktlista
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: ProductsProductList

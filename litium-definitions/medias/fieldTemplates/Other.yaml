@@ -1,0 +1,24 @@
+mediaTemplates:
+- templateType: Other
+  fileExtensions:
+  - id: gz
+  - id: zip
+  - id: z7
+  - id: json
+  type: File
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _nameInvariantCulture
+    - id: _description
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Other
+  name:
+    en-US: Other
+    sv-SE: Andra

@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "channel-id",
+      "value": "RGVmYXVsdENoYW5uZWxGaWVsZFRlbXBsYXRlQ2hhbm5lbApkSXRlbVN5c3RlbUlkPWY5MTUwMWU2OThiNDRkOTE4ZjY1NjY0MjAyNmExOGIwJkNoYW5uZWxTeXN0ZW1JZD1mOTE1MDFlNjk4YjQ0ZDkxOGY2NTY2NDIwMjZhMThiMA%3D%3D",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "idsrv.session",
+      "value": "B44118F6D4A74D42E041E3403E878F17",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": ".AspNetCore.Identity.Application",
+      "value": "CfDJ8NNZiy82KuNPjNeQE9kRv4SiPZW80yqgTP53aiEKQV0EBkMn8OOkUVkdSjRS-PGcbLEPjPsDZNx0IHNKxHX0SYdbZA05k7C2IVQKHv8n5n6o3Zckr0zTJfm0BtBn6bPifGxSHqcpzW6ejUJA8idEKeq55xiqj0tQdvKSx3DWyfaaf2k_cf9R2k02AMGcXqFvOdQPfxFFYXEII5ik5vq-1cJtSNBA3S9A0k3OG9bbf2SS5kyZtBXNCVCt9fd36ncNKE_plltS_Q3JIRBumqarFrNjOCAOc13_vNtvpI5LxWwSj2_bbsffeWQWr5BbsAlC5QwirjGRfcz5SmYTtusZQJGZWJwfLlb6XSSaqN2UzDWDqjf-oJwunPwTHCcNEzxW8HbCwNyOLJMzNYOQblGbvzHcck523pamDIzb6nRMf0ZastUEza0D1MfQjuJgdyXAOcdrKiVTgIPaKIUzMLvXdnnAgeqyLXQBmZ7L2yNGLzHMGN8P-PHyybPLcyz5-in8Ajye4a7RnfWvOQsnuoq8A4RmWroDhSgg8_zGZiJtDNvqfWBa-yZ3HxNLIWADAQOtfO6umsTkFH9n5IUZ0BimR8g4h-8FFnyR5Ksp_KoCZjWIjeyEizBD3cww9sPDDhyP1TGmXmryZK5hfaRGqQY_afyDZNuVUtwrhrpL7QGetmcuSBlSMyrc552dOd-TYCmhqWPtCehwEP3artewph_0ePY39hybOq6rVZvVUwqh7qMONLQ7JLx0ReftZWWlHe8Jf1_OvWmoUgO2sKa2DCw605XZsDggo4lCLxP82Sf11x5bHIqSZrl9FOk7xYkTsokrRC0IMPTLijaNs9Xnz459hkuBV5IgR_-tX8h1ij_vHmvDYXUD_R_dj_ZmZntV9_-bJpOF05wcCRuo8-Ku_OQBZAixpHsxyiN2qPbUnJnsjWiiGxW9kwu4fqYYEZsIDCiVJZbxrwDL-Z8Pqllx-KBBjRTVU1QbxieYoxN9Bfq_medAX3mkA_b01jgga5oHUJZSo-i5OQvGB-YmxKknDKZBw-fu1vXb2RtNwrD16QIzO4wxoiwMMJ_dUnwNMCByo6u3quZjhB-H0axrk-hkkfEeXTWdZ7RnXMvbJUUSXHVpuEWzmO4dEEDFf0MZq-3RvikbMu1iP7LSdJYUNUhBp7Y6kpyDC01t5CbUTRrOauBT0UNtQeCuZJlW8yEEOJriLffS5HFTO_DIhYulrD6SgH447s9VPxO38bEhR2G3Qa8yb7wrBkP1N1hA8K0fTmpi4xQYcQ5IarceCC37MJfCFIScdFe11-2EEWE9hXanWLySArHsHG8funhSPLO89onHIwE-8Q6vkjp2elBnuaOJBinOc4E",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

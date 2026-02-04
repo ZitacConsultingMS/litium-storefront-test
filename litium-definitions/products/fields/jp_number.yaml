@@ -1,0 +1,22 @@
+productFields:
+- id: jp_number
+  type: Text
+  name:
+    da-DK: JP nr
+    en-US: JP nr
+    nb-NO: JP nr
+    sv-SE: JP nr
+  description:
+    da-DK: JP nr
+    en-US: JP nr
+    nb-NO: JP nr
+    sv-SE: JP nr
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import HorizontalProductList from 'components/products/HorizontalProductList';
+import HorizontalProductList from 'components/products/zitac/HorizontalProductList';
 import { Block } from 'models/block';
 import { ContentFieldType } from 'models/content';
 import { TextOption } from 'models/option';

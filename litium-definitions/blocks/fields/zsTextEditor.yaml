@@ -1,0 +1,15 @@
+blockFields:
+- id: zsTextEditor
+  type: Editor
+  name:
+    en-US: TextEditor
+    sv-SE: TextEditor
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

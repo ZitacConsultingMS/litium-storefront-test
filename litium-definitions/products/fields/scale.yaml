@@ -1,0 +1,22 @@
+productFields:
+- id: scale
+  type: Text
+  name:
+    da-DK: Skala
+    en-US: Skala
+    nb-NO: Skala
+    sv-SE: Skala
+  description:
+    da-DK: Skala
+    en-US: Skala
+    nb-NO: Skala
+    sv-SE: Skala
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

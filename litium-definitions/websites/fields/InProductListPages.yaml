@@ -1,0 +1,18 @@
+websiteFields:
+- id: InProductListPages
+  type: Boolean
+  name:
+    en-US: In product list pages
+    sv-SE: På sidor med produktlistor
+  description:
+    en-US: Hides or shows the left menu of pages that are poitning out a product list.
+    sv-SE: Visar eller döljer vänstermenyn på sidor med produktlistor.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

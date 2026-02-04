@@ -1,0 +1,21 @@
+productFields:
+- id: product_tags
+  type: MultiField
+  name:
+    en-US: Tags
+    sv-SE: Tags
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    fields:
+    - product_tags_tag
+    - product_tags_from_date
+    - product_tags_to_date
+    isArray: true

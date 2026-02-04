@@ -1,0 +1,19 @@
+productFields:
+- id: weight_kg
+  type: Text
+  name:
+    da-DK: Vikt (kg)
+    de-DE: Vikt (kg)
+    en-US: Vikt (kg)
+    fi-FI: Vikt (kg)
+    nb-NO: Vikt (kg)
+    sv-SE: Vikt (kg)
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

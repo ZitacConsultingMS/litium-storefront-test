@@ -1,0 +1,20 @@
+@use './abstracts/' as *;
+@tailwind components;
+
+footer {
+  section {
+    &:first-of-type {
+      flex: 50%;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        @apply basis-10/12;
+      }
+    }
+    &:last-of-type {
+      flex: 100%;
+      svg {
+        max-width: 160px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

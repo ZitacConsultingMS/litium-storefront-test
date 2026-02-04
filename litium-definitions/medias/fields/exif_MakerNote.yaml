@@ -1,0 +1,15 @@
+mediaFields:
+- id: exif_MakerNote
+  type: Text
+  name:
+    en-US: MakerNote
+    sv-SE: MakerNote
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: false

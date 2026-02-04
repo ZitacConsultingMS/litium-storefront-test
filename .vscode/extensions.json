@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "kuscamara.remove-unused-imports",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

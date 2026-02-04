@@ -1,0 +1,16 @@
+websiteTexts:
+  checkoutwizard.deliveryaddress.title:
+    en-US: Delivery
+    sv-SE: Leverans
+  checkoutwizard.deliveryoption.button.continue:
+    en-US: Continue
+    sv-SE: Fortsätt
+  checkoutwizard.deliveryoption.title:
+    en-US: Select delivery
+    sv-SE: Välj leveranssätt
+  checkoutwizard.payment.billingaddress:
+    en-US: Billing address same as delivery address
+    sv-SE: Fakturaadress är samma som leveransadress
+  checkoutwizard.payment.title:
+    en-US: Payment
+    sv-SE: Betalning

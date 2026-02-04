@@ -1,0 +1,37 @@
+websiteTexts:
+  commons.open:
+    en-US: Open
+    sv-SE: Öppna
+  commons.close:
+    en-US: Close
+    sv-SE: Stäng
+  commons.opennavigationmenu:
+    en-US: Open navigation menu
+    sv-SE: Öppna navigationsmeny
+  commons.closenavigationmenu:
+    en-US: Close navigation menu
+    sv-SE: Stäng navigationsmeny
+  commons.closeimagegallery:
+    en-US: Close image gallery
+    sv-SE: Stäng bildgalleri
+  commons.closedropdown:
+    en-US: Close dropdown
+    sv-SE: Stäng rullgardinsmeny
+  commons.remove:
+    en-US: Remove
+    sv-SE: Ta bort
+  commons.back:
+    en-US: Back
+    sv-SE: Tillbaka
+  commons.opensearch:
+    en-US: Open search
+    sv-SE: Öppna sök
+  commons.closesearch:
+    en-US: Close search
+    sv-SE: Stäng sök
+  commons.gotohomepage:
+    en-US: Go to homepage
+    sv-SE: Gå till startsidan
+  commons.contenttabs:
+    en-US: Content tabs
+    sv-SE: Innehållsflikar

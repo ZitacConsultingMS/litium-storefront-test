@@ -1,0 +1,21 @@
+websiteFields:
+- id: ProductFilterFields
+  type: Pointer
+  name:
+    en-US: Product filters
+    sv-SE: Produktfilter
+  description:
+    en-US: Select the fields you want visitors to be able to use to filter products.
+    sv-SE: Välj de fält du vill att besökare ska kunna använda för att filtrera produkter.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: ProductsProductField
+    multiSelect: true

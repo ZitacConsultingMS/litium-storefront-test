@@ -1,0 +1,13 @@
+websiteTexts:
+  facetedfiltercompact.title:
+    en-US: Filter
+    sv-SE: Filter
+  facetedfiltercompact.button.clear:
+    en-US: Clear
+    sv-SE: Rensa
+  facetedfiltercompact.button.show:
+    en-US: Show
+    sv-SE: Visa
+  facetedfiltercompact.button.closefilter:
+    en-US: Close filter
+    sv-SE: Stäng filter

@@ -1,0 +1,14 @@
+globalizationTemplates:
+- type: Market
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: DefaultMarketFieldTemplate
+  name:
+    en-US: Market
+    sv-SE: Standardmarknad

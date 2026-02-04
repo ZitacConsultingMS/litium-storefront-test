@@ -1,0 +1,15 @@
+blockFields:
+- id: NavigationLinksHeader
+  type: Link
+  name:
+    en-US: Header
+    sv-SE: Rubrik
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

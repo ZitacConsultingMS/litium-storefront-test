@@ -1,0 +1,10 @@
+websiteTexts:
+  categorysearchresult.button.loading:
+    en-US: Loading...
+    sv-SE: Laddar…
+  categorysearchresult.button.loadmore:
+    en-US: Load more
+    sv-SE: Visa fler
+  categorysearchresult.linklabel:
+    en-US: To category >
+    sv-SE: Till kategori >

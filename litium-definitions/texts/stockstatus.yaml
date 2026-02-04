@@ -1,0 +1,7 @@
+websiteTexts:
+  stockstatus.instock:
+    en-US: In stock
+    sv-SE: I lager
+  stockstatus.outofstock:
+    en-US: Out of stock
+    sv-SE: Ej i lager

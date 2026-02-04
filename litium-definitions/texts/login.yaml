@@ -1,0 +1,31 @@
+websiteTexts:
+  login.title:
+    en-US: Login
+    sv-SE: Logga in
+  login.invalidusernameorpassword:
+    en-US: The username or password seems to be incorrect. Please try again.
+    sv-SE: Användarnamnet eller lösenordet verkar vara felaktigt. Försök igen.
+  login.lockedouterror:
+    en-US: This account has been locked. Please contact us for more information.
+    sv-SE: Detta konto har låsts. Kontakta oss för mer information.
+  login.loginbuttontext:
+    en-US: Login
+    sv-SE: Logga in
+  login.username:
+    en-US: User name
+    sv-SE: Användarnamn
+  login.password:
+    en-US: Password
+    sv-SE: Lösenord
+  login.changepassword:
+    en-US: Change password 
+    sv-SE: Ändra lösenord 
+  login.newpassword:
+    en-US: New password
+    sv-SE: Nytt lösenord
+  login.showpassword:
+    en-US: Show password
+    sv-SE: Visa lösenord
+  login.hidepassword:
+    en-US: Hide password
+    sv-SE: Dölj lösenord

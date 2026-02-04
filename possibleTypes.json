@@ -1,0 +1,398 @@
+{
+  "ApproveOrderForOrganizationError": [
+    "Failure",
+    "Forbidden"
+  ],
+  "ChangeMyEmailError": [
+    "Failure",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "ChangeMyEmailVerificationError": [
+    "Failure",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "ChangeMyPasswordError": [
+    "Failure",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "CreateCheckoutSessionError": [
+    "ValidationError"
+  ],
+  "Error": [
+    "AuthenticationFailure",
+    "Failure",
+    "FieldUpdateError",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "IBlock": [
+    "BannerBlock",
+    "BrandBlock",
+    "FooterColumnBlock",
+    "NavigationLinksBlock",
+    "PrimaryNavigationBannerBlock",
+    "PrimaryNavigationCategoriesBlock",
+    "PrimaryNavigationColumnBlock",
+    "PrimaryNavigationLinkBlock",
+    "ProductBlock",
+    "ProductsAndBannerBlock",
+    "ProductsBlock",
+    "SecondaryNavigationLinkBlock",
+    "SliderBlock",
+    "VideoBlock"
+  ],
+  "IBlockItem": [
+    "BannerBlock",
+    "BrandBlock",
+    "FooterColumnBlock",
+    "NavigationLinksBlock",
+    "PrimaryNavigationBannerBlock",
+    "PrimaryNavigationCategoriesBlock",
+    "PrimaryNavigationColumnBlock",
+    "PrimaryNavigationLinkBlock",
+    "ProductBlock",
+    "ProductsAndBannerBlock",
+    "ProductsBlock",
+    "SecondaryNavigationLinkBlock",
+    "SliderBlock",
+    "VideoBlock"
+  ],
+  "ICategoryItem": [
+    "CategoryProductCategory",
+    "RestrictedCategoryItem"
+  ],
+  "ICategoryOrProduct": [
+    "CategoryProductCategory",
+    "ProductWithOneVariantProduct",
+    "ProductWithVariantsFurnitureProduct",
+    "ProductWithVariantsListProduct",
+    "ProductWithVariantsProduct",
+    "RestrictedCategoryItem",
+    "RestrictedProductItem"
+  ],
+  "IChannel": [
+    "DefaultChannelFieldTemplateChannel"
+  ],
+  "IChannelItem": [
+    "DefaultChannelFieldTemplateChannel"
+  ],
+  "IContent": [
+    "ArticlePage",
+    "AuthorizationError",
+    "CategoryProductCategory",
+    "CheckoutPage",
+    "ErrorPage",
+    "ForbiddenError",
+    "GlobalBlockPreview",
+    "LandingPage",
+    "LoginPage",
+    "MyAccountAddressesPage",
+    "MyAccountDashboardPage",
+    "MyAccountLoginDetailsPage",
+    "MyAccountMyProfilePage",
+    "MyAccountOrderHistoryPage",
+    "MyAccountOrderPage",
+    "NotFoundError",
+    "OrderConfirmationPage",
+    "ProductListPage",
+    "ProductWithOneVariantProduct",
+    "ProductWithVariantsFurnitureProduct",
+    "ProductWithVariantsListProduct",
+    "ProductWithVariantsProduct",
+    "Redirect",
+    "RestrictedCategoryItem",
+    "RestrictedPageItem",
+    "RestrictedProductItem",
+    "SearchResultPage",
+    "SiteSelectorPage"
+  ],
+  "IContentItem": [
+    "ArticlePage",
+    "CategoryProductCategory",
+    "CheckoutPage",
+    "ErrorPage",
+    "LandingPage",
+    "LoginPage",
+    "MyAccountAddressesPage",
+    "MyAccountDashboardPage",
+    "MyAccountLoginDetailsPage",
+    "MyAccountMyProfilePage",
+    "MyAccountOrderHistoryPage",
+    "MyAccountOrderPage",
+    "OrderConfirmationPage",
+    "ProductListPage",
+    "ProductWithOneVariantProduct",
+    "ProductWithVariantsFurnitureProduct",
+    "ProductWithVariantsListProduct",
+    "ProductWithVariantsProduct",
+    "RestrictedCategoryItem",
+    "RestrictedPageItem",
+    "RestrictedProductItem",
+    "SearchResultPage",
+    "SiteSelectorPage"
+  ],
+  "IFacet": [
+    "DistinctFacet",
+    "RangeFacet"
+  ],
+  "IFieldMetadataItem": [
+    "FieldTypeMetadataBoolean",
+    "FieldTypeMetadataCustomerPointerOrganization",
+    "FieldTypeMetadataDate",
+    "FieldTypeMetadataDateTime",
+    "FieldTypeMetadataDecimal",
+    "FieldTypeMetadataDecimalOption",
+    "FieldTypeMetadataEditor",
+    "FieldTypeMetadataInt",
+    "FieldTypeMetadataIntOption",
+    "FieldTypeMetadataLimitedText",
+    "FieldTypeMetadataLink",
+    "FieldTypeMetadataLong",
+    "FieldTypeMetadataMediaPointerFile",
+    "FieldTypeMetadataMediaPointerImage",
+    "FieldTypeMetadataMediaPointerImageArray",
+    "FieldTypeMetadataMultiField",
+    "FieldTypeMetadataMultirowText",
+    "FieldTypeMetadataObject",
+    "FieldTypeMetadataPointer",
+    "FieldTypeMetadataText",
+    "FieldTypeMetadataTextOption"
+  ],
+  "IFieldValueItem": [
+    "BannersBlockFieldValues",
+    "BooleanValue",
+    "DateTimeValue",
+    "DecimalOptionFieldValues",
+    "DecimalValue",
+    "IntOptionFieldValues",
+    "IntValue",
+    "LinkFieldValue",
+    "LongValue",
+    "NavigationLinksBlockFieldValues",
+    "PointerMediaFileValue",
+    "PointerMediaFileValues",
+    "PointerMediaImageValue",
+    "PointerMediaImageValues",
+    "PointerMediaVideoValues",
+    "PointerPageValues",
+    "PointerProductCategoryValues",
+    "PointerProductFieldValues",
+    "PointerProductListValues",
+    "PointerProductValues",
+    "PointerValues",
+    "StringValue",
+    "TextOptionFieldValues"
+  ],
+  "IFileItem": [
+    "File"
+  ],
+  "IImageItem": [
+    "Image"
+  ],
+  "IMarket": [
+    "DefaultMarketFieldTemplateMarket",
+    "DefaultMarketMarket"
+  ],
+  "IOrganizationItem": [
+    "OrganizationTemplateOrganization"
+  ],
+  "IPageItem": [
+    "ArticlePage",
+    "CheckoutPage",
+    "ErrorPage",
+    "LandingPage",
+    "LoginPage",
+    "MyAccountAddressesPage",
+    "MyAccountDashboardPage",
+    "MyAccountLoginDetailsPage",
+    "MyAccountMyProfilePage",
+    "MyAccountOrderHistoryPage",
+    "MyAccountOrderPage",
+    "OrderConfirmationPage",
+    "ProductListPage",
+    "RestrictedPageItem",
+    "SearchResultPage",
+    "SiteSelectorPage"
+  ],
+  "IPageOrCategory": [
+    "ArticlePage",
+    "CategoryProductCategory",
+    "CheckoutPage",
+    "ErrorPage",
+    "LandingPage",
+    "LoginPage",
+    "MyAccountAddressesPage",
+    "MyAccountDashboardPage",
+    "MyAccountLoginDetailsPage",
+    "MyAccountMyProfilePage",
+    "MyAccountOrderHistoryPage",
+    "MyAccountOrderPage",
+    "OrderConfirmationPage",
+    "ProductListPage",
+    "RestrictedCategoryItem",
+    "RestrictedPageItem",
+    "SearchResultPage",
+    "SiteSelectorPage"
+  ],
+  "IPersonItem": [
+    "B2BPersonTemplatePerson",
+    "B2CPersonTemplatePerson",
+    "_systemPerson"
+  ],
+  "IPointerItem": [
+    "Pointer",
+    "PointerMediaFileItem",
+    "PointerMediaImageItem",
+    "PointerMediaVideoItem",
+    "PointerPageItem",
+    "PointerProductCategoryItem",
+    "PointerProductFieldItem",
+    "PointerProductItem",
+    "PointerProductListItem"
+  ],
+  "IProductItem": [
+    "ProductWithOneVariantProduct",
+    "ProductWithVariantsFurnitureProduct",
+    "ProductWithVariantsListProduct",
+    "ProductWithVariantsProduct",
+    "RestrictedProductItem"
+  ],
+  "IRelationshipItem": [
+    "Relationship"
+  ],
+  "ITemplateInfo": [
+    "ArticlePage",
+    "BannerBlock",
+    "BrandBlock",
+    "CategoryProductCategory",
+    "CheckoutPage",
+    "ErrorPage",
+    "FooterColumnBlock",
+    "LandingPage",
+    "LoginPage",
+    "MyAccountAddressesPage",
+    "MyAccountDashboardPage",
+    "MyAccountLoginDetailsPage",
+    "MyAccountMyProfilePage",
+    "MyAccountOrderHistoryPage",
+    "MyAccountOrderPage",
+    "NavigationLinksBlock",
+    "OrderConfirmationPage",
+    "PrimaryNavigationBannerBlock",
+    "PrimaryNavigationCategoriesBlock",
+    "PrimaryNavigationColumnBlock",
+    "PrimaryNavigationLinkBlock",
+    "ProductBlock",
+    "ProductListPage",
+    "ProductWithOneVariantProduct",
+    "ProductWithVariantsFurnitureProduct",
+    "ProductWithVariantsListProduct",
+    "ProductWithVariantsProduct",
+    "ProductsAndBannerBlock",
+    "ProductsBlock",
+    "RestrictedCategoryItem",
+    "RestrictedPageItem",
+    "RestrictedProductItem",
+    "SearchResultPage",
+    "SecondaryNavigationLinkBlock",
+    "SiteSelectorPage",
+    "SliderBlock",
+    "VideoBlock"
+  ],
+  "IWebsite": [
+    "AcceleratorWebsiteWebsite"
+  ],
+  "IWebsiteItem": [
+    "AcceleratorWebsiteWebsite"
+  ],
+  "ManageAddressForOrganizationError": [
+    "Forbidden"
+  ],
+  "ManageAddressForPersonError": [
+    "Forbidden"
+  ],
+  "ManagePersonInOrganizationError": [
+    "Forbidden"
+  ],
+  "Node": [
+    "AcceleratorWebsiteWebsite",
+    "ArticlePage",
+    "B2BPersonTemplatePerson",
+    "B2CPersonTemplatePerson",
+    "CategoryProductCategory",
+    "CheckoutPage",
+    "CustomerAddressType",
+    "DefaultChannelFieldTemplateChannel",
+    "DefaultMarketFieldTemplateMarket",
+    "DefaultMarketMarket",
+    "ErrorPage",
+    "LandingPage",
+    "LoginPage",
+    "MyAccountAddressesPage",
+    "MyAccountDashboardPage",
+    "MyAccountLoginDetailsPage",
+    "MyAccountMyProfilePage",
+    "MyAccountOrderHistoryPage",
+    "MyAccountOrderPage",
+    "Order",
+    "OrderConfirmationPage",
+    "OrganizationTemplateOrganization",
+    "ProductListPage",
+    "ProductWithOneVariantProduct",
+    "ProductWithVariantsFurnitureProduct",
+    "ProductWithVariantsListProduct",
+    "ProductWithVariantsProduct",
+    "RestrictedCategoryItem",
+    "RestrictedPageItem",
+    "RestrictedProductItem",
+    "Role",
+    "SearchResultPage",
+    "SiteSelectorPage",
+    "_systemPerson"
+  ],
+  "PlaceOrderError": [
+    "ValidationError"
+  ],
+  "RemoveAddressFromOrganizationError": [
+    "Forbidden"
+  ],
+  "RemoveAddressFromPersonError": [
+    "Forbidden"
+  ],
+  "RemovePersonFromOrganizationError": [
+    "Forbidden"
+  ],
+  "ResetUserPasswordError": [
+    "Failure",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "ResetUserPasswordVerificationError": [
+    "Failure",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "SelectUserOrganizationError": [
+    "Forbidden"
+  ],
+  "SignInUserError": [
+    "AuthenticationFailure"
+  ],
+  "UpdateFieldForOrganizationError": [
+    "FieldUpdateError",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "UpdateFieldForPersonError": [
+    "FieldUpdateError",
+    "Forbidden",
+    "ValidationError"
+  ],
+  "authentication": [
+    "AuthenticationCookie",
+    "AuthenticationToken"
+  ]
+}

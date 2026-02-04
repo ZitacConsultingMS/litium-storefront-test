@@ -1,0 +1,15 @@
+productFields:
+- id: PackageDepth
+  type: Decimal
+  name:
+    en-US: Package depth
+    sv-SE: Förp. djup
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

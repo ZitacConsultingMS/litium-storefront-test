@@ -1,0 +1,7 @@
+websiteTexts:
+  pagesearchresult.button.loading:
+    en-US: Loading...
+    sv-SE: Laddar…
+  pagesearchresult.button.loadmore:
+    en-US: Load more
+    sv-SE: Visa fler

@@ -1,0 +1,24 @@
+websiteTemplates:
+  - id: MyAccountLoginDetails
+    name:
+      en-US: My account - login details
+      sv-SE: Mitt konto - inloggning
+    type: Page
+    blockContainers:
+      - id: Main
+        childBlocks:
+          combination: IncludeSelected
+          selections:
+            - id: Banner
+    settings:
+      indexThePage: false
+    fieldGroups:
+      - id: Settings
+        name:
+          en-US: Settings
+          sv-SE: Inställningar
+        fields:
+          - id: _name
+          - id: _url
+        storefront:
+          visible: false

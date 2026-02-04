@@ -1,0 +1,21 @@
+websiteFields:
+- id: GeneralError
+  type: Pointer
+  name:
+    en-US: General error (500)
+    sv-SE: Generellt fel (500)
+  description:
+    en-US: The pointed out page will be shown to users when the system returns a general 500-error.
+    sv-SE: Den utpekade sidan kommer att visas då systemet returnerar ett generellt 500-fel.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

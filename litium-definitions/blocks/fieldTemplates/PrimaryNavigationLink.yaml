@@ -1,0 +1,25 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-link
+  childBlocks:
+    combination: IncludeSelected
+    selections:
+    - id: PrimaryNavigationColumn
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: NavigationLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: PrimaryNavigationLink
+  name:
+    en-US: Primary navigation link

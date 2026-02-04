@@ -1,0 +1,16 @@
+websiteTexts:
+  form.required:
+    en-US: Required
+    sv-SE: Obligatoriskt
+  form.email.not.valid:
+    en-US: The email is not valid
+    sv-SE: E-post är inte giltig
+  form.decimal.not.valid:
+    en-US: Allowed characters are numbers, commas and periods.
+    sv-SE: Tillåtna tecken är siffror, kommatecken och punkter.
+  form.integer.not.valid:
+    en-US: Only numbers allowed.
+    sv-SE: Endast siffror är tillåtna.
+  form.select.none.value:
+    en-US: None
+    sv-SE: Inget val

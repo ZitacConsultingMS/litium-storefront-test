@@ -1,0 +1,15 @@
+productFields:
+- id: Specification
+  type: MultirowText
+  name:
+    en-US: Product specifications
+    sv-SE: Produktegenskaper
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,31 @@
+websiteTexts:
+  productdetail.button.add:
+    en-US: Add to cart
+    sv-SE: Lägg i varukorgen
+  productdetail.button.add.success:
+    en-US: Added to cart
+    sv-SE: Tillagd i varukorgen
+  productdetail.color:
+    en-US: Color
+    sv-SE: Färg
+  productdetail.size:
+    en-US: Size
+    sv-SE: Storlek
+  productdetail.imagegallery.title:
+    en-US: Zoom
+    sv-SE: Zoom
+  productdetail.field.boolean.true:
+    en-US: "Yes"
+    sv-SE: Ja
+  productdetail.field.boolean.false:
+    en-US: "No"
+    sv-SE: Nej
+  productdetail.column.articlenumber:
+    en-US: Art No
+    sv-SE: Art nr
+  productdetail.column.stock:
+    en-US: Stock
+    sv-SE: Lager
+  productdetail.column.price:
+    en-US: Price
+    sv-SE: Pris

@@ -1,0 +1,18 @@
+blockFields:
+- id: NumberOfProducts
+  type: Int
+  name:
+    en-US: Number of products
+    sv-SE: Antal produkter
+  description:
+    en-US: Maximum 100 products will be shown in the site. If no number is entered, 15 products will be shown.
+    sv-SE: Max 100 produkter kommer visas på sajten. Om inget antal anges, så visas 15 produkter.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

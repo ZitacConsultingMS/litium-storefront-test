@@ -1,0 +1,15 @@
+blockFields:
+- id: LinkText
+  type: Text
+  name:
+    en-US: Link text
+    sv-SE: Länktext
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

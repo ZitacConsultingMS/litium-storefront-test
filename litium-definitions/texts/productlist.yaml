@@ -1,0 +1,7 @@
+websiteTexts:
+  productlist.button.loading:
+    en-US: Loading...
+    sv-SE: Laddar…
+  productlist.button.loadmore:
+    en-US: Load more
+    sv-SE: Visa fler

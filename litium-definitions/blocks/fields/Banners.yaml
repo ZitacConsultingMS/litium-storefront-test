@@ -1,0 +1,24 @@
+blockFields:
+- id: Banners
+  type: MultiField
+  name:
+    en-US: Banners
+    sv-SE: Banners
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - LinkText
+    - BlockImagePointer
+    - BannerLinkToCategory
+    - BannerLinkToPage
+    - BannerLinkToProduct
+    - ActionText
+    isArray: true

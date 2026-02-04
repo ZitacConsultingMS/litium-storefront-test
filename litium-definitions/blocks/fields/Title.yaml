@@ -1,0 +1,15 @@
+blockFields:
+- id: Title
+  type: Text
+  name:
+    en-US: Title
+    sv-SE: Titel
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

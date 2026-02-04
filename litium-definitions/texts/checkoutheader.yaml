@@ -1,0 +1,10 @@
+websiteTexts:
+  checkoutheader.product:
+    en-US: product
+    sv-SE: produkt
+  checkoutheader.products:
+    en-US: products
+    sv-SE: produkter
+  checkoutheader.title:
+    en-US: Checkout
+    sv-SE: Kassa

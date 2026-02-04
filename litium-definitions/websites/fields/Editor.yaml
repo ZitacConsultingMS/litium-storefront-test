@@ -1,0 +1,15 @@
+websiteFields:
+- id: Editor
+  type: Editor
+  name:
+    en-US: Text
+    sv-SE: Text
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

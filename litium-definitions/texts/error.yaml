@@ -1,0 +1,7 @@
+websiteTexts:
+  error.already_approved:
+    en-US: This order has already been approved.
+    sv-SE: Den här ordern har redan godkänts.
+  error.approval_denied:
+    en-US: The order could not be approved.
+    sv-SE: Order kunde inte godkännas.

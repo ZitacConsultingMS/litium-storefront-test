@@ -1,0 +1,58 @@
+websiteTexts:
+  emailorderconfirmation.anyquestions:
+    en-US: Please contact our customer service if you have any questions.
+    sv-SE: Kontakta kundtjänst vid frågor rörande din order.
+  emailorderconfirmation.contactinfo.title:
+    en-US: Contact info
+    sv-SE: Kontaktinformation
+  emailorderconfirmation.delivery.title:
+    en-US: Delivery
+    sv-SE: Leverans
+  emailorderconfirmation.deliveryaddress.title:
+    en-US: Delivery address
+    sv-SE: Leveransadress
+  emailorderconfirmation.discount.title:
+    en-US: Discount
+    sv-SE: Rabatt
+  emailorderconfirmation.mypages:
+    en-US: Login to My account
+    sv-SE: Logga in till ditt konto
+  emailorderconfirmation.ordernumber:
+    en-US: Order
+    sv-SE: Order
+  emailorderconfirmation.fee.title:
+    en-US: Fees
+    sv-SE:
+  emailorderconfirmation.quantity.title:
+    en-US: 'Items:'
+    sv-SE: 'Items:'
+  emailorderconfirmation.sayhi:
+    en-US: Hi
+    sv-SE: Hej
+  emailorderconfirmation.thankyou:
+    en-US: Thank you for your order
+    sv-SE: Tack för din order
+  emailorderconfirmation.title:
+    en-US: Order confirmation
+    sv-SE: Orderbekräftelse
+  emailorderconfirmation.total.title:
+    en-US: Total
+    sv-SE: Totalt
+  emailorderconfirmation.VAT.title:
+    en-US: VAT
+    sv-SE: Moms
+  emailorderconfirmation.discounts.title:
+    en-US: Discounts
+    sv-SE: Rabatter
+  emailorderconfirmation.productsSubtotal.title:
+    en-US: Products in the cart
+    sv-SE: Products in the cart
+  emailorderconfirmation.shippingfee.title:
+    en-US: Shipping fee
+    sv-SE: Shipping fee
+  emailorderconfirmation.handlingfee.title:
+    en-US: Handling fee
+    sv-SE: Handling fee
+  emailorderconfirmation.handlingtax.title:
+    en-US: Tax
+    sv-SE: Tax

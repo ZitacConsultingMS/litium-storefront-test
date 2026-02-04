@@ -1,0 +1,10 @@
+websiteTexts:
+  quantityinput.button.ok:
+    en-US: Ok
+    sv-SE: Ok
+  quantityinput.option.more:
+    en-US: More
+    sv-SE: Mer
+  quantityinput.productquantity:
+    en-US: Select product quantity
+    sv-SE: Välj antal produkter

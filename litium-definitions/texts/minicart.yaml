@@ -1,0 +1,13 @@
+websiteTexts:
+  minicart.button.checkout:
+    en-US: Checkout
+    sv-SE: Kassa
+  minicart.title:
+    en-US: Your cart
+    sv-SE: Din varukorg
+  minicart.total:
+    en-US: Total
+    sv-SE: Totalt
+  minicart.closecart:
+    en-US: Close cart
+    sv-SE: Stäng minivagn

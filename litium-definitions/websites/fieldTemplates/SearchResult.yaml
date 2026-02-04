@@ -1,0 +1,20 @@
+websiteTemplates:
+- settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: SearchResult
+  name:
+    en-US: Search result
+    sv-SE: Sökresultat

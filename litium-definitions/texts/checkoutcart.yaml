@@ -1,0 +1,13 @@
+websiteTexts:
+  checkoutcart.title:
+    en-US: Cart
+    sv-SE: Varukorg
+  checkoutcart.total:
+    en-US: Total
+    sv-SE: Totalt
+  checkoutcart.collapsecartcontent:
+    en-US: Collapse cart content
+    sv-SE: Dölj varukorgens innehåll
+  checkoutcart.expandcartcontent:
+    en-US: Expand cart content
+    sv-SE: Visa varukorgens innehåll

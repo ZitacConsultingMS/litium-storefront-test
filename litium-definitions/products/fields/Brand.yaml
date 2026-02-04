@@ -1,0 +1,79 @@
+productFields:
+- id: Brand
+  type: TextOption
+  name:
+    en-US: Brand
+    sv-SE: Märke
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Adrian Hammond
+        sv-SE: Adrian Hammond
+      value: Adrian Hammond
+    - name:
+        en-US: Dolce & Gabbana
+        sv-SE: Dolce & Gabbana
+      value: Dolce & Gabbana
+    - name:
+        en-US: Le specs
+        sv-SE: Le specs
+      value: Le specs
+    - name:
+        en-US: MaQ
+        sv-SE: MaQ
+      value: MaQ
+    - name:
+        en-US: Nolita
+        sv-SE: Nolita
+      value: Nolita
+    - name:
+        en-US: Odd Molly
+        sv-SE: Odd Molly
+      value: Odd Molly
+    - name:
+        en-US: Saint Tropez
+        sv-SE: Saint Tropez
+      value: Saint Tropez
+    - name:
+        en-US: Vila
+        sv-SE: Vila
+      value: Vila
+    - name:
+        en-US: HÅG
+        sv-SE: HÅG
+      value: HÅG
+    - name:
+        en-US: RBM
+        sv-SE: RBM
+      value: RBM
+    - name:
+        en-US: RH
+        sv-SE: RH
+      value: RH
+    - name:
+        en-US: Casall
+        sv-SE: Casall
+      value: Casall
+    - name:
+        en-US: Court Casall
+        sv-SE: Court Casall
+      value: Court Casall
+    - name:
+        en-US: Iconic Casall
+        sv-SE: Iconic Casall
+      value: Iconic Casall
+    - name:
+        en-US: Essential Casall
+        sv-SE: Essential Casall
+      value: Essential Casall
+    multiSelect: false
+    manualSort: false

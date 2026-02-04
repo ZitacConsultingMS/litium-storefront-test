@@ -1,0 +1,15 @@
+productFields:
+- id: ETIM
+  type: Text
+  name:
+    en-US: ETIM
+    sv-SE: ETIM
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

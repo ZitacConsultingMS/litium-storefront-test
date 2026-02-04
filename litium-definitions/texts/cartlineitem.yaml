@@ -1,0 +1,7 @@
+websiteTexts:
+  cartlineitem.button.remove:
+    en-US: Remove
+    sv-SE: Ta bort
+  cartlineitem.quantity.title:
+    en-US: 'Items:'
+    sv-SE: 'Produkter:'

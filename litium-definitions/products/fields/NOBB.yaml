@@ -1,0 +1,15 @@
+productFields:
+- id: NOBB
+  type: Text
+  name:
+    en-US: NOBB
+    sv-SE: NOBB
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

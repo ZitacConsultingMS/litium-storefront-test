@@ -1,0 +1,21 @@
+websiteFields:
+- id: PageNotFound
+  type: Pointer
+  name:
+    en-US: Page not found (404)
+    sv-SE: Sidan kunde inte hittas (404)
+  description:
+    en-US: The pointed out page will be shown to users when a page is not found.
+    sv-SE: Den utpekade sidan kommer att visas för besökare när en sida inte kan hittas.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

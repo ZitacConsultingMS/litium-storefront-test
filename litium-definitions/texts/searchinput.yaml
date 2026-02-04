@@ -1,0 +1,7 @@
+websiteTexts:
+  searchinput.placeholder:
+    en-US: Search
+    sv-SE: Sök
+  searchinput.clear:
+    en-US: Clear
+    sv-SE: Rensa

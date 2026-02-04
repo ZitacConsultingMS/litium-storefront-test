@@ -1,0 +1,47 @@
+productFields:
+- id: HoleSpacingHandle
+  type: DecimalOption
+  name:
+    en-US: Hole spacing, handle (mm)
+    sv-SE: CC handtag (mm)
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: '128'
+        sv-SE: '128'
+      value: 128
+    - name:
+        en-US: '20'
+        sv-SE: '20'
+      value: 20
+    - name:
+        en-US: '133'
+        sv-SE: '133'
+      value: 133
+    - name:
+        en-US: '97'
+        sv-SE: '97'
+      value: 97
+    - name:
+        en-US: '200'
+        sv-SE: '200'
+      value: 200
+    - name:
+        en-US: '233'
+        sv-SE: '233'
+      value: 233
+    - name:
+        en-US: '177'
+        sv-SE: '177'
+      value: 177
+    multiSelect: false
+    manualSort: false

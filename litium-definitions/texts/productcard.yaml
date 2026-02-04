@@ -1,0 +1,13 @@
+websiteTexts:
+  productcard.button.add:
+    en-US: Add to cart
+    sv-SE: Lägg i varukorgen
+  productcard.button.add.success:
+    en-US: Added to cart
+    sv-SE: Tillagd i varukorgen
+  productcard.button.show:
+    en-US: Show
+    sv-SE: Visa
+  productcard.missingimage:
+    en-US: Image missing
+    sv-SE: Bild saknas

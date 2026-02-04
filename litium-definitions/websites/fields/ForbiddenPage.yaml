@@ -1,0 +1,21 @@
+websiteFields:
+- id: ForbiddenPage
+  type: Pointer
+  name:
+    en-US: Forbidden page (403)
+    sv-SE: Åtkomst nekad (403)
+  description:
+    en-US: The pointed out page will be shown to users when accessing a page without sufficient permission.
+    sv-SE: Den utpekade sidan kommer att visas när en användare inte har rättigheter till sidan.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

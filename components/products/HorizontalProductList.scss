@@ -1,0 +1,4 @@
+@use 'sass:meta';
+@include meta.load-css('swiper/scss');
+@include meta.load-css('swiper/scss/scrollbar');
+@include meta.load-css('swiper/scss/virtual');

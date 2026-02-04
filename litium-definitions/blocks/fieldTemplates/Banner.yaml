@@ -1,0 +1,33 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-image
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Banners
+    name:
+      en-US: Banners
+      sv-SE: Banners
+    fields:
+    - id: Banners
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Banner
+  name:
+    en-US: Banner
+    sv-SE: Banner

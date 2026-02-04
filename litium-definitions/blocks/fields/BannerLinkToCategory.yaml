@@ -1,0 +1,21 @@
+blockFields:
+- id: BannerLinkToCategory
+  type: Pointer
+  name:
+    en-US: Link to category
+    sv-SE: Länk till kategori
+  description:
+    en-US: 'The priority of the link fields is: category, page, product'
+    sv-SE: 'Prioritet mellan länkar är: kategori, sida, produkt.'
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: ProductsCategory
+    multiSelect: false

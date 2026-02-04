@@ -1,0 +1,21 @@
+websiteFields:
+- id: OrderConfirmationPage
+  type: Pointer
+  name:
+    en-US: Order confirmation page
+    sv-SE: Orderbekräftelsesida
+  description:
+    en-US: The page that will be displayed as order confirmation page.
+    sv-SE: Den sida som visas som orderbekräftelse.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

@@ -1,0 +1,25 @@
+websiteTexts:
+  searchresult.button.seemore:
+    en-US: See more
+    sv-SE: Hämta fler
+  searchresult.categories:
+    en-US: categories
+    sv-SE: Kategorier
+  searchresult.categories.header:
+    en-US: Categories
+    sv-SE: Kategorier
+  searchresult.nomatch:
+    en-US: Sorry, no matches were found.
+    sv-SE: Inga träffar.
+  searchresult.pages:
+    en-US: pages
+    sv-SE: sidor
+  searchresult.pages.header:
+    en-US: Pages
+    sv-SE: Sidor
+  searchresult.products.header:
+    en-US: Products
+    sv-SE: Produkter
+  searchresult.trynewsearch:
+    en-US: Try a new search.
+    sv-SE: Testa att söka igen.

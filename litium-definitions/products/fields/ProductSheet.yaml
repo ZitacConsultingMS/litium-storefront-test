@@ -1,0 +1,15 @@
+productFields:
+- id: ProductSheet
+  type: MediaPointerFile
+  name:
+    en-US: Product sheet
+    sv-SE: Produktblad
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

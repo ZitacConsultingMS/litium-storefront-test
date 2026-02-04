@@ -1,0 +1,37 @@
+websiteTemplates:
+- blockContainers:
+  - id: BlockContainer
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Banner
+  settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: Settings
+    name:
+      en-US: Settings
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Content
+    name:
+      en-US: Content
+      sv-SE: Innehåll
+    fields:
+    - id: Title
+    - id: Editor
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Error
+  name:
+    en-US: Error page
+    sv-SE: Felsida

@@ -1,0 +1,51 @@
+productFields:
+- id: ProductLine
+  type: TextOption
+  name:
+    en-US: Product line
+    sv-SE: Produktlinje
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Go
+        sv-SE: Go
+      value: Go
+    - name:
+        en-US: Edge
+        sv-SE: Edge
+      value: Edge
+    - name:
+        en-US: Fine
+        sv-SE: Fine
+      value: Fine
+    - name:
+        en-US: Verge
+        sv-SE: Verge
+      value: Verge
+    - name:
+        en-US: Bow
+        sv-SE: Bow
+      value: Bow
+    - name:
+        en-US: Stand
+        sv-SE: Stand
+      value: Stand
+    - name:
+        en-US: Sober
+        sv-SE: Sober
+      value: Sober
+    - name:
+        en-US: Shape
+        sv-SE: Shape
+      value: Shape
+    multiSelect: false
+    manualSort: false

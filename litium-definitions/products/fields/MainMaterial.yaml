@@ -1,0 +1,27 @@
+productFields:
+- id: MainMaterial
+  type: TextOption
+  name:
+    en-US: Main material
+    sv-SE: Huvudsakligt material
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Steel
+        sv-SE: Stål
+      value: Steel
+    - name:
+        en-US: Brass
+        sv-SE: Mässing
+      value: Brass
+    multiSelect: false
+    manualSort: false

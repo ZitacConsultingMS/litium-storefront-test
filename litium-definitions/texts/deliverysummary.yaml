@@ -1,0 +1,13 @@
+websiteTexts:
+  deliverysummary.address.title:
+    en-US: Delivery address
+    sv-SE: Leveransadress
+  deliverysummary.button.edit:
+    en-US: Edit
+    sv-SE: Ändra
+  deliverysummary.optionsummary.title:
+    en-US: Delivery
+    sv-SE: Leverans
+  deliverysummary.title:
+    en-US: Delivery
+    sv-SE: Leverans

@@ -1,0 +1,15 @@
+websiteFields:
+- id: ShowNavigation
+  type: Boolean
+  name:
+    en-US: Show navigation
+    sv-SE: Visa navigering
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

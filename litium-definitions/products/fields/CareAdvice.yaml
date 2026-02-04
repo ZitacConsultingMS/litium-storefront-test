@@ -1,0 +1,15 @@
+productFields:
+- id: CareAdvice
+  type: Text
+  name:
+    en-US: Care advice
+    sv-SE: Skötselråd
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

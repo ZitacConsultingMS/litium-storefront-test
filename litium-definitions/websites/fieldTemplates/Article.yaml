@@ -1,0 +1,52 @@
+websiteTemplates:
+  - blockContainers:
+      - id: Top
+        name:
+          sv-SE: Topp
+          en-US: Top
+        childBlocks:
+          combination: IncludeSelected
+          selections:
+            - id: Banner
+            - id: Products
+      - id: Content
+        name:
+          en-US: Content
+          sv-SE: Innehåll
+        childBlocks:
+          combination: IncludeSelected
+          selections:
+            - id: Banner
+            - id: Products
+    settings:
+      indexThePage: true
+    type: Page
+    fieldGroups:
+      - id: Settings
+        name:
+          en-US: Settings
+          sv-SE: Inställningar
+        fields:
+          - id: _name
+          - id: _url
+          - id: ShowNavigation
+        administration:
+          collapsed: false
+        storefront:
+          visible: false
+      - id: Content
+        name:
+          en-US: Content
+          sv-SE: Innehåll
+        fields:
+          - id: Title
+          - id: Introduction
+          - id: Editor
+        administration:
+          collapsed: false
+        storefront:
+          visible: false
+    id: Article
+    name:
+      en-US: Article
+      sv-SE: Artikel

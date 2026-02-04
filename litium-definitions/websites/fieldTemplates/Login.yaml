@@ -1,0 +1,21 @@
+websiteTemplates:
+- settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    - id: NewPassword
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Login
+  name:
+    en-US: Login
+    sv-SE: Inloggning

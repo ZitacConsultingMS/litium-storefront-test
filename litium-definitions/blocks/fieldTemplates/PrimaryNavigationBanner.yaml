@@ -1,0 +1,24 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-image
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: BlockImagePointer
+    - id: NavigationLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: PrimaryNavigationBanner
+  name:
+    en-US: Menu banner

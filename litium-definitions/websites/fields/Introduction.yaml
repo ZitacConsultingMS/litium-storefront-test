@@ -1,0 +1,15 @@
+websiteFields:
+- id: Introduction
+  type: MultirowText
+  name:
+    en-US: Introduction
+    sv-SE: Introduktion
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

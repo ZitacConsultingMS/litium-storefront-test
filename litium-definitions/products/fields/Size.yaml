@@ -1,0 +1,39 @@
+productFields:
+- id: Size
+  type: TextOption
+  name:
+    en-US: Size
+    sv-SE: Storlek
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: S
+        sv-SE: S
+      value: S
+    - name:
+        en-US: One Size
+        sv-SE: One Size
+      value: One Size
+    - name:
+        en-US: M
+        sv-SE: M
+      value: M
+    - name:
+        en-US: L
+        sv-SE: L
+      value: L
+    - name:
+        sv-SE: One size
+        en-US: One size
+      value: One size
+    multiSelect: false
+    manualSort: false

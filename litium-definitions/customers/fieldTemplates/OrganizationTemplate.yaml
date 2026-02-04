@@ -1,0 +1,17 @@
+customerTemplates:
+- type: Organization
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _nameInvariantCulture
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: OrganizationTemplate
+  name:
+    en-US: Organization
+    sv-SE: Organisation

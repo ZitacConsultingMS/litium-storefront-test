@@ -1,0 +1,20 @@
+websiteTemplates:
+- settings:
+    indexThePage: false
+  type: Page
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: OrderConfirmation
+  name:
+    en-US: Order confirmation
+    sv-SE: Orderbekräftelse

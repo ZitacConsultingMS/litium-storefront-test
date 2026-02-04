@@ -1,0 +1,21 @@
+websiteFields:
+- id: CheckoutPage
+  type: Pointer
+  name:
+    en-US: Checkout page
+    sv-SE: Kassa
+  description:
+    en-US: The page where the user ends up after clicking the checkout icon or link in the header.
+    sv-SE: Den sida som visas när kunden klickar på länken eller ikonen Kassa.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

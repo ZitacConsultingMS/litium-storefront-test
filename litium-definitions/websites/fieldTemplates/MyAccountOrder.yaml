@@ -1,0 +1,18 @@
+websiteTemplates:
+  - id: MyAccountOrder
+    name:
+      en-US: My account - order
+      sv-SE: Mitt konto - order
+    type: Page
+    settings:
+      indexThePage: false
+    fieldGroups:
+      - id: Settings
+        name:
+          en-US: Settings
+          sv-SE: Inställningar
+        fields:
+          - id: _name
+          - id: _url
+        storefront:
+          visible: false

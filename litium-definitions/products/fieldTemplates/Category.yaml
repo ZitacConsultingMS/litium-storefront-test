@@ -1,0 +1,31 @@
+productTemplates:
+  - type: Category
+    categoryFieldGroups:
+      - id: General
+        name:
+          en-US: General
+          sv-SE: Allmänt
+        fields:
+          - id: _name
+          - id: _description
+          - id: _url
+          - id: _seoTitle
+          - id: _seoDescription
+        administration:
+          collapsed: false
+        storefront:
+          visible: false
+    blockContainers:
+      - id: Top
+        name:
+          en-US: Top
+          sv-SE: Topp
+        childBlocks:
+          combination: IncludeSelected
+          selections:
+            - id: Banner
+            - id: Products
+    id: Category
+    name:
+      en-US: Category
+      sv-SE: Kategori

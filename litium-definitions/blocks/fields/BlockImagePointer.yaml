@@ -1,0 +1,15 @@
+blockFields:
+- id: BlockImagePointer
+  type: MediaPointerImage
+  name:
+    en-US: Image
+    sv-SE: Bild
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

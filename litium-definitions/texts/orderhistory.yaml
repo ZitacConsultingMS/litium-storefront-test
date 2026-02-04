@@ -1,0 +1,43 @@
+websiteTexts:
+  orderhistory.column.date:
+    en-US: Date
+    sv-SE: Datum
+  orderhistory.column.ordernumber:
+    en-US: Order number
+    sv-SE: Ordernummer
+  orderhistory.column.status:
+    en-US: Status
+    sv-SE: Status
+  orderhistory.column.total:
+    en-US: Total
+    sv-SE: Totalt
+  orderhistory.btn.approve:
+    en-US: Approve
+    sv-SE: Godkänn
+  orderhistory.btn.repeat:
+    en-US: Repeat
+    sv-SE: Repetera
+  orderhistory.btn.loadmore:
+    en-US: Load more
+    sv-SE: Visa fler
+  orderhistory.btn.loading:
+    en-US: Loading...
+    sv-SE: Laddar…
+  orderhistory.btn.cancel:
+    en-US: Cancel
+    sv-SE: Avbryt
+  orderhistory.status.waitingconfirmation:
+    en-US: Waiting for confirmation
+    sv-SE: Väntar på godkännande
+  orderhistory.status.confirmed:
+    en-US: Confirmed
+    sv-SE: Bekräftad
+  orderhistory.status.processing:
+    en-US: Processing
+    sv-SE: Behandlas
+  orderhistory.status.completed:
+    en-US: Completed
+    sv-SE: Slutförd
+  orderhistory.status.pendingprocessing:
+    en-US: Processing
+    sv-SE: Behandlas

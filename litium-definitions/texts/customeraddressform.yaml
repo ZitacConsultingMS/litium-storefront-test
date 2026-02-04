@@ -1,0 +1,34 @@
+websiteTexts:
+  customeraddress.button.add:
+    en-US: Add
+    sv-SE: Lägg till
+  customeraddress.button.save:
+    en-US: Save
+    sv-SE: Spara
+  customeraddress.button.cancel:
+    en-US: Cancel
+    sv-SE: Avbryt
+  customeraddress.button.edit:
+    en-US: Edit
+    sv-SE: Ändra
+  customeraddress.button.delete:
+    en-US: Delete
+    sv-SE: Radera
+  customeraddress.b2b.title:
+    en-US: Addresses
+    sv-SE: Adresser
+  customeraddress.b2c.title:
+    en-US: Address
+    sv-SE: Adress
+  customeraddress.addaddress.title:
+    en-US: Add address
+    sv-SE: Lägg till adress
+  customeraddress.editaddress.title:
+    en-US: Edit address
+    sv-SE: Ändra adress
+  customeraddress.confirmation.title:
+    en-US: Delete the address?
+    sv-SE: Radera adressen?  
+  customeraddress.button.saved:
+    en-US: Saved
+    sv-SE: Sparad

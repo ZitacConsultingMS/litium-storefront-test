@@ -1,0 +1,30 @@
+blockFields:
+- id: Sorting
+  type: TextOption
+  name:
+    en-US: Sorting
+    sv-SE: Sortering
+  description:
+    en-US: When Popular is selected, products are shown from the pointed out category and sub categories. When Recommended is selected, products from sub categories will not be shown.
+    sv-SE: När Populära väljs visas produkter från den utpekade kategorin och underkategorier. När Rekommenderade är valt kommer produkter från underkategorier inte att visas.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Recommended
+        sv-SE: Rekommenderade
+      value: manual
+    - name:
+        en-US: Popular
+        sv-SE: Populära
+      value: popular
+    multiSelect: false
+    manualSort: false

@@ -1,0 +1,19 @@
+customerTemplates:
+- type: Person
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _firstName
+    - id: _lastName
+    - id: _email
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: B2BPersonTemplate
+  name:
+    en-US: Person B2B
+    sv-SE: Person B2B

@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "name": "next/link",
+        "message": "Please use 'components/Link' instead"
+      }
+    ]
+  }
+}

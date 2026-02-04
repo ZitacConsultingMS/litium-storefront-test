@@ -1,0 +1,17 @@
+@use 'sass:meta';
+@include meta.load-css('swiper/scss/scrollbar');
+.sub-category {
+  .swiper-wrapper {
+    width: fit-content;
+    padding-bottom: 15px;
+    @media only screen and (min-width: 1024px) {
+      padding-bottom: 0;
+      flex-wrap: wrap;
+      transform: none;
+    }
+    .swiper-slide {
+      width: auto;
+      height: auto;
+    }
+  }
+}

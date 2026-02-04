@@ -1,0 +1,23 @@
+productFields:
+- id: SuspensionType
+  type: TextOption
+  name:
+    en-US: Suspension type
+    sv-SE: Typ av upphängning
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Adjustable suspension fittings with wall
+        sv-SE: Justerbara upphängningsbeslag med väggskena
+      value: AdjustableSuspensionFittings
+    multiSelect: false
+    manualSort: false

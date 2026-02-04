@@ -1,0 +1,31 @@
+websiteTexts:
+  productsearchresult.facets.#Price:
+    en-US: Price
+    sv-SE: Pris
+  productsearchresult.products:
+    en-US: products
+    sv-SE: produkter
+  productsearchresult.sort.title:
+    en-US: Sort
+    sv-SE: Sortera
+  productsearchresult.sortcriteria.manual:
+    en-US: Recommended
+    sv-SE: Rekommenderade
+  productsearchresult.sortcriteria.name.ascending:
+    en-US: Name A-Z
+    sv-SE: Namn A-Ö
+  productsearchresult.sortcriteria.name.descending:
+    en-US: Name Z-A
+    sv-SE: Namn Ö-A
+  productsearchresult.sortcriteria.popular:
+    en-US: Popular
+    sv-SE: Populära
+  productsearchresult.sortcriteria.price.ascending:
+    en-US: Price - low to high
+    sv-SE: Pris - lågt till högt
+  productsearchresult.sortcriteria.price.descending:
+    en-US: Price - high to low
+    sv-SE: Pris - högt till lågt
+  productsearchresult.sortcriteria.score.descending:
+    en-US: Best match
+    sv-SE: Bäst matchning

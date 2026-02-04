@@ -1,0 +1,103 @@
+websiteTemplates:
+- blockContainers:
+  - id: footer
+    name:
+      en-US: footer
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: FooterColumn
+  - id: primaryNavigation
+    name:
+      en-US: primaryNavigation
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: PrimaryNavigationLink
+      - id: SecondaryNavigationLink
+  settings:
+    indexThePage: false
+  type: Website
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Logotype
+    name:
+      en-US: Logotype
+      sv-SE: Logotyp
+    fields:
+    - id: LogotypeMain
+    - id: _icon
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Header
+    name:
+      en-US: Header
+      sv-SE: Sidhuvud
+    fields:
+    - id: CheckoutPage
+    - id: LoginPage
+    - id: MyPagesPage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Search
+    name:
+      en-US: Search
+      sv-SE: Sök
+    fields:
+    - id: SearchResultPage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Filters
+    name:
+      en-US: Filters
+      sv-SE: Filter
+    fields:
+    - id: ProductFilterFields
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: OrderConfirmationPage
+    name:
+      en-US: Orders
+      sv-SE: Ordrar
+    fields:
+    - id: OrderConfirmationPage
+    - id: OrderPage
+    - id: OrderHistoryPage
+    - id: TermsAndConditionsLinkPage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Errors
+    name:
+      en-US: Errors
+      sv-SE: Felsidor
+    fields:
+    - id: PageNotFound
+    - id: ForbiddenPage
+    - id: GeneralError
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: AcceleratorWebsite
+  name:
+    en-US: Website
+    sv-SE: Webbplats

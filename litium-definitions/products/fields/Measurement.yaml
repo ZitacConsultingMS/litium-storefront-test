@@ -1,0 +1,15 @@
+productFields:
+- id: Measurement
+  type: MediaPointerFile
+  name:
+    en-US: Measurement
+    sv-SE: Måttskiss
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

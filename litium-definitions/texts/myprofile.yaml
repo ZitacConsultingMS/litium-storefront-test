@@ -1,0 +1,16 @@
+websiteTexts:
+  myprofile.field.boolean.true:
+    en-US: Yes
+    sv-SE: Ja
+  myprofile.field.boolean.false:
+    en-US: No
+    sv-SE: Nej
+  myprofile.button.save:
+    en-US: Save
+    sv-SE: Spara
+  myprofile.button.saved:
+    en-US: Saved
+    sv-SE: Sparad
+  myprofile.mypages.title:
+    en-US: My pages
+    sv-SE: Mina sidor

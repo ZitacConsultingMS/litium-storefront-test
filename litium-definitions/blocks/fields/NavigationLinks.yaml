@@ -1,0 +1,18 @@
+blockFields:
+- id: NavigationLinks
+  type: MultiField
+  name:
+    en-US: Navigation links
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - NavigationLink
+    isArray: true

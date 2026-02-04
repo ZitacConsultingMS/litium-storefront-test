@@ -1,0 +1,15 @@
+blockFields:
+- id: ActionText
+  type: Text
+  name:
+    en-US: Call to action text
+    sv-SE: Call to action text
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

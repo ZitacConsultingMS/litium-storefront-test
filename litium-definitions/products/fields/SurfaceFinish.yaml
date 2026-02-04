@@ -1,0 +1,27 @@
+productFields:
+- id: SurfaceFinish
+  type: TextOption
+  name:
+    en-US: Surface finish
+    sv-SE: Ytbehandling
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Matt
+        sv-SE: Matt
+      value: Matt
+    - name:
+        en-US: Glossy
+        sv-SE: Blank
+      value: Glossy
+    multiSelect: false
+    manualSort: false

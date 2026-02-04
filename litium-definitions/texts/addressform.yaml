@@ -1,0 +1,31 @@
+websiteTexts:
+  addressform.address:
+    en-US: Address
+    sv-SE: Adress
+  addressform.button.continue:
+    en-US: Continue
+    sv-SE: Fortsätt
+  addressform.city:
+    en-US: City
+    sv-SE: Stad
+  addressform.country:
+    en-US: Country
+    sv-SE: Land
+  addressform.email:
+    en-US: Email
+    sv-SE: Epost
+  addressform.firstname:
+    en-US: First name
+    sv-SE: Förnamn
+  addressform.lastname:
+    en-US: Last name
+    sv-SE: Efternamn
+  addressform.organizationname:
+    en-US: Company name
+    sv-SE: Företagsnamn
+  addressform.phone:
+    en-US: Phone
+    sv-SE: Telefon
+  addressform.zip:
+    en-US: Zip
+    sv-SE: Postnummer

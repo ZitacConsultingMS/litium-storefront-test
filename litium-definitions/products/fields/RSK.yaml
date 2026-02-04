@@ -1,0 +1,15 @@
+productFields:
+- id: RSK
+  type: Text
+  name:
+    en-US: RSK
+    sv-SE: RSK
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

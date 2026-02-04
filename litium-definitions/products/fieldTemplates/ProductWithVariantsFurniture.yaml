@@ -1,0 +1,126 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _description
+    - id: ProductLine
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Documents
+    name:
+      en-US: Documents
+      sv-SE: Dokument
+    fields:
+    - id: AssemblingInstruction
+    - id: Measurement
+    - id: SpareParts
+    - id: ProductSheet
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: CareAdvice
+    name:
+      en-US: Care advice
+      sv-SE: Skötselråd
+    fields:
+    - id: CareAdvice
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  variantFieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: _url
+    - id: _seoTitle
+    - id: _seoDescription
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: ItemNumber
+    name:
+      en-US: Item number
+      sv-SE: Artikelkoder
+    fields:
+    - id: NOBB
+    - id: RSK
+    - id: EAN
+    - id: StockedArticle
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: DimensionsAndWeight
+    name:
+      en-US: Dimensions and weight
+      sv-SE: Dimensioner och vikt
+    fields:
+    - id: Width
+    - id: Depth
+    - id: Height
+    - id: Weight
+    - id: HoleSpacingHandle
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: MaterialAndSurface
+    name:
+      en-US: Material and surface
+      sv-SE: Material och ytbehandling
+    fields:
+    - id: FrontMaterial
+    - id: BodyMaterial
+    - id: SurfaceTreatment
+    - id: SurfaceFinish
+    - id: Color
+    - id: MainMaterial
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: StandardsAndClassifications
+    name:
+      en-US: Standards and classifications
+      sv-SE: Standard och klassificeringar
+    fields:
+    - id: SakerVatten
+    - id: ETIM
+    - id: SuspensionType
+    - id: OpeningFunction
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Packaging
+    name:
+      en-US: Packaging
+      sv-SE: Paket
+    fields:
+    - id: PackageHeight
+    - id: PackageWidth
+    - id: PackageDepth
+    - id: PackageWeight
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  useVariantUrl: true
+  settings: {}
+  id: ProductWithVariantsFurniture
+  name:
+    en-US: Product with variants furniture
+    sv-SE: Produkt med varianter möbler

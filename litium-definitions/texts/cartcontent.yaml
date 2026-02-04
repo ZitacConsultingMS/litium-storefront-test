@@ -1,0 +1,35 @@
+websiteTexts:
+  cartcontent.delivery.title:
+    en-US: Delivery
+    sv-SE: Leverans
+  cartcontent.discounts.description:
+    en-US: '* Different discounts applied'
+    sv-SE: '* Olika rabatter applicerade'
+  cartcontent.discounts.title:
+    en-US: Discounts
+    sv-SE: Rabatter
+  cartcontent.empty:
+    en-US: Your cart is empty
+    sv-SE: Kundvagnen är tom
+  cartcontent.button.keepshopping:
+    en-US: Keep shopping
+    sv-SE: Forstsätt handla
+  cartcontent.fee.title:
+    en-US: Fees
+    sv-SE: Avgifter
+  cartcontent.shippingfee.title:
+    en-US: Shipping fee
+    sv-SE: Shipping fee
+  cartcontent.handlingfee.title:
+    en-US: Handling fee
+    sv-SE: Handling fee
+  cartcontent.vat.title:
+    en-US: VAT
+    sv-SE: Moms
+  cartcontent.productsSubtotal.title:
+    en-US: Products in the cart
+    sv-SE: Products in the cart
+  cartcontent.handlingtax.title:
+    en-US: Tax
+    sv-SE: Tax
+

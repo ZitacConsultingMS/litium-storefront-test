@@ -1,0 +1,71 @@
+productFields:
+- id: Color
+  type: TextOption
+  name:
+    en-US: Color
+    sv-SE: Färg
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: White
+        sv-SE: Vit
+      value: White
+    - name:
+        en-US: Beige
+        sv-SE: Beige
+      value: Beige
+    - name:
+        en-US: Black
+        sv-SE: Svart
+      value: Black
+    - name:
+        en-US: Grey
+        sv-SE: Grå
+      value: Grey
+    - name:
+        en-US: Rose
+        sv-SE: Rosa
+      value: Rose
+    - name:
+        en-US: Brown
+        sv-SE: Brun
+      value: Brown
+    - name:
+        en-US: Red
+        sv-SE: Röd
+      value: Red
+    - name:
+        en-US: Blue
+        sv-SE: Blå
+      value: Blue
+    - name:
+        en-US: Green
+        sv-SE: Grön
+      value: Green
+    - name:
+        en-US: Pink
+        sv-SE: Rosa
+      value: Pink
+    - name:
+        en-US: Chrome
+        sv-SE: Krom
+      value: Chrome
+    - name:
+        en-US: Brass
+        sv-SE: Mässing
+      value: Brass
+    - name:
+        en-US: Copper
+        sv-SE: Koppar
+      value: Copper
+    multiSelect: false
+    manualSort: false

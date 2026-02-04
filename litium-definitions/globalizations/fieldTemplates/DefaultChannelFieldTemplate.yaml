@@ -1,0 +1,27 @@
+globalizationTemplates:
+- type: Channel
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: EmailSenderAddress
+    name:
+      en-US: Email sender address
+      sv-SE: Epost adress för utskick
+    fields:
+    - id: SenderEmailAddress
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: DefaultChannelFieldTemplate
+  name:
+    en-US: Channel
+    sv-SE: Kanal

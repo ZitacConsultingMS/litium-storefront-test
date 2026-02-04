@@ -1,0 +1,31 @@
+websiteTexts:
+  orderconfirmation.anyquestions:
+    en-US: Please contact our customer service if you have any questions.
+    sv-SE: Kontakta kundtjänst vid frågor rörande din order.
+  orderconfirmation.contactinfo.title:
+    en-US: Contact info
+    sv-SE: Kontaktinformation
+  orderconfirmation.deliveryaddress.title:
+    en-US: Delivery address
+    sv-SE: Leveransadress
+  orderconfirmation.mypages:
+    en-US: Login to My account
+    sv-SE: Logga in till ditt konto
+  orderconfirmation.ordernumber:
+    en-US: Order
+    sv-SE: Order
+  orderconfirmation.sayhi:
+    en-US: Hi
+    sv-SE: Hej
+  orderconfirmation.thankyou:
+    en-US: Thank you for your order
+    sv-SE: Tack för din order
+  orderconfirmation.title:
+    en-US: Order confirmation
+    sv-SE: Orderbekräftelse
+  orderconfirmation.total.title:
+    en-US: Total
+    sv-SE: Total
+  orderconfirmation.orderhistory:
+    en-US: Order history
+    sv-SE: Orderhistorik

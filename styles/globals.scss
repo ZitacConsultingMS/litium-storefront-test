@@ -1,0 +1,136 @@
+@use 'sass:meta';
+@tailwind base;
+@include meta.load-css('base.scss');
+@tailwind components;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply my-4;
+}
+h1 {
+  @apply text-h1 font-bold;
+}
+h2 {
+  @apply text-h2 font-bold;
+}
+h3 {
+  @apply text-h3;
+}
+h4 {
+  @apply text-h4;
+}
+h5 {
+  @apply text-h5;
+}
+h6 {
+  @apply text-h6;
+}
+
+.button {
+  @apply cursor-pointer bg-secondary p-4 text-secondary hover:bg-hover-1 disabled:border-disabled-border disabled:bg-transparent disabled:text-tertiary hover:touchable:bg-secondary;
+}
+
+.secondary-btn {
+  @apply border-secondary-3 bg-secondary-3 text-primary hover:bg-tertiary disabled:border-disabled-border disabled:bg-transparent disabled:text-tertiary hover:touchable:bg-tertiary;
+}
+
+.reactive-button {
+  &--loading,
+  &--success {
+    > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      pointer-events: none;
+      cursor: text;
+      gap: 0.5rem;
+    }
+  }
+
+  &--loading {
+    > button {
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @apply bg-secondary;
+      }
+
+      &::after {
+        content: '';
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        border-right: 0.125rem solid theme('textColor.white');
+        border-top: 0.125rem solid theme('textColor.white');
+        border-bottom: 0.125rem solid transparent;
+        border-left: 0.125rem solid transparent;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        margin: -0.625rem 0 0 -0.625rem;
+        @apply animate-spin;
+      }
+
+      &.secondary-btn {
+        &::before {
+          @apply bg-secondary-3;
+        }
+
+        &::after {
+          border-right: 0.125rem solid theme('textColor.primary');
+          border-top: 0.125rem solid theme('textColor.primary');
+        }
+      }
+    }
+  }
+
+  &--success {
+    > button {
+      @apply bg-secondary;
+
+      &::before {
+        content: '';
+        width: 1.25rem;
+        height: 1rem;
+        background-image: url('/images/check-white.svg');
+        background-repeat: no-repeat;
+        margin-top: 2px;
+      }
+
+      &.secondary-btn {
+        @apply bg-secondary-3;
+
+        &::before {
+          background-image: url('/images/check-black.svg');
+        }
+      }
+    }
+  }
+}
+
+.focus-locked {
+    input,
+    textarea,
+    select,
+    button,
+    a[href],
+    iframe,
+    object,
+    [tabindex] {
+        display: none;
+    }
+}
+
+@tailwind utilities;

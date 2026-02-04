@@ -1,0 +1,27 @@
+productFields:
+- id: BodyMaterial
+  type: TextOption
+  name:
+    en-US: Body material
+    sv-SE: Material stomme
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Moist resistant MDF
+        sv-SE: Fukttrög MDF
+      value: MoistResistantMDF
+    - name:
+        en-US: Moisture resistant chipboard
+        sv-SE: Fukttrög spånskiva
+      value: MoistureResistantChipboard
+      multiSelect: false
+      manualSort: false

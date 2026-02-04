@@ -1,0 +1,21 @@
+websiteFields:
+- id: SearchResultPage
+  type: Pointer
+  name:
+    en-US: Search result page
+    sv-SE: Sökresultat
+  description:
+    en-US: The page where the user ends up after performing a search.
+    sv-SE: Den sida som visas efter en sökning.
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

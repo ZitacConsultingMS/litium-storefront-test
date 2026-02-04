@@ -1,0 +1,10 @@
+websiteTexts:
+  checkoutdiscountcodes.adddiscountcode:
+    en-US: Add discount code
+    sv-SE: Lägg till rabattkod
+  checkoutdiscountcodes.button.apply:
+    en-US: Apply
+    sv-SE: Ok
+  checkoutdiscountcodes.entercode:
+    en-US: Enter code
+    sv-SE: Ange rabattkod

@@ -1,0 +1,59 @@
+websiteTexts:
+  logindetails.newPassword:
+    en-US: New password
+    sv-SE: Nytt lösenord
+  logindetails.currentPassword:
+    en-US: Current password
+    sv-SE: Nuvarande lösenord
+  logindetails.subjectAccountChanged:
+    en-US: Account changed
+    sv-SE: Konto ändrat
+  logindetails.contentAccountChanged:
+    en-US: Your account information has been changed. If you did not make these changes, contact your system administrator for support.
+    sv-SE: Din kontoinformation har ändrats. Om du inte gjorde dessa ändringar, kontakta din systemadministratör för support.
+  logindetails.email:
+    en-US: Email
+    sv-SE: Epost
+  logindetails.code:
+    en-US: Code
+    sv-SE: Kod
+  logindetails.nextbuttontext:
+    en-US: Next
+    sv-SE: Nästa
+  logindetails.verifybuttontext:
+    en-US: Verify
+    sv-SE: Bekräfta
+  logindetails.emaildetails.verificationcode.emailsubject:
+    en-US: Verify your email
+    sv-SE: Bekräfta din e-post
+  logindetails.emaildetails.verificationcode.emailcontent:
+    en-US: Please enter the code {code} in the page where you entered your email.
+    sv-SE: Ange koden {code} på sidan där du angav din e-post.
+  logindetails.emaildetails.verificationcode.emailnote:
+    en-US: This code will expire in 15 minutes. If you did not make this request, please disregard this email.
+    sv-SE: Koden upphör att gälla efter 15 minuter. Om du inte gjorde denna begäran, vänligen bortse från det här e-postmeddelandet.
+  logindetails.emaildetails.verificationcode.sent:
+    en-US: An email has been sent to your new address for verification. The email address will be updated after you verify it.
+    sv-SE: Ett meddelande har skickats till din nya adress för bekräftelse. Adressen kommer att uppdateras när du har bekräftat den.
+  logindetails.emaildetails.wrongcode:
+    en-US: The entered code is invalid.
+    sv-SE: Den angivna koden är inte giltig.
+  logindetails.emaildetails.success:
+    en-US: Your account has been updated.
+    sv-SE: Dina kontouppgifter har sparats.
+  logindetails.passworddetails.wrongcurrentpassword:
+    en-US: Wrong current password
+    sv-SE: Fel nuvarande lösenord
+  logindetails.passworddetails.wrongpasswordcomplexity:
+    en-US: The password need to be at least 2 characters.
+    sv-SE: Lösenordet behöver vara minst 2 tecken.
+  logindetails.emaildetails.accountexists:
+    en-US: The provided email address is already in use by another user.
+    sv-SE: Den angivna epostadressen används redan av en annan användare.
+  logindetails.button.save:
+    en-US: Save
+    sv-SE: Spara
+  logindetails.button.saved:
+    en-US: Saved
+    sv-SE: Sparad
+

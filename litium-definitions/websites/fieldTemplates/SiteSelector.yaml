@@ -1,0 +1,26 @@
+websiteTemplates:
+- blockContainers:
+  - id: Main
+    childBlocks:
+      combination: IncludeSelected
+      selections:
+      - id: Banner
+  settings:
+    indexThePage: true
+  type: Page
+  fieldGroups:
+  - id: Settings
+    name:
+      en-US: Settings
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: _url
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: SiteSelector
+  name:
+    en-US: Site selector
+    sv-SE: Site selector

@@ -1,0 +1,33 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-link
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Link
+    name:
+      en-US: Link
+      sv-SE: Länk
+    fields:
+    - id: NavigationLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: SecondaryNavigationLink
+  name:
+    en-US: Secondary Navigation Link
+    sv-SE: Länk sekundärnavigering

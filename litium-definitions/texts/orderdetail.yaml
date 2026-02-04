@@ -1,0 +1,55 @@
+websiteTexts:
+  orderdetail.btn.repeat:
+    en-US: Repeat
+    sv-SE: Repetera
+  orderdetail.btn.approve:
+    en-US: Approve
+    sv-SE: Godkänn
+  orderdetail.btn.print:
+    en-US: Print
+    sv-SE: Skriv ut
+  orderdetail.btn.cancel:
+    en-US: Cancel
+    sv-SE: Avbryt
+  orderdetail.order:
+    en-US: Order
+    sv-SE: Order
+  orderdetail.date:
+    en-US: Date
+    sv-SE: Datum
+  orderdetail.total:
+    en-US: Total
+    sv-SE: Totalt
+  orderdetail.shippingaddress:
+    en-US: Shipping address
+    sv-SE: Leveransadress
+  orderdetail.email:
+    en-US: Email
+    sv-SE: Epost
+  orderdetail.phone:
+    en-US: Phone
+    sv-SE: Telefon
+  orderdetail.ordersummary:
+    en-US: Order summary
+    sv-SE: Order summering
+  orderdetail.itemssubtotal:
+    en-US: Items subtotal
+    sv-SE: Produkter subtotal
+  orderdetail.fees:
+    en-US: Fees
+    sv-SE: Avgifter
+  orderdetail.delivery:
+    en-US: Delivery
+    sv-SE: Leverans
+  orderdetail.discount:
+    en-US: Discount
+    sv-SE: Rabatt
+  orderdetail.vat:
+    en-US: VAT
+    sv-SE: Moms
+  orderdetail.items:
+    en-US: Items
+    sv-SE: Produkter
+  orderdetail.status:
+    en-US: Status
+    sv-SE: Status

@@ -1,0 +1,15 @@
+productFields:
+- id: Weight
+  type: Decimal
+  name:
+    en-US: Weight
+    sv-SE: Vikt
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

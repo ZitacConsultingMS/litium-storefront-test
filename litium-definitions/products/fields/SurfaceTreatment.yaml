@@ -1,0 +1,31 @@
+productFields:
+- id: SurfaceTreatment
+  type: TextOption
+  name:
+    en-US: Surface treatment
+    sv-SE: Ytbehandling
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Lacquered
+        sv-SE: Lackerad
+      value: Lacquered
+    - name:
+        en-US: Nickel plated
+        sv-SE: Förnicklad
+      value: NickelPLated
+    - name:
+        en-US: Polished
+        sv-SE: Polerad
+      value: Polished
+    multiSelect: false
+    manualSort: false

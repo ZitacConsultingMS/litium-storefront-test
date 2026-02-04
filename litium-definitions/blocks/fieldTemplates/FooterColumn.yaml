@@ -1,0 +1,24 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-table-columns
+  childBlocks:
+    combination: IncludeSelected
+    selections:
+    - id: NavigationLinks
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: FooterColumn
+  name:
+    en-US: Footer column

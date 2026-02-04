@@ -1,0 +1,27 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-tag
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: Settings
+    name:
+      en-US: Settings
+      sv-SE: Inställningar
+    fields:
+    - id: _name
+    - id: Title
+    - id: Category
+    - id: ProductList
+    - id: NumberOfProducts
+    - id: Sorting
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  id: Products
+  name:
+    en-US: Products
+    sv-SE: Produkter

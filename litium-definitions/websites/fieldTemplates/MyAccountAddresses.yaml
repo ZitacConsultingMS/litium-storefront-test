@@ -1,0 +1,31 @@
+websiteTemplates:
+  - id: MyAccountAddresses
+    name:
+      en-US: My account - addresses
+      sv-SE: Mitt konto - adresser
+    type: Page
+    blockContainers:
+      - id: Main
+        name:
+          sv-SE: 
+          en-US: 
+        childBlocks:
+          combination: IncludeSelected
+          selections:
+            - id: Banner
+    settings:
+      indexThePage: false
+    fieldGroups:
+      - id: Settings
+        name:
+          en-US: Settings
+          sv-SE: Inställningar
+        fields:
+          - id: _name
+          - id: _url
+        storefront:
+          visible: false
+        administration:
+          collapsed: false
+        storefront:
+          visible: false

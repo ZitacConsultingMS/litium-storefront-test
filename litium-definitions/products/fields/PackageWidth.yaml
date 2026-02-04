@@ -1,0 +1,15 @@
+productFields:
+- id: PackageWidth
+  type: Decimal
+  name:
+    en-US: Package width
+    sv-SE: Förp. bredd
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

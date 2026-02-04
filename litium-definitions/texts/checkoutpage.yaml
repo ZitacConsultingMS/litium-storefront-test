@@ -1,0 +1,16 @@
+websiteTexts:
+  checkoutpage.cart.empty:
+    en-US: Your cart is empty
+    sv-SE: Din varukorg är tom
+  checkoutpage.cart.heading:
+    en-US: Cart
+    sv-SE: Varukorg
+  checkoutpage.cart.keepshoping:
+    en-US: Keep shopping
+    sv-SE: Fortsätt handla
+  checkoutpage.support.description:
+    en-US: Read our FAQ or contact our support.
+    sv-SE: Läs vår FAQ eller kontakta vår support
+  checkoutpage.support.title:
+    en-US: Need help?
+    sv-SE: Behöver du hjälp?

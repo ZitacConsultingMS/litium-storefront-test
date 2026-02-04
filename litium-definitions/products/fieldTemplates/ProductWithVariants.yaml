@@ -1,0 +1,63 @@
+productTemplates:
+- type: Product
+  productFieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: _description
+    - id: Brand
+    - id: Type
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Product information
+    name:
+      en-US: Product information
+      sv-SE: Produktinformation
+    fields:
+    - id: ProductSheet
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Product specification
+    name:
+      en-US: Product specification
+      sv-SE: Produktspecifikation
+    fields:
+    - id: Specification
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  variantFieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: _description
+    - id: _url
+    - id: _seoTitle
+    - id: _seoDescription
+    - id: Brand
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Product information
+    name:
+      en-US: Product information
+      sv-SE: Produktinformation
+    fields:
+    - id: Color
+    - id: Size
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  useVariantUrl: true
+  settings: {}
+  id: ProductWithVariants
+  name:
+    en-US: Product with variants
+    sv-SE: Produkt med varianter

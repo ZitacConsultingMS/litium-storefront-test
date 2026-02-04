@@ -1,0 +1,7 @@
+websiteTexts:
+  orderconfirmationpage.order.notexisted:
+    en-US: Order not found.
+    sv-SE: Ordern kunde inte hittas.
+  orderconfirmationpage.order.placed:
+    en-US: Thanks for your order
+    sv-SE: Tack för din beställning

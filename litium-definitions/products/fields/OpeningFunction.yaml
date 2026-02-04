@@ -1,0 +1,27 @@
+productFields:
+- id: OpeningFunction
+  type: TextOption
+  name:
+    en-US: Opening function
+    sv-SE: Typ av Öppningsmekanism
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: SmoothOpen
+        sv-SE: SmoothOpen
+      value: SmoothOpen
+    - name:
+        en-US: Soft close
+        sv-SE: Mjukstängande
+      value: SoftClose
+    multiSelect: false
+    manualSort: false

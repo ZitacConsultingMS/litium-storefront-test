@@ -1,0 +1,43 @@
+productFields:
+- id: Type
+  type: TextOption
+  name:
+    en-US: Type
+    sv-SE: Typ
+  settings:
+    multiCulture: false
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: false
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Outdoor
+        sv-SE: Outdoor
+      value: Outdoor
+    - name:
+        en-US: Yoga
+        sv-SE: Yoga
+      value: Yoga
+    - name:
+        en-US: Padel
+        sv-SE: Padel
+      value: Padel
+    - name:
+        en-US: Running
+        sv-SE: Löpning
+      value: Running
+    - name:
+        en-US: Loungewear
+        sv-SE: Loungewear
+      value: Loungewear
+    - name:
+        en-US: Gym
+        sv-SE: Gym
+      value: Gym
+    multiSelect: false
+    manualSort: false

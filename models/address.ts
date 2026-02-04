@@ -8,6 +8,8 @@ export interface OrderAddress {
   lastName: string;
   organizationName: string;
   phoneNumber: string;
+  // this is used to store the id address of the organization address
+  idAddress?: string;
 }
 
 export interface CustomerAddress {

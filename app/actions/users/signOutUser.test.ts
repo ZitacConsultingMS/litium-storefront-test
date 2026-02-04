@@ -21,6 +21,14 @@ jest.mock('next/navigation', () => ({
   redirect: jest.fn(),
 }));
 
+jest.mock('next/headers', () => ({
+  headers: jest.fn(),
+}));
+
+jest.mock('utils/headers', () => ({
+  getHost: jest.fn().mockResolvedValue('https://example.com'),
+}));
+
 describe('signOutUser', () => {
   const SIGN_OUT_USER = gql`
     mutation signOutUser($input: SignOutUserInput!) {
@@ -31,7 +39,7 @@ describe('signOutUser', () => {
   `;
 
   test('should sign out user, set cookie, and redirect to home page', async () => {
-    const mockHomePageUrl = 'https://example.com';
+    const mockHomePageUrl = 'https://example.com/';
     const mockWebsites = { homePageUrl: mockHomePageUrl };
 
     // Mock the mutateServer function to resolve successfully
@@ -61,10 +69,12 @@ describe('signOutUser', () => {
     expect(get).toHaveBeenCalled();
 
     // Ensure that the redirect function was called with the correct URL
-    expect(redirect).toHaveBeenCalledWith(mockHomePageUrl);
+    expect(redirect).toHaveBeenCalledWith(
+      `${mockHomePageUrl}?refreshCart=true`
+    );
   });
   test('should handle mutation failure gracefully', async () => {
-    const mockHomePageUrl = 'https://example.com';
+    const mockHomePageUrl = 'https://example.com/';
     const mockWebsites = { homePageUrl: mockHomePageUrl };
 
     // Mock the mutateServer function to resolve successfully
@@ -82,6 +92,8 @@ describe('signOutUser', () => {
     expect(setCookieFromResponse).toHaveBeenCalled();
 
     // Ensure the redirect function was still called even if mutation failed
-    expect(redirect).toHaveBeenCalledWith(mockHomePageUrl);
+    expect(redirect).toHaveBeenCalledWith(
+      `${mockHomePageUrl}?refreshCart=true`
+    );
   });
 });

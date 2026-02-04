@@ -2,6 +2,7 @@
 import { Button } from 'components/elements/Button';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
+//import { Menu } from 'lucide-react';
 import { useContext } from 'react';
 import HamburgerMenu from '../icons/zitac/menu';
 
@@ -11,8 +12,12 @@ import HamburgerMenu from '../icons/zitac/menu';
  * @returns
  */
 export default function NavigationMenuButton() {
-  const setVisible = useContext(PrimaryNavigationContext).setVisible;
-  const open = () => setVisible(true);
+  const { setVisible, setActiveMenuId } = useContext(PrimaryNavigationContext);
+  const open = () => {
+    setVisible(true);
+    // Reset activeMenuId when opening the main menu
+    setActiveMenuId(null);
+  };
   const t = useTranslations();
 
   return (

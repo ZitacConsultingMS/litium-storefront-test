@@ -14,3 +14,9 @@ websiteTexts:
   form.select.none.value:
     en-US: None
     sv-SE: Inget val
+  form.idAddress.required:
+    en-US: Please select an address
+    sv-SE:
+  form.required.fields:
+    en-US: Required fields
+    sv-SE:

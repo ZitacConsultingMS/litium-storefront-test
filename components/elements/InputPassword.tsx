@@ -1,8 +1,7 @@
 'use client';
 import clsx from 'clsx';
-import HiddenEye from 'components/icons/hidden-eye';
-import ViewEye from 'components/icons/view-eye';
 import { useTranslations } from 'hooks/useTranslations';
+import { Eye, EyeOff } from 'lucide-react';
 import React, { useState } from 'react';
 import { Button } from './Button';
 import { InputText, InputTextProps } from './Input';
@@ -14,10 +13,19 @@ import { InputText, InputTextProps } from './Input';
  * @param placeholder a label display by a placeholder
  * @param id an unique id of the input
  * @param className a customize class name
+ * @param autocomplete a value for the autocomplete attribute
  */
 export const InputPassword = React.forwardRef<HTMLInputElement, InputTextProps>(
   (
-    { value = '', onChange, placeholder = '', id, className = '', ...props },
+    {
+      value = '',
+      onChange,
+      placeholder = '',
+      id,
+      className = '',
+      autocomplete,
+      ...props
+    },
     ref
   ) => {
     const [showPlainText, setShowPlainText] = useState(false);
@@ -33,6 +41,7 @@ export const InputPassword = React.forwardRef<HTMLInputElement, InputTextProps>(
           id={id}
           ref={ref}
           placeholder={placeholder}
+          autocomplete={autocomplete}
           {...props}
         />
         {showPlainText && (
@@ -42,7 +51,7 @@ export const InputPassword = React.forwardRef<HTMLInputElement, InputTextProps>(
             onClick={() => setShowPlainText(false)}
             aria-label={t('login.hidepassword')}
           >
-            <ViewEye className="inline-block h-6 w-8" />
+            <Eye className="inline-block h-8 w-8 text-[#c0c0c0]" />
           </Button>
         )}
         {!showPlainText && (
@@ -52,7 +61,7 @@ export const InputPassword = React.forwardRef<HTMLInputElement, InputTextProps>(
             onClick={() => setShowPlainText(true)}
             aria-label={t('login.showpassword')}
           >
-            <HiddenEye className="inline-block h-7 w-9" />
+            <EyeOff className="inline-block h-8 w-8 text-[#c0c0c0]" />
           </Button>
         )}
       </div>

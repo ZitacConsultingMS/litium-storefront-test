@@ -1,12 +1,12 @@
 'use client';
 import CartContent from 'components/cart/CartContent';
-import Currency from 'components/Currency';
 import { Button } from 'components/elements/Button';
 import { Heading2 } from 'components/elements/Heading';
 import { Text } from 'components/elements/Text';
-import CaretDown from 'components/icons/caret-down';
+import FormattedPrice from 'components/FormattedPrice';
 import { CartContext } from 'contexts/cartContext';
 import { useTranslations } from 'hooks/useTranslations';
+import { ChevronDown } from 'lucide-react';
 import { Fragment, useContext, useState } from 'react';
 
 /**
@@ -32,7 +32,7 @@ function CheckoutCart() {
           onClick={() => setShowCartContent(!showCartContent)}
           data-testid="cart__toggle"
         >
-          <CaretDown />
+          <ChevronDown className="h-8 w-8 text-[#333]" />
         </Button>
       </div>
       {showCartContent && (
@@ -45,7 +45,10 @@ function CheckoutCart() {
           ></CartContent>
           <div className="mb-3 flex justify-between text-lg">
             <Text className="font-bold">{t('checkoutcart.total')}</Text>
-            <Currency data-testid="cart__grand-total" price={grandTotal} />
+            <FormattedPrice
+              data-testid="cart__grand-total"
+              price={grandTotal}
+            />
           </div>
         </div>
       )}

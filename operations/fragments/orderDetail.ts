@@ -11,6 +11,9 @@ export const ORDER_DETAIL_FRAGMENT = gql`
     tags
     currency {
       code
+      symbol
+      symbolPosition
+      minorUnits
     }
     orderNumber
     shippingAddress {

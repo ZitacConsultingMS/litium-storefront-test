@@ -14,7 +14,7 @@ export async function POST(
   const { data } = await request.json();
   const { texts } = await getWebsite(params.slug?.join('/') ?? '/');
 
-  const subject = translate('logindetails.subjectAccountChanged', texts);
+  const subject = translate('emailaccountchanged.subjectAccountChanged', texts);
   const emailHtml = render(await EmailAccountChanged(texts));
   const mailOptions: Mail.Options = {
     to: data.previousEmail || data.email,

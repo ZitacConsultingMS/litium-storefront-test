@@ -1,6 +1,5 @@
 import { InputText } from 'components/elements/Input';
 import { useTranslations } from 'hooks/useTranslations';
-import { Fragment } from 'react';
 import { Controller } from 'react-hook-form';
 import ErrorText from './ErrorText';
 
@@ -18,6 +17,7 @@ function InputField({
   placeholder,
   type = 'text',
   disabled = false,
+  autocomplete,
   ...props
 }: {
   control: any;
@@ -25,6 +25,7 @@ function InputField({
   placeholder: string;
   type?: string;
   disabled?: boolean;
+  autocomplete?: string;
 }) {
   const t = useTranslations();
   const errorId = `${name}-error`;
@@ -34,7 +35,7 @@ function InputField({
       control={control}
       name={name}
       render={({ field: { onChange, value }, fieldState: { error } }) => (
-        <Fragment>
+        <div>
           <InputText
             onChange={onChange}
             value={value}
@@ -45,6 +46,7 @@ function InputField({
             disabled={disabled}
             aria-describedby={error ? errorId : undefined}
             aria-invalid={error ? 'true' : 'false'}
+            autocomplete={autocomplete}
             {...props}
           />
           {error && (
@@ -54,7 +56,7 @@ function InputField({
               className="mx-3 py-1"
             />
           )}
-        </Fragment>
+        </div>
       )}
     />
   );

@@ -15,13 +15,13 @@ export default async function EmailVerificationCode(
       <Tailwind>
         <Body className="bg-white font-sans">
           <Text className="mt-2">
-            {translate(
-              'logindetails.emaildetails.verificationcode.emailcontent'
-            ).replace('{code}', verificationCode)}
+            {translate('emailverificationcode.emailcontent').replace(
+              '{code}',
+              verificationCode
+            )}
           </Text>
           <Text className="mt-2">
-            Note:{' '}
-            {translate('logindetails.emaildetails.verificationcode.emailnote')}
+            Note: {translate('emailverificationcode.emailnote')}
           </Text>
         </Body>
       </Tailwind>

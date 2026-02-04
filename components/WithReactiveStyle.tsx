@@ -96,11 +96,17 @@ export default function WithReactiveStyle({
     onComplete(data);
   }
 
+  const isAriaHidden =
+    stateClass === `${stylePrefix}${StateStyles.LOADING}` ||
+    stateClass === `${stylePrefix}${StateStyles.SUCCESS}`;
+
   return (
     <span className={stateClass} data-testid="reactive-wrapper">
       <WrappedComponent
         onClick={(params: any) => onButtonClick(params)}
         label={labelValue}
+        aria-hidden={isAriaHidden || undefined}
+        tabIndex={isAriaHidden ? -1 : 0}
         {...props}
       />
     </span>

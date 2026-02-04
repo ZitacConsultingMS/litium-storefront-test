@@ -1,4 +1,7 @@
 import { expect, test } from 'utils/axe-test';
+import { wcag135Helpers } from './utils/wcag-rules/1.3.5-IdentifyInputPurpose-helpers';
+import { wcag312Helpers } from './utils/wcag-rules/3.1.2-LanguageOfParts-helpers';
+
 /**
  * This is a note to prepare for testing the landing page template.
  * Setup the first primary navigation with one children banner link
@@ -6,9 +9,9 @@ import { expect, test } from 'utils/axe-test';
  * Setup main content with one banner in a block with a link
  * Setup main content with two bannner in a block with links
  */
+const testLandingPageUrl = process.env.TEST_LANDING_PAGE_URL ?? '/';
 
 test.describe('Test WCAG for Landing Page Template', () => {
-  const testLandingPageUrl = process.env.TEST_LANDING_PAGE_URL ?? '/';
   test.beforeEach(async ({ page }) => {
     await page.goto(testLandingPageUrl);
     await page.waitForLoadState('networkidle');
@@ -22,6 +25,14 @@ test.describe('Test WCAG for Landing Page Template', () => {
     });
   });
   test.describe("Test rules that axe-core doesn't cover", () => {
+    test.describe('WCAG - 1.3.5 - Identify Input Purpose tests', () => {
+      test('should pass input purpose compliance for user fields using autocomplete', async ({
+        page,
+      }) => {
+        const result = await wcag135Helpers.runAllTests(page);
+        expect(result.violations).toEqual([]);
+      });
+    });
     test.describe('WCAG 2.1.1 - Keyboard Navigation', () => {
       test.skip(({ isMobile }) => isMobile === true, 'Check on Desktop only');
       test.describe('Header Navigation', () => {
@@ -455,6 +466,12 @@ test.describe('Test WCAG for Landing Page Template', () => {
           await page.keyboard.press('Tab');
           await expect(secondActionTextButton2).toBeFocused();
         });
+      });
+    });
+    test.describe('WCAG - 3.1.2 - Language of Parts', () => {
+      test('should pass language of parts tests', async ({ page }) => {
+        const result = await wcag312Helpers.runAllTests(page);
+        expect(result.violations).toEqual([]);
       });
     });
   });

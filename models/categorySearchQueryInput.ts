@@ -11,30 +11,38 @@ export class CategorySearchQueryInput {
   };
 
   constructor(text: string) {
+    const isWildcardSearch =
+      (text?.includes('*') || text?.includes('?')) ?? false;
+
+    const createFieldInput = (
+      value: string,
+      boost?: number
+    ): StringFieldItemInput => {
+      if (isWildcardSearch) {
+        return {
+          value,
+        };
+      }
+
+      return {
+        value,
+        ...(boost && { boost }),
+        synonymAnalyzer: true,
+        fuzziness: {
+          length: null,
+          ratio: null,
+          distance: null,
+        },
+      };
+    };
+
     this.bool = {
       should: [
         {
-          content: {
-            value: text,
-            synonymAnalyzer: true,
-            fuzziness: {
-              length: null,
-              ratio: null,
-              distance: null,
-            },
-          },
+          content: createFieldInput(text),
         },
         {
-          name: {
-            value: text,
-            boost: 2,
-            synonymAnalyzer: true,
-            fuzziness: {
-              length: null,
-              ratio: null,
-              distance: null,
-            },
-          },
+          name: createFieldInput(text, 2),
         },
       ],
     };

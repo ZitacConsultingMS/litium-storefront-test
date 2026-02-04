@@ -78,30 +78,35 @@ function AddressForm({
         name="firstName"
         placeholder={t('addressform.firstname')}
         data-testid="address-form__first-name"
+        autocomplete="given-name"
       />
       <InputField
         control={control}
         name="lastName"
         placeholder={t('addressform.lastname')}
         data-testid="address-form__last-name"
+        autocomplete="family-name"
       />
       <InputField
         control={control}
         name="address1"
         placeholder={t('addressform.address')}
         data-testid="address-form__address"
+        autocomplete="street-address"
       />
       <InputField
         control={control}
         name="zipCode"
         placeholder={t('addressform.zip')}
         data-testid="address-form__zipcode"
+        autocomplete="postal-code"
       />
       <InputField
         control={control}
         name="city"
         placeholder={t('addressform.city')}
         data-testid="address-form__city"
+        autocomplete="address-level2"
       />
       <DropdownField
         control={control}
@@ -115,6 +120,7 @@ function AddressForm({
         name="organizationName"
         placeholder={t('addressform.organizationname')}
         data-testid="address-form__organization-name"
+        autocomplete="organization"
       />
       <InputField
         control={control}
@@ -122,12 +128,14 @@ function AddressForm({
         placeholder={t('addressform.email')}
         type="email"
         data-testid="address-form__email"
+        autocomplete="email"
       />
       <InputField
         control={control}
         name="phoneNumber"
         placeholder={t('addressform.phone')}
         data-testid="address-form__phone-number"
+        autocomplete="tel"
       />
       <Button
         type="submit"

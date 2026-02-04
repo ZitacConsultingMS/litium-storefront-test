@@ -14,10 +14,7 @@ export async function POST(
   const { data } = await request.json();
   const { texts } = await getWebsite(params.slug?.join('/') ?? '/');
 
-  const subject = translate(
-    'logindetails.emaildetails.verificationcode.emailsubject',
-    texts
-  );
+  const subject = translate('emailverificationcode.emailsubject', texts);
   const emailHtml = render(
     await EmailVerificationCode(data.verificationToken, texts)
   );

@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useBodyScroll } from 'hooks/useBodyScroll';
 import { useTranslations } from 'hooks/useTranslations';
+import { X } from 'lucide-react';
 import { Image as ImageModel } from 'models/image';
 import Image from 'next/image';
 import { Fragment, useCallback, useContext, useState } from 'react';
@@ -14,7 +15,6 @@ import './ImageGallery.scss';
 import Sidebar from './Sidebar';
 import { Button } from './elements/Button';
 import { Text } from './elements/Text';
-import Close from './icons/zitac/close';
 
 interface ImageGalleryProps {
   /**
@@ -88,6 +88,8 @@ const ImageGallery = (props: ImageGalleryProps) => {
           fullscreen={true}
           className="!p-0"
           onClose={onClose}
+          data-testid="image-gallery__modal"
+          ariaLabel={t('commons.imagegallery')}
         >
           <div className="max-h-full">
             <div className="flex justify-center p-4">
@@ -98,8 +100,9 @@ const ImageGallery = (props: ImageGalleryProps) => {
                 className="!border-0 !bg-transparent p-0 text-primary"
                 aria-label={t('commons.closeimagegallery')}
                 onClick={onClose}
+                data-testid="image-gallery__close"
               >
-                <Close />
+                <X className="h-8 w-8" />
               </Button>
             </div>
             <div className="h-full">

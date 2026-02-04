@@ -14,6 +14,15 @@ jest.mock('next/navigation', () => ({
   usePathname: jest.fn(),
 }));
 
+jest.mock('services/dataService.client', () => ({
+  queryClient: jest.fn(),
+  extractScripts: jest.fn((domString: string) => ({
+    html: domString,
+    scripts: [],
+    scriptFiles: [],
+  })),
+}));
+
 const MockWebsite = {
   ...EmptyWebsite,
   imageServerUrl: 'https://localhost/',
@@ -33,8 +42,14 @@ jest.mock('services/cartService.client', () => ({
 }));
 
 describe('Checkout Wizard component', () => {
+  const { queryClient } = require('services/dataService.client');
   beforeEach(() => {
     jest.clearAllMocks();
+    queryClient.mockResolvedValue({
+      me: {
+        selectedOrganization: null,
+      },
+    });
   });
 
   describe('Cart validation functionality', () => {
@@ -530,6 +545,7 @@ describe('Checkout Wizard component', () => {
           organizationName: 'AnyCompany',
           email: 'test@mail.com',
           phoneNumber: '12345678',
+          idAddress: 'other',
         },
         shippingOptions: [
           {
@@ -551,6 +567,7 @@ describe('Checkout Wizard component', () => {
           organizationName: 'AnyCompany',
           email: 'test@mail.com',
           phoneNumber: '12345678',
+          idAddress: 'other',
         },
         paymentOptions: [
           {
@@ -806,6 +823,152 @@ describe('Checkout Wizard component', () => {
         );
         // price = 0
         expect(deliverySummary).toHaveTextContent('0');
+      });
+    });
+    describe('B2B User functionality', () => {
+      beforeEach(() => {
+        queryClient.mockResolvedValue({
+          me: {
+            selectedOrganization: {
+              organization: { id: 'org-123' },
+            },
+          },
+        });
+      });
+      test('should render delivery address form, delivery options, billing same as delivery and total order section', async () => {
+        const cart = generateCartLineItemData(1, 10, 2, true);
+        cart.rows = [
+          ...cart.rows,
+          {
+            rowType: 'SHIPPING_FEE',
+            rowId: 'ShippingFee',
+            articleNumber: 'ShippingFee',
+            quantity: 1,
+            totalIncludingVat: 50,
+            totalExcludingVat: 40,
+            description: 'Shipping fee',
+            discountInfos: [],
+          },
+        ];
+        render(
+          <WebsiteContextProvider value={MockWebsite}>
+            <CartContextProvider value={cart}>
+              <CheckoutWizard state={checkout} />
+            </CartContextProvider>
+          </WebsiteContextProvider>
+        );
+        await waitFor(async () => {
+          expect(
+            screen.queryByTestId('STEP_DELIVERY_ADDRESS')
+          ).toBeInTheDocument();
+          expect(
+            screen.getByTestId('address-form__select-address')
+          ).toBeInTheDocument();
+          await userEvent.click(screen.getByTestId('address-form__submit'));
+          expect(
+            screen.queryByTestId('STEP_DELIVERY_OPTION')
+          ).toBeInTheDocument();
+          expect(
+            screen.queryByTestId('checkout-wizard__delivery-address-summary')
+          ).toBeInTheDocument();
+          await userEvent.click(
+            screen.getByTestId('checkout-wizard__delivery-option-continue')
+          );
+          expect(screen.queryByTestId('STEP_PAYMENT')).toBeInTheDocument();
+          expect(screen.getByTestId('checkout-wizard__checkbox')).toBeChecked();
+
+          // Verify delivery summary shows correct information
+          const deliverySummary = screen.getByTestId(
+            'checkout-wizard__delivery-summary'
+          );
+
+          expect(deliverySummary).toHaveTextContent(
+            'DirectShipment:expressPackage'
+          );
+          // price = sum of all shipping fee rows
+          expect(deliverySummary).toHaveTextContent('50');
+
+          expect(
+            screen.queryByTestId('checkout-wizard__widget')
+          ).not.toBeInTheDocument();
+          expect(
+            screen.queryByTestId('checkout-wizard__total-summary')
+          ).toBeInTheDocument();
+        });
+      });
+      test('should render delivery address form, delivery options, billing address form and total order section', async () => {
+        const cart = generateCartLineItemData(1, 10, 2, true);
+        jest.spyOn(cartServiceClient, 'get').mockResolvedValue(cart);
+        render(
+          <WebsiteContextProvider value={MockWebsite}>
+            <CartContextProvider value={cart}>
+              <CheckoutWizard state={checkout} />
+            </CartContextProvider>
+          </WebsiteContextProvider>
+        );
+        await waitFor(async () => {
+          expect(
+            screen.queryByTestId('STEP_DELIVERY_ADDRESS')
+          ).toBeInTheDocument();
+          expect(
+            screen.getByTestId('address-form__select-address')
+          ).toBeInTheDocument();
+          await userEvent.click(screen.getByTestId('address-form__submit'));
+          expect(
+            screen.queryByTestId('STEP_DELIVERY_OPTION')
+          ).toBeInTheDocument();
+          expect(
+            screen.queryByTestId('checkout-wizard__delivery-address-summary')
+          ).toBeInTheDocument();
+          await userEvent.click(
+            screen.getByTestId('checkout-wizard__delivery-option-continue')
+          );
+          expect(screen.queryByTestId('STEP_PAYMENT')).toBeInTheDocument();
+          expect(
+            screen.queryByTestId('checkout-wizard__delivery-summary')
+          ).toBeInTheDocument();
+          // edit delivery option
+          await userEvent.click(screen.getByTestId('delivery-summary__edit'));
+          expect(
+            screen.queryByTestId('STEP_DELIVERY_OPTION')
+          ).toBeInTheDocument();
+          await userEvent.click(
+            screen.getByTestId('checkout-wizard__delivery-option-continue')
+          );
+          expect(screen.getByTestId('checkout-wizard__checkbox')).toBeChecked();
+          // billing address form not same as delivery
+          await userEvent.click(
+            screen.getByTestId('checkout-wizard__checkbox')
+          );
+          expect(
+            screen.queryByTestId('checkout-wizard__billing-address-form')
+          ).toBeInTheDocument();
+          expect(
+            screen.getByTestId('address-form__select-address')
+          ).toBeInTheDocument();
+          await userEvent.click(screen.getByTestId('address-form__submit'));
+          expect(
+            screen.queryByTestId('checkout-wizard__billing-address-summary')
+          ).toBeInTheDocument();
+          // edit billing address form
+          await userEvent.click(screen.getByTestId('address-summary__btnEdit'));
+          expect(
+            screen.queryByTestId('checkout-wizard__billing-address-form')
+          ).toBeInTheDocument();
+          expect(
+            screen.getByTestId('address-form__select-address')
+          ).toBeInTheDocument();
+          await userEvent.click(screen.getByTestId('address-form__submit'));
+          expect(
+            screen.queryByTestId('checkout-wizard__billing-address-summary')
+          ).toBeInTheDocument();
+          expect(
+            screen.queryByTestId('checkout-wizard__widget')
+          ).not.toBeInTheDocument();
+          expect(
+            screen.queryByTestId('checkout-wizard__total-summary')
+          ).toBeInTheDocument();
+        });
       });
     });
   });

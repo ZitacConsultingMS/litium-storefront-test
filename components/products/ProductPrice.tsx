@@ -1,6 +1,6 @@
 'use client';
 import clsx from 'clsx';
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import { CartContext, EmptyCart } from 'contexts/cartContext';
 import { ProductPriceItem } from 'models/price';
 import { useContext } from 'react';
@@ -29,13 +29,13 @@ function ProductPrice({
   return (
     <div className="flex items-baseline gap-x-5">
       {!!productDiscountPrice && (
-        <Currency
+        <FormattedPrice
           price={productDiscountPrice}
           {...props}
           data-testid="product-price__discount-price"
-        ></Currency>
+        ></FormattedPrice>
       )}
-      <Currency
+      <FormattedPrice
         className={clsx(
           className,
           !!productDiscountPrice && 'text-secondary-2 line-through'

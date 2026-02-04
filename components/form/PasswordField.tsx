@@ -13,11 +13,13 @@ function PasswordField({
   control,
   name,
   placeholder,
+  autocomplete,
   ...props
 }: {
   control: any;
   name: string;
   placeholder: string;
+  autocomplete?: string;
 }) {
   const errorId = `${name}-error`;
 
@@ -35,6 +37,7 @@ function PasswordField({
             className={error && '!border-error'}
             aria-describedby={error ? errorId : undefined}
             aria-invalid={error ? 'true' : 'false'}
+            autocomplete={autocomplete}
             {...props}
           />
           {error && (

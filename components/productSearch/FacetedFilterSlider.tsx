@@ -1,4 +1,4 @@
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import { RangeFacetItem } from 'models/filter';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
@@ -44,12 +44,12 @@ function FacetedFilterSlider({
   return (
     <Fragment>
       <div className="mb-4 flex justify-center">
-        <Currency
+        <FormattedPrice
           data-testid="faceted-filter-slider__selected-min"
           price={selectedRange[0]}
         />
         &nbsp;-&nbsp;
-        <Currency
+        <FormattedPrice
           data-testid="faceted-filter-slider__selected-max"
           price={selectedRange[1]}
         />
@@ -69,7 +69,6 @@ function FacetedFilterSlider({
               border: '1px solid #c0c0c0',
               marginTop: -17,
               opacity: 1,
-              boxShadow: 'none',
               zIndex: 0,
             },
             rail: { backgroundColor: '#dedede', height: 1 },

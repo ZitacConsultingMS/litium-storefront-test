@@ -12,9 +12,9 @@ import { Fragment, useCallback, useContext, useState } from 'react';
 import { queryClient } from 'services/dataService.client';
 import { OrderStatus, OrderTags, PaginationOptions } from 'utils/constants';
 import ConfirmationDialog from './ConfirmationDialog';
-import Currency from './Currency';
 import DataView from './DataView';
 import FormattedDate from './FormattedDate';
+import FormattedPrice from './FormattedPrice';
 import Table, { IColumnType } from './Table';
 import { Button } from './elements/Button';
 
@@ -126,6 +126,7 @@ function OrderHistory(props: OrderListProps) {
         <Link
           href={{ pathname: orderPageUrl, query: { orderId: id } }}
           className="text-hyperlink"
+          data-testid="order-history__order-number"
         >
           {orderNumber}
         </Link>
@@ -139,7 +140,9 @@ function OrderHistory(props: OrderListProps) {
     {
       key: 'grandTotal',
       title: t('orderhistory.column.total'),
-      render: ({ grandTotal }) => <Currency price={grandTotal} />,
+      render: ({ grandTotal, currency }) => (
+        <FormattedPrice price={grandTotal} currency={currency} />
+      ),
     },
   ];
 
@@ -166,6 +169,7 @@ function OrderHistory(props: OrderListProps) {
             disabled={!hasPlaceOrder}
             onClick={() => reorder(rows)}
             reactive={true}
+            data-testid="order-history__repeat-btn"
           >
             {t('orderhistory.btn.repeat')}
           </Button>
@@ -187,13 +191,14 @@ function OrderHistory(props: OrderListProps) {
           <Link
             href={{ pathname: orderPageUrl, query: { orderId: item.id } }}
             className="text-hyperlink"
+            data-testid="order-history__order-number"
           >
             {item.orderNumber}
           </Link>
         </div>
         <div className="w-1/2 px-3 py-2">{formatStatus(item.status)}</div>
         <div className="w-1/2 px-3 py-2">
-          <Currency price={item.grandTotal} />
+          <FormattedPrice price={item.grandTotal} currency={item.currency} />
         </div>
         {showOrganizationOrders && (
           <Fragment>
@@ -229,15 +234,18 @@ function OrderHistory(props: OrderListProps) {
       </div>
     </Fragment>
   );
-
   return (
     <Fragment>
-      <Table data={orders} columns={columns} className="hidden lg:table" />
-      <DataView
-        items={orders}
-        renderItem={renderOrderRow}
-        className="lg:hidden"
-      />
+      {orders.length > 0 && (
+        <Fragment>
+          <Table data={orders} columns={columns} className="hidden lg:table" />
+          <DataView
+            items={orders}
+            renderItem={renderOrderRow}
+            className="lg:hidden"
+          />
+        </Fragment>
+      )}
       {hasNextPage && (
         <Button
           className="mt-10 border p-4 text-sm sm:w-80"
@@ -247,6 +255,7 @@ function OrderHistory(props: OrderListProps) {
           onClick={() => {
             handleLoadMore();
           }}
+          data-testid="order-history__loadmore-btn"
         >
           {isLoading
             ? t('orderhistory.btn.loading')

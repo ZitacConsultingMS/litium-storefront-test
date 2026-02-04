@@ -5,9 +5,9 @@ import { Accordion, AccordionPanel } from 'components/Accordion';
 import Sidebar from 'components/Sidebar';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
-import Close from 'components/icons/zitac/close';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
+//import { X } from 'lucide-react';
 import {
   DistinctFacetItem,
   FacetGroupItem,
@@ -177,10 +177,16 @@ const FacetedFilterCompact = (props: {
           }
         }}
         tabIndex={0}
+        aria-haspopup="dialog"
+        aria-expanded={visible}
+        aria-controls={visible ? 'faceted-filter__popup' : undefined}
+        aria-label={t('facetedfiltercompact.openfilter')}
       >
         <FilterSummary selectedFilterCount={selectedFilterCount} />
       </div>
       <Sidebar
+        id="faceted-filter__popup"
+        ariaLabel={t('facetedfiltercompact.title')}
         className="left-0 flex flex-col overflow-auto overflow-x-hidden duration-200"
         visible={visible}
         fullscreen={true}
@@ -200,15 +206,15 @@ const FacetedFilterCompact = (props: {
           </Text>
           <Button
             className="!border-0 !bg-transparent p-0 text-primary"
-            aria-label={t('facetedfiltercompact.button.closefilter')}
+            aria-label={t('facetedfiltercompact.closefilter')}
             onClick={onClose}
             data-testid="faceted-filter__close-btn"
           >
-            <Close />
+            <X className="h-8 w-8" />
           </Button>
         </div>
         <div className="flex-1">
-          <Accordion>
+          <Accordion id="faceted-filter-compact-accordion">
             {currentFilters.map((group, groupIndex) => (
               <AccordionPanel
                 header={
@@ -233,6 +239,7 @@ const FacetedFilterCompact = (props: {
                         <FacetedFilterCheckbox
                           item={item as DistinctFacetItem}
                           groupId={group.field}
+                          prefix="mobile"
                           onChange={onFacetFilterDistinctChange}
                         />
                       </li>

@@ -1,14 +1,15 @@
 import { expect, test } from 'utils/axe-test';
+import { wcag135Helpers } from './utils/wcag-rules/1.3.5-IdentifyInputPurpose-helpers';
+import { wcag312Helpers } from './utils/wcag-rules/3.1.2-LanguageOfParts-helpers';
 
 /**
  * This is a note to prepare for testing the login page template.
  * Setup B2B user to check organization select displayed
- * Setup B2B user in the BO: username: user_b2b, password: 123
+ * Setup B2B user in the BO
  * Setup user_b2b with multiple organizations
  */
-const USERNAME = 'user_b2b';
-const PASSWORD = '123';
-
+const USERNAME = process.env.TEST_USERNAME ?? 'admin';
+const PASSWORD = process.env.TEST_PASSWORD ?? '123$';
 const testLoginUrl = process.env.TEST_LOGIN_URL ?? '/login';
 
 test.describe('Test WCAG for Login Page Template', () => {
@@ -64,18 +65,44 @@ test.describe('Test WCAG for Login Page Template', () => {
     });
   });
   test.describe("Test rules that axe-core doesn't cover", () => {
+    test.describe('WCAG - 1.3.5 - Identify Input Purpose tests', () => {
+      test.describe('Login page - Default template', () => {
+        test('should pass input purpose compliance for user fields using autocomplete with default template', async ({
+          page,
+        }) => {
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Login page - B2B user', () => {
+        test('should pass input purpose compliance for user fields using autocomplete with organization select displayed', async ({
+          page,
+        }) => {
+          await page.getByTestId('login-form__username').fill(USERNAME);
+          await page.getByTestId('login-form__password').fill(PASSWORD);
+          await page.getByTestId('login-form__submit').click();
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+    });
     test.describe('WCAG 2.1.1 - Keyboard Navigation', () => {
       test.skip(({ isMobile }) => isMobile === true, 'Check on Desktop only');
-
+      test.beforeEach(async ({ page }) => {
+        // Use skip link to go to main content
+        await page.keyboard.press('Tab');
+        await page.keyboard.press('Enter');
+        await expect(page).toHaveURL(/#main-content/);
+      });
       test.describe('Login Form Navigation', () => {
         test('should navigate through form elements using keyboard', async ({
           page,
         }) => {
           // Navigate to username field
+          await page.keyboard.press('Tab');
           const usernameField = page.getByRole('textbox', {
             name: 'User name',
           });
-          await usernameField.focus();
           await expect(usernameField).toBeFocused();
 
           // Navigate to password field
@@ -86,7 +113,7 @@ test.describe('Test WCAG for Login Page Template', () => {
           // Navigate to show/hide password button
           await page.keyboard.press('Tab');
           const showPasswordButton = page.getByRole('button', {
-            name: 'login.showpassword',
+            name: 'Show password',
           });
           await expect(showPasswordButton).toBeFocused();
 
@@ -99,11 +126,11 @@ test.describe('Test WCAG for Login Page Template', () => {
 
       test.describe('Form Interaction', () => {
         test('should fill form fields using keyboard', async ({ page }) => {
-          // Focus on username field
+          // Navigate to username field
+          await page.keyboard.press('Tab');
           const usernameField = page.getByRole('textbox', {
             name: 'User name',
           });
-          await usernameField.focus();
           await expect(usernameField).toBeFocused();
 
           // Type username
@@ -122,6 +149,7 @@ test.describe('Test WCAG for Login Page Template', () => {
 
         test('should submit form using keyboard', async ({ page }) => {
           // Fill form fields
+          await page.keyboard.press('Tab');
           const usernameField = page.getByRole('textbox', {
             name: 'User name',
           });
@@ -147,35 +175,70 @@ test.describe('Test WCAG for Login Page Template', () => {
         test('should toggle password visibility using keyboard', async ({
           page,
         }) => {
+          // Start focus from password field
           // Fill password field
           const passwordField = page.getByRole('textbox', { name: 'Password' });
           await passwordField.fill('testpassword');
 
           // Focus on show password button
           const showPasswordButton = page.getByRole('button', {
-            name: 'login.showpassword',
+            name: 'Show password',
           });
-          await showPasswordButton.focus();
+          await page.keyboard.press('Tab');
           await expect(showPasswordButton).toBeFocused();
 
           // Toggle password visibility with Enter key
           await page.keyboard.press('Enter');
-          await page.waitForLoadState('networkidle');
 
           // Verify button text changed to hide password
           await expect(
-            page.getByRole('button', { name: 'login.hidepassword' })
+            page.getByRole('button', { name: 'Hide password' })
           ).toBeVisible();
 
           // Toggle back with Enter key
           await page.keyboard.press('Tab');
           await page.keyboard.press('Enter');
-          await page.waitForLoadState('networkidle');
 
           // Verify button text changed back to show password
           await expect(
-            page.getByRole('button', { name: 'login.showpassword' })
+            page.getByRole('button', { name: 'Show password' })
           ).toBeVisible();
+        });
+      });
+    });
+    test.describe('WCAG - 3.1.2 - Language of Parts', () => {
+      test.describe('Login page - Default template', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Login page - Login with empty username/password', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await page.getByTestId('login-form__submit').click();
+          await page.waitForLoadState('networkidle');
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Login page - Login with invalid username/password', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await page.getByTestId('login-form__username').fill('test');
+          await page.getByTestId('login-form__password').fill('test');
+          await page.getByTestId('login-form__submit').click();
+          await page.waitForLoadState('networkidle');
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Login page - Login with B2B user', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await page.getByTestId('login-form__username').fill(USERNAME);
+          await page.getByTestId('login-form__password').fill(PASSWORD);
+          await page.getByTestId('login-form__submit').click();
+          await page.waitForLoadState('networkidle');
+          const result = await wcag312Helpers.checkTextLanguage(page);
+          expect(result.violations).toEqual([]);
         });
       });
     });

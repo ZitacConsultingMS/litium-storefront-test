@@ -104,12 +104,10 @@ export default function DropdownField({
   const dropdownWrapperRef = useClickOutside<HTMLDivElement>(onBlur);
 
   useEffect(() => {
-    const currentSelectedIndex = Math.max(
-      items?.findIndex(
-        (opt) => idSelector(opt) === control._formValues[name]
-      ) ?? 0,
-      0
+    const currentSelectedIndex = items?.findIndex(
+      (opt) => idSelector(opt) === control._formValues[name]
     );
+
     setSelectedIndex(currentSelectedIndex);
   }, [control._formValues, idSelector, items, name]);
   return (
@@ -128,7 +126,7 @@ export default function DropdownField({
             aria-expanded={visible}
             aria-haspopup="listbox"
             aria-label={placeholder}
-            aria-controls={`dropdown-list-${name}`}
+            aria-controls={visible ? `dropdown-list-${name}` : undefined}
             tabIndex={0}
             onKeyDown={(event) => {
               onKeyDown(event, onChange);
@@ -173,7 +171,7 @@ export default function DropdownField({
               role="listbox"
               id={`dropdown-list-${name}`}
               className={clsx(
-                'absolute left-0 top-16 z-10 max-h-52 w-full scale-y-0 overflow-x-auto rounded border bg-primary px-3 pb-6 pt-4 text-sm opacity-0 shadow transition-opacity duration-200 ease-in',
+                'absolute left-0 top-16 z-10 max-h-52 w-full scale-y-0 overflow-x-auto rounded border border-tertiary bg-primary px-3 pb-6 pt-4 text-sm opacity-0 shadow transition-opacity duration-200 ease-in',
                 visible && 'scale-y-100 snap-y scroll-p-5 opacity-100'
               )}
               data-testid="dropdown-field__list"
@@ -185,7 +183,7 @@ export default function DropdownField({
                   aria-selected={selectedIndex === index}
                   tabIndex={-1}
                   className={clsx(
-                    'w-full cursor-pointer py-1 text-primary outline-none',
+                    'w-full cursor-pointer py-[6px] text-primary outline-none',
                     selectedIndex === index && `selected ${selectItemClassName}`
                   )}
                   onClick={(event) => {
@@ -199,7 +197,7 @@ export default function DropdownField({
                 >
                   <span
                     className={clsx(
-                      'rounded px-2 py-1 group-hover:bg-secondary-3',
+                      'inline-block rounded px-2 py-1 group-hover:bg-secondary-3',
                       selectedIndex === index && 'bg-secondary-3'
                     )}
                     data-testid="dropdown-field__item"
@@ -210,7 +208,7 @@ export default function DropdownField({
               ))}
             </div>
           </div>
-          {error && <ErrorText errors={error} className="py-1" />}
+          {error && <ErrorText errors={error} className="mx-3 py-1" />}
         </Fragment>
       )}
     />

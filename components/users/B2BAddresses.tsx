@@ -1,6 +1,5 @@
 import updateOrganizationAddress from 'app/actions/updateOrganizationAddress';
 import Link from 'components/Link';
-import { Button } from 'components/elements/Button';
 import { Heading2 } from 'components/elements/Heading';
 import { Text } from 'components/elements/Text';
 import AddressForm from 'components/users/AddressForm';
@@ -97,41 +96,44 @@ export default async function B2BAddresses(props: {
             <Link
               href={{ query: { view: 'add' } }}
               data-testid="my-account-address-b2b__add-button"
+              className="button inline-block rounded p-1 px-10"
             >
-              <Button rounded className="p-1 px-10">
-                {translate('customeraddress.button.add', texts)}
-              </Button>
+              {translate('customeraddress.button.add', texts)}
             </Link>
           )}
-          <div className="mt-3 grid w-full grid-flow-row gap-3 xl:w-3/4">
-            {sortedAddress?.map((value, index) => (
-              <div
-                className="flex items-center justify-between rounded border py-3 pl-7 pr-10 align-middle"
-                key={index}
-                data-testid="my-account-address-b2b__address-row"
-              >
-                <Text
-                  data-testid="my-account-address-b2b__address-info"
-                  className="p-2"
+          {sortedAddress?.length > 0 && (
+            <div
+              className="mt-3 grid w-full grid-flow-row gap-3 xl:w-3/4"
+              data-testid="my-account-address-b2b__address-list"
+            >
+              {sortedAddress.map((value, index) => (
+                <div
+                  className="flex items-center justify-between rounded border py-3 pl-7 pr-10 align-middle"
+                  key={index}
+                  data-testid="my-account-address-b2b__address-row"
                 >
-                  {value.combinedAddress}
-                </Text>
-                {hasManageAddressesRole && (
-                  <div className="action-button grid grid-flow-col gap-3">
-                    <Link
-                      href={{ query: { view: 'edit', addressId: value.id } }}
-                      data-testid="my-account-address-b2b__edit-button"
-                    >
-                      <Button className="border-0 bg-transparent p-2 text-hyperlink hover:bg-transparent">
+                  <Text
+                    data-testid="my-account-address-b2b__address-info"
+                    className="p-2"
+                  >
+                    {value.combinedAddress}
+                  </Text>
+                  {hasManageAddressesRole && (
+                    <div className="action-button grid grid-flow-col gap-3">
+                      <Link
+                        href={{ query: { view: 'edit', addressId: value.id } }}
+                        data-testid="my-account-address-b2b__edit-button"
+                        className="button inline-block border-0 bg-transparent p-2 text-hyperlink hover:bg-transparent"
+                      >
                         {translate('customeraddress.button.edit', texts)}
-                      </Button>
-                    </Link>
-                    <DeleteAddressButton id={value.id} />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+                      </Link>
+                      <DeleteAddressButton id={value.id} />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </Fragment>
       );
     }

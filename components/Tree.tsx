@@ -4,8 +4,8 @@ import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem';
 import clsx from 'clsx';
 import Link from 'components/Link';
+import { ChevronDown } from 'lucide-react';
 import { PageItem } from 'models/page';
-import CaretDown from './icons/caret-down';
 
 /**
  *
@@ -91,10 +91,10 @@ function TreeComponent({
       aria-label="file system navigator"
       slots={{
         collapseIcon: () => (
-          <CaretDown className="mr-2 h-2 w-3 flex-shrink-0 stroke-secondary-2 stroke-[50px]" />
+          <ChevronDown className="mr-2 h-5 w-5 flex-shrink-0 text-secondary-2" />
         ),
         expandIcon: () => (
-          <CaretDown className="mr-2 h-2 w-3 flex-shrink-0 -rotate-90 stroke-secondary-2 stroke-[50px]" />
+          <ChevronDown className="mr-2 h-5 w-5 flex-shrink-0 -rotate-90 text-secondary-2" />
         ),
       }}
       defaultExpandedItems={defaultExpanded}

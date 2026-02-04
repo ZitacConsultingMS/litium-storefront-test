@@ -22,18 +22,26 @@ import { HtmlText } from './elements/HtmlText';
 import { InputText } from './elements/Input';
 import { InputPassword } from './elements/InputPassword';
 import { Button } from './elements/zitac/Button';
+import ForgotPassword from './ForgotPassword';
 import ErrorText, { ErrorField } from './form/ErrorText';
 
 /**
  * Render login form.
  */
-export default function Login({ myPagesPageUrl }: { myPagesPageUrl: string }) {
+export default function Login({
+  myPagesPageUrl,
+  homePageUrl,
+}: {
+  myPagesPageUrl: string;
+  homePageUrl: string;
+}) {
   const { history } = useContext(NavigationHistoryContext);
   const searchParams = useSearchParams();
   const initialState: SignInUserState = {};
   const pathname = usePathname();
   const [content, setContent] = useState('');
   const [changePasswordStep, setChangePasswordStep] = useState(false);
+  const [forgotPasswordStep, setForgotPasswordStep] = useState(false);
   const t = useTranslations();
   const getReferrerUrl = () => {
     if (!history || history.length < 2) {
@@ -46,7 +54,10 @@ export default function Login({ myPagesPageUrl }: { myPagesPageUrl: string }) {
   const signInUserAction = signInUser.bind(
     null,
     pathname,
-    searchParams.get('redirectUrl') || getReferrerUrl() || myPagesPageUrl
+    searchParams.get('redirectUrl') ||
+      getReferrerUrl() ||
+      myPagesPageUrl ||
+      homePageUrl
   );
   const [state, formAction] = useActionState(signInUserAction, initialState);
 
@@ -82,46 +93,62 @@ export default function Login({ myPagesPageUrl }: { myPagesPageUrl: string }) {
 
   return (
     <div className="container mx-auto px-5">
-      <Heading1 className="mt-10 text-center">
-        {!changePasswordStep ? t('login.title') : t('login.changepassword')}
-      </Heading1>
-      <form
-        className={'mb-2 mt-12 flex w-full flex-col gap-5'}
-        name="login"
-        action={formAction}
-      >
-        <div
-          className={clsx(
-            'flex flex-col gap-5',
-            changePasswordStep && 'hidden'
+      {!forgotPasswordStep && (
+        <>
+          <Heading1 className="mt-10 text-center">
+            {!changePasswordStep ? t('login.title') : t('login.changepassword')}
+          </Heading1>
+          <form
+            className={'mb-2 mt-12 flex w-full flex-col gap-5'}
+            name="login"
+            action={formAction}
+          >
+            <div
+              className={clsx(
+                'flex flex-col gap-5',
+                changePasswordStep && 'hidden'
+              )}
+            >
+              <LoginForm />
+            </div>
+            <div
+              className={clsx(
+                'flex flex-col gap-5',
+                !changePasswordStep && 'hidden'
+              )}
+            >
+              <ChangePasswordForm
+                html={content}
+                required={changePasswordStep}
+              />
+            </div>
+            <Button
+              type="submit"
+              rounded={true}
+              className="p-4 text-sm"
+              data-testid="login-form__submit"
+            >
+              {!changePasswordStep
+                ? t('login.loginbuttontext')
+                : t('login.changepassword')}
+            </Button>
+          </form>
+          {!!state.errors && (
+            <ErrorText
+              errors={getGeneralError(state.errors)}
+              className="py-2 text-base"
+            ></ErrorText>
           )}
-        >
-          <LoginForm />
-        </div>
-        <div
-          className={clsx(
-            'flex flex-col gap-5',
-            !changePasswordStep && 'hidden'
-          )}
-        >
-          <ChangePasswordForm html={content} required={changePasswordStep} />
-        </div>
-        <Button
-          type="submit"
-          rounded={true}
-          className="p-4 text-sm"
-          data-testid="login-form__submit"
-        >
-          {!changePasswordStep
-            ? t('login.loginbuttontext')
-            : t('login.changepassword')}
-        </Button>
-      </form>
-      {!!state.errors && (
-        <ErrorText
-          errors={getGeneralError(state.errors)}
-          className="py-2 text-base"
-        ></ErrorText>
+          <p
+            className="cursor-pointer"
+            onClick={() => setForgotPasswordStep(true)}
+          >
+            {t('forgotpassword.title')}
+          </p>
+        </>
+      )}
+      {forgotPasswordStep && !changePasswordStep && (
+        <ForgotPassword onClose={() => setForgotPasswordStep(false)} />
       )}
     </div>
   );
@@ -181,6 +208,7 @@ const LoginForm = () => {
             validationError?.username ? 'login-form__username-error' : undefined
           }
           aria-invalid={validationError?.username ? 'true' : 'false'}
+          autocomplete="username"
         />
         {validationError?.username && (
           <ErrorText
@@ -215,6 +243,7 @@ const LoginForm = () => {
             validationError?.password ? 'login-form__password-error' : undefined
           }
           aria-invalid={validationError?.password ? 'true' : 'false'}
+          autocomplete="current-password"
         />
         {validationError?.password && (
           <ErrorText
@@ -283,6 +312,7 @@ const ChangePasswordForm = ({
               : undefined
           }
           aria-invalid={validationError?.newPassword ? 'true' : 'false'}
+          autocomplete="new-password"
         />
         {validationError?.newPassword && (
           <ErrorText

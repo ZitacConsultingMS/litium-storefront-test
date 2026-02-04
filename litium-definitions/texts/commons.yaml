@@ -14,6 +14,12 @@ websiteTexts:
   commons.closeimagegallery:
     en-US: Close image gallery
     sv-SE: Stäng bildgalleri
+  commons.dropdown:
+    en-US: Dropdown
+    sv-SE: Rullgardinsmeny
+  commons.opendropdown:
+    en-US: Open dropdown
+    sv-SE: Öppna rullgardinsmeny
   commons.closedropdown:
     en-US: Close dropdown
     sv-SE: Stäng rullgardinsmeny
@@ -35,3 +41,21 @@ websiteTexts:
   commons.contenttabs:
     en-US: Content tabs
     sv-SE: Innehållsflikar
+  commons.quicksearch:
+    en-US: Quick search
+    sv-SE: Snabbsök
+  commons.confirmationdialog:
+    en-US: Confirmation dialog
+    sv-SE: Bekräftelsedialog
+  commons.imagegallery:
+    en-US: Image gallery
+    sv-SE: Bildgalleri
+  commons.menu:
+    en-US: Menu
+    sv-SE: Meny
+  commons.submenu:
+    en-US: Submenu
+    sv-SE: Undermeny
+  commons.togglesidemenu:
+    en-US: Toggle side menu
+    sv-SE: Växla sidomeny

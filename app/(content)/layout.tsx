@@ -38,6 +38,7 @@ export default async function RootLayout({
             )}
             <CartRefreshHandler />
             <AuthRefreshHandler />
+            <CartRefreshHandler />
             {children}
           </NavigationHistoryContextProvider>
         </WebsiteContextProvider>

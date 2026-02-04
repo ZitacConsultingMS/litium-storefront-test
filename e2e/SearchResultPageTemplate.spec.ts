@@ -1,5 +1,7 @@
 import { Page } from '@playwright/test';
 import { expect, test } from 'utils/axe-test';
+import { wcag135Helpers } from './utils/wcag-rules/1.3.5-IdentifyInputPurpose-helpers';
+import { wcag312Helpers } from './utils/wcag-rules/3.1.2-LanguageOfParts-helpers';
 
 const testSearchResultUrl =
   process.env.TEST_SEARCH_RESULT_URL ?? '/search-result';
@@ -58,14 +60,62 @@ test.describe('Test WCAG for Search Result Page Template', () => {
     });
   });
   test.describe("Test rules that axe-core doesn't cover", () => {
+    test.describe('WCAG - 1.3.5 - Identify Input Purpose tests', () => {
+      test.describe('Search result page - Default template', () => {
+        test('should pass input purpose compliance for user fields using autocomplete', async ({
+          page,
+        }) => {
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Search result page - Products tab', () => {
+        test('should pass input purpose compliance for user fields using autocomplete', async ({
+          page,
+        }) => {
+          await onSearch(page);
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Search result page - Categories tab', () => {
+        test('should pass input purpose compliance for user fields using autocomplete', async ({
+          page,
+        }) => {
+          await onSearch(page);
+          await page.locator('[data-testid^="tabs__header"]').nth(1).click();
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Search result page - Pages tab', () => {
+        test('should pass input purpose compliance for user fields using autocomplete', async ({
+          page,
+        }) => {
+          await onSearch(page);
+          await page.locator('[data-testid^="tabs__header"]').nth(2).click();
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+    });
     test.describe('WCAG 2.1.1 - Keyboard Navigation', () => {
       test.skip(({ isMobile }) => isMobile === true, 'Check on Desktop only');
+      test.beforeEach(async ({ page }) => {
+        // Use skip link to go to main content
+        await page.keyboard.press('Tab');
+        await page.keyboard.press('Enter');
+        await expect(page).toHaveURL(/#main-content/);
+      });
       test.describe('Search functionality', () => {
         test('should perform search using keyboard navigation', async ({
           page,
         }) => {
           // Focus on the search input using keyboard navigation
-          await page.getByTestId('search__input-searchPageInput').focus();
+          await page.keyboard.press('Tab');
+          await expect(
+            page.getByTestId('search__input-searchPageInput')
+          ).toBeFocused();
 
           // Type search term and submit
           await page.keyboard.type('shirt');
@@ -78,9 +128,8 @@ test.describe('Test WCAG for Search Result Page Template', () => {
         });
         test('should clear search query using keyboard', async ({ page }) => {
           const searchInput = page.getByTestId('search__input-searchPageInput');
-          await searchInput.focus();
+          await page.keyboard.press('Tab');
           await expect(searchInput).toBeFocused();
-          await page.keyboard.press('Control+a');
           await page.keyboard.type('tank');
           await expect(searchInput).toHaveValue('tank');
           await page.keyboard.press('Control+a');
@@ -91,68 +140,21 @@ test.describe('Test WCAG for Search Result Page Template', () => {
           page,
         }) => {
           const searchInput = page.getByTestId('search__input-searchPageInput');
-          await searchInput.focus();
-          await expect(searchInput).toBeFocused();
           await page.keyboard.press('Tab');
+          await page.keyboard.type('tank');
+          await page.keyboard.press('Tab');
+          await expect(
+            page.locator('[data-testid="search__clear"]:visible')
+          ).toBeFocused();
           await page.keyboard.press('Enter');
           await expect(searchInput).toHaveValue('');
         });
       });
       test.describe('Tab Navigation', () => {
-        test.beforeEach(async ({ page }) => {
-          await onSearch(page);
-        });
-        test('should allow tab switching', async ({ page }) => {
-          // Navigate to Products tab (should be selected by default)
-          const productsTab = page.getByRole('tab', { name: 'Products' });
-          await productsTab.focus();
-          await expect(productsTab).toBeFocused();
-          await expect(productsTab).toHaveAttribute('aria-selected', 'true');
-
-          // Navigate to Categories tab using Arrow Right
-          const categoriesTab = page.getByRole('tab', { name: 'Categories' });
-          await page.keyboard.press('ArrowRight');
-          await page.keyboard.press('Tab');
-          await expect(categoriesTab).toBeFocused();
-          await expect(productsTab).toHaveAttribute('aria-selected', 'false');
-          await expect(categoriesTab).toHaveAttribute('aria-selected', 'true');
-
-          // Navigate to Pages tab using Arrow Right
-          const pagesTab = page.getByRole('tab', { name: 'Pages' });
-          await page.keyboard.press('ArrowRight');
-          await page.keyboard.press('Tab');
-          await expect(pagesTab).toBeFocused();
-          await expect(categoriesTab).toHaveAttribute('aria-selected', 'false');
-          await expect(pagesTab).toHaveAttribute('aria-selected', 'true');
-
-          // Navigate back to Categories tab using Arrow Left
-          await page.keyboard.press('ArrowLeft');
-          await page.keyboard.press('Shift+Tab');
-          await expect(categoriesTab).toBeFocused();
-          await expect(categoriesTab).toHaveAttribute('aria-selected', 'true');
-          await expect(pagesTab).toHaveAttribute('aria-selected', 'false');
-        });
-
-        test('should navigate through content tab using keyboard', async ({
-          page,
-        }) => {
-          // Navigate to Products tab (should be selected by default)
-          const productsTab = page.getByRole('tab', { name: 'Products' });
-          await productsTab.focus();
-          await expect(productsTab).toBeFocused();
-          await expect(productsTab).toHaveAttribute('aria-selected', 'true');
-
-          // Navigate to Categories tab using Arrow Right
-          const categoriesTab = page.getByRole('tab', { name: 'Categories' });
-          await page.keyboard.press('ArrowRight');
-          await page.keyboard.press('Tab');
-          await expect(categoriesTab).toBeFocused();
-          await expect(categoriesTab).toHaveAttribute('aria-selected', 'true');
-          await page.keyboard.press('Tab');
-          await expect(
-            page.getByTestId('searchitem__url').first()
-          ).toBeFocused();
-        });
+        test.skip(
+          () => true,
+          'Already tested in the Search functionality of the LandingPageTemplate.spec.ts'
+        );
       });
 
       test.describe('Filter Navigation', () => {
@@ -174,6 +176,37 @@ test.describe('Test WCAG for Search Result Page Template', () => {
           () => true,
           'Already tested in CategoryProductCategoryTemplate.spec.ts'
         );
+      });
+    });
+    test.describe('WCAG - 3.1.2 - Language of Parts', () => {
+      test.describe('Search result page - Default template', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Search result page - Products tab', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await onSearch(page);
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Search result page - Categories tab', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await onSearch(page);
+          await page.locator('[data-testid^="tabs__header"]').nth(1).click();
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Search result page - Pages tab', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await onSearch(page);
+          await page.locator('[data-testid^="tabs__header"]').nth(2).click();
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
       });
     });
   });

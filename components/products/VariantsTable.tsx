@@ -1,8 +1,8 @@
 'use client';
 import clsx from 'clsx';
 import BuyButton from 'components/BuyButton';
-import Currency from 'components/Currency';
 import DataView from 'components/DataView';
+import FormattedPrice from 'components/FormattedPrice';
 import Table, { IColumnType } from 'components/Table';
 import QuantityInput from 'components/cart/QuantityInput';
 import { Text } from 'components/elements/Text';
@@ -108,7 +108,7 @@ export default function VariantsTable({
       key: 'price',
       title: t('productdetail.column.price'),
       render: ({ price, articleNumber }) => (
-        <Currency
+        <FormattedPrice
           price={price[`unitPrice${vatSelector}`]}
           data-testid={`variants-table__desktop-price-${articleNumber}`}
         />
@@ -187,7 +187,7 @@ export default function VariantsTable({
         </Row>
         <Row className="pb-4">
           <Text className="font-bold">{t('productdetail.column.price')}</Text>
-          <Currency
+          <FormattedPrice
             className="text-right"
             price={item.price[`unitPrice${vatSelector}`]}
             data-testid={`variants-table__mobile-price-${item.articleNumber}`}

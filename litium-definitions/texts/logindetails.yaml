@@ -8,12 +8,6 @@ websiteTexts:
   logindetails.submitbuttontext:
     en-US: Save
     sv-SE: Spara
-  logindetails.subjectAccountChanged:
-    en-US: Account changed
-    sv-SE: Konto ändrat
-  logindetails.contentAccountChanged:
-    en-US: Your account information has been changed. If you did not make these changes, contact your system administrator for support.
-    sv-SE: Din kontoinformation har ändrats. Om du inte gjorde dessa ändringar, kontakta din systemadministratör för support.
   logindetails.email:
     en-US: Email
     sv-SE: Epost
@@ -26,15 +20,6 @@ websiteTexts:
   logindetails.verifybuttontext:
     en-US: Verify
     sv-SE: Bekräfta
-  logindetails.emaildetails.verificationcode.emailsubject:
-    en-US: Verify your email
-    sv-SE: Bekräfta din e-post
-  logindetails.emaildetails.verificationcode.emailcontent:
-    en-US: Please enter the code {code} in the page where you entered your email.
-    sv-SE: Ange koden {code} på sidan där du angav din e-post.
-  logindetails.emaildetails.verificationcode.emailnote:
-    en-US: This code will expire in 15 minutes. If you did not make this request, please disregard this email.
-    sv-SE: Koden upphör att gälla efter 15 minuter. Om du inte gjorde denna begäran, vänligen bortse från det här e-postmeddelandet.
   logindetails.emaildetails.verificationcode.sent:
     en-US: An email has been sent to your new address for verification. The email address will be updated after you verify it.
     sv-SE: Ett meddelande har skickats till din nya adress för bekräftelse. Adressen kommer att uppdateras när du har bekräftat den.
@@ -62,4 +47,3 @@ websiteTexts:
   logindetails.button.saved:
     en-US: Saved
     sv-SE: Sparad
-

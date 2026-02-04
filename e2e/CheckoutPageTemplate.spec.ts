@@ -1,5 +1,8 @@
 import { Page } from '@playwright/test';
 import { expect, test } from 'utils/axe-test';
+import { wcag135Helpers } from './utils/wcag-rules/1.3.5-IdentifyInputPurpose-helpers';
+import { wcag312Helpers } from './utils/wcag-rules/3.1.2-LanguageOfParts-helpers';
+
 /**
  * This is a note to prepare for testing the checkout page template.
  * Setup country at the BO.
@@ -7,6 +10,8 @@ import { expect, test } from 'utils/axe-test';
  * Setup 2 direct shipment methods at the BO.
  * Setup a discount code at the BO with code "123456"
  */
+const testCheckoutUrl = process.env.TEST_CHECKOUT_URL ?? '/checkout';
+const testProductUrl = process.env.TEST_PRODUCT_URL ?? '';
 const DISCOUNT_CODE = '123456';
 
 const fillAddressForm = async (page: Page) => {
@@ -33,16 +38,13 @@ const clearBillingAddressForm = async (page: Page) => {
 };
 
 const addProductToCart = async (page: Page) => {
-  const productUrl = process.env.TEST_PRODUCT_URL ?? '';
-  await page.goto(productUrl);
+  await page.goto(testProductUrl);
   await page.waitForLoadState('networkidle');
   await page.getByTestId('buy-button').click();
   await page.waitForLoadState('networkidle');
   const miniCartCount = page.getByTestId('mini-cart__count');
   await expect(miniCartCount).toHaveText('1');
 };
-
-const testCheckoutUrl = process.env.TEST_CHECKOUT_URL ?? '/checkout';
 
 test.describe('Test WCAG for Checkout Page Template', () => {
   test.describe('Axe-core automated tests', () => {
@@ -206,12 +208,78 @@ test.describe('Test WCAG for Checkout Page Template', () => {
     });
   });
   test.describe("Test rules that axe-core doesn't cover", () => {
-    test.beforeEach(async ({ page }) => {
-      await addProductToCart(page);
-      await page.goto(testCheckoutUrl);
-      await page.waitForLoadState('networkidle');
+    test.describe('WCAG - 1.3.5 - Identify Input Purpose tests', () => {
+      test.describe('Checkout page - Empty cart', () => {
+        test('should pass input purpose compliance for user fields using autocomplete', async ({
+          page,
+        }) => {
+          await page.goto(testCheckoutUrl);
+          await page.waitForLoadState('networkidle');
+          const result = await wcag135Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Checkout page - Cart with products', () => {
+        test.beforeEach(async ({ page }) => {
+          await addProductToCart(page);
+          await page.goto(testCheckoutUrl);
+          await page.waitForLoadState('networkidle');
+        });
+        test.describe('Step 1 - Delivery address', () => {
+          test('should pass input purpose compliance for user fields using autocomplete', async ({
+            page,
+          }) => {
+            const result = await wcag135Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+        });
+        test.describe('Step 2 - Select delivery options', () => {
+          test('should pass input purpose compliance for user fields using autocomplete', async ({
+            page,
+          }) => {
+            await fillAddressForm(page);
+            await page.getByTestId('address-form__submit').click();
+            await page.waitForLoadState('networkidle');
+            await page.waitForTimeout(1000);
+            const result = await wcag135Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+        });
+        test.describe('Step 3 - Select payment options and billing address and total summary', () => {
+          test('should pass input purpose compliance for user fields using autocomplete', async ({
+            page,
+          }) => {
+            await fillAddressForm(page);
+            await page.getByTestId('address-form__submit').click();
+            await page.waitForLoadState('networkidle');
+            await page
+              .getByTestId('checkout-wizard__delivery-option-continue')
+              .click();
+            await page.waitForLoadState('networkidle');
+            const result = await wcag135Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+        });
+        test.describe('Add discount code', () => {
+          test('should pass input purpose compliance for user fields using autocomplete', async ({
+            page,
+          }) => {
+            await page
+              .getByTestId('checkout__discount-code--show-input')
+              .click();
+            await page.waitForLoadState('networkidle');
+            const result = await wcag135Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+        });
+      });
     });
     test.describe('WCAG 2.1.1 - Keyboard Navigation', () => {
+      test.beforeEach(async ({ page }) => {
+        await addProductToCart(page);
+        await page.goto(testCheckoutUrl);
+        await page.waitForLoadState('networkidle');
+      });
       test('should navigate through checkout page using keyboard', async ({
         page,
       }) => {
@@ -473,6 +541,136 @@ test.describe('Test WCAG for Checkout Page Template', () => {
           await expect(
             page.getByTestId('order-confirmation__title')
           ).toBeVisible();
+        });
+      });
+    });
+    test.describe('WCAG - 3.1.2 - Language of Parts', () => {
+      test.describe('Checkout page - Empty cart', () => {
+        test('should pass language of parts tests', async ({ page }) => {
+          await page.goto(testCheckoutUrl);
+          await page.waitForLoadState('networkidle');
+          const result = await wcag312Helpers.runAllTests(page);
+          expect(result.violations).toEqual([]);
+        });
+      });
+      test.describe('Checkout page - Cart with products', () => {
+        test.beforeEach(async ({ page }) => {
+          await addProductToCart(page);
+          await page.goto(testCheckoutUrl);
+          await page.waitForLoadState('networkidle');
+        });
+        test.describe('Step 1 - Delivery address', () => {
+          test('should pass language of parts tests', async ({ page }) => {
+            const result = await wcag312Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+          test('should pass language of parts tests with error message displayed', async ({
+            page,
+          }) => {
+            await page.getByTestId('address-form__submit').click();
+            await page.waitForLoadState('networkidle');
+            const result = await wcag312Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+        });
+        test.describe('Step 2 - Select delivery options', () => {
+          test('should pass language of parts tests', async ({ page }) => {
+            await fillAddressForm(page);
+            await page.getByTestId('address-form__submit').click();
+            await page.waitForLoadState('networkidle');
+            const result = await wcag312Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+          });
+        });
+        test.describe('Step 3 - Select payment options and billing address and total summary', () => {
+          test.describe('Billing address same as delivery address', () => {
+            test('should pass language of parts tests', async ({ page }) => {
+              await fillAddressForm(page);
+              await page.getByTestId('address-form__submit').click();
+              await page.waitForLoadState('networkidle');
+              await page
+                .getByTestId('checkout-wizard__delivery-option-continue')
+                .click();
+              await page.waitForLoadState('networkidle');
+              const result = await wcag312Helpers.runAllTests(page);
+              expect(result.violations).toEqual([]);
+            });
+          });
+          test.describe('Billing address different from delivery address', () => {
+            test.describe('With filled billing address', () => {
+              test('should pass language of parts tests', async ({ page }) => {
+                await fillAddressForm(page);
+                await page.getByTestId('address-form__submit').click();
+                await page.waitForLoadState('networkidle');
+                await page
+                  .getByTestId('checkout-wizard__delivery-option-continue')
+                  .click();
+                await page.waitForLoadState('networkidle');
+                await page
+                  .getByTestId('checkout-wizard__checkbox-label')
+                  .click();
+                await page.waitForLoadState('networkidle');
+                const result = await wcag312Helpers.runAllTests(page);
+                expect(result.violations).toEqual([]);
+              });
+            });
+            test.describe('Without filled billing address', () => {
+              test('should pass language of parts tests', async ({ page }) => {
+                await fillAddressForm(page);
+                await page.getByTestId('address-form__submit').click();
+                await page.waitForLoadState('networkidle');
+                await page
+                  .getByTestId('checkout-wizard__delivery-option-continue')
+                  .click();
+                await page.waitForLoadState('networkidle');
+                await page
+                  .getByTestId('checkout-wizard__checkbox-label')
+                  .click();
+                await page.waitForLoadState('networkidle');
+                await clearBillingAddressForm(page);
+                await page.getByTestId('address-form__submit').click();
+                await page.waitForLoadState('networkidle');
+                const result = await wcag312Helpers.runAllTests(page);
+                expect(result.violations).toEqual([]);
+              });
+            });
+          });
+        });
+        test.describe('Add discount code', () => {
+          test('should pass language of parts tests', async ({ page }) => {
+            await page
+              .getByTestId('checkout__discount-code--show-input')
+              .click();
+            await page
+              .getByTestId('checkout__discount-code--apply-button')
+              .click();
+            await page.waitForLoadState('networkidle');
+            const result1 = await wcag312Helpers.runAllTests(page);
+            expect(result1.violations).toEqual([]);
+            await page
+              .getByTestId('checkout__discount-code--input')
+              .fill(DISCOUNT_CODE);
+            await page
+              .getByTestId('checkout__discount-code--apply-button')
+              .click();
+            const result2 = await wcag312Helpers.runAllTests(page);
+            expect(result2.violations).toEqual([]);
+          });
+        });
+        test.describe('Update quantity with more option', () => {
+          test('should pass language of parts tests', async ({ page }) => {
+            //select dropdown quantity
+            await page
+              .getByTestId('quantity-input__select')
+              .selectOption('quantityinput.option.more');
+            const result = await wcag312Helpers.runAllTests(page);
+            expect(result.violations).toEqual([]);
+            await page.getByTestId('quantity-input__input').fill('100');
+            await page.getByTestId('quantity-input__input-ok').click();
+            await page.waitForLoadState('networkidle');
+            const result2 = await wcag312Helpers.runAllTests(page);
+            expect(result2.violations).toEqual([]);
+          });
         });
       });
     });

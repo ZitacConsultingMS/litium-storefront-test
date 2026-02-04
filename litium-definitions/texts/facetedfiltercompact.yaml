@@ -8,6 +8,9 @@ websiteTexts:
   facetedfiltercompact.button.show:
     en-US: Show
     sv-SE: Visa
-  facetedfiltercompact.button.closefilter:
+  facetedfiltercompact.openfilter:
+    en-US: Open filter
+    sv-SE: Öppna filter
+  facetedfiltercompact.closefilter:
     en-US: Close filter
     sv-SE: Stäng filter

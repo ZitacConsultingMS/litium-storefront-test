@@ -190,6 +190,12 @@ const GET_ORDER = gql`
       }
     }
     order(orderId: $orderId) {
+      currency {
+        code
+        symbol
+        symbolPosition
+        minorUnits
+      }
       customerDetails {
         email
         phone

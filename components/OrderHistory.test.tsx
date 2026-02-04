@@ -22,6 +22,12 @@ const mockOrders: Order[] = [
     grandTotal: 100,
     tags: [],
     rows: [],
+    currency: {
+      code: 'USD',
+      symbol: '$',
+      symbolPosition: 'LEFT',
+      minorUnits: 2,
+    },
   },
   {
     id: '2',
@@ -31,6 +37,12 @@ const mockOrders: Order[] = [
     grandTotal: 200,
     tags: ['_awaitOrderApproval'],
     rows: [],
+    currency: {
+      code: 'USD',
+      symbol: '$',
+      symbolPosition: 'LEFT',
+      minorUnits: 2,
+    },
   },
 ];
 
@@ -57,6 +69,12 @@ describe('OrderHistory Component', () => {
               grandTotal: 300,
               tags: [],
               rows: [],
+              currency: {
+                code: 'USD',
+                symbol: '$',
+                symbolPosition: 'LEFT',
+                minorUnits: 2,
+              },
             },
           ],
           pageInfo: { hasNextPage: false },

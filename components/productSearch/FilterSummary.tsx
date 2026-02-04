@@ -1,6 +1,7 @@
-﻿import { Text } from 'components/elements/Text';
-import List from 'components/icons/list';
+import { Text } from 'components/elements/Text';
 import { useTranslations } from 'hooks/useTranslations';
+//import { ListFilter } from 'lucide-react';
+import List from 'components/icons/list';
 
 /**
  * Renders a filter summary.
@@ -30,7 +31,7 @@ function FilterSummary({
       &nbsp;
       <Text
         inline={true}
-        className="text-sm text-primary lg:text-tertiary "
+        className="text-sm text-primary lg:text-tertiary"
         data-testid="filter-summary__selected-count"
       >
         ({selectedFilterCount})

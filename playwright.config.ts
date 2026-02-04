@@ -54,6 +54,7 @@ const config: PlaywrightTestConfig = {
   },
 
   projects: [
+    { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
       name: 'Desktop Chrome',
       use: {
@@ -62,18 +63,21 @@ const config: PlaywrightTestConfig = {
           ignoreHTTPSErrors: true,
         },
       },
+      dependencies: ['setup'],
     },
     {
       name: 'Desktop Firefox',
       use: {
         ...devices['Desktop Firefox'],
       },
+      dependencies: ['setup'],
     },
     {
       name: 'Desktop Safari',
       use: {
         ...devices['Desktop Safari'],
       },
+      dependencies: ['setup'],
     },
     // Test against mobile viewports.
     {
@@ -81,10 +85,12 @@ const config: PlaywrightTestConfig = {
       use: {
         ...devices['Pixel 5'],
       },
+      dependencies: ['setup'],
     },
     {
       name: 'Mobile Safari',
       use: devices['iPhone 12'],
+      dependencies: ['setup'],
     },
   ],
 };

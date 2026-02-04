@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Currency from 'components/Currency';
+import FormattedPrice from 'components/FormattedPrice';
 import { Text } from 'components/elements/Text';
 import { CheckoutOption } from 'models/checkout';
 
@@ -28,7 +28,7 @@ function OptionSummary({
         {value.name}
       </Text>
       <div className="text-tertiary" data-testid="option-summary__description">
-        <Currency price={value.price} className="inline-block" />
+        <FormattedPrice price={value.price} className="inline-block" />
         &nbsp;
         {value?.description}
       </div>

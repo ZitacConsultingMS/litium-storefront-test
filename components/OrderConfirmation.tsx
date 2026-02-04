@@ -2,13 +2,13 @@
 import Link from 'components/Link';
 import { useTranslations } from 'hooks/useTranslations';
 import { OrderAddress } from 'models/address';
-import { DiscountInfo } from 'models/cart';
+import { Currency, DiscountInfo } from 'models/cart';
 import { OrderRow } from 'models/order';
 import { Fragment, useEffect } from 'react';
-import Currency from './Currency';
 import CartContent from './cart/CartContent';
 import { Heading1 } from './elements/Heading';
 import { Text } from './elements/Text';
+import FormattedPrice from './FormattedPrice';
 
 function OrderConfirmation({
   receipt,
@@ -27,6 +27,7 @@ function OrderConfirmation({
       email: string;
       phone: string;
     };
+    currency: Currency;
   };
   myPagesPageUrl: string;
   orderHistoryPageUrl: string;
@@ -46,6 +47,7 @@ function OrderConfirmation({
     totalVat,
     orderNumber,
     customerDetails,
+    currency,
   } = receipt;
   return (
     <Fragment>
@@ -101,12 +103,14 @@ function OrderConfirmation({
           updatable={false}
           discountInfos={discountInfos}
           totalVat={totalVat}
+          currency={currency}
         />
         <div className="my-2 flex justify-between font-bold">
           <Text inline={true}>{t('orderconfirmation.total.title')}</Text>
-          <Currency
+          <FormattedPrice
             price={grandTotal}
             data-testid="order-confirmation__grand-total"
+            currency={currency}
           />
         </div>
       </section>

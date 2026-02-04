@@ -2,16 +2,19 @@
 import { Button } from 'components/elements/Button';
 import { PrimaryNavigationContext } from 'contexts/primaryNavigationContext';
 import { useTranslations } from 'hooks/useTranslations';
+//import { X } from 'lucide-react';
 import { useContext } from 'react';
-import Close from '../icons/zitac/close';
 
 /**
  * Represents a client component for rendering navigation close button, which is used in mobile.
  * @returns
  */
 export default function NavigationCloseButton() {
-  const setVisible = useContext(PrimaryNavigationContext).setVisible;
-  const close = () => setVisible(false);
+  const { setVisible, setActiveMenuId } = useContext(PrimaryNavigationContext);
+  const close = () => {
+    setVisible(false);
+    setActiveMenuId(null);
+  };
   const t = useTranslations();
 
   return (
@@ -21,7 +24,7 @@ export default function NavigationCloseButton() {
       data-testid="slide-navigation__close-btn"
       className="!border-0 !bg-transparent p-0 text-primary"
     >
-      <Close />
+      <X className="h-8 w-8" />
     </Button>
   );
 }

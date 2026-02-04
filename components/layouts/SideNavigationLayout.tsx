@@ -4,8 +4,9 @@ import Link from 'components/Link';
 import TreeComponent from 'components/Tree';
 import { Button } from 'components/elements/Button';
 import { Text } from 'components/elements/Text';
-import LogoutIcon from 'components/icons/logout';
+import { NavigationToggleButton } from 'components/navigation/NavigationToggleButton';
 import { translate } from 'hooks/useTranslations';
+import { LogOut } from 'lucide-react';
 import { NavigationLink } from 'models/navigation';
 import { PageItemsConnection } from 'models/page';
 import { cookies } from 'next/headers';
@@ -14,8 +15,6 @@ import { get } from 'services/websiteService.server';
 import { Token } from 'utils/constants';
 import Breadcrumb from '../Breadcrumb';
 import { Heading2 } from '../elements/Heading';
-import { Input } from '../elements/Input';
-import GripLines from '../icons/grip-lines';
 /**
  * Represents a layout with side navigation on the left and main content.
  * Example:
@@ -49,54 +48,39 @@ const SideContent = ({
   return (
     <aside
       className={clsx(
+        'navigation-side-menu',
         'transition-all duration-200',
-        'mobile:[&:has(input[name=toggleMobile]:checked)]:w-0 mobile:[&:has(input[name=toggleMobile]:checked)]:overflow-hidden',
+        'mobile:[&:has(input[name=toggleMobile]:checked)]:w-0',
+        'mobile:[&:has(input[name=toggleMobile]:checked)]:overflow-hidden',
         'md:[&:has(input[name=toggleTablet]:checked)]:px-0',
         'md:[&:has(input[name=toggleTablet]:checked)]:w-0',
         'md:[&:has(input[name=toggleTablet]:checked)]:overflow-hidden',
         'w-full md:w-72 md:px-4 print:hidden'
       )}
       data-testid="side-menu"
+      role="navigation"
     >
       <div className="mb-9 flex items-center justify-between">
-        <Link href={url}>
-          <Heading2 className="my-0 text-sm" data-testid="side-menu__title">
-            {name}
-          </Heading2>
+        <Link href={url} data-testid="side-menu__title">
+          <Heading2 className="my-0 text-sm">{name}</Heading2>
         </Link>
-        <Input
-          className="peer/mobile hidden"
-          type="radio"
-          name="toggleMobile"
+        <NavigationToggleButton
           id="toggleAside"
+          name="toggleMobile"
           defaultChecked
+          classNameInput="peer/mobile hidden"
+          classNameLabel="block cursor-pointer whitespace-nowrap md:hidden"
+          testId="side-menu__toggle-mobile"
+          targetToggleButtonId="toggleMyAccount"
         />
-        <label
-          className="block cursor-pointer whitespace-nowrap md:hidden"
-          htmlFor="toggleAside"
-          data-testid="side-menu__toggle-mobile"
-        >
-          <GripLines
-            className="h-7 w-10 flex-shrink-0 rounded bg-hover"
-            fill="#666666"
-          />
-        </label>
-        <Input
-          className="peer/tablet hidden"
-          type="radio"
-          name="toggleTablet"
+        <NavigationToggleButton
           id="toggleAsideTablet"
+          name="toggleTablet"
+          classNameInput="peer/tablet hidden"
+          classNameLabel="hidden cursor-pointer whitespace-nowrap md:block md:peer-checked/tablet:hidden"
+          testId="side-menu__toggle-tablet"
+          targetToggleButtonId="toggleMyAccountTablet"
         />
-        <label
-          className="hidden cursor-pointer whitespace-nowrap md:block md:peer-checked/tablet:hidden"
-          htmlFor="toggleAsideTablet"
-          data-testid="side-menu__toggle-tablet"
-        >
-          <GripLines
-            className="h-7 w-10 flex-shrink-0 rounded bg-hover"
-            fill="#666666"
-          />
-        </label>
       </div>
       {children}
     </aside>
@@ -129,11 +113,13 @@ export const SideNavigation = async ({
 
   return (
     <SideContent name={name} url={url}>
-      <TreeComponent
-        defaultExpanded={expandedNodes}
-        data={data}
-        activeUrl={rootUrl}
-      />
+      <nav>
+        <TreeComponent
+          defaultExpanded={expandedNodes}
+          data={data}
+          activeUrl={rootUrl}
+        />
+      </nav>
       {token && showLogoutButton && (
         <form action={signOutUser}>
           <Button
@@ -146,7 +132,7 @@ export const SideNavigation = async ({
             <Text inline={true} data-testid="logout__title">
               {translate('logout.title', websites.texts)}
             </Text>
-            <LogoutIcon />
+            <LogOut />
           </Button>
         </form>
       )}
@@ -181,39 +167,23 @@ export const MainContent = ({
       >
         {navigationButtonVisibility && (
           <Fragment>
-            <Input
-              className="peer/mobile hidden"
-              type="radio"
-              name="toggleMobile"
+            <NavigationToggleButton
               id="toggleMyAccount"
+              name="toggleMobile"
+              classNameInput="peer/mobile hidden"
+              classNameLabel="cursor-pointer whitespace-nowrap md:mr-4 md:hidden mobile:peer-checked/mobile:hidden"
+              testId="article__toggle-mobile"
+              targetToggleButtonId="toggleAside"
             />
-            <label
-              className="cursor-pointer whitespace-nowrap md:mr-4 md:hidden mobile:peer-checked/mobile:hidden"
-              htmlFor="toggleMyAccount"
-              data-testid="article__toggle-mobile"
-            >
-              <GripLines
-                className="h-7 w-10 flex-shrink-0 rounded bg-hover"
-                fill="#666666"
-              />
-            </label>
-            <Input
-              className="peer/tablet hidden"
-              type="radio"
-              name="toggleTablet"
+            <NavigationToggleButton
               id="toggleMyAccountTablet"
+              name="toggleTablet"
               defaultChecked
+              classNameInput="peer/tablet hidden"
+              classNameLabel="hidden cursor-pointer whitespace-nowrap peer-checked/tablet:hidden md:mr-4 md:block"
+              testId="article__toggle-tablet"
+              targetToggleButtonId="toggleAsideTablet"
             />
-            <label
-              className="hidden cursor-pointer whitespace-nowrap peer-checked/tablet:hidden md:mr-4 md:block"
-              htmlFor="toggleMyAccountTablet"
-              data-testid="article__toggle-tablet"
-            >
-              <GripLines
-                className="h-7 w-10 flex-shrink-0 rounded bg-hover"
-                fill="#666666"
-              />
-            </label>
           </Fragment>
         )}
         {breadcrumbs && breadcrumbs.length > 0 && (

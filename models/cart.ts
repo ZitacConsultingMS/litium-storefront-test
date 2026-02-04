@@ -8,15 +8,17 @@ export interface Cart {
   discountCodes: string[];
   totalVat: number;
   showPricesIncludingVat: boolean;
-  currency: {
-    code: string;
-    symbol: string;
-    symbolPosition: string;
-    minorUnits: number;
-  };
+  currency: Currency;
 }
 
 export interface DiscountInfo {
   resultOrderRow: OrderRow;
   discountType: string;
+}
+
+export interface Currency {
+  code: string;
+  symbol: string;
+  symbolPosition: string;
+  minorUnits: number;
 }

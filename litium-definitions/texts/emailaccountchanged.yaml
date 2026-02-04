@@ -1,0 +1,7 @@
+websiteTexts:
+  emailaccountchanged.subjectAccountChanged:
+    en-US: Account changed
+    sv-SE: Konto ändrat
+  emailaccountchanged.contentAccountChanged:
+    en-US: Your account information has been changed. If you did not make these changes, contact your system administrator for support.
+    sv-SE: Din kontoinformation har ändrats. Om du inte gjorde dessa ändringar, kontakta din systemadministratör för support.

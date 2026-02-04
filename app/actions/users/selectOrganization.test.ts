@@ -66,7 +66,9 @@ describe('selectUserOrganization', () => {
     formData.append('id', 'foo');
     await selectUserOrganization('/my-pages', formData);
     expect(mockRedirect).toHaveBeenCalled();
-    expect(mockRedirect).toHaveBeenCalledWith('https://localhost/my-pages');
+    expect(mockRedirect).toHaveBeenCalledWith(
+      'https://localhost/my-pages?refreshCart=true'
+    );
   });
   test('should redirect to login page if user is not authorized', async () => {
     const formData = new FormData();

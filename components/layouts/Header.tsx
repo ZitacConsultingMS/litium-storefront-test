@@ -55,11 +55,11 @@ const Header = async ({
             </div>
           )}
           {showNavigation && (
-            <div className="flex p-2 pr-0">
+            <div className="flex p-2 pr-0" role="navigation">
               <div className="touchable:hidden">
                 <Profile myPagesPageUrl={website.myPagesPageUrl} />
               </div>
-              <div className="relative mx-2 flex items-center">
+              <div className="relative mx-2 flex">
                 <QuickSearch
                   searchResultPageUrl={website.searchResultPageUrl}
                 />

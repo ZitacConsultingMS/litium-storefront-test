@@ -9,19 +9,22 @@ import { DistinctFacetItem } from 'models/filter';
 function FacetedFilterCheckbox({
   item,
   groupId,
+  prefix,
   onChange,
 }: {
   item?: DistinctFacetItem;
   groupId?: string;
+  prefix?: string;
   onChange?: (value: string, groupId: string) => void;
 }) {
   return (
     <>
       {item?.value && groupId ? (
         <Checkbox
-          id={`faceted-filter-checkbox-${item.value}-${groupId}`}
+          id={`${prefix ? `${prefix}-` : ''}faceted-filter-checkbox-${groupId}-${item.value}`}
           onChange={() => !!onChange && onChange(item.value, groupId)}
           checked={item.selected}
+          data-testid={`faceted-filter-checkbox`}
         >
           <Text
             inline={true}

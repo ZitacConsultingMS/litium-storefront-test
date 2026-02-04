@@ -95,6 +95,7 @@ const EmailDetailsForm = ({ email }: { email: string | null }) => {
           name="email"
           placeholder={t('logindetails.email')}
           data-testid="email-details__email-field"
+          autocomplete="email"
         />
       </div>
       <div
@@ -106,6 +107,7 @@ const EmailDetailsForm = ({ email }: { email: string | null }) => {
           name="code"
           placeholder={t('logindetails.code')}
           data-testid="email-details__code-field"
+          autocomplete="one-time-code"
         />
       </div>
       <Button
@@ -189,6 +191,7 @@ const PasswordDetailsForm = () => {
           name="currentPassword"
           placeholder={t('logindetails.currentPassword')}
           data-testid="password-details__current-password"
+          autocomplete="current-password"
         />
       </div>
       <div className="mb-3">
@@ -197,6 +200,7 @@ const PasswordDetailsForm = () => {
           name="newPassword"
           placeholder={t('logindetails.newPassword')}
           data-testid="password-details__new-password"
+          autocomplete="new-password"
         />
       </div>
       <Button

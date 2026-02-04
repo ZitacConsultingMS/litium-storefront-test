@@ -2,7 +2,6 @@
 import { gql } from '@apollo/client';
 import { approveOrder } from 'app/actions/approveOrder';
 import { repeatOrder } from 'app/actions/repeatOrder';
-import Currency from 'components/Currency';
 import { CartContext } from 'contexts/cartContext';
 import { WebsiteContext } from 'contexts/websiteContext';
 import { useTranslations } from 'hooks/useTranslations';
@@ -16,12 +15,13 @@ import {
   getVatSelector,
 } from 'services/discountService';
 import { OrderStatus, OrderTags } from 'utils/constants';
-import ConfirmationDialog from './ConfirmationDialog';
-import FormattedDate from './FormattedDate';
 import CartContent from './cart/CartContent';
+import ConfirmationDialog from './ConfirmationDialog';
 import { SecondaryButon } from './elements/Button';
 import { Heading2, Heading3 } from './elements/Heading';
 import { Text } from './elements/Text';
+import FormattedDate from './FormattedDate';
+import FormattedPrice from './FormattedPrice';
 
 interface OrderDetailProps {
   orderDetail: Order;
@@ -120,7 +120,7 @@ function OrderDetail(props: OrderDetailProps) {
             rounded
             className="w-24 border py-1 text-sm xl:w-80 xl:py-4"
             onClick={() => reorder(order?.rows)}
-            data-testid={`${order.orderNumber}__repeat-btn`}
+            data-testid={`order-details__repeat-btn`}
           >
             {t('orderdetail.btn.repeat')}
           </SecondaryButon>
@@ -132,7 +132,7 @@ function OrderDetail(props: OrderDetailProps) {
             disabled={!order?.tags?.includes(OrderTags.AwaitOrderApproval)}
             className="w-24 border py-1 text-sm xl:w-80 xl:py-4"
             onClick={() => approve(order?.id)}
-            data-testid={`${order.orderNumber}__approve-btn`}
+            data-testid={`order-details__approve-btn`}
           >
             {t('orderdetail.btn.approve')}
           </SecondaryButon>
@@ -141,7 +141,7 @@ function OrderDetail(props: OrderDetailProps) {
           rounded
           className="w-24 border py-1 text-sm xl:w-80 xl:py-4"
           onClick={() => print()}
-          data-testid={`${order.orderNumber}__print-btn`}
+          data-testid={`order-details__print-btn`}
         >
           {t('orderdetail.btn.print')}
         </SecondaryButon>
@@ -167,10 +167,11 @@ function OrderDetail(props: OrderDetailProps) {
           <DetailLine
             label={t('orderdetail.total')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={order?.grandTotal}
                 data-testid={`${order.orderNumber}__total`}
+                currency={order?.currency}
               />
             }
           />
@@ -239,60 +240,66 @@ function OrderDetail(props: OrderDetailProps) {
           <DetailLine
             label={t('orderdetail.itemssubtotal')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={itemsSubtotal}
                 data-testid={`${order.orderNumber}__itemssubtotal`}
+                currency={order?.currency}
               />
             }
           />
           <DetailLine
             label={t('orderdetail.fees')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={order?.[`totalFees${vatSelector}`] || 0}
                 data-testid={`${order.orderNumber}__fees`}
+                currency={order?.currency}
               />
             }
           />
           <DetailLine
             label={t('orderdetail.delivery')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={order?.[`shippingCost${vatSelector}`] || 0}
                 data-testid={`${order.orderNumber}__delivery`}
+                currency={order?.currency}
               />
             }
           />
           <DetailLine
             label={t('orderdetail.discount')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={totalOtherDiscounts}
                 data-testid={`${order.orderNumber}__discount`}
+                currency={order?.currency}
               />
             }
           />
           <DetailLine
             label={t('orderdetail.vat')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={order?.totalVat}
                 data-testid={`${order.orderNumber}__vat`}
+                currency={order?.currency}
               />
             }
           />
           <DetailLine
             label={t('orderdetail.total')}
             value={
-              <Currency
+              <FormattedPrice
                 className="inline"
                 price={order?.grandTotal}
                 data-testid={`${order.orderNumber}__grandTotal`}
+                currency={order?.currency}
               />
             }
           />
@@ -305,6 +312,7 @@ function OrderDetail(props: OrderDetailProps) {
             rows={order?.rows}
             updatable={false}
             showCostDetails={false}
+            currency={order?.currency}
           />
         </div>
       </div>

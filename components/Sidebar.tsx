@@ -25,6 +25,9 @@ function Sidebar({
   fullscreen = false,
   blockScroll = false,
   isClickOutside = true,
+  id,
+  role = 'dialog',
+  ariaLabel,
   ...props
 }: {
   visible: boolean;
@@ -35,6 +38,9 @@ function Sidebar({
   fullscreen?: boolean;
   blockScroll?: boolean;
   isClickOutside?: boolean;
+  id?: string;
+  role?: 'dialog' | 'menu';
+  ariaLabel?: string;
 }) {
   const [blockBodyScroll, allowBodyScroll] = useBodyScroll();
   const [focusLockedClass, setFocusLockedClass] = useState('');
@@ -113,6 +119,9 @@ function Sidebar({
             fullscreen && 'h-[100vh] w-full touchable:h-[100dvh]'
           )}
           ref={sidebarRef}
+          id={id}
+          role={role}
+          aria-label={ariaLabel}
           {...props}
         >
           {children}

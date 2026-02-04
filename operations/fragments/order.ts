@@ -15,6 +15,12 @@ export const ORDER_FRAGMENT = gql`
         articleNumber
         quantity
       }
+      currency {
+        code
+        symbol
+        symbolPosition
+        minorUnits
+      }
     }
     pageInfo {
       hasNextPage

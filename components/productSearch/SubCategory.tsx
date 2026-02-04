@@ -36,7 +36,7 @@ function SubCategory({ subCategories }: { subCategories: CategoryItem[] }) {
   }, []);
   return (
     <div className="sub-category -mx-5 mb-5">
-      <div className="mb-3 px-5">
+      <div className="mb-3 px-5" role="region">
         {!!subCategories && (
           <Swiper {...params}>
             {subCategories

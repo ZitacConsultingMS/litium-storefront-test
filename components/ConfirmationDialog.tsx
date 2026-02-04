@@ -37,6 +37,7 @@ export default function ConfirmationDialog({
       className="flex items-center justify-center bg-transparent transition-none"
       onClose={onCancel}
       data-testid="confirmation-dialog__container"
+      ariaLabel={t('commons.confirmationdialog')}
     >
       <div className="flex max-h-72 w-96 max-w-96 flex-col items-center justify-center gap-7 rounded-2xl border-secondary-2 bg-white px-5 py-14">
         <Heading3
